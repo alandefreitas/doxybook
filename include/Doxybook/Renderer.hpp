@@ -13,7 +13,7 @@ namespace inja {
     class Environment;
 } // namespace inja
 
-namespace Doxybook2 {
+namespace Doxybook {
     class Renderer {
     public:
         explicit Renderer(const Config& config, const Doxygen& doxygen, const JsonConverter& jsonConverter, const std::optional<std::string>& templatesPath = std::nullopt);
@@ -30,4 +30,4 @@ namespace Doxybook2 {
         std::unique_ptr<inja::Environment> env;
         std::unordered_map<std::string, std::unique_ptr<inja::Template>> templates;
     };
-} // namespace Doxybook2
+} // namespace Doxybook

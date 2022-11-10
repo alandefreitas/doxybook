@@ -1,7 +1,7 @@
 #pragma once
 #include "TextPrinter.hpp"
 
-namespace Doxybook2 {
+namespace Doxybook {
     class TextPlainPrinter : public TextPrinter {
     public:
         explicit TextPlainPrinter(const Config& config, const Doxygen& doxygen)

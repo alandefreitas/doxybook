@@ -23,7 +23,7 @@ static std::string replaceAll(std::string str, const std::string& from, const st
     return str;
 }
 
-std::string Doxybook2::Utils::normalizeLanguage(const std::string& language) {
+std::string Doxybook::Utils::normalizeLanguage(const std::string& language) {
     auto res = language;
     std::transform(res.begin(), res.end(), res.begin(), tolower);
     static std::unordered_map<std::string, std::string> lang_map{
@@ -39,7 +39,7 @@ std::string Doxybook2::Utils::normalizeLanguage(const std::string& language) {
     return res;
 }
 
-std::string Doxybook2::Utils::replaceNewline(std::string str) {
+std::string Doxybook::Utils::replaceNewline(std::string str) {
     std::transform(str.begin(), str.end(), str.begin(), [](char ch) {
         if (ch == '\n')
             return ' ';
@@ -48,20 +48,20 @@ std::string Doxybook2::Utils::replaceNewline(std::string str) {
     return str;
 }
 
-std::string Doxybook2::Utils::title(std::string str) {
+std::string Doxybook::Utils::title(std::string str) {
     if (!str.empty())
         str[0] = ::toupper(str[0]);
     return str;
 }
 
-extern std::string Doxybook2::Utils::toLower(std::string str) {
+extern std::string Doxybook::Utils::toLower(std::string str) {
     for (auto& c : str) {
         c = ::tolower(c);
     }
     return str;
 }
 
-std::string Doxybook2::Utils::safeAnchorId(std::string str, bool replaceUnderscores) {
+std::string Doxybook::Utils::safeAnchorId(std::string str, bool replaceUnderscores) {
     str = replaceAll(toLower(std::move(str)), "::", "");
     str = replaceAll(str, " ", "-");
     if (replaceUnderscores) {
@@ -70,18 +70,18 @@ std::string Doxybook2::Utils::safeAnchorId(std::string str, bool replaceUndersco
     return str;
 }
 
-std::string Doxybook2::Utils::namespaceToPackage(std::string str) {
+std::string Doxybook::Utils::namespaceToPackage(std::string str) {
     return replaceAll(std::move(str), "::", ".");
 }
 
-std::string Doxybook2::Utils::date(const std::string& format) {
+std::string Doxybook::Utils::date(const std::string& format) {
     const auto t = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
     char mbstr[100];
     std::strftime(mbstr, sizeof(mbstr), format.c_str(), std::localtime(&t));
     return mbstr;
 }
 
-std::string Doxybook2::Utils::stripNamespace(const std::string& str) {
+std::string Doxybook::Utils::stripNamespace(const std::string& str) {
     auto inside = 0;
     size_t count = 0;
     size_t offset = std::string::npos;
@@ -121,13 +121,13 @@ std::string Doxybook2::Utils::stripNamespace(const std::string& str) {
 
 static const std::regex ANCHOR_REGEX(R"(_[a-z0-9]{34,67}$)");
 
-std::string Doxybook2::Utils::stripAnchor(const std::string& str) {
+std::string Doxybook::Utils::stripAnchor(const std::string& str) {
     std::stringstream ss;
     std::regex_replace(std::ostreambuf_iterator<char>(ss), str.begin(), str.end(), ANCHOR_REGEX, "");
     return ss.str();
 }
 
-std::string Doxybook2::Utils::escape(std::string str) {
+std::string Doxybook::Utils::escape(std::string str) {
     size_t new_size = 0;
     for (const auto& c : str) {
         switch (c) {
@@ -181,7 +181,7 @@ std::string Doxybook2::Utils::escape(std::string str) {
     return ret;
 }
 
-std::vector<std::string> Doxybook2::Utils::split(const std::string& str, const std::string& delim) {
+std::vector<std::string> Doxybook::Utils::split(const std::string& str, const std::string& delim) {
     std::vector<std::string> tokens;
     size_t last = 0;
     auto pos = str.find(delim);
@@ -197,7 +197,7 @@ std::vector<std::string> Doxybook2::Utils::split(const std::string& str, const s
     return tokens;
 }
 
-void Doxybook2::Utils::createDirectory(const std::string& path) {
+void Doxybook::Utils::createDirectory(const std::string& path) {
     auto* dir = opendir(path.c_str());
     if (dir) {
         closedir(dir);

@@ -7,27 +7,27 @@
 #include <nlohmann/json.hpp>
 #include <unordered_set>
 
-static bool isFunctionType(const Doxybook2::Type type) {
+static bool isFunctionType(const Doxybook::Type type) {
     switch (type) {
-        case Doxybook2::Type::FUNCTIONS:
-        case Doxybook2::Type::FRIENDS:
-        case Doxybook2::Type::SIGNALS:
-        case Doxybook2::Type::SLOTS:
-        case Doxybook2::Type::EVENTS:
+        case Doxybook::Type::FUNCTIONS:
+        case Doxybook::Type::FRIENDS:
+        case Doxybook::Type::SIGNALS:
+        case Doxybook::Type::SLOTS:
+        case Doxybook::Type::EVENTS:
             return true;
         default:
             return false;
     }
 }
 
-Doxybook2::JsonConverter::JsonConverter(const Config& config,
+Doxybook::JsonConverter::JsonConverter(const Config& config,
     const Doxygen& doxygen,
     const TextPrinter& plainPrinter,
     const TextPrinter& markdownPrinter)
     : config(config), doxygen(doxygen), plainPrinter(plainPrinter), markdownPrinter(markdownPrinter) {
 }
 
-nlohmann::json Doxybook2::JsonConverter::convert(const std::vector<std::string>& vec) const {
+nlohmann::json Doxybook::JsonConverter::convert(const std::vector<std::string>& vec) const {
     nlohmann::json json = nlohmann::json::array();
     for (const auto& item : vec) {
         json.push_back(item);
@@ -35,7 +35,7 @@ nlohmann::json Doxybook2::JsonConverter::convert(const std::vector<std::string>&
     return json;
 }
 
-nlohmann::json Doxybook2::JsonConverter::convert(const Node::ClassReference& klass) const {
+nlohmann::json Doxybook::JsonConverter::convert(const Node::ClassReference& klass) const {
     nlohmann::json json;
     if (!klass.refid.empty())
         json["refid"] = klass.refid;
@@ -48,7 +48,7 @@ nlohmann::json Doxybook2::JsonConverter::convert(const Node::ClassReference& kla
     return json;
 }
 
-nlohmann::json Doxybook2::JsonConverter::convert(const Node::ClassReferences& klasses) const {
+nlohmann::json Doxybook::JsonConverter::convert(const Node::ClassReferences& klasses) const {
     nlohmann::json json = nlohmann::json::array();
     for (const auto& base : klasses) {
         json.push_back(convert(base));
@@ -56,7 +56,7 @@ nlohmann::json Doxybook2::JsonConverter::convert(const Node::ClassReferences& kl
     return json;
 }
 
-nlohmann::json Doxybook2::JsonConverter::convert(const Node::Location& location) const {
+nlohmann::json Doxybook::JsonConverter::convert(const Node::Location& location) const {
     nlohmann::json json;
     json["file"] = location.file;
     json["line"] = location.line;
@@ -70,7 +70,7 @@ nlohmann::json Doxybook2::JsonConverter::convert(const Node::Location& location)
     return json;
 }
 
-nlohmann::json Doxybook2::JsonConverter::convert(const Node::Param& param) const {
+nlohmann::json Doxybook::JsonConverter::convert(const Node::Param& param) const {
     nlohmann::json json;
     json["type"] = param.type;
     json["typePlain"] = param.typePlain;
@@ -82,7 +82,7 @@ nlohmann::json Doxybook2::JsonConverter::convert(const Node::Param& param) const
     return json;
 }
 
-nlohmann::json Doxybook2::JsonConverter::convert(const Node& node) const {
+nlohmann::json Doxybook::JsonConverter::convert(const Node& node) const {
     nlohmann::json json;
     if (node.getKind() == Kind::FILE) {
         if (node.getParent()->getKind() == Kind::DIR) {
@@ -143,14 +143,14 @@ nlohmann::json Doxybook2::JsonConverter::convert(const Node& node) const {
     return json;
 }
 
-nlohmann::json Doxybook2::JsonConverter::convert(const Node::ParameterListItem& parameterItem) const {
+nlohmann::json Doxybook::JsonConverter::convert(const Node::ParameterListItem& parameterItem) const {
     nlohmann::json json;
     json["name"] = parameterItem.name;
     json["text"] = parameterItem.text;
     return json;
 }
 
-nlohmann::json Doxybook2::JsonConverter::convert(const Node::ParameterList& parameterList) const {
+nlohmann::json Doxybook::JsonConverter::convert(const Node::ParameterList& parameterList) const {
     nlohmann::json json = nlohmann::json::array();
     for (const auto& item : parameterList) {
         json.push_back(convert(item));
@@ -158,7 +158,7 @@ nlohmann::json Doxybook2::JsonConverter::convert(const Node::ParameterList& para
     return json;
 }
 
-nlohmann::json Doxybook2::JsonConverter::convert(const Node& node, const Node::Data& data) const {
+nlohmann::json Doxybook::JsonConverter::convert(const Node& node, const Node::Data& data) const {
     nlohmann::json json;
     if (!data.details.empty())
         json["details"] = data.details;
@@ -276,7 +276,7 @@ nlohmann::json Doxybook2::JsonConverter::convert(const Node& node, const Node::D
     return json;
 }
 
-nlohmann::json Doxybook2::JsonConverter::getAsJson(const Node& node) const {
+nlohmann::json Doxybook::JsonConverter::getAsJson(const Node& node) const {
     auto [data, childrenDataMap] = node.loadData(config, plainPrinter, markdownPrinter, doxygen.getCache());
 
     nlohmann::json json = convert(node);

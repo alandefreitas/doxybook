@@ -9,7 +9,7 @@ namespace tinyxml2 {
     class XMLDocument;
 }
 
-namespace Doxybook2 {
+namespace Doxybook {
     class Xml {
     public:
         class Element;

@@ -1,5 +1,5 @@
 {
-  "baseUrl": "/doxybook2/mkdocs-bootswatch/",
+  "baseUrl": "/doxybook/mkdocs-bootswatch/",
   "indexInFolders": true,
   "linkSuffix": "/",
   "indexClassesName": "index",

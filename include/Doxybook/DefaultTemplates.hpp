@@ -4,7 +4,7 @@
 #include <unordered_map>
 #include <vector>
 
-namespace Doxybook2 {
+namespace Doxybook {
     struct DefaultTemplate {
         std::string src;
         std::vector<std::string> dependencies;
@@ -12,4 +12,4 @@ namespace Doxybook2 {
 
     extern std::unordered_map<std::string, DefaultTemplate> defaultTemplates;
     extern void saveDefaultTemplates(const std::string& path);
-} // namespace Doxybook2
+} // namespace Doxybook

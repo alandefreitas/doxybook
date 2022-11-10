@@ -3,7 +3,7 @@
 #include <sstream>
 #include <string>
 
-namespace Doxybook2 {
+namespace Doxybook {
     namespace Path {
         namespace Detail {
             inline void join(std::stringstream& ss, const std::string& first) {
@@ -41,4 +41,4 @@ namespace Doxybook2 {
             }
         }
     }; // namespace Path
-} // namespace Doxybook2
+} // namespace Doxybook

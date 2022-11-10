@@ -11,12 +11,12 @@
 #include <unordered_map>
 #include <spdlog/spdlog.h>
 
-class Doxybook2::Node::Temp {
+class Doxybook::Node::Temp {
 public:
     XmlTextParser::Node brief;
 };
 
-static Doxybook2::NodePtr findInCache(Doxybook2::NodeCacheMap& cache, const std::string& refid) {
+static Doxybook::NodePtr findInCache(Doxybook::NodeCacheMap& cache, const std::string& refid) {
     const auto found = cache.find(refid);
     if (found != cache.end()) {
         return found->second;
@@ -25,23 +25,23 @@ static Doxybook2::NodePtr findInCache(Doxybook2::NodeCacheMap& cache, const std:
     }
 }
 
-static Doxybook2::NodePtr findOrCreate(const std::string& inputDir,
-    Doxybook2::NodeCacheMap& cache,
+static Doxybook::NodePtr findOrCreate(const std::string& inputDir,
+    Doxybook::NodeCacheMap& cache,
     const std::string& refid,
     const bool isGroupOrFile) {
     auto found = findInCache(cache, refid);
     if (found) {
         if (found->isEmpty()) {
-            return Doxybook2::Node::parse(cache, inputDir, found, isGroupOrFile);
+            return Doxybook::Node::parse(cache, inputDir, found, isGroupOrFile);
         } else {
             return found;
         }
     } else {
-        return Doxybook2::Node::parse(cache, inputDir, refid, isGroupOrFile);
+        return Doxybook::Node::parse(cache, inputDir, refid, isGroupOrFile);
     }
 }
 
-Doxybook2::NodePtr Doxybook2::Node::parse(NodeCacheMap& cache,
+Doxybook::NodePtr Doxybook::Node::parse(NodeCacheMap& cache,
     const std::string& inputDir,
     const std::string& refid,
     const bool isGroupOrFile) {
@@ -50,8 +50,8 @@ Doxybook2::NodePtr Doxybook2::Node::parse(NodeCacheMap& cache,
     return parse(cache, inputDir, ptr, isGroupOrFile);
 }
 
-Doxybook2::NodePtr
-Doxybook2::Node::parse(NodeCacheMap& cache, const std::string& inputDir, const NodePtr& ptr, const bool isGroupOrFile) {
+Doxybook::NodePtr
+Doxybook::Node::parse(NodeCacheMap& cache, const std::string& inputDir, const NodePtr& ptr, const bool isGroupOrFile) {
     const auto refidPath = Utils::join(inputDir, ptr->refid + ".xml");
     spdlog::info("Loading {}", refidPath);
     Xml xml(refidPath);
@@ -154,7 +154,7 @@ Doxybook2::Node::parse(NodeCacheMap& cache, const std::string& inputDir, const N
     return ptr;
 }
 
-Doxybook2::NodePtr Doxybook2::Node::parse(Xml::Element& memberdef, const std::string& refid) {
+Doxybook::NodePtr Doxybook::Node::parse(Xml::Element& memberdef, const std::string& refid) {
     assert(!refid.empty());
 
     auto ptr = std::make_shared<Node>(refid);
@@ -188,14 +188,14 @@ Doxybook2::NodePtr Doxybook2::Node::parse(Xml::Element& memberdef, const std::st
     return ptr;
 }
 
-Doxybook2::Xml::Element Doxybook2::Node::assertChild(const Xml& xml, const std::string& name) {
+Doxybook::Xml::Element Doxybook::Node::assertChild(const Xml& xml, const std::string& name) {
     auto child = xml.firstChildElement(name);
     if (!child)
         throw EXCEPTION("Unable to find <{}> element in root element file {}", name, xml.getPath());
     return child;
 }
 
-Doxybook2::Xml::Element Doxybook2::Node::assertChild(const Xml::Element& xml, const std::string& name) {
+Doxybook::Xml::Element Doxybook::Node::assertChild(const Xml::Element& xml, const std::string& name) {
     auto child = xml.firstChildElement(name);
     if (!child)
         throw EXCEPTION("Unable to find <{}> element in element <{}> line {} file {}",
@@ -206,12 +206,12 @@ Doxybook2::Xml::Element Doxybook2::Node::assertChild(const Xml::Element& xml, co
     return child;
 }
 
-Doxybook2::Node::Node(const std::string& refid) : temp(new Temp), refid(refid) {
+Doxybook::Node::Node(const std::string& refid) : temp(new Temp), refid(refid) {
 }
 
-Doxybook2::Node::~Node() = default;
+Doxybook::Node::~Node() = default;
 
-void Doxybook2::Node::parseBaseInfo(const Xml::Element& element) {
+void Doxybook::Node::parseBaseInfo(const Xml::Element& element) {
     const auto briefdescription = element.firstChildElement("briefdescription");
     if (briefdescription) {
         temp->brief = XmlTextParser::parseParas(briefdescription);
@@ -231,7 +231,7 @@ void Doxybook2::Node::parseBaseInfo(const Xml::Element& element) {
     type = kindToType(kind);
 }
 
-void Doxybook2::Node::parseInheritanceInfo(const Xml::Element& element) {
+void Doxybook::Node::parseInheritanceInfo(const Xml::Element& element) {
     element.allChildElements("basecompoundref", [&](Xml::Element& e) {
         ClassReference base;
         base.refid = e.getAttr("refid", "");
@@ -251,7 +251,7 @@ void Doxybook2::Node::parseInheritanceInfo(const Xml::Element& element) {
     });
 }
 
-void Doxybook2::Node::finalize(const Config& config,
+void Doxybook::Node::finalize(const Config& config,
     const TextPrinter& plainPrinter,
     const TextPrinter& markdownPrinter,
     const NodeCacheMap& cache) {
@@ -367,7 +367,7 @@ void Doxybook2::Node::finalize(const Config& config,
     baseClasses = getAllBaseClasses(cache);
 }
 
-Doxybook2::Node::LoadDataResult Doxybook2::Node::loadData(const Config& config,
+Doxybook::Node::LoadDataResult Doxybook::Node::loadData(const Config& config,
     const TextPrinter& plainPrinter,
     const TextPrinter& markdownPrinter,
     const NodeCacheMap& cache) const {
@@ -417,7 +417,7 @@ Doxybook2::Node::LoadDataResult Doxybook2::Node::loadData(const Config& config,
     return {data, childrenData};
 }
 
-Doxybook2::Node::Data Doxybook2::Node::loadData(const Config& /*config*/,
+Doxybook::Node::Data Doxybook::Node::loadData(const Config& /*config*/,
     const TextPrinter& plainPrinter,
     const TextPrinter& markdownPrinter,
     const NodeCacheMap& cache,
@@ -666,7 +666,7 @@ Doxybook2::Node::Data Doxybook2::Node::loadData(const Config& /*config*/,
     return data;
 }
 
-Doxybook2::NodePtr Doxybook2::Node::findChild(const std::string& refid) const {
+Doxybook::NodePtr Doxybook::Node::findChild(const std::string& refid) const {
     for (const auto& ptr : children) {
         if (ptr->refid == refid)
             return ptr;
@@ -675,14 +675,14 @@ Doxybook2::NodePtr Doxybook2::Node::findChild(const std::string& refid) const {
     throw EXCEPTION("Refid {} not found in {}", refid, this->refid);
 }
 
-Doxybook2::NodePtr Doxybook2::Node::find(const std::string& refid) const {
+Doxybook::NodePtr Doxybook::Node::find(const std::string& refid) const {
     auto test = findRecursively(refid);
     if (!test)
         throw EXCEPTION("Refid {} not found in {}", refid, this->refid);
     return test;
 }
 
-Doxybook2::NodePtr Doxybook2::Node::findRecursively(const std::string& refid) const {
+Doxybook::NodePtr Doxybook::Node::findRecursively(const std::string& refid) const {
     for (auto it = children.begin(); it != children.end(); ++it) {
         if (it->get()->refid == refid)
             return *it;
@@ -693,7 +693,7 @@ Doxybook2::NodePtr Doxybook2::Node::findRecursively(const std::string& refid) co
     return nullptr;
 }
 
-Doxybook2::Node::ClassReferences Doxybook2::Node::getAllBaseClasses(const NodeCacheMap& cache) {
+Doxybook::Node::ClassReferences Doxybook::Node::getAllBaseClasses(const NodeCacheMap& cache) {
     std::list<ClassReference> newTemp;
     for (auto& base : baseClasses) {
         newTemp.push_back(base);

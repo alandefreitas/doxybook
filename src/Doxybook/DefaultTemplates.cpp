@@ -511,8 +511,8 @@ createForVisibilities(Fn& fn, const std::string& title, const std::string& key, 
     std::stringstream ss;
     for (const auto& visibility : ALL_VISIBILITIES) {
         ss << fn(visibility,
-            Doxybook2::Utils::title(visibility) + " " + title,
-            visibility + Doxybook2::Utils::title(key),
+            Doxybook::Utils::title(visibility) + " " + title,
+            visibility + Doxybook::Utils::title(key),
             inherited);
     }
     return ss.str();
@@ -1006,7 +1006,7 @@ static const std::string TEMPLATE_INDEX_EXAMPLES =
 )";
 
 // clang-format off
-std::unordered_map<std::string, Doxybook2::DefaultTemplate> Doxybook2::defaultTemplates = {
+std::unordered_map<std::string, Doxybook::DefaultTemplate> Doxybook::defaultTemplates = {
     {"meta", {
         TEMPLATE_META,
         {}
@@ -1130,7 +1130,7 @@ std::unordered_map<std::string, Doxybook2::DefaultTemplate> Doxybook2::defaultTe
 };
 // clang-format on
 
-void Doxybook2::saveDefaultTemplates(const std::string& path) {
+void Doxybook::saveDefaultTemplates(const std::string& path) {
     for (const auto& tmpl : defaultTemplates) {
         const auto tmplPath = Utils::join(path, tmpl.first + ".tmpl");
         spdlog::info("Creating default template {}", tmplPath);

@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-namespace Doxybook2 {
+namespace Doxybook {
     namespace Utils {
         namespace Detail {
             inline void join(std::stringstream& ss, const std::string& first) {
@@ -56,4 +56,4 @@ namespace Doxybook2 {
         extern std::string normalizeLanguage(const std::string& language);
         extern std::string replaceNewline(std::string str);
     } // namespace Utils
-} // namespace Doxybook2
+} // namespace Doxybook

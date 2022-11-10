@@ -2,7 +2,7 @@
 #include <Doxybook/TextPlainPrinter.hpp>
 #include <Doxybook/Utils.hpp>
 
-std::string Doxybook2::TextPlainPrinter::print(const XmlTextParser::Node& node, const std::string& language) const {
+std::string Doxybook::TextPlainPrinter::print(const XmlTextParser::Node& node, const std::string& language) const {
     std::stringstream ss;
     print(ss, node);
     auto str = ss.str();
@@ -10,7 +10,7 @@ std::string Doxybook2::TextPlainPrinter::print(const XmlTextParser::Node& node, 
     return str;
 }
 
-void Doxybook2::TextPlainPrinter::print(std::stringstream& ss, const XmlTextParser::Node& node) const {
+void Doxybook::TextPlainPrinter::print(std::stringstream& ss, const XmlTextParser::Node& node) const {
     switch (node.type) {
         case XmlTextParser::Node::Type::TEXT: {
             ss << node.data;

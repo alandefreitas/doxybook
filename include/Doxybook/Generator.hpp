@@ -5,7 +5,7 @@
 #include <string>
 #include <unordered_set>
 
-namespace Doxybook2 {
+namespace Doxybook {
     class Generator {
     public:
         typedef std::unordered_set<Kind> Filter;
@@ -48,4 +48,4 @@ namespace Doxybook2 {
         const JsonConverter& jsonConverter;
         Renderer renderer;
     };
-} // namespace Doxybook2
+} // namespace Doxybook

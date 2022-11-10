@@ -4,7 +4,7 @@
 #include "Config.hpp"
 #include "Node.hpp"
 
-namespace Doxybook2 {
+namespace Doxybook {
     class Doxygen;
 
     class TextPrinter {

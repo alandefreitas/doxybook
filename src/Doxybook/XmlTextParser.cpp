@@ -5,7 +5,7 @@
 #include <functional>
 #include <unordered_map>
 
-Doxybook2::XmlTextParser::Node::Type Doxybook2::XmlTextParser::strToType(const std::string& str) {
+Doxybook::XmlTextParser::Node::Type Doxybook::XmlTextParser::strToType(const std::string& str) {
     static std::unordered_map<std::string, Node::Type> kinds = {
         {"para", Node::Type::PARA},
         {"bold", Node::Type::BOLD},
@@ -74,7 +74,7 @@ Doxybook2::XmlTextParser::Node::Type Doxybook2::XmlTextParser::strToType(const s
     return it->second;
 }
 
-Doxybook2::XmlTextParser::Node Doxybook2::XmlTextParser::parseParas(const Xml::Element& element) {
+Doxybook::XmlTextParser::Node Doxybook::XmlTextParser::parseParas(const Xml::Element& element) {
     Node result;
     result.type = Node::Type::PARAS;
     std::vector<Node*> tree = {&result};
@@ -86,7 +86,7 @@ Doxybook2::XmlTextParser::Node Doxybook2::XmlTextParser::parseParas(const Xml::E
     return result;
 }
 
-Doxybook2::XmlTextParser::Node Doxybook2::XmlTextParser::parsePara(const Xml::Element& element) {
+Doxybook::XmlTextParser::Node Doxybook::XmlTextParser::parsePara(const Xml::Element& element) {
     Node result;
     result.type = Node::Type::PARA;
     std::vector<Node*> tree = {&result};
@@ -94,7 +94,7 @@ Doxybook2::XmlTextParser::Node Doxybook2::XmlTextParser::parsePara(const Xml::El
     return result;
 }
 
-void Doxybook2::XmlTextParser::traverse(std::vector<Node*> tree, const Xml::Node& element) {
+void Doxybook::XmlTextParser::traverse(std::vector<Node*> tree, const Xml::Node& element) {
     if (!element)
         return;
 

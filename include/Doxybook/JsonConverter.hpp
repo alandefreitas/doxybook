@@ -4,7 +4,7 @@
 #include "Node.hpp"
 #include "Config.hpp"
 
-namespace Doxybook2 {
+namespace Doxybook {
     class JsonConverter {
     public:
         explicit JsonConverter(const Config& config,

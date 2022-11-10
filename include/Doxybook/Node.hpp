@@ -7,7 +7,7 @@
 #include <unordered_map>
 #include <vector>
 
-namespace Doxybook2 {
+namespace Doxybook {
     class TextPrinter;
     class Node;
     struct Config;
@@ -264,4 +264,4 @@ namespace Doxybook2 {
         static Xml::Element assertChild(const Xml::Element& xml, const std::string& name);
         static Xml::Element assertChild(const Xml& xml, const std::string& name);
     };
-} // namespace Doxybook2
+} // namespace Doxybook

@@ -1,7 +1,7 @@
 #pragma once
 #include "TextPrinter.hpp"
 #include <sstream>
-namespace Doxybook2 {
+namespace Doxybook {
     class TextMarkdownPrinter : public TextPrinter {
       public:
         explicit TextMarkdownPrinter(const Config& config, std::string inputDir, const Doxygen& doxygen)
@@ -38,4 +38,4 @@ namespace Doxybook2 {
 
         std::string inputDir;
     };
-} // namespace Doxybook2
+} // namespace Doxybook

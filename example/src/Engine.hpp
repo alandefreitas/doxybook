@@ -32,9 +32,9 @@ namespace Engine {
     extern std::string getVersion();
 } // namespace Engine
 
-/*! \mainpage Doxybook2 Example
+/*! \mainpage Doxybook Example
 
-This is a mainpage of Doxybook2 example output. This file is generated from
+This is a mainpage of Doxybook example output. This file is generated from
 `\mainpage` command within Engine.hpp file.
 
 ## Images:

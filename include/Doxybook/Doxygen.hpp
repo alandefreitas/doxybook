@@ -3,7 +3,7 @@
 #include <string>
 #include "Node.hpp"
 
-namespace Doxybook2 {
+namespace Doxybook {
     class TextPrinter;
 
     class Doxygen {

@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 
-namespace Doxybook2 {
+namespace Doxybook {
     class Exception : public std::exception {
     public:
         Exception() = default;

@@ -2,7 +2,7 @@
 #include "Enums.hpp"
 #include <string>
 
-namespace Doxybook2 {
+namespace Doxybook {
     struct Config {
         // Where to store the output files?
         std::string outputDir;
@@ -119,4 +119,4 @@ namespace Doxybook2 {
     void loadConfig(Config& config, const std::string& path);
     void loadConfigData(Config& config, const std::string& src);
     void saveConfig(Config& config, const std::string& path);
-} // namespace Doxybook2
+} // namespace Doxybook

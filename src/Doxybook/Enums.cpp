@@ -3,91 +3,91 @@
 #include <Doxybook/Enums.hpp>
 #include <unordered_map>
 
-using KindStrPair = std::pair<std::string, Doxybook2::Kind>;
-using TypeStrPair = std::pair<std::string, Doxybook2::Type>;
-using VirtualStrPair = std::pair<std::string, Doxybook2::Virtual>;
-using VisibilityStrPair = std::pair<std::string, Doxybook2::Visibility>;
-using FolderCategoryStrPair = std::pair<std::string, Doxybook2::FolderCategory>;
+using KindStrPair = std::pair<std::string, Doxybook::Kind>;
+using TypeStrPair = std::pair<std::string, Doxybook::Type>;
+using VirtualStrPair = std::pair<std::string, Doxybook::Virtual>;
+using VisibilityStrPair = std::pair<std::string, Doxybook::Visibility>;
+using FolderCategoryStrPair = std::pair<std::string, Doxybook::FolderCategory>;
 
 // clang-format off
 static const std::vector<KindStrPair> KIND_STRS = {
-    {"class", Doxybook2::Kind::CLASS},
-    {"namespace", Doxybook2::Kind::NAMESPACE},
-    {"struct", Doxybook2::Kind::STRUCT},
-    {"interface", Doxybook2::Kind::INTERFACE},
-    {"function", Doxybook2::Kind::FUNCTION},
-    {"variable", Doxybook2::Kind::VARIABLE},
-    {"typedef", Doxybook2::Kind::TYPEDEF},
-    {"using", Doxybook2::Kind::USING},
-    {"enum", Doxybook2::Kind::ENUM},
-    {"union", Doxybook2::Kind::UNION},
-    {"enumvalue", Doxybook2::Kind::ENUMVALUE},
-    {"dir", Doxybook2::Kind::DIR},
-    {"file", Doxybook2::Kind::FILE},
-    {"group", Doxybook2::Kind::MODULE},
-    {"friend", Doxybook2::Kind::FRIEND},
-    {"page", Doxybook2::Kind::PAGE},
-    {"example", Doxybook2::Kind::EXAMPLE},
-    {"signal", Doxybook2::Kind::SIGNAL},
-    {"slot", Doxybook2::Kind::SLOT},
-    {"property", Doxybook2::Kind::PROPERTY},
-    {"event", Doxybook2::Kind::EVENT},
-    {"define", Doxybook2::Kind::DEFINE},
-    {"enum", Doxybook2::Kind::JAVAENUM},                  // only for enum->string conversion
-    {"enum constant", Doxybook2::Kind::JAVAENUMCONSTANT}  // only for enum->string conversion
+    {"class", Doxybook::Kind::CLASS},
+    {"namespace", Doxybook::Kind::NAMESPACE},
+    {"struct", Doxybook::Kind::STRUCT},
+    {"interface", Doxybook::Kind::INTERFACE},
+    {"function", Doxybook::Kind::FUNCTION},
+    {"variable", Doxybook::Kind::VARIABLE},
+    {"typedef", Doxybook::Kind::TYPEDEF},
+    {"using", Doxybook::Kind::USING},
+    {"enum", Doxybook::Kind::ENUM},
+    {"union", Doxybook::Kind::UNION},
+    {"enumvalue", Doxybook::Kind::ENUMVALUE},
+    {"dir", Doxybook::Kind::DIR},
+    {"file", Doxybook::Kind::FILE},
+    {"group", Doxybook::Kind::MODULE},
+    {"friend", Doxybook::Kind::FRIEND},
+    {"page", Doxybook::Kind::PAGE},
+    {"example", Doxybook::Kind::EXAMPLE},
+    {"signal", Doxybook::Kind::SIGNAL},
+    {"slot", Doxybook::Kind::SLOT},
+    {"property", Doxybook::Kind::PROPERTY},
+    {"event", Doxybook::Kind::EVENT},
+    {"define", Doxybook::Kind::DEFINE},
+    {"enum", Doxybook::Kind::JAVAENUM},                  // only for enum->string conversion
+    {"enum constant", Doxybook::Kind::JAVAENUMCONSTANT}  // only for enum->string conversion
 };
 
 static const std::vector<TypeStrPair> TYPE_STRS = {
-    {"attributes", Doxybook2::Type::ATTRIBUTES},
-    {"classes", Doxybook2::Type::CLASSES},
-    {"defines", Doxybook2::Type::DEFINES},
-    {"files", Doxybook2::Type::FILES},
-    {"dirs", Doxybook2::Type::DIRS},
-    {"friends", Doxybook2::Type::FRIENDS},
-    {"functions", Doxybook2::Type::FUNCTIONS},
-    {"modules", Doxybook2::Type::MODULES},
-    {"namespaces", Doxybook2::Type::NAMESPACES},
-    {"types", Doxybook2::Type::TYPES},
-    {"pages", Doxybook2::Type::PAGES},
-    {"examples", Doxybook2::Type::EXAMPLES},
-    {"signals", Doxybook2::Type::SIGNALS},
-    {"slots", Doxybook2::Type::SLOTS},
-    {"events", Doxybook2::Type::EVENTS},
-    {"properties", Doxybook2::Type::PROPERTIES},
-    {"javaenumconstants", Doxybook2::Type::JAVAENUMCONSTANTS}
+    {"attributes", Doxybook::Type::ATTRIBUTES},
+    {"classes", Doxybook::Type::CLASSES},
+    {"defines", Doxybook::Type::DEFINES},
+    {"files", Doxybook::Type::FILES},
+    {"dirs", Doxybook::Type::DIRS},
+    {"friends", Doxybook::Type::FRIENDS},
+    {"functions", Doxybook::Type::FUNCTIONS},
+    {"modules", Doxybook::Type::MODULES},
+    {"namespaces", Doxybook::Type::NAMESPACES},
+    {"types", Doxybook::Type::TYPES},
+    {"pages", Doxybook::Type::PAGES},
+    {"examples", Doxybook::Type::EXAMPLES},
+    {"signals", Doxybook::Type::SIGNALS},
+    {"slots", Doxybook::Type::SLOTS},
+    {"events", Doxybook::Type::EVENTS},
+    {"properties", Doxybook::Type::PROPERTIES},
+    {"javaenumconstants", Doxybook::Type::JAVAENUMCONSTANTS}
 };
 
 static const std::vector<VirtualStrPair> VIRTUAL_STRS = {
-    {"non-virtual", Doxybook2::Virtual::NON_VIRTUAL},
-    {"virtual", Doxybook2::Virtual::VIRTUAL},
-    {"pure", Doxybook2::Virtual::PURE_VIRTUAL},
-    {"pure-virtual", Doxybook2::Virtual::PURE_VIRTUAL}
+    {"non-virtual", Doxybook::Virtual::NON_VIRTUAL},
+    {"virtual", Doxybook::Virtual::VIRTUAL},
+    {"pure", Doxybook::Virtual::PURE_VIRTUAL},
+    {"pure-virtual", Doxybook::Virtual::PURE_VIRTUAL}
 };
 
 static const std::vector<VisibilityStrPair> VISIBILITY_STRS = {
-    {"public", Doxybook2::Visibility::PUBLIC},
-    {"protected", Doxybook2::Visibility::PROTECTED},
-    {"private", Doxybook2::Visibility::PRIVATE},
-    {"package", Doxybook2::Visibility::PACKAGE}
+    {"public", Doxybook::Visibility::PUBLIC},
+    {"protected", Doxybook::Visibility::PROTECTED},
+    {"private", Doxybook::Visibility::PRIVATE},
+    {"package", Doxybook::Visibility::PACKAGE}
 };
 
 static const std::vector<FolderCategoryStrPair> FOLDER_CATEGORY_STRS = {
-    {"modules", Doxybook2::FolderCategory::MODULES},
-    {"namespaces", Doxybook2::FolderCategory::NAMESPACES},
-    {"files", Doxybook2::FolderCategory::FILES},
-    {"examples", Doxybook2::FolderCategory::EXAMPLES},
-    {"classes", Doxybook2::FolderCategory::CLASSES},
-    {"pages", Doxybook2::FolderCategory::PAGES}
+    {"modules", Doxybook::FolderCategory::MODULES},
+    {"namespaces", Doxybook::FolderCategory::NAMESPACES},
+    {"files", Doxybook::FolderCategory::FILES},
+    {"examples", Doxybook::FolderCategory::EXAMPLES},
+    {"classes", Doxybook::FolderCategory::CLASSES},
+    {"pages", Doxybook::FolderCategory::PAGES}
 };
 // clang-format on
 
 template <typename Enum> struct EnumName { static inline const auto name = "unknown"; };
 
-template <> struct EnumName<Doxybook2::Kind> { static inline const auto name = "Kind"; };
-template <> struct EnumName<Doxybook2::Type> { static inline const auto name = "Type"; };
-template <> struct EnumName<Doxybook2::Virtual> { static inline const auto name = "Virtual"; };
-template <> struct EnumName<Doxybook2::Visibility> { static inline const auto name = "Visibility"; };
-template <> struct EnumName<Doxybook2::FolderCategory> { static inline const auto name = "FolderCategory"; };
+template <> struct EnumName<Doxybook::Kind> { static inline const auto name = "Kind"; };
+template <> struct EnumName<Doxybook::Type> { static inline const auto name = "Type"; };
+template <> struct EnumName<Doxybook::Virtual> { static inline const auto name = "Virtual"; };
+template <> struct EnumName<Doxybook::Visibility> { static inline const auto name = "Visibility"; };
+template <> struct EnumName<Doxybook::FolderCategory> { static inline const auto name = "FolderCategory"; };
 
 template <typename Enum>
 static Enum toEnum(const std::vector<std::pair<std::string, Enum>>& pairs, const std::string& str) {
@@ -114,47 +114,47 @@ static std::string fromEnum(const std::vector<std::pair<std::string, Enum>>& pai
     return it->first;
 }
 
-Doxybook2::Kind Doxybook2::toEnumKind(const std::string& str) {
+Doxybook::Kind Doxybook::toEnumKind(const std::string& str) {
     return toEnum<Kind>(KIND_STRS, str);
 }
 
-std::string Doxybook2::toStr(const Kind value) {
+std::string Doxybook::toStr(const Kind value) {
     return fromEnum<Kind>(KIND_STRS, value);
 }
 
-Doxybook2::Virtual Doxybook2::toEnumVirtual(const std::string& str) {
+Doxybook::Virtual Doxybook::toEnumVirtual(const std::string& str) {
     return toEnum<Virtual>(VIRTUAL_STRS, str);
 }
 
-std::string Doxybook2::toStr(const Virtual value) {
+std::string Doxybook::toStr(const Virtual value) {
     return fromEnum<Virtual>(VIRTUAL_STRS, value);
 }
 
-Doxybook2::Visibility Doxybook2::toEnumVisibility(const std::string& str) {
+Doxybook::Visibility Doxybook::toEnumVisibility(const std::string& str) {
     return toEnum<Visibility>(VISIBILITY_STRS, str);
 }
 
-std::string Doxybook2::toStr(const Visibility value) {
+std::string Doxybook::toStr(const Visibility value) {
     return fromEnum<Visibility>(VISIBILITY_STRS, value);
 }
 
-Doxybook2::Type Doxybook2::toEnumType(const std::string& str) {
+Doxybook::Type Doxybook::toEnumType(const std::string& str) {
     return toEnum<Type>(TYPE_STRS, str);
 }
 
-std::string Doxybook2::toStr(const Type value) {
+std::string Doxybook::toStr(const Type value) {
     return fromEnum<Type>(TYPE_STRS, value);
 }
 
-Doxybook2::FolderCategory Doxybook2::toEnumFolderCategory(const std::string& str) {
+Doxybook::FolderCategory Doxybook::toEnumFolderCategory(const std::string& str) {
     return toEnum<FolderCategory>(FOLDER_CATEGORY_STRS, str);
 }
 
-std::string Doxybook2::toStr(const FolderCategory value) {
+std::string Doxybook::toStr(const FolderCategory value) {
     return fromEnum<FolderCategory>(FOLDER_CATEGORY_STRS, value);
 }
 
-Doxybook2::Type Doxybook2::kindToType(const Doxybook2::Kind kind) {
+Doxybook::Type Doxybook::kindToType(const Doxybook::Kind kind) {
     switch (kind) {
         case Kind::DEFINE: {
             return Type::DEFINES;
@@ -218,14 +218,14 @@ Doxybook2::Type Doxybook2::kindToType(const Doxybook2::Kind kind) {
     return Type::NONE;
 }
 
-bool Doxybook2::isKindStructured(const Kind kind) {
+bool Doxybook::isKindStructured(const Kind kind) {
     switch (kind) {
-        case Doxybook2::Kind::CLASS:
-        case Doxybook2::Kind::NAMESPACE:
-        case Doxybook2::Kind::STRUCT:
-        case Doxybook2::Kind::UNION:
-        case Doxybook2::Kind::JAVAENUM:
-        case Doxybook2::Kind::INTERFACE: {
+        case Doxybook::Kind::CLASS:
+        case Doxybook::Kind::NAMESPACE:
+        case Doxybook::Kind::STRUCT:
+        case Doxybook::Kind::UNION:
+        case Doxybook::Kind::JAVAENUM:
+        case Doxybook::Kind::INTERFACE: {
             return true;
         }
         default: {
@@ -234,26 +234,26 @@ bool Doxybook2::isKindStructured(const Kind kind) {
     }
 }
 
-bool Doxybook2::isKindLanguage(const Kind kind) {
+bool Doxybook::isKindLanguage(const Kind kind) {
     switch (kind) {
-        case Doxybook2::Kind::DEFINE:
-        case Doxybook2::Kind::CLASS:
-        case Doxybook2::Kind::NAMESPACE:
-        case Doxybook2::Kind::STRUCT:
-        case Doxybook2::Kind::UNION:
-        case Doxybook2::Kind::INTERFACE:
-        case Doxybook2::Kind::ENUM:
-        case Doxybook2::Kind::FUNCTION:
-        case Doxybook2::Kind::TYPEDEF:
-        case Doxybook2::Kind::USING:
-        case Doxybook2::Kind::FRIEND:
-        case Doxybook2::Kind::VARIABLE:
-        case Doxybook2::Kind::SIGNAL:
-        case Doxybook2::Kind::SLOT:
-        case Doxybook2::Kind::PROPERTY:
-        case Doxybook2::Kind::EVENT:
-        case Doxybook2::Kind::JAVAENUM:
-        case Doxybook2::Kind::JAVAENUMCONSTANT: {
+        case Doxybook::Kind::DEFINE:
+        case Doxybook::Kind::CLASS:
+        case Doxybook::Kind::NAMESPACE:
+        case Doxybook::Kind::STRUCT:
+        case Doxybook::Kind::UNION:
+        case Doxybook::Kind::INTERFACE:
+        case Doxybook::Kind::ENUM:
+        case Doxybook::Kind::FUNCTION:
+        case Doxybook::Kind::TYPEDEF:
+        case Doxybook::Kind::USING:
+        case Doxybook::Kind::FRIEND:
+        case Doxybook::Kind::VARIABLE:
+        case Doxybook::Kind::SIGNAL:
+        case Doxybook::Kind::SLOT:
+        case Doxybook::Kind::PROPERTY:
+        case Doxybook::Kind::EVENT:
+        case Doxybook::Kind::JAVAENUM:
+        case Doxybook::Kind::JAVAENUMCONSTANT: {
             return true;
         }
         default: {
@@ -262,10 +262,10 @@ bool Doxybook2::isKindLanguage(const Kind kind) {
     }
 }
 
-bool Doxybook2::isKindFile(const Kind kind) {
+bool Doxybook::isKindFile(const Kind kind) {
     switch (kind) {
-        case Doxybook2::Kind::DIR:
-        case Doxybook2::Kind::FILE: {
+        case Doxybook::Kind::DIR:
+        case Doxybook::Kind::FILE: {
             return true;
         }
         default: {
@@ -274,7 +274,7 @@ bool Doxybook2::isKindFile(const Kind kind) {
     }
 }
 
-std::string Doxybook2::typeFolderCategoryToFolderName(const Config& config, FolderCategory type) {
+std::string Doxybook::typeFolderCategoryToFolderName(const Config& config, FolderCategory type) {
     if (!config.useFolders)
         return "";
 
@@ -303,7 +303,7 @@ std::string Doxybook2::typeFolderCategoryToFolderName(const Config& config, Fold
     }
 }
 
-std::string Doxybook2::typeToFolderName(const Config& config, const Type type) {
+std::string Doxybook::typeToFolderName(const Config& config, const Type type) {
     if (!config.useFolders)
         return "";
 
@@ -333,7 +333,7 @@ std::string Doxybook2::typeToFolderName(const Config& config, const Type type) {
     }
 }
 
-std::string Doxybook2::typeToIndexName(const Config& config, const FolderCategory type) {
+std::string Doxybook::typeToIndexName(const Config& config, const FolderCategory type) {
     switch (type) {
         case FolderCategory::MODULES: {
             return config.indexInFolders && config.useFolders ? config.folderGroupsName + "/" + config.indexGroupsName
@@ -368,7 +368,7 @@ std::string Doxybook2::typeToIndexName(const Config& config, const FolderCategor
     }
 }
 
-std::string Doxybook2::typeToIndexTemplate(const Config& config, const FolderCategory type) {
+std::string Doxybook::typeToIndexTemplate(const Config& config, const FolderCategory type) {
     switch (type) {
         case FolderCategory::MODULES: {
             return config.templateIndexGroups;
@@ -394,7 +394,7 @@ std::string Doxybook2::typeToIndexTemplate(const Config& config, const FolderCat
     }
 }
 
-std::string Doxybook2::typeToIndexTitle(const Config& config, const FolderCategory type) {
+std::string Doxybook::typeToIndexTitle(const Config& config, const FolderCategory type) {
     switch (type) {
         case FolderCategory::MODULES: {
             return config.indexGroupsTitle;

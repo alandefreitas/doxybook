@@ -10,6 +10,7 @@ vcpkg_installed/
 *.kdev4
 *~
 doxybook2-*.zip
+doxybook-*.zip
 
 example/**/*.md
 example/**/images/

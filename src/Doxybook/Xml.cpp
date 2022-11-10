@@ -3,37 +3,37 @@
 #include <Doxybook/Exception.hpp>
 #include <Doxybook/Xml.hpp>
 
-Doxybook2::Xml::Node::Node(tinyxml2::XMLNode* ptr) : ptr(ptr) {
+Doxybook::Xml::Node::Node(tinyxml2::XMLNode* ptr) : ptr(ptr) {
 }
 
-Doxybook2::Xml::Node Doxybook2::Xml::Node::nextSibling() const {
+Doxybook::Xml::Node Doxybook::Xml::Node::nextSibling() const {
     return Node(ptr->NextSibling());
 }
 
-Doxybook2::Xml::Node Doxybook2::Xml::Node::firstChild() const {
+Doxybook::Xml::Node Doxybook::Xml::Node::firstChild() const {
     return Node(ptr->FirstChild());
 }
 
-bool Doxybook2::Xml::Node::hasText() const {
+bool Doxybook::Xml::Node::hasText() const {
     return ptr->Value() != nullptr;
 }
 
-std::string Doxybook2::Xml::Node::getText() const {
+std::string Doxybook::Xml::Node::getText() const {
     return ptr->Value();
 }
 
-bool Doxybook2::Xml::Node::isElement() const {
+bool Doxybook::Xml::Node::isElement() const {
     return ptr->ToElement() != nullptr;
 }
 
-Doxybook2::Xml::Element Doxybook2::Xml::Node::asElement() const {
+Doxybook::Xml::Element Doxybook::Xml::Node::asElement() const {
     return Element(ptr->ToElement());
 }
 
-Doxybook2::Xml::Element::Element(tinyxml2::XMLElement* ptr) : ptr(ptr) {
+Doxybook::Xml::Element::Element(tinyxml2::XMLElement* ptr) : ptr(ptr) {
 }
 
-void Doxybook2::Xml::Element::allChildElements(const std::string& name, const ElementCallback& callback) const {
+void Doxybook::Xml::Element::allChildElements(const std::string& name, const ElementCallback& callback) const {
     auto found = firstChildElement(name);
     while (found) {
         callback(found);
@@ -41,70 +41,70 @@ void Doxybook2::Xml::Element::allChildElements(const std::string& name, const El
     }
 }
 
-Doxybook2::Xml::Element Doxybook2::Xml::Element::nextSiblingElement() const {
+Doxybook::Xml::Element Doxybook::Xml::Element::nextSiblingElement() const {
     return Element(ptr->NextSiblingElement());
 }
 
-Doxybook2::Xml::Node Doxybook2::Xml::Element::nextSibling() const {
+Doxybook::Xml::Node Doxybook::Xml::Element::nextSibling() const {
     return Node(ptr->NextSibling());
 }
 
-Doxybook2::Xml::Element Doxybook2::Xml::Element::nextSiblingElement(const std::string& name) const {
+Doxybook::Xml::Element Doxybook::Xml::Element::nextSiblingElement(const std::string& name) const {
     return Element(ptr->NextSiblingElement(name.c_str()));
 }
 
-Doxybook2::Xml::Node Doxybook2::Xml::Element::firstChild() const {
+Doxybook::Xml::Node Doxybook::Xml::Element::firstChild() const {
     return Node(ptr->FirstChild());
 }
 
-Doxybook2::Xml::Element Doxybook2::Xml::Element::firstChildElement() const {
+Doxybook::Xml::Element Doxybook::Xml::Element::firstChildElement() const {
     return Element(ptr->FirstChildElement());
 }
 
-Doxybook2::Xml::Element Doxybook2::Xml::Element::firstChildElement(const std::string& name) const {
+Doxybook::Xml::Element Doxybook::Xml::Element::firstChildElement(const std::string& name) const {
     return Element(ptr->FirstChildElement(name.empty() ? nullptr : name.c_str()));
 }
 
-std::string Doxybook2::Xml::Element::getAttr(const std::string& name) const {
+std::string Doxybook::Xml::Element::getAttr(const std::string& name) const {
     const auto str = ptr->Attribute(name.c_str());
     if (str == nullptr)
         throw EXCEPTION("Attribute {} does not exist in element {}", name, ptr->Name());
     return str;
 }
 
-std::string Doxybook2::Xml::Element::getAttr(const std::string& name, const std::string& defaultValue) const {
+std::string Doxybook::Xml::Element::getAttr(const std::string& name, const std::string& defaultValue) const {
     const auto str = ptr->Attribute(name.c_str());
     if (str == nullptr)
         return defaultValue;
     return str;
 }
 
-std::string Doxybook2::Xml::Element::getName() const {
+std::string Doxybook::Xml::Element::getName() const {
     return ptr->Name();
 }
 
-bool Doxybook2::Xml::Element::hasText() const {
+bool Doxybook::Xml::Element::hasText() const {
     return ptr->GetText() != nullptr;
 }
 
-std::string Doxybook2::Xml::Element::getText() const {
+std::string Doxybook::Xml::Element::getText() const {
     return ptr->GetText();
 }
 
-Doxybook2::Xml::Node Doxybook2::Xml::Element::asNode() const {
+Doxybook::Xml::Node Doxybook::Xml::Element::asNode() const {
     return Node(ptr);
 }
 
-int Doxybook2::Xml::Element::getLine() const {
+int Doxybook::Xml::Element::getLine() const {
     return ptr->GetLineNum();
 }
 
-const Doxybook2::Xml& Doxybook2::Xml::Element::getDocument() const {
+const Doxybook::Xml& Doxybook::Xml::Element::getDocument() const {
     auto xml = reinterpret_cast<const Xml*>(ptr->GetDocument()->GetUserData());
     return *xml;
 }
 
-Doxybook2::Xml::Xml(const std::string& path) : doc(new tinyxml2::XMLDocument) {
+Doxybook::Xml::Xml(const std::string& path) : doc(new tinyxml2::XMLDocument) {
     this->path = path;
     const auto err = doc->LoadFile(path.c_str());
     if (err != tinyxml2::XMLError::XML_SUCCESS) {
@@ -113,8 +113,8 @@ Doxybook2::Xml::Xml(const std::string& path) : doc(new tinyxml2::XMLDocument) {
     doc->SetUserData(this);
 }
 
-Doxybook2::Xml::~Xml() = default;
+Doxybook::Xml::~Xml() = default;
 
-Doxybook2::Xml::Element Doxybook2::Xml::firstChildElement(const std::string& name) const {
+Doxybook::Xml::Element Doxybook::Xml::firstChildElement(const std::string& name) const {
     return Element(doc->FirstChildElement(name.c_str()));
 }

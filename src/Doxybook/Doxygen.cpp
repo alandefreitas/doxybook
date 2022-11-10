@@ -43,10 +43,10 @@ static bool isKindAllowedExamples(const std::string& kind) {
     return kind == "example";
 }
 
-Doxybook2::Doxygen::Doxygen(const Config& config) : config(config), index(std::make_shared<Node>("index")) {
+Doxybook::Doxygen::Doxygen(const Config& config) : config(config), index(std::make_shared<Node>("index")) {
 }
 
-void Doxybook2::Doxygen::load(const std::string& inputDir) {
+void Doxybook::Doxygen::load(const std::string& inputDir) {
     // Remove entires from index which parent has been updated
     const auto cleanup = [](const NodePtr& node) {
         auto it = node->children.begin();
@@ -167,7 +167,7 @@ void Doxybook2::Doxygen::load(const std::string& inputDir) {
     updateGroupPointers(index);
 }
 
-void Doxybook2::Doxygen::updateGroupPointers(const NodePtr& node) {
+void Doxybook::Doxygen::updateGroupPointers(const NodePtr& node) {
     if (node->kind == Kind::MODULE) {
         for (const auto& child : node->children) {
             child->group = node.get();
@@ -181,11 +181,11 @@ void Doxybook2::Doxygen::updateGroupPointers(const NodePtr& node) {
     }
 }
 
-void Doxybook2::Doxygen::finalize(const TextPrinter& plainPrinter, const TextPrinter& markdownPrinter) {
+void Doxybook::Doxygen::finalize(const TextPrinter& plainPrinter, const TextPrinter& markdownPrinter) {
     finalizeRecursively(plainPrinter, markdownPrinter, index);
 }
 
-void Doxybook2::Doxygen::finalizeRecursively(const TextPrinter& plainPrinter,
+void Doxybook::Doxygen::finalizeRecursively(const TextPrinter& plainPrinter,
     const TextPrinter& markdownPrinter,
     const NodePtr& node) {
 
@@ -195,7 +195,7 @@ void Doxybook2::Doxygen::finalizeRecursively(const TextPrinter& plainPrinter,
     }
 }
 
-Doxybook2::Doxygen::KindRefidMap Doxybook2::Doxygen::getIndexKinds(const std::string& inputDir) const {
+Doxybook::Doxygen::KindRefidMap Doxybook::Doxygen::getIndexKinds(const std::string& inputDir) const {
     const auto indexPath = Path::join(inputDir, "index.xml");
     Xml xml(indexPath);
 
@@ -224,14 +224,14 @@ Doxybook2::Doxygen::KindRefidMap Doxybook2::Doxygen::getIndexKinds(const std::st
     return map;
 }
 
-void Doxybook2::Doxygen::getIndexCache(NodeCacheMap& cache, const NodePtr& parent) const {
+void Doxybook::Doxygen::getIndexCache(NodeCacheMap& cache, const NodePtr& parent) const {
     for (const auto& child : parent->children) {
         cache.insert(std::make_pair(child->refid, child));
         getIndexCache(cache, child);
     }
 }
 
-Doxybook2::NodePtr Doxybook2::Doxygen::find(const std::string& refid) const {
+Doxybook::NodePtr Doxybook::Doxygen::find(const std::string& refid) const {
     try {
         return cache.at(refid);
     } catch (std::exception& e) {

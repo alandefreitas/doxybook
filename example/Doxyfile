@@ -1,5 +1,5 @@
 DOXYFILE_ENCODING = UTF-8
-PROJECT_NAME = "Doxybook2 Example"
+PROJECT_NAME = "Doxybook Example"
 OUTPUT_DIRECTORY = doxygen
 GENERATE_LATEX = NO
 

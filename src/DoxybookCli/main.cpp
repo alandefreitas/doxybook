@@ -20,7 +20,7 @@ static const std::string version = xstr(VERSION);
 static const std::string version = "unknown";
 #endif
  
-using namespace Doxybook2;
+using namespace Doxybook;
 
 static const Generator::Filter INDEX_CLASS_FILTER = {Kind::NAMESPACE,
     Kind::CLASS,
@@ -66,8 +66,8 @@ int main(int argc, char* argv[]) {
     ("summary-input", "Path to the summary input file. This file must contain \"{{doxygen}}\" string.", cxxopts::value<std::string>())
     ("summary-output", "Where to generate summary file. This file will be created. Not a directory!", cxxopts::value<std::string>())
     ("example", "Example usage:\n"
-                                   "    doxybook2 --generate-config doxybook.json\n"
-                                   "    doxybook2 -i ./doxygen/xml -o ./docs/content -c doxybook.json\n"
+                                   "    doxybook --generate-config doxybook.json\n"
+                                   "    doxybook -i ./doxygen/xml -o ./docs/content -c doxybook.json\n"
                                    "\n")
     ;
 

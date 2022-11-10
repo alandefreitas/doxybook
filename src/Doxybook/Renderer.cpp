@@ -75,7 +75,7 @@ static std::string basename(const std::string& path) {
     return str.substr(0, found);
 }
 
-Doxybook2::Renderer::Renderer(const Config& config,
+Doxybook::Renderer::Renderer(const Config& config,
     const Doxygen& doxygen,
     const JsonConverter& jsonConverter,
     const std::optional<std::string>& templatesPath)
@@ -337,9 +337,9 @@ Doxybook2::Renderer::Renderer(const Config& config,
     }
 }
 
-Doxybook2::Renderer::~Renderer() = default;
+Doxybook::Renderer::~Renderer() = default;
 
-void Doxybook2::Renderer::render(const std::string& name, const std::string& path, const nlohmann::json& data) const {
+void Doxybook::Renderer::render(const std::string& name, const std::string& path, const nlohmann::json& data) const {
     const auto it = templates.find(stripTmplSuffix(name));
     if (it == templates.end()) {
         throw EXCEPTION("Template {} not found", name);
@@ -363,7 +363,7 @@ void Doxybook2::Renderer::render(const std::string& name, const std::string& pat
     }
 }
 
-std::string Doxybook2::Renderer::render(const std::string& name, const nlohmann::json& data) const {
+std::string Doxybook::Renderer::render(const std::string& name, const nlohmann::json& data) const {
     const auto it = templates.find(stripTmplSuffix(name));
     if (it == templates.end()) {
         throw EXCEPTION("Template {} not found", stripTmplSuffix(name));

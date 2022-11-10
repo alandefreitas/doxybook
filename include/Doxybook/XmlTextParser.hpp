@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-namespace Doxybook2 {
+namespace Doxybook {
     class XmlTextParser {
     public:
         class Tag;
@@ -79,4 +79,4 @@ namespace Doxybook2 {
     private:
         static void traverse(std::vector<Node*> tree, const Xml::Node& element);
     };
-} // namespace Doxybook2
+} // namespace Doxybook

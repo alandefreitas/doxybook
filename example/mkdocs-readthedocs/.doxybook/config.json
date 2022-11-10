@@ -1,5 +1,5 @@
 {
-  "baseUrl": "/doxybook2/mkdocs-readthedocs/",
+  "baseUrl": "/doxybook/mkdocs-readthedocs/",
   "indexInFolders": false,
   "linkSuffix": "/",
   "mainPageInRoot": true,

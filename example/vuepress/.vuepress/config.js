@@ -1,6 +1,6 @@
 module.exports = {
-    title: 'Doxybook2 Example',
-    base: '/doxybook2/vuepress/',
+    title: 'Doxybook Example',
+    base: '/doxybook/vuepress/',
     themeConfig: {
         sidebar: 'auto',
         nav: [

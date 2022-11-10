@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(Doxybook2Cli)
+project(DoxybookCli)
 
 # Project source files
 file(GLOB_RECURSE SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
@@ -15,7 +15,7 @@ message(STATUS "-- Setting Doxybook version to: ${VERSION}")
 
 # Add the project source files
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
-set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "doxybook2")
+set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "doxybook")
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/src/Doxybook)
 target_compile_definitions(${PROJECT_NAME} PRIVATE VERSION=${VERSION})
 set_target_properties(${PROJECT_NAME} PROPERTIES CXX_STANDARD 17)
@@ -31,4 +31,4 @@ install(TARGETS ${PROJECT_NAME}
 )
 
 # Libraries
-target_link_libraries(${PROJECT_NAME} PUBLIC Doxybook2)
+target_link_libraries(${PROJECT_NAME} PUBLIC Doxybook)

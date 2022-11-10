@@ -4,7 +4,7 @@
 #include <fstream>
 #include <sstream>
 
-std::string Doxybook2::TextMarkdownPrinter::print(const XmlTextParser::Node& node, const std::string& language) const {
+std::string Doxybook::TextMarkdownPrinter::print(const XmlTextParser::Node& node, const std::string& language) const {
     PrintData data;
     print(data, nullptr, &node, nullptr, nullptr, language);
     auto str = data.ss.str();
@@ -13,7 +13,7 @@ std::string Doxybook2::TextMarkdownPrinter::print(const XmlTextParser::Node& nod
     return str;
 }
 
-void Doxybook2::TextMarkdownPrinter::print(PrintData& data,
+void Doxybook::TextMarkdownPrinter::print(PrintData& data,
     const XmlTextParser::Node* parent,
     const XmlTextParser::Node* node,
     const XmlTextParser::Node* previous,
@@ -477,7 +477,7 @@ void Doxybook2::TextMarkdownPrinter::print(PrintData& data,
     }
 }
 
-void Doxybook2::TextMarkdownPrinter::programlisting(PrintData& data, const XmlTextParser::Node& node) const {
+void Doxybook::TextMarkdownPrinter::programlisting(PrintData& data, const XmlTextParser::Node& node) const {
     switch (node.type) {
         case XmlTextParser::Node::Type::TEXT: {
             data.ss << node.data;

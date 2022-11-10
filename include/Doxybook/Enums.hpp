@@ -2,7 +2,7 @@
 #include <nlohmann/json.hpp>
 #include <string>
 
-namespace Doxybook2 {
+namespace Doxybook {
     struct Config;
 
     enum class Kind {
@@ -99,4 +99,4 @@ namespace Doxybook2 {
     inline void from_json(const nlohmann::json& j, FolderCategory& p) {
         p = toEnumFolderCategory(j.get<std::string>());
     }
-} // namespace Doxybook2
+} // namespace Doxybook

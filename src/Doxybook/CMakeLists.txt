@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(Doxybook2)
+project(Doxybook)
 
 # Dependencies
 if(NOT USE_CPM)
@@ -19,7 +19,7 @@ file(GLOB_RECURSE HEADERS ${DOXYDOWN_INCLUDE_DIR}/Doxybook/*.hpp)
 
 # Add the project source files
 add_library(${PROJECT_NAME} STATIC ${SOURCES} ${HEADERS})
-set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "doxybook2")
+set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "doxybook")
 target_include_directories(${PROJECT_NAME} PUBLIC ${DOXYDOWN_INCLUDE_DIR})
 set_target_properties(${PROJECT_NAME} PROPERTIES CXX_STANDARD 17)
 
