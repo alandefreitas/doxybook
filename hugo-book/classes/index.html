@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Classes" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://matusnovak.github.io/doxybook2/hugo-book/classes/" />
+
+<title>Classes | Doxybook2 Example</title>
+<link rel="icon" href="/doxybook2/hugo-book/favicon.png" type="image/x-icon">
+
+
+<link rel="stylesheet" href="/doxybook2/hugo-book/book.min.4c5cc69e1e9fe1ff3493b72dbe84aa9a7481427e3a6897695a3160e1b6c9a687.css" integrity="sha256-TFzGnh6f4f80k7ctvoSqmnSBQn46aJdpWjFg4bbJpoc=">
+
+
+<script defer src="/doxybook2/hugo-book/search.min.d6a05b34e989fa601cfdfd6d5455c1dcc964f6ee18a3bc81fd17cbcf7152303b.js" integrity="sha256-1qBbNOmJ&#43;mAc/f1tVFXB3Mlk9u4Yo7yB/RfLz3FSMDs="></script>
+
+<link rel="alternate" type="application/rss+xml" href="https://matusnovak.github.io/doxybook2/hugo-book/classes/index.xml" title="Doxybook2 Example" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="https://matusnovak.github.io/doxybook2/hugo-book"><span>Doxybook2 Example</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" placeholder="Search" id="book-search-input" maxlength="64" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+    <ul>
+<li><a href="/doxybook2/hugo-book/classes/"class=active>Classes</a></li>
+<li><a href="/doxybook2/hugo-book/namespaces/">Namespaces</a></li>
+<li><a href="/doxybook2/hugo-book/modules/">Modules</a></li>
+<li><a href="/doxybook2/hugo-book/files/">Files</a></li>
+<li><a href="/doxybook2/hugo-book/pages/">Pages</a></li>
+<li><a href="/doxybook2/hugo-book/examples/">Examples</a></li>
+</ul>
+
+
+
+
+
+</nav>
+
+
+<script>
+(function() {
+  var menu = document.querySelector("aside.book-menu nav");
+  addEventListener("beforeunload", function(event) {
+    localStorage.setItem("menu.scrollTop", menu.scrollTop);
+  });
+  menu.scrollTop = localStorage.getItem("menu.scrollTop");
+})();
+</script>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="flex align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/doxybook2/hugo-book/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>Classes</strong>
+</header>
+
+      
+<article class="markdown"><h1 id="classes">Classes</h1>
+<ul>
+<li><strong>namespace <a href="/doxybook2/hugo-book/namespaces/namespaceengine/">Engine</a></strong> <!-- raw HTML omitted -->This namespace contains all of the necessary engine components.
+<ul>
+<li><strong>namespace <a href="/doxybook2/hugo-book/namespaces/namespaceengine_1_1assets/">Assets</a></strong>
+<ul>
+<li><strong>class <a href="/doxybook2/hugo-book/classes/classengine_1_1assets_1_1asset/">Asset</a></strong>
+<ul>
+<li><strong>union <a href="/doxybook2/hugo-book/classes/unionengine_1_1assets_1_1asset_1_1event/">Event</a></strong>
+<ul>
+<li><strong>struct <a href="/doxybook2/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1loaded/">Loaded</a></strong></li>
+<li><strong>struct <a href="/doxybook2/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1unloaded/">Unloaded</a></strong></li>
+<li><strong>struct <a href="/doxybook2/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1waiting/">Waiting</a></strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>namespace <a href="/doxybook2/hugo-book/namespaces/namespaceengine_1_1audio/">Audio</a></strong>
+<ul>
+<li><strong>class <a href="/doxybook2/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">AudioBuffer</a></strong> <!-- raw HTML omitted -->_A simple audio buffer to hold PCM samples_
+<ul>
+<li><strong>struct <a href="/doxybook2/hugo-book/classes/structengine_1_1audio_1_1audiobuffer_1_1typedaudiodata/">TypedAudioData</a></strong> <!-- raw HTML omitted -->Use this to populate the buffer.</li>
+</ul>
+</li>
+<li><strong>class <a href="/doxybook2/hugo-book/classes/classengine_1_1audio_1_1audiomanager/">AudioManager</a></strong> <!-- raw HTML omitted -->An audio manager that <em>accepts</em> multiple <strong><a href="/doxybook2/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">Audio::AudioBuffer</a></strong> instances.</li>
+</ul>
+</li>
+<li><strong>class <a href="/doxybook2/hugo-book/classes/classengine_1_1exception/">Exception</a></strong></li>
+<li><strong>namespace <a href="/doxybook2/hugo-book/namespaces/namespaceengine_1_1graphics/">Graphics</a></strong>
+<ul>
+<li><strong>class <a href="/doxybook2/hugo-book/classes/classengine_1_1graphics_1_1framebuffer/">Framebuffer</a></strong></li>
+<li><strong>class <a href="/doxybook2/hugo-book/classes/classengine_1_1graphics_1_1handle/">Handle</a></strong></li>
+<li><strong>interface <a href="/doxybook2/hugo-book/classes/classengine_1_1graphics_1_1texture/">Texture</a></strong> <!-- raw HTML omitted -->This is a base texture class that serves as a base class for other texture types.</li>
+<li><strong>class <a href="/doxybook2/hugo-book/classes/classengine_1_1graphics_1_1texture2d/">Texture2D</a></strong></li>
+<li><strong>class <a href="/doxybook2/hugo-book/classes/classengine_1_1graphics_1_1texture3d/">Texture3D</a></strong> <!-- raw HTML omitted -->Some deprecated class.</li>
+</ul>
+</li>
+<li><strong>namespace <a href="/doxybook2/hugo-book/namespaces/namespaceengine_1_1gui/">Gui</a></strong>
+<ul>
+<li><strong>class <a href="/doxybook2/hugo-book/classes/classengine_1_1gui_1_1guiwidget/">GuiWidget</a></strong> <!-- raw HTML omitted -->Some generic gui widget class.</li>
+</ul>
+</li>
+<li><strong>namespace <a href="/doxybook2/hugo-book/namespaces/namespaceengine_1_1utils/">Utils</a></strong>
+<ul>
+<li><strong>class <a href="/doxybook2/hugo-book/classes/classengine_1_1utils_1_1arrayview/">ArrayView</a></strong> <!-- raw HTML omitted -->Filesystem path utility functions.</li>
+<li><strong>namespace <a href="/doxybook2/hugo-book/namespaces/namespaceengine_1_1utils_1_1path/">Path</a></strong> <!-- raw HTML omitted -->Filesystem path utility functions.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>Updated on 2022-11-10 at 05:33:11 +0000</p>
+</article>
+
+      
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc levels-6 fixed">
+    <nav id="TableOfContents"></nav>
+  </aside>
+
+
+
+  </main>
+
+  
+</body>
+
+</html>
