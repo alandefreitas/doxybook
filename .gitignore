@@ -1,7 +1,80 @@
+# Build directories
+build
+cmake-build-*
+cmake-build-debug
+cmake-build-release
+cmake-build-debug-gcc
+cmake-build-release-gcc
+cmake-build-debug-msvc
+cmake-build-release-msvc
+cmake-build-debug-*
+cmake-build-release-*
 build*/
+build/
+out
+
+# Local dependencies build
+cpp_modules
+
+# IDE settings
+.idea
+.vs
+.vscode/
+/.vs
+codealike.json
+
+# CMake
+CMakeLists.txt.user
+CMakeSettings.json
+CMakeUserPresets.json
+cmake/open-cpp-coverage.cmake
+cmake-build-*/
+prefix/
+/CMakeSettings.json
+
+# Gh
+gh-md-toc
+
+# Hidden files
+.DS_Store
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
 cmake-*/
-temp/
-example/doxygen*/
+temp_/
+example/doxygen_*/
+example/html/
+example/xml/
 install/
 .vscode/
 .idea/
@@ -12,17 +85,35 @@ vcpkg_installed/
 doxybook2-*.zip
 doxybook-*.zip
 
-example/**/*.md
-example/**/images/
-example/**/*.json
+# Docs
+site
+docs/latex
+
+# Examples
 example/**/public/
 example/**/resources/
 example/**/dist/
+example/themes/gitbook/files/
+example/themes/gitbook/classes/
+example/themes/gitbook/examples/
+example/themes/gitbook/images/
+example/themes/gitbook/modules/
+example/themes/gitbook/namespaces/
+example/themes/gitbook/pages/
+example/themes/gitbook/reference/
+example/themes/gitbook/SUMMARY.md
+example/themes/gitbook/*.json
+example/themes/gitbook/package-lock.json
+example/themes/gitbook/README.md
+example/themes/hugo-*/.hugo_build.lock
+example/themes/hugo-*/content/reference
+!example/themes/hugo-*/themes
+example/themes/mkdocs-*/site/
+example/themes/mkdocs-*/docs/reference/
+
 node_modules/
 _book/
-!package-lock.json
 !book.json
-!config.json
+!config_.json
 !menu.md
 !_navbar.md
-CMakeSettings.json
