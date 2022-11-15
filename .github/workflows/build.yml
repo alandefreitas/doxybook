@@ -23,7 +23,7 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - { name: "MSVC 14.3 - C++20 (Release)",            os: windows-2022, flags: '/O2',               artifact_name: "windows-win64",          cxxstd: 20, cmake_args: -G "Visual Studio 17 2022" -A x64, }
+          - { name: "MSVC 14.3 - C++20 (Release, Vcpkg)",     os: windows-2022, flags: '/O2', vcpkg: true,  artifact_name: "windows-win64",          cxxstd: 20, cmake_args: -G "Visual Studio 17 2022" -A x64, }
           - { name: "MSVC 14.3 - C++20 (Release, Win32)",     os: windows-2022, flags: '/O2',               artifact_name: "windows-win32",        cxxstd: 20, cmake_args: -G "Visual Studio 17 2022" -A Win32, }
           - { name: "MSVC 14.3 - C++17 (Release, Shared)",    os: windows-2022, shared: true, flags: '/O2', artifact_name: "windows-win64-shared", cxxstd: 17, cmake_args: -G "Visual Studio 17 2022" -A x64, }
           - { name: "MSVC 14.2 - C++17",                      os: windows-2019, flags: '/O2',               cxxstd: 17, cmake_args: -G "Visual Studio 16 2019" -A x64, }
@@ -31,7 +31,7 @@ jobs:
           - { name: "GCC 12 - C++20 (Release)",               os: ubuntu-22.04, flags: '-O2',           artifact_name: "linux-amd64", cc: gcc-12, cxx: g++-12, cxxstd: 20, install: gcc-12 g++-12, }
           - { name: "GCC 12 - C++17 (ASan)",                  os: ubuntu-22.04, asan: true,             cc: gcc-12, cxx: g++-12, cxxstd: 17, install: gcc-12 g++-12, }
           - { name: "GCC 11 - C++20 (Coverage)",              os: ubuntu-22.04, coverage: true,         cc: gcc-11, cxx: g++-11, cxxstd: 20, }
-          - { name: "GCC 10 - C++20",                         os: ubuntu-22.04,                         cc: gcc-10, cxx: g++-10, cxxstd: 20, }
+          - { name: "GCC 10 - C++20 (Vcpkg)",                 os: ubuntu-22.04, vcpkg: true,            cc: gcc-10, cxx: g++-10, cxxstd: 20, }
           - { name: "GCC 9  - C++20",                         os: ubuntu-22.04,                         cc: gcc-9, cxx: g++-9, cxxstd: 20, }
 
           - { name: "Clang 14 - C++20",                       os: ubuntu-22.04,                         cc: clang-14, cxx: clang++-14, cxxstd: 20, }
@@ -62,6 +62,7 @@ jobs:
           key: ${{ matrix.config.os }}-fetched-content
 
       - name: Update Vcpkg
+        if: ${{ matrix.config.vcpkg }}
         shell: bash
         run: |
           cd ${{ (contains( matrix.config.os, 'windows') && 'C:\vcpkg') || '/usr/local/share/vcpkg' }}
@@ -80,10 +81,14 @@ jobs:
         uses: SimenB/github-actions-cpu-cores@v1
         id: cpu-cores
 
+      - name: Install doxygen
+        continue-on-error: true
+        run: ${{ (contains( matrix.config.os, 'macos') && 'brew install doxygen') || ((contains( matrix.config.os, 'windows') && 'choco install doxygen.install') || 'sudo apt install doxygen') }}
+
       - name: Configure
         working-directory: ./build
         run: |
-          cmake .. ${{ matrix.config.cmake_args }} -D CMAKE_BUILD_TYPE=Release -D DOXYBOOK_TESTS=ON -D DOXYBOOK_DEVELOPER_MODE=ON -D DOXYBOOK_BUILD_LINTER=OFF -D DOXYBOOK_CATCH2_REPORTER=junit -D DOXYBOOK_BUILD_COVERAGE_REPORT=${{ (matrix.config.coverage && 'ON') || 'OFF' }} -D DOXYBOOK_SANITIZERS=${{ ((matrix.config.asan || matrix.config.tsan) && 'ON') || 'OFF' }} -D DOXYBOOK_THREAD_SANITIZER=${{ (matrix.config.tsan && 'ON') || 'OFF' }} -D DOXYBOOK_USE_FIND_PACKAGE=${{ (matrix.config.use_bundled && 'OFF') || 'ON' }} -D DOXYBOOK_USE_FETCH_CONTENT=${{ (matrix.config.use_bundled && 'OFF') || 'ON' }} ${{ (matrix.config.cc && format('-D CMAKE_C_COMPILER=/usr/bin/{0}', matrix.config.cc)) || '' }} ${{ (matrix.config.cxx && format('-D CMAKE_CXX_COMPILER=/usr/bin/{0}', matrix.config.cxx)) || '' }} ${{ (matrix.config.flags && format('-D CMAKE_CXX_FLAGS="{0}"', matrix.config.flags)) || '' }} -D BUILD_SHARED_LIBS=${{ (matrix.config.shared && 'ON') || 'OFF' }} -D CMAKE_CXX_STANDARD=${{ matrix.config.cxxstd || '17' }}  -D CMAKE_INSTALL_PREFIX=./install -DVCPKG_TARGET_TRIPLET=${{ (contains( matrix.config.cmake_args, 'Win32') && 'x86') || 'x64' }}-${{ (contains( matrix.config.os, 'macos') && 'osx') || ((contains( matrix.config.os, 'windows') && 'windows') || 'linux') }} -D CMAKE_TOOLCHAIN_FILE=${{ (contains( matrix.config.os, 'windows') && 'C:\vcpkg') || '/usr/local/share/vcpkg' }}/scripts/buildsystems/vcpkg.cmake
+          cmake .. ${{ matrix.config.cmake_args }} -D CMAKE_BUILD_TYPE=Release -D DOXYBOOK_BUILD_TESTS=ON -D DOXYBOOK_BUILD_EXAMPLES=OFF -D DOXYBOOK_BUILD_DOCS=OFF -D DOXYBOOK_DEVELOPER_MODE=ON -D DOXYBOOK_CATCH2_REPORTER=junit -D DOXYBOOK_BUILD_COVERAGE_REPORT=${{ (matrix.config.coverage && 'ON') || 'OFF' }} -D DOXYBOOK_SANITIZERS=${{ ((matrix.config.asan || matrix.config.tsan) && 'ON') || 'OFF' }} -D DOXYBOOK_USE_FIND_PACKAGE=${{ (matrix.config.use_bundled && 'OFF') || 'ON' }} -D DOXYBOOK_USE_FETCH_CONTENT=${{ (matrix.config.use_bundled && 'OFF') || 'ON' }} ${{ (matrix.config.cc && format('-D CMAKE_C_COMPILER=/usr/bin/{0}', matrix.config.cc)) || '' }} ${{ (matrix.config.cxx && format('-D CMAKE_CXX_COMPILER=/usr/bin/{0}', matrix.config.cxx)) || '' }} ${{ (matrix.config.flags && format('-D CMAKE_CXX_FLAGS="{0}"', matrix.config.flags)) || '' }} -D BUILD_SHARED_LIBS=${{ (matrix.config.shared && 'ON') || 'OFF' }} -D CMAKE_CXX_STANDARD=${{ matrix.config.cxxstd || '17' }} -D CMAKE_INSTALL_PREFIX=./install ${{ (matrix.config.vcpkg && '-D VCPKG_TARGET_TRIPLET=') || '' }}${{ (matrix.config.vcpkg && contains( matrix.config.cmake_args, 'Win32') && 'x86-') || (matrix.config.vcpkg && 'x64-') || '' }}${{ (matrix.config.vcpkg && contains( matrix.config.os, 'macos') && 'osx') || ((matrix.config.vcpkg && contains( matrix.config.os, 'windows') && 'windows') || (matrix.config.vcpkg && 'linux') || '') }} ${{ (matrix.config.vcpkg && contains( matrix.config.os, 'windows') && '-D CMAKE_TOOLCHAIN_FILE=C:\vcpkg\scripts\buildsystems\vcpkg.cmake') || (matrix.config.vcpkg && '-D CMAKE_TOOLCHAIN_FILE=/usr/local/share/vcpkg/scripts/buildsystems/vcpkg.cmake') || '' }}
 
       - name: Build
         working-directory: ./build
