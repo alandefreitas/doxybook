@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdoxybook_1_1generator_1_1summary__section" kind="struct" language="C++" prot="public">
+    <compoundname>doxybook::generator::summary_section</compoundname>
+    <includes refid="generator_8hpp" local="no">generator.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoxybook_1_1generator_1_1summary__section_1a7d5a630b1e7b16621dd94b22049262c7" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref></type>
+        <definition>folder_category doxybook::generator::summary_section::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>The type of the section. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="33" column="29" bodyfile="doxybook/generator.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1generator_1_1summary__section_1a9ba8489aa2c30cafa8f27be2cbddd8f6" prot="public" static="no" mutable="no">
+        <type><ref refid="classdoxybook_1_1generator_1a5e88aef329660e906a597e72af21084f" kindref="member">filter_set</ref></type>
+        <definition>filter_set doxybook::generator::summary_section::filter</definition>
+        <argsstring></argsstring>
+        <name>filter</name>
+        <briefdescription>
+<para>The kinds we should use. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="36" column="24" bodyfile="doxybook/generator.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1generator_1_1summary__section_1aea504497691486c7b0e025faea8f76df" prot="public" static="no" mutable="no">
+        <type><ref refid="classdoxybook_1_1generator_1a5e88aef329660e906a597e72af21084f" kindref="member">filter_set</ref></type>
+        <definition>filter_set doxybook::generator::summary_section::skip</definition>
+        <argsstring></argsstring>
+        <name>skip</name>
+        <briefdescription>
+<para>The kinds we should skip. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="39" column="24" bodyfile="doxybook/generator.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A section we should generate. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="doxybook/generator.hpp" line="31" column="30" bodyfile="doxybook/generator.hpp" bodystart="31" bodyend="40"/>
+    <listofallmembers>
+      <member refid="structdoxybook_1_1generator_1_1summary__section_1a9ba8489aa2c30cafa8f27be2cbddd8f6" prot="public" virt="non-virtual"><scope>doxybook::generator::summary_section</scope><name>filter</name></member>
+      <member refid="structdoxybook_1_1generator_1_1summary__section_1aea504497691486c7b0e025faea8f76df" prot="public" virt="non-virtual"><scope>doxybook::generator::summary_section</scope><name>skip</name></member>
+      <member refid="structdoxybook_1_1generator_1_1summary__section_1a7d5a630b1e7b16621dd94b22049262c7" prot="public" virt="non-virtual"><scope>doxybook::generator::summary_section</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

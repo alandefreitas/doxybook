@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classdoxybook_1_1text__plain__printer" kind="class" language="C++" prot="public">
+    <compoundname>doxybook::text_plain_printer</compoundname>
+    <basecompoundref refid="classdoxybook_1_1text__printer" prot="public" virt="non-virtual">doxybook::text_printer</basecompoundref>
+    <includes refid="text__plain__printer_8hpp" local="no">text_plain_printer.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdoxybook_1_1text__plain__printer_1a26a04c7d43bbd5232f8d8c4fe875c210" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>doxybook::text_plain_printer::text_plain_printer</definition>
+        <argsstring>(config const &amp;config, doxygen const &amp;doxygen)</argsstring>
+        <name>text_plain_printer</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1doxygen" kindref="compound">doxygen</ref> const &amp;</type>
+          <declname>doxygen</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_plain_printer.hpp" line="19" column="18" bodyfile="doxybook/text_plain_printer.hpp" bodystart="19" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1text__plain__printer_1a4c9f8ad57e450a409c7fc21246f6b6b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::text_plain_printer::print</definition>
+        <argsstring>(xml_text_parser::node const &amp;node, std::string const &amp;language) const override</argsstring>
+        <name>print</name>
+        <reimplements refid="classdoxybook_1_1text__printer_1a401124daec25890de23a2d076f1b2182">print</reimplements>
+        <param>
+          <type><ref refid="structdoxybook_1_1xml__text__parser_1_1node" kindref="compound">xml_text_parser::node</ref> const &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+<para>Print an element as plain text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_plain_printer.hpp" line="24" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdoxybook_1_1text__plain__printer_1a4aa4086c34644bce3fb5ae6f83e79905" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::text_plain_printer::print</definition>
+        <argsstring>(std::stringstream &amp;ss, xml_text_parser::node const &amp;node) const</argsstring>
+        <name>print</name>
+        <param>
+          <type>std::stringstream &amp;</type>
+          <declname>ss</declname>
+        </param>
+        <param>
+          <type><ref refid="structdoxybook_1_1xml__text__parser_1_1node" kindref="compound">xml_text_parser::node</ref> const &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_plain_printer.hpp" line="29" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdoxybook_1_1text__printer_1af7875a18583999d0d20cb6cbc4c66313" prot="protected" static="no" mutable="no">
+        <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const  &amp;</type>
+        <definition>config const&amp; doxybook::text_printer::config_</definition>
+        <argsstring></argsstring>
+        <name>config_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_printer.hpp" line="39" column="22" bodyfile="doxybook/text_printer.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1text__printer_1ae26f071be5cd090b47f1d0db58b79a1d" prot="protected" static="no" mutable="no">
+        <type><ref refid="classdoxybook_1_1doxygen" kindref="compound">doxygen</ref> const  &amp;</type>
+        <definition>doxygen const&amp; doxybook::text_printer::doxygen_</definition>
+        <argsstring></argsstring>
+        <name>doxygen_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_printer.hpp" line="40" column="23" bodyfile="doxybook/text_printer.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Print elements as plain text. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>doxybook::text_printer</label>
+        <link refid="classdoxybook_1_1text__printer"/>
+      </node>
+      <node id="1">
+        <label>doxybook::text_plain_printer</label>
+        <link refid="classdoxybook_1_1text__plain__printer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>doxybook::config</label>
+        <link refid="structdoxybook_1_1config"/>
+      </node>
+      <node id="2">
+        <label>doxybook::text_printer</label>
+        <link refid="classdoxybook_1_1text__printer"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>doxygen_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>config_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>doxybook::doxygen</label>
+        <link refid="classdoxybook_1_1doxygen"/>
+      </node>
+      <node id="1">
+        <label>doxybook::text_plain_printer</label>
+        <link refid="classdoxybook_1_1text__plain__printer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="doxybook/text_plain_printer.hpp" line="16" column="49" bodyfile="doxybook/text_plain_printer.hpp" bodystart="16" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classdoxybook_1_1text__printer_1af7875a18583999d0d20cb6cbc4c66313" prot="protected" virt="non-virtual"><scope>doxybook::text_plain_printer</scope><name>config_</name></member>
+      <member refid="classdoxybook_1_1text__printer_1ae26f071be5cd090b47f1d0db58b79a1d" prot="protected" virt="non-virtual"><scope>doxybook::text_plain_printer</scope><name>doxygen_</name></member>
+      <member refid="classdoxybook_1_1text__plain__printer_1a4c9f8ad57e450a409c7fc21246f6b6b4" prot="public" virt="virtual"><scope>doxybook::text_plain_printer</scope><name>print</name></member>
+      <member refid="classdoxybook_1_1text__plain__printer_1a4aa4086c34644bce3fb5ae6f83e79905" prot="private" virt="non-virtual"><scope>doxybook::text_plain_printer</scope><name>print</name></member>
+      <member refid="classdoxybook_1_1text__plain__printer_1a26a04c7d43bbd5232f8d8c4fe875c210" prot="public" virt="non-virtual"><scope>doxybook::text_plain_printer</scope><name>text_plain_printer</name></member>
+      <member refid="classdoxybook_1_1text__printer_1ae680c068f65818262d8d25ba0c9becb5" prot="public" virt="non-virtual"><scope>doxybook::text_plain_printer</scope><name>text_printer</name></member>
+      <member refid="classdoxybook_1_1text__printer_1ae1e0de5595a5d97433e5bf9039378fa0" prot="public" virt="virtual"><scope>doxybook::text_plain_printer</scope><name>~text_printer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

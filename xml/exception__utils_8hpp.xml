@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="exception__utils_8hpp" kind="file" language="C++">
+    <compoundname>exception_utils.hpp</compoundname>
+    <includes refid="exception_8hpp" local="no">doxybook/exception.hpp</includes>
+    <includes refid="path_8hpp" local="no">doxybook/path.hpp</includes>
+    <includes local="no">fmt/format.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>doxybook/exception.hpp</label>
+        <link refid="exception_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>doxybook/path.hpp</label>
+        <link refid="path_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>fmt/format.h</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>doxybook/exception_utils.hpp</label>
+        <link refid="exception__utils_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>sstream</label>
+      </node>
+      <node id="5">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="exception__utils_8hpp_1a5fccb4fc71e44089a1b1a77fc76c0b68" prot="public" static="no">
+        <name>__FILENAME__</name>
+        <initializer><ref refid="namespacedoxybook_1_1path_1a07a0b33644682c7acde1b9f978fb4060" kindref="member">doxybook::path::filename</ref>(__FILE__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/exception_utils.hpp" line="16" column="9" bodyfile="doxybook/exception_utils.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="exception__utils_8hpp_1a7f9f6a7824a0a5a5ec8c7163c5008b94" prot="public" static="no">
+        <name>EXCEPTION</name>
+        <param><defname>MSG</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>    <ref refid="classdoxybook_1_1exception" kindref="compound">doxybook::exception</ref>(                                           \
+        fmt::format(&quot;Exception at {}:{} &quot;, __FILENAME__, __LINE__) \
+        + fmt::format(MSG, ##__VA_ARGS__))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/exception_utils.hpp" line="18" column="9" bodyfile="doxybook/exception_utils.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="exception__utils_8hpp_1aaa9dd978caa1d82591e361b7e03d56ef" prot="public" static="no">
+        <name>WARNING</name>
+        <param><defname>MSG</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>    doxybook::spdlog::warn(                                      \
+        fmt::format(&quot;Warning at {}:{} &quot;, __FILENAME__, __LINE__) \
+        + fmt::format(MSG, ##__VA_ARGS__))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/exception_utils.hpp" line="23" column="9" bodyfile="doxybook/exception_utils.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2021<sp/>Matus<sp/>Novak<sp/>(@matusnovak)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>alandefreitas<sp/>(alandefreitas@gmail.com)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>https://www.boost.org/LICENSE_1_0.txt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYBOOK_EXCEPTION_UTILS_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DOXYBOOK_EXCEPTION_UTILS_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="exception_8hpp" kindref="compound">doxybook/exception.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="path_8hpp" kindref="compound">doxybook/path.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fmt/format.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="exception__utils_8hpp_1a5fccb4fc71e44089a1b1a77fc76c0b68" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__FILENAME__<sp/>doxybook::path::filename(__FILE__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="exception__utils_8hpp_1a7f9f6a7824a0a5a5ec8c7163c5008b94" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXCEPTION(MSG,<sp/>...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>doxybook::exception(<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fmt::format(&quot;Exception<sp/>at<sp/>{}:{}<sp/>&quot;,<sp/>__FILENAME__,<sp/>__LINE__)<sp/>\</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>fmt::format(MSG,<sp/>##__VA_ARGS__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="exception__utils_8hpp_1aaa9dd978caa1d82591e361b7e03d56ef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WARNING(MSG,<sp/>...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>doxybook::spdlog::warn(<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fmt::format(&quot;Warning<sp/>at<sp/>{}:{}<sp/>&quot;,<sp/>__FILENAME__,<sp/>__LINE__)<sp/>\</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>fmt::format(MSG,<sp/>##__VA_ARGS__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="doxybook/exception_utils.hpp"/>
+  </compounddef>
+</doxygen>

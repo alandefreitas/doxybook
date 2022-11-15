@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classdoxybook_1_1xml_1_1element" kind="class" language="C++" prot="public">
+    <compoundname>doxybook::xml::element</compoundname>
+    <includes refid="xml_8hpp" local="no">xml.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdoxybook_1_1xml_1_1element_1aef2bf3269baff8b13768cb07fbe21c12" prot="private" static="no" mutable="no">
+        <type>tinyxml2::XMLElement *</type>
+        <definition>tinyxml2::XMLElement* doxybook::xml::element::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="156" column="34" bodyfile="doxybook/xml.hpp" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdoxybook_1_1xml_1_1element_1a30f056e94e76a3e9e391fa4b763edec4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doxybook::xml::element::element</definition>
+        <argsstring>()=default</argsstring>
+        <name>element</name>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="79" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml_1_1element_1a92de251385a3613921e4cc37efdfd456" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doxybook::xml::element::element</definition>
+        <argsstring>(tinyxml2::XMLElement *ptr)</argsstring>
+        <name>element</name>
+        <param>
+          <type>tinyxml2::XMLElement *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Constructor from tinyxml element node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="82" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml_1_1element_1aaf4a3bbc1cd526901c44865657587256" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doxybook::xml::element::~element</definition>
+        <argsstring>()=default</argsstring>
+        <name>~element</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="85" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml_1_1element_1a1460e2a9c7a51a2ea0d538b706cebe54" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::xml::element::all_child_elements</definition>
+        <argsstring>(std::string const &amp;name, element_callback const &amp;callback) const</argsstring>
+        <name>all_child_elements</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1xml_1a80e6eeca7ec0a123661f8f51eb30e12f" kindref="member">element_callback</ref> const &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Execute callback for all child element with a given name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="89" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml_1_1element_1a318bfe89777b769b7bd32ce88c3b3ff3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdoxybook_1_1xml_1_1node" kindref="compound">node</ref></type>
+        <definition>node doxybook::xml::element::as_node</definition>
+        <argsstring>() const</argsstring>
+        <name>as_node</name>
+        <briefdescription>
+<para>Get as generic node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="95" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml_1_1element_1ab702921b7841d4e87a122ce8cc23fc30" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdoxybook_1_1xml_1_1element" kindref="compound">element</ref></type>
+        <definition>element doxybook::xml::element::next_sibling_element</definition>
+        <argsstring>() const</argsstring>
+        <name>next_sibling_element</name>
+        <briefdescription>
+<para>Get next sibling element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="99" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml_1_1element_1adb7b11c1dd7cca50410ebc0880e4f29d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdoxybook_1_1xml_1_1node" kindref="compound">node</ref></type>
+        <definition>node doxybook::xml::element::next_sibling</definition>
+        <argsstring>() const</argsstring>
+        <name>next_sibling</name>
+        <briefdescription>
+<para>Get next sibling node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="103" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml_1_1element_1ade47e16578048c71f4a09174e3f8d0d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdoxybook_1_1xml_1_1element" kindref="compound">element</ref></type>
+        <definition>element doxybook::xml::element::next_sibling_element</definition>
+        <argsstring>(std::string const &amp;name) const</argsstring>
+        <name>next_sibling_element</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Get next sibling element with the specified name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="107" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml_1_1element_1a176a5f3907e8a875c1c7f77564f58dec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdoxybook_1_1xml_1_1node" kindref="compound">node</ref></type>
+        <definition>node doxybook::xml::element::first_child</definition>
+        <argsstring>() const</argsstring>
+        <name>first_child</name>
+        <briefdescription>
+<para>Get first child node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="111" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml_1_1element_1ae6c0abd4f612e016c0a93cdba3bc5b49" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdoxybook_1_1xml_1_1element" kindref="compound">element</ref></type>
+        <definition>element doxybook::xml::element::first_child_element</definition>
+        <argsstring>() const</argsstring>
+        <name>first_child_element</name>
+        <briefdescription>
+<para>Get first child element node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="115" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml_1_1element_1ad2de321fa1910eac273d4d1c82474db5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdoxybook_1_1xml_1_1element" kindref="compound">element</ref></type>
+        <definition>element doxybook::xml::element::first_child_element</definition>
+        <argsstring>(std::string const &amp;name) const</argsstring>
+        <name>first_child_element</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Get first child element with the specified name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="119" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml_1_1element_1a90fb5e9bbfa44676896c663883f5111f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int doxybook::xml::element::get_line</definition>
+        <argsstring>() const</argsstring>
+        <name>get_line</name>
+        <briefdescription>
+<para>Get line number in xml file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="123" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml_1_1element_1a706f9f53a19b6797cdf5ddf4ccc3643a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdoxybook_1_1xml" kindref="compound">xml</ref> const  &amp;</type>
+        <definition>xml const&amp; doxybook::xml::element::get_document</definition>
+        <argsstring>() const</argsstring>
+        <name>get_document</name>
+        <briefdescription>
+<para>Get reference to document. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="127" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml_1_1element_1a576f6d490f9c0e88c12627a7162e87f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::xml::element::get_attr</definition>
+        <argsstring>(std::string const &amp;name) const</argsstring>
+        <name>get_attr</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Get node attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="131" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml_1_1element_1a637ac1a2a99a2db359c470e93c24ee04" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::xml::element::get_attr</definition>
+        <argsstring>(std::string const &amp;name, std::string const &amp;default_value) const</argsstring>
+        <name>get_attr</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>default_value</declname>
+        </param>
+        <briefdescription>
+<para>Get node attribute or default value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="135" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml_1_1element_1ab78409df3a95df4c5941a9f23e193683" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::xml::element::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+<para>Get node name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="140" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml_1_1element_1ad2d1abdfd65cfa5f83360410eae5e6de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool doxybook::xml::element::has_text</definition>
+        <argsstring>() const</argsstring>
+        <name>has_text</name>
+        <briefdescription>
+<para>Check if node has text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="144" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml_1_1element_1ac976bd7fc8aa88eb9a8cf2b94b25ee7e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::xml::element::get_text</definition>
+        <argsstring>() const</argsstring>
+        <name>get_text</name>
+        <briefdescription>
+<para>Get node text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="148" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml_1_1element_1af012898eb59ebb9d329358c28762eebc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>doxybook::xml::element::operator bool</definition>
+        <argsstring>() const</argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+<para>Check if element is valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml.hpp" line="151" column="13" bodyfile="doxybook/xml.hpp" bodystart="151" bodyend="153"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The data of an element nodes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="doxybook/xml.hpp" line="76" column="22" bodyfile="doxybook/xml.hpp" bodystart="76" bodyend="157"/>
+    <listofallmembers>
+      <member refid="classdoxybook_1_1xml_1_1element_1a1460e2a9c7a51a2ea0d538b706cebe54" prot="public" virt="non-virtual"><scope>doxybook::xml::element</scope><name>all_child_elements</name></member>
+      <member refid="classdoxybook_1_1xml_1_1element_1a318bfe89777b769b7bd32ce88c3b3ff3" prot="public" virt="non-virtual"><scope>doxybook::xml::element</scope><name>as_node</name></member>
+      <member refid="classdoxybook_1_1xml_1_1element_1a30f056e94e76a3e9e391fa4b763edec4" prot="public" virt="non-virtual"><scope>doxybook::xml::element</scope><name>element</name></member>
+      <member refid="classdoxybook_1_1xml_1_1element_1a92de251385a3613921e4cc37efdfd456" prot="public" virt="non-virtual"><scope>doxybook::xml::element</scope><name>element</name></member>
+      <member refid="classdoxybook_1_1xml_1_1element_1a176a5f3907e8a875c1c7f77564f58dec" prot="public" virt="non-virtual"><scope>doxybook::xml::element</scope><name>first_child</name></member>
+      <member refid="classdoxybook_1_1xml_1_1element_1ae6c0abd4f612e016c0a93cdba3bc5b49" prot="public" virt="non-virtual"><scope>doxybook::xml::element</scope><name>first_child_element</name></member>
+      <member refid="classdoxybook_1_1xml_1_1element_1ad2de321fa1910eac273d4d1c82474db5" prot="public" virt="non-virtual"><scope>doxybook::xml::element</scope><name>first_child_element</name></member>
+      <member refid="classdoxybook_1_1xml_1_1element_1a576f6d490f9c0e88c12627a7162e87f4" prot="public" virt="non-virtual"><scope>doxybook::xml::element</scope><name>get_attr</name></member>
+      <member refid="classdoxybook_1_1xml_1_1element_1a637ac1a2a99a2db359c470e93c24ee04" prot="public" virt="non-virtual"><scope>doxybook::xml::element</scope><name>get_attr</name></member>
+      <member refid="classdoxybook_1_1xml_1_1element_1a706f9f53a19b6797cdf5ddf4ccc3643a" prot="public" virt="non-virtual"><scope>doxybook::xml::element</scope><name>get_document</name></member>
+      <member refid="classdoxybook_1_1xml_1_1element_1a90fb5e9bbfa44676896c663883f5111f" prot="public" virt="non-virtual"><scope>doxybook::xml::element</scope><name>get_line</name></member>
+      <member refid="classdoxybook_1_1xml_1_1element_1ab78409df3a95df4c5941a9f23e193683" prot="public" virt="non-virtual"><scope>doxybook::xml::element</scope><name>get_name</name></member>
+      <member refid="classdoxybook_1_1xml_1_1element_1ac976bd7fc8aa88eb9a8cf2b94b25ee7e" prot="public" virt="non-virtual"><scope>doxybook::xml::element</scope><name>get_text</name></member>
+      <member refid="classdoxybook_1_1xml_1_1element_1ad2d1abdfd65cfa5f83360410eae5e6de" prot="public" virt="non-virtual"><scope>doxybook::xml::element</scope><name>has_text</name></member>
+      <member refid="classdoxybook_1_1xml_1_1element_1adb7b11c1dd7cca50410ebc0880e4f29d" prot="public" virt="non-virtual"><scope>doxybook::xml::element</scope><name>next_sibling</name></member>
+      <member refid="classdoxybook_1_1xml_1_1element_1ab702921b7841d4e87a122ce8cc23fc30" prot="public" virt="non-virtual"><scope>doxybook::xml::element</scope><name>next_sibling_element</name></member>
+      <member refid="classdoxybook_1_1xml_1_1element_1ade47e16578048c71f4a09174e3f8d0d0" prot="public" virt="non-virtual"><scope>doxybook::xml::element</scope><name>next_sibling_element</name></member>
+      <member refid="classdoxybook_1_1xml_1_1element_1af012898eb59ebb9d329358c28762eebc" prot="public" virt="non-virtual"><scope>doxybook::xml::element</scope><name>operator bool</name></member>
+      <member refid="classdoxybook_1_1xml_1_1element_1aef2bf3269baff8b13768cb07fbe21c12" prot="private" virt="non-virtual"><scope>doxybook::xml::element</scope><name>ptr</name></member>
+      <member refid="classdoxybook_1_1xml_1_1element_1aaf4a3bbc1cd526901c44865657587256" prot="public" virt="non-virtual"><scope>doxybook::xml::element</scope><name>~element</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

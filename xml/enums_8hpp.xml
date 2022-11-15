@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="enums_8hpp" kind="file" language="C++">
+    <compoundname>enums.hpp</compoundname>
+    <includes local="no">nlohmann/json.hpp</includes>
+    <includes local="no">string</includes>
+    <includedby refid="config_8hpp" local="no">doxybook/config.hpp</includedby>
+    <includedby refid="node_8hpp" local="no">doxybook/node.hpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>doxybook/enums.hpp</label>
+        <link refid="enums_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nlohmann/json.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>doxybook/json_converter.hpp</label>
+        <link refid="json__converter_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>doxybook/renderer.hpp</label>
+        <link refid="renderer_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>doxybook/node.hpp</label>
+        <link refid="node_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>doxybook/text_printer.hpp</label>
+        <link refid="text__printer_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>doxybook/doxygen.hpp</label>
+        <link refid="doxygen_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>doxybook/text_plain_printer.hpp</label>
+        <link refid="text__plain__printer_8hpp"/>
+      </node>
+      <node id="1">
+        <label>doxybook/enums.hpp</label>
+        <link refid="enums_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>doxybook/text_markdown_printer.hpp</label>
+        <link refid="text__markdown__printer_8hpp"/>
+      </node>
+      <node id="2">
+        <label>doxybook/config.hpp</label>
+        <link refid="config_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>doxybook/generator.hpp</label>
+        <link refid="generator_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacedoxybook">doxybook</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2021<sp/>Matus<sp/>Novak<sp/>(@matusnovak)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>alandefreitas<sp/>(alandefreitas@gmail.com)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>https://www.boost.org/LICENSE_1_0.txt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYBOOK_ENUMS_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DOXYBOOK_ENUMS_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;nlohmann/json.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedoxybook" kindref="compound">doxybook</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">config;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95acb4ae3b37047fb4b2c0d16f8bf84f076" kindref="member">INDEX</ref>,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a5335d3381381fc5e5c8a2ef39d82cc53" kindref="member">DEFINE</ref>,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95ac18e8f1f430ea227dbd63d0d9a2bc5fb" kindref="member">CLASS</ref>,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a7347fe5a0f184f79ef064e92e3beb297" kindref="member">NAMESPACE</ref>,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95ab8223be2455e0ea5a0e63e8f018d6fc3" kindref="member">STRUCT</ref>,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a596acbde60b98295256f8e4073a8e341" kindref="member">INTERFACE</ref>,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a6a72a6a776662a244f82d31e9274a07b" kindref="member">FUNCTION</ref>,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95ae61ad9b2553a293b4a3f4d3b4fa5ab31" kindref="member">VARIABLE</ref>,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a95fbf728908187e4bb160a31525824d5" kindref="member">TYPEDEF</ref>,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a912f09aa71e8a2b72e8fbb762bb2b0ad" kindref="member">USING</ref>,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a471e11502a3cc3a519644984935691e8" kindref="member">FRIEND</ref>,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a85a1979d26d0ef93dcc13a72fee80705" kindref="member">ENUM</ref>,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a2f88cb3ac89d23ee734d2d8b16ff0fbd" kindref="member">ENUMVALUE</ref>,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95aea931da33de8ba05c3635a51c2b25d75" kindref="member">UNION</ref>,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95ac1561b120842fabe1310417083827590" kindref="member">DIR</ref>,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a9fc5887c030f7a3e19821ebec457e719" kindref="member">FILE</ref>,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a1cf5e1f5569acda3c4a88a91c5130a69" kindref="member">MODULE</ref>,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a22311203d44b308bd2d607cdc2dcb72c" kindref="member">PAGE</ref>,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a8e3b72508e05135569ace4ed9b96d137" kindref="member">EXAMPLE</ref>,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95ac023ee28e6cb71d64feec71f0cbac067" kindref="member">SIGNAL</ref>,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a0b688c5f3d542268089da39994214ab8" kindref="member">SLOT</ref>,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a77bc4ffc1b6dce554d9dda5d6dea1660" kindref="member">PROPERTY</ref>,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a030d962d0faa148f02848881a3b4fdb6" kindref="member">EVENT</ref>,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a417adfab1ef1528ece30a13ea155ce21" kindref="member">JAVAENUM</ref>,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a03c69270b10a4b6ab07896f6352d883b" kindref="member">JAVAENUMCONSTANT</ref></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578f" kindref="member">visibility</ref></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578facd0c6092d6a6874f379fe4827ed1db8b" kindref="member">PUBLIC</ref>,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578fa0c2448254108d59f7400d1c96f31d751" kindref="member">PROTECTED</ref>,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578fa84c6d22cfdf3772e66b07bde636e0571" kindref="member">PRIVATE</ref>,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578fae83af69d4844921d55507863e9099eb2" kindref="member">PACKAGE</ref></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139" kindref="member">virtual_category</ref></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139a42949eafe37d568f1861e2f3732ca548" kindref="member">NON_VIRTUAL</ref>,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139a05470727787aa721cf53222b5d3d40f3" kindref="member">VIRTUAL</ref>,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139abfbbda2acffbb1b8dcb4e59086dfe706" kindref="member">PURE_VIRTUAL</ref></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" kindref="member">type</ref></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07ab50339a10e1de285ac99d4c3990b8693" kindref="member">NONE</ref>,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07aa571f890bfd614dedc37f4999b29e504" kindref="member">DEFINES</ref>,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a4eca21708406cdd42e34d84c2eaf1d4e" kindref="member">FUNCTIONS</ref>,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07ab0d6a3eb070feba72e0404d36a24a9be" kindref="member">NAMESPACES</ref>,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a5da46f675c183760574722cacc24d420" kindref="member">CLASSES</ref>,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07adcd3920b4db3b2c8e620d7548d473424" kindref="member">ATTRIBUTES</ref>,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a6b20155008db90cf7589c07baa7334e9" kindref="member">TYPES</ref>,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a626f59acaeb60dabe79cff6fee9973c7" kindref="member">DIRS</ref>,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07ac935a4e21742b5a03a15b05834e2d82c" kindref="member">FILES</ref>,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a166caac76e43bd0d769e132d9bb81d4b" kindref="member">MODULES</ref>,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a49fcf07aa7420cfde06d39f787f06cdb" kindref="member">FRIENDS</ref>,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a9306c07017fd316befdc82b5cd16652f" kindref="member">PAGES</ref>,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07ae6bde2a01c490e177d6dcd15c149c129" kindref="member">EXAMPLES</ref>,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07ae8aec3b875fcfac29de4bc603e426577" kindref="member">SIGNALS</ref>,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a46020f552cd79f16f2d25343175f1cff" kindref="member">SLOTS</ref>,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a7279500d4c15f01622634ac0ace3483d" kindref="member">EVENTS</ref>,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a841c9457129643606bba5ff4ecd0cd95" kindref="member">PROPERTIES</ref>,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a0fb947e7b44c9d5e3b52d3f1261a4dad" kindref="member">JAVAENUMCONSTANTS</ref></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4a5da46f675c183760574722cacc24d420" kindref="member">CLASSES</ref>,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4ab0d6a3eb070feba72e0404d36a24a9be" kindref="member">NAMESPACES</ref>,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4a166caac76e43bd0d769e132d9bb81d4b" kindref="member">MODULES</ref>,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4a9306c07017fd316befdc82b5cd16652f" kindref="member">PAGES</ref>,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4ac935a4e21742b5a03a15b05834e2d82c" kindref="member">FILES</ref>,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4ae6bde2a01c490e177d6dcd15c149c129" kindref="member">EXAMPLES</ref></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a3d44c4e264a009779b66eea28f76e3c5" kindref="member">to_enum_kind</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>str);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" kindref="member">type</ref></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a202c8381cd94400f35ddfdbab05fef65" kindref="member">to_enum_type</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>str);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578f" kindref="member">visibility</ref></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a357ceceac2eff1224312216c2cd4cee5" kindref="member">to_enum_visibility</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>str);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139" kindref="member">virtual_category</ref></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1aa446f1cd5bc2c66aac9b708c5fbb16ee" kindref="member">to_enum_virtual</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>str);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a0bddd9235ba5189570f3989f82ad6bf9" kindref="member">to_enum_folder_category</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>str);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::string</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a6b51eaf13e704ed1295395f184eff598" kindref="member">to_str</ref>(<ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref><sp/>value);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::string</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a6b51eaf13e704ed1295395f184eff598" kindref="member">to_str</ref>(<ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" kindref="member">type</ref><sp/>value);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::string</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a6b51eaf13e704ed1295395f184eff598" kindref="member">to_str</ref>(<ref refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578f" kindref="member">visibility</ref><sp/>value);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::string</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a6b51eaf13e704ed1295395f184eff598" kindref="member">to_str</ref>(<ref refid="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139" kindref="member">virtual_category</ref><sp/>value);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::string</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a6b51eaf13e704ed1295395f184eff598" kindref="member">to_str</ref>(<ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref><sp/>value);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" kindref="member">type</ref></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a9226a18d8e899cb2f77f7cc5c948c387" kindref="member">kind_to_type</ref>(<ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref>);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1aa9429550c2b054b0a9b16dec3779f22c" kindref="member">is_kind_language</ref>(<ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref>);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a219e06fcff1910d84418eb18757625f3" kindref="member">is_kind_structured</ref>(<ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref>);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1aabe7d31ff54db82caffa22804ebbcc51" kindref="member">is_kind_file</ref>(<ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref><sp/><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref>);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::string</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a160251f3e56fbe899af79184f5eb292f" kindref="member">type_folder_category_to_folder_name</ref>(</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>config<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>config,</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" kindref="member">type</ref>);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::string</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a2f1f85c01d2b08b8cbbbf037ae01704d" kindref="member">type_to_folder_name</ref>(config<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>config,<sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" kindref="member">type</ref><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" kindref="member">type</ref>);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::string</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a44fd8766776f17603f039b0d3f472afa" kindref="member">type_to_index_name</ref>(config<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>config,<sp/><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" kindref="member">type</ref>);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::string</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1af3a3fdcb96f98cf434a22a4c72c38634" kindref="member">type_to_index_template</ref>(config<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>config,<sp/><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" kindref="member">type</ref>);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::string</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1ae33b64ffefbaced5b8b0f5d9e964f07d" kindref="member">type_to_index_title</ref>(config<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>config,<sp/><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref><sp/><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" kindref="member">type</ref>);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219" refid="namespacedoxybook_1ac1c96e139ba1e30cf10f41e3ad02506d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1ac1c96e139ba1e30cf10f41e3ad02506d" kindref="member">to_json</ref>(nlohmann::json&amp;<sp/>j,<sp/><ref refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578f" kindref="member">visibility</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j<sp/>=<sp/><ref refid="namespacedoxybook_1a6b51eaf13e704ed1295395f184eff598" kindref="member">to_str</ref>(p);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225" refid="namespacedoxybook_1ae8d6bd7cb9814d7c61409827dc688ab7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1ae8d6bd7cb9814d7c61409827dc688ab7" kindref="member">from_json</ref>(nlohmann::json<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>j,<sp/><ref refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578f" kindref="member">visibility</ref>&amp;<sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/><ref refid="namespacedoxybook_1a357ceceac2eff1224312216c2cd4cee5" kindref="member">to_enum_visibility</ref>(j.get&lt;std::string&gt;());</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="namespacedoxybook_1ac8ae315a31c83c01344c24ead7cb2f50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1ac1c96e139ba1e30cf10f41e3ad02506d" kindref="member">to_json</ref>(nlohmann::json&amp;<sp/>j,<sp/><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j<sp/>=<sp/><ref refid="namespacedoxybook_1a6b51eaf13e704ed1295395f184eff598" kindref="member">to_str</ref>(p);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="namespacedoxybook_1a7ed92d0af2247d395b8684f5e1dea64a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1ae8d6bd7cb9814d7c61409827dc688ab7" kindref="member">from_json</ref>(nlohmann::json<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>j,<sp/><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref>&amp;<sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/><ref refid="namespacedoxybook_1a0bddd9235ba5189570f3989f82ad6bf9" kindref="member">to_enum_folder_category</ref>(j.get&lt;std::string&gt;());</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>doxybook</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="doxybook/enums.hpp"/>
+  </compounddef>
+</doxygen>

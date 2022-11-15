@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
+  <meta name="generator" content="Hugo 0.105.0">
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="src/Graphics/Texture3D.hpp" />
-<meta property="og:description" content="src/Graphics/Texture3D.hpp Namespaces    Name     Engine This namespace contains all of the necessary engine components.   Engine::Graphics    Classes     Name     class Engine::Graphics::Texture3D Some deprecated class.    Source code #pragma once #pragma once  #include &#34;Texture.hpp&#34; namespace Engine { namespace Graphics { class Texture3D : public Texture { public: Texture3D(int width, int height, int depth, uint8_t* data, Texture::Type type = Texture::Type::RGBA8); virtual ~Texture3D(); int getWidth() const override; int getHeight() const override; int getDepth() const override; }; } // namespace Graphics } // namespace Engine  Updated on 2022-11-10 at 05:33:11 &#43;0000" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="src/Graphics/Texture3D.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Name class Engine::Graphics::Texture3D Some deprecated class. Source code # #pragma once #pragma once #include &#34;Texture.hpp&#34; namespace Engine { namespace Graphics { class Texture3D : public Texture { public: Texture3D(int width, int height, int depth, uint8_t* data, Texture::Type type = Texture::Type::RGBA8); virtual ~Texture3D(); int getWidth() const override; int getHeight() const override; int getDepth() const override; }; } // namespace Graphics } // namespace Engine Updated on 2022-11-15 at 02:37:49 &#43;0000">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="src/Graphics/Texture3D.hpp" />
+<meta property="og:description" content="src/Graphics/Texture3D.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Name class Engine::Graphics::Texture3D Some deprecated class. Source code # #pragma once #pragma once #include &#34;Texture.hpp&#34; namespace Engine { namespace Graphics { class Texture3D : public Texture { public: Texture3D(int width, int height, int depth, uint8_t* data, Texture::Type type = Texture::Type::RGBA8); virtual ~Texture3D(); int getWidth() const override; int getHeight() const override; int getDepth() const override; }; } // namespace Graphics } // namespace Engine Updated on 2022-11-15 at 02:37:49 &#43;0000" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://matusnovak.github.io/doxybook2/hugo-book/files/texture3d_8hpp/" />
-
-<title>src/Graphics/Texture3D.hpp | Doxybook2 Example</title>
-<link rel="icon" href="/doxybook2/hugo-book/favicon.png" type="image/x-icon">
+<meta property="og:url" content="https://alandefreitas.github.io/doxybook/hugo-book/files/texture3d_8hpp/" /><meta property="article:section" content="files" />
 
 
-<link rel="stylesheet" href="/doxybook2/hugo-book/book.min.4c5cc69e1e9fe1ff3493b72dbe84aa9a7481427e3a6897695a3160e1b6c9a687.css" integrity="sha256-TFzGnh6f4f80k7ctvoSqmnSBQn46aJdpWjFg4bbJpoc=">
 
-
-<script defer src="/doxybook2/hugo-book/search.min.d6a05b34e989fa601cfdfd6d5455c1dcc964f6ee18a3bc81fd17cbcf7152303b.js" integrity="sha256-1qBbNOmJ&#43;mAc/f1tVFXB3Mlk9u4Yo7yB/RfLz3FSMDs="></script>
-
+<title>src/Graphics/Texture3D.hpp | Doxybook Example</title>
+<link rel="manifest" href="/doxybook/hugo-book/manifest.json">
+<link rel="icon" href="/doxybook/hugo-book/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/doxybook/hugo-book/book.min.68be0b7a9674f2a612ce0e9b2e9447ff4b7ac96546e06b642bfd3ded0ca490ef.css" integrity="sha256-aL4LepZ08qYSzg6bLpRH/0t6yWVG4GtkK/097QykkO8=">
+<script defer src="/doxybook/hugo-book/en.search.min.d59a35fd8baaa9a7ce2c66618f76c611b06dd52ffa43565231df9774ca44c21a.js" integrity="sha256-1Zo1/YuqqafOLGZhj3bGEbBt1S/6Q1ZSMd&#43;XdMpEwho="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -25,21 +26,23 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
-  <input type="checkbox" class="hidden" id="menu-control" />
-  <main class="flex container">
-
-    <aside class="book-menu fixed">
-      <nav>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
 <h2 class="book-brand">
-  <a href="https://matusnovak.github.io/doxybook2/hugo-book"><span>Doxybook2 Example</span>
+  <a href="/doxybook/hugo-book"><span>Doxybook Example</span>
   </a>
 </h2>
 
 
 <div class="book-search">
-  <input type="text" placeholder="Search" id="book-search-input" maxlength="64" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -47,14 +50,25 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-    <ul>
-<li><a href="/doxybook2/hugo-book/classes/">Classes</a></li>
-<li><a href="/doxybook2/hugo-book/namespaces/">Namespaces</a></li>
-<li><a href="/doxybook2/hugo-book/modules/">Modules</a></li>
-<li><a href="/doxybook2/hugo-book/files/">Files</a></li>
-<li><a href="/doxybook2/hugo-book/pages/">Pages</a></li>
-<li><a href="/doxybook2/hugo-book/examples/">Examples</a></li>
+
+
+
+
+
+
+  <ul>
+<li><a href="/doxybook/hugo-book/classes/">Classes</a></li>
+<li><a href="/doxybook/hugo-book/namespaces/">Namespaces</a></li>
+<li><a href="/doxybook/hugo-book/modules/">Modules</a></li>
+<li><a href="/doxybook/hugo-book/files/">Files</a></li>
+<li><a href="/doxybook/hugo-book/pages/">Pages</a></li>
+<li><a href="/doxybook/hugo-book/examples/">Examples</a></li>
 </ul>
+
+
+
+
+
 
 
 
@@ -63,29 +77,62 @@ https://github.com/alex-shpak/hugo-book
 </nav>
 
 
-<script>
-(function() {
-  var menu = document.querySelector("aside.book-menu nav");
-  addEventListener("beforeunload", function(event) {
-    localStorage.setItem("menu.scrollTop", menu.scrollTop);
-  });
-  menu.scrollTop = localStorage.getItem("menu.scrollTop");
-})();
-</script>
 
+
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
     </aside>
 
     <div class="book-page">
-      <header class="flex align-center justify-between book-header">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
   <label for="menu-control">
-    <img src="/doxybook2/hugo-book/svg/menu.svg" alt="Menu" />
+    <img src="/doxybook/hugo-book/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
+
   <strong>src/Graphics/Texture3D.hpp</strong>
-</header>
+
+  <label for="toc-control">
+    
+    <img src="/doxybook/hugo-book/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#namespaces">Namespaces</a></li>
+    <li><a href="#classes">Classes</a></li>
+    <li><a href="#source-code">Source code</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
 
       
-<article class="markdown"><h1 id="srcgraphicstexture3dhpp">src/Graphics/Texture3D.hpp</h1>
-<h2 id="namespaces">Namespaces</h2>
+      
+  <article class="markdown"><h1 id="srcgraphicstexture3dhpp">
+  src/Graphics/Texture3D.hpp
+  <a class="anchor" href="#srcgraphicstexture3dhpp">#</a>
+</h1>
+<h2 id="namespaces">
+  Namespaces
+  <a class="anchor" href="#namespaces">#</a>
+</h2>
 <table>
 <thead>
 <tr>
@@ -94,14 +141,17 @@ https://github.com/alex-shpak/hugo-book
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="/doxybook2/hugo-book/namespaces/namespaceengine/">Engine</a></strong> <!-- raw HTML omitted -->This namespace contains all of the necessary engine components.</td>
+<td><strong><a href="/doxybook/hugo-book/namespaces/namespaceengine/">Engine</a></strong> <!-- raw HTML omitted -->This namespace contains all of the necessary engine components.</td>
 </tr>
 <tr>
-<td><strong><a href="/doxybook2/hugo-book/namespaces/namespaceengine_1_1graphics/">Engine::Graphics</a></strong></td>
+<td><strong><a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1graphics/">Engine::Graphics</a></strong></td>
 </tr>
 </tbody>
 </table>
-<h2 id="classes">Classes</h2>
+<h2 id="classes">
+  Classes
+  <a class="anchor" href="#classes">#</a>
+</h2>
 <table>
 <thead>
 <tr>
@@ -112,56 +162,96 @@ https://github.com/alex-shpak/hugo-book
 <tbody>
 <tr>
 <td>class</td>
-<td><strong><a href="/doxybook2/hugo-book/classes/classengine_1_1graphics_1_1texture3d/">Engine::Graphics::Texture3D</a></strong> <!-- raw HTML omitted -->Some deprecated class.</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1texture3d/">Engine::Graphics::Texture3D</a></strong> <!-- raw HTML omitted -->Some deprecated class.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="source-code">Source code</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#pragma once
-</span><span style="color:#75715e">#pragma once
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;Texture.hpp&#34;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">namespace</span> Engine {
-    <span style="color:#66d9ef">namespace</span> Graphics {
-        <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Texture3D</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> Texture {
-          <span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
-            Texture3D(<span style="color:#66d9ef">int</span> width, <span style="color:#66d9ef">int</span> height, <span style="color:#66d9ef">int</span> depth, <span style="color:#66d9ef">uint8_t</span><span style="color:#f92672">*</span> data, Texture<span style="color:#f92672">::</span>Type type <span style="color:#f92672">=</span> Texture<span style="color:#f92672">::</span>Type<span style="color:#f92672">::</span>RGBA8);
-            <span style="color:#66d9ef">virtual</span> <span style="color:#f92672">~</span>Texture3D();
-
-            <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getWidth</span>() <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">override</span>;
-            <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getHeight</span>() <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">override</span>;
-            <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getDepth</span>() <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">override</span>;
-        };
-    } <span style="color:#75715e">// namespace Graphics
-</span><span style="color:#75715e"></span>} <span style="color:#75715e">// namespace Engine
-</span></code></pre></div><hr>
-<p>Updated on 2022-11-10 at 05:33:11 +0000</p>
+<h2 id="source-code">
+  Source code
+  <a class="anchor" href="#source-code">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#pragma once
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#pragma once
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;Texture.hpp&#34;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> Engine {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">namespace</span> Graphics {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Texture3D</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> Texture {
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>            Texture3D(<span style="color:#66d9ef">int</span> width, <span style="color:#66d9ef">int</span> height, <span style="color:#66d9ef">int</span> depth, <span style="color:#66d9ef">uint8_t</span><span style="color:#f92672">*</span> data, Texture<span style="color:#f92672">::</span>Type type <span style="color:#f92672">=</span> Texture<span style="color:#f92672">::</span>Type<span style="color:#f92672">::</span>RGBA8);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">virtual</span> <span style="color:#f92672">~</span>Texture3D();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getWidth</span>() <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">override</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getHeight</span>() <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">override</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getDepth</span>() <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">override</span>;
+</span></span><span style="display:flex;"><span>        };
+</span></span><span style="display:flex;"><span>    } <span style="color:#75715e">// namespace Graphics
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>} <span style="color:#75715e">// namespace Engine
+</span></span></span></code></pre></div><hr>
+<p>Updated on 2022-11-15 at 02:37:49 +0000</p>
 </article>
-
+ 
       
 
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
       
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
     
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
   
-
-  <aside class="book-toc levels-6 fixed">
-    <nav id="TableOfContents">
+<nav id="TableOfContents">
   <ul>
     <li><a href="#namespaces">Namespaces</a></li>
     <li><a href="#classes">Classes</a></li>
     <li><a href="#source-code">Source code</a></li>
   </ul>
 </nav>
-  </aside>
 
 
-
+ 
+      </div>
+    </aside>
+    
   </main>
 
   
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

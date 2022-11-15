@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classdoxybook_1_1json__converter" kind="class" language="C++" prot="public">
+    <compoundname>doxybook::json_converter</compoundname>
+    <includes refid="json__converter_8hpp" local="no">json_converter.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdoxybook_1_1json__converter_1a318a61cbd3c979c7ed5a0cff0bbf55e5" prot="private" static="no" mutable="no">
+        <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const  &amp;</type>
+        <definition>config const&amp; doxybook::json_converter::config_</definition>
+        <argsstring></argsstring>
+        <name>config_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/json_converter.hpp" line="70" column="22" bodyfile="doxybook/json_converter.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1json__converter_1abdfb8cce5c2449cf3d06fa513fc46df5" prot="private" static="no" mutable="no">
+        <type><ref refid="classdoxybook_1_1doxygen" kindref="compound">doxygen</ref> const  &amp;</type>
+        <definition>doxygen const&amp; doxybook::json_converter::doxygen_</definition>
+        <argsstring></argsstring>
+        <name>doxygen_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/json_converter.hpp" line="71" column="23" bodyfile="doxybook/json_converter.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1json__converter_1a4e463c83417e0daf16b661c550e59c54" prot="private" static="no" mutable="no">
+        <type><ref refid="classdoxybook_1_1text__printer" kindref="compound">text_printer</ref> const  &amp;</type>
+        <definition>text_printer const&amp; doxybook::json_converter::plain_printer_</definition>
+        <argsstring></argsstring>
+        <name>plain_printer_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/json_converter.hpp" line="72" column="28" bodyfile="doxybook/json_converter.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1json__converter_1a2ca4779be2a6a2d1cb28156174391d74" prot="private" static="no" mutable="no">
+        <type><ref refid="classdoxybook_1_1text__printer" kindref="compound">text_printer</ref> const  &amp;</type>
+        <definition>text_printer const&amp; doxybook::json_converter::markdown_printer_</definition>
+        <argsstring></argsstring>
+        <name>markdown_printer_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/json_converter.hpp" line="73" column="28" bodyfile="doxybook/json_converter.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdoxybook_1_1json__converter_1aa5eb62f8d65c18ebfeeb159c23318fe6" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doxybook::json_converter::json_converter</definition>
+        <argsstring>(config const &amp;config, doxygen const &amp;doxygen, text_printer const &amp;plainPrinter, text_printer const &amp;markdownPrinter)</argsstring>
+        <name>json_converter</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1doxygen" kindref="compound">doxygen</ref> const &amp;</type>
+          <declname>doxygen</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1text__printer" kindref="compound">text_printer</ref> const &amp;</type>
+          <declname>plainPrinter</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1text__printer" kindref="compound">text_printer</ref> const &amp;</type>
+          <declname>markdownPrinter</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/json_converter.hpp" line="22" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1json__converter_1a6d68aa6b4ecf7ab907feb5902a6bf627" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>nlohmann::json doxybook::json_converter::convert</definition>
+        <argsstring>(std::vector&lt; std::string &gt; const &amp;vec) const</argsstring>
+        <name>convert</name>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>Convert a vector of strings to a json array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/json_converter.hpp" line="31" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1json__converter_1a1aecc80c589ef47bcfc333636043db38" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>nlohmann::json doxybook::json_converter::convert</definition>
+        <argsstring>(node::class_reference const &amp;class_) const</argsstring>
+        <name>convert</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1node_1_1class__reference" kindref="compound">node::class_reference</ref> const &amp;</type>
+          <declname>class_</declname>
+        </param>
+        <briefdescription>
+<para>Convert a class_reference to json. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/json_converter.hpp" line="35" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1json__converter_1adeeb4b09515d7109cc74ece0cd43e087" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>nlohmann::json doxybook::json_converter::convert</definition>
+        <argsstring>(std::vector&lt; node::class_reference &gt; const &amp;classes) const</argsstring>
+        <name>convert</name>
+        <param>
+          <type>std::vector&lt; <ref refid="structdoxybook_1_1node_1_1class__reference" kindref="compound">node::class_reference</ref> &gt; const &amp;</type>
+          <declname>classes</declname>
+        </param>
+        <briefdescription>
+<para>Convert a vector of class references to json. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/json_converter.hpp" line="39" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1json__converter_1a970e3327d8c76d60be8f2396de22ed99" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>nlohmann::json doxybook::json_converter::convert</definition>
+        <argsstring>(node::source_location const &amp;location) const</argsstring>
+        <name>convert</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1node_1_1source__location" kindref="compound">node::source_location</ref> const &amp;</type>
+          <declname>location</declname>
+        </param>
+        <briefdescription>
+<para>Convert a source location to json. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/json_converter.hpp" line="43" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1json__converter_1a9f906c0c98146690f341ee6a98adf0c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>nlohmann::json doxybook::json_converter::convert</definition>
+        <argsstring>(node::param const &amp;param) const</argsstring>
+        <name>convert</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1node_1_1param" kindref="compound">node::param</ref> const &amp;</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+<para>Convert a doxygen param to json. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/json_converter.hpp" line="47" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1json__converter_1ad1108f19471530afe471a3ba3d37ee91" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>nlohmann::json doxybook::json_converter::convert</definition>
+        <argsstring>(node::parameter_list_item const &amp;item) const</argsstring>
+        <name>convert</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1node_1_1parameter__list__item" kindref="compound">node::parameter_list_item</ref> const &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Convert a parameter list item to json. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/json_converter.hpp" line="51" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1json__converter_1ac84836081062126d7af64a12e1ee96ae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>nlohmann::json doxybook::json_converter::convert</definition>
+        <argsstring>(std::vector&lt; node::parameter_list_item &gt; const &amp;item) const</argsstring>
+        <name>convert</name>
+        <param>
+          <type>std::vector&lt; <ref refid="structdoxybook_1_1node_1_1parameter__list__item" kindref="compound">node::parameter_list_item</ref> &gt; const &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Convert a parameter list to json. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/json_converter.hpp" line="55" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1json__converter_1a83c86bcbb93ca95969b401051af26921" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>nlohmann::json doxybook::json_converter::convert</definition>
+        <argsstring>(node const &amp;node) const</argsstring>
+        <name>convert</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1node" kindref="compound">node</ref> const &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Convert a doxygen node to json. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/json_converter.hpp" line="59" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1json__converter_1a4ac3afaa2d82d95ce4425ce05fdda8ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>nlohmann::json doxybook::json_converter::convert</definition>
+        <argsstring>(node const &amp;node, node::data const &amp;data) const</argsstring>
+        <name>convert</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1node" kindref="compound">node</ref> const &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="structdoxybook_1_1node_1_1data" kindref="compound">node::data</ref> const &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Convert a doxygen node data to json. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/json_converter.hpp" line="63" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1json__converter_1a02c8843ab8f6ce6d3b110b0a5af2a198" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>nlohmann::json doxybook::json_converter::get_as_json</definition>
+        <argsstring>(node const &amp;node) const</argsstring>
+        <name>get_as_json</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1node" kindref="compound">node</ref> const &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Convert a doxygen node to json. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/json_converter.hpp" line="67" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Convert elements to json so they can be rendered with inja. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="doxybook/json_converter.hpp" line="19" column="25" bodyfile="doxybook/json_converter.hpp" bodystart="19" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classdoxybook_1_1json__converter_1a318a61cbd3c979c7ed5a0cff0bbf55e5" prot="private" virt="non-virtual"><scope>doxybook::json_converter</scope><name>config_</name></member>
+      <member refid="classdoxybook_1_1json__converter_1a6d68aa6b4ecf7ab907feb5902a6bf627" prot="public" virt="non-virtual"><scope>doxybook::json_converter</scope><name>convert</name></member>
+      <member refid="classdoxybook_1_1json__converter_1a1aecc80c589ef47bcfc333636043db38" prot="public" virt="non-virtual"><scope>doxybook::json_converter</scope><name>convert</name></member>
+      <member refid="classdoxybook_1_1json__converter_1adeeb4b09515d7109cc74ece0cd43e087" prot="public" virt="non-virtual"><scope>doxybook::json_converter</scope><name>convert</name></member>
+      <member refid="classdoxybook_1_1json__converter_1a970e3327d8c76d60be8f2396de22ed99" prot="public" virt="non-virtual"><scope>doxybook::json_converter</scope><name>convert</name></member>
+      <member refid="classdoxybook_1_1json__converter_1a9f906c0c98146690f341ee6a98adf0c5" prot="public" virt="non-virtual"><scope>doxybook::json_converter</scope><name>convert</name></member>
+      <member refid="classdoxybook_1_1json__converter_1ad1108f19471530afe471a3ba3d37ee91" prot="public" virt="non-virtual"><scope>doxybook::json_converter</scope><name>convert</name></member>
+      <member refid="classdoxybook_1_1json__converter_1ac84836081062126d7af64a12e1ee96ae" prot="public" virt="non-virtual"><scope>doxybook::json_converter</scope><name>convert</name></member>
+      <member refid="classdoxybook_1_1json__converter_1a83c86bcbb93ca95969b401051af26921" prot="public" virt="non-virtual"><scope>doxybook::json_converter</scope><name>convert</name></member>
+      <member refid="classdoxybook_1_1json__converter_1a4ac3afaa2d82d95ce4425ce05fdda8ea" prot="public" virt="non-virtual"><scope>doxybook::json_converter</scope><name>convert</name></member>
+      <member refid="classdoxybook_1_1json__converter_1abdfb8cce5c2449cf3d06fa513fc46df5" prot="private" virt="non-virtual"><scope>doxybook::json_converter</scope><name>doxygen_</name></member>
+      <member refid="classdoxybook_1_1json__converter_1a02c8843ab8f6ce6d3b110b0a5af2a198" prot="public" virt="non-virtual"><scope>doxybook::json_converter</scope><name>get_as_json</name></member>
+      <member refid="classdoxybook_1_1json__converter_1aa5eb62f8d65c18ebfeeb159c23318fe6" prot="public" virt="non-virtual"><scope>doxybook::json_converter</scope><name>json_converter</name></member>
+      <member refid="classdoxybook_1_1json__converter_1a2ca4779be2a6a2d1cb28156174391d74" prot="private" virt="non-virtual"><scope>doxybook::json_converter</scope><name>markdown_printer_</name></member>
+      <member refid="classdoxybook_1_1json__converter_1a4e463c83417e0daf16b661c550e59c54" prot="private" virt="non-virtual"><scope>doxybook::json_converter</scope><name>plain_printer_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

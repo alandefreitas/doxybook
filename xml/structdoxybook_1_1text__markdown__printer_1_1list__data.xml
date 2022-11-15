@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdoxybook_1_1text__markdown__printer_1_1list__data" kind="struct" language="C++" prot="private">
+    <compoundname>doxybook::text_markdown_printer::list_data</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoxybook_1_1text__markdown__printer_1_1list__data_1afc36e6bf65acae703fcad3720af94e97" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int doxybook::text_markdown_printer::list_data::counter</definition>
+        <argsstring></argsstring>
+        <name>counter</name>
+        <initializer>{ 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_markdown_printer.hpp" line="33" column="17" bodyfile="doxybook/text_markdown_printer.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1text__markdown__printer_1_1list__data_1a1bf1877d697429dfd839d1a86d19bd9a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doxybook::text_markdown_printer::list_data::ordered</definition>
+        <argsstring></argsstring>
+        <name>ordered</name>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_markdown_printer.hpp" line="34" column="18" bodyfile="doxybook/text_markdown_printer.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="doxybook/text_markdown_printer.hpp" line="32" column="24" bodyfile="doxybook/text_markdown_printer.hpp" bodystart="32" bodyend="35"/>
+    <listofallmembers>
+      <member refid="structdoxybook_1_1text__markdown__printer_1_1list__data_1afc36e6bf65acae703fcad3720af94e97" prot="public" virt="non-virtual"><scope>doxybook::text_markdown_printer::list_data</scope><name>counter</name></member>
+      <member refid="structdoxybook_1_1text__markdown__printer_1_1list__data_1a1bf1877d697429dfd839d1a86d19bd9a" prot="public" virt="non-virtual"><scope>doxybook::text_markdown_printer::list_data</scope><name>ordered</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,823 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Doxybook: Doxygen XML to Markdown">
+      
+      
+      
+        <link rel="canonical" href="https://alandefreitas.github.io/doxybook/templates/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Templates - Doxybook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.472b142f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.08040f6c.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-290016612"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-290016612",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-290016612",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="doxybook" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#templates" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Doxybook" class="md-header__button md-logo" aria-label="Doxybook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Doxybook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Templates
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/alandefreitas/doxybook/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    alandefreitas/doxybook
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+<!-- Main navigation -->
+
+
+<div
+        class="md-sidebar md-sidebar--primary"
+        data-md-component="sidebar" data-md-type="navigation"
+        
+>
+    <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+            
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Doxybook" class="md-nav__button md-logo" aria-label="Doxybook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+
+    </a>
+    Doxybook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/alandefreitas/doxybook/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    alandefreitas/doxybook
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        Quickstart
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        Basic usage
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../config/" class="md-nav__link">
+        Configuration Files
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Templates
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Templates
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#generate-default-templates" class="md-nav__link">
+    Generate default templates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-templates" class="md-nav__link">
+    Using templates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-templates-detailed-example" class="md-nav__link">
+    Custom templates detailed example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changes-to-templates-since-110" class="md-nav__link">
+    Changes to templates since 1.1.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging-templates" class="md-nav__link">
+    Debugging templates
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../library/" class="md-nav__link">
+        Library
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/classes/" class="md-nav__link">
+        Classes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/files/" class="md-nav__link">
+        Files
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/namespaces/" class="md-nav__link">
+        Namespaces
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        Contributing
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../acknowledgments/" class="md-nav__link">
+        Acknowledgments
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+        </div>
+    </div>
+</div>
+
+
+<!-- Table of contents: never hidden -->
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+    <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+            
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#generate-default-templates" class="md-nav__link">
+    Generate default templates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-templates" class="md-nav__link">
+    Using templates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-templates-detailed-example" class="md-nav__link">
+    Custom templates detailed example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changes-to-templates-since-110" class="md-nav__link">
+    Changes to templates since 1.1.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging-templates" class="md-nav__link">
+    Debugging templates
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+            <div data-ea-publisher="alandefreitas-com" data-ea-type="image"></div>
+        </div>
+    </div>
+</div>
+
+
+
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+
+                  
+
+  <a href="https://github.com/alandefreitas/doxybook/edit/develop/docs/templates.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="templates">Templates</h1>
+<p>This doxybook utility uses templates very similar to Jinja on Python. The template engine used
+is <a href="https://github.com/pantor/inja">inja</a> for C++. There are already predefined templates stored inside of the doxybook
+executable file. If you do not specify an explicit template folder via <code>--templates</code> the default templates will be used.</p>
+<h2 id="generate-default-templates">Generate default templates</h2>
+<p>You can dump the default templates into a specific folder by calling doxybook as:</p>
+<div class="highlight"><pre><span></span><code>doxybook --generate-templates /path/to/folder
+</code></pre></div>
+<p>Note that the folder must exist. If there are any existing files that use the same name_, they will be overwritten.</p>
+<h2 id="using-templates">Using templates</h2>
+<p>To use the templates, simply create a folder, put some templates in there <strong>ending with <code>.tmpl</code> file extension</strong> and
+they will be automatically loaded as:</p>
+<div class="highlight"><pre><span></span><code>doxybook --input ... --output ... --templates /path/to/folder
+</code></pre></div>
+<p>Just as the config, if the folder does not contain a specific template, the default one will be used. For example,
+Hugo (Book theme) needs an extra <code>type: docs</code> in the header of the markdown. The
+folder <code>example/hugo-book/.doxybook/templates</code> contains a single template template file named <code>meta.tmpl</code>. This template
+is used by <code>header</code> template which is then further used by the <code>kind_class</code>, <code>kind_namespace</code>, and so on. There are no
+other template files in that example directory, therefore the default ones will be used.</p>
+<p>To use custom templates, simply add them to to the directory specified by the <code>--templates &lt;dir&gt;</code>.</p>
+<p><strong>The following are core templates that are needed to generate the output.</strong> All of these templates are defined by the
+configuration file (see section "Config values" above). For example, the config key <code>template_kind_group</code> is by
+default <code>kind_nonclass</code>, therefore the render engine expects <code>kind_nonclass.tmpl</code> in your templates folder (if exists).</p>
+<ul>
+<li>template_index_examples</li>
+<li>template_index_files</li>
+<li>template_index_groups</li>
+<li>template_index_namespaces</li>
+<li>template_index_related_pages</li>
+<li>template_kind_class</li>
+<li>template_kind_example</li>
+<li>template_kind_file</li>
+<li>template_kind_group</li>
+<li>template_kind_dir</li>
+<li>template_kind_namespace</li>
+<li>template_kind_page</li>
+<li>template_kind_union</li>
+<li>template_kind_interface</li>
+<li>template_kind_struct</li>
+</ul>
+<p><strong>The following are template names used by the core templates above.</strong> These templates are simply dependencies of the
+templates above. They are being included by <code>{% include "meta" %}</code> or by <code>{{ render(member_details, child) }}</code> inside of
+the templates above.</p>
+<ul>
+<li>meta</li>
+<li>header</li>
+<li>footer</li>
+<li>index_</li>
+<li>breadcrumbs</li>
+<li>member_details</li>
+<li>mode_details</li>
+<li>class_members_tables</li>
+<li>class_members_inherited_tables</li>
+<li>class_members_details</li>
+</ul>
+<h2 id="custom-templates-detailed-example">Custom templates detailed example</h2>
+<p>First, generate the default templates (this simply copies them from the executable file to the destination directory) by
+running <code>doxybook --generate-templates &lt;dir&gt;</code>. Let's say you want to override the fooder with some custom markdown. Find
+the <code>footer.tmpl</code> file and change the contents with whatever you want. You can delete the rest of the templates that you
+have not modified. Now run the executable with the <code>--templates &lt;dir&gt;</code> option. This will use your custom <code>footer.tmpl</code>.</p>
+<p>When the doxybook runs, the list of templates that are loaded is printed to the terminal right at the beginning. For
+example, if the template is loaded from your folder, it will
+print <code>Parsing template: 'footer' from file: '/path/to/templates/footer.tmpl</code>. If the template is loaded from the
+executable file itself (the default templates), it will print the following: <code>Parsing template: 'footer' from default</code>
+instead.</p>
+<p>Now, let's say that you want to change how enums are printed (the enum table that has Enumerator, Value, and Description
+columns). This is located in the <code>member_details</code> template. This template is used
+as <code>{{ render("member_details", child) }}</code> inside of <code>class_members_details</code> and <code>nonclass_members_details</code> templates.
+So you only need to run <code>doxybook --generate-templates &lt;dir&gt;</code> and only keep <code>member_details.tmpl</code> and change it however
+you want.</p>
+<p>Why <code>render</code> instead of <code>include</code>? The <code>include</code> is a keyword from the inja template engine to insert the child template
+file. All of the variables that are accessible in the parent_ template are also accessible in the child template being
+included. Think of it as copy pasting the contents of the child template and putting them into the parent_ template. The
+render method has a different context (global data). This means that you can pass in subset of the data accessible in
+the parent_ template. In this case, the <code>class_members_details</code> has a JSON data that also has an array <code>publicTypes</code> (if
+the class/struct has any public types). By default the <code>class_members_details</code> has something like this:</p>
+<div class="highlight"><pre><span></span><code>{% for child in publicTypes %}
+{{ render(&quot;member_details&quot;, child) }}
+{% endfor %}
+</code></pre></div>
+<p>That will simply loop over the public types and renders the child by passing the array element of <code>publicTypes</code> to the
+render function. The render function will render the template which global context (all of the accessible data) is going
+to be the <code>child</code> object.</p>
+<p>To see what does the JSON (the global data/context in the template) looks like, simply add <code>--debug-templates</code> to the
+command line. This will generate <code>*.md.json</code> files. Imagine that this JSON is passed into <code>render(..., json)</code> when
+generating, for example, <code>group__audio.md</code> (or any other markdown file except the GitBook summary file).</p>
+<h2 id="changes-to-templates-since-110">Changes to templates since 1.1.0</h2>
+<p>To include your own custom template, that does not override the default template, use <code>{% include "filename.tmpl" %}</code>
+or <code>{{ render("filename.tmpl", data) }}</code> to do so. You need to specify the file extension <code>.tmpl</code>. Your custom templates
+must end with <code>.tmpl</code> file extension.</p>
+<p>Including or rendering templates by their name_ with no extension is only possible for the core templates specified in
+the config (the properties with name_ that starts with <code>template...</code>). This is not recommended but possible.</p>
+<h2 id="debugging-templates">Debugging templates</h2>
+<p>You can add <code>--debug-templates</code> into the command line (with no arguments) and a JSON file will be created alongside each
+of the markdown file. For example, if a markdown file <code>group___engine.md</code> will be created, the JSON will be created
+as <code>group___engine.md.json</code>.</p>
+<p>Why is this useful and why JSON? The JSON is the container between C++ data and
+the <a href="https://github.com/pantor/inja">inja</a> template engine. So inside the template you may find something as
+this: <code>{% for param in params %}...{% endfor %}</code>. This <code>params</code> variable is extracted from the JSON. This is also the
+exact same JSON generated in the JSON-only output. The JSON is simply put into the render function of the inja template
+engine.</p>
+
+
+  
+
+
+
+
+                
+
+<footer class="tx-content__footer md-typeset" style="margin-top: 70px; text-align: center;">
+    <a href="https://github.com/alandefreitas/doxybook/" title="Doxybook" class="md-button" target="_blank">
+        ⭐️ Star Doxybook
+    </a>
+</footer>
+
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <!--
+  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Application footer -->
+<footer class="md-footer">
+
+    <!-- Link to previous and/or next page -->
+    
+    <div class="md-footer-nav">
+        <nav
+                class="md-footer-nav__inner md-grid"
+                aria-label="Footer"
+        >
+
+            <!-- Link to previous page -->
+            
+            <a
+                    href="../config/"
+                    class="md-footer-nav__link md-footer-nav__link--prev"
+                    rel="prev"
+            >
+                <div class="md-footer-nav__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+                </div>
+                <div class="md-footer-nav__title">
+                    <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                        Configuration Files
+                    </div>
+                </div>
+            </a>
+            
+
+            <!-- Link to next page -->
+            
+            <a
+                    href="../library/"
+                    class="md-footer-nav__link md-footer-nav__link--next"
+                    rel="next"
+            >
+                <div class="md-footer-nav__title">
+                    <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                        Library
+                    </div>
+                </div>
+                <div class="md-footer-nav__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+                </div>
+            </a>
+            
+        </nav>
+    </div>
+    
+
+    <!-- Further information -->
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+
+            <!-- Copyright and theme information -->
+            <div class="md-footer-copyright">
+                
+                <div class="md-footer-copyright__highlight">
+                    Copyright &copy; Alan Freitas
+                </div>
+                
+                Made with
+                <a
+                        href="https://squidfunk.github.io/mkdocs-material/"
+                        target="_blank" rel="noopener"
+                >
+                    Material for MkDocs
+                </a>
+            </div>
+
+            <!-- Social links -->
+            <div class="md-social">
+  
+</div>
+        </div>
+    </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
+      
+        <script src="../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classdoxybook_1_1generator" kind="class" language="C++" prot="public">
+    <compoundname>doxybook::generator</compoundname>
+    <includes refid="generator_8hpp" local="no">generator.hpp</includes>
+    <innerclass refid="structdoxybook_1_1generator_1_1summary__section" prot="public">doxybook::generator::summary_section</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdoxybook_1_1generator_1a5e88aef329660e906a597e72af21084f" prot="public" static="no">
+        <type>std::unordered_set&lt; <ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref> &gt;</type>
+        <definition>using doxybook::generator::filter_set =  std::unordered_set&lt;kind&gt;</definition>
+        <argsstring></argsstring>
+        <name>filter_set</name>
+        <briefdescription>
+<para>A set of kinds we should use in an operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="28" column="9" bodyfile="doxybook/generator.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdoxybook_1_1generator_1a127072326da3a5025f8035a9e5d319d9" prot="private" static="no" mutable="no">
+        <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const  &amp;</type>
+        <definition>config const&amp; doxybook::generator::config_</definition>
+        <argsstring></argsstring>
+        <name>config_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="121" column="22" bodyfile="doxybook/generator.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1generator_1a543f8cb89e758b797ef4bbfeb046020e" prot="private" static="no" mutable="no">
+        <type><ref refid="classdoxybook_1_1doxygen" kindref="compound">doxygen</ref> const  &amp;</type>
+        <definition>doxygen const&amp; doxybook::generator::doxygen_</definition>
+        <argsstring></argsstring>
+        <name>doxygen_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="122" column="23" bodyfile="doxybook/generator.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1generator_1a49cea2c6ac49abb9ace8dd19544c6d17" prot="private" static="no" mutable="no">
+        <type><ref refid="classdoxybook_1_1json__converter" kindref="compound">json_converter</ref> const  &amp;</type>
+        <definition>json_converter const&amp; doxybook::generator::json_converter_</definition>
+        <argsstring></argsstring>
+        <name>json_converter_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="123" column="30" bodyfile="doxybook/generator.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1generator_1acca10c987882d2cb7c03ba3fa0c8daa5" prot="private" static="no" mutable="no">
+        <type><ref refid="classdoxybook_1_1renderer" kindref="compound">renderer</ref></type>
+        <definition>renderer doxybook::generator::renderer_</definition>
+        <argsstring></argsstring>
+        <name>renderer_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="124" column="18" bodyfile="doxybook/generator.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdoxybook_1_1generator_1a1cbd439b6438f58626097bfe4b6fa3f9" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doxybook::generator::generator</definition>
+        <argsstring>(config const &amp;config, doxygen const &amp;doxygen, json_converter const &amp;json_converter, std::optional&lt; std::string &gt; const &amp;templates_path)</argsstring>
+        <name>generator</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1doxygen" kindref="compound">doxygen</ref> const &amp;</type>
+          <declname>doxygen</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1json__converter" kindref="compound">json_converter</ref> const &amp;</type>
+          <declname>json_converter</declname>
+        </param>
+        <param>
+          <type>std::optional&lt; std::string &gt; const &amp;</type>
+          <declname>templates_path</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The constructor requires the configuration and doxygen object which should be previously constructed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration options </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>doxygen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Doxygen files </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdoxybook_1_1json__converter" kindref="compound">json_converter</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Converter from json to markdown </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>templates_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional path with templates </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="52" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1generator_1ae3330de524442f71b7327078a9b9018c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::generator::print</definition>
+        <argsstring>(filter_set const &amp;filter, filter_set const &amp;skip)</argsstring>
+        <name>print</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1generator_1a5e88aef329660e906a597e72af21084f" kindref="member">filter_set</ref> const &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1generator_1a5e88aef329660e906a597e72af21084f" kindref="member">filter_set</ref> const &amp;</type>
+          <declname>skip</declname>
+        </param>
+        <briefdescription>
+<para>Generate the documentation for the specified doxygen kinds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="60" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1generator_1ac86ee183eeeec09b876b527176976515" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::generator::json</definition>
+        <argsstring>(filter_set const &amp;filter, filter_set const &amp;skip)</argsstring>
+        <name>json</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1generator_1a5e88aef329660e906a597e72af21084f" kindref="member">filter_set</ref> const &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1generator_1a5e88aef329660e906a597e72af21084f" kindref="member">filter_set</ref> const &amp;</type>
+          <declname>skip</declname>
+        </param>
+        <briefdescription>
+<para>Generate json for the specified doxygen kinds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="64" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1generator_1ad19a39aa579289690b070c099148c993" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::generator::manifest</definition>
+        <argsstring>()</argsstring>
+        <name>manifest</name>
+        <briefdescription>
+<para>Generate a manifest file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="68" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1generator_1a7eb8352bcfaab44d414518f857e9f33d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::generator::print_index</definition>
+        <argsstring>(folder_category type, filter_set const &amp;filter, filter_set const &amp;skip)</argsstring>
+        <name>print_index</name>
+        <param>
+          <type><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1generator_1a5e88aef329660e906a597e72af21084f" kindref="member">filter_set</ref> const &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1generator_1a5e88aef329660e906a597e72af21084f" kindref="member">filter_set</ref> const &amp;</type>
+          <declname>skip</declname>
+        </param>
+        <briefdescription>
+<para>Generate the indexes for the specified doxygen kinds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="72" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1generator_1ac14ee9032044a73270e5c5f3bb69f7f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::generator::summary</definition>
+        <argsstring>(std::string const &amp;input_file, std::string const &amp;output_file, std::vector&lt; summary_section &gt; const &amp;sections)</argsstring>
+        <name>summary</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>input_file</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>output_file</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structdoxybook_1_1generator_1_1summary__section" kindref="compound">summary_section</ref> &gt; const &amp;</type>
+          <declname>sections</declname>
+        </param>
+        <briefdescription>
+<para>Generate the summary for the specified doxygen sections. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="79" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdoxybook_1_1generator_1a28fadbf9c3a0f8ee5372ad9d18e86b31" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::generator::print_recursively</definition>
+        <argsstring>(node const &amp;parent, filter_set const &amp;filter, filter_set const &amp;skip)</argsstring>
+        <name>print_recursively</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1node" kindref="compound">node</ref> const &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1generator_1a5e88aef329660e906a597e72af21084f" kindref="member">filter_set</ref> const &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1generator_1a5e88aef329660e906a597e72af21084f" kindref="member">filter_set</ref> const &amp;</type>
+          <declname>skip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="86" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1generator_1a36bfaf14d9dddc11f995335ff1e491c0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>nlohmann::json doxybook::generator::manifest_recursively</definition>
+        <argsstring>(node const &amp;node)</argsstring>
+        <name>manifest_recursively</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1node" kindref="compound">node</ref> const &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="92" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1generator_1a5e3c42f28c1d153e4b1e88e575d7e3b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::generator::json_recursively</definition>
+        <argsstring>(node const &amp;parent, filter_set const &amp;filter, filter_set const &amp;skip)</argsstring>
+        <name>json_recursively</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1node" kindref="compound">node</ref> const &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1generator_1a5e88aef329660e906a597e72af21084f" kindref="member">filter_set</ref> const &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1generator_1a5e88aef329660e906a597e72af21084f" kindref="member">filter_set</ref> const &amp;</type>
+          <declname>skip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="95" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1generator_1af3e47a7cac39235dfd25b6b7afef9652" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::generator::kind_to_template_name</definition>
+        <argsstring>(kind kind)</argsstring>
+        <name>kind_to_template_name</name>
+        <param>
+          <type><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref></type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="101" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1generator_1a375e2ac10f5465f463a92eded79eacaf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>nlohmann::json doxybook::generator::build_index_recursively</definition>
+        <argsstring>(node const &amp;node, filter_set const &amp;filter, filter_set const &amp;skip)</argsstring>
+        <name>build_index_recursively</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1node" kindref="compound">node</ref> const &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1generator_1a5e88aef329660e906a597e72af21084f" kindref="member">filter_set</ref> const &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1generator_1a5e88aef329660e906a597e72af21084f" kindref="member">filter_set</ref> const &amp;</type>
+          <declname>skip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="104" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1generator_1abe121b7694256191284738ba244ccbbc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::generator::summary_recursive</definition>
+        <argsstring>(std::stringstream &amp;ss, int indent, std::string const &amp;folderName, node const &amp;node, filter_set const &amp;filter, filter_set const &amp;skip)</argsstring>
+        <name>summary_recursive</name>
+        <param>
+          <type>std::stringstream &amp;</type>
+          <declname>ss</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indent</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>folderName</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1node" kindref="compound">node</ref> const &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1generator_1a5e88aef329660e906a597e72af21084f" kindref="member">filter_set</ref> const &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1generator_1a5e88aef329660e906a597e72af21084f" kindref="member">filter_set</ref> const &amp;</type>
+          <declname>skip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="110" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1generator_1af6fa301dcfc6fe70527b7a51b4d944d1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool doxybook::generator::should_include</definition>
+        <argsstring>(node const &amp;node)</argsstring>
+        <name>should_include</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1node" kindref="compound">node</ref> const &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/generator.hpp" line="119" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class that stores a <ref refid="classdoxybook_1_1doxygen" kindref="compound">doxygen</ref> object and generates the markdown documentation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This is main class in this whole library. The cli executable basically controls this generator. </para>
+    </detaileddescription>
+    <location file="doxybook/generator.hpp" line="25" column="20" bodyfile="doxybook/generator.hpp" bodystart="25" bodyend="125"/>
+    <listofallmembers>
+      <member refid="classdoxybook_1_1generator_1a375e2ac10f5465f463a92eded79eacaf" prot="private" virt="non-virtual"><scope>doxybook::generator</scope><name>build_index_recursively</name></member>
+      <member refid="classdoxybook_1_1generator_1a127072326da3a5025f8035a9e5d319d9" prot="private" virt="non-virtual"><scope>doxybook::generator</scope><name>config_</name></member>
+      <member refid="classdoxybook_1_1generator_1a543f8cb89e758b797ef4bbfeb046020e" prot="private" virt="non-virtual"><scope>doxybook::generator</scope><name>doxygen_</name></member>
+      <member refid="classdoxybook_1_1generator_1a5e88aef329660e906a597e72af21084f" prot="public" virt="non-virtual"><scope>doxybook::generator</scope><name>filter_set</name></member>
+      <member refid="classdoxybook_1_1generator_1a1cbd439b6438f58626097bfe4b6fa3f9" prot="public" virt="non-virtual"><scope>doxybook::generator</scope><name>generator</name></member>
+      <member refid="classdoxybook_1_1generator_1ac86ee183eeeec09b876b527176976515" prot="public" virt="non-virtual"><scope>doxybook::generator</scope><name>json</name></member>
+      <member refid="classdoxybook_1_1generator_1a49cea2c6ac49abb9ace8dd19544c6d17" prot="private" virt="non-virtual"><scope>doxybook::generator</scope><name>json_converter_</name></member>
+      <member refid="classdoxybook_1_1generator_1a5e3c42f28c1d153e4b1e88e575d7e3b5" prot="private" virt="non-virtual"><scope>doxybook::generator</scope><name>json_recursively</name></member>
+      <member refid="classdoxybook_1_1generator_1af3e47a7cac39235dfd25b6b7afef9652" prot="private" virt="non-virtual"><scope>doxybook::generator</scope><name>kind_to_template_name</name></member>
+      <member refid="classdoxybook_1_1generator_1ad19a39aa579289690b070c099148c993" prot="public" virt="non-virtual"><scope>doxybook::generator</scope><name>manifest</name></member>
+      <member refid="classdoxybook_1_1generator_1a36bfaf14d9dddc11f995335ff1e491c0" prot="private" virt="non-virtual"><scope>doxybook::generator</scope><name>manifest_recursively</name></member>
+      <member refid="classdoxybook_1_1generator_1ae3330de524442f71b7327078a9b9018c" prot="public" virt="non-virtual"><scope>doxybook::generator</scope><name>print</name></member>
+      <member refid="classdoxybook_1_1generator_1a7eb8352bcfaab44d414518f857e9f33d" prot="public" virt="non-virtual"><scope>doxybook::generator</scope><name>print_index</name></member>
+      <member refid="classdoxybook_1_1generator_1a28fadbf9c3a0f8ee5372ad9d18e86b31" prot="private" virt="non-virtual"><scope>doxybook::generator</scope><name>print_recursively</name></member>
+      <member refid="classdoxybook_1_1generator_1acca10c987882d2cb7c03ba3fa0c8daa5" prot="private" virt="non-virtual"><scope>doxybook::generator</scope><name>renderer_</name></member>
+      <member refid="classdoxybook_1_1generator_1af6fa301dcfc6fe70527b7a51b4d944d1" prot="private" virt="non-virtual"><scope>doxybook::generator</scope><name>should_include</name></member>
+      <member refid="classdoxybook_1_1generator_1ac14ee9032044a73270e5c5f3bb69f7f4" prot="public" virt="non-virtual"><scope>doxybook::generator</scope><name>summary</name></member>
+      <member refid="classdoxybook_1_1generator_1abe121b7694256191284738ba244ccbbc" prot="private" virt="non-virtual"><scope>doxybook::generator</scope><name>summary_recursive</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

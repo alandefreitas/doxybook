@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classdoxybook_1_1text__markdown__printer" kind="class" language="C++" prot="public">
+    <compoundname>doxybook::text_markdown_printer</compoundname>
+    <basecompoundref refid="classdoxybook_1_1text__printer" prot="public" virt="non-virtual">doxybook::text_printer</basecompoundref>
+    <includes refid="text__markdown__printer_8hpp" local="no">text_markdown_printer.hpp</includes>
+    <innerclass refid="structdoxybook_1_1text__markdown__printer_1_1list__data" prot="private">doxybook::text_markdown_printer::list_data</innerclass>
+    <innerclass refid="structdoxybook_1_1text__markdown__printer_1_1print__data" prot="private">doxybook::text_markdown_printer::print_data</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdoxybook_1_1text__markdown__printer_1ae1f70eacdef9e26df23f60ea4cbbd666" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::text_markdown_printer::input_dir_</definition>
+        <argsstring></argsstring>
+        <name>input_dir_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_markdown_printer.hpp" line="61" column="21" bodyfile="doxybook/text_markdown_printer.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdoxybook_1_1text__markdown__printer_1a401968e2e2536d37d41d6efe403e8873" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>doxybook::text_markdown_printer::text_markdown_printer</definition>
+        <argsstring>(config const &amp;config, std::string input_dir, doxygen const &amp;doxygen)</argsstring>
+        <name>text_markdown_printer</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>input_dir</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1doxygen" kindref="compound">doxygen</ref> const &amp;</type>
+          <declname>doxygen</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_markdown_printer.hpp" line="19" column="18" bodyfile="doxybook/text_markdown_printer.hpp" bodystart="19" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1text__markdown__printer_1a3283ab3b405c93ccd794ae4c6dd7538f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::text_markdown_printer::print</definition>
+        <argsstring>(xml_text_parser::node const &amp;node, std::string const &amp;language) const override</argsstring>
+        <name>print</name>
+        <reimplements refid="classdoxybook_1_1text__printer_1a401124daec25890de23a2d076f1b2182">print</reimplements>
+        <param>
+          <type><ref refid="structdoxybook_1_1xml__text__parser_1_1node" kindref="compound">xml_text_parser::node</ref> const &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+<para>Print an xml node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_markdown_printer.hpp" line="28" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdoxybook_1_1text__markdown__printer_1a48824674ece67332cc59d70762f49c47" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::text_markdown_printer::print</definition>
+        <argsstring>(print_data &amp;data, xml_text_parser::node const *parent, xml_text_parser::node const *node, xml_text_parser::node const *previous, xml_text_parser::node const *next, std::string const &amp;language) const</argsstring>
+        <name>print</name>
+        <param>
+          <type>print_data &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="structdoxybook_1_1xml__text__parser_1_1node" kindref="compound">xml_text_parser::node</ref> const *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="structdoxybook_1_1xml__text__parser_1_1node" kindref="compound">xml_text_parser::node</ref> const *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="structdoxybook_1_1xml__text__parser_1_1node" kindref="compound">xml_text_parser::node</ref> const *</type>
+          <declname>previous</declname>
+        </param>
+        <param>
+          <type><ref refid="structdoxybook_1_1xml__text__parser_1_1node" kindref="compound">xml_text_parser::node</ref> const *</type>
+          <declname>next</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_markdown_printer.hpp" line="49" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1text__markdown__printer_1a0d210bfb82e9e0e92fcc5d253554c944" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::text_markdown_printer::program_listing</definition>
+        <argsstring>(print_data &amp;data, xml_text_parser::node const &amp;node) const</argsstring>
+        <name>program_listing</name>
+        <param>
+          <type>print_data &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="structdoxybook_1_1xml__text__parser_1_1node" kindref="compound">xml_text_parser::node</ref> const &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_markdown_printer.hpp" line="58" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdoxybook_1_1text__printer_1af7875a18583999d0d20cb6cbc4c66313" prot="protected" static="no" mutable="no">
+        <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const  &amp;</type>
+        <definition>config const&amp; doxybook::text_printer::config_</definition>
+        <argsstring></argsstring>
+        <name>config_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_printer.hpp" line="39" column="22" bodyfile="doxybook/text_printer.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1text__printer_1ae26f071be5cd090b47f1d0db58b79a1d" prot="protected" static="no" mutable="no">
+        <type><ref refid="classdoxybook_1_1doxygen" kindref="compound">doxygen</ref> const  &amp;</type>
+        <definition>doxygen const&amp; doxybook::text_printer::doxygen_</definition>
+        <argsstring></argsstring>
+        <name>doxygen_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_printer.hpp" line="40" column="23" bodyfile="doxybook/text_printer.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Print xml nodes as markdown. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>doxybook::text_printer</label>
+        <link refid="classdoxybook_1_1text__printer"/>
+      </node>
+      <node id="1">
+        <label>doxybook::text_markdown_printer</label>
+        <link refid="classdoxybook_1_1text__markdown__printer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>doxybook::config</label>
+        <link refid="structdoxybook_1_1config"/>
+      </node>
+      <node id="2">
+        <label>doxybook::text_printer</label>
+        <link refid="classdoxybook_1_1text__printer"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>doxygen_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>config_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>doxybook::text_markdown_printer</label>
+        <link refid="classdoxybook_1_1text__markdown__printer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>doxybook::doxygen</label>
+        <link refid="classdoxybook_1_1doxygen"/>
+      </node>
+    </collaborationgraph>
+    <location file="doxybook/text_markdown_printer.hpp" line="16" column="52" bodyfile="doxybook/text_markdown_printer.hpp" bodystart="16" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classdoxybook_1_1text__printer_1af7875a18583999d0d20cb6cbc4c66313" prot="protected" virt="non-virtual"><scope>doxybook::text_markdown_printer</scope><name>config_</name></member>
+      <member refid="classdoxybook_1_1text__printer_1ae26f071be5cd090b47f1d0db58b79a1d" prot="protected" virt="non-virtual"><scope>doxybook::text_markdown_printer</scope><name>doxygen_</name></member>
+      <member refid="classdoxybook_1_1text__markdown__printer_1ae1f70eacdef9e26df23f60ea4cbbd666" prot="private" virt="non-virtual"><scope>doxybook::text_markdown_printer</scope><name>input_dir_</name></member>
+      <member refid="classdoxybook_1_1text__markdown__printer_1a3283ab3b405c93ccd794ae4c6dd7538f" prot="public" virt="virtual"><scope>doxybook::text_markdown_printer</scope><name>print</name></member>
+      <member refid="classdoxybook_1_1text__markdown__printer_1a48824674ece67332cc59d70762f49c47" prot="private" virt="non-virtual"><scope>doxybook::text_markdown_printer</scope><name>print</name></member>
+      <member refid="classdoxybook_1_1text__markdown__printer_1a0d210bfb82e9e0e92fcc5d253554c944" prot="private" virt="non-virtual"><scope>doxybook::text_markdown_printer</scope><name>program_listing</name></member>
+      <member refid="classdoxybook_1_1text__markdown__printer_1a401968e2e2536d37d41d6efe403e8873" prot="public" virt="non-virtual"><scope>doxybook::text_markdown_printer</scope><name>text_markdown_printer</name></member>
+      <member refid="classdoxybook_1_1text__printer_1ae680c068f65818262d8d25ba0c9becb5" prot="public" virt="non-virtual"><scope>doxybook::text_markdown_printer</scope><name>text_printer</name></member>
+      <member refid="classdoxybook_1_1text__printer_1ae1e0de5595a5d97433e5bf9039378fa0" prot="public" virt="virtual"><scope>doxybook::text_markdown_printer</scope><name>~text_printer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

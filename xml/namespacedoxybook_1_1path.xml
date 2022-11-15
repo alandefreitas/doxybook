@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacedoxybook_1_1path" kind="namespace" language="C++">
+    <compoundname>doxybook::path</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedoxybook_1_1path_1a4c3b04537fdd64b22164971d1f31f564" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string doxybook::path::join</definition>
+        <argsstring>(Args const &amp;... args)</argsstring>
+        <name>join</name>
+        <param>
+          <type>Args const &amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Join string arguments as a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/path.hpp" line="44" column="9" bodyfile="doxybook/path.hpp" bodystart="44" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1_1path_1a07a0b33644682c7acde1b9f978fb4060" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::path::filename</definition>
+        <argsstring>(std::string const &amp;path)</argsstring>
+        <name>filename</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Get the filename from a path string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/path.hpp" line="52" column="9" bodyfile="doxybook/path.hpp" bodystart="52" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="doxybook/path.hpp" line="17" column="18"/>
+  </compounddef>
+</doxygen>

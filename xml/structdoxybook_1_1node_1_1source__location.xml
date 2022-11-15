@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdoxybook_1_1node_1_1source__location" kind="struct" language="C++" prot="public">
+    <compoundname>doxybook::node::source_location</compoundname>
+    <includes refid="node_8hpp" local="no">node.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoxybook_1_1node_1_1source__location_1a475c53e589a7c2be17c57f5cee099e9c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::node::source_location::file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="46" column="25" bodyfile="doxybook/node.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1node_1_1source__location_1aa54dd65e9ed3f4ca144cfc91f5e94fbc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int doxybook::node::source_location::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <initializer>{ 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="47" column="17" bodyfile="doxybook/node.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1node_1_1source__location_1aeff8f7f6172ca3b5ad4963611f08b3b1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int doxybook::node::source_location::column</definition>
+        <argsstring></argsstring>
+        <name>column</name>
+        <initializer>{ 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="48" column="17" bodyfile="doxybook/node.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1node_1_1source__location_1acfd3714907b7e4071711be0464aecf64" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::node::source_location::body_file</definition>
+        <argsstring></argsstring>
+        <name>body_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="49" column="25" bodyfile="doxybook/node.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1node_1_1source__location_1a6f0cdf2f3d810f13e87de604ff554b19" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int doxybook::node::source_location::body_start</definition>
+        <argsstring></argsstring>
+        <name>body_start</name>
+        <initializer>{ 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="50" column="17" bodyfile="doxybook/node.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1node_1_1source__location_1a5fccdd07ec27880b487ae4645d9fcd5c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int doxybook::node::source_location::body_end</definition>
+        <argsstring></argsstring>
+        <name>body_end</name>
+        <initializer>{ 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="51" column="17" bodyfile="doxybook/node.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Source code location. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="doxybook/node.hpp" line="45" column="30" bodyfile="doxybook/node.hpp" bodystart="45" bodyend="52"/>
+    <listofallmembers>
+      <member refid="structdoxybook_1_1node_1_1source__location_1a5fccdd07ec27880b487ae4645d9fcd5c" prot="public" virt="non-virtual"><scope>doxybook::node::source_location</scope><name>body_end</name></member>
+      <member refid="structdoxybook_1_1node_1_1source__location_1acfd3714907b7e4071711be0464aecf64" prot="public" virt="non-virtual"><scope>doxybook::node::source_location</scope><name>body_file</name></member>
+      <member refid="structdoxybook_1_1node_1_1source__location_1a6f0cdf2f3d810f13e87de604ff554b19" prot="public" virt="non-virtual"><scope>doxybook::node::source_location</scope><name>body_start</name></member>
+      <member refid="structdoxybook_1_1node_1_1source__location_1aeff8f7f6172ca3b5ad4963611f08b3b1" prot="public" virt="non-virtual"><scope>doxybook::node::source_location</scope><name>column</name></member>
+      <member refid="structdoxybook_1_1node_1_1source__location_1a475c53e589a7c2be17c57f5cee099e9c" prot="public" virt="non-virtual"><scope>doxybook::node::source_location</scope><name>file</name></member>
+      <member refid="structdoxybook_1_1node_1_1source__location_1aa54dd65e9ed3f4ca144cfc91f5e94fbc" prot="public" virt="non-virtual"><scope>doxybook::node::source_location</scope><name>line</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

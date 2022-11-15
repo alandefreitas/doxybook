@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdoxybook_1_1default__template" kind="struct" language="C++" prot="public">
+    <compoundname>doxybook::default_template</compoundname>
+    <includes refid="default__templates_8hpp" local="no">default_templates.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoxybook_1_1default__template_1aa46dab862b07edd0f0c026ec40175094" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::default_template::src</definition>
+        <argsstring></argsstring>
+        <name>src</name>
+        <briefdescription>
+<para>The template source. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/default_templates.hpp" line="20" column="21" bodyfile="doxybook/default_templates.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1default__template_1a6704c49199ebe88427ebff7630891357" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; doxybook::default_template::dependencies</definition>
+        <argsstring></argsstring>
+        <name>dependencies</name>
+        <briefdescription>
+<para>Files on which the template depends. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/default_templates.hpp" line="23" column="21" bodyfile="doxybook/default_templates.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Describe the default template for a page. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="doxybook/default_templates.hpp" line="18" column="27" bodyfile="doxybook/default_templates.hpp" bodystart="18" bodyend="24"/>
+    <listofallmembers>
+      <member refid="structdoxybook_1_1default__template_1a6704c49199ebe88427ebff7630891357" prot="public" virt="non-virtual"><scope>doxybook::default_template</scope><name>dependencies</name></member>
+      <member refid="structdoxybook_1_1default__template_1aa46dab862b07edd0f0c026ec40175094" prot="public" virt="non-virtual"><scope>doxybook::default_template</scope><name>src</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

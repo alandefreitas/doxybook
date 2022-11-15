@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacedoxybook_1_1utils" kind="namespace" language="C++">
+    <compoundname>doxybook::utils</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedoxybook_1_1utils_1a97ee8e35ece5fca0164460deb01491e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string doxybook::utils::join</definition>
+        <argsstring>(Args const &amp;... args)</argsstring>
+        <name>join</name>
+        <param>
+          <type>Args const &amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Join string arguments as a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/utils.hpp" line="43" column="9" bodyfile="doxybook/utils.hpp" bodystart="43" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1_1utils_1a71375ae9ca47000cc786dfc8e64d8975" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::utils::filename</definition>
+        <argsstring>(std::string const &amp;path)</argsstring>
+        <name>filename</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Get the filename from a path string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/utils.hpp" line="51" column="9" bodyfile="doxybook/utils.hpp" bodystart="51" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1_1utils_1abc13ff8ee841db94d895dbe51ae6bb3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::utils::escape</definition>
+        <argsstring>(std::string str)</argsstring>
+        <name>escape</name>
+        <param>
+          <type>std::string</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Escape a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/utils.hpp" line="67" column="9" declfile="doxybook/utils.hpp" declline="67" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1_1utils_1a409a44469debf5aff51feb38d29de4a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::utils::title</definition>
+        <argsstring>(std::string str)</argsstring>
+        <name>title</name>
+        <param>
+          <type>std::string</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Capitalize string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/utils.hpp" line="71" column="9" declfile="doxybook/utils.hpp" declline="71" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1_1utils_1a611a1d571f0bf00983d3bc2d35831f41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::utils::to_lower</definition>
+        <argsstring>(std::string str)</argsstring>
+        <name>to_lower</name>
+        <param>
+          <type>std::string</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Convert string to lowercase. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/utils.hpp" line="75" column="9" declfile="doxybook/utils.hpp" declline="75" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1_1utils_1aa09250f63615dbb83c94600df3ef27bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::utils::safe_anchor_id</definition>
+        <argsstring>(std::string str, bool replace_underscores)</argsstring>
+        <name>safe_anchor_id</name>
+        <param>
+          <type>std::string</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>replace_underscores</declname>
+        </param>
+        <briefdescription>
+<para>Create a safe anchor for a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to convert </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>replace_underscores</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>replaces underscores with hyphens </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>converted string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/utils.hpp" line="84" column="9" declfile="doxybook/utils.hpp" declline="84" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1_1utils_1a25d02bc44dc1f704c38ddaa83fe1c7ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::utils::namespace_to_package</definition>
+        <argsstring>(std::string str)</argsstring>
+        <name>namespace_to_package</name>
+        <param>
+          <type>std::string</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Convert a namespace string to a package string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This replaces all occurences of &quot;::&quot; with &quot;.&quot; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/utils.hpp" line="91" column="9" declfile="doxybook/utils.hpp" declline="91" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1_1utils_1a9a8b28b981822cbfcc75d65a5ac0136c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::utils::date</definition>
+        <argsstring>(std::string const &amp;format)</argsstring>
+        <name>date</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Get current date as a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/utils.hpp" line="95" column="9" declfile="doxybook/utils.hpp" declline="95" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1_1utils_1a7887fd29abc987405c2029788919b838" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::utils::strip_namespace</definition>
+        <argsstring>(std::string const &amp;format)</argsstring>
+        <name>strip_namespace</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Strip namespace from symbol. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/utils.hpp" line="99" column="9" declfile="doxybook/utils.hpp" declline="99" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1_1utils_1a9b8922a25f61240593e216381a21e58f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::utils::strip_anchor</definition>
+        <argsstring>(std::string const &amp;str)</argsstring>
+        <name>strip_anchor</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Strip anchors from a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/utils.hpp" line="103" column="9" declfile="doxybook/utils.hpp" declline="103" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1_1utils_1a632199d50aad1f2b3c0219360216b012" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; doxybook::utils::split</definition>
+        <argsstring>(std::string const &amp;str, std::string const &amp;delim)</argsstring>
+        <name>split</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>delim</declname>
+        </param>
+        <briefdescription>
+<para>Split string with the specified delimiter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/utils.hpp" line="107" column="9" declfile="doxybook/utils.hpp" declline="107" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1_1utils_1afac0413bf41fcff00b17f555144984f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::utils::create_directory</definition>
+        <argsstring>(std::string const &amp;path)</argsstring>
+        <name>create_directory</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Create a directory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/utils.hpp" line="111" column="9" declfile="doxybook/utils.hpp" declline="111" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1_1utils_1ae7daece6459c73fb13847da19f7305f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::utils::normalize_language</definition>
+        <argsstring>(std::string const &amp;language)</argsstring>
+        <name>normalize_language</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+<para>Normalize the language name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/utils.hpp" line="115" column="9" declfile="doxybook/utils.hpp" declline="115" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1_1utils_1ab3562805f5a198398568255b3199bfa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::utils::replace_newline</definition>
+        <argsstring>(std::string str)</argsstring>
+        <name>replace_newline</name>
+        <param>
+          <type>std::string</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Replace newlines with whitespaces. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/utils.hpp" line="119" column="9" declfile="doxybook/utils.hpp" declline="119" declcolumn="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="doxybook/utils.hpp" line="18" column="19"/>
+  </compounddef>
+</doxygen>

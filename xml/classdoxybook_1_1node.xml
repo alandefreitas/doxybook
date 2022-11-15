@@ -1,0 +1,1089 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classdoxybook_1_1node" kind="class" language="C++" prot="public">
+    <compoundname>doxybook::node</compoundname>
+    <includes refid="node_8hpp" local="no">node.hpp</includes>
+    <innerclass refid="structdoxybook_1_1node_1_1class__reference" prot="public">doxybook::node::class_reference</innerclass>
+    <innerclass refid="structdoxybook_1_1node_1_1data" prot="public">doxybook::node::data</innerclass>
+    <innerclass refid="structdoxybook_1_1node_1_1param" prot="public">doxybook::node::param</innerclass>
+    <innerclass refid="structdoxybook_1_1node_1_1parameter__list__item" prot="public">doxybook::node::parameter_list_item</innerclass>
+    <innerclass refid="structdoxybook_1_1node_1_1source__location" prot="public">doxybook::node::source_location</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdoxybook_1_1node_1acd72d6a13e59d868da31de7693f7eca6" prot="public" static="no">
+        <type>std::tuple&lt; <ref refid="structdoxybook_1_1node_1_1data" kindref="compound">data</ref>, std::unordered_map&lt; std::string, <ref refid="structdoxybook_1_1node_1_1data" kindref="compound">data</ref> &gt; &gt;</type>
+        <definition>using doxybook::node::load_data_result =  std:: tuple&lt;data, std::unordered_map&lt;std::string, data&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>load_data_result</name>
+        <briefdescription>
+<para>The result of loading the node internal data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="316" column="9" bodyfile="doxybook/node.hpp" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdoxybook_1_1node_1a24fa53bd717650551f9fc9f224f29cf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class doxygen</definition>
+        <argsstring></argsstring>
+        <name>doxygen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="327" column="9" bodyfile="doxybook/node.hpp" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdoxybook_1_1node_1ab59aca3baea5dc9350408309c8a47bf0" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; Temp &gt;</type>
+        <definition>std::unique_ptr&lt;Temp&gt; doxybook::node::temp_</definition>
+        <argsstring></argsstring>
+        <name>temp_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="342" column="25" bodyfile="doxybook/node.hpp" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1a682b26689387e1db1a406c929ab1abdd" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref></type>
+        <definition>kind doxybook::node::kind_</definition>
+        <argsstring></argsstring>
+        <name>kind_</name>
+        <initializer>{ <ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95acb4ae3b37047fb4b2c0d16f8bf84f076" kindref="member">kind::INDEX</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="343" column="14" bodyfile="doxybook/node.hpp" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1a6d50e65cf13b7f0b0c57624c79365f11" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" kindref="member">type</ref></type>
+        <definition>type doxybook::node::type_</definition>
+        <argsstring></argsstring>
+        <name>type_</name>
+        <initializer>{ <ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07ab50339a10e1de285ac99d4c3990b8693" kindref="member">type::NONE</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="344" column="14" bodyfile="doxybook/node.hpp" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1aecd07ef1a61c4876e63db0d66be5c30c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::node::language_</definition>
+        <argsstring></argsstring>
+        <name>language_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="345" column="21" bodyfile="doxybook/node.hpp" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1ac262523fe3512708a00c6bc848ff84d8" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::node::refid_</definition>
+        <argsstring></argsstring>
+        <name>refid_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="346" column="21" bodyfile="doxybook/node.hpp" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1a7073d6bef590aabf9e78a17c23652a3c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::node::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="347" column="21" bodyfile="doxybook/node.hpp" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1a9e239d4327b79eb6f85f8641c68459b3" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::node::qualified_name_</definition>
+        <argsstring></argsstring>
+        <name>qualified_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="348" column="21" bodyfile="doxybook/node.hpp" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1aca602d352a03a1af82907ec3b5ec695c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::node::brief_</definition>
+        <argsstring></argsstring>
+        <name>brief_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="349" column="21" bodyfile="doxybook/node.hpp" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1a7bd923afd8a6cdf78e5d77f2ff75bf6e" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::node::summary_</definition>
+        <argsstring></argsstring>
+        <name>summary_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="350" column="21" bodyfile="doxybook/node.hpp" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1a24f98700ff750744241153bf57dc425d" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::node::title_</definition>
+        <argsstring></argsstring>
+        <name>title_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="351" column="21" bodyfile="doxybook/node.hpp" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1afeaa9f95a14e7ec6c31803e31a2a7d90" prot="private" static="no" mutable="no">
+        <type><ref refid="classdoxybook_1_1node" kindref="compound">node</ref> *</type>
+        <definition>node* doxybook::node::parent_</definition>
+        <argsstring></argsstring>
+        <name>parent_</name>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="352" column="14" bodyfile="doxybook/node.hpp" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1a9b19ebe06e772f7adc2e64eaea7c0cce" prot="private" static="no" mutable="no">
+        <type><ref refid="classdoxybook_1_1node" kindref="compound">node</ref> *</type>
+        <definition>node* doxybook::node::group_</definition>
+        <argsstring></argsstring>
+        <name>group_</name>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="353" column="14" bodyfile="doxybook/node.hpp" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1a08a351d90f3184a1eaec2a125da393ee" prot="private" static="no" mutable="no">
+        <type>std::list&lt; std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt; &gt;</type>
+        <definition>std::list&lt;std::shared_ptr&lt;node&gt; &gt; doxybook::node::children_</definition>
+        <argsstring></argsstring>
+        <name>children_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="354" column="19" bodyfile="doxybook/node.hpp" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1a213f8bee23cb8401efcce285a0817c36" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doxybook::node::empty_</definition>
+        <argsstring></argsstring>
+        <name>empty_</name>
+        <initializer>{ true }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="355" column="14" bodyfile="doxybook/node.hpp" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1ae07d965804b07dfe66f6604e22b61893" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::node::xml_path_</definition>
+        <argsstring></argsstring>
+        <name>xml_path_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="356" column="21" bodyfile="doxybook/node.hpp" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1ac4b02c4a83a841deb99b932af2b660e8" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structdoxybook_1_1node_1_1class__reference" kindref="compound">class_reference</ref> &gt;</type>
+        <definition>std::vector&lt;class_reference&gt; doxybook::node::base_classes_</definition>
+        <argsstring></argsstring>
+        <name>base_classes_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="357" column="21" bodyfile="doxybook/node.hpp" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1a0172b1357646ac13eae321b44934ed1b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structdoxybook_1_1node_1_1class__reference" kindref="compound">class_reference</ref> &gt;</type>
+        <definition>std::vector&lt;class_reference&gt; doxybook::node::derived_classes_</definition>
+        <argsstring></argsstring>
+        <name>derived_classes_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="358" column="21" bodyfile="doxybook/node.hpp" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1a0ab82bae51bfe70f0dcd96834381310d" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578f" kindref="member">visibility</ref></type>
+        <definition>visibility doxybook::node::visibility_</definition>
+        <argsstring></argsstring>
+        <name>visibility_</name>
+        <initializer>{ <ref refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578facd0c6092d6a6874f379fe4827ed1db8b" kindref="member">visibility::PUBLIC</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="359" column="20" bodyfile="doxybook/node.hpp" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1a6317524175c379ad0cbcdcb9b062ecfc" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139" kindref="member">virtual_category</ref></type>
+        <definition>virtual_category doxybook::node::virt_</definition>
+        <argsstring></argsstring>
+        <name>virt_</name>
+        <initializer>{ <ref refid="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139a42949eafe37d568f1861e2f3732ca548" kindref="member">virtual_category::NON_VIRTUAL</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="360" column="26" bodyfile="doxybook/node.hpp" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1af992bd1d7eaf4b1aeba47634a542476c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::node::url_</definition>
+        <argsstring></argsstring>
+        <name>url_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="361" column="21" bodyfile="doxybook/node.hpp" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1a27e2d3c5a8c11b8cef2148ce081f4a9c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::node::anchor_</definition>
+        <argsstring></argsstring>
+        <name>anchor_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="362" column="21" bodyfile="doxybook/node.hpp" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdoxybook_1_1node_1a75f05d85b08a92c96f38572ba69ebaf8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt;</type>
+        <definition>static std::shared_ptr&lt;node&gt; doxybook::node::parse</definition>
+        <argsstring>(node_cache_map &amp;cache, std::string const &amp;input_dir, std::string const &amp;refid, bool is_group_or_file)</argsstring>
+        <name>parse</name>
+        <param>
+          <type><ref refid="namespacedoxybook_1a8315d0312907cc040ecd163fc5dd229d" kindref="member">node_cache_map</ref> &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>input_dir</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>refid</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_group_or_file</declname>
+        </param>
+        <briefdescription>
+<para>Parse root xml objects (classes, structs, etc) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="131" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1af9fba168329dc6f1928149d4d1a78bdd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt;</type>
+        <definition>static std::shared_ptr&lt;node&gt; doxybook::node::parse</definition>
+        <argsstring>(node_cache_map &amp;cache, std::string const &amp;input_dir, std::shared_ptr&lt; node &gt; const &amp;ptr, bool is_group_or_file)</argsstring>
+        <name>parse</name>
+        <param>
+          <type><ref refid="namespacedoxybook_1a8315d0312907cc040ecd163fc5dd229d" kindref="member">node_cache_map</ref> &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>input_dir</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt; const &amp;</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_group_or_file</declname>
+        </param>
+        <briefdescription>
+<para>Parse objects under the specified node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="139" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a913c842bfc8bdd7a3887f17e0da9ac88" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt;</type>
+        <definition>static std::shared_ptr&lt;node&gt; doxybook::node::parse</definition>
+        <argsstring>(xml::element &amp;member_def, std::string const &amp;ref_id)</argsstring>
+        <name>parse</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1xml_1_1element" kindref="compound">xml::element</ref> &amp;</type>
+          <declname>member_def</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>ref_id</declname>
+        </param>
+        <briefdescription>
+<para>Parse member xml objects (functions, enums, etc) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="147" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdoxybook_1_1node_1a4847f4c99064b057eddbcf62abc3dd5d" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doxybook::node::node</definition>
+        <argsstring>(std::string const &amp;refid)</argsstring>
+        <name>node</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>refid</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The constructor will only store the refid and an empty temporary node.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>refid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Node id </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="156" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a90b51b6a7ac0e11f53536ec461d5297b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doxybook::node::~node</definition>
+        <argsstring>()</argsstring>
+        <name>~node</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="159" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a90c6621889f2e540e2aad49536cb65f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;node&gt; doxybook::node::find</definition>
+        <argsstring>(std::string const &amp;refid) const</argsstring>
+        <name>find</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>refid</declname>
+        </param>
+        <briefdescription>
+<para>Find a node by refid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="163" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a656fc1346a1f0768f6755ed52bc9ea57" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;node&gt; doxybook::node::find_child</definition>
+        <argsstring>(std::string const &amp;refid) const</argsstring>
+        <name>find_child</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>refid</declname>
+        </param>
+        <briefdescription>
+<para>Find an immediate child node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="167" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1aaa8e3dbae207f6132cffe35c1cb846b3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool doxybook::node::is_structured</definition>
+        <argsstring>() const</argsstring>
+        <name>is_structured</name>
+        <briefdescription>
+<para>Check if node represents a structured type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="171" column="9" bodyfile="doxybook/node.hpp" bodystart="171" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1af67155022debda781ced7cfb8cd2e075" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool doxybook::node::is_language</definition>
+        <argsstring>() const</argsstring>
+        <name>is_language</name>
+        <briefdescription>
+<para>Check if node represents a language feature. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="177" column="9" bodyfile="doxybook/node.hpp" bodystart="177" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1aa9b0913813956e56e988b2be4f8013d8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool doxybook::node::is_file_or_dir</definition>
+        <argsstring>() const</argsstring>
+        <name>is_file_or_dir</name>
+        <briefdescription>
+<para>Check if node represents a file or directory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="183" column="9" bodyfile="doxybook/node.hpp" bodystart="183" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a08f0d62fef359bd0a99a615b52669d39" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref></type>
+        <definition>kind doxybook::node::get_kind</definition>
+        <argsstring>() const</argsstring>
+        <name>get_kind</name>
+        <briefdescription>
+<para>Return the kind of node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="189" column="9" bodyfile="doxybook/node.hpp" bodystart="189" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1aa78ea008168a368effca5265a081cf36" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::node::get_language</definition>
+        <argsstring>() const</argsstring>
+        <name>get_language</name>
+        <briefdescription>
+<para>Return the node language. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="195" column="9" bodyfile="doxybook/node.hpp" bodystart="195" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a775ee58864792063f6e474c475d4a75f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" kindref="member">type</ref></type>
+        <definition>type doxybook::node::get_type</definition>
+        <argsstring>() const</argsstring>
+        <name>get_type</name>
+        <briefdescription>
+<para>Return the node type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="201" column="9" bodyfile="doxybook/node.hpp" bodystart="201" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a9e0921a87dd285b86908b7ac464153e2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string const  &amp;</type>
+        <definition>std::string const&amp; doxybook::node::get_refid</definition>
+        <argsstring>() const</argsstring>
+        <name>get_refid</name>
+        <briefdescription>
+<para>Return the node refid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="207" column="9" bodyfile="doxybook/node.hpp" bodystart="207" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a931db546788b9ac85cc62bf5f9094357" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string const  &amp;</type>
+        <definition>std::string const&amp; doxybook::node::get_qualified_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_qualified_name</name>
+        <briefdescription>
+<para>Return the qualified name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="213" column="9" bodyfile="doxybook/node.hpp" bodystart="213" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a57f8ca72f8b41a691870abeaecb0cbf8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string const  &amp;</type>
+        <definition>std::string const&amp; doxybook::node::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+<para>Return the node name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="219" column="9" bodyfile="doxybook/node.hpp" bodystart="219" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a088071062429e592eb567081b39ac683" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdoxybook_1_1node" kindref="compound">node</ref> const  *</type>
+        <definition>node const* doxybook::node::get_parent</definition>
+        <argsstring>() const</argsstring>
+        <name>get_parent</name>
+        <briefdescription>
+<para>Return the node parent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="225" column="9" bodyfile="doxybook/node.hpp" bodystart="225" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a1feda918b148706586841517ba3178e6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdoxybook_1_1node" kindref="compound">node</ref> const  *</type>
+        <definition>node const* doxybook::node::get_group</definition>
+        <argsstring>() const</argsstring>
+        <name>get_group</name>
+        <briefdescription>
+<para>Return the node group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="231" column="9" bodyfile="doxybook/node.hpp" bodystart="231" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1afe77c0864f3e1cc3088b889acb9fdb5b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool doxybook::node::is_empty</definition>
+        <argsstring>() const</argsstring>
+        <name>is_empty</name>
+        <briefdescription>
+<para>Check if the node is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="237" column="9" bodyfile="doxybook/node.hpp" bodystart="237" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a5d5dc44506f26f31e615d39d92bb7a33" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::list&lt; std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt; &gt; const  &amp;</type>
+        <definition>std::list&lt;std::shared_ptr&lt;node&gt; &gt; const&amp; doxybook::node::get_children</definition>
+        <argsstring>() const</argsstring>
+        <name>get_children</name>
+        <briefdescription>
+<para>Return all child nodes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="243" column="9" bodyfile="doxybook/node.hpp" bodystart="243" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a9646d7b4234ba40c406e47c4c2f4d690" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string const  &amp;</type>
+        <definition>std::string const&amp; doxybook::node::get_xml_path</definition>
+        <argsstring>() const</argsstring>
+        <name>get_xml_path</name>
+        <briefdescription>
+<para>Return the node xml_path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="249" column="9" bodyfile="doxybook/node.hpp" bodystart="249" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1ae671937e05600a27be55660466599742" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string const  &amp;</type>
+        <definition>std::string const&amp; doxybook::node::get_brief</definition>
+        <argsstring>() const</argsstring>
+        <name>get_brief</name>
+        <briefdescription>
+<para>Return the node brief. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="255" column="9" bodyfile="doxybook/node.hpp" bodystart="255" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a6c6b4f1ed2c6cf7d30a1950ba99214ba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string const  &amp;</type>
+        <definition>std::string const&amp; doxybook::node::get_summary</definition>
+        <argsstring>() const</argsstring>
+        <name>get_summary</name>
+        <briefdescription>
+<para>Return the node summary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="261" column="9" bodyfile="doxybook/node.hpp" bodystart="261" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a9fedc3586def67edef09d55ccc7e74f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string const  &amp;</type>
+        <definition>std::string const&amp; doxybook::node::get_title</definition>
+        <argsstring>() const</argsstring>
+        <name>get_title</name>
+        <briefdescription>
+<para>Return the node title. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="267" column="9" bodyfile="doxybook/node.hpp" bodystart="267" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1adce85eb479128d4f1dfaa799ca638016" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578f" kindref="member">visibility</ref></type>
+        <definition>visibility doxybook::node::get_visibility</definition>
+        <argsstring>() const</argsstring>
+        <name>get_visibility</name>
+        <briefdescription>
+<para>Return the node visibility. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="273" column="9" bodyfile="doxybook/node.hpp" bodystart="273" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a1b150363333710d68f76b7fa71586ad9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139" kindref="member">virtual_category</ref></type>
+        <definition>virtual_category doxybook::node::get_virtual</definition>
+        <argsstring>() const</argsstring>
+        <name>get_virtual</name>
+        <briefdescription>
+<para>Return the node virtual category. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="279" column="9" bodyfile="doxybook/node.hpp" bodystart="279" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a777d359ef06e492be9261e747e024f9e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structdoxybook_1_1node_1_1class__reference" kindref="compound">class_reference</ref> &gt; const  &amp;</type>
+        <definition>std::vector&lt;class_reference&gt; const&amp; doxybook::node::get_base_classes</definition>
+        <argsstring>() const</argsstring>
+        <name>get_base_classes</name>
+        <briefdescription>
+<para>Return the node base classes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="285" column="9" bodyfile="doxybook/node.hpp" bodystart="285" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a930526b0ad42599635ac26d5a6c44f11" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structdoxybook_1_1node_1_1class__reference" kindref="compound">class_reference</ref> &gt; const  &amp;</type>
+        <definition>std::vector&lt;class_reference&gt; const&amp; doxybook::node::get_derived_classes</definition>
+        <argsstring>() const</argsstring>
+        <name>get_derived_classes</name>
+        <briefdescription>
+<para>Return the node derived classes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="291" column="9" bodyfile="doxybook/node.hpp" bodystart="291" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a69e923fba5e1428c3491293c106c0e62" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string const  &amp;</type>
+        <definition>std::string const&amp; doxybook::node::get_url</definition>
+        <argsstring>() const</argsstring>
+        <name>get_url</name>
+        <briefdescription>
+<para>Return the node url. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="297" column="9" bodyfile="doxybook/node.hpp" bodystart="297" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1adf5141af63b0abfa3f82a63dd31671a7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string const  &amp;</type>
+        <definition>std::string const&amp; doxybook::node::get_anchor</definition>
+        <argsstring>() const</argsstring>
+        <name>get_anchor</name>
+        <briefdescription>
+<para>Return the node anchor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="303" column="9" bodyfile="doxybook/node.hpp" bodystart="303" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1af20b1242c11c2bdd290de97d93cb3e7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::node::finalize</definition>
+        <argsstring>(config const &amp;config, text_printer const &amp;plain_printer, text_printer const &amp;markdown_printer, node_cache_map const &amp;cache)</argsstring>
+        <name>finalize</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1text__printer" kindref="compound">text_printer</ref> const &amp;</type>
+          <declname>plain_printer</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1text__printer" kindref="compound">text_printer</ref> const &amp;</type>
+          <declname>markdown_printer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedoxybook_1a8315d0312907cc040ecd163fc5dd229d" kindref="member">node_cache_map</ref> const &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <briefdescription>
+<para>Print the node contents to text and markdown. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="309" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a425d18c21d8485a33b26462558ffb6f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdoxybook_1_1node_1acd72d6a13e59d868da31de7693f7eca6" kindref="member">load_data_result</ref></type>
+        <definition>load_data_result doxybook::node::load_data</definition>
+        <argsstring>(config const &amp;config, text_printer const &amp;plain_printer, text_printer const &amp;markdown_printer, node_cache_map const &amp;cache) const</argsstring>
+        <name>load_data</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1text__printer" kindref="compound">text_printer</ref> const &amp;</type>
+          <declname>plain_printer</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1text__printer" kindref="compound">text_printer</ref> const &amp;</type>
+          <declname>markdown_printer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedoxybook_1a8315d0312907cc040ecd163fc5dd229d" kindref="member">node_cache_map</ref> const &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <briefdescription>
+<para>Load the node data and its child nodes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="321" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdoxybook_1_1node_1a3814a0fff2cd5e9a7c9f3e6460a3a1c8" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdoxybook_1_1node_1_1data" kindref="compound">data</ref></type>
+        <definition>data doxybook::node::load_data</definition>
+        <argsstring>(config const &amp;config, text_printer const &amp;plain_printer, text_printer const &amp;markdown_printer, node_cache_map const &amp;cache, xml::element const &amp;element) const</argsstring>
+        <name>load_data</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1text__printer" kindref="compound">text_printer</ref> const &amp;</type>
+          <declname>plain_printer</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1text__printer" kindref="compound">text_printer</ref> const &amp;</type>
+          <declname>markdown_printer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedoxybook_1a8315d0312907cc040ecd163fc5dd229d" kindref="member">node_cache_map</ref> const &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1xml_1_1element" kindref="compound">xml::element</ref> const &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="332" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a62f741a4883dfe27c8dd7d2b8a969146" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structdoxybook_1_1node_1_1class__reference" kindref="compound">class_reference</ref> &gt;</type>
+        <definition>std::vector&lt;class_reference&gt; doxybook::node::get_all_base_classes</definition>
+        <argsstring>(node_cache_map const &amp;cache)</argsstring>
+        <name>get_all_base_classes</name>
+        <param>
+          <type><ref refid="namespacedoxybook_1a8315d0312907cc040ecd163fc5dd229d" kindref="member">node_cache_map</ref> const &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="340" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1aec6415aab7e24f64a764ce680ca10b9c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::node::parse_base_info</definition>
+        <argsstring>(xml::element const &amp;element)</argsstring>
+        <name>parse_base_info</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1xml_1_1element" kindref="compound">xml::element</ref> const &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="365" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1ad254fb9685b2c623579b96c2c7674ef6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::node::parse_inheritance_info</definition>
+        <argsstring>(xml::element const &amp;element)</argsstring>
+        <name>parse_inheritance_info</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1xml_1_1element" kindref="compound">xml::element</ref> const &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="368" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1a1a6f71f5f7aea63916e3d68433ee46f5" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;node&gt; doxybook::node::find_recursively</definition>
+        <argsstring>(std::string const &amp;refid) const</argsstring>
+        <name>find_recursively</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>refid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="371" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classdoxybook_1_1node_1a71a693a3b0bbcd636b024a577bba694e" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdoxybook_1_1xml_1_1element" kindref="compound">xml::element</ref></type>
+        <definition>static xml::element doxybook::node::assert_child</definition>
+        <argsstring>(xml::element const &amp;xml, std::string const &amp;name)</argsstring>
+        <name>assert_child</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1xml_1_1element" kindref="compound">xml::element</ref> const &amp;</type>
+          <declname>xml</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="374" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1ad0c82ac9db961b7c3e03765ed1e50fb6" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdoxybook_1_1xml_1_1element" kindref="compound">xml::element</ref></type>
+        <definition>static xml::element doxybook::node::assert_child</definition>
+        <argsstring>(xml const &amp;xml, std::string const &amp;name)</argsstring>
+        <name>assert_child</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1xml" kindref="compound">xml</ref> const &amp;</type>
+          <declname>xml</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="377" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A doxygen node. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="doxybook/node.hpp" line="30" column="15" bodyfile="doxybook/node.hpp" bodystart="30" bodyend="378"/>
+    <listofallmembers>
+      <member refid="classdoxybook_1_1node_1a27e2d3c5a8c11b8cef2148ce081f4a9c" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>anchor_</name></member>
+      <member refid="classdoxybook_1_1node_1a71a693a3b0bbcd636b024a577bba694e" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>assert_child</name></member>
+      <member refid="classdoxybook_1_1node_1ad0c82ac9db961b7c3e03765ed1e50fb6" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>assert_child</name></member>
+      <member refid="classdoxybook_1_1node_1ac4b02c4a83a841deb99b932af2b660e8" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>base_classes_</name></member>
+      <member refid="classdoxybook_1_1node_1aca602d352a03a1af82907ec3b5ec695c" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>brief_</name></member>
+      <member refid="classdoxybook_1_1node_1a08a351d90f3184a1eaec2a125da393ee" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>children_</name></member>
+      <member refid="classdoxybook_1_1node_1a0172b1357646ac13eae321b44934ed1b" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>derived_classes_</name></member>
+      <member refid="classdoxybook_1_1node_1a24fa53bd717650551f9fc9f224f29cf3" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>doxygen</name></member>
+      <member refid="classdoxybook_1_1node_1a213f8bee23cb8401efcce285a0817c36" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>empty_</name></member>
+      <member refid="classdoxybook_1_1node_1af20b1242c11c2bdd290de97d93cb3e7a" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>finalize</name></member>
+      <member refid="classdoxybook_1_1node_1a90c6621889f2e540e2aad49536cb65f7" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>find</name></member>
+      <member refid="classdoxybook_1_1node_1a656fc1346a1f0768f6755ed52bc9ea57" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>find_child</name></member>
+      <member refid="classdoxybook_1_1node_1a1a6f71f5f7aea63916e3d68433ee46f5" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>find_recursively</name></member>
+      <member refid="classdoxybook_1_1node_1a62f741a4883dfe27c8dd7d2b8a969146" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>get_all_base_classes</name></member>
+      <member refid="classdoxybook_1_1node_1adf5141af63b0abfa3f82a63dd31671a7" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_anchor</name></member>
+      <member refid="classdoxybook_1_1node_1a777d359ef06e492be9261e747e024f9e" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_base_classes</name></member>
+      <member refid="classdoxybook_1_1node_1ae671937e05600a27be55660466599742" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_brief</name></member>
+      <member refid="classdoxybook_1_1node_1a5d5dc44506f26f31e615d39d92bb7a33" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_children</name></member>
+      <member refid="classdoxybook_1_1node_1a930526b0ad42599635ac26d5a6c44f11" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_derived_classes</name></member>
+      <member refid="classdoxybook_1_1node_1a1feda918b148706586841517ba3178e6" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_group</name></member>
+      <member refid="classdoxybook_1_1node_1a08f0d62fef359bd0a99a615b52669d39" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_kind</name></member>
+      <member refid="classdoxybook_1_1node_1aa78ea008168a368effca5265a081cf36" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_language</name></member>
+      <member refid="classdoxybook_1_1node_1a57f8ca72f8b41a691870abeaecb0cbf8" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_name</name></member>
+      <member refid="classdoxybook_1_1node_1a088071062429e592eb567081b39ac683" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_parent</name></member>
+      <member refid="classdoxybook_1_1node_1a931db546788b9ac85cc62bf5f9094357" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_qualified_name</name></member>
+      <member refid="classdoxybook_1_1node_1a9e0921a87dd285b86908b7ac464153e2" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_refid</name></member>
+      <member refid="classdoxybook_1_1node_1a6c6b4f1ed2c6cf7d30a1950ba99214ba" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_summary</name></member>
+      <member refid="classdoxybook_1_1node_1a9fedc3586def67edef09d55ccc7e74f9" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_title</name></member>
+      <member refid="classdoxybook_1_1node_1a775ee58864792063f6e474c475d4a75f" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_type</name></member>
+      <member refid="classdoxybook_1_1node_1a69e923fba5e1428c3491293c106c0e62" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_url</name></member>
+      <member refid="classdoxybook_1_1node_1a1b150363333710d68f76b7fa71586ad9" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_virtual</name></member>
+      <member refid="classdoxybook_1_1node_1adce85eb479128d4f1dfaa799ca638016" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_visibility</name></member>
+      <member refid="classdoxybook_1_1node_1a9646d7b4234ba40c406e47c4c2f4d690" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_xml_path</name></member>
+      <member refid="classdoxybook_1_1node_1a9b19ebe06e772f7adc2e64eaea7c0cce" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>group_</name></member>
+      <member refid="classdoxybook_1_1node_1afe77c0864f3e1cc3088b889acb9fdb5b" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>is_empty</name></member>
+      <member refid="classdoxybook_1_1node_1aa9b0913813956e56e988b2be4f8013d8" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>is_file_or_dir</name></member>
+      <member refid="classdoxybook_1_1node_1af67155022debda781ced7cfb8cd2e075" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>is_language</name></member>
+      <member refid="classdoxybook_1_1node_1aaa8e3dbae207f6132cffe35c1cb846b3" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>is_structured</name></member>
+      <member refid="classdoxybook_1_1node_1a682b26689387e1db1a406c929ab1abdd" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>kind_</name></member>
+      <member refid="classdoxybook_1_1node_1aecd07ef1a61c4876e63db0d66be5c30c" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>language_</name></member>
+      <member refid="classdoxybook_1_1node_1a425d18c21d8485a33b26462558ffb6f8" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>load_data</name></member>
+      <member refid="classdoxybook_1_1node_1a3814a0fff2cd5e9a7c9f3e6460a3a1c8" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>load_data</name></member>
+      <member refid="classdoxybook_1_1node_1acd72d6a13e59d868da31de7693f7eca6" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>load_data_result</name></member>
+      <member refid="classdoxybook_1_1node_1a7073d6bef590aabf9e78a17c23652a3c" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>name_</name></member>
+      <member refid="classdoxybook_1_1node_1a4847f4c99064b057eddbcf62abc3dd5d" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>node</name></member>
+      <member refid="classdoxybook_1_1node_1afeaa9f95a14e7ec6c31803e31a2a7d90" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>parent_</name></member>
+      <member refid="classdoxybook_1_1node_1a75f05d85b08a92c96f38572ba69ebaf8" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>parse</name></member>
+      <member refid="classdoxybook_1_1node_1af9fba168329dc6f1928149d4d1a78bdd" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>parse</name></member>
+      <member refid="classdoxybook_1_1node_1a913c842bfc8bdd7a3887f17e0da9ac88" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>parse</name></member>
+      <member refid="classdoxybook_1_1node_1aec6415aab7e24f64a764ce680ca10b9c" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>parse_base_info</name></member>
+      <member refid="classdoxybook_1_1node_1ad254fb9685b2c623579b96c2c7674ef6" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>parse_inheritance_info</name></member>
+      <member refid="classdoxybook_1_1node_1a9e239d4327b79eb6f85f8641c68459b3" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>qualified_name_</name></member>
+      <member refid="classdoxybook_1_1node_1ac262523fe3512708a00c6bc848ff84d8" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>refid_</name></member>
+      <member refid="classdoxybook_1_1node_1a7bd923afd8a6cdf78e5d77f2ff75bf6e" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>summary_</name></member>
+      <member refid="classdoxybook_1_1node_1ab59aca3baea5dc9350408309c8a47bf0" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>temp_</name></member>
+      <member refid="classdoxybook_1_1node_1a24f98700ff750744241153bf57dc425d" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>title_</name></member>
+      <member refid="classdoxybook_1_1node_1a6d50e65cf13b7f0b0c57624c79365f11" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>type_</name></member>
+      <member refid="classdoxybook_1_1node_1af992bd1d7eaf4b1aeba47634a542476c" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>url_</name></member>
+      <member refid="classdoxybook_1_1node_1a6317524175c379ad0cbcdcb9b062ecfc" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>virt_</name></member>
+      <member refid="classdoxybook_1_1node_1a0ab82bae51bfe70f0dcd96834381310d" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>visibility_</name></member>
+      <member refid="classdoxybook_1_1node_1ae07d965804b07dfe66f6604e22b61893" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>xml_path_</name></member>
+      <member refid="classdoxybook_1_1node_1a90b51b6a7ac0e11f53536ec461d5297b" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>~node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
