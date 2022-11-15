@@ -1,0 +1,8 @@
+baseURL: https://alandefreitas.github.io/doxybook/hugo-book
+languageCode: en-us
+title: Doxybook Example
+theme: hugo-book
+pygmentsCodeFences: true
+params:
+  BookMenuBundle: /menu
+

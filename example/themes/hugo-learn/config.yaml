@@ -1,0 +1,8 @@
+baseURL: https://alandefreitas.github.io/doxybook/hugo-learn
+languageCode: en-us
+title: Doxybook Example
+theme: hugo-theme-learn
+pygmentsUseClasses: false
+pygmentsCodeFences: true
+pygmentsCodefencesGuessSyntax: true
+pygmentsStyle: "tango"

@@ -1,0 +1,13 @@
+site_name: Doxybook Example
+theme:
+  name: 'material'
+markdown_extensions:
+  - admonition
+nav:
+  - Home: /doxybook/mkdocs-material/
+  - Classes: /doxybook/mkdocs-material/Classes
+  - Namespaces: /doxybook/mkdocs-material/Namespaces
+  - Modules: /doxybook/mkdocs-material/Modules
+  - Files: /doxybook/mkdocs-material/Files
+  - Related Pages: /doxybook/mkdocs-material/Pages
+  - Examples: /doxybook/mkdocs-material/Examples

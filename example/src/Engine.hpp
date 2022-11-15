@@ -71,7 +71,7 @@ This is a mainpage of Doxybook example output. This file is generated from
 
 ## Hyper links:
 
-- [GitHub repository](https://github.com/matusnovak/doxybook2)
+- [GitHub repository](https://github.com/alandefreitas/doxybook)
 
 ## Code blocks:
 
@@ -99,12 +99,12 @@ This manual is divided in the following sections:
 First Header  | Second Header | Third Header
 ------------- | ------------- | -------------
 Content Cell  | Content Cell  | Content Cell with ref Engine::Audio::AudioBuffer
-Content Cell  | Content Cell  | Content Cell [with link](https://github.com/matusnovak/doxybook2)
+Content Cell  | Content Cell  | Content Cell [with link](https://github.com/alandefreitas/doxybook)
 
 ## Inline formula
 
 Please see mkdocs-readthedocs example at
-https://matusnovak.github.io/doxybook2/mkdocs-readthedocs/
+https://alandefreitas.github.io/doxybook/mkdocs-readthedocs/
 to see a working example using mkdocs + pymdownx.arithmatex
 
 The distance between \f$(x_1,y_1)\f$ and \f$(x_2,y_2)\f$ is

@@ -1,6 +1,6 @@
 DOXYFILE_ENCODING = UTF-8
 PROJECT_NAME = "Doxybook Example"
-OUTPUT_DIRECTORY = doxygen
+OUTPUT_DIRECTORY = .
 GENERATE_LATEX = NO
 
 # The necessary stuff!
@@ -22,4 +22,4 @@ GENERATE_HTML = YES
 CALL_GRAPH = NO
 HAVE_DOT = NO
 
-IMAGE_PATH = images
+IMAGE_PATH = themes/images
