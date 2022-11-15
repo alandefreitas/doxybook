@@ -2,6 +2,7 @@ import os
 import re
 import xml.etree.ElementTree as ET
 
+
 def declare_variables(variables, macro):
     @macro
     def code_snippet(filename: str, snippet: str = "", language: str = "", indent=0, replacements={}):
@@ -17,16 +18,16 @@ def declare_variables(variables, macro):
         docs_dir = variables.get("docs_dir", "docs")
 
         # Look for file
-        abs_docs_path = os.path.abspath(os.path.join(docs_dir, filename))
-        abs_root_path = os.path.abspath(os.path.join(docs_dir, "..", filename))
-        abs_examples_path = os.path.abspath(os.path.join(docs_dir, "../examples/", filename))
+        candidate_paths = [os.path.abspath(os.path.join(docs_dir, filename)),
+                           os.path.abspath(os.path.join(docs_dir, "..", filename)),
+                           os.path.abspath(os.path.join(docs_dir, "example", filename)),
+                           os.path.abspath(os.path.join(docs_dir, "../example", filename)),
+                           os.path.abspath(os.path.join(docs_dir, "docs", filename))]
         abs_path = ''
-        if os.path.exists(abs_docs_path):
-            abs_path = abs_docs_path
-        elif os.path.exists(abs_root_path):
-            abs_path = abs_root_path
-        elif os.path.exists(abs_examples_path):
-            abs_path = abs_examples_path
+        for p in candidate_paths:
+            if os.path.exists(p):
+                abs_path = p
+                break
 
         if language == '':
             extension = os.path.splitext(abs_path)[1]
@@ -301,7 +302,7 @@ def declare_variables(variables, macro):
         return res
 
     @macro
-    def cmake_options(filename: str, indent = 0):
+    def cmake_options(filename: str, indent=0):
         """
         Render options from a CMakelists file
         """
@@ -350,7 +351,7 @@ def declare_variables(variables, macro):
             return res
 
     @macro
-    def cli_options(filename: str, indent = 0):
+    def cli_options(filename: str, indent=0):
         """
         Render options from a CMakelists file
         """
@@ -413,7 +414,7 @@ def declare_variables(variables, macro):
                         # short and long
                         end_opt = line.find(',')
                         short = line[0:end_opt]
-                        line = line[end_opt+1:].strip()
+                        line = line[end_opt + 1:].strip()
                         end_opt = line.find(' ')
                         opt = line[:end_opt]
                         line = line[end_opt:].strip()
