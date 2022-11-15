@@ -4,7 +4,7 @@
 cmake_minimum_required(VERSION 3.16)
 project(
         doxybook
-        VERSION 1.5.0
+        VERSION 1.5.1
         DESCRIPTION "Doxygen XML to Markdown"
         HOMEPAGE_URL "https://alandefreitas.github.io/doxybook/"
 )
