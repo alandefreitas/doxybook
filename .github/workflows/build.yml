@@ -123,7 +123,7 @@ jobs:
           path: build/doxybook-?.?.?-*.*
 
       - name: Check conventional commit
-        if: ${{ !contains( matrix.config.os, 'macos') }}
+        if: ${{ !contains( matrix.config.os, 'macos') && !contains(github.event.head_commit.message, '[FOLD]') }}
         uses: webiny/action-conventional-commits@v1.1.0
 
       - name: Codecov generate
