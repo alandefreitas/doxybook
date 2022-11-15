@@ -7,17 +7,17 @@
 //
 
 #define NOMINMAX 1
-#include <doxybook/exception_utils.hpp>
 #include <doxybook/default_templates.hpp>
 #include <doxybook/exception.hpp>
+#include <doxybook/exception_utils.hpp>
 #include <doxybook/renderer.hpp>
 #include <doxybook/utils.hpp>
+#include <fmt/format.h>
+#include <spdlog/spdlog.h>
 #include <chrono>
 #include <dirent.h>
 #include <set>
-#include <fmt/format.h>
 #include <inja/inja.hpp>
-#include <spdlog/spdlog.h>
 #include <unordered_set>
 
 #ifdef _WIN32
@@ -106,10 +106,12 @@ doxybook::renderer::renderer(
         const auto arg = args.at(0)->get<std::string>();
         return arg.empty();
     });
+
     env_->add_callback("escape", 1, [](inja::Arguments& args) -> std::string {
         const auto arg = args.at(0)->get<std::string>();
         return utils::escape(arg);
     });
+
     env_->add_callback(
         "safeAnchorId",
         1,
@@ -118,14 +120,17 @@ doxybook::renderer::renderer(
             return utils::
                 safe_anchor_id(arg, config.replaceUnderscoresInAnchors);
         });
+
     env_->add_callback("title", 1, [](inja::Arguments& args) {
         const auto arg = args.at(0)->get<std::string>();
         return utils::title(arg);
     });
+
     env_->add_callback("date", 1, [](inja::Arguments& args) -> std::string {
         const auto arg = args.at(0)->get<std::string>();
         return utils::date(arg);
     });
+
     env_->add_callback(
         "stripNamespace",
         1,
@@ -133,6 +138,7 @@ doxybook::renderer::renderer(
             const auto arg = args.at(0)->get<std::string>();
             return utils::strip_namespace(arg);
         });
+
     env_->add_callback("split", 2, [](inja::Arguments& args) -> nlohmann::json {
         const auto arg0 = args.at(0)->get<std::string>();
         const auto arg1 = args.at(1)->get<std::string>();
@@ -142,19 +148,23 @@ doxybook::renderer::renderer(
         }
         return ret;
     });
+
     env_->add_callback("first", 1, [](inja::Arguments& args) -> nlohmann::json {
         const auto arg = args.at(0)->get<nlohmann::json>();
         return arg.front();
     });
+
     env_->add_callback("last", 1, [](inja::Arguments& args) -> nlohmann::json {
         const auto arg = args.at(0)->get<nlohmann::json>();
         return arg.back();
     });
+
     env_->add_callback("get", 2, [](inja::Arguments& args) -> nlohmann::json {
         const auto obj = args.at(0)->get<nlohmann::json>();
         const auto key = args.at(1)->get<std::string>();
         return obj.at(key);
     });
+
     env_->add_callback("index", 2, [](inja::Arguments& args) -> nlohmann::json {
         const auto arr = args.at(0)->get<nlohmann::json>();
         const auto idx = args.at(1)->get<int>();
@@ -164,6 +174,7 @@ doxybook::renderer::renderer(
             return arr.at(arr.size() + idx);
         }
     });
+
     env_->add_callback("countProperty", 3, [](inja::Arguments& args) -> int {
         const auto arr = args.at(0)->get<nlohmann::json>();
         const auto key = args.at(1)->get<std::string>();
@@ -178,6 +189,7 @@ doxybook::renderer::renderer(
         }
         return count;
     });
+
     env_->add_callback(
         "queryProperty",
         3,
@@ -194,15 +206,18 @@ doxybook::renderer::renderer(
             }
             return ret;
         });
+
     env_->add_callback("render", 2, [=](inja::Arguments& args) -> nlohmann::json {
         const auto name = args.at(0)->get<std::string>();
         const auto data = args.at(1)->get<nlohmann::json>();
         return this->render(name, data);
     });
+
     env_->add_callback("load", 1, [&](inja::Arguments& args) -> nlohmann::json {
         const auto refid = args.at(0)->get<std::string>();
         return json_converter.get_as_json(*doxygen.find(refid));
     });
+
     env_->add_callback("replace", 3, [](inja::Arguments& args) -> nlohmann::json {
         auto str = args.at(0)->get<std::string>();
         const auto what = args.at(1)->get<std::string>();
@@ -215,6 +230,338 @@ doxybook::renderer::renderer(
         }
         return str;
     });
+
+    env_->add_callback(
+        "contains",
+        2,
+        [](inja::Arguments& args) -> nlohmann::json {
+            nlohmann::json const& range = *args.at(0);
+            nlohmann::json const& what = *args.at(1);
+            return std::find(range.begin(), range.end(), what) != range.end();
+        });
+
+    env_->add_callback("includes", 2, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& range = *args.at(0);
+        nlohmann::json const& what = *args.at(1);
+        return std::search(range.begin(), range.end(), what.begin(), what.end())
+               != range.end();
+    });
+
+    env_->add_callback("includes", 2, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& range = *args.at(0);
+        nlohmann::json const& what = *args.at(1);
+        return std::search(range.begin(), range.end(), what.begin(), what.end())
+               != range.end();
+    });
+
+    env_->add_callback("chunk", 2, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& range = *args.at(0);
+        int cn = args.at(1)->get<int>();
+        nlohmann::json res = nlohmann::json::array({});
+        std::size_t n = range.size();
+        for (std::size_t i = 0; i < n; i += cn) {
+            res.push_back(nlohmann::json::array());
+            res.back().insert(
+                res.back().end(),
+                range.begin() + i,
+                range.begin() + std::min(i + cn, n));
+        }
+        return res;
+    });
+
+    env_->add_callback(
+        "collapse",
+        1,
+        [](inja::Arguments& args) -> nlohmann::json {
+            nlohmann::json const& range = *args.at(0);
+            nlohmann::json flat = nlohmann::json::array({});
+            for (auto& el: range) {
+                if (el.is_array()) {
+                    flat.insert(flat.end(), el.begin(), el.end());
+                } else {
+                    flat.push_back(el);
+                }
+            }
+            return flat;
+        });
+
+    env_->add_callback("count", 2, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& range = *args.at(0);
+        nlohmann::json const& el = *args.at(1);
+        return std::count(range.begin(), range.end(), el);
+    });
+
+    env_->add_callback("diff", 2, [](inja::Arguments& args) -> nlohmann::json {
+        // return subranges of range1 that are not in range2
+        nlohmann::json const& range1 = *args.at(0);
+        nlohmann::json const& range2 = *args.at(0);
+        auto it = std::
+            search(range1.begin(), range1.end(), range2.begin(), range2.end());
+        if (it == range1.end()) {
+            return range1;
+        }
+        nlohmann::json res = nlohmann::json::array({});
+        res.insert(res.end(), range1.begin(), it);
+        res.insert(res.end(), it + range2.size(), range1.end());
+        return res;
+    });
+
+    env_->add_callback("keys", 1, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& m = *args.at(0);
+        nlohmann::json r = nlohmann::json::array({});
+        for (auto& el: m.items()) {
+            r.push_back(el.key());
+        }
+        return r;
+    });
+
+    env_->add_callback("values", 1, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& m = *args.at(0);
+        nlohmann::json r = nlohmann::json::array({});
+        for (auto& el: m.items()) {
+            r.push_back(el.value());
+        }
+        return r;
+    });
+
+    env_->add_callback("forget", 2, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& m = *args.at(0);
+        std::string const k = args.at(2)->get<std::string>();
+        nlohmann::json r = m;
+        r.erase(k);
+        return r;
+    });
+
+    env_->add_callback("getOr", 3, [](inja::Arguments& args) -> nlohmann::json {
+        // return subranges of range1 that are not in range2
+        nlohmann::json const& m = *args.at(0);
+        std::string const k = args.at(1)->get<std::string>();
+        nlohmann::json const& or_v = *args.at(2);
+        if (m.contains(k)) {
+            return m[k];
+        }
+        return or_v;
+    });
+
+    env_->add_callback("groupBy", 2, [](inja::Arguments& args) -> nlohmann::json {
+        // m is array of objs
+        nlohmann::json const& m = *args.at(0);
+        std::string const k = args.at(1)->get<std::string>();
+        std::vector<std::uint8_t> copied(m.size(), 0);
+        nlohmann::json res = nlohmann::json::object({});
+        for (std::size_t i = 0; i < m.size(); ++i) {
+            if (copied[i] || !m[i].contains(k)) {
+                copied[i] = 0x01;
+                continue;
+            }
+            copied[i] = 0x01;
+            std::string group_name = m[i][k].get<std::string>();
+            res[group_name] = nlohmann::json::array({});
+            res[group_name].push_back(m[i]);
+            for (std::size_t j = i; j < m.size(); ++j) {
+                if (copied[j]) {
+                    continue;
+                }
+                if (m[j][k] == m[i][k]) {
+                    res[group_name].push_back(m[j]);
+                    copied[j] = 0x01;
+                }
+            }
+        }
+        return res;
+    });
+
+    env_->add_callback("has", 2, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& m = *args.at(0);
+        std::string const k = args.at(1)->get<std::string>();
+        return m.contains(k);
+    });
+
+    env_->add_callback("hasAny", 2, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& m = *args.at(0);
+        nlohmann::json const& keys = *args.at(1);
+        for (auto& k: keys) {
+            if (m.contains(k)) {
+                return true;
+            }
+        }
+        return false;
+    });
+
+    env_->add_callback("implode", 3, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& range = *args.at(0);
+        std::string key = args.at(1)->get<std::string>();
+        std::string delim = args.at(2)->get<std::string>();
+        if (range.empty()) {
+            return "";
+        }
+        std::string res = range[0][key].get<std::string>();
+        for (std::size_t i = 1; i < range.size(); ++i) {
+            res += delim;
+            res += range[i][key].get<std::string>();
+        }
+        return res;
+    });
+
+    env_->add_callback(
+        "intersect",
+        2,
+        [](inja::Arguments& args) -> nlohmann::json {
+            nlohmann::json const& range1 = *args.at(0);
+            nlohmann::json const& range2 = *args.at(0);
+            nlohmann::json res = nlohmann::json::array({});
+            for (auto& el: range1) {
+                if (std::find(range2.begin(), range2.end(), el) != range2.end())
+                {
+                    res.push_back(el);
+                }
+            }
+            return res;
+        });
+
+    env_->add_callback("join", 2, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& range = *args.at(0);
+        std::string delim = args.at(2)->get<std::string>();
+        if (range.empty()) {
+            return "";
+        }
+        std::string res = range[0].get<std::string>();
+        for (std::size_t i = 1; i < range.size(); ++i) {
+            res += delim;
+            res += range[i].get<std::string>();
+        }
+        return res;
+    });
+
+    env_->add_callback("merge", 2, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& obj = *args.at(0);
+        nlohmann::json const& over = *args.at(1);
+        nlohmann::json res = obj;
+        for (auto& i: over.items()) {
+            res[i.key()] = i.value();
+        }
+        return res;
+    });
+
+    env_->add_callback(
+        "mergeRecursive",
+        2,
+        [](inja::Arguments& args) -> nlohmann::json {
+            nlohmann::json const& obj = *args.at(0);
+            nlohmann::json const& over = *args.at(1);
+            nlohmann::json res = obj;
+            for (auto& i: over.items()) {
+                if (!res.contains(i.key())) {
+                    res[i.key()] = i.value();
+                } else if (!res[i.key()].is_array()) {
+                    res[i.key()] = nlohmann::json::array(
+                        { res[i.key()], i.value() });
+                } else {
+                    res[i.key()].push_back(i.value());
+                }
+            }
+            return res;
+        });
+
+    env_->add_callback("pluck", 2, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& range = *args.at(0);
+        std::string key = args.at(1)->get<std::string>();
+        nlohmann::json res = nlohmann::json::array({});
+        for (auto const& el: range) {
+            if (el.contains(key)) {
+                res.push_back(el[key]);
+            }
+        }
+        return res;
+    });
+
+    env_->add_callback("prepend", 2, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& range = *args.at(0);
+        nlohmann::json const& value = *args.at(1);
+        nlohmann::json res = range;
+        res.insert(res.begin(), value);
+        return res;
+    });
+
+    env_->add_callback("reverse", 1, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& range = *args.at(0);
+        nlohmann::json res = range;
+        std::reverse(res.begin(), res.end());
+        return res;
+    });
+
+    env_->add_callback("sortBy", 2, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& range = *args.at(0);
+        std::string key = args.at(1)->get<std::string>();
+        nlohmann::json res = range;
+        std::sort(
+            res.begin(),
+            res.end(),
+            [&key](nlohmann::json const& a, nlohmann::json const& b) {
+            const bool ak = a.contains(key);
+            const bool bk = b.contains(key);
+            if (!ak) {
+                return bk;
+            }
+            if (!bk) {
+                return false;
+            } else {
+                return a[key] < b[key];
+            }
+            });
+        return res;
+    });
+
+    env_->add_callback("unique", 1, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& range = *args.at(0);
+        nlohmann::json res = range;
+        std::sort(res.begin(), res.end());
+        auto last = std::unique(res.begin(), res.end());
+        res.erase(last, res.end());
+        return res;
+    });
+
+    env_->add_callback("where", 3, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& range = *args.at(0);
+        std::string const& key = args.at(1)->get<std::string>();
+        nlohmann::json const& v = *args.at(2);
+        nlohmann::json res = nlohmann::json::array({});
+        for (auto& obj: range) {
+            if (obj.contains(key) && obj[key] == v) {
+                res.push_back(obj);
+            }
+        }
+        return res;
+    });
+
+    env_->add_callback("whereIn", 3, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& range = *args.at(0);
+        std::string const& key = args.at(1)->get<std::string>();
+        nlohmann::json const& values = *args.at(2);
+        nlohmann::json res = nlohmann::json::array({});
+        for (auto& obj: range) {
+            if (obj.contains(key)
+                && std::find(values.begin(), values.end(), obj[key])
+                       != values.end())
+            {
+                res.push_back(obj);
+            }
+        }
+        return res;
+    });
+
+    env_->add_callback("zip", 3, [](inja::Arguments& args) -> nlohmann::json {
+        nlohmann::json const& range1 = *args.at(0);
+        nlohmann::json const& range2 = *args.at(1);
+        nlohmann::json res = nlohmann::json::array({});
+        auto it1 = range1.begin();
+        auto it2 = range1.begin();
+        while (it1 != range1.end() && it2 != range2.end()) {
+            res[it1->get<std::string>()] = *it2;
+        }
+        return res;
+    });
+
     env_->add_void_callback("noop", 0, [](inja::Arguments& args) {});
     // env->set_trim_blocks(false);
     // env->set_lstrip_blocks(false);
