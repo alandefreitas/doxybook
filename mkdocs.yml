@@ -1,0 +1,72 @@
+site_name: Doxybook
+site_url: https://alandefreitas.github.io/doxybook/
+repo_url: https://github.com/alandefreitas/doxybook/
+edit_uri: edit/develop/docs/
+repo_name: alandefreitas/doxybook
+site_description: "Doxybook: Doxygen XML to Markdown"
+
+nav:
+  - Home: index.md
+  - Quickstart: quickstart.md
+  - Basic usage: usage.md
+  - Configuration Files: config.md
+  - Templates: templates.md
+  - Reference:
+      - Library: library.md
+      - Classes: reference/classes/index.md
+      - Files: reference/files/index.md
+      - Namespaces: reference/namespaces/index.md
+  - Contributing: contributing.md
+  - Acknowledgments: acknowledgments.md
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  palette:
+    scheme: doxybook
+  icon:
+    repo: fontawesome/brands/git-alt
+    logo: fontawesome/solid/code
+
+
+
+plugins:
+  - search
+  - macros:
+      module_name: docs/macros
+      include_dir: ..
+
+extra:
+  analytics:
+    provider: google
+    property: G-290016612
+
+copyright: Copyright &copy; Alan Freitas
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      use_pygments: true
+      linenums: false
+      linenums_style: pymdownx.inline
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.progressbar
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.snippets
+  - pymdownx.arithmatex:
+      generic: true
+  - meta
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://media.ethicalads.io/media/client/ethicalads.min.js
+  # - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
+  - javascripts/extra.js
+
+extra_css:
+  - stylesheets/extra.css
+
