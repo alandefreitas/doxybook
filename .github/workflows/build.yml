@@ -169,8 +169,10 @@ jobs:
       - name: Download Hugo
         shell: bash
         run: |
-          wget https://github.com/gohugoio/hugo/releases/download/v0.74.1/hugo_extended_0.74.1_Linux-64bit.tar.gz
-          tar xvf hugo_extended_0.74.1_Linux-64bit.tar.gz
+          mkdir hugo
+          cd hugo
+          wget https://github.com/gohugoio/hugo/releases/download/v0.105.0/hugo_extended_0.105.0_Linux-64bit.tar.gz
+          tar xvf hugo_extended_0.105.0_Linux-64bit.tar.gz
           sudo mv ./hugo /usr/local/bin/hugo
           sudo chmod +x /usr/local/bin/hugo
           hugo version
@@ -178,7 +180,7 @@ jobs:
       - name: Download MkDocs
         shell: bash
         run: |
-          sudo python3 -m pip install mkdocs mkdocs-material mkdocs-bootswatch
+          sudo python3 -m pip install mkdocs mkdocs-material mkdocs-bootswatch mkdocs-macros-plugin
 
       - name: Download GitBook CLI
         shell: bash
@@ -199,7 +201,19 @@ jobs:
           cmake --build . --config Release
           sudo cmake --install .
 
-      - name: Run Doxygen
+      - name: Build main docs
+        run: |
+          cd docs
+          doxygen
+          cd ..
+          doxybook \
+            --input ./docs/xml \
+            --output ./docs/reference \
+            --config ./docs/.doxybook/config.json
+          mkdocs build
+          cp -rv ./site/. ${{ github.workspace }}/public
+
+      - name: Build Example Doxygen
         shell: bash
         run: |
           cd example
@@ -209,77 +223,77 @@ jobs:
         shell: bash
         run: |
           doxybook \
-            --input ./example/doxygen/xml \
-            --output ./example/mkdocs-readthedocs/docs \
-            --config ./example/mkdocs-readthedocs/.doxybook/config.json
-          cd ./example/mkdocs-readthedocs
+            --input ./example/xml \
+            --output ./example/themes/mkdocs-readthedocs/docs \
+            --config ./example/themes/mkdocs-readthedocs/.doxybook/config.json
+          cd ./example/themes/mkdocs-readthedocs
           mkdocs build
-          cp -r ./site ${{ github.workspace }}/public/mkdocs-readthedocs
+          cp -rv ./site ${{ github.workspace }}/public/mkdocs-readthedocs
 
       - name: Build MkDocs - Material Reference
         shell: bash
         run: |
           doxybook \
-            --input ./example/doxygen/xml \
-            --output ./example/mkdocs-material/docs \
-            --config ./example/mkdocs-material/.doxybook/config.json
-          cd ./example/mkdocs-material
+            --input ./example/xml \
+            --output ./example/themes/mkdocs-material/docs \
+            --config ./example/themes/mkdocs-material/.doxybook/config.json
+          cd ./example/themes/mkdocs-material
           mkdocs build
-          cp -r ./site ${{ github.workspace }}/public/mkdocs-material
+          cp -rv ./site ${{ github.workspace }}/public/mkdocs-material
 
       - name: Build MkDocs - Bootswatch Reference
         shell: bash
         run: |
           doxybook \
-            --input ./example/doxygen/xml \
-            --output ./example/mkdocs-bootswatch/docs \
-            --config ./example/mkdocs-bootswatch/.doxybook/config.json
-          cd ./example/mkdocs-bootswatch
+            --input ./example/xml \
+            --output ./example/themes/mkdocs-bootswatch/docs \
+            --config ./example/themes/mkdocs-bootswatch/.doxybook/config.json
+          cd ./example/themes/mkdocs-bootswatch
           mkdocs build
-          cp -r ./site ${{ github.workspace }}/public/mkdocs-bootswatch
+          cp -rv ./site ${{ github.workspace }}/public/mkdocs-bootswatch
 
       - name: Build Hugo - Learn Reference
         shell: bash
         run: |
           doxybook \
-            --input ./example/doxygen/xml \
-            --output ./example/hugo-learn/content \
-            --config ./example/hugo-learn/.doxybook/config.json \
-            --templates ./example/hugo-learn/.doxybook/templates
-          cd ./example/hugo-learn
+            --input ./example/xml \
+            --output ./example/themes/hugo-learn/content \
+            --config ./example/themes/hugo-learn/.doxybook/config.json \
+            --templates ./example/themes/hugo-learn/.doxybook/templates
+          cd ./example/themes/hugo-learn
           hugo
-          cp -r ./public ${{ github.workspace }}/public/hugo-learn
+          cp -rv ./public ${{ github.workspace }}/public/hugo-learn
 
       - name: Build Hugo - Book Reference
         shell: bash
         run: |
           doxybook \
-            --input ./example/doxygen/xml \
-            --output ./example/hugo-book/content \
-            --config ./example/hugo-book/.doxybook/config.json \
-            --templates ./example/hugo-book/.doxybook/templates
-          cd ./example/hugo-book
+            --input ./example/xml \
+            --output ./example/themes/hugo-book/content \
+            --config ./example/themes/hugo-book/.doxybook/config.json \
+            --templates ./example/themes/hugo-book/.doxybook/templates
+          cd ./example/themes/hugo-book
           hugo
-          cp -r ./public ${{ github.workspace }}/public/hugo-book
+          cp -rv ./public ${{ github.workspace }}/public/hugo-book
 
       - name: Build GitBook - Default Reference
         shell: bash
         run: |
           doxybook \
-            --input ./example/doxygen/xml \
-            --output ./example/gitbook \
-            --config ./example/gitbook/.doxybook/config.json \
-            --summary-input ./example/gitbook/SUMMARY.md.tmpl \
-            --summary-output ./example/gitbook/SUMMARY.md
-          cd ./example/gitbook
+            --input ./example/xml \
+            --output ./example/themes/gitbook \
+            --config ./example/themes/gitbook/.doxybook/config.json \
+            --summary-input ./example/themes/gitbook/SUMMARY.md.tmpl \
+            --summary-output ./example/themes/gitbook/SUMMARY.md
+          cd ./example/themes/gitbook
           gitbook build
-          cp -r ./_book ${{ github.workspace }}/public/gitbook
+          cp -rv ./_book ${{ github.workspace }}/public/gitbook
 
-      - name: Setup index
+      - name: Build original
         shell: bash
         run: |
-          cp ./example/index.html ${{ github.workspace }}/public/index.html
-          cp -r ./example/doxygen/html ${{ github.workspace }}/public/original
+          pwd
+          cp -rv ./example/html ${{ github.workspace }}/public/original
           stat ${{ github.workspace }}/public
 
       - name: Deploy
