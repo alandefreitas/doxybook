@@ -71,7 +71,7 @@ def declare_variables(variables, macro):
                 start_pos = max(contents.find(open_token + ' '), contents.find(open_token + "\n"))
                 if start_pos == -1:
                     raise Exception(
-                        f"<b>Snippet {open_token} not found in {filename}</b>\nFail (no snippet start): {abs_path}\nsnippet: {snippet}\nlanguage: {language}\ncontents: {contents}")
+                        f"<b>Snippet {open_token} not found in {filename}</b>\nFail (no snippet start): {abs_path}\nsnippet: {snippet}\nlanguage: {language}\ncwd: {os.getcwd()}\ncontents:\n\n```\n{contents}\n```")
                 start_pos += len(open_token)
 
                 # Check if snippet is unique
