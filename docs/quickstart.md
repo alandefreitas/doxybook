@@ -230,7 +230,7 @@ doxybook --input path/to/doxygen/xml --output path/to/destination
     - Tested standards: C++20; C++17
 
 
-### Acknowledgments
+## Acknowledgments
 
 !!! hint ""
 
