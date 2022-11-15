@@ -1,0 +1,459 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdoxybook_1_1xml__text__parser_1_1node" kind="struct" language="C++" prot="public">
+    <compoundname>doxybook::xml_text_parser::node</compoundname>
+    <includes refid="xml__text__parser_8hpp" local="no">xml_text_parser.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7e" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>type</name>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea696b031073e74bf2cb98e5ef201d4aa3" prot="public">
+          <name>UNKNOWN</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea61a96ffcb251bb9bf0abf8fec19d0ea8" prot="public">
+          <name>TEXT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea9ccf6052d011f766b9cd93d3a96fbafe" prot="public">
+          <name>PARA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eaa5c10be1f3d44bd6e767412e01d49a5d" prot="public">
+          <name>PARAS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea2909dd0e0336f10b6da9735b859a3d19" prot="public">
+          <name>BOLD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea77313177454053cb24e4be6ebf59b5ea" prot="public">
+          <name>EMPHASIS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea5905b4eb58f29544f9c0ccd1a72548c2" prot="public">
+          <name>STRIKE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ead777026bf56ade6a13dc1436c5acc425" prot="public">
+          <name>HRULER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea23a12f67f614b5518c7f1c2465bf95e3" prot="public">
+          <name>IMAGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea7d8a7dbf7557441b1d1137db28f4e69b" prot="public">
+          <name>ULINK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea727e346d3e645e255bb1d17bde1e3256" prot="public">
+          <name>REF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea06cc9c5c10e4ce85df16932c625cdcff" prot="public">
+          <name>COMPUTEROUTPUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eaa6e3b92f0004df94040be43998211083" prot="public">
+          <name>LISTITEM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea6a73a89e673e20f04c4bdaf12ddb3878" prot="public">
+          <name>SIMPLESEC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eaa157de37deadb9b19e78d15f5f716e70" prot="public">
+          <name>ITEMIZEDLIST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea4999a61d307afc65632a9ab988fd207e" prot="public">
+          <name>VARIABLELIST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eafd4fd1e0799ee4053be40c0020d8b5f1" prot="public">
+          <name>ORDEREDLIST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eaa8723386c5f9772a5a71b0da30848c1a" prot="public">
+          <name>PARAMETERLIST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eaf63789c24c6dc0bea1e36f01b0263147" prot="public">
+          <name>PARAMETERNAME</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea13d4f33f0ee9a209b08fb64fb4481f54" prot="public">
+          <name>PARAMETERITEM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea7915ff47f1a5b56064998d308b2afd31" prot="public">
+          <name>PARAMETERDESCRIPTION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea0f2bd231fe36eded3114243eacbd7643" prot="public">
+          <name>PARAMETERNAMELIST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eaa17f29059ff07c475f3690b8076bc934" prot="public">
+          <name>XREFSECT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea7c896999f5d2090bfacd799ff77cc0a9" prot="public">
+          <name>XREFTITLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea12d8ca2f584e0eb070aac4cd0b10c8ea" prot="public">
+          <name>XREFDESCRIPTION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eac5e2a8af17bfed3d2060c0fca242bfe0" prot="public">
+          <name>PROGRAMLISTING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eac8173fef64cab05ea2b2ed3c69915cb9" prot="public">
+          <name>CODELINE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea8baeec6d282f1791ea9954d0c514ed8d" prot="public">
+          <name>TERM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eacd540c3f909317230194cf8d0749b372" prot="public">
+          <name>VARLISTENTRY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea1d0d6d35c52e907b5e0af4a7f5a81a9f" prot="public">
+          <name>ANCHOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea674769e3326f8cf937af4282f2815c02" prot="public">
+          <name>SP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eab8f5a0e14aea81f005c3e8f8f23c8d23" prot="public">
+          <name>HIGHTLIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea4df2118c8afbb2a32e41a1edabd6a1fe" prot="public">
+          <name>SECT1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea4f28e3e9815d940856ecd7f6ab020fca" prot="public">
+          <name>SECT2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea00331f9f44ea4e5facf101a914e78b38" prot="public">
+          <name>SECT3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eab4a1311af7b72364d6a5ce6b47b24ade" prot="public">
+          <name>SECT4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea2635136b116f2e1043e3c1cf4b624178" prot="public">
+          <name>SECT5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea5a3e85ae779d84234ea423a64ab26cf7" prot="public">
+          <name>SECT6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea6f9dccd85b2e0786c8d522045365eb48" prot="public">
+          <name>TITLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea1148811483385f8fc712a395f1de6cb1" prot="public">
+          <name>SUPERSCRIPT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eaf12e5794ec3c199b9b581340ff4f5887" prot="public">
+          <name>NONBREAKSPACE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea34bbae0aee41ddd6a73697584a20afc6" prot="public">
+          <name>TABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea12a7ef966036af1949ebb7b41b65441f" prot="public">
+          <name>TABLE_ROW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eab95e7e7a804dfe6d67a1fab7517c43b8" prot="public">
+          <name>TABLE_CELL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eabbbf736d1511689a00bb221cf7a98042" prot="public">
+          <name>VERBATIM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eaa591f20e0453e32a3b5cab6a750a4d33" prot="public">
+          <name>SQUO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea60aad21e8ba335e47ebbafc1d12f23de" prot="public">
+          <name>NDASH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea8e3d6393192c649dfa2ae909a40c08e0" prot="public">
+          <name>MDASH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea36edb4d9004448b61d52655abc8e30ce" prot="public">
+          <name>LINEBREAK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ead1062c4c38266e2915aa302e5de3b28a" prot="public">
+          <name>ONLYFOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eaadc4995cd52208dde39433fb069ddd61" prot="public">
+          <name>FORMULA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea3d395db1549f805cd482783cc6ded585" prot="public">
+          <name>BLOCKQUOTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The node type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml_text_parser.hpp" line="27" column="1" bodyfile="doxybook/xml_text_parser.hpp" bodystart="26" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoxybook_1_1xml__text__parser_1_1node_1a2ca6683470ff675df5bc41563f50d735" prot="public" static="no" mutable="no">
+        <type><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7e" kindref="member">type</ref></type>
+        <definition>type doxybook::xml_text_parser::node::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <initializer>{ <ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea696b031073e74bf2cb98e5ef201d4aa3" kindref="member">type::UNKNOWN</ref> }</initializer>
+        <briefdescription>
+<para>The node type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml_text_parser.hpp" line="83" column="18" bodyfile="doxybook/xml_text_parser.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1xml__text__parser_1_1node_1a082ae1ba503ba8c7993490177d4a61ab" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structdoxybook_1_1xml__text__parser_1_1node" kindref="compound">node</ref> &gt;</type>
+        <definition>std::vector&lt;node&gt; doxybook::xml_text_parser::node::children</definition>
+        <argsstring></argsstring>
+        <name>children</name>
+        <briefdescription>
+<para>The child nodes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml_text_parser.hpp" line="86" column="25" bodyfile="doxybook/xml_text_parser.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1xml__text__parser_1_1node_1a36824e0b71d22634a540d832409a7a97" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::xml_text_parser::node::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>The node data as a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml_text_parser.hpp" line="89" column="25" bodyfile="doxybook/xml_text_parser.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1xml__text__parser_1_1node_1aea845f33033bde266606ec9f6052b9e4" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::xml_text_parser::node::extra</definition>
+        <argsstring></argsstring>
+        <name>extra</name>
+        <briefdescription>
+<para>Extra data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml_text_parser.hpp" line="92" column="25" bodyfile="doxybook/xml_text_parser.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A parsed xml node. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="doxybook/xml_text_parser.hpp" line="24" column="19" bodyfile="doxybook/xml_text_parser.hpp" bodystart="24" bodyend="93"/>
+    <listofallmembers>
+      <member refid="structdoxybook_1_1xml__text__parser_1_1node_1a082ae1ba503ba8c7993490177d4a61ab" prot="public" virt="non-virtual"><scope>doxybook::xml_text_parser::node</scope><name>children</name></member>
+      <member refid="structdoxybook_1_1xml__text__parser_1_1node_1a36824e0b71d22634a540d832409a7a97" prot="public" virt="non-virtual"><scope>doxybook::xml_text_parser::node</scope><name>data</name></member>
+      <member refid="structdoxybook_1_1xml__text__parser_1_1node_1aea845f33033bde266606ec9f6052b9e4" prot="public" virt="non-virtual"><scope>doxybook::xml_text_parser::node</scope><name>extra</name></member>
+      <member refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7e" prot="public" virt="non-virtual"><scope>doxybook::xml_text_parser::node</scope><name>type</name></member>
+      <member refid="structdoxybook_1_1xml__text__parser_1_1node_1a2ca6683470ff675df5bc41563f50d735" prot="public" virt="non-virtual"><scope>doxybook::xml_text_parser::node</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

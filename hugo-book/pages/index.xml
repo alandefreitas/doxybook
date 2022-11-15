@@ -2,76 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Doxybook Example</title>
-    <link>https://matusnovak.github.io/doxybook/hugo-book/pages/</link>
+    <link>https://alandefreitas.github.io/doxybook/hugo-book/pages/</link>
     <description>Recent content in Pages on Doxybook Example</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://matusnovak.github.io/doxybook/hugo-book/pages/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://alandefreitas.github.io/doxybook/hugo-book/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Advanced Usage</title>
-      <link>https://matusnovak.github.io/doxybook/hugo-book/pages/advanced/</link>
+      <link>https://alandefreitas.github.io/doxybook/hugo-book/pages/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://matusnovak.github.io/doxybook/hugo-book/pages/advanced/</guid>
-      <description>Advanced Usage #  This page is for advanced users. Make sure you have first read the introduction.
- Updated on 2022-11-11 at 02:09:52 +0000</description>
+      <guid>https://alandefreitas.github.io/doxybook/hugo-book/pages/advanced/</guid>
+      <description>Advanced Usage # This page is for advanced users. Make sure you have first read the introduction.
+Updated on 2022-11-15 at 00:06:21 +0000</description>
     </item>
     
     <item>
       <title>Bug List</title>
-      <link>https://matusnovak.github.io/doxybook/hugo-book/pages/bug/</link>
+      <link>https://alandefreitas.github.io/doxybook/hugo-book/pages/bug/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://matusnovak.github.io/doxybook/hugo-book/pages/bug/</guid>
-      <description>Bug List #  Class Engine::Audio::AudioBuffer
- Some random bug Some other random bug  Class Engine::Graphics::Texture
- This has some weird bug too!   Updated on 2022-11-11 at 02:09:52 +0000</description>
+      <guid>https://alandefreitas.github.io/doxybook/hugo-book/pages/bug/</guid>
+      <description>Bug List # Class Engine::Audio::AudioBuffer
+Some random bug Some other random bug Class Engine::Graphics::Texture
+This has some weird bug too! Updated on 2022-11-15 at 00:06:21 +0000</description>
     </item>
     
     <item>
       <title>Deprecated List</title>
-      <link>https://matusnovak.github.io/doxybook/hugo-book/pages/deprecated/</link>
+      <link>https://alandefreitas.github.io/doxybook/hugo-book/pages/deprecated/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://matusnovak.github.io/doxybook/hugo-book/pages/deprecated/</guid>
-      <description>Deprecated List #  Member Engine::Audio::AudioBuffer::setCallback (Callback callback)
- Use the AudioBuffer::setCallback2 instead  Member Engine::Audio::AudioBuffer::setData (const TypedAudioData data[], size_t size)
- Use the AudioBuffer::setDataMultiple instead  Member Engine::Audio::Callback )(AudioBuffer &amp;amp;buffer, size_t offset)
- Use the Audio::Callback2 instead  Class Engine::Graphics::Texture3D
- Don&amp;rsquo;t use this texture type   Updated on 2022-11-11 at 02:09:52 +0000</description>
+      <guid>https://alandefreitas.github.io/doxybook/hugo-book/pages/deprecated/</guid>
+      <description>Deprecated List # Member Engine::Audio::AudioBuffer::setCallback (Callback callback)
+Use the AudioBuffer::setCallback2 instead Member Engine::Audio::AudioBuffer::setData (const TypedAudioData data[], size_t size)
+Use the AudioBuffer::setDataMultiple instead Member Engine::Audio::Callback )(AudioBuffer &amp;amp;buffer, size_t offset)
+Use the Audio::Callback2 instead Class Engine::Graphics::Texture3D
+Don&amp;rsquo;t use this texture type Updated on 2022-11-15 at 00:06:21 +0000</description>
     </item>
     
     <item>
       <title>Introduction</title>
-      <link>https://matusnovak.github.io/doxybook/hugo-book/pages/intro/</link>
+      <link>https://alandefreitas.github.io/doxybook/hugo-book/pages/intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://matusnovak.github.io/doxybook/hugo-book/pages/intro/</guid>
-      <description>Introduction #  This page introduces the user to the topic. Now you can proceed to the advanced section.
- Updated on 2022-11-11 at 02:09:52 +0000</description>
+      <guid>https://alandefreitas.github.io/doxybook/hugo-book/pages/intro/</guid>
+      <description>Introduction # This page introduces the user to the topic. Now you can proceed to the advanced section.
+Updated on 2022-11-15 at 00:06:21 +0000</description>
     </item>
     
     <item>
       <title>Test List</title>
-      <link>https://matusnovak.github.io/doxybook/hugo-book/pages/test/</link>
+      <link>https://alandefreitas.github.io/doxybook/hugo-book/pages/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://matusnovak.github.io/doxybook/hugo-book/pages/test/</guid>
-      <description>Test List #  Class Engine::Audio::AudioBuffer
- Some random test description   Updated on 2022-11-11 at 02:09:52 +0000</description>
+      <guid>https://alandefreitas.github.io/doxybook/hugo-book/pages/test/</guid>
+      <description>Test List # Class Engine::Audio::AudioBuffer
+Some random test description Updated on 2022-11-15 at 00:06:21 +0000</description>
     </item>
     
     <item>
       <title>Todo List</title>
-      <link>https://matusnovak.github.io/doxybook/hugo-book/pages/todo/</link>
+      <link>https://alandefreitas.github.io/doxybook/hugo-book/pages/todo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://matusnovak.github.io/doxybook/hugo-book/pages/todo/</guid>
-      <description>Todo List #  Class Engine::Audio::AudioBuffer
- Some random todo   Updated on 2022-11-11 at 02:09:52 +0000</description>
+      <guid>https://alandefreitas.github.io/doxybook/hugo-book/pages/todo/</guid>
+      <description>Todo List # Class Engine::Audio::AudioBuffer
+Some random todo Updated on 2022-11-15 at 00:06:21 +0000</description>
     </item>
     
   </channel>

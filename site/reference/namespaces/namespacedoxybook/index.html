@@ -1,0 +1,1685 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Doxybook: Doxygen XML to Markdown">
+      
+      
+      
+        <link rel="canonical" href="https://alandefreitas.github.io/doxybook/reference/namespaces/namespacedoxybook/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>doxybook - Doxybook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.472b142f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.08040f6c.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-290016612"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-290016612",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-290016612",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="doxybook" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#doxybook" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Doxybook" class="md-header__button md-logo" aria-label="Doxybook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Doxybook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              doxybook
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/alandefreitas/doxybook/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    alandefreitas/doxybook
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+<!-- Main navigation -->
+
+
+<div
+        class="md-sidebar md-sidebar--primary"
+        data-md-component="sidebar" data-md-type="navigation"
+        
+>
+    <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+            
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Doxybook" class="md-nav__button md-logo" aria-label="Doxybook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+
+    </a>
+    Doxybook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/alandefreitas/doxybook/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    alandefreitas/doxybook
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../quickstart/" class="md-nav__link">
+        Quickstart
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../usage/" class="md-nav__link">
+        Basic usage
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../config/" class="md-nav__link">
+        Configuration Files
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../templates/" class="md-nav__link">
+        Templates
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../library/" class="md-nav__link">
+        Library
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../classes/" class="md-nav__link">
+        Classes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../files/" class="md-nav__link">
+        Files
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Namespaces
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contributing/" class="md-nav__link">
+        Contributing
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../acknowledgments/" class="md-nav__link">
+        Acknowledgments
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+        </div>
+    </div>
+</div>
+
+
+<!-- Table of contents: never hidden -->
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+    <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+            
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#namespaces" class="md-nav__link">
+    Namespaces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    Classes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-documentation" class="md-nav__link">
+    Types Documentation
+  </a>
+  
+    <nav class="md-nav" aria-label="Types Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enum-kind" class="md-nav__link">
+    enum kind
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enum-visibility" class="md-nav__link">
+    enum visibility
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enum-virtual_category" class="md-nav__link">
+    enum virtual_category
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enum-type" class="md-nav__link">
+    enum type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enum-folder_category" class="md-nav__link">
+    enum folder_category
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-node_cache_map" class="md-nav__link">
+    using node_cache_map
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions-documentation" class="md-nav__link">
+    Functions Documentation
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#function-load_config" class="md-nav__link">
+    function load_config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-load_config_data" class="md-nav__link">
+    function load_config_data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-save_config" class="md-nav__link">
+    function save_config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-save_default_templates" class="md-nav__link">
+    function save_default_templates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-to_enum_kind" class="md-nav__link">
+    function to_enum_kind
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-to_enum_type" class="md-nav__link">
+    function to_enum_type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-to_enum_visibility" class="md-nav__link">
+    function to_enum_visibility
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-to_enum_virtual" class="md-nav__link">
+    function to_enum_virtual
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-to_enum_folder_category" class="md-nav__link">
+    function to_enum_folder_category
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-to_str" class="md-nav__link">
+    function to_str
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-to_str_1" class="md-nav__link">
+    function to_str
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-to_str_2" class="md-nav__link">
+    function to_str
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-to_str_3" class="md-nav__link">
+    function to_str
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-to_str_4" class="md-nav__link">
+    function to_str
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-kind_to_type" class="md-nav__link">
+    function kind_to_type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-is_kind_language" class="md-nav__link">
+    function is_kind_language
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-is_kind_structured" class="md-nav__link">
+    function is_kind_structured
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-is_kind_file" class="md-nav__link">
+    function is_kind_file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-type_folder_category_to_folder_name" class="md-nav__link">
+    function type_folder_category_to_folder_name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-type_to_folder_name" class="md-nav__link">
+    function type_to_folder_name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-type_to_index_name" class="md-nav__link">
+    function type_to_index_name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-type_to_index_template" class="md-nav__link">
+    function type_to_index_template
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-type_to_index_title" class="md-nav__link">
+    function type_to_index_title
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-to_json" class="md-nav__link">
+    function to_json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-from_json" class="md-nav__link">
+    function from_json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-to_json_1" class="md-nav__link">
+    function to_json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-from_json_1" class="md-nav__link">
+    function from_json
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attributes-documentation" class="md-nav__link">
+    Attributes Documentation
+  </a>
+  
+    <nav class="md-nav" aria-label="Attributes Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variable-default_templates" class="md-nav__link">
+    variable default_templates
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+            <div data-ea-publisher="alandefreitas-com" data-ea-type="image"></div>
+        </div>
+    </div>
+</div>
+
+
+
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+
+                  
+
+  <a href="https://github.com/alandefreitas/doxybook/edit/develop/docs/reference/namespaces/namespacedoxybook.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="doxybook">doxybook</h1>
+<h2 id="namespaces">Namespaces</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook_1_1path/">doxybook::path</a></strong></td>
+</tr>
+<tr>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook_1_1utils/">doxybook::utils</a></strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="classes">Classes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>struct</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/">doxybook::config</a></strong> <br>Configuration for the <a href="">doxygen</a> and <a href="">generator</a> classes.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1default__template/">doxybook::default_template</a></strong> <br>Describe the default template for a page.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/">doxybook::doxygen</a></strong> <br>All the nodes representing the content of doxygen xml files.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1exception/">doxybook::exception</a></strong> <br>Doxybook exceptions.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1generator/">doxybook::generator</a></strong> <br>A class that stores a <a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/">doxygen</a> object and generates the markdown documentation.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1json__converter/">doxybook::json_converter</a></strong> <br>Convert elements to json so they can be rendered with inja.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/">doxybook::node</a></strong> <br>A doxygen node.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1renderer/">doxybook::renderer</a></strong> <br>Render inja templates with the specified configuration.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1text__markdown__printer/">doxybook::text_markdown_printer</a></strong> <br>Print xml nodes as markdown.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1text__plain__printer/">doxybook::text_plain_printer</a></strong> <br>Print elements as plain text.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1text__printer/">doxybook::text_printer</a></strong> <br>An abstract text printer.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml/">doxybook::xml</a></strong> <br>Represents and wraps an xml node.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml__text__parser/">doxybook::xml_text_parser</a></strong> <br>Parser for a doxygen xml file as an <a href="/doxybook/reference/classes/classdoxybook_1_1xml/">xml</a> document.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="types">Types</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>enum class</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-kind">kind</a></strong> { INDEX, DEFINE, CLASS, NAMESPACE, STRUCT, INTERFACE, FUNCTION, VARIABLE, TYPEDEF, USING, FRIEND, ENUM, ENUMVALUE, UNION, DIR, FILE, MODULE, PAGE, EXAMPLE, SIGNAL, SLOT, PROPERTY, EVENT, JAVAENUM, JAVAENUMCONSTANT}<br>The kind of a symbol in a doxygen xml file.</td>
+</tr>
+<tr>
+<td>enum class</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-visibility">visibility</a></strong> { PUBLIC, PROTECTED, PRIVATE, PACKAGE}<br>Types of symbol visibility.</td>
+</tr>
+<tr>
+<td>enum class</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-virtual-category">virtual_category</a></strong> { NON_VIRTUAL, VIRTUAL, PURE_VIRTUAL}<br>Types of virtual functions.</td>
+</tr>
+<tr>
+<td>enum class</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-type">type</a></strong> { NONE, DEFINES, FUNCTIONS, NAMESPACES, CLASSES, ATTRIBUTES, TYPES, DIRS, FILES, MODULES, FRIENDS, PAGES, EXAMPLES, SIGNALS, SLOTS, EVENTS, PROPERTIES, JAVAENUMCONSTANTS}<br>Doxygen types.</td>
+</tr>
+<tr>
+<td>enum class</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-folder-category">folder_category</a></strong> { CLASSES, NAMESPACES, MODULES, PAGES, FILES, EXAMPLES}<br>Types of folder category.</td>
+</tr>
+<tr>
+<td>using std::unordered_map&lt; std::string, std::shared_ptr&lt; <a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> &gt; &gt;</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#using-node-cache-map">node_cache_map</a></strong> <br>A map of nodes associated to a string.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="functions">Functions</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>void</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-load-config">load_config</a></strong>(<a href="/doxybook/reference/classes/structdoxybook_1_1config/">config</a> &amp; config, std::string const &amp; path)<br>Load configuration from a path.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-load-config-data">load_config_data</a></strong>(<a href="/doxybook/reference/classes/structdoxybook_1_1config/">config</a> &amp; config, std::string_view src)<br>Load configuration from a json string.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-save-config">save_config</a></strong>(<a href="/doxybook/reference/classes/structdoxybook_1_1config/">config</a> &amp; config, std::string const &amp; path)<br>Save configuration to a path.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-save-default-templates">save_default_templates</a></strong>(std::string const &amp; path)<br>Save default templates.</td>
+</tr>
+<tr>
+<td><a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-kind">kind</a></td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-to-enum-kind">to_enum_kind</a></strong>(std::string const &amp; str)<br>Convert a string to a doxygen kind.</td>
+</tr>
+<tr>
+<td><a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-type">type</a></td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-to-enum-type">to_enum_type</a></strong>(std::string const &amp; str)<br>Convert a string to a doxygen type.</td>
+</tr>
+<tr>
+<td><a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-visibility">visibility</a></td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-to-enum-visibility">to_enum_visibility</a></strong>(std::string const &amp; str)<br>Convert a string to a doxygen visibility type.</td>
+</tr>
+<tr>
+<td><a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-virtual-category">virtual_category</a></td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-to-enum-virtual">to_enum_virtual</a></strong>(std::string const &amp; str)<br>Convert a string to a doxygen virtual category.</td>
+</tr>
+<tr>
+<td><a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-folder-category">folder_category</a></td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-to-enum-folder-category">to_enum_folder_category</a></strong>(std::string const &amp; str)<br>Convert a string to a doxygen folder category.</td>
+</tr>
+<tr>
+<td>std::string</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-to-str">to_str</a></strong>(<a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-kind">kind</a> value)<br>Convert a kind to a string.</td>
+</tr>
+<tr>
+<td>std::string</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-to-str">to_str</a></strong>(<a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-type">type</a> value)<br>Convert a type to a string.</td>
+</tr>
+<tr>
+<td>std::string</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-to-str">to_str</a></strong>(<a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-visibility">visibility</a> value)<br>Convert a visibility to a string.</td>
+</tr>
+<tr>
+<td>std::string</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-to-str">to_str</a></strong>(<a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-virtual-category">virtual_category</a> value)<br>Convert a virtual_category to a string.</td>
+</tr>
+<tr>
+<td>std::string</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-to-str">to_str</a></strong>(<a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-folder-category">folder_category</a> value)<br>Convert a folder_category to a string.</td>
+</tr>
+<tr>
+<td><a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-type">type</a></td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-kind-to-type">kind_to_type</a></strong>(<a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-kind">kind</a> kind)<br>Convert a kind to a type.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-is-kind-language">is_kind_language</a></strong>(<a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-kind">kind</a> kind)<br>Determine if kind is a language feature.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-is-kind-structured">is_kind_structured</a></strong>(<a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-kind">kind</a> kind)<br>Determine if kind is a structured type.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-is-kind-file">is_kind_file</a></strong>(<a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-kind">kind</a> kind)<br>Determine if kind is a file or directory.</td>
+</tr>
+<tr>
+<td>std::string</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-type-folder-category-to-folder-name">type_folder_category_to_folder_name</a></strong>(<a href="/doxybook/reference/classes/structdoxybook_1_1config/">config</a> const &amp; config, <a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-folder-category">folder_category</a> type)<br>Determine the appropriate folder name for a folder category.</td>
+</tr>
+<tr>
+<td>std::string</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-type-to-folder-name">type_to_folder_name</a></strong>(<a href="/doxybook/reference/classes/structdoxybook_1_1config/">config</a> const &amp; config, <a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-type">type</a> type)<br>Determine the appropriate folder name for a type.</td>
+</tr>
+<tr>
+<td>std::string</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-type-to-index-name">type_to_index_name</a></strong>(<a href="/doxybook/reference/classes/structdoxybook_1_1config/">config</a> const &amp; config, <a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-folder-category">folder_category</a> type)<br>Determine the appropriate index file name for a folder category.</td>
+</tr>
+<tr>
+<td>std::string</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-type-to-index-template">type_to_index_template</a></strong>(<a href="/doxybook/reference/classes/structdoxybook_1_1config/">config</a> const &amp; config, <a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-folder-category">folder_category</a> type)<br>Determine the appropriate index template file name for a folder category.</td>
+</tr>
+<tr>
+<td>std::string</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-type-to-index-title">type_to_index_title</a></strong>(<a href="/doxybook/reference/classes/structdoxybook_1_1config/">config</a> const &amp; config, <a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-folder-category">folder_category</a> type)<br>Determine the appropriate index title name for a folder category.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-to-json">to_json</a></strong>(nlohmann::json &amp; j, <a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-visibility">visibility</a> const &amp; p)<br>Convert a visibility type to a json string.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-from-json">from_json</a></strong>(nlohmann::json const &amp; j, <a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-visibility">visibility</a> &amp; p)<br>Convert a json string to a visibility type.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-to-json">to_json</a></strong>(nlohmann::json &amp; j, <a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-folder-category">folder_category</a> const &amp; p)<br>Convert a folder category to a json string.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#function-from-json">from_json</a></strong>(nlohmann::json const &amp; j, <a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-folder-category">folder_category</a> &amp; p)<br>Convert a json string to a folder category.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="attributes">Attributes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>std::unordered_map&lt; std::string, <a href="/doxybook/reference/classes/structdoxybook_1_1default__template/">default_template</a> &gt;</td>
+<td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/#variable-default-templates">default_templates</a></strong> <br>A map with all the default templates.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="types-documentation">Types Documentation</h2>
+<h3 id="enum-kind">enum kind</h3>
+<table>
+<thead>
+<tr>
+<th>Enumerator</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INDEX</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DEFINE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NAMESPACE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>STRUCT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>INTERFACE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FUNCTION</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>VARIABLE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TYPEDEF</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>USING</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FRIEND</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ENUM</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ENUMVALUE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>UNION</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DIR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FILE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MODULE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>PAGE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>EXAMPLE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SIGNAL</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SLOT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>PROPERTY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>EVENT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>JAVAENUM</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>JAVAENUMCONSTANT</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The kind of a symbol in a doxygen xml file. </p>
+<h3 id="enum-visibility">enum visibility</h3>
+<table>
+<thead>
+<tr>
+<th>Enumerator</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PUBLIC</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>PROTECTED</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>PRIVATE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Types of symbol visibility. </p>
+<h3 id="enum-virtual_category">enum virtual_category</h3>
+<table>
+<thead>
+<tr>
+<th>Enumerator</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NON_VIRTUAL</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>VIRTUAL</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>PURE_VIRTUAL</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Types of virtual functions. </p>
+<h3 id="enum-type">enum type</h3>
+<table>
+<thead>
+<tr>
+<th>Enumerator</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NONE</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DEFINES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FUNCTIONS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NAMESPACES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CLASSES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ATTRIBUTES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TYPES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DIRS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FILES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MODULES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FRIENDS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>PAGES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>EXAMPLES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SIGNALS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SLOTS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>EVENTS</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>PROPERTIES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>JAVAENUMCONSTANTS</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Doxygen types. </p>
+<h3 id="enum-folder_category">enum folder_category</h3>
+<table>
+<thead>
+<tr>
+<th>Enumerator</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CLASSES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NAMESPACES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MODULES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>PAGES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FILES</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>EXAMPLES</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Types of folder category. </p>
+<h3 id="using-node_cache_map">using node_cache_map</h3>
+<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">doxybook</span><span class="o">::</span><span class="n">node_cache_map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">typedef</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="w"> </span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">node</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+<p>A map of nodes associated to a string. </p>
+<h2 id="functions-documentation">Functions Documentation</h2>
+<h3 id="function-load_config">function load_config</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">load_config</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">config</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">path</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Load configuration from a path. </p>
+<h3 id="function-load_config_data">function load_config_data</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">load_config_data</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">config</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string_view</span><span class="w"> </span><span class="n">src</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Load configuration from a json string. </p>
+<h3 id="function-save_config">function save_config</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">save_config</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">config</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">path</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Save configuration to a path. </p>
+<h3 id="function-save_default_templates">function save_default_templates</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">save_default_templates</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">path</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Save default templates. </p>
+<p>This function stores all the default templates to files. The user can edit these templates to come up with new templates. </p>
+<h3 id="function-to_enum_kind">function to_enum_kind</h3>
+<div class="highlight"><pre><span></span><code><span class="n">kind</span><span class="w"> </span><span class="n">to_enum_kind</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">str</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Convert a string to a doxygen kind. </p>
+<h3 id="function-to_enum_type">function to_enum_type</h3>
+<div class="highlight"><pre><span></span><code><span class="n">type</span><span class="w"> </span><span class="n">to_enum_type</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">str</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Convert a string to a doxygen type. </p>
+<h3 id="function-to_enum_visibility">function to_enum_visibility</h3>
+<div class="highlight"><pre><span></span><code><span class="n">visibility</span><span class="w"> </span><span class="n">to_enum_visibility</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">str</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Convert a string to a doxygen visibility type. </p>
+<h3 id="function-to_enum_virtual">function to_enum_virtual</h3>
+<div class="highlight"><pre><span></span><code><span class="n">virtual_category</span><span class="w"> </span><span class="n">to_enum_virtual</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">str</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Convert a string to a doxygen virtual category. </p>
+<h3 id="function-to_enum_folder_category">function to_enum_folder_category</h3>
+<div class="highlight"><pre><span></span><code><span class="n">folder_category</span><span class="w"> </span><span class="n">to_enum_folder_category</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">str</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Convert a string to a doxygen folder category. </p>
+<h3 id="function-to_str">function to_str</h3>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">to_str</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">kind</span><span class="w"> </span><span class="n">value</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Convert a kind to a string. </p>
+<h3 id="function-to_str_1">function to_str</h3>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">to_str</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">type</span><span class="w"> </span><span class="n">value</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Convert a type to a string. </p>
+<h3 id="function-to_str_2">function to_str</h3>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">to_str</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">visibility</span><span class="w"> </span><span class="n">value</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Convert a visibility to a string. </p>
+<h3 id="function-to_str_3">function to_str</h3>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">to_str</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">virtual_category</span><span class="w"> </span><span class="n">value</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Convert a virtual_category to a string. </p>
+<h3 id="function-to_str_4">function to_str</h3>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">to_str</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">folder_category</span><span class="w"> </span><span class="n">value</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Convert a folder_category to a string. </p>
+<h3 id="function-kind_to_type">function kind_to_type</h3>
+<div class="highlight"><pre><span></span><code><span class="n">type</span><span class="w"> </span><span class="n">kind_to_type</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">kind</span><span class="w"> </span><span class="n">kind</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Convert a kind to a type. </p>
+<h3 id="function-is_kind_language">function is_kind_language</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">is_kind_language</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">kind</span><span class="w"> </span><span class="n">kind</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Determine if kind is a language feature. </p>
+<h3 id="function-is_kind_structured">function is_kind_structured</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">is_kind_structured</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">kind</span><span class="w"> </span><span class="n">kind</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Determine if kind is a structured type. </p>
+<h3 id="function-is_kind_file">function is_kind_file</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">is_kind_file</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">kind</span><span class="w"> </span><span class="n">kind</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Determine if kind is a file or directory. </p>
+<h3 id="function-type_folder_category_to_folder_name">function type_folder_category_to_folder_name</h3>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">type_folder_category_to_folder_name</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">folder_category</span><span class="w"> </span><span class="n">type</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Determine the appropriate folder name for a folder category. </p>
+<p><strong>Return</strong>: The folder name </p>
+<p>Get the appropriate folder name in the configuration file for the specified folder category.</p>
+<p>Not all types have corresponding folder categories.</p>
+<h3 id="function-type_to_folder_name">function type_to_folder_name</h3>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">type_to_folder_name</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">type</span><span class="w"> </span><span class="n">type</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Determine the appropriate folder name for a type. </p>
+<p><strong>Return</strong>: The folder name </p>
+<p>Get the appropriate folder name in the configuration file for the specified type.</p>
+<p>Not all types have corresponding folder categories.</p>
+<h3 id="function-type_to_index_name">function type_to_index_name</h3>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">type_to_index_name</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">folder_category</span><span class="w"> </span><span class="n">type</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Determine the appropriate index file name for a folder category. </p>
+<p><strong>Return</strong>: The folder name </p>
+<p>Get the appropriate index file name in the configuration file for the specified folder category.</p>
+<p>Not all types have corresponding folder categories.</p>
+<h3 id="function-type_to_index_template">function type_to_index_template</h3>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">type_to_index_template</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">folder_category</span><span class="w"> </span><span class="n">type</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Determine the appropriate index template file name for a folder category. </p>
+<p><strong>Return</strong>: The folder name </p>
+<p>Get the appropriate template file name in the configuration file for the specified folder category.</p>
+<p>Not all types have corresponding folder categories.</p>
+<h3 id="function-type_to_index_title">function type_to_index_title</h3>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">type_to_index_title</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">folder_category</span><span class="w"> </span><span class="n">type</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Determine the appropriate index title name for a folder category. </p>
+<p><strong>Return</strong>: The folder name </p>
+<p>Get the appropriate index title name in the configuration file for the specified folder category.</p>
+<p>Not all types have corresponding folder categories.</p>
+<h3 id="function-to_json">function to_json</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">to_json</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">nlohmann</span><span class="o">::</span><span class="n">json</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">j</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">visibility</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Convert a visibility type to a json string. </p>
+<h3 id="function-from_json">function from_json</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">from_json</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">nlohmann</span><span class="o">::</span><span class="n">json</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">j</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">visibility</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Convert a json string to a visibility type. </p>
+<h3 id="function-to_json_1">function to_json</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">to_json</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">nlohmann</span><span class="o">::</span><span class="n">json</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">j</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">folder_category</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Convert a folder category to a json string. </p>
+<h3 id="function-from_json_1">function from_json</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">from_json</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">nlohmann</span><span class="o">::</span><span class="n">json</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">j</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">folder_category</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Convert a json string to a folder category. </p>
+<h2 id="attributes-documentation">Attributes Documentation</h2>
+<h3 id="variable-default_templates">variable default_templates</h3>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">default_template</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">default_templates</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+<p>A map with all the default templates. </p>
+<p>Unless template files are provided, these templates are used. </p>
+<hr />
+<p>Updated on 2022-11-15 at 00:06:59 +0000</p>
+
+
+  
+
+
+
+
+                
+
+<footer class="tx-content__footer md-typeset" style="margin-top: 70px; text-align: center;">
+    <a href="https://github.com/alandefreitas/doxybook/" title="Doxybook" class="md-button" target="_blank">
+        ⭐️ Star Doxybook
+    </a>
+</footer>
+
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <!--
+  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Application footer -->
+<footer class="md-footer">
+
+    <!-- Link to previous and/or next page -->
+    
+
+    <!-- Further information -->
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+
+            <!-- Copyright and theme information -->
+            <div class="md-footer-copyright">
+                
+                <div class="md-footer-copyright__highlight">
+                    Copyright &copy; Alan Freitas
+                </div>
+                
+                Made with
+                <a
+                        href="https://alandefreitas.github.io/mdsplit/"
+                        target="_blank" rel="noopener"
+                >
+                    <code style="background-color: #323232;">mdsplit</code>
+                </a>
+                and
+                <a
+                        href="https://squidfunk.github.io/mkdocs-material/"
+                        target="_blank" rel="noopener"
+                >
+                    Material for MkDocs
+                </a>
+            </div>
+
+            <!-- Social links -->
+            <div class="md-social">
+  
+</div>
+        </div>
+    </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

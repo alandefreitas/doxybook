@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdoxybook_1_1node_1_1class__reference" kind="struct" language="C++" prot="public">
+    <compoundname>doxybook::node::class_reference</compoundname>
+    <includes refid="node_8hpp" local="no">node.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoxybook_1_1node_1_1class__reference_1a22e9ed4a4d0a3fc815d6e8cdb0c4c2b9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::node::class_reference::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="37" column="25" bodyfile="doxybook/node.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1node_1_1class__reference_1a45a82899a1164d6c9f7bf66f518d4969" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::node::class_reference::refid</definition>
+        <argsstring></argsstring>
+        <name>refid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="38" column="25" bodyfile="doxybook/node.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1node_1_1class__reference_1a896dc87f2c08796d563a65c8bcf4021f" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578f" kindref="member">visibility</ref></type>
+        <definition>visibility doxybook::node::class_reference::prot</definition>
+        <argsstring></argsstring>
+        <name>prot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="39" column="24" bodyfile="doxybook/node.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1node_1_1class__reference_1af88b125c1e0f537449e927e45b2332cf" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139" kindref="member">virtual_category</ref></type>
+        <definition>virtual_category doxybook::node::class_reference::virt</definition>
+        <argsstring></argsstring>
+        <name>virt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="40" column="30" bodyfile="doxybook/node.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1node_1_1class__reference_1a7a2dc01bac31715d81ff6946442798f6" prot="public" static="no" mutable="no">
+        <type><ref refid="classdoxybook_1_1node" kindref="compound">node</ref> const  *</type>
+        <definition>node const* doxybook::node::class_reference::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="41" column="24" bodyfile="doxybook/node.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A reference to a class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>These are usually used to represent base and derived classes </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>doxybook::node</label>
+        <link refid="classdoxybook_1_1node"/>
+      </node>
+      <node id="1">
+        <label>doxybook::node::class_reference</label>
+        <link refid="structdoxybook_1_1node_1_1class__reference"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="doxybook/node.hpp" line="36" column="30" bodyfile="doxybook/node.hpp" bodystart="36" bodyend="42"/>
+    <listofallmembers>
+      <member refid="structdoxybook_1_1node_1_1class__reference_1a22e9ed4a4d0a3fc815d6e8cdb0c4c2b9" prot="public" virt="non-virtual"><scope>doxybook::node::class_reference</scope><name>name</name></member>
+      <member refid="structdoxybook_1_1node_1_1class__reference_1a896dc87f2c08796d563a65c8bcf4021f" prot="public" virt="non-virtual"><scope>doxybook::node::class_reference</scope><name>prot</name></member>
+      <member refid="structdoxybook_1_1node_1_1class__reference_1a7a2dc01bac31715d81ff6946442798f6" prot="public" virt="non-virtual"><scope>doxybook::node::class_reference</scope><name>ptr</name></member>
+      <member refid="structdoxybook_1_1node_1_1class__reference_1a45a82899a1164d6c9f7bf66f518d4969" prot="public" virt="non-virtual"><scope>doxybook::node::class_reference</scope><name>refid</name></member>
+      <member refid="structdoxybook_1_1node_1_1class__reference_1af88b125c1e0f537449e927e45b2332cf" prot="public" virt="non-virtual"><scope>doxybook::node::class_reference</scope><name>virt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

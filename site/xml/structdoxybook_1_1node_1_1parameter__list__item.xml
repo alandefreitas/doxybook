@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdoxybook_1_1node_1_1parameter__list__item" kind="struct" language="C++" prot="public">
+    <compoundname>doxybook::node::parameter_list_item</compoundname>
+    <includes refid="node_8hpp" local="no">node.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoxybook_1_1node_1_1parameter__list__item_1a0253643cbda7aed7acc88fb98f5dba06" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::node::parameter_list_item::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="72" column="25" bodyfile="doxybook/node.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1node_1_1parameter__list__item_1af5007dd5218b4bb07403f87991ffc8c9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::node::parameter_list_item::text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="73" column="25" bodyfile="doxybook/node.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An item in a list of parameters. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>These could be used for parameters, return values, template parameters, and exceptions. </para>
+    </detaileddescription>
+    <location file="doxybook/node.hpp" line="71" column="34" bodyfile="doxybook/node.hpp" bodystart="71" bodyend="74"/>
+    <listofallmembers>
+      <member refid="structdoxybook_1_1node_1_1parameter__list__item_1a0253643cbda7aed7acc88fb98f5dba06" prot="public" virt="non-virtual"><scope>doxybook::node::parameter_list_item</scope><name>name</name></member>
+      <member refid="structdoxybook_1_1node_1_1parameter__list__item_1af5007dd5218b4bb07403f87991ffc8c9" prot="public" virt="non-virtual"><scope>doxybook::node::parameter_list_item</scope><name>text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

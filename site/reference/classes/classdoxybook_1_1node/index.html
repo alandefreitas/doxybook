@@ -1,0 +1,1257 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Doxybook: Doxygen XML to Markdown">
+      
+      
+      
+        <link rel="canonical" href="https://alandefreitas.github.io/doxybook/reference/classes/classdoxybook_1_1node/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>doxybook::node - Doxybook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.472b142f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.08040f6c.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-290016612"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-290016612",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-290016612",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="doxybook" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#doxybooknode" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Doxybook" class="md-header__button md-logo" aria-label="Doxybook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Doxybook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              doxybook::node
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/alandefreitas/doxybook/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    alandefreitas/doxybook
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+<!-- Main navigation -->
+
+
+<div
+        class="md-sidebar md-sidebar--primary"
+        data-md-component="sidebar" data-md-type="navigation"
+        
+>
+    <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+            
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Doxybook" class="md-nav__button md-logo" aria-label="Doxybook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+
+    </a>
+    Doxybook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/alandefreitas/doxybook/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    alandefreitas/doxybook
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../quickstart/" class="md-nav__link">
+        Quickstart
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../usage/" class="md-nav__link">
+        Basic usage
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../config/" class="md-nav__link">
+        Configuration Files
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../templates/" class="md-nav__link">
+        Templates
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../library/" class="md-nav__link">
+        Library
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Classes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../files/" class="md-nav__link">
+        Files
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../namespaces/" class="md-nav__link">
+        Namespaces
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contributing/" class="md-nav__link">
+        Contributing
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../acknowledgments/" class="md-nav__link">
+        Acknowledgments
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+        </div>
+    </div>
+</div>
+
+
+<!-- Table of contents: never hidden -->
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+    <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+            
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#public-classes" class="md-nav__link">
+    Public Classes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-types" class="md-nav__link">
+    Public Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-functions" class="md-nav__link">
+    Public Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#friends" class="md-nav__link">
+    Friends
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-types-documentation" class="md-nav__link">
+    Public Types Documentation
+  </a>
+  
+    <nav class="md-nav" aria-label="Public Types Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-load_data_result" class="md-nav__link">
+    using load_data_result
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-functions-documentation" class="md-nav__link">
+    Public Functions Documentation
+  </a>
+  
+    <nav class="md-nav" aria-label="Public Functions Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#function-parse" class="md-nav__link">
+    function parse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-parse_1" class="md-nav__link">
+    function parse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-parse_2" class="md-nav__link">
+    function parse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-node" class="md-nav__link">
+    function node
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-node_1" class="md-nav__link">
+    function ~node
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-find" class="md-nav__link">
+    function find
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-find_child" class="md-nav__link">
+    function find_child
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-is_structured" class="md-nav__link">
+    function is_structured
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-is_language" class="md-nav__link">
+    function is_language
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-is_file_or_dir" class="md-nav__link">
+    function is_file_or_dir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-get_kind" class="md-nav__link">
+    function get_kind
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-get_language" class="md-nav__link">
+    function get_language
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-get_type" class="md-nav__link">
+    function get_type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-get_refid" class="md-nav__link">
+    function get_refid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-get_qualified_name" class="md-nav__link">
+    function get_qualified_name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-get_name" class="md-nav__link">
+    function get_name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-get_parent" class="md-nav__link">
+    function get_parent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-get_group" class="md-nav__link">
+    function get_group
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-is_empty" class="md-nav__link">
+    function is_empty
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-get_children" class="md-nav__link">
+    function get_children
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-get_xml_path" class="md-nav__link">
+    function get_xml_path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-get_brief" class="md-nav__link">
+    function get_brief
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-get_summary" class="md-nav__link">
+    function get_summary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-get_title" class="md-nav__link">
+    function get_title
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-get_visibility" class="md-nav__link">
+    function get_visibility
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-get_virtual" class="md-nav__link">
+    function get_virtual
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-get_base_classes" class="md-nav__link">
+    function get_base_classes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-get_derived_classes" class="md-nav__link">
+    function get_derived_classes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-get_url" class="md-nav__link">
+    function get_url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-get_anchor" class="md-nav__link">
+    function get_anchor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-finalize" class="md-nav__link">
+    function finalize
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-load_data" class="md-nav__link">
+    function load_data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#friends_1" class="md-nav__link">
+    Friends
+  </a>
+  
+    <nav class="md-nav" aria-label="Friends">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#friend-doxygen" class="md-nav__link">
+    friend doxygen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+            <div data-ea-publisher="alandefreitas-com" data-ea-type="image"></div>
+        </div>
+    </div>
+</div>
+
+
+
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+
+                  
+
+  <a href="https://github.com/alandefreitas/doxybook/edit/develop/docs/reference/classes/classdoxybook_1_1node.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="doxybooknode">doxybook::node</h1>
+<p>A doxygen node. </p>
+<p><code>#include &lt;node.hpp&gt;</code></p>
+<h2 id="public-classes">Public Classes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>struct</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1node_1_1class__reference/">class_reference</a></strong> <br>A reference to a class.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1node_1_1data/">data</a></strong> <br>The data in a doxygen node.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1node_1_1param/">param</a></strong> <br>A parameter.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1node_1_1parameter__list__item/">parameter_list_item</a></strong> <br>An item in a list of parameters.</td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1node_1_1source__location/">source_location</a></strong> <br>Source code location.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-types">Public Types</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>using std::tuple&lt; <a href="/doxybook/reference/classes/structdoxybook_1_1node_1_1data/">data</a>, std::unordered_map&lt; std::string, <a href="/doxybook/reference/classes/structdoxybook_1_1node_1_1data/">data</a> &gt; &gt;</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#using-load-data-result">load_data_result</a></strong> <br>The result of loading the node internal data.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>std::shared_ptr&lt; <a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> &gt;</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-parse">parse</a></strong>(<a href="/doxybook/reference/namespaces/namespacedoxybook/#using-node-cache-map">node_cache_map</a> &amp; cache, std::string const &amp; input_dir, std::string const &amp; refid, bool is_group_or_file)<br>Parse root xml objects (classes, structs, etc)</td>
+</tr>
+<tr>
+<td>std::shared_ptr&lt; <a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> &gt;</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-parse">parse</a></strong>(<a href="/doxybook/reference/namespaces/namespacedoxybook/#using-node-cache-map">node_cache_map</a> &amp; cache, std::string const &amp; input_dir, std::shared_ptr&lt; <a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> &gt; const &amp; ptr, bool is_group_or_file)<br>Parse objects under the specified node.</td>
+</tr>
+<tr>
+<td>std::shared_ptr&lt; <a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> &gt;</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-parse">parse</a></strong>(<a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1element/">xml::element</a> &amp; member_def, std::string const &amp; ref_id)<br>Parse member xml objects (functions, enums, etc)</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-node">node</a></strong>(std::string const &amp; refid)<br>Constructor.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-~node">~node</a></strong>()<br>Destructor.</td>
+</tr>
+<tr>
+<td>std::shared_ptr&lt; <a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> &gt;</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-find">find</a></strong>(std::string const &amp; refid) const<br>Find a node by refid.</td>
+</tr>
+<tr>
+<td>std::shared_ptr&lt; <a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> &gt;</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-find-child">find_child</a></strong>(std::string const &amp; refid) const<br>Find an immediate child node.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-is-structured">is_structured</a></strong>() const<br>Check if node represents a structured type.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-is-language">is_language</a></strong>() const<br>Check if node represents a language feature.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-is-file-or-dir">is_file_or_dir</a></strong>() const<br>Check if node represents a file or directory.</td>
+</tr>
+<tr>
+<td><a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-kind">kind</a></td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-kind">get_kind</a></strong>() const<br>Return the kind of node.</td>
+</tr>
+<tr>
+<td>std::string</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-language">get_language</a></strong>() const<br>Return the node language.</td>
+</tr>
+<tr>
+<td><a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-type">type</a></td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-type">get_type</a></strong>() const<br>Return the node type.</td>
+</tr>
+<tr>
+<td>std::string const  &amp;</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-refid">get_refid</a></strong>() const<br>Return the node refid.</td>
+</tr>
+<tr>
+<td>std::string const  &amp;</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-qualified-name">get_qualified_name</a></strong>() const<br>Return the qualified name.</td>
+</tr>
+<tr>
+<td>std::string const  &amp;</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-name">get_name</a></strong>() const<br>Return the node name.</td>
+</tr>
+<tr>
+<td><a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> const  *</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-parent">get_parent</a></strong>() const<br>Return the node parent.</td>
+</tr>
+<tr>
+<td><a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> const  *</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-group">get_group</a></strong>() const<br>Return the node group.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-is-empty">is_empty</a></strong>() const<br>Check if the node is empty.</td>
+</tr>
+<tr>
+<td>std::list&lt; std::shared_ptr&lt; <a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> &gt; &gt; const  &amp;</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-children">get_children</a></strong>() const<br>Return all child nodes.</td>
+</tr>
+<tr>
+<td>std::string const  &amp;</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-xml-path">get_xml_path</a></strong>() const<br>Return the node xml_path.</td>
+</tr>
+<tr>
+<td>std::string const  &amp;</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-brief">get_brief</a></strong>() const<br>Return the node brief.</td>
+</tr>
+<tr>
+<td>std::string const  &amp;</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-summary">get_summary</a></strong>() const<br>Return the node summary.</td>
+</tr>
+<tr>
+<td>std::string const  &amp;</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-title">get_title</a></strong>() const<br>Return the node title.</td>
+</tr>
+<tr>
+<td><a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-visibility">visibility</a></td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-visibility">get_visibility</a></strong>() const<br>Return the node visibility.</td>
+</tr>
+<tr>
+<td><a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-virtual-category">virtual_category</a></td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-virtual">get_virtual</a></strong>() const<br>Return the node virtual category.</td>
+</tr>
+<tr>
+<td>std::vector&lt; <a href="/doxybook/reference/classes/structdoxybook_1_1node_1_1class__reference/">class_reference</a> &gt; const  &amp;</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-base-classes">get_base_classes</a></strong>() const<br>Return the node base classes.</td>
+</tr>
+<tr>
+<td>std::vector&lt; <a href="/doxybook/reference/classes/structdoxybook_1_1node_1_1class__reference/">class_reference</a> &gt; const  &amp;</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-derived-classes">get_derived_classes</a></strong>() const<br>Return the node derived classes.</td>
+</tr>
+<tr>
+<td>std::string const  &amp;</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-url">get_url</a></strong>() const<br>Return the node url.</td>
+</tr>
+<tr>
+<td>std::string const  &amp;</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-anchor">get_anchor</a></strong>() const<br>Return the node anchor.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-finalize">finalize</a></strong>(<a href="/doxybook/reference/classes/structdoxybook_1_1config/">config</a> const &amp; config, <a href="/doxybook/reference/classes/classdoxybook_1_1text__printer/">text_printer</a> const &amp; plain_printer, <a href="/doxybook/reference/classes/classdoxybook_1_1text__printer/">text_printer</a> const &amp; markdown_printer, <a href="/doxybook/reference/namespaces/namespacedoxybook/#using-node-cache-map">node_cache_map</a> const &amp; cache)<br>Print the node contents to text and markdown.</td>
+</tr>
+<tr>
+<td><a href="/doxybook/reference/classes/classdoxybook_1_1node/#using-load-data-result">load_data_result</a></td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-load-data">load_data</a></strong>(<a href="/doxybook/reference/classes/structdoxybook_1_1config/">config</a> const &amp; config, <a href="/doxybook/reference/classes/classdoxybook_1_1text__printer/">text_printer</a> const &amp; plain_printer, <a href="/doxybook/reference/classes/classdoxybook_1_1text__printer/">text_printer</a> const &amp; markdown_printer, <a href="/doxybook/reference/namespaces/namespacedoxybook/#using-node-cache-map">node_cache_map</a> const &amp; cache) const<br>Load the node data and its child nodes.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="friends">Friends</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>class</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#friend-doxygen">doxygen</a></strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-types-documentation">Public Types Documentation</h2>
+<h3 id="using-load_data_result">using load_data_result</h3>
+<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">doxybook</span><span class="o">::</span><span class="n">node</span><span class="o">::</span><span class="n">load_data_result</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="w"> </span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+<p>The result of loading the node internal data. </p>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-parse">function parse</h3>
+<div class="highlight"><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">parse</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">node_cache_map</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">cache</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">input_dir</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">refid</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_group_or_file</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Parse root xml objects (classes, structs, etc) </p>
+<h3 id="function-parse_1">function parse</h3>
+<div class="highlight"><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">parse</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">node_cache_map</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">cache</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">input_dir</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">ptr</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_group_or_file</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Parse objects under the specified node. </p>
+<h3 id="function-parse_2">function parse</h3>
+<div class="highlight"><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">parse</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">xml</span><span class="o">::</span><span class="n">element</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">member_def</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">ref_id</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Parse member xml objects (functions, enums, etc) </p>
+<h3 id="function-node">function node</h3>
+<div class="highlight"><pre><span></span><code><span class="k">explicit</span><span class="w"> </span><span class="n">node</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">refid</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Constructor. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>refid</strong> Node id </li>
+</ul>
+<p>The constructor will only store the refid and an empty temporary node.</p>
+<h3 id="function-node_1">function ~node</h3>
+<div class="highlight"><pre><span></span><code><span class="o">~</span><span class="n">node</span><span class="p">()</span><span class="w"></span>
+</code></pre></div>
+<p>Destructor. </p>
+<h3 id="function-find">function find</h3>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">find</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">refid</span><span class="w"></span>
+<span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Find a node by refid. </p>
+<h3 id="function-find_child">function find_child</h3>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">find_child</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">refid</span><span class="w"></span>
+<span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Find an immediate child node. </p>
+<h3 id="function-is_structured">function is_structured</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_structured</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Check if node represents a structured type. </p>
+<h3 id="function-is_language">function is_language</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_language</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Check if node represents a language feature. </p>
+<h3 id="function-is_file_or_dir">function is_file_or_dir</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_file_or_dir</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Check if node represents a file or directory. </p>
+<h3 id="function-get_kind">function get_kind</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">kind</span><span class="w"> </span><span class="n">get_kind</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Return the kind of node. </p>
+<h3 id="function-get_language">function get_language</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">get_language</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Return the node language. </p>
+<h3 id="function-get_type">function get_type</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="n">get_type</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Return the node type. </p>
+<h3 id="function-get_refid">function get_refid</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_refid</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Return the node refid. </p>
+<h3 id="function-get_qualified_name">function get_qualified_name</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_qualified_name</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Return the qualified name. </p>
+<h3 id="function-get_name">function get_name</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_name</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Return the node name. </p>
+<h3 id="function-get_parent">function get_parent</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">*</span><span class="w"> </span><span class="n">get_parent</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Return the node parent. </p>
+<h3 id="function-get_group">function get_group</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">*</span><span class="w"> </span><span class="n">get_group</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Return the node group. </p>
+<h3 id="function-is_empty">function is_empty</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_empty</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Check if the node is empty. </p>
+<h3 id="function-get_children">function get_children</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_children</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Return all child nodes. </p>
+<h3 id="function-get_xml_path">function get_xml_path</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_xml_path</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Return the node xml_path. </p>
+<h3 id="function-get_brief">function get_brief</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_brief</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Return the node brief. </p>
+<h3 id="function-get_summary">function get_summary</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_summary</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Return the node summary. </p>
+<h3 id="function-get_title">function get_title</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_title</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Return the node title. </p>
+<h3 id="function-get_visibility">function get_visibility</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">visibility</span><span class="w"> </span><span class="n">get_visibility</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Return the node visibility. </p>
+<h3 id="function-get_virtual">function get_virtual</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">virtual_category</span><span class="w"> </span><span class="n">get_virtual</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Return the node virtual category. </p>
+<h3 id="function-get_base_classes">function get_base_classes</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">class_reference</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_base_classes</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Return the node base classes. </p>
+<h3 id="function-get_derived_classes">function get_derived_classes</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">class_reference</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_derived_classes</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Return the node derived classes. </p>
+<h3 id="function-get_url">function get_url</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_url</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Return the node url. </p>
+<h3 id="function-get_anchor">function get_anchor</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_anchor</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Return the node anchor. </p>
+<h3 id="function-finalize">function finalize</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">finalize</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">plain_printer</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">markdown_printer</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">node_cache_map</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">cache</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>Print the node contents to text and markdown. </p>
+<h3 id="function-load_data">function load_data</h3>
+<div class="highlight"><pre><span></span><code><span class="n">load_data_result</span><span class="w"> </span><span class="n">load_data</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">plain_printer</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">markdown_printer</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">node_cache_map</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">cache</span><span class="w"></span>
+<span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+</code></pre></div>
+<p>Load the node data and its child nodes. </p>
+<h2 id="friends_1">Friends</h2>
+<h3 id="friend-doxygen">friend doxygen</h3>
+<div class="highlight"><pre><span></span><code><span class="k">friend</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">doxygen</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+<hr />
+<p>Updated on 2022-11-15 at 00:06:59 +0000</p>
+
+
+  
+
+
+
+
+                
+
+<footer class="tx-content__footer md-typeset" style="margin-top: 70px; text-align: center;">
+    <a href="https://github.com/alandefreitas/doxybook/" title="Doxybook" class="md-button" target="_blank">
+        ⭐️ Star Doxybook
+    </a>
+</footer>
+
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <!--
+  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Application footer -->
+<footer class="md-footer">
+
+    <!-- Link to previous and/or next page -->
+    
+
+    <!-- Further information -->
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+
+            <!-- Copyright and theme information -->
+            <div class="md-footer-copyright">
+                
+                <div class="md-footer-copyright__highlight">
+                    Copyright &copy; Alan Freitas
+                </div>
+                
+                Made with
+                <a
+                        href="https://alandefreitas.github.io/mdsplit/"
+                        target="_blank" rel="noopener"
+                >
+                    <code style="background-color: #323232;">mdsplit</code>
+                </a>
+                and
+                <a
+                        href="https://squidfunk.github.io/mkdocs-material/"
+                        target="_blank" rel="noopener"
+                >
+                    Material for MkDocs
+                </a>
+            </div>
+
+            <!-- Social links -->
+            <div class="md-social">
+  
+</div>
+        </div>
+    </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr">
+<html lang="en" dir="ltr">
+
 <head>
+  <meta name="generator" content="Hugo 0.105.0">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="A simple audio buffer to hold PCM samples">
-<meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Engine::Audio::AudioBuffer" />
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Engine::Audio::AudioBuffer" />
 <meta property="og:description" content="A simple audio buffer to hold PCM samples" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://matusnovak.github.io/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/" />
+<meta property="og:url" content="https://alandefreitas.github.io/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/" /><meta property="article:section" content="classes" />
+
+
 
 <title>Engine::Audio::AudioBuffer | Doxybook Example</title>
 <link rel="manifest" href="/doxybook/hugo-book/manifest.json">
 <link rel="icon" href="/doxybook/hugo-book/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/doxybook/hugo-book/book.min.a64c3fbabd2c7a93ee90dd37db9054580fcb37b8eef93f80b6fa286b030f64af.css" integrity="sha256-pkw/ur0sepPukN0325BUWA/LN7ju&#43;T&#43;AtvooawMPZK8=" crossorigin="anonymous">
-  <script defer src="/doxybook/hugo-book/flexsearch.min.js"></script>
-  <script defer src="/doxybook/hugo-book/en.search.min.7900f99d00f35209f3b09e0334c40dca2e19d99fb4e55cd92dd69969fd21ffb6.js" integrity="sha256-eQD5nQDzUgnzsJ4DNMQNyi4Z2Z&#43;05VzZLdaZaf0h/7Y=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/doxybook/hugo-book/book.min.68be0b7a9674f2a612ce0e9b2e9447ff4b7ac96546e06b642bfd3ded0ca490ef.css" integrity="sha256-aL4LepZ08qYSzg6bLpRH/0t6yWVG4GtkK/097QykkO8=">
+<script defer src="/doxybook/hugo-book/en.search.min.510e59e50c9dbf004f6f68c8e5bc3d78c2217f64b8b6df3b85e75ee81d26f6c7.js" integrity="sha256-UQ5Z5QydvwBPb2jI5bw9eMIhf2S4tt87hede6B0m9sc="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
+
   
 </head>
+
 <body dir="ltr">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
@@ -31,7 +35,7 @@ https://github.com/alex-shpak/hugo-book
         
   <nav>
 <h2 class="book-brand">
-  <a class="flex align-center" href="/doxybook/hugo-book/"><span>Doxybook Example</span>
+  <a href="/doxybook/hugo-book"><span>Doxybook Example</span>
   </a>
 </h2>
 
@@ -41,7 +45,6 @@ https://github.com/alex-shpak/hugo-book
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
-
 
 
 
@@ -76,7 +79,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var menu=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -330,8 +333,8 @@ https://github.com/alex-shpak/hugo-book
   Detailed Description
   <a class="anchor" href="#detailed-description">#</a>
 </h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Engine</span><span style="color:#f92672">::</span>Audio<span style="color:#f92672">::</span>AudioBuffer;
-</code></pre></div><p><em>A simple audio buffer to hold PCM samples</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Engine</span><span style="color:#f92672">::</span>Audio<span style="color:#f92672">::</span>AudioBuffer;
+</span></span></code></pre></div><p><em>A simple audio buffer to hold PCM samples</em></p>
 <p><strong>Author</strong>: Matus Novak</p>
 <p><strong>Date</strong>: 2017-2019</p>
 <p><strong>Note</strong>:</p>
@@ -346,18 +349,18 @@ https://github.com/alex-shpak/hugo-book
 <p><strong>Warning</strong>: Some random warning</p>
 <p><strong>Precondition</strong>: First initialize the system.</p>
 <p>Lorem ipsum donor</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">// Some random code
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> Engine;
-
-Audio<span style="color:#f92672">::</span>AudioBuffer buffer(<span style="color:#e6db74">&#34;path/to/file.wav&#34;</span>);
-buffer.play(audioManager);
-</code></pre></div><p>More detailed description!</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">// Another code sample
-</span><span style="color:#75715e"></span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> Engine;
-Audio<span style="color:#f92672">::</span>AudioBuffer buffer(<span style="color:#e6db74">&#34;path/to/file.wav&#34;</span>);
-std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> buffer.play(...) <span style="color:#f92672">&lt;&lt;</span> std<span style="color:#f92672">::</span>endl;
-</code></pre></div><h2 id="public-types-documentation">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// Some random code
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> Engine;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Audio<span style="color:#f92672">::</span>AudioBuffer buffer(<span style="color:#e6db74">&#34;path/to/file.wav&#34;</span>);
+</span></span><span style="display:flex;"><span>buffer.play(audioManager);
+</span></span></code></pre></div><p>More detailed description!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// Another code sample
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> Engine;
+</span></span><span style="display:flex;"><span>Audio<span style="color:#f92672">::</span>AudioBuffer buffer(<span style="color:#e6db74">&#34;path/to/file.wav&#34;</span>);
+</span></span><span style="display:flex;"><span>std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> buffer.play(...) <span style="color:#f92672">&lt;&lt;</span> std<span style="color:#f92672">::</span>endl;
+</span></span></code></pre></div><h2 id="public-types-documentation">
   Public Types Documentation
   <a class="anchor" href="#public-types-documentation">#</a>
 </h2>
@@ -411,14 +414,14 @@ std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt
   using AudioData
   <a class="anchor" href="#using-audiodata">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">template</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">typename</span> T <span style="color:#f92672">&gt;</span>
-<span style="color:#66d9ef">using</span> Engine<span style="color:#f92672">::</span>Audio<span style="color:#f92672">::</span>AudioBuffer<span style="color:#f92672">::</span>AudioData <span style="color:#f92672">=</span>  Utils<span style="color:#f92672">::</span>ArrayView<span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;</span>;
-</code></pre></div><h3 id="typedef-audiodata8u">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">template</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">typename</span> T <span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> Engine<span style="color:#f92672">::</span>Audio<span style="color:#f92672">::</span>AudioBuffer<span style="color:#f92672">::</span>AudioData <span style="color:#f92672">=</span>  Utils<span style="color:#f92672">::</span>ArrayView<span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;</span>;
+</span></span></code></pre></div><h3 id="typedef-audiodata8u">
   typedef AudioData8U
   <a class="anchor" href="#typedef-audiodata8u">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">typedef</span> AudioData<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">uint8_t</span><span style="color:#f92672">&gt;</span> Engine<span style="color:#f92672">::</span>Audio<span style="color:#f92672">::</span>AudioBuffer<span style="color:#f92672">::</span>AudioData8U;
-</code></pre></div><h2 id="public-functions-documentation">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> AudioData<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">uint8_t</span><span style="color:#f92672">&gt;</span> Engine<span style="color:#f92672">::</span>Audio<span style="color:#f92672">::</span>AudioBuffer<span style="color:#f92672">::</span>AudioData8U;
+</span></span></code></pre></div><h2 id="public-functions-documentation">
   Public Functions Documentation
   <a class="anchor" href="#public-functions-documentation">#</a>
 </h2>
@@ -426,24 +429,24 @@ std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt
   function AudioBuffer
   <a class="anchor" href="#function-audiobuffer">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">explicit</span> AudioBuffer(
-    <span style="color:#66d9ef">const</span> std<span style="color:#f92672">::</span>string <span style="color:#f92672">&amp;</span> filename
-)
-</code></pre></div><p>Constructor for <a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">Audio::AudioBuffer</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">explicit</span> AudioBuffer(
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> std<span style="color:#f92672">::</span>string <span style="color:#f92672">&amp;</span> filename
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>Constructor for <a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">Audio::AudioBuffer</a>.</p>
 <h3 id="function-audiobuffer-1">
   function ~AudioBuffer
   <a class="anchor" href="#function-audiobuffer-1">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">virtual</span> <span style="color:#f92672">~</span>AudioBuffer() <span style="color:#f92672">=</span><span style="color:#66d9ef">default</span>
-</code></pre></div><p><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">Audio::AudioBuffer</a> destructor.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">virtual</span> <span style="color:#f92672">~</span>AudioBuffer() <span style="color:#f92672">=</span><span style="color:#66d9ef">default</span>
+</span></span></code></pre></div><p><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">Audio::AudioBuffer</a> destructor.</p>
 <h3 id="function-play">
   function play
   <a class="anchor" href="#function-play">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">void</span> play(
-    AudioManager <span style="color:#f92672">&amp;</span> manager
-) <span style="color:#66d9ef">const</span>
-</code></pre></div><p>Play this buffer.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> play(
+</span></span><span style="display:flex;"><span>    AudioManager <span style="color:#f92672">&amp;</span> manager
+</span></span><span style="display:flex;"><span>) <span style="color:#66d9ef">const</span>
+</span></span></code></pre></div><p>Play this buffer.</p>
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><strong>manager</strong> Which manager to play the sound with</li>
@@ -456,10 +459,10 @@ std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt
   function stop
   <a class="anchor" href="#function-stop">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">void</span> stop(
-    AudioManager <span style="color:#f92672">&amp;</span> manager
-) <span style="color:#66d9ef">const</span>
-</code></pre></div><p>Stop this buffer playing.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> stop(
+</span></span><span style="display:flex;"><span>    AudioManager <span style="color:#f92672">&amp;</span> manager
+</span></span><span style="display:flex;"><span>) <span style="color:#66d9ef">const</span>
+</span></span></code></pre></div><p>Stop this buffer playing.</p>
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><strong>manager</strong> Which manager to stop the sound with</li>
@@ -472,10 +475,10 @@ std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt
   function loop
   <a class="anchor" href="#function-loop">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">void</span> loop(
-    AudioManager <span style="color:#f92672">&amp;</span> manager
-) <span style="color:#66d9ef">const</span>
-</code></pre></div><p>Loop this buffer forever.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> loop(
+</span></span><span style="display:flex;"><span>    AudioManager <span style="color:#f92672">&amp;</span> manager
+</span></span><span style="display:flex;"><span>) <span style="color:#66d9ef">const</span>
+</span></span></code></pre></div><p>Loop this buffer forever.</p>
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><strong>manager</strong> Which manager to loop the sound with</li>
@@ -489,36 +492,36 @@ std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt
   function setData
   <a class="anchor" href="#function-setdata">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">void</span> setData(
-    <span style="color:#66d9ef">const</span> TypedAudioData <span style="color:#f92672">&amp;</span> data
-)
-</code></pre></div><h3 id="function-setdatamultiple">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> setData(
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> TypedAudioData <span style="color:#f92672">&amp;</span> data
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><h3 id="function-setdatamultiple">
   function setDataMultiple
   <a class="anchor" href="#function-setdatamultiple">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">template</span> <span style="color:#f92672">&lt;</span>size_t Size<span style="color:#f92672">&gt;</span>
-<span style="color:#66d9ef">inline</span> <span style="color:#66d9ef">void</span> setDataMultiple(
-    <span style="color:#66d9ef">const</span> TypedAudioData data[Size]
-)
-</code></pre></div><h3 id="function-setdata-1">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">template</span> <span style="color:#f92672">&lt;</span>size_t Size<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">inline</span> <span style="color:#66d9ef">void</span> setDataMultiple(
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> TypedAudioData data[Size]
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><h3 id="function-setdata-1">
   function setData
   <a class="anchor" href="#function-setdata-1">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">void</span> setData(
-    <span style="color:#66d9ef">const</span> TypedAudioData data[],
-    size_t size
-)
-</code></pre></div><p>Some deprecated function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> setData(
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> TypedAudioData data[],
+</span></span><span style="display:flex;"><span>    size_t size
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>Some deprecated function.</p>
 <p><strong>Deprecated</strong>:</p>
 <p>Use the <a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-setdatamultiple">AudioBuffer::setDataMultiple</a> instead</p>
 <h3 id="function-setcallback">
   function setCallback
   <a class="anchor" href="#function-setcallback">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">void</span> setCallback(
-    Callback callback
-)
-</code></pre></div><p>Set the callback function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> setCallback(
+</span></span><span style="display:flex;"><span>    Callback callback
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>Set the callback function.</p>
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><strong>callback</strong> The callback function pointer</li>
@@ -530,11 +533,11 @@ std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt
   function setCallback2
   <a class="anchor" href="#function-setcallback2">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">void</span> setCallback2(
-    Callback2 callback,
-    <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span> user
-)
-</code></pre></div><p>Set the callback function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> setCallback2(
+</span></span><span style="display:flex;"><span>    Callback2 callback,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span> user
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>Set the callback function.</p>
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><strong>callback</strong> The callback function pointer</li>
@@ -548,8 +551,8 @@ std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt
   function getData
   <a class="anchor" href="#function-getdata">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">float</span> <span style="color:#f92672">*</span> getData()
-</code></pre></div><h2 id="protected-attributes-documentation">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">float</span> <span style="color:#f92672">*</span> getData()
+</span></span></code></pre></div><h2 id="protected-attributes-documentation">
   Protected Attributes Documentation
   <a class="anchor" href="#protected-attributes-documentation">#</a>
 </h2>
@@ -557,8 +560,8 @@ std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt
   variable playing
   <a class="anchor" href="#variable-playing">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">bool</span> playing {false};
-</code></pre></div><h2 id="friends-1">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">bool</span> playing {false};
+</span></span></code></pre></div><h2 id="friends-1">
   Friends
   <a class="anchor" href="#friends-1">#</a>
 </h2>
@@ -566,16 +569,16 @@ std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt
   friend AudioManager
   <a class="anchor" href="#friend-audiomanager">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">friend</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AudioManager</span>;
-</code></pre></div><h3 id="friend-audiodosomething">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">friend</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AudioManager</span>;
+</span></span></code></pre></div><h3 id="friend-audiodosomething">
   friend Audio::doSomething
   <a class="anchor" href="#friend-audiodosomething">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">friend</span> <span style="color:#66d9ef">void</span> Audio<span style="color:#f92672">::</span>doSomething(
-    AudioBuffer <span style="color:#f92672">&amp;</span> buffer
-);
-</code></pre></div><hr>
-<p>Updated on 2022-11-11 at 02:09:52 +0000</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">friend</span> <span style="color:#66d9ef">void</span> Audio<span style="color:#f92672">::</span>doSomething(
+</span></span><span style="display:flex;"><span>    AudioBuffer <span style="color:#f92672">&amp;</span> buffer
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></div><hr>
+<p>Updated on 2022-11-15 at 00:06:21 +0000</p>
 </article>
  
       
@@ -589,13 +592,6 @@ std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt
 
 
 </div>
-
-
-
-  <script>(function(){function select(element){const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(element);selection.removeAllRanges();selection.addRange(range);}
-document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("click",function(event){if(window.getSelection().toString()){return;}
-select(code.parentElement);if(navigator.clipboard){navigator.clipboard.writeText(code.parentElement.textContent);}});});})();</script>
-
 
  
         
@@ -675,6 +671,7 @@ select(code.parentElement);if(navigator.clipboard){navigator.clipboard.writeText
 
   
 </body>
+
 </html>
 
 

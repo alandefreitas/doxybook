@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdoxybook_1_1text__markdown__printer_1_1print__data" kind="struct" language="C++" prot="private">
+    <compoundname>doxybook::text_markdown_printer::print_data</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoxybook_1_1text__markdown__printer_1_1print__data_1a36ca4b3c11555d24f1a5bb502e4cf408" prot="public" static="no" mutable="no">
+        <type>std::stringstream</type>
+        <definition>std::stringstream doxybook::text_markdown_printer::print_data::ss</definition>
+        <argsstring></argsstring>
+        <name>ss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_markdown_printer.hpp" line="38" column="31" bodyfile="doxybook/text_markdown_printer.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1text__markdown__printer_1_1print__data_1aa1e11f9730b9608c66d7acefe8c5611c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int doxybook::text_markdown_printer::print_data::indent</definition>
+        <argsstring></argsstring>
+        <name>indent</name>
+        <initializer>{ 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_markdown_printer.hpp" line="39" column="17" bodyfile="doxybook/text_markdown_printer.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1text__markdown__printer_1_1print__data_1a19ca3d86b3481154f931531dae7f5717" prot="public" static="no" mutable="no">
+        <type>std::list&lt; list_data &gt;</type>
+        <definition>std::list&lt;list_data&gt; doxybook::text_markdown_printer::print_data::lists</definition>
+        <argsstring></argsstring>
+        <name>lists</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_markdown_printer.hpp" line="40" column="23" bodyfile="doxybook/text_markdown_printer.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1text__markdown__printer_1_1print__data_1aac2b43e1c53fe32caba57beb69cec71c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doxybook::text_markdown_printer::print_data::quote</definition>
+        <argsstring></argsstring>
+        <name>quote</name>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_markdown_printer.hpp" line="41" column="18" bodyfile="doxybook/text_markdown_printer.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1text__markdown__printer_1_1print__data_1a79e0a66b88982753605372a5227b2342" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doxybook::text_markdown_printer::print_data::eol</definition>
+        <argsstring></argsstring>
+        <name>eol</name>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_markdown_printer.hpp" line="42" column="18" bodyfile="doxybook/text_markdown_printer.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1text__markdown__printer_1_1print__data_1aaacdf7d218b922f70c2a3d94de89864c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doxybook::text_markdown_printer::print_data::table_header</definition>
+        <argsstring></argsstring>
+        <name>table_header</name>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_markdown_printer.hpp" line="43" column="18" bodyfile="doxybook/text_markdown_printer.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1text__markdown__printer_1_1print__data_1aa6ae68be0a488ee4538a02629245e871" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doxybook::text_markdown_printer::print_data::in_computer_output</definition>
+        <argsstring></argsstring>
+        <name>in_computer_output</name>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_markdown_printer.hpp" line="44" column="18" bodyfile="doxybook/text_markdown_printer.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1text__markdown__printer_1_1print__data_1ae49dcf7e06eb24f02c9e1ad439384136" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doxybook::text_markdown_printer::print_data::valid_link</definition>
+        <argsstring></argsstring>
+        <name>valid_link</name>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/text_markdown_printer.hpp" line="45" column="18" bodyfile="doxybook/text_markdown_printer.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="doxybook/text_markdown_printer.hpp" line="37" column="25" bodyfile="doxybook/text_markdown_printer.hpp" bodystart="37" bodyend="46"/>
+    <listofallmembers>
+      <member refid="structdoxybook_1_1text__markdown__printer_1_1print__data_1a79e0a66b88982753605372a5227b2342" prot="public" virt="non-virtual"><scope>doxybook::text_markdown_printer::print_data</scope><name>eol</name></member>
+      <member refid="structdoxybook_1_1text__markdown__printer_1_1print__data_1aa6ae68be0a488ee4538a02629245e871" prot="public" virt="non-virtual"><scope>doxybook::text_markdown_printer::print_data</scope><name>in_computer_output</name></member>
+      <member refid="structdoxybook_1_1text__markdown__printer_1_1print__data_1aa1e11f9730b9608c66d7acefe8c5611c" prot="public" virt="non-virtual"><scope>doxybook::text_markdown_printer::print_data</scope><name>indent</name></member>
+      <member refid="structdoxybook_1_1text__markdown__printer_1_1print__data_1a19ca3d86b3481154f931531dae7f5717" prot="public" virt="non-virtual"><scope>doxybook::text_markdown_printer::print_data</scope><name>lists</name></member>
+      <member refid="structdoxybook_1_1text__markdown__printer_1_1print__data_1aac2b43e1c53fe32caba57beb69cec71c" prot="public" virt="non-virtual"><scope>doxybook::text_markdown_printer::print_data</scope><name>quote</name></member>
+      <member refid="structdoxybook_1_1text__markdown__printer_1_1print__data_1a36ca4b3c11555d24f1a5bb502e4cf408" prot="public" virt="non-virtual"><scope>doxybook::text_markdown_printer::print_data</scope><name>ss</name></member>
+      <member refid="structdoxybook_1_1text__markdown__printer_1_1print__data_1aaacdf7d218b922f70c2a3d94de89864c" prot="public" virt="non-virtual"><scope>doxybook::text_markdown_printer::print_data</scope><name>table_header</name></member>
+      <member refid="structdoxybook_1_1text__markdown__printer_1_1print__data_1ae49dcf7e06eb24f02c9e1ad439384136" prot="public" virt="non-virtual"><scope>doxybook::text_markdown_printer::print_data</scope><name>valid_link</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

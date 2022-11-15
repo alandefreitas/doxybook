@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr">
+<html lang="en" dir="ltr">
+
 <head>
+  <meta name="generator" content="Hugo 0.105.0">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Engine::Graphics::Texture2D #  Module: An example game engine / Graphical related classes
+<meta name="description" content="Engine::Graphics::Texture2D # Module: An example game engine / Graphical related classes
 #include &lt;Texture2D.hpp&gt;
 Inherits from Engine::Graphics::Texture, Engine::Graphics::Handle
-Public Functions #      Name      Texture2D(int width, int height, uint8_t * data, Texture::Type type =Texture::Type::RGBA8)   virtual ~Texture2D()   virtual int getWidth() const overrideReturns the width of the texture in pixels.   virtual int getHeight() const overrideReturns the height of the texture in pixels.">
-<meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Engine::Graphics::Texture2D" />
-<meta property="og:description" content="Engine::Graphics::Texture2D #  Module: An example game engine / Graphical related classes
+Public Functions # Name Texture2D(int width, int height, uint8_t * data, Texture::Type type =Texture::Type::RGBA8) virtual ~Texture2D() virtual int getWidth() const overrideReturns the width of the texture in pixels. virtual int getHeight() const overrideReturns the height of the texture in pixels. virtual int getDepth() const overrideReturns the depth of the texture in pixels. Additional inherited members # Public Types inherited from Engine::Graphics::Texture">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Engine::Graphics::Texture2D" />
+<meta property="og:description" content="Engine::Graphics::Texture2D # Module: An example game engine / Graphical related classes
 #include &lt;Texture2D.hpp&gt;
 Inherits from Engine::Graphics::Texture, Engine::Graphics::Handle
-Public Functions #      Name      Texture2D(int width, int height, uint8_t * data, Texture::Type type =Texture::Type::RGBA8)   virtual ~Texture2D()   virtual int getWidth() const overrideReturns the width of the texture in pixels.   virtual int getHeight() const overrideReturns the height of the texture in pixels." />
+Public Functions # Name Texture2D(int width, int height, uint8_t * data, Texture::Type type =Texture::Type::RGBA8) virtual ~Texture2D() virtual int getWidth() const overrideReturns the width of the texture in pixels. virtual int getHeight() const overrideReturns the height of the texture in pixels. virtual int getDepth() const overrideReturns the depth of the texture in pixels. Additional inherited members # Public Types inherited from Engine::Graphics::Texture" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://matusnovak.github.io/doxybook/hugo-book/classes/classengine_1_1graphics_1_1texture2d/" />
+<meta property="og:url" content="https://alandefreitas.github.io/doxybook/hugo-book/classes/classengine_1_1graphics_1_1texture2d/" /><meta property="article:section" content="classes" />
+
+
 
 <title>Engine::Graphics::Texture2D | Doxybook Example</title>
 <link rel="manifest" href="/doxybook/hugo-book/manifest.json">
 <link rel="icon" href="/doxybook/hugo-book/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/doxybook/hugo-book/book.min.a64c3fbabd2c7a93ee90dd37db9054580fcb37b8eef93f80b6fa286b030f64af.css" integrity="sha256-pkw/ur0sepPukN0325BUWA/LN7ju&#43;T&#43;AtvooawMPZK8=" crossorigin="anonymous">
-  <script defer src="/doxybook/hugo-book/flexsearch.min.js"></script>
-  <script defer src="/doxybook/hugo-book/en.search.min.7900f99d00f35209f3b09e0334c40dca2e19d99fb4e55cd92dd69969fd21ffb6.js" integrity="sha256-eQD5nQDzUgnzsJ4DNMQNyi4Z2Z&#43;05VzZLdaZaf0h/7Y=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/doxybook/hugo-book/book.min.68be0b7a9674f2a612ce0e9b2e9447ff4b7ac96546e06b642bfd3ded0ca490ef.css" integrity="sha256-aL4LepZ08qYSzg6bLpRH/0t6yWVG4GtkK/097QykkO8=">
+<script defer src="/doxybook/hugo-book/en.search.min.510e59e50c9dbf004f6f68c8e5bc3d78c2217f64b8b6df3b85e75ee81d26f6c7.js" integrity="sha256-UQ5Z5QydvwBPb2jI5bw9eMIhf2S4tt87hede6B0m9sc="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
+
   
 </head>
+
 <body dir="ltr">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
@@ -37,7 +41,7 @@ https://github.com/alex-shpak/hugo-book
         
   <nav>
 <h2 class="book-brand">
-  <a class="flex align-center" href="/doxybook/hugo-book/"><span>Doxybook Example</span>
+  <a href="/doxybook/hugo-book"><span>Doxybook Example</span>
   </a>
 </h2>
 
@@ -47,7 +51,6 @@ https://github.com/alex-shpak/hugo-book
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
-
 
 
 
@@ -82,7 +85,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var menu=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -284,13 +287,13 @@ https://github.com/alex-shpak/hugo-book
   function Texture2D
   <a class="anchor" href="#function-texture2d">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">Texture2D(
-    <span style="color:#66d9ef">int</span> width,
-    <span style="color:#66d9ef">int</span> height,
-    <span style="color:#66d9ef">uint8_t</span> <span style="color:#f92672">*</span> data,
-    Texture<span style="color:#f92672">::</span>Type type <span style="color:#f92672">=</span>Texture<span style="color:#f92672">::</span>Type<span style="color:#f92672">::</span>RGBA8
-)
-</code></pre></div><p><strong>Parameters</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>Texture2D(
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> width,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> height,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">uint8_t</span> <span style="color:#f92672">*</span> data,
+</span></span><span style="display:flex;"><span>    Texture<span style="color:#f92672">::</span>Type type <span style="color:#f92672">=</span>Texture<span style="color:#f92672">::</span>Type<span style="color:#f92672">::</span>RGBA8
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p><strong>Parameters</strong>:</p>
 <ul>
 <li><strong>data</strong> The pointer to the raw pixels data</li>
 <li><strong>width</strong> The width of the image held by the data pointer</li>
@@ -301,34 +304,34 @@ https://github.com/alex-shpak/hugo-book
   function ~Texture2D
   <a class="anchor" href="#function-texture2d-1">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">virtual</span> <span style="color:#f92672">~</span>Texture2D()
-</code></pre></div><h3 id="function-getwidth">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">virtual</span> <span style="color:#f92672">~</span>Texture2D()
+</span></span></code></pre></div><h3 id="function-getwidth">
   function getWidth
   <a class="anchor" href="#function-getwidth">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">int</span> getWidth() <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">override</span>
-</code></pre></div><p>Returns the width of the texture in pixels.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">int</span> getWidth() <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">override</span>
+</span></span></code></pre></div><p>Returns the width of the texture in pixels.</p>
 <p><strong>Return</strong>: Width in pixels</p>
 <p><strong>Reimplements</strong>: <a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1texture/#function-getwidth">Engine::Graphics::Texture::getWidth</a></p>
 <h3 id="function-getheight">
   function getHeight
   <a class="anchor" href="#function-getheight">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">int</span> getHeight() <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">override</span>
-</code></pre></div><p>Returns the height of the texture in pixels.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">int</span> getHeight() <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">override</span>
+</span></span></code></pre></div><p>Returns the height of the texture in pixels.</p>
 <p><strong>Return</strong>: Height in pixels</p>
 <p><strong>Reimplements</strong>: <a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1texture/#function-getheight">Engine::Graphics::Texture::getHeight</a></p>
 <h3 id="function-getdepth">
   function getDepth
   <a class="anchor" href="#function-getdepth">#</a>
 </h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">int</span> getDepth() <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">override</span>
-</code></pre></div><p>Returns the depth of the texture in pixels.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">int</span> getDepth() <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">override</span>
+</span></span></code></pre></div><p>Returns the depth of the texture in pixels.</p>
 <p><strong>Return</strong>: Depth in pixels</p>
 <p><strong>Note</strong>: If this texture is 2D the depth is always 1 pixels</p>
 <p><strong>Reimplements</strong>: <a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1texture/#function-getdepth">Engine::Graphics::Texture::getDepth</a></p>
 <hr>
-<p>Updated on 2022-11-11 at 02:09:52 +0000</p>
+<p>Updated on 2022-11-15 at 00:06:21 +0000</p>
 </article>
  
       
@@ -342,13 +345,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 </div>
-
-
-
-  <script>(function(){function select(element){const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(element);selection.removeAllRanges();selection.addRange(range);}
-document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("click",function(event){if(window.getSelection().toString()){return;}
-select(code.parentElement);if(navigator.clipboard){navigator.clipboard.writeText(code.parentElement.textContent);}});});})();</script>
-
 
  
         
@@ -395,6 +391,7 @@ select(code.parentElement);if(navigator.clipboard){navigator.clipboard.writeText
 
   
 </body>
+
 </html>
 
 

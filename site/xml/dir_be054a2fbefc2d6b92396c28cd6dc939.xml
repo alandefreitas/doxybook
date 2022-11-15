@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_be054a2fbefc2d6b92396c28cd6dc939" kind="dir">
+    <compoundname>doxybook</compoundname>
+    <innerfile refid="config_8hpp">config.hpp</innerfile>
+    <innerfile refid="default__templates_8hpp">default_templates.hpp</innerfile>
+    <innerfile refid="doxygen_8hpp">doxygen.hpp</innerfile>
+    <innerfile refid="enums_8hpp">enums.hpp</innerfile>
+    <innerfile refid="exception_8hpp">exception.hpp</innerfile>
+    <innerfile refid="exception__utils_8hpp">exception_utils.hpp</innerfile>
+    <innerfile refid="generator_8hpp">generator.hpp</innerfile>
+    <innerfile refid="json__converter_8hpp">json_converter.hpp</innerfile>
+    <innerfile refid="node_8hpp">node.hpp</innerfile>
+    <innerfile refid="path_8hpp">path.hpp</innerfile>
+    <innerfile refid="renderer_8hpp">renderer.hpp</innerfile>
+    <innerfile refid="text__markdown__printer_8hpp">text_markdown_printer.hpp</innerfile>
+    <innerfile refid="text__plain__printer_8hpp">text_plain_printer.hpp</innerfile>
+    <innerfile refid="text__printer_8hpp">text_printer.hpp</innerfile>
+    <innerfile refid="utils_8hpp">utils.hpp</innerfile>
+    <innerfile refid="xml_8hpp">xml.hpp</innerfile>
+    <innerfile refid="xml__text__parser_8hpp">xml_text_parser.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="doxybook/"/>
+  </compounddef>
+</doxygen>

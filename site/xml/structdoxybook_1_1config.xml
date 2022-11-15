@@ -1,0 +1,945 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdoxybook_1_1config" kind="struct" language="C++" prot="public">
+    <compoundname>doxybook::config</compoundname>
+    <includes refid="config_8hpp" local="no">config.hpp</includes>
+      <sectiondef kind="user-defined">
+      <header>Output layout</header>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a04ea1fc48a94448833af793293922a21" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::output_dir</definition>
+        <argsstring></argsstring>
+        <name>output_dir</name>
+        <briefdescription>
+<para>Where to store the output files? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="22" column="21" bodyfile="doxybook/config.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1aa2c3bb83af2e68530040203781b7e67e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doxybook::config::debug_template_json</definition>
+        <argsstring></argsstring>
+        <name>debug_template_json</name>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+<para>Generate extra JSON for each rendered template. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="25" column="14" bodyfile="doxybook/config.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1aae53274114d2446c59cbff85a4c1f999" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doxybook::config::use_folders</definition>
+        <argsstring></argsstring>
+        <name>use_folders</name>
+        <initializer>{ true }</initializer>
+        <briefdescription>
+<para>Put all files into categorized folders. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="28" column="14" bodyfile="doxybook/config.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1ac788bd3a1dda96c00c87312fe0e488eb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doxybook::config::index_in_folders</definition>
+        <argsstring></argsstring>
+        <name>index_in_folders</name>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+<para>Put index files into the respective subdirectories. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>(Hugo/Learn) needs that </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="34" column="14" bodyfile="doxybook/config.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a6ecc6d72c8be164e58d38cb2d3d1ee7e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doxybook::config::main_page_in_root</definition>
+        <argsstring></argsstring>
+        <name>main_page_in_root</name>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+<para>Main page should be located in the root directory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="37" column="14" bodyfile="doxybook/config.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a7cf8d630074fae411c2447af9c886455" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::main_page_name</definition>
+        <argsstring></argsstring>
+        <name>main_page_name</name>
+        <initializer>{ &quot;indexpage&quot; }</initializer>
+        <briefdescription>
+<para>Name of the mainpage / indexpage. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="40" column="21" bodyfile="doxybook/config.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a72414ac533cb2545847562229b17ba80" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::base_url</definition>
+        <argsstring></argsstring>
+        <name>base_url</name>
+        <initializer>{ &quot;&quot; }</initializer>
+        <briefdescription>
+<para>The base URL to prepend all links with. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="43" column="21" bodyfile="doxybook/config.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1ac8936b23e332acded5b6e96f108f29ab" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::file_extension</definition>
+        <argsstring></argsstring>
+        <name>file_extension</name>
+        <initializer>{ &quot;md&quot; }</initializer>
+        <briefdescription>
+<para>The extension for markdown files. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="46" column="21" bodyfile="doxybook/config.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a8f173492552faaa67f2f77be1973182e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::link_suffix</definition>
+        <argsstring></argsstring>
+        <name>link_suffix</name>
+        <initializer>{ &quot;.md&quot; }</initializer>
+        <briefdescription>
+<para>The suffix to end links with. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="49" column="21" bodyfile="doxybook/config.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Generator options</header>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a1fa732d9ebba64aa7c52c452dd9d77ef" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doxybook::config::sort</definition>
+        <argsstring></argsstring>
+        <name>sort</name>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+<para>Sort symbols alphabetically. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="57" column="14" bodyfile="doxybook/config.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a427cc91dc53a2c05a5fabbf98c0de5d4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doxybook::config::copy_images</definition>
+        <argsstring></argsstring>
+        <name>copy_images</name>
+        <initializer>{ true }</initializer>
+        <briefdescription>
+<para>Copy images from the Doxygen xml dir. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="60" column="14" bodyfile="doxybook/config.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1abad2ae7aa20d7804e6ddf1fb0a418c61" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::images_folder</definition>
+        <argsstring></argsstring>
+        <name>images_folder</name>
+        <initializer>{ &quot;images&quot; }</initializer>
+        <briefdescription>
+<para>Where to copy images. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="63" column="21" bodyfile="doxybook/config.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1aadc0f83509eb270f26c4ce87a96fba3d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doxybook::config::link_lowercase</definition>
+        <argsstring></argsstring>
+        <name>link_lowercase</name>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+<para>Convert all refids and folder names to lowercase. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="66" column="14" bodyfile="doxybook/config.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1afc6d673c832a7cfe45861d05ccc31941" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doxybook::config::link_and_inline_code_as_html</definition>
+        <argsstring></argsstring>
+        <name>link_and_inline_code_as_html</name>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+<para>Output links/code as &lt;a&gt;/&lt;code&gt; tags instead of Markdown. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="69" column="14" bodyfile="doxybook/config.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Folder names</header>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1abf2944c22eebb6a484fcbe41d21ba80c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::folder_groups_name</definition>
+        <argsstring></argsstring>
+        <name>folder_groups_name</name>
+        <initializer>{ &quot;modules&quot; }</initializer>
+        <briefdescription>
+<para>The modules folder name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="77" column="21" bodyfile="doxybook/config.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a5c438c3d226f03e1cc55383217887c20" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::folder_classes_name</definition>
+        <argsstring></argsstring>
+        <name>folder_classes_name</name>
+        <initializer>{ &quot;classes&quot; }</initializer>
+        <briefdescription>
+<para>The classes folder name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="80" column="21" bodyfile="doxybook/config.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1ad076b03147d75a4f94ed1b47f34ae270" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::folder_files_name</definition>
+        <argsstring></argsstring>
+        <name>folder_files_name</name>
+        <initializer>{ &quot;files&quot; }</initializer>
+        <briefdescription>
+<para>The files folder name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="83" column="21" bodyfile="doxybook/config.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1ac58da62ac7fa93f0873c239d66bcac44" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::folder_related_pages_name</definition>
+        <argsstring></argsstring>
+        <name>folder_related_pages_name</name>
+        <initializer>{ &quot;pages&quot; }</initializer>
+        <briefdescription>
+<para>The pages folder name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="86" column="21" bodyfile="doxybook/config.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a2cca5d9665fdc6a8b7286d5f7afe230a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::folder_namespaces_name</definition>
+        <argsstring></argsstring>
+        <name>folder_namespaces_name</name>
+        <initializer>{ &quot;namespaces&quot; }</initializer>
+        <briefdescription>
+<para>The namespaces folder name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="89" column="21" bodyfile="doxybook/config.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a0df998804de42bac3ee561dfa522f1e7" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::folder_examples_name</definition>
+        <argsstring></argsstring>
+        <name>folder_examples_name</name>
+        <initializer>{ &quot;examples&quot; }</initializer>
+        <briefdescription>
+<para>The examples folder name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="92" column="21" bodyfile="doxybook/config.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Index file names</header>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a032a91752305626d2766aca9f81ac2c6" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::index_groups_name</definition>
+        <argsstring></argsstring>
+        <name>index_groups_name</name>
+        <initializer>{ &quot;index_groups&quot; }</initializer>
+        <briefdescription>
+<para>The groups index file name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="100" column="21" bodyfile="doxybook/config.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a43584497c87909fe7b8c5a4ffe74f215" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::index_classes_name</definition>
+        <argsstring></argsstring>
+        <name>index_classes_name</name>
+        <initializer>{ &quot;index_classes&quot; }</initializer>
+        <briefdescription>
+<para>The classes index file name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="103" column="21" bodyfile="doxybook/config.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a8268f12eb8e22b682cd89777d862c191" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::index_files_name</definition>
+        <argsstring></argsstring>
+        <name>index_files_name</name>
+        <initializer>{ &quot;index_files&quot; }</initializer>
+        <briefdescription>
+<para>The files index file name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="106" column="21" bodyfile="doxybook/config.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a295291081d33414662a5105ffd94bee6" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::index_related_pages_name</definition>
+        <argsstring></argsstring>
+        <name>index_related_pages_name</name>
+        <initializer>{ &quot;index_pages&quot; }</initializer>
+        <briefdescription>
+<para>The relatedPages index file name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="109" column="21" bodyfile="doxybook/config.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a40f4a16e3cac894d16609f882daec392" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::index_namespaces_name</definition>
+        <argsstring></argsstring>
+        <name>index_namespaces_name</name>
+        <initializer>{ &quot;index_namespaces&quot; }</initializer>
+        <briefdescription>
+<para>The namespaces index file name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="112" column="21" bodyfile="doxybook/config.hpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1acb11cb3f9e691362acb8d6118e0de04b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::index_examples_name</definition>
+        <argsstring></argsstring>
+        <name>index_examples_name</name>
+        <initializer>{ &quot;index_examples&quot; }</initializer>
+        <briefdescription>
+<para>The examples index file name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="115" column="21" bodyfile="doxybook/config.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Template file names for symbol types</header>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a4f3bd7c536abcfa3e405ad1ba4e80e4f" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::template_kind_class</definition>
+        <argsstring></argsstring>
+        <name>template_kind_class</name>
+        <initializer>{ &quot;kind_class&quot; }</initializer>
+        <briefdescription>
+<para>The template file we should use for classes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="123" column="21" bodyfile="doxybook/config.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a9be6a2b58df4ff1fe09b14f82c9dcfff" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::template_kind_struct</definition>
+        <argsstring></argsstring>
+        <name>template_kind_struct</name>
+        <initializer>{ &quot;kind_class&quot; }</initializer>
+        <briefdescription>
+<para>The template file we should use for structs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="126" column="21" bodyfile="doxybook/config.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a47f131ae3c605506310ac0fee29a828c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::template_kind_union</definition>
+        <argsstring></argsstring>
+        <name>template_kind_union</name>
+        <initializer>{ &quot;kind_class&quot; }</initializer>
+        <briefdescription>
+<para>The template file we should use for unions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="129" column="21" bodyfile="doxybook/config.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a1679060ce882ceb3b1f129edb81aa054" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::template_kind_interface</definition>
+        <argsstring></argsstring>
+        <name>template_kind_interface</name>
+        <initializer>{ &quot;kind_class&quot; }</initializer>
+        <briefdescription>
+<para>The template file we should use for interfaces. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="132" column="21" bodyfile="doxybook/config.hpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1ad998bed6d285cfafe0e6bf955d1ff8e6" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::template_kind_java_enum</definition>
+        <argsstring></argsstring>
+        <name>template_kind_java_enum</name>
+        <initializer>{ &quot;kind_class&quot; }</initializer>
+        <briefdescription>
+<para>The template file we should use for java enums. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="135" column="21" bodyfile="doxybook/config.hpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a844c8da572bd8e1cc62cdd0f19003d9d" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::template_kind_namespace</definition>
+        <argsstring></argsstring>
+        <name>template_kind_namespace</name>
+        <initializer>{ &quot;kind_nonclass&quot; }</initializer>
+        <briefdescription>
+<para>The template file we should use for namespaces. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="138" column="21" bodyfile="doxybook/config.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1af3c46b601c5ad49a1dbfa3d9bb21e086" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::template_kind_group</definition>
+        <argsstring></argsstring>
+        <name>template_kind_group</name>
+        <initializer>{ &quot;kind_nonclass&quot; }</initializer>
+        <briefdescription>
+<para>The template file we should use for groups. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="141" column="21" bodyfile="doxybook/config.hpp" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a6f112d1e62b53d7af8d3001567faf2dc" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::template_kind_file</definition>
+        <argsstring></argsstring>
+        <name>template_kind_file</name>
+        <initializer>{ &quot;kind_file&quot; }</initializer>
+        <briefdescription>
+<para>The template file we should use for files. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="144" column="21" bodyfile="doxybook/config.hpp" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1ac9a5e7454c7953770e172b57288cb977" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::template_kind_dir</definition>
+        <argsstring></argsstring>
+        <name>template_kind_dir</name>
+        <initializer>{ &quot;kind_file&quot; }</initializer>
+        <briefdescription>
+<para>The template file we should use for dirs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="147" column="21" bodyfile="doxybook/config.hpp" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a2e439469ee8e1ba26f93c8b1498aeb44" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::template_kind_page</definition>
+        <argsstring></argsstring>
+        <name>template_kind_page</name>
+        <initializer>{ &quot;kind_page&quot; }</initializer>
+        <briefdescription>
+<para>The template file we should use for pages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="150" column="21" bodyfile="doxybook/config.hpp" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1aecce57b00d1de6a0f148a8a0b46de992" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::template_kind_example</definition>
+        <argsstring></argsstring>
+        <name>template_kind_example</name>
+        <initializer>{ &quot;kind_page&quot; }</initializer>
+        <briefdescription>
+<para>The template file we should use for examples. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="153" column="21" bodyfile="doxybook/config.hpp" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Template file names for indexes</header>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a9f77ac734271978e04374de001908147" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::template_index_classes</definition>
+        <argsstring></argsstring>
+        <name>template_index_classes</name>
+        <initializer>{ &quot;index_classes&quot; }</initializer>
+        <briefdescription>
+<para>The template file we should we for the class index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="161" column="21" bodyfile="doxybook/config.hpp" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a8f9c32ab2fc00daba0f9ccbf030dc148" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::template_index_namespaces</definition>
+        <argsstring></argsstring>
+        <name>template_index_namespaces</name>
+        <initializer>{ &quot;index_namespaces&quot; }</initializer>
+        <briefdescription>
+<para>The template file we should we for the namespace index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="164" column="21" bodyfile="doxybook/config.hpp" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1af7ee5cf94d20f0f7fe4622237efe9fc5" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::template_index_groups</definition>
+        <argsstring></argsstring>
+        <name>template_index_groups</name>
+        <initializer>{ &quot;index_groups&quot; }</initializer>
+        <briefdescription>
+<para>The template file we should we for the group index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="167" column="21" bodyfile="doxybook/config.hpp" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1abfeb8950aa0b4f5b351c7e77a86da8a3" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::template_index_files</definition>
+        <argsstring></argsstring>
+        <name>template_index_files</name>
+        <initializer>{ &quot;index_files&quot; }</initializer>
+        <briefdescription>
+<para>The template file we should we for the file index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="170" column="21" bodyfile="doxybook/config.hpp" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a71d5380a694bfcd8a91030a75e23e5f0" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::template_index_related_pages</definition>
+        <argsstring></argsstring>
+        <name>template_index_related_pages</name>
+        <initializer>{ &quot;index_pages&quot; }</initializer>
+        <briefdescription>
+<para>The template file we should we for the related page index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="173" column="21" bodyfile="doxybook/config.hpp" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a69ad0352e6e08acba44a1071f0d2ecf4" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::template_index_examples</definition>
+        <argsstring></argsstring>
+        <name>template_index_examples</name>
+        <initializer>{ &quot;index_examples&quot; }</initializer>
+        <briefdescription>
+<para>The template file we should we for the example index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="176" column="21" bodyfile="doxybook/config.hpp" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Index titles</header>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a142a11fe4eb9284e2ee65f6cda4408ea" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::index_classes_title</definition>
+        <argsstring></argsstring>
+        <name>index_classes_title</name>
+        <initializer>{ &quot;Classes&quot; }</initializer>
+        <briefdescription>
+<para>The title for classes in index pages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="184" column="21" bodyfile="doxybook/config.hpp" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a2586b149bb300369dfd6e9e686381244" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::index_namespaces_title</definition>
+        <argsstring></argsstring>
+        <name>index_namespaces_title</name>
+        <initializer>{ &quot;Namespaces&quot; }</initializer>
+        <briefdescription>
+<para>The title for namespaces in index pages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="187" column="21" bodyfile="doxybook/config.hpp" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1ad78e0c06335814e7ea7d0d6241882a59" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::index_groups_title</definition>
+        <argsstring></argsstring>
+        <name>index_groups_title</name>
+        <initializer>{ &quot;Modules&quot; }</initializer>
+        <briefdescription>
+<para>The title for groups in index pages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="190" column="21" bodyfile="doxybook/config.hpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a93eaf443312bce9269bfc86fc57034a1" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::index_files_title</definition>
+        <argsstring></argsstring>
+        <name>index_files_title</name>
+        <initializer>{ &quot;Files&quot; }</initializer>
+        <briefdescription>
+<para>The title for files in index pages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="193" column="21" bodyfile="doxybook/config.hpp" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1adadb628bf81d113e255bc2a4ccc2c8c0" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::index_related_pages_title</definition>
+        <argsstring></argsstring>
+        <name>index_related_pages_title</name>
+        <initializer>{ &quot;Pages&quot; }</initializer>
+        <briefdescription>
+<para>The title for relatedPages in index pages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="196" column="21" bodyfile="doxybook/config.hpp" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1aa1a53e85fbf236c681ad7332b1938dd1" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::index_examples_title</definition>
+        <argsstring></argsstring>
+        <name>index_examples_title</name>
+        <initializer>{ &quot;Examples&quot; }</initializer>
+        <briefdescription>
+<para>The title for examples in index pages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="199" column="21" bodyfile="doxybook/config.hpp" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Filters</header>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a71f45a4bfbb19f690e0f400322b6623d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; doxybook::config::files_filter</definition>
+        <argsstring></argsstring>
+        <name>files_filter</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>The source files allowed in the output? </para>
+        </briefdescription>
+        <detaileddescription>
+<para>An empty list means all files are allowed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="210" column="21" bodyfile="doxybook/config.hpp" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a4220f0769d7ea4709380f021bbdce405" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref> &gt;</type>
+        <definition>std::vector&lt;folder_category&gt; doxybook::config::folders_to_generate</definition>
+        <argsstring></argsstring>
+        <name>folders_to_generate</name>
+        <initializer>{
+            <ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4a166caac76e43bd0d769e132d9bb81d4b" kindref="member">folder_category::MODULES</ref>,    <ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4a5da46f675c183760574722cacc24d420" kindref="member">folder_category::CLASSES</ref>,
+            <ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4ac935a4e21742b5a03a15b05834e2d82c" kindref="member">folder_category::FILES</ref>,      <ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4a9306c07017fd316befdc82b5cd16652f" kindref="member">folder_category::PAGES</ref>,
+            <ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4ab0d6a3eb070feba72e0404d36a24a9be" kindref="member">folder_category::NAMESPACES</ref>, <ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4ae6bde2a01c490e177d6dcd15c149c129" kindref="member">folder_category::EXAMPLES</ref>,
+        }</initializer>
+        <briefdescription>
+<para>Folders we should generate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="213" column="21" bodyfile="doxybook/config.hpp" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Latex formulas</header>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a1e7a7c1f4c3079c0a7b57425ccc3697c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::formulaInlineStart</definition>
+        <argsstring></argsstring>
+        <name>formulaInlineStart</name>
+        <initializer>{ &quot;\\(&quot; }</initializer>
+        <briefdescription>
+<para>Token for latex formulas inline start. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="225" column="21" bodyfile="doxybook/config.hpp" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a9dcfbab45de43bc1fbb95245591ee4a2" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::formulaInlineEnd</definition>
+        <argsstring></argsstring>
+        <name>formulaInlineEnd</name>
+        <initializer>{ &quot;\\)&quot; }</initializer>
+        <briefdescription>
+<para>Token for latex formulas inline end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="228" column="21" bodyfile="doxybook/config.hpp" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1aca60a1c61c1d7c83d0466204f9faa8e1" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::formulaBlockStart</definition>
+        <argsstring></argsstring>
+        <name>formulaBlockStart</name>
+        <initializer>{ &quot;\\[&quot; }</initializer>
+        <briefdescription>
+<para>Token for latex formulas block start. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="231" column="21" bodyfile="doxybook/config.hpp" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1acf86d69f8bc49d544b3c9219b4bdb7b3" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::config::formulaBlockEnd</definition>
+        <argsstring></argsstring>
+        <name>formulaBlockEnd</name>
+        <initializer>{ &quot;\\]&quot; }</initializer>
+        <briefdescription>
+<para>Token for latex formulas block end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="234" column="21" bodyfile="doxybook/config.hpp" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdoxybook_1_1config_1adce76a994d5cdba0f3752459ea698c56" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doxybook::config::replaceUnderscoresInAnchors</definition>
+        <argsstring></argsstring>
+        <name>replaceUnderscoresInAnchors</name>
+        <initializer>{ true }</initializer>
+        <briefdescription>
+<para>Replace underscores with hyphens in anchors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="239" column="14" bodyfile="doxybook/config.hpp" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Configuration for the <ref refid="classdoxybook_1_1doxygen" kindref="compound">doxygen</ref> and <ref refid="classdoxybook_1_1generator" kindref="compound">generator</ref> classes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="doxybook/config.hpp" line="17" column="17" bodyfile="doxybook/config.hpp" bodystart="17" bodyend="240"/>
+    <listofallmembers>
+      <member refid="structdoxybook_1_1config_1a72414ac533cb2545847562229b17ba80" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>base_url</name></member>
+      <member refid="structdoxybook_1_1config_1a427cc91dc53a2c05a5fabbf98c0de5d4" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>copy_images</name></member>
+      <member refid="structdoxybook_1_1config_1aa2c3bb83af2e68530040203781b7e67e" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>debug_template_json</name></member>
+      <member refid="structdoxybook_1_1config_1ac8936b23e332acded5b6e96f108f29ab" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>file_extension</name></member>
+      <member refid="structdoxybook_1_1config_1a71f45a4bfbb19f690e0f400322b6623d" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>files_filter</name></member>
+      <member refid="structdoxybook_1_1config_1a5c438c3d226f03e1cc55383217887c20" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>folder_classes_name</name></member>
+      <member refid="structdoxybook_1_1config_1a0df998804de42bac3ee561dfa522f1e7" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>folder_examples_name</name></member>
+      <member refid="structdoxybook_1_1config_1ad076b03147d75a4f94ed1b47f34ae270" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>folder_files_name</name></member>
+      <member refid="structdoxybook_1_1config_1abf2944c22eebb6a484fcbe41d21ba80c" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>folder_groups_name</name></member>
+      <member refid="structdoxybook_1_1config_1a2cca5d9665fdc6a8b7286d5f7afe230a" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>folder_namespaces_name</name></member>
+      <member refid="structdoxybook_1_1config_1ac58da62ac7fa93f0873c239d66bcac44" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>folder_related_pages_name</name></member>
+      <member refid="structdoxybook_1_1config_1a4220f0769d7ea4709380f021bbdce405" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>folders_to_generate</name></member>
+      <member refid="structdoxybook_1_1config_1acf86d69f8bc49d544b3c9219b4bdb7b3" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>formulaBlockEnd</name></member>
+      <member refid="structdoxybook_1_1config_1aca60a1c61c1d7c83d0466204f9faa8e1" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>formulaBlockStart</name></member>
+      <member refid="structdoxybook_1_1config_1a9dcfbab45de43bc1fbb95245591ee4a2" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>formulaInlineEnd</name></member>
+      <member refid="structdoxybook_1_1config_1a1e7a7c1f4c3079c0a7b57425ccc3697c" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>formulaInlineStart</name></member>
+      <member refid="structdoxybook_1_1config_1abad2ae7aa20d7804e6ddf1fb0a418c61" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>images_folder</name></member>
+      <member refid="structdoxybook_1_1config_1a43584497c87909fe7b8c5a4ffe74f215" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>index_classes_name</name></member>
+      <member refid="structdoxybook_1_1config_1a142a11fe4eb9284e2ee65f6cda4408ea" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>index_classes_title</name></member>
+      <member refid="structdoxybook_1_1config_1acb11cb3f9e691362acb8d6118e0de04b" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>index_examples_name</name></member>
+      <member refid="structdoxybook_1_1config_1aa1a53e85fbf236c681ad7332b1938dd1" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>index_examples_title</name></member>
+      <member refid="structdoxybook_1_1config_1a8268f12eb8e22b682cd89777d862c191" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>index_files_name</name></member>
+      <member refid="structdoxybook_1_1config_1a93eaf443312bce9269bfc86fc57034a1" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>index_files_title</name></member>
+      <member refid="structdoxybook_1_1config_1a032a91752305626d2766aca9f81ac2c6" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>index_groups_name</name></member>
+      <member refid="structdoxybook_1_1config_1ad78e0c06335814e7ea7d0d6241882a59" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>index_groups_title</name></member>
+      <member refid="structdoxybook_1_1config_1ac788bd3a1dda96c00c87312fe0e488eb" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>index_in_folders</name></member>
+      <member refid="structdoxybook_1_1config_1a40f4a16e3cac894d16609f882daec392" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>index_namespaces_name</name></member>
+      <member refid="structdoxybook_1_1config_1a2586b149bb300369dfd6e9e686381244" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>index_namespaces_title</name></member>
+      <member refid="structdoxybook_1_1config_1a295291081d33414662a5105ffd94bee6" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>index_related_pages_name</name></member>
+      <member refid="structdoxybook_1_1config_1adadb628bf81d113e255bc2a4ccc2c8c0" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>index_related_pages_title</name></member>
+      <member refid="structdoxybook_1_1config_1afc6d673c832a7cfe45861d05ccc31941" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>link_and_inline_code_as_html</name></member>
+      <member refid="structdoxybook_1_1config_1aadc0f83509eb270f26c4ce87a96fba3d" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>link_lowercase</name></member>
+      <member refid="structdoxybook_1_1config_1a8f173492552faaa67f2f77be1973182e" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>link_suffix</name></member>
+      <member refid="structdoxybook_1_1config_1a6ecc6d72c8be164e58d38cb2d3d1ee7e" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>main_page_in_root</name></member>
+      <member refid="structdoxybook_1_1config_1a7cf8d630074fae411c2447af9c886455" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>main_page_name</name></member>
+      <member refid="structdoxybook_1_1config_1a04ea1fc48a94448833af793293922a21" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>output_dir</name></member>
+      <member refid="structdoxybook_1_1config_1adce76a994d5cdba0f3752459ea698c56" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>replaceUnderscoresInAnchors</name></member>
+      <member refid="structdoxybook_1_1config_1a1fa732d9ebba64aa7c52c452dd9d77ef" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>sort</name></member>
+      <member refid="structdoxybook_1_1config_1a9f77ac734271978e04374de001908147" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_index_classes</name></member>
+      <member refid="structdoxybook_1_1config_1a69ad0352e6e08acba44a1071f0d2ecf4" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_index_examples</name></member>
+      <member refid="structdoxybook_1_1config_1abfeb8950aa0b4f5b351c7e77a86da8a3" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_index_files</name></member>
+      <member refid="structdoxybook_1_1config_1af7ee5cf94d20f0f7fe4622237efe9fc5" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_index_groups</name></member>
+      <member refid="structdoxybook_1_1config_1a8f9c32ab2fc00daba0f9ccbf030dc148" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_index_namespaces</name></member>
+      <member refid="structdoxybook_1_1config_1a71d5380a694bfcd8a91030a75e23e5f0" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_index_related_pages</name></member>
+      <member refid="structdoxybook_1_1config_1a4f3bd7c536abcfa3e405ad1ba4e80e4f" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_kind_class</name></member>
+      <member refid="structdoxybook_1_1config_1ac9a5e7454c7953770e172b57288cb977" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_kind_dir</name></member>
+      <member refid="structdoxybook_1_1config_1aecce57b00d1de6a0f148a8a0b46de992" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_kind_example</name></member>
+      <member refid="structdoxybook_1_1config_1a6f112d1e62b53d7af8d3001567faf2dc" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_kind_file</name></member>
+      <member refid="structdoxybook_1_1config_1af3c46b601c5ad49a1dbfa3d9bb21e086" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_kind_group</name></member>
+      <member refid="structdoxybook_1_1config_1a1679060ce882ceb3b1f129edb81aa054" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_kind_interface</name></member>
+      <member refid="structdoxybook_1_1config_1ad998bed6d285cfafe0e6bf955d1ff8e6" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_kind_java_enum</name></member>
+      <member refid="structdoxybook_1_1config_1a844c8da572bd8e1cc62cdd0f19003d9d" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_kind_namespace</name></member>
+      <member refid="structdoxybook_1_1config_1a2e439469ee8e1ba26f93c8b1498aeb44" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_kind_page</name></member>
+      <member refid="structdoxybook_1_1config_1a9be6a2b58df4ff1fe09b14f82c9dcfff" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_kind_struct</name></member>
+      <member refid="structdoxybook_1_1config_1a47f131ae3c605506310ac0fee29a828c" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_kind_union</name></member>
+      <member refid="structdoxybook_1_1config_1aae53274114d2446c59cbff85a4c1f999" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>use_folders</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,30 @@
+Doxygen XML to Markdown (or JSON)
+Usage:
+  doxybook [OPTION...]
+
+  -h, --help                    Shows this help message.
+  -v, --version                 Shows the version.
+  -q, --quiet                   Run in quiet mode, no stdout, display only
+                                errors and warnings to stderr.
+  -i, --input arg               Path to the generated Doxygen XML folder.
+                                Must contain index.xml!
+  -o, --output arg              Path to the target folder where to generate
+                                markdown files.
+  -j, --json                    Generate JSON only, no markdown, into the
+                                output path. This will also generate index.json.
+  -c, --config arg              Optional path to a config json file.
+      --config-data arg         Optional json data to override config.
+  -t, --templates arg           Optional path to a folder with templates.
+      --generate-config arg     Generate config file given a path to the
+                                destination json file
+      --generate-templates arg  Generate template files given a path to a
+                                target folder.
+  -d, --debug-templates         Debug templates. This will create JSON for
+                                each generated template.
+      --summary-input arg       Path to the summary input file. This file
+                                must contain "{{doxygen}}" string.
+      --summary-output arg      Where to generate summary file. This file
+                                will be created. Not a directory!
+      --example                     doxybook --generate-config
+                                    doxybook -i ./doxygen/xml -o
+                                

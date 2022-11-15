@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classdoxybook_1_1xml__text__parser" kind="class" language="C++" prot="public">
+    <compoundname>doxybook::xml_text_parser</compoundname>
+    <includes refid="xml__text__parser_8hpp" local="no">xml_text_parser.hpp</includes>
+    <innerclass refid="structdoxybook_1_1xml__text__parser_1_1node" prot="public">doxybook::xml_text_parser::node</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdoxybook_1_1xml__text__parser_1a1fc8e1e93c4c96d1f89843d86732543d" prot="public" static="no">
+        <type>std::vector&lt; std::unique_ptr&lt; tag &gt; &gt;</type>
+        <definition>using doxybook::xml_text_parser::children_type =  std::vector&lt;std::unique_ptr&lt;tag&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>children_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml_text_parser.hpp" line="21" column="9" bodyfile="doxybook/xml_text_parser.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdoxybook_1_1xml__text__parser_1a07f07b831108165ba586f391d754ff98" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdoxybook_1_1xml__text__parser_1_1node" kindref="compound">node</ref></type>
+        <definition>static node doxybook::xml_text_parser::parse_paras</definition>
+        <argsstring>(xml::element const &amp;element)</argsstring>
+        <name>parse_paras</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1xml_1_1element" kindref="compound">xml::element</ref> const &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para>Parse elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml_text_parser.hpp" line="97" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml__text__parser_1a1a8907bbf1633b5ab87e3f27025fcd9a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdoxybook_1_1xml__text__parser_1_1node" kindref="compound">node</ref></type>
+        <definition>static node doxybook::xml_text_parser::parse_para</definition>
+        <argsstring>(xml::element const &amp;element)</argsstring>
+        <name>parse_para</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1xml_1_1element" kindref="compound">xml::element</ref> const &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para>Parse element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml_text_parser.hpp" line="101" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1xml__text__parser_1aabddd7779aada0850cb62dc3571c501e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum <ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7e" kindref="member">node::type</ref></type>
+        <definition>static enum node::type doxybook::xml_text_parser::str_to_type</definition>
+        <argsstring>(std::string const &amp;str)</argsstring>
+        <name>str_to_type</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Convert string to node type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml_text_parser.hpp" line="101" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classdoxybook_1_1xml__text__parser_1a6a637196dad3acadff21b14a1e1c3f9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void doxybook::xml_text_parser::traverse</definition>
+        <argsstring>(std::vector&lt; node * &gt; tree, xml::node const &amp;element)</argsstring>
+        <name>traverse</name>
+        <param>
+          <type>std::vector&lt; <ref refid="structdoxybook_1_1xml__text__parser_1_1node" kindref="compound">node</ref> * &gt;</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1xml_1_1node" kindref="compound">xml::node</ref> const &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/xml_text_parser.hpp" line="109" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Parser for a doxygen xml file as an <ref refid="classdoxybook_1_1xml" kindref="compound">xml</ref> document. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="doxybook/xml_text_parser.hpp" line="18" column="26" bodyfile="doxybook/xml_text_parser.hpp" bodystart="18" bodyend="110"/>
+    <listofallmembers>
+      <member refid="classdoxybook_1_1xml__text__parser_1a1fc8e1e93c4c96d1f89843d86732543d" prot="public" virt="non-virtual"><scope>doxybook::xml_text_parser</scope><name>children_type</name></member>
+      <member refid="classdoxybook_1_1xml__text__parser_1a1a8907bbf1633b5ab87e3f27025fcd9a" prot="public" virt="non-virtual"><scope>doxybook::xml_text_parser</scope><name>parse_para</name></member>
+      <member refid="classdoxybook_1_1xml__text__parser_1a07f07b831108165ba586f391d754ff98" prot="public" virt="non-virtual"><scope>doxybook::xml_text_parser</scope><name>parse_paras</name></member>
+      <member refid="classdoxybook_1_1xml__text__parser_1aabddd7779aada0850cb62dc3571c501e" prot="public" virt="non-virtual"><scope>doxybook::xml_text_parser</scope><name>str_to_type</name></member>
+      <member refid="classdoxybook_1_1xml__text__parser_1a6a637196dad3acadff21b14a1e1c3f9d" prot="private" virt="non-virtual"><scope>doxybook::xml_text_parser</scope><name>traverse</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

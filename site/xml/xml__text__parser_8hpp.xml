@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="xml__text__parser_8hpp" kind="file" language="C++">
+    <compoundname>xml_text_parser.hpp</compoundname>
+    <includes refid="xml_8hpp" local="no">doxybook/xml.hpp</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="text__printer_8hpp" local="no">doxybook/text_printer.hpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>functional</label>
+      </node>
+      <node id="1">
+        <label>doxybook/xml_text_parser.hpp</label>
+        <link refid="xml__text__parser_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>doxybook/xml.hpp</label>
+        <link refid="xml_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="4">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>doxybook/json_converter.hpp</label>
+        <link refid="json__converter_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>doxybook/renderer.hpp</label>
+        <link refid="renderer_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>doxybook/xml_text_parser.hpp</label>
+        <link refid="xml__text__parser_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>doxybook/text_printer.hpp</label>
+        <link refid="text__printer_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>doxybook/text_plain_printer.hpp</label>
+        <link refid="text__plain__printer_8hpp"/>
+      </node>
+      <node id="6">
+        <label>doxybook/text_markdown_printer.hpp</label>
+        <link refid="text__markdown__printer_8hpp"/>
+      </node>
+      <node id="4">
+        <label>doxybook/generator.hpp</label>
+        <link refid="generator_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classdoxybook_1_1xml__text__parser" prot="public">doxybook::xml_text_parser</innerclass>
+    <innerclass refid="structdoxybook_1_1xml__text__parser_1_1node" prot="public">doxybook::xml_text_parser::node</innerclass>
+    <innernamespace refid="namespacedoxybook">doxybook</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2021<sp/>Matus<sp/>Novak<sp/>(@matusnovak)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>alandefreitas<sp/>(alandefreitas@gmail.com)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>https://www.boost.org/LICENSE_1_0.txt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYBOOK_XML_TEXT_PARSER_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DOXYBOOK_XML_TEXT_PARSER_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="xml_8hpp" kindref="compound">doxybook/xml.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedoxybook" kindref="compound">doxybook</ref><sp/>{</highlight></codeline>
+<codeline lineno="18" refid="classdoxybook_1_1xml__text__parser" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdoxybook_1_1xml__text__parser" kindref="compound">xml_text_parser</ref><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">tag;</highlight></codeline>
+<codeline lineno="21" refid="classdoxybook_1_1xml__text__parser_1a1fc8e1e93c4c96d1f89843d86732543d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classdoxybook_1_1xml__text__parser_1a1fc8e1e93c4c96d1f89843d86732543d" kindref="member">children_type</ref><sp/>=<sp/>std::vector&lt;std::unique_ptr&lt;tag&gt;&gt;;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="structdoxybook_1_1xml__text__parser_1_1node" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdoxybook_1_1xml__text__parser_1_1node" kindref="compound">node</ref><sp/>{</highlight></codeline>
+<codeline lineno="26" refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7e" kindref="member">type</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea696b031073e74bf2cb98e5ef201d4aa3" kindref="member">UNKNOWN</ref><sp/>=<sp/>-1,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea61a96ffcb251bb9bf0abf8fec19d0ea8" kindref="member">TEXT</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea9ccf6052d011f766b9cd93d3a96fbafe" kindref="member">PARA</ref>,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eaa5c10be1f3d44bd6e767412e01d49a5d" kindref="member">PARAS</ref>,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea2909dd0e0336f10b6da9735b859a3d19" kindref="member">BOLD</ref>,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea77313177454053cb24e4be6ebf59b5ea" kindref="member">EMPHASIS</ref>,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea5905b4eb58f29544f9c0ccd1a72548c2" kindref="member">STRIKE</ref>,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ead777026bf56ade6a13dc1436c5acc425" kindref="member">HRULER</ref>,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea23a12f67f614b5518c7f1c2465bf95e3" kindref="member">IMAGE</ref>,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea7d8a7dbf7557441b1d1137db28f4e69b" kindref="member">ULINK</ref>,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea727e346d3e645e255bb1d17bde1e3256" kindref="member">REF</ref>,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea06cc9c5c10e4ce85df16932c625cdcff" kindref="member">COMPUTEROUTPUT</ref>,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eaa6e3b92f0004df94040be43998211083" kindref="member">LISTITEM</ref>,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea6a73a89e673e20f04c4bdaf12ddb3878" kindref="member">SIMPLESEC</ref>,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eaa157de37deadb9b19e78d15f5f716e70" kindref="member">ITEMIZEDLIST</ref>,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea4999a61d307afc65632a9ab988fd207e" kindref="member">VARIABLELIST</ref>,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eafd4fd1e0799ee4053be40c0020d8b5f1" kindref="member">ORDEREDLIST</ref>,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eaa8723386c5f9772a5a71b0da30848c1a" kindref="member">PARAMETERLIST</ref>,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eaf63789c24c6dc0bea1e36f01b0263147" kindref="member">PARAMETERNAME</ref>,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea13d4f33f0ee9a209b08fb64fb4481f54" kindref="member">PARAMETERITEM</ref>,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea7915ff47f1a5b56064998d308b2afd31" kindref="member">PARAMETERDESCRIPTION</ref>,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea0f2bd231fe36eded3114243eacbd7643" kindref="member">PARAMETERNAMELIST</ref>,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eaa17f29059ff07c475f3690b8076bc934" kindref="member">XREFSECT</ref>,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea7c896999f5d2090bfacd799ff77cc0a9" kindref="member">XREFTITLE</ref>,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea12d8ca2f584e0eb070aac4cd0b10c8ea" kindref="member">XREFDESCRIPTION</ref>,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eac5e2a8af17bfed3d2060c0fca242bfe0" kindref="member">PROGRAMLISTING</ref>,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eac8173fef64cab05ea2b2ed3c69915cb9" kindref="member">CODELINE</ref>,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea8baeec6d282f1791ea9954d0c514ed8d" kindref="member">TERM</ref>,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eacd540c3f909317230194cf8d0749b372" kindref="member">VARLISTENTRY</ref>,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea1d0d6d35c52e907b5e0af4a7f5a81a9f" kindref="member">ANCHOR</ref>,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea674769e3326f8cf937af4282f2815c02" kindref="member">SP</ref>,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eab8f5a0e14aea81f005c3e8f8f23c8d23" kindref="member">HIGHTLIGHT</ref>,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea4df2118c8afbb2a32e41a1edabd6a1fe" kindref="member">SECT1</ref>,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea4f28e3e9815d940856ecd7f6ab020fca" kindref="member">SECT2</ref>,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea00331f9f44ea4e5facf101a914e78b38" kindref="member">SECT3</ref>,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eab4a1311af7b72364d6a5ce6b47b24ade" kindref="member">SECT4</ref>,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea2635136b116f2e1043e3c1cf4b624178" kindref="member">SECT5</ref>,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea5a3e85ae779d84234ea423a64ab26cf7" kindref="member">SECT6</ref>,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea6f9dccd85b2e0786c8d522045365eb48" kindref="member">TITLE</ref>,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea1148811483385f8fc712a395f1de6cb1" kindref="member">SUPERSCRIPT</ref>,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eaf12e5794ec3c199b9b581340ff4f5887" kindref="member">NONBREAKSPACE</ref>,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea34bbae0aee41ddd6a73697584a20afc6" kindref="member">TABLE</ref>,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea12a7ef966036af1949ebb7b41b65441f" kindref="member">TABLE_ROW</ref>,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eab95e7e7a804dfe6d67a1fab7517c43b8" kindref="member">TABLE_CELL</ref>,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eabbbf736d1511689a00bb221cf7a98042" kindref="member">VERBATIM</ref>,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eaa591f20e0453e32a3b5cab6a750a4d33" kindref="member">SQUO</ref>,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea60aad21e8ba335e47ebbafc1d12f23de" kindref="member">NDASH</ref>,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea8e3d6393192c649dfa2ae909a40c08e0" kindref="member">MDASH</ref>,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea36edb4d9004448b61d52655abc8e30ce" kindref="member">LINEBREAK</ref>,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ead1062c4c38266e2915aa302e5de3b28a" kindref="member">ONLYFOR</ref>,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7eaadc4995cd52208dde39433fb069ddd61" kindref="member">FORMULA</ref>,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea3d395db1549f805cd482783cc6ded585" kindref="member">BLOCKQUOTE</ref>,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="structdoxybook_1_1xml__text__parser_1_1node_1a2ca6683470ff675df5bc41563f50d735" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7e" kindref="member">type</ref><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7e" kindref="member">type</ref>{<sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea696b031073e74bf2cb98e5ef201d4aa3" kindref="member">type::UNKNOWN</ref><sp/>};</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="structdoxybook_1_1xml__text__parser_1_1node_1a082ae1ba503ba8c7993490177d4a61ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;node&gt;<sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1a082ae1ba503ba8c7993490177d4a61ab" kindref="member">children</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="structdoxybook_1_1xml__text__parser_1_1node_1a36824e0b71d22634a540d832409a7a97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1a36824e0b71d22634a540d832409a7a97" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="structdoxybook_1_1xml__text__parser_1_1node_1aea845f33033bde266606ec9f6052b9e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1aea845f33033bde266606ec9f6052b9e4" kindref="member">extra</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node" kindref="compound">node</ref></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdoxybook_1_1xml__text__parser_1a07f07b831108165ba586f391d754ff98" kindref="member">parse_paras</ref>(<ref refid="classdoxybook_1_1xml_1_1element" kindref="compound">xml::element</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>element);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node" kindref="compound">node</ref></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdoxybook_1_1xml__text__parser_1a1a8907bbf1633b5ab87e3f27025fcd9a" kindref="member">parse_para</ref>(<ref refid="classdoxybook_1_1xml_1_1element" kindref="compound">xml::element</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>element);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7e" kindref="member">node::type</ref></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdoxybook_1_1xml__text__parser_1aabddd7779aada0850cb62dc3571c501e" kindref="member">str_to_type</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>str);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>traverse(std::vector&lt;node*&gt;<sp/>tree,<sp/><ref refid="classdoxybook_1_1xml_1_1node" kindref="compound">xml::node</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>element);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>doxybook</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="doxybook/xml_text_parser.hpp"/>
+  </compounddef>
+</doxygen>

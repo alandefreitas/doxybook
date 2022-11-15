@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classdoxybook_1_1renderer" kind="class" language="C++" prot="public">
+    <compoundname>doxybook::renderer</compoundname>
+    <includes refid="renderer_8hpp" local="no">renderer.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdoxybook_1_1renderer_1a94122ae8b6f671d79bf0f298a4babedd" prot="private" static="no" mutable="no">
+        <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const  &amp;</type>
+        <definition>config const&amp; doxybook::renderer::config_</definition>
+        <argsstring></argsstring>
+        <name>config_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/renderer.hpp" line="55" column="22" bodyfile="doxybook/renderer.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1renderer_1ae4aae6269d717c491aa06b62a8da5e7a" prot="private" static="no" mutable="no">
+        <type><ref refid="classdoxybook_1_1doxygen" kindref="compound">doxygen</ref> const  &amp;</type>
+        <definition>doxygen const&amp; doxybook::renderer::doxygen_</definition>
+        <argsstring></argsstring>
+        <name>doxygen_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/renderer.hpp" line="56" column="23" bodyfile="doxybook/renderer.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1renderer_1a8782883c74bf8f4a354cba331b52134e" prot="private" static="no" mutable="no">
+        <type><ref refid="classdoxybook_1_1json__converter" kindref="compound">json_converter</ref> const  &amp;</type>
+        <definition>json_converter const&amp; doxybook::renderer::json_converter_</definition>
+        <argsstring></argsstring>
+        <name>json_converter_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/renderer.hpp" line="57" column="30" bodyfile="doxybook/renderer.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1renderer_1a0579415ee93cfc54170a3f29f5d82bc9" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; inja::Environment &gt;</type>
+        <definition>std::unique_ptr&lt;inja::Environment&gt; doxybook::renderer::env_</definition>
+        <argsstring></argsstring>
+        <name>env_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/renderer.hpp" line="58" column="25" bodyfile="doxybook/renderer.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1renderer_1a0aa955439280ad179a06797cc8b32ddb" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, std::unique_ptr&lt; inja::Template &gt; &gt;</type>
+        <definition>std::unordered_map&lt;std::string, std::unique_ptr&lt;inja::Template&gt; &gt; doxybook::renderer::templates_</definition>
+        <argsstring></argsstring>
+        <name>templates_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/renderer.hpp" line="60" column="13" bodyfile="doxybook/renderer.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdoxybook_1_1renderer_1a4a71fb70454560894d7b1c99a286aeeb" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doxybook::renderer::renderer</definition>
+        <argsstring>(config const &amp;config, doxygen const &amp;doxygen, json_converter const &amp;json_converter, std::optional&lt; std::string &gt; const &amp;templates_path=std::nullopt)</argsstring>
+        <name>renderer</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1doxygen" kindref="compound">doxygen</ref> const &amp;</type>
+          <declname>doxygen</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1json__converter" kindref="compound">json_converter</ref> const &amp;</type>
+          <declname>json_converter</declname>
+        </param>
+        <param>
+          <type>std::optional&lt; std::string &gt; const &amp;</type>
+          <declname>templates_path</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/renderer.hpp" line="31" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1renderer_1abe362f652c549e63304410a57338fe78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doxybook::renderer::~renderer</definition>
+        <argsstring>()</argsstring>
+        <name>~renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/renderer.hpp" line="36" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1renderer_1a0c2ea17e11ca095f7b88a798894344f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::renderer::render</definition>
+        <argsstring>(std::string const &amp;name, std::string const &amp;path, nlohmann::json const &amp;data) const</argsstring>
+        <name>render</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>nlohmann::json const &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/renderer.hpp" line="40" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1renderer_1a7383359a9d322da86c3cbb8298fe4092" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::renderer::render</definition>
+        <argsstring>(std::string const &amp;name, nlohmann::json const &amp;data) const</argsstring>
+        <name>render</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>nlohmann::json const &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Render template. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>template name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data as json </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/renderer.hpp" line="52" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Render inja templates with the specified configuration. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="doxybook/renderer.hpp" line="28" column="19" bodyfile="doxybook/renderer.hpp" bodystart="28" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classdoxybook_1_1renderer_1a94122ae8b6f671d79bf0f298a4babedd" prot="private" virt="non-virtual"><scope>doxybook::renderer</scope><name>config_</name></member>
+      <member refid="classdoxybook_1_1renderer_1ae4aae6269d717c491aa06b62a8da5e7a" prot="private" virt="non-virtual"><scope>doxybook::renderer</scope><name>doxygen_</name></member>
+      <member refid="classdoxybook_1_1renderer_1a0579415ee93cfc54170a3f29f5d82bc9" prot="private" virt="non-virtual"><scope>doxybook::renderer</scope><name>env_</name></member>
+      <member refid="classdoxybook_1_1renderer_1a8782883c74bf8f4a354cba331b52134e" prot="private" virt="non-virtual"><scope>doxybook::renderer</scope><name>json_converter_</name></member>
+      <member refid="classdoxybook_1_1renderer_1a0c2ea17e11ca095f7b88a798894344f8" prot="public" virt="non-virtual"><scope>doxybook::renderer</scope><name>render</name></member>
+      <member refid="classdoxybook_1_1renderer_1a7383359a9d322da86c3cbb8298fe4092" prot="public" virt="non-virtual"><scope>doxybook::renderer</scope><name>render</name></member>
+      <member refid="classdoxybook_1_1renderer_1a4a71fb70454560894d7b1c99a286aeeb" prot="public" virt="non-virtual"><scope>doxybook::renderer</scope><name>renderer</name></member>
+      <member refid="classdoxybook_1_1renderer_1a0aa955439280ad179a06797cc8b32ddb" prot="private" virt="non-virtual"><scope>doxybook::renderer</scope><name>templates_</name></member>
+      <member refid="classdoxybook_1_1renderer_1abe362f652c549e63304410a57338fe78" prot="public" virt="non-virtual"><scope>doxybook::renderer</scope><name>~renderer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

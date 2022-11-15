@@ -1,0 +1,1075 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacedoxybook" kind="namespace" language="C++">
+    <compoundname>doxybook</compoundname>
+    <innerclass refid="structdoxybook_1_1config" prot="public">doxybook::config</innerclass>
+    <innerclass refid="structdoxybook_1_1default__template" prot="public">doxybook::default_template</innerclass>
+    <innerclass refid="classdoxybook_1_1doxygen" prot="public">doxybook::doxygen</innerclass>
+    <innerclass refid="classdoxybook_1_1exception" prot="public">doxybook::exception</innerclass>
+    <innerclass refid="classdoxybook_1_1generator" prot="public">doxybook::generator</innerclass>
+    <innerclass refid="classdoxybook_1_1json__converter" prot="public">doxybook::json_converter</innerclass>
+    <innerclass refid="classdoxybook_1_1node" prot="public">doxybook::node</innerclass>
+    <innerclass refid="classdoxybook_1_1renderer" prot="public">doxybook::renderer</innerclass>
+    <innerclass refid="classdoxybook_1_1text__markdown__printer" prot="public">doxybook::text_markdown_printer</innerclass>
+    <innerclass refid="classdoxybook_1_1text__plain__printer" prot="public">doxybook::text_plain_printer</innerclass>
+    <innerclass refid="classdoxybook_1_1text__printer" prot="public">doxybook::text_printer</innerclass>
+    <innerclass refid="classdoxybook_1_1xml" prot="public">doxybook::xml</innerclass>
+    <innerclass refid="classdoxybook_1_1xml__text__parser" prot="public">doxybook::xml_text_parser</innerclass>
+    <innernamespace refid="namespacedoxybook_1_1path">doxybook::path</innernamespace>
+    <innernamespace refid="namespacedoxybook_1_1utils">doxybook::utils</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>kind</name>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95acb4ae3b37047fb4b2c0d16f8bf84f076" prot="public">
+          <name>INDEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a5335d3381381fc5e5c8a2ef39d82cc53" prot="public">
+          <name>DEFINE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95ac18e8f1f430ea227dbd63d0d9a2bc5fb" prot="public">
+          <name>CLASS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a7347fe5a0f184f79ef064e92e3beb297" prot="public">
+          <name>NAMESPACE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95ab8223be2455e0ea5a0e63e8f018d6fc3" prot="public">
+          <name>STRUCT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a596acbde60b98295256f8e4073a8e341" prot="public">
+          <name>INTERFACE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a6a72a6a776662a244f82d31e9274a07b" prot="public">
+          <name>FUNCTION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95ae61ad9b2553a293b4a3f4d3b4fa5ab31" prot="public">
+          <name>VARIABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a95fbf728908187e4bb160a31525824d5" prot="public">
+          <name>TYPEDEF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a912f09aa71e8a2b72e8fbb762bb2b0ad" prot="public">
+          <name>USING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a471e11502a3cc3a519644984935691e8" prot="public">
+          <name>FRIEND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a85a1979d26d0ef93dcc13a72fee80705" prot="public">
+          <name>ENUM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a2f88cb3ac89d23ee734d2d8b16ff0fbd" prot="public">
+          <name>ENUMVALUE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95aea931da33de8ba05c3635a51c2b25d75" prot="public">
+          <name>UNION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95ac1561b120842fabe1310417083827590" prot="public">
+          <name>DIR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a9fc5887c030f7a3e19821ebec457e719" prot="public">
+          <name>FILE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a1cf5e1f5569acda3c4a88a91c5130a69" prot="public">
+          <name>MODULE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a22311203d44b308bd2d607cdc2dcb72c" prot="public">
+          <name>PAGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a8e3b72508e05135569ace4ed9b96d137" prot="public">
+          <name>EXAMPLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95ac023ee28e6cb71d64feec71f0cbac067" prot="public">
+          <name>SIGNAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a0b688c5f3d542268089da39994214ab8" prot="public">
+          <name>SLOT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a77bc4ffc1b6dce554d9dda5d6dea1660" prot="public">
+          <name>PROPERTY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a030d962d0faa148f02848881a3b4fdb6" prot="public">
+          <name>EVENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a417adfab1ef1528ece30a13ea155ce21" prot="public">
+          <name>JAVAENUM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a03c69270b10a4b6ab07896f6352d883b" prot="public">
+          <name>JAVAENUMCONSTANT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The kind of a symbol in a doxygen xml file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="20" column="1" bodyfile="doxybook/enums.hpp" bodystart="19" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacedoxybook_1a2a693352be699d6073cce75dda77578f" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>visibility</name>
+        <enumvalue id="namespacedoxybook_1a2a693352be699d6073cce75dda77578facd0c6092d6a6874f379fe4827ed1db8b" prot="public">
+          <name>PUBLIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a2a693352be699d6073cce75dda77578fa0c2448254108d59f7400d1c96f31d751" prot="public">
+          <name>PROTECTED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a2a693352be699d6073cce75dda77578fa84c6d22cfdf3772e66b07bde636e0571" prot="public">
+          <name>PRIVATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a2a693352be699d6073cce75dda77578fae83af69d4844921d55507863e9099eb2" prot="public">
+          <name>PACKAGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Types of symbol visibility. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="50" column="1" bodyfile="doxybook/enums.hpp" bodystart="49" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>virtual_category</name>
+        <enumvalue id="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139a42949eafe37d568f1861e2f3732ca548" prot="public">
+          <name>NON_VIRTUAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139a05470727787aa721cf53222b5d3d40f3" prot="public">
+          <name>VIRTUAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139abfbbda2acffbb1b8dcb4e59086dfe706" prot="public">
+          <name>PURE_VIRTUAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Types of virtual functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="59" column="1" bodyfile="doxybook/enums.hpp" bodystart="58" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>type</name>
+        <enumvalue id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07ab50339a10e1de285ac99d4c3990b8693" prot="public">
+          <name>NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07aa571f890bfd614dedc37f4999b29e504" prot="public">
+          <name>DEFINES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a4eca21708406cdd42e34d84c2eaf1d4e" prot="public">
+          <name>FUNCTIONS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07ab0d6a3eb070feba72e0404d36a24a9be" prot="public">
+          <name>NAMESPACES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a5da46f675c183760574722cacc24d420" prot="public">
+          <name>CLASSES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07adcd3920b4db3b2c8e620d7548d473424" prot="public">
+          <name>ATTRIBUTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a6b20155008db90cf7589c07baa7334e9" prot="public">
+          <name>TYPES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a626f59acaeb60dabe79cff6fee9973c7" prot="public">
+          <name>DIRS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07ac935a4e21742b5a03a15b05834e2d82c" prot="public">
+          <name>FILES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a166caac76e43bd0d769e132d9bb81d4b" prot="public">
+          <name>MODULES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a49fcf07aa7420cfde06d39f787f06cdb" prot="public">
+          <name>FRIENDS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a9306c07017fd316befdc82b5cd16652f" prot="public">
+          <name>PAGES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07ae6bde2a01c490e177d6dcd15c149c129" prot="public">
+          <name>EXAMPLES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07ae8aec3b875fcfac29de4bc603e426577" prot="public">
+          <name>SIGNALS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a46020f552cd79f16f2d25343175f1cff" prot="public">
+          <name>SLOTS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a7279500d4c15f01622634ac0ace3483d" prot="public">
+          <name>EVENTS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a841c9457129643606bba5ff4ecd0cd95" prot="public">
+          <name>PROPERTIES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07a0fb947e7b44c9d5e3b52d3f1261a4dad" prot="public">
+          <name>JAVAENUMCONSTANTS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Doxygen types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="67" column="1" bodyfile="doxybook/enums.hpp" bodystart="66" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>folder_category</name>
+        <enumvalue id="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4a5da46f675c183760574722cacc24d420" prot="public">
+          <name>CLASSES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4ab0d6a3eb070feba72e0404d36a24a9be" prot="public">
+          <name>NAMESPACES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4a166caac76e43bd0d769e132d9bb81d4b" prot="public">
+          <name>MODULES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4a9306c07017fd316befdc82b5cd16652f" prot="public">
+          <name>PAGES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4ac935a4e21742b5a03a15b05834e2d82c" prot="public">
+          <name>FILES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4ae6bde2a01c490e177d6dcd15c149c129" prot="public">
+          <name>EXAMPLES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Types of folder category. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="90" column="1" bodyfile="doxybook/enums.hpp" bodystart="89" bodyend="97"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacedoxybook_1a8315d0312907cc040ecd163fc5dd229d" prot="public" static="no">
+        <type>std::unordered_map&lt; std::string, std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt; &gt;</type>
+        <definition>using doxybook::node_cache_map = typedef std:: unordered_map&lt;std::string, std::shared_ptr&lt;node&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>node_cache_map</name>
+        <briefdescription>
+<para>A map of nodes associated to a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="26" column="5" bodyfile="doxybook/node.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacedoxybook_1af372b28228a654b6cb350a4d3da1bb18" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="structdoxybook_1_1default__template" kindref="compound">default_template</ref> &gt;</type>
+        <definition>std::unordered_map&lt;std::string, default_template&gt; doxybook::default_templates</definition>
+        <argsstring></argsstring>
+        <name>default_templates</name>
+        <briefdescription>
+<para>A map with all the default templates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Unless template files are provided, these templates are used. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/default_templates.hpp" line="30" column="31" declfile="doxybook/default_templates.hpp" declline="30" declcolumn="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedoxybook_1a764c63df83c5de3338a6a9158fef1aa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::load_config</definition>
+        <argsstring>(config &amp;config, std::string const &amp;path)</argsstring>
+        <name>load_config</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Load configuration from a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="244" column="5" declfile="doxybook/config.hpp" declline="244" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1af87771565cc1dc76b11b7a96ac1776ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::load_config_data</definition>
+        <argsstring>(config &amp;config, std::string_view src)</argsstring>
+        <name>load_config_data</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>std::string_view</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+<para>Load configuration from a json string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="248" column="5" declfile="doxybook/config.hpp" declline="248" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1aed292e5ab86d34b3519f0ecd89b412d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::save_config</definition>
+        <argsstring>(config &amp;config, std::string const &amp;path)</argsstring>
+        <name>save_config</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Save configuration to a path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="252" column="5" declfile="doxybook/config.hpp" declline="252" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1a5ee16b3fde88767e4406291c62b5e5bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::save_default_templates</definition>
+        <argsstring>(std::string const &amp;path)</argsstring>
+        <name>save_default_templates</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Save default templates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function stores all the default templates to files. The user can edit these templates to come up with new templates. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/default_templates.hpp" line="38" column="5" declfile="doxybook/default_templates.hpp" declline="38" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1a3d44c4e264a009779b66eea28f76e3c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref></type>
+        <definition>kind doxybook::to_enum_kind</definition>
+        <argsstring>(std::string const &amp;str)</argsstring>
+        <name>to_enum_kind</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Convert a string to a doxygen kind. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="101" column="5" declfile="doxybook/enums.hpp" declline="101" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1a202c8381cd94400f35ddfdbab05fef65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" kindref="member">type</ref></type>
+        <definition>type doxybook::to_enum_type</definition>
+        <argsstring>(std::string const &amp;str)</argsstring>
+        <name>to_enum_type</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Convert a string to a doxygen type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="105" column="5" declfile="doxybook/enums.hpp" declline="105" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1a357ceceac2eff1224312216c2cd4cee5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578f" kindref="member">visibility</ref></type>
+        <definition>visibility doxybook::to_enum_visibility</definition>
+        <argsstring>(std::string const &amp;str)</argsstring>
+        <name>to_enum_visibility</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Convert a string to a doxygen visibility type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="109" column="5" declfile="doxybook/enums.hpp" declline="109" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1aa446f1cd5bc2c66aac9b708c5fbb16ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139" kindref="member">virtual_category</ref></type>
+        <definition>virtual_category doxybook::to_enum_virtual</definition>
+        <argsstring>(std::string const &amp;str)</argsstring>
+        <name>to_enum_virtual</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Convert a string to a doxygen virtual category. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="113" column="5" declfile="doxybook/enums.hpp" declline="113" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1a0bddd9235ba5189570f3989f82ad6bf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref></type>
+        <definition>folder_category doxybook::to_enum_folder_category</definition>
+        <argsstring>(std::string const &amp;str)</argsstring>
+        <name>to_enum_folder_category</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Convert a string to a doxygen folder category. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="117" column="5" declfile="doxybook/enums.hpp" declline="117" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1a6b51eaf13e704ed1295395f184eff598" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::to_str</definition>
+        <argsstring>(kind value)</argsstring>
+        <name>to_str</name>
+        <param>
+          <type><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Convert a kind to a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="121" column="5" declfile="doxybook/enums.hpp" declline="121" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1a05afe30253dc35f606488295501b2bc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::to_str</definition>
+        <argsstring>(type value)</argsstring>
+        <name>to_str</name>
+        <param>
+          <type><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" kindref="member">type</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Convert a type to a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="125" column="5" declfile="doxybook/enums.hpp" declline="125" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1a1681fcb0efa2b5041d5e038504876fd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::to_str</definition>
+        <argsstring>(visibility value)</argsstring>
+        <name>to_str</name>
+        <param>
+          <type><ref refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578f" kindref="member">visibility</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Convert a visibility to a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="129" column="5" declfile="doxybook/enums.hpp" declline="129" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1a17a5d3ee06631b613ca5731a5514d15c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::to_str</definition>
+        <argsstring>(virtual_category value)</argsstring>
+        <name>to_str</name>
+        <param>
+          <type><ref refid="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139" kindref="member">virtual_category</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Convert a virtual_category to a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="133" column="5" declfile="doxybook/enums.hpp" declline="133" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1a75fec1c97f38999931584f6abd907e23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::to_str</definition>
+        <argsstring>(folder_category value)</argsstring>
+        <name>to_str</name>
+        <param>
+          <type><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Convert a folder_category to a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="137" column="5" declfile="doxybook/enums.hpp" declline="137" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1a9226a18d8e899cb2f77f7cc5c948c387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" kindref="member">type</ref></type>
+        <definition>type doxybook::kind_to_type</definition>
+        <argsstring>(kind kind)</argsstring>
+        <name>kind_to_type</name>
+        <param>
+          <type><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref></type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+<para>Convert a kind to a type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="141" column="5" declfile="doxybook/enums.hpp" declline="141" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1aa9429550c2b054b0a9b16dec3779f22c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool doxybook::is_kind_language</definition>
+        <argsstring>(kind kind)</argsstring>
+        <name>is_kind_language</name>
+        <param>
+          <type><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref></type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+<para>Determine if kind is a language feature. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="145" column="5" declfile="doxybook/enums.hpp" declline="145" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1a219e06fcff1910d84418eb18757625f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool doxybook::is_kind_structured</definition>
+        <argsstring>(kind kind)</argsstring>
+        <name>is_kind_structured</name>
+        <param>
+          <type><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref></type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+<para>Determine if kind is a structured type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="149" column="5" declfile="doxybook/enums.hpp" declline="149" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1aabe7d31ff54db82caffa22804ebbcc51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool doxybook::is_kind_file</definition>
+        <argsstring>(kind kind)</argsstring>
+        <name>is_kind_file</name>
+        <param>
+          <type><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref></type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+<para>Determine if kind is a file or directory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="153" column="5" declfile="doxybook/enums.hpp" declline="153" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1a160251f3e56fbe899af79184f5eb292f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::type_folder_category_to_folder_name</definition>
+        <argsstring>(config const &amp;config, folder_category type)</argsstring>
+        <name>type_folder_category_to_folder_name</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Determine the appropriate folder name for a folder category. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the appropriate folder name in the configuration file for the specified folder category.</para>
+<para>Not all types have corresponding folder categories.</para>
+<para><simplesect kind="return"><para>The folder name </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="165" column="5" declfile="doxybook/enums.hpp" declline="165" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1a2f1f85c01d2b08b8cbbbf037ae01704d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::type_to_folder_name</definition>
+        <argsstring>(config const &amp;config, type type)</argsstring>
+        <name>type_to_folder_name</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" kindref="member">type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Determine the appropriate folder name for a type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the appropriate folder name in the configuration file for the specified type.</para>
+<para>Not all types have corresponding folder categories.</para>
+<para><simplesect kind="return"><para>The folder name </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="179" column="5" declfile="doxybook/enums.hpp" declline="179" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1a44fd8766776f17603f039b0d3f472afa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::type_to_index_name</definition>
+        <argsstring>(config const &amp;config, folder_category type)</argsstring>
+        <name>type_to_index_name</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Determine the appropriate index file name for a folder category. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the appropriate index file name in the configuration file for the specified folder category.</para>
+<para>Not all types have corresponding folder categories.</para>
+<para><simplesect kind="return"><para>The folder name </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="191" column="5" declfile="doxybook/enums.hpp" declline="191" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1af3a3fdcb96f98cf434a22a4c72c38634" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::type_to_index_template</definition>
+        <argsstring>(config const &amp;config, folder_category type)</argsstring>
+        <name>type_to_index_template</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Determine the appropriate index template file name for a folder category. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the appropriate template file name in the configuration file for the specified folder category.</para>
+<para>Not all types have corresponding folder categories.</para>
+<para><simplesect kind="return"><para>The folder name </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="203" column="5" declfile="doxybook/enums.hpp" declline="203" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1ae33b64ffefbaced5b8b0f5d9e964f07d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string doxybook::type_to_index_title</definition>
+        <argsstring>(config const &amp;config, folder_category type)</argsstring>
+        <name>type_to_index_title</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Determine the appropriate index title name for a folder category. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the appropriate index title name in the configuration file for the specified folder category.</para>
+<para>Not all types have corresponding folder categories.</para>
+<para><simplesect kind="return"><para>The folder name </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="215" column="5" declfile="doxybook/enums.hpp" declline="215" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1ac1c96e139ba1e30cf10f41e3ad02506d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::to_json</definition>
+        <argsstring>(nlohmann::json &amp;j, visibility const &amp;p)</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>nlohmann::json &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578f" kindref="member">visibility</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Convert a visibility type to a json string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="219" column="5" bodyfile="doxybook/enums.hpp" bodystart="219" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1ae8d6bd7cb9814d7c61409827dc688ab7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::from_json</definition>
+        <argsstring>(nlohmann::json const &amp;j, visibility &amp;p)</argsstring>
+        <name>from_json</name>
+        <param>
+          <type>nlohmann::json const &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578f" kindref="member">visibility</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Convert a json string to a visibility type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="225" column="5" bodyfile="doxybook/enums.hpp" bodystart="225" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1ac8ae315a31c83c01344c24ead7cb2f50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::to_json</definition>
+        <argsstring>(nlohmann::json &amp;j, folder_category const &amp;p)</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>nlohmann::json &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Convert a folder category to a json string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="231" column="5" bodyfile="doxybook/enums.hpp" bodystart="231" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedoxybook_1a7ed92d0af2247d395b8684f5e1dea64a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::from_json</definition>
+        <argsstring>(nlohmann::json const &amp;j, folder_category &amp;p)</argsstring>
+        <name>from_json</name>
+        <param>
+          <type>nlohmann::json const &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Convert a json string to a folder category. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/enums.hpp" line="237" column="5" bodyfile="doxybook/enums.hpp" bodystart="237" bodyend="239"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="doxybook/config.hpp" line="15" column="18"/>
+  </compounddef>
+</doxygen>

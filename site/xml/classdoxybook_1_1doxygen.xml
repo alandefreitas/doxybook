@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classdoxybook_1_1doxygen" kind="class" language="C++" prot="public">
+    <compoundname>doxybook::doxygen</compoundname>
+    <includes refid="doxygen_8hpp" local="no">doxygen.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classdoxybook_1_1doxygen_1af109a8034e8f78efeaa6ebd476a9613a" prot="private" static="no">
+        <type>std::unordered_multimap&lt; std::string, std::string &gt;</type>
+        <definition>using doxybook::doxygen::kind_refid_map =  std::unordered_multimap&lt;std::string, std::string&gt;</definition>
+        <argsstring></argsstring>
+        <name>kind_refid_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/doxygen.hpp" line="56" column="9" bodyfile="doxybook/doxygen.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdoxybook_1_1doxygen_1a56a586a5498170fe6d035f4f8bcca434" prot="private" static="no" mutable="no">
+        <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const  &amp;</type>
+        <definition>config const&amp; doxybook::doxygen::config_</definition>
+        <argsstring></argsstring>
+        <name>config_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/doxygen.hpp" line="76" column="22" bodyfile="doxybook/doxygen.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1doxygen_1a1840efe5a6f8dfb490884b959072552b" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;node&gt; doxybook::doxygen::index_</definition>
+        <argsstring></argsstring>
+        <name>index_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/doxygen.hpp" line="79" column="25" bodyfile="doxybook/doxygen.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1doxygen_1a58b029e7ef98956f5490d3b179cc026c" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacedoxybook_1a8315d0312907cc040ecd163fc5dd229d" kindref="member">node_cache_map</ref></type>
+        <definition>node_cache_map doxybook::doxygen::cache_</definition>
+        <argsstring></argsstring>
+        <name>cache_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/doxygen.hpp" line="81" column="24" bodyfile="doxybook/doxygen.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdoxybook_1_1doxygen_1a80bac33211884e524db483f1b1fb0ec3" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>doxybook::doxygen::doxygen</definition>
+        <argsstring>(config const &amp;c)</argsstring>
+        <name>doxygen</name>
+        <param>
+          <type><ref refid="structdoxybook_1_1config" kindref="compound">config</ref> const &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/doxygen.hpp" line="23" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1doxygen_1a26fd010da8d44d2091e7ad2b74e32567" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual doxybook::doxygen::~doxygen</definition>
+        <argsstring>()=default</argsstring>
+        <name>~doxygen</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/doxygen.hpp" line="26" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1doxygen_1a600a166c5886ead0ca45ceab26a05b4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::doxygen::load</definition>
+        <argsstring>(std::string const &amp;input_dir)</argsstring>
+        <name>load</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>input_dir</declname>
+        </param>
+        <briefdescription>
+<para>Load an xml directory generated with doxygen. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/doxygen.hpp" line="30" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1doxygen_1ad508bdf779e108ba8b8eaffbe22f86ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::doxygen::finalize</definition>
+        <argsstring>(text_printer const &amp;plain_printer, text_printer const &amp;markdown_printer)</argsstring>
+        <name>finalize</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1text__printer" kindref="compound">text_printer</ref> const &amp;</type>
+          <declname>plain_printer</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1text__printer" kindref="compound">text_printer</ref> const &amp;</type>
+          <declname>markdown_printer</declname>
+        </param>
+        <briefdescription>
+<para>Finalize by printing the index with the printers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/doxygen.hpp" line="34" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1doxygen_1a762cb10b1bb5476b2c840586e9242c1d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdoxybook_1_1node" kindref="compound">node</ref> const  &amp;</type>
+        <definition>node const&amp; doxybook::doxygen::get_index</definition>
+        <argsstring>() const</argsstring>
+        <name>get_index</name>
+        <briefdescription>
+<para>Get root node representing the index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/doxygen.hpp" line="40" column="9" bodyfile="doxybook/doxygen.hpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1doxygen_1aa04077d25a6ef01e4a98adbcf5055688" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;node&gt; doxybook::doxygen::find</definition>
+        <argsstring>(std::string const &amp;refid) const</argsstring>
+        <name>find</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>refid</declname>
+        </param>
+        <briefdescription>
+<para>Find a node with the given ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/doxygen.hpp" line="46" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1doxygen_1a0124b17cc4d01f05c7cd86c9479076c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacedoxybook_1a8315d0312907cc040ecd163fc5dd229d" kindref="member">node_cache_map</ref> const  &amp;</type>
+        <definition>node_cache_map const&amp; doxybook::doxygen::get_cache</definition>
+        <argsstring>() const</argsstring>
+        <name>get_cache</name>
+        <briefdescription>
+<para>Get cache of nodes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/doxygen.hpp" line="50" column="9" bodyfile="doxybook/doxygen.hpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdoxybook_1_1doxygen_1acabcc98369dc5e7b44e016ea781b0382" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>kind_refid_map</type>
+        <definition>kind_refid_map doxybook::doxygen::get_index_kinds</definition>
+        <argsstring>(std::string const &amp;input_dir) const</argsstring>
+        <name>get_index_kinds</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>input_dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/doxygen.hpp" line="59" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1doxygen_1accb68861b7cd16c3cafc10bfb3d5b2a5" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::doxygen::get_index_cache</definition>
+        <argsstring>(node_cache_map &amp;cache, std::shared_ptr&lt; node &gt; const &amp;node) const</argsstring>
+        <name>get_index_cache</name>
+        <param>
+          <type><ref refid="namespacedoxybook_1a8315d0312907cc040ecd163fc5dd229d" kindref="member">node_cache_map</ref> &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt; const &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/doxygen.hpp" line="62" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1doxygen_1a3c14fa6a07bc1abad30cdf13b17da3c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::doxygen::finalize_recursively</definition>
+        <argsstring>(text_printer const &amp;plain_printer, text_printer const &amp;markdown_printer, std::shared_ptr&lt; node &gt; const &amp;node)</argsstring>
+        <name>finalize_recursively</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1text__printer" kindref="compound">text_printer</ref> const &amp;</type>
+          <declname>plain_printer</declname>
+        </param>
+        <param>
+          <type><ref refid="classdoxybook_1_1text__printer" kindref="compound">text_printer</ref> const &amp;</type>
+          <declname>markdown_printer</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt; const &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/doxygen.hpp" line="68" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1doxygen_1ac50837710d27fd0ce5b7603115235125" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doxybook::doxygen::update_group_pointers</definition>
+        <argsstring>(std::shared_ptr&lt; node &gt; const &amp;node)</argsstring>
+        <name>update_group_pointers</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt; const &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/doxygen.hpp" line="74" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>All the nodes representing the content of doxygen xml files. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="doxybook/doxygen.hpp" line="20" column="18" bodyfile="doxybook/doxygen.hpp" bodystart="20" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classdoxybook_1_1doxygen_1a58b029e7ef98956f5490d3b179cc026c" prot="private" virt="non-virtual"><scope>doxybook::doxygen</scope><name>cache_</name></member>
+      <member refid="classdoxybook_1_1doxygen_1a56a586a5498170fe6d035f4f8bcca434" prot="private" virt="non-virtual"><scope>doxybook::doxygen</scope><name>config_</name></member>
+      <member refid="classdoxybook_1_1doxygen_1a80bac33211884e524db483f1b1fb0ec3" prot="public" virt="non-virtual"><scope>doxybook::doxygen</scope><name>doxygen</name></member>
+      <member refid="classdoxybook_1_1doxygen_1ad508bdf779e108ba8b8eaffbe22f86ba" prot="public" virt="non-virtual"><scope>doxybook::doxygen</scope><name>finalize</name></member>
+      <member refid="classdoxybook_1_1doxygen_1a3c14fa6a07bc1abad30cdf13b17da3c8" prot="private" virt="non-virtual"><scope>doxybook::doxygen</scope><name>finalize_recursively</name></member>
+      <member refid="classdoxybook_1_1doxygen_1aa04077d25a6ef01e4a98adbcf5055688" prot="public" virt="non-virtual"><scope>doxybook::doxygen</scope><name>find</name></member>
+      <member refid="classdoxybook_1_1doxygen_1a0124b17cc4d01f05c7cd86c9479076c7" prot="public" virt="non-virtual"><scope>doxybook::doxygen</scope><name>get_cache</name></member>
+      <member refid="classdoxybook_1_1doxygen_1a762cb10b1bb5476b2c840586e9242c1d" prot="public" virt="non-virtual"><scope>doxybook::doxygen</scope><name>get_index</name></member>
+      <member refid="classdoxybook_1_1doxygen_1accb68861b7cd16c3cafc10bfb3d5b2a5" prot="private" virt="non-virtual"><scope>doxybook::doxygen</scope><name>get_index_cache</name></member>
+      <member refid="classdoxybook_1_1doxygen_1acabcc98369dc5e7b44e016ea781b0382" prot="private" virt="non-virtual"><scope>doxybook::doxygen</scope><name>get_index_kinds</name></member>
+      <member refid="classdoxybook_1_1doxygen_1a1840efe5a6f8dfb490884b959072552b" prot="private" virt="non-virtual"><scope>doxybook::doxygen</scope><name>index_</name></member>
+      <member refid="classdoxybook_1_1doxygen_1af109a8034e8f78efeaa6ebd476a9613a" prot="private" virt="non-virtual"><scope>doxybook::doxygen</scope><name>kind_refid_map</name></member>
+      <member refid="classdoxybook_1_1doxygen_1a600a166c5886ead0ca45ceab26a05b4b" prot="public" virt="non-virtual"><scope>doxybook::doxygen</scope><name>load</name></member>
+      <member refid="classdoxybook_1_1doxygen_1ac50837710d27fd0ce5b7603115235125" prot="private" virt="non-virtual"><scope>doxybook::doxygen</scope><name>update_group_pointers</name></member>
+      <member refid="classdoxybook_1_1doxygen_1a26fd010da8d44d2091e7ad2b74e32567" prot="public" virt="virtual"><scope>doxybook::doxygen</scope><name>~doxygen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
