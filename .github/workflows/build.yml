@@ -144,6 +144,17 @@ jobs:
         with:
           submodules: true
 
+      - name: Update Contributors
+        if: startsWith(github.ref, 'refs/heads/master')
+        uses: akhilmhdh/contributors-readme-action@v2.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          image_size: 100
+          columns_per_row: 6
+          readme_path: docs/acknowledgments.md
+        continue-on-error: true
+
       - name: Dependencies
         shell: bash
         run: |
