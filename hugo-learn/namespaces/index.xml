@@ -22,7 +22,7 @@
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/namespaces/namespaceengine_1_1assets/</guid>
       <description>Engine::Assets Namespace Reference
-Classes Name class Engine::Assets::Asset Updated on 2022-11-15 at 00:06:20 +0000</description>
+Classes Name class Engine::Assets::Asset Updated on 2022-11-15 at 00:30:32 +0000</description>
     </item>
     
     <item>
@@ -43,7 +43,7 @@ Classes Name class Engine::Audio::AudioBuffer A simple audio buffer to hold PCM 
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/namespaces/namespaceengine_1_1graphics/</guid>
       <description>Engine::Graphics Namespace Reference
 Classes Name class Engine::Graphics::Framebuffer class Engine::Graphics::Handle interface Engine::Graphics::Texture This is a base texture class that serves as a base class for other texture types. class Engine::Graphics::Texture2D class Engine::Graphics::Texture3D Some deprecated class. Functions Name int getHandle(Handle &amp;amp; handle)Some namespace inline function. Functions Documentation function getHandle inline int getHandle( Handle &amp;amp; handle ) Some namespace inline function.
-Updated on 2022-11-15 at 00:06:20 +0000</description>
+Updated on 2022-11-15 at 00:30:32 +0000</description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@ Updated on 2022-11-15 at 00:06:20 +0000</description>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/namespaces/namespaceengine_1_1gui/</guid>
       <description>Engine::Gui Namespace Reference
-Classes Name class Engine::Gui::GuiWidget Some generic gui widget class. Updated on 2022-11-15 at 00:06:20 +0000</description>
+Classes Name class Engine::Gui::GuiWidget Some generic gui widget class. Updated on 2022-11-15 at 00:30:32 +0000</description>
     </item>
     
     <item>
@@ -63,7 +63,7 @@ Classes Name class Engine::Gui::GuiWidget Some generic gui widget class. Updated
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/namespaces/namespaceengine_1_1utils/</guid>
       <description>Engine::Utils Namespace Reference
-Namespaces Name Engine::Utils::Path Filesystem path utility functions. Classes Name class Engine::Utils::ArrayView Filesystem path utility functions. Functions Name void name_with_underscores(const std::string &amp;amp; arg) Functions Documentation function name_with_underscores inline void name_with_underscores( const std::string &amp;amp; arg ) Updated on 2022-11-15 at 00:06:20 +0000</description>
+Namespaces Name Engine::Utils::Path Filesystem path utility functions. Classes Name class Engine::Utils::ArrayView Filesystem path utility functions. Functions Name void name_with_underscores(const std::string &amp;amp; arg) Functions Documentation function name_with_underscores inline void name_with_underscores( const std::string &amp;amp; arg ) Updated on 2022-11-15 at 00:30:32 +0000</description>
     </item>
     
     <item>
