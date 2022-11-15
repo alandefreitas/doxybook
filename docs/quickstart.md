@@ -124,7 +124,7 @@ doxybook --input path/to/doxygen/xml --output path/to/destination
 
          - [Hugo](https://gohugo.io/)
          - [Book theme](https://themes.gohugo.io/hugo-book/)
-         - [Link](https://alandefreitas.github.io/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/)
+         - [Link](https://alandefreitas.github.io/doxybook/hugo-book/)
          
          Config:
 
@@ -139,7 +139,7 @@ doxybook --input path/to/doxygen/xml --output path/to/destination
 
          - [MkDocs](https://www.mkdocs.org/)
          - [ReadTheDocs theme](https://mkdocs.readthedocs.io/en/stable/)
-         - [Link](https://alandefreitas.github.io/doxybook/mkdocs-readthedocs/Classes/classEngine_1_1Audio_1_1AudioBuffer/)
+         - [Link](https://alandefreitas.github.io/doxybook/mkdocs-readthedocs/)
 
          Config:
 
@@ -154,7 +154,7 @@ doxybook --input path/to/doxygen/xml --output path/to/destination
 
          - [MkDocs](https://www.mkdocs.org/) 
          - [Material theme](https://squidfunk.github.io/mkdocs-material/)
-         - [Link](https://alandefreitas.github.io/doxybook/mkdocs-material/Classes/classEngine_1_1Audio_1_1AudioBuffer/)
+         - [Link](https://alandefreitas.github.io/doxybook/mkdocs-material/)
 
          Config:
 
@@ -169,7 +169,7 @@ doxybook --input path/to/doxygen/xml --output path/to/destination
 
          - [MkDocs](https://www.mkdocs.org/)
          - [Bootswatch theme](http://mkdocs.github.io/mkdocs-bootswatch/)
-         - [Link](https://alandefreitas.github.io/doxybook/mkdocs-bootswatch/Classes/classEngine_1_1Audio_1_1AudioBuffer/)
+         - [Link](https://alandefreitas.github.io/doxybook/mkdocs-bootswatch/)
 
          Config:
 
@@ -189,7 +189,7 @@ doxybook --input path/to/doxygen/xml --output path/to/destination
          ![Screenshot - GitBook](screenshots/screenshot_gitbook_default.jpg)
 
          - [GitBook](https://github.com/GitbookIO/gitbook)
-         - [Link](https://alandefreitas.github.io/doxybook/gitbook/Classes/classEngine_1_1Audio_1_1AudioBuffer)
+         - [Link](https://alandefreitas.github.io/doxybook/gitbook/)
 
          Config:
 
@@ -207,7 +207,7 @@ doxybook --input path/to/doxygen/xml --output path/to/destination
 
          - [Hugo](https://gohugo.io/)
          - [Book theme](https://themes.gohugo.io/hugo-book/)
-         - [Link](https://alandefreitas.github.io/doxybook/hugo-learn/classes/classengine_1_1audio_1_1audiobuffer/)
+         - [Link](https://alandefreitas.github.io/doxybook/hugo-learn/)
 
          Config:
 
