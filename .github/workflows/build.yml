@@ -23,7 +23,7 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - { name: "MSVC 14.3 - C++20 (Release, Vcpkg)",     os: windows-2022, flags: '/O2', vcpkg: true,  artifact_name: "windows-win64",          cxxstd: 20, cmake_args: -G "Visual Studio 17 2022" -A x64, }
+          - { name: "MSVC 14.3 - C++20 (Release, Vcpkg)",     os: windows-2022, flags: '/O2', vcpkg: true,  artifact_name: "windows-win64",        cxxstd: 20, cmake_args: -G "Visual Studio 17 2022" -A x64, }
           - { name: "MSVC 14.3 - C++20 (Release, Win32)",     os: windows-2022, flags: '/O2',               artifact_name: "windows-win32",        cxxstd: 20, cmake_args: -G "Visual Studio 17 2022" -A Win32, }
           - { name: "MSVC 14.3 - C++17 (Release, Shared)",    os: windows-2022, shared: true, flags: '/O2', artifact_name: "windows-win64-shared", cxxstd: 17, cmake_args: -G "Visual Studio 17 2022" -A x64, }
           - { name: "MSVC 14.2 - C++17",                      os: windows-2019, flags: '/O2',               cxxstd: 17, cmake_args: -G "Visual Studio 16 2019" -A x64, }
@@ -59,7 +59,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: build/_deps
-          key: ${{ matrix.config.os }}-fetched-content
+          key: ${{ matrix.config.os }}-fetched-content-${{ (contains( matrix.config.cmake_args, 'Win32') && 'x86') || 'x64' }}
 
       - name: Update Vcpkg
         if: ${{ matrix.config.vcpkg }}
