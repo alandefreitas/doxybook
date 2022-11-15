@@ -146,7 +146,7 @@ jobs:
 
       - name: Update Contributors
         if: startsWith(github.ref, 'refs/heads/master')
-        uses: akhilmhdh/contributors-readme-action@v2.3
+        uses: akhilmhdh/contributors-readme-action@v2.3.6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
