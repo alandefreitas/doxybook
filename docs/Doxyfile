@@ -1,0 +1,39 @@
+PROJECT_NAME = "Doxybook"
+DOXYFILE_ENCODING = UTF-8
+OUTPUT_DIRECTORY = .
+GENERATE_LATEX = NO
+
+GENERATE_XML = YES
+XML_OUTPUT = xml
+
+INPUT = ./../include/doxybook
+STRIP_FROM_PATH = ./../include
+INCLUDE_PATH = ./../include
+RECURSIVE = YES
+EXCLUDE = ./../include/doxybook/impl \
+          ./../include/doxybook/detail
+FILE_PATTERNS = *.hpp
+EXCLUDE_SYMBOLS = "std" "inja" "tinyxml2" "detail" "doxybook::detail" "detail::*" "doxybook::detail::*" "boost" "*_graph" "A" "Enable" "Proxy"
+EXAMPLE_PATH = ./../example/src
+EXAMPLE_PATTERNS = *.cpp
+
+DISTRIBUTE_GROUP_DOC=YES
+ENABLE_PREPROCESSING=YES
+MACRO_EXPANSION=YES
+EXPAND_ONLY_PREDEF=NO
+PREDEFINED= DOXYBOOK_DOXYGEN \
+            DOXYBOOK_CONSTEXPR=constexpr \
+            DOXYBOOK_CONSTANT_EVALUATED_CONSTEXPR=constexpr
+
+JAVADOC_AUTOBRIEF=YES
+
+INLINE_INHERITED_MEMB=YES
+INHERIT_DOCS=YES
+SHOW_NAMESPACES = YES
+EXTRACT_ALL = YES
+GENERATE_HTML = NO
+
+CALL_GRAPH = NO
+HAVE_DOT = NO
+
+# IMAGE_PATH = img
