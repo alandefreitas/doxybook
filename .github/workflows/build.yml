@@ -145,7 +145,7 @@ jobs:
           submodules: true
 
       - name: Update Contributors
-        if: startsWith(github.ref, 'refs/heads/master')
+        if: startsWith(github.ref, 'refs/heads/master') || startsWith(github.ref, 'refs/heads/develop')
         uses: akhilmhdh/contributors-readme-action@v2.3.6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -153,7 +153,14 @@ jobs:
           image_size: 100
           columns_per_row: 6
           readme_path: docs/acknowledgments.md
+          committer_username: alandefreitas
+          committer_email: alandefreitas@gmail.com
         continue-on-error: true
+
+      - name: List acknowledgments
+        shell: bash
+        run: |
+          cat docs/acknowledgments.md
 
       - name: Dependencies
         shell: bash
