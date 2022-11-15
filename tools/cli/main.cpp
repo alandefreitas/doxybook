@@ -144,16 +144,16 @@ main(int argc, char* argv[]) {
                     return EXIT_FAILURE;
                 }
             } else {
-                std::cerr << options.help() << std::endl;
+                std::cout << options.help() << std::endl;
             }
             return EXIT_SUCCESS;
         }
 
         else if (args["version"].as<bool>())
         {
-            std::cerr << version;
-            std::cerr << "-";
-            std::cerr << version_hash;
+            std::cout << version;
+            std::cout << "-";
+            std::cout << version_hash;
             return EXIT_SUCCESS;
         }
 
@@ -173,8 +173,8 @@ main(int argc, char* argv[]) {
         else if (args.count("output"))
         {
             if (!args.count("input")) {
-                std::cerr << "You need to provide input path!" << std::endl;
-                std::cerr << options.help();
+                std::cout << "You need to provide input path!" << std::endl;
+                std::cout << options.help();
                 return EXIT_FAILURE;
             }
 
@@ -358,7 +358,7 @@ main(int argc, char* argv[]) {
                 }
             }
         } else {
-            std::cerr << options.help() << std::endl;
+            std::cout << options.help() << std::endl;
             return EXIT_FAILURE;
         }
 
