@@ -18,44 +18,27 @@ else ()
 endif ()
 
 #######################################################
-### Commands                                        ###
-#######################################################
-set(
-        COVERAGE_TRACE_COMMAND
-
-        "${LCOV_EXECUTABLE}"
-        --capture # capture coverage data
-        --directory "${PROJECT_BINARY_DIR}" #  Use .da files in DIR instead of kernel
-        --output-file "${PROJECT_BINARY_DIR}/coverage.info" #  Write data to FILENAME instead of stdout
-
-        --include "${PROJECT_SOURCE_DIR}/*" # Include files
-)
-
-set(
-        COVERAGE_HTML_COMMAND
-
-        "${GENHTML_EXECUTABLE}"
-        --legend # Include color legend in HTML output
-        --frames # Use HTML frames for source code view
-        # --quiet # Do not print progress messages
-        "${PROJECT_BINARY_DIR}/coverage.info" # info file
-
-        --prefix "${PROJECT_SOURCE_DIR}/include" # Remove PREFIX from all directory names
-        --output-directory "${PROJECT_BINARY_DIR}/coverage_html" # Write HTML output to OUTDIR
-)
-
-#######################################################
 ### Target                                          ###
 #######################################################
 add_custom_target(
         coverage
 
-        COMMAND ${COVERAGE_TRACE_COMMAND}
-        COMMAND ${COVERAGE_HTML_COMMAND}
+        COMMAND "${LCOV_EXECUTABLE}"
+        --capture                                                 # Capture coverage data
+        --directory "${PROJECT_BINARY_DIR}"                       # Use .da files in DIR instead of kernel
+        --output-file "${PROJECT_BINARY_DIR}/coverage.info"       # Write data to FILENAME instead of stdout
+        --include "${PROJECT_SOURCE_DIR}/*"                       # Include files
+        --exclude "${PROJECT_SOURCE_DIR}/lib/doxybook/tinyxml2/*" # Exclude files
+        --exclude "${PROJECT_SOURCE_DIR}/test/unit/catch2/*"      # Exclude files
+
+        COMMAND "${GENHTML_EXECUTABLE}"
+        --legend                                                 # Include color legend in HTML output
+        --frames                                                 # Use HTML frames for source code view
+        "${PROJECT_BINARY_DIR}/coverage.info"                    # Info file
+        --prefix "${PROJECT_SOURCE_DIR}/include"                 # Remove PREFIX from all directory names
+        --output-directory "${PROJECT_BINARY_DIR}/coverage_html" # Write HTML output to OUTDIR
 
         COMMENT "Generating coverage report"
 
         VERBATIM
 )
-message(STATUS "${COVERAGE_TRACE_COMMAND}")
-message(STATUS "${COVERAGE_HTML_COMMAND}")
