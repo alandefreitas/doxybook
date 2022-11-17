@@ -27,6 +27,9 @@ namespace doxybook {
         /// Put all files into categorized folders
         bool use_folders{ true };
 
+        /// Whether we should allow undocumented macros
+        bool undocumented_macros{ false };
+
         /// Put index files into the respective subdirectories
         /**
          * (Hugo/Learn) needs that
@@ -47,6 +50,9 @@ namespace doxybook {
 
         /// The suffix to end links with
         std::string link_suffix{ ".md" };
+
+        /// Replace underscores with hyphens in anchors
+        bool replaceUnderscoresInAnchors{ true };
 
         ///@}
 
@@ -234,9 +240,6 @@ namespace doxybook {
         std::string formulaBlockEnd{ "\\]" };
 
         /// @}
-
-        /// Replace underscores with hyphens in anchors
-        bool replaceUnderscoresInAnchors{ true };
     };
 
     /// Load configuration from a path

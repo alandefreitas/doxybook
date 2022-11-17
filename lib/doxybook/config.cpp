@@ -61,6 +61,7 @@ static const std::vector<config_arg> CONFIG_ARGS = {
     config_arg(&doxybook::config::copy_images, "copyImages"),
     config_arg(&doxybook::config::sort, "sort"),
     config_arg(&doxybook::config::use_folders, "useFolders"),
+    config_arg(&doxybook::config::undocumented_macros, "undocumentedMacros"),
     config_arg(&doxybook::config::images_folder, "imagesFolder"),
     config_arg(&doxybook::config::main_page_name, "mainPageName"),
     config_arg(&doxybook::config::main_page_in_root, "mainPageInRoot"),

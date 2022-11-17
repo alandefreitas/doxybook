@@ -39,16 +39,27 @@ findOrCreate(
     std::string const& inputDir,
     doxybook::node_cache_map& cache,
     std::string const& ref_id,
-    bool const isGroupOrFile) {
+    bool const isGroupOrFile,
+    bool const allow_undocumented_macros) {
     auto found = findInCache(cache, ref_id);
     if (found) {
         if (found->is_empty()) {
-            return doxybook::node::parse(cache, inputDir, found, isGroupOrFile);
+            return doxybook::node::parse(
+                cache,
+                inputDir,
+                found,
+                isGroupOrFile,
+                allow_undocumented_macros);
         } else {
             return found;
         }
     } else {
-        return doxybook::node::parse(cache, inputDir, ref_id, isGroupOrFile);
+        return doxybook::node::parse(
+            cache,
+            inputDir,
+            ref_id,
+            isGroupOrFile,
+            allow_undocumented_macros);
     }
 }
 
@@ -57,10 +68,11 @@ doxybook::node::parse(
     node_cache_map& cache,
     std::string const& inputDir,
     std::string const& refid,
-    bool const isGroupOrFile) {
+    bool const isGroupOrFile,
+    bool const allow_undocumented_macros) {
     assert(!refid.empty());
     auto const ptr = std::make_shared<node>(refid);
-    return parse(cache, inputDir, ptr, isGroupOrFile);
+    return parse(cache, inputDir, ptr, isGroupOrFile, allow_undocumented_macros);
 }
 
 std::shared_ptr<doxybook::node>
@@ -68,7 +80,8 @@ doxybook::node::parse(
     node_cache_map& cache,
     std::string const& inputDir,
     std::shared_ptr<doxybook::node> const& ptr,
-    bool const isGroupOrFile) {
+    bool const isGroupOrFile,
+    bool const allow_undocumented_macros) {
     auto const ref_idPath = utils::join(inputDir, ptr->refid_ + ".xml");
     spdlog::info("Loading {}", ref_idPath);
     xml xml(ref_idPath);
@@ -116,7 +129,11 @@ doxybook::node::parse(
                 child->type_ = type::JAVAENUMCONSTANTS;
             }
 
-            ptr->children_.push_back(child);
+            if (allow_undocumented_macros || child->kind_ != kind::DEFINE
+                || !child->brief_.empty())
+            {
+                ptr->children_.push_back(child);
+            }
 
             if (isGroupOrFile) {
                 // Only update child's parent if this is a group and the member
@@ -142,9 +159,17 @@ doxybook::node::parse(
     auto innerProcess = [&](xml::element& parent, std::string const& name) {
         parent.all_child_elements(name, [&](xml::element& e) {
             const auto childRefid = e.get_attr("refid");
-            auto child
-                = findOrCreate(inputDir, cache, childRefid, isGroupOrFile);
-            ptr->children_.push_back(child);
+            auto child = findOrCreate(
+                inputDir,
+                cache,
+                childRefid,
+                isGroupOrFile,
+                allow_undocumented_macros);
+            if (allow_undocumented_macros || child->kind_ != kind::DEFINE
+                || !child->brief_.empty())
+            {
+                ptr->children_.push_back(child);
+            }
 
             // Only update child's parent if we are not processing directories
             if (!isGroupOrFile
@@ -454,7 +479,13 @@ doxybook::node::load_data(
         auto memberdef = sectiondef.first_child_element("memberdef");
         while (memberdef) {
             auto const childRefid = memberdef.get_attr("id");
-            auto const childPtr = this->find_child(childRefid);
+            std::shared_ptr<doxybook::node> childPtr;
+            try {
+                childPtr = this->find_child(childRefid);
+            } catch (...) {
+                memberdef = memberdef.next_sibling_element("memberdef");
+                continue;
+            }
 
             auto const it
                 = childrenData

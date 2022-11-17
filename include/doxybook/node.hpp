@@ -132,7 +132,8 @@ namespace doxybook {
             node_cache_map& cache,
             std::string const& input_dir,
             std::string const& refid,
-            bool is_group_or_file);
+            bool is_group_or_file,
+            bool const allow_undocumented_macros);
 
         /// Parse objects under the specified node
         static std::shared_ptr<node>
@@ -140,7 +141,8 @@ namespace doxybook {
             node_cache_map& cache,
             std::string const& input_dir,
             std::shared_ptr<node> const& ptr,
-            bool is_group_or_file);
+            bool is_group_or_file,
+            bool const allow_undocumented_macros);
 
         /// Parse member xml objects (functions, enums, etc)
         static std::shared_ptr<node>

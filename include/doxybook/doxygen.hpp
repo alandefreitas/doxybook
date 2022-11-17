@@ -45,6 +45,10 @@ namespace doxybook {
         std::shared_ptr<node>
         find(std::string const& refid) const;
 
+        /// Find a node with the given condition
+        std::shared_ptr<node>
+        find_if(std::function<bool(node const&)> f) const;
+
         /// Get cache of nodes
         node_cache_map const&
         get_cache() const {

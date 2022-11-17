@@ -53,7 +53,7 @@ doxybook::doxygen::doxygen(const class config& c)
 
 void
 doxybook::doxygen::load(std::string const& input_dir) {
-    // Remove entires from index which parent has been updated
+    // Remove entries from index which parent has been updated
     auto const cleanup = [](std::shared_ptr<doxybook::node> const& node) {
         auto it = node->children_.begin();
         while (it != node->children_.end()) {
@@ -71,132 +71,52 @@ doxybook::doxygen::load(std::string const& input_dir) {
     // later)
     auto const kindRefidMap = get_index_kinds(input_dir);
 
+    auto load_filtered = [&](auto kind_filter, bool is_group_or_file) {
+        for (auto const& pair: kindRefidMap) {
+            if (!kind_filter(pair.first)) {
+                continue;
+            }
+            try {
+                auto found = cache_.find(pair.second);
+                if (found == cache_.end()) {
+                    index_->children_.push_back(node::parse(
+                        cache_,
+                        input_dir,
+                        pair.second,
+                        is_group_or_file,
+                        config_.undocumented_macros));
+                    auto child = index_->children_.back();
+                    if (child->parent_ == nullptr) {
+                        child->parent_ = index_.get();
+                    }
+                    if (child->refid_ == "indexpage") {
+                        child->refid_ = config_.main_page_name;
+                    }
+                }
+            }
+            catch (std::exception& e) {
+                spdlog::warn(
+                    "Failed to parse member {} error: {}",
+                    pair.second,
+                    e.what());
+            }
+        }
+    };
+
     // Then load basic information from all other nodes.
-    for (auto const& pair: kindRefidMap) {
-        if (!is_kind_allowed_language(pair.first)) {
-            continue;
-        }
-        try {
-            auto found = cache_.find(pair.second);
-            if (found == cache_.end()) {
-                index_->children_.push_back(
-                    node::parse(cache_, input_dir, pair.second, false));
-                auto child = index_->children_.back();
-                if (child->parent_ == nullptr) {
-                    child->parent_ = index_.get();
-                }
-            }
-        }
-        catch (std::exception& e) {
-            spdlog::warn(
-                "Failed to parse member {} error: {}",
-                pair.second,
-                e.what());
-        }
-    }
+    load_filtered(is_kind_allowed_language, false);
     cleanup(index_);
-
     // Next, load all groups
-    for (auto const& pair: kindRefidMap) {
-        if (!is_kind_allowed_group(pair.first)) {
-            continue;
-        }
-        try {
-            auto found = cache_.find(pair.second);
-            if (found == cache_.end()) {
-                index_->children_.push_back(
-                    node::parse(cache_, input_dir, pair.second, true));
-                auto child = index_->children_.back();
-                if (child->parent_ == nullptr) {
-                    child->parent_ = index_.get();
-                }
-            }
-        }
-        catch (std::exception& e) {
-            spdlog::warn(
-                "Failed to parse member {} error: {}",
-                pair.second,
-                e.what());
-        }
-    }
+    load_filtered(is_kind_allowed_group, true);
     cleanup(index_);
-
     // Next, load all directories and files
-    for (auto const& pair: kindRefidMap) {
-        if (!is_kind_allowed_dirs(pair.first)) {
-            continue;
-        }
-        try {
-            auto found = cache_.find(pair.second);
-            if (found == cache_.end()) {
-                index_->children_.push_back(
-                    node::parse(cache_, input_dir, pair.second, true));
-                auto child = index_->children_.back();
-                if (child->parent_ == nullptr) {
-                    child->parent_ = index_.get();
-                }
-            }
-        }
-        catch (std::exception& e) {
-            spdlog::warn(
-                "Failed to parse member {} error: {}",
-                pair.second,
-                e.what());
-        }
-    }
+    load_filtered(is_kind_allowed_dirs, true);
     cleanup(index_);
-
     // Next, pages
-    for (auto const& pair: kindRefidMap) {
-        if (!is_kind_allowed_pages(pair.first)) {
-            continue;
-        }
-        try {
-            auto found = cache_.find(pair.second);
-            if (found == cache_.end()) {
-                index_->children_.push_back(
-                    node::parse(cache_, input_dir, pair.second, true));
-                auto child = index_->children_.back();
-                if (child->parent_ == nullptr) {
-                    child->parent_ = index_.get();
-                }
-                if (child->refid_ == "indexpage") {
-                    child->refid_ = config_.main_page_name;
-                }
-            }
-        }
-        catch (std::exception& e) {
-            spdlog::warn(
-                "Failed to parse member {} error: {}",
-                pair.second,
-                e.what());
-        }
-    }
+    load_filtered(is_kind_allowed_pages, true);
     cleanup(index_);
-
     // Lastly, examples (we don't need to sort these ones)
-    for (auto const& pair: kindRefidMap) {
-        if (!is_kind_allowed_examples(pair.first)) {
-            continue;
-        }
-        try {
-            auto found = cache_.find(pair.second);
-            if (found == cache_.end()) {
-                index_->children_.push_back(
-                    node::parse(cache_, input_dir, pair.second, true));
-                auto child = index_->children_.back();
-                if (child->parent_ == nullptr) {
-                    child->parent_ = index_.get();
-                }
-            }
-        }
-        catch (std::exception& e) {
-            spdlog::warn(
-                "Failed to parse member {} error: {}",
-                pair.second,
-                e.what());
-        }
-    }
+    load_filtered(is_kind_allowed_examples, true);
 
     get_index_cache(cache_, index_);
 
@@ -289,4 +209,15 @@ doxybook::doxygen::find(std::string const& refid) const {
         (void) e;
         throw EXCEPTION("Failed to find node from cache by refid {}", refid);
     }
+}
+
+std::shared_ptr<doxybook::node>
+doxybook::doxygen::find_if(std::function<bool(node const&)> f) const {
+    auto it = std::find_if(cache_.begin(), cache_.end(), [&f](auto const& p) {
+        return f(*p.second);
+    });
+    if (it != cache_.end()) {
+        return it->second;
+    }
+    return nullptr;
 }
