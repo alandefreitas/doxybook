@@ -306,6 +306,16 @@ namespace doxybook {
             return anchor_;
         }
 
+        /// Return the node section
+        /**
+         * This is useful for class member functions that need to go
+         * into sections
+         */
+        std::string const&
+        get_section() const {
+            return section_;
+        }
+
         /// Print the node contents to text and markdown
         void
         finalize(
@@ -362,6 +372,7 @@ namespace doxybook {
         virtual_category virt_{ virtual_category::NON_VIRTUAL };
         std::string url_;
         std::string anchor_;
+        std::string section_;
 
         void
         parse_base_info(xml::element const& element);

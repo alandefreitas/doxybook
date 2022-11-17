@@ -140,6 +140,7 @@ doxybook::json_converter::convert(node const& node) const {
     json["refid"] = node.get_refid();
     json["url"] = node.get_url();
     json["anchor"] = node.get_anchor();
+    json["section"] = node.get_section();
     json["visibility"] = to_str(node.get_visibility());
     if (is_function_type(node.get_type())) {
         json["virtual"] = node.get_virtual() == virtual_category::VIRTUAL

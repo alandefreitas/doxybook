@@ -118,6 +118,10 @@ doxybook::node::parse(
                 }
             }
             child->language_ = ptr->language_;
+            auto sectiondefheader = sectiondef.first_child_element("header");
+            if (sectiondefheader && sectiondefheader.has_text()) {
+                child->section_ = sectiondefheader.get_text();
+            }
 
             // Doxygen outputs Java enum values as variables with empty <type>
             auto typeElement = memberdef.first_child_element("type");
