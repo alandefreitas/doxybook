@@ -5,50 +5,108 @@ title: Engine::Exception
 
 # Engine::Exception
 
-**Module:** **[An example game engine](/modules/group__Engine.md)**
+**[An example game engine](/libraries/group__Engine.md)** **/** 
+**[Exception](/classes/classEngine_1_1Exception.md)**
+
+<sup>Defined in header [`<src/Exception.hpp>`](/files/Exception_8hpp.md#file-exception.hpp)</sup>
 
 
 
+```cpp
+
+class Exception;
+```
 
 
 
-`#include <Exception.hpp>`
+**Inherits from** `exception`
 
-Inherits from exception
+## Public Functions
+| Member Functions | Description |
+| -------------- | -------------- |
+| **[(constructor)](/classes/classEngine_1_1Exception.md#function-exception)** |  <sup><span style="color:green">(function)</span></sup> |
+| **[what](/classes/classEngine_1_1Exception.md#function-what)** <span style="color:green">const</span> <span style="color:green">override</span>|  <sup><span style="color:green">(function)</span></sup> |
+
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[Exception](/classes/classEngine_1_1Exception.md#function-exception)**() =default |
-| | **[Exception](/classes/classEngine_1_1Exception.md#function-exception)**(std::string msg) |
-| const char * | **[what](/classes/classEngine_1_1Exception.md#function-what)**() const override |
-
-## Public Functions Documentation
-
 ### function Exception
 
-```cpp
-Exception() =default
+
+<sup>Defined in header [`<src/Exception.hpp>`](/files/Exception_8hpp.md#file-exception.hpp)</sup>
+
+```cpp  title="(1)" 
+Exception() = default;
+```
+
+```cpp  title="(2)" 
+explicit Exception(std::string msg);
 ```
 
 
-### function Exception
 
-```cpp
-inline explicit Exception(
-    std::string msg
-)
-```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
 
 
 ### function what
 
-```cpp
-inline const char * what() const override
+
+<sup>Defined in header [`<src/Exception.hpp>`](/files/Exception_8hpp.md#file-exception.hpp)</sup>
+
+```cpp 
+const char *
+what() const override;
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
+
+
+
+
 
 
 -------------------------------
 
-Updated on 2022-11-15 at 04:12:34 +0000
+<sub>Updated on 2022-11-17</sub>

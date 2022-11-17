@@ -5,14 +5,19 @@ title: Engine::Assets::Asset
 
 # Engine::Assets::Asset
 
-**Module:** **[An example game engine](/modules/group__Engine.md)** **/** **[Generic assets](/modules/group__Assets.md)**
+**[An example game engine](/libraries/group__Engine.md)** **/** **[Generic assets](/libraries/group__Assets.md)** **/** 
+**[Asset](/classes/classEngine_1_1Assets_1_1Asset.md)**
+
+<sup>Defined in header [`<src/Assets/Asset.hpp>`](/files/Asset_8hpp.md#file-asset.hpp)</sup>
 
 
 
+```cpp
+
+class Asset;
+```
 
 
-
-`#include <Asset.hpp>`
 
 ## Public Classes
 
@@ -21,60 +26,209 @@ title: Engine::Assets::Asset
 | union | **[Event](/classes/unionEngine_1_1Assets_1_1Asset_1_1Event.md)**  |
 
 ## Public Functions
-
-|                | Name           |
+| Member Functions | Description |
 | -------------- | -------------- |
-| | **[Asset](/classes/classEngine_1_1Assets_1_1Asset.md#function-asset)**(const std::string & name) |
-| virtual | **[~Asset](/classes/classEngine_1_1Assets_1_1Asset.md#function-~asset)**() =0 |
-| virtual void | **[load](/classes/classEngine_1_1Assets_1_1Asset.md#function-load)**()<br>Call this method to load the asset.  |
-| virtual void | **[unload](/classes/classEngine_1_1Assets_1_1Asset.md#function-unload)**()<br>Call this method to unload the asset.  |
-| const [Event](/classes/unionEngine_1_1Assets_1_1Asset_1_1Event.md) & | **[getEvent](/classes/classEngine_1_1Assets_1_1Asset.md#function-getevent)**() const<br>Returns the current status of the asset.  |
+| **[(constructor)](/classes/classEngine_1_1Assets_1_1Asset.md#function-asset)** |  <sup><span style="color:green">(function)</span></sup> |
+| **[(destructor)](/classes/classEngine_1_1Assets_1_1Asset.md#function-~asset)**  = 0|  <sup><span style="color:green">(virtual function)</span></sup> |
+| **[load](/classes/classEngine_1_1Assets_1_1Asset.md#function-load)** | Call this method to load the asset. <br> <sup><span style="color:green">(virtual function)</span></sup> |
+| **[unload](/classes/classEngine_1_1Assets_1_1Asset.md#function-unload)** | Call this method to unload the asset. <br> <sup><span style="color:green">(virtual function)</span></sup> |
+| **[getEvent](/classes/classEngine_1_1Assets_1_1Asset.md#function-getevent)** <span style="color:green">const</span>| Returns the current status of the asset. <br> <sup><span style="color:green">(function)</span></sup> |
 
-## Public Functions Documentation
+
+## Public Functions
 
 ### function Asset
 
-```cpp
-explicit Asset(
-    const std::string & name
-)
+
+<sup>Defined in header [`<src/Assets/Asset.hpp>`](/files/Asset_8hpp.md#file-asset.hpp)</sup>
+
+```cpp 
+explicit Asset(const std::string & name);
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
 
 
 ### function ~Asset
 
-```cpp
-virtual ~Asset() =0
+
+<sup>Defined in header [`<src/Assets/Asset.hpp>`](/files/Asset_8hpp.md#file-asset.hpp)</sup>
+
+```cpp 
+virtual ~Asset() = 0;
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
 
 
 ### function load
 
-```cpp
-virtual void load()
+
+<sup>Defined in header [`<src/Assets/Asset.hpp>`](/files/Asset_8hpp.md#file-asset.hpp)</sup>
+
+```cpp 
+virtual void
+load();
 ```
+
+
+
+
 
 Call this method to load the asset. 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
+
+
 ### function unload
 
-```cpp
-virtual void unload()
+
+<sup>Defined in header [`<src/Assets/Asset.hpp>`](/files/Asset_8hpp.md#file-asset.hpp)</sup>
+
+```cpp 
+virtual void
+unload();
 ```
+
+
+
+
 
 Call this method to unload the asset. 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
+
+
 ### function getEvent
 
-```cpp
-inline const Event & getEvent() const
+
+<sup>Defined in header [`<src/Assets/Asset.hpp>`](/files/Asset_8hpp.md#file-asset.hpp)</sup>
+
+```cpp 
+const Event &
+getEvent() const;
 ```
 
+
+
+
+
 Returns the current status of the asset. 
+
+
+
+
+
+
+
+**Description**
 
 Use this to determine the state, for example if the assets is being loaded or unloaded. 
 
 
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
+
+
+
+
+
+
 -------------------------------
 
-Updated on 2022-11-15 at 04:12:34 +0000
+<sub>Updated on 2022-11-17</sub>

@@ -470,11 +470,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#public-types-documentation" class="md-nav__link">
-    Public Types Documentation
+  <a href="#public-types_1" class="md-nav__link">
+    Public Types
   </a>
   
-    <nav class="md-nav" aria-label="Public Types Documentation">
+    <nav class="md-nav" aria-label="Public Types">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -490,29 +490,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#public-functions-documentation" class="md-nav__link">
-    Public Functions Documentation
+  <a href="#public-functions_1" class="md-nav__link">
+    Public Functions
   </a>
   
-    <nav class="md-nav" aria-label="Public Functions Documentation">
+    <nav class="md-nav" aria-label="Public Functions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#function-parse" class="md-nav__link">
-    function parse
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#function-parse_1" class="md-nav__link">
-    function parse
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#function-parse_2" class="md-nav__link">
     function parse
   </a>
   
@@ -708,6 +694,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#function-get_section" class="md-nav__link">
+    function get_section
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#function-finalize" class="md-nav__link">
     function finalize
   </a>
@@ -770,8 +763,10 @@
 
 
 <h1 id="doxybooknode">doxybook::node</h1>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">node</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
 <p>A doxygen node. </p>
-<p><code>#include &lt;node.hpp&gt;</code></p>
 <h2 id="public-classes">Public Classes</h2>
 <table>
 <thead>
@@ -807,14 +802,14 @@
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Types</th>
+<th>Definition</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>using std::tuple&lt; <a href="/doxybook/reference/classes/structdoxybook_1_1node_1_1data/">data</a>, std::unordered_map&lt; std::string, <a href="/doxybook/reference/classes/structdoxybook_1_1node_1_1data/">data</a> &gt; &gt;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#using-load-data-result">load_data_result</a></strong> <br>The result of loading the node internal data.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#using-load-data-result">load_data_result</a></strong></td>
+<td>The result of loading the node internal data. <br> <sup><span style="color:green">(using)</span></sup></td>
 </tr>
 </tbody>
 </table>
@@ -822,138 +817,134 @@
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Functions</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>std::shared_ptr&lt; <a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> &gt;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-parse">parse</a></strong>(<a href="/doxybook/reference/namespaces/namespacedoxybook/#using-node-cache-map">node_cache_map</a> &amp; cache, std::string const &amp; input_dir, std::string const &amp; refid, bool is_group_or_file)<br>Parse root xml objects (classes, structs, etc)</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-parse">parse</a></strong></td>
+<td>Parse root xml objects (classes, structs, etc) <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::shared_ptr&lt; <a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> &gt;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-parse">parse</a></strong>(<a href="/doxybook/reference/namespaces/namespacedoxybook/#using-node-cache-map">node_cache_map</a> &amp; cache, std::string const &amp; input_dir, std::shared_ptr&lt; <a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> &gt; const &amp; ptr, bool is_group_or_file)<br>Parse objects under the specified node.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-node">(constructor)</a></strong></td>
+<td>Constructor. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::shared_ptr&lt; <a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> &gt;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-parse">parse</a></strong>(<a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1element/">xml::element</a> &amp; member_def, std::string const &amp; ref_id)<br>Parse member xml objects (functions, enums, etc)</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-~node">(destructor)</a></strong></td>
+<td>Destructor. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-node">node</a></strong>(std::string const &amp; refid)<br>Constructor.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-find">find</a></strong> <span style="color:green">const</span></td>
+<td>Find a node by refid. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-~node">~node</a></strong>()<br>Destructor.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-find-child">find_child</a></strong> <span style="color:green">const</span></td>
+<td>Find an immediate child node. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::shared_ptr&lt; <a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> &gt;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-find">find</a></strong>(std::string const &amp; refid) const<br>Find a node by refid.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-is-structured">is_structured</a></strong> <span style="color:green">const</span></td>
+<td>Check if node represents a structured type. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::shared_ptr&lt; <a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> &gt;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-find-child">find_child</a></strong>(std::string const &amp; refid) const<br>Find an immediate child node.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-is-language">is_language</a></strong> <span style="color:green">const</span></td>
+<td>Check if node represents a language feature. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>bool</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-is-structured">is_structured</a></strong>() const<br>Check if node represents a structured type.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-is-file-or-dir">is_file_or_dir</a></strong> <span style="color:green">const</span></td>
+<td>Check if node represents a file or directory. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>bool</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-is-language">is_language</a></strong>() const<br>Check if node represents a language feature.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-kind">get_kind</a></strong> <span style="color:green">const</span></td>
+<td>Return the kind of node. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>bool</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-is-file-or-dir">is_file_or_dir</a></strong>() const<br>Check if node represents a file or directory.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-language">get_language</a></strong> <span style="color:green">const</span></td>
+<td>Return the node language. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td><a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-kind">kind</a></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-kind">get_kind</a></strong>() const<br>Return the kind of node.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-type">get_type</a></strong> <span style="color:green">const</span></td>
+<td>Return the node type. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-language">get_language</a></strong>() const<br>Return the node language.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-refid">get_refid</a></strong> <span style="color:green">const</span></td>
+<td>Return the node refid. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td><a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-type">type</a></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-type">get_type</a></strong>() const<br>Return the node type.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-qualified-name">get_qualified_name</a></strong> <span style="color:green">const</span></td>
+<td>Return the qualified name. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::string const  &amp;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-refid">get_refid</a></strong>() const<br>Return the node refid.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-name">get_name</a></strong> <span style="color:green">const</span></td>
+<td>Return the node name. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::string const  &amp;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-qualified-name">get_qualified_name</a></strong>() const<br>Return the qualified name.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-parent">get_parent</a></strong> <span style="color:green">const</span></td>
+<td>Return the node parent. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::string const  &amp;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-name">get_name</a></strong>() const<br>Return the node name.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-group">get_group</a></strong> <span style="color:green">const</span></td>
+<td>Return the node group. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td><a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> const  *</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-parent">get_parent</a></strong>() const<br>Return the node parent.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-is-empty">is_empty</a></strong> <span style="color:green">const</span></td>
+<td>Check if the node is empty. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td><a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> const  *</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-group">get_group</a></strong>() const<br>Return the node group.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-children">get_children</a></strong> <span style="color:green">const</span></td>
+<td>Return all child nodes. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>bool</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-is-empty">is_empty</a></strong>() const<br>Check if the node is empty.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-xml-path">get_xml_path</a></strong> <span style="color:green">const</span></td>
+<td>Return the node xml_path. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::list&lt; std::shared_ptr&lt; <a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> &gt; &gt; const  &amp;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-children">get_children</a></strong>() const<br>Return all child nodes.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-brief">get_brief</a></strong> <span style="color:green">const</span></td>
+<td>Return the node brief. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::string const  &amp;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-xml-path">get_xml_path</a></strong>() const<br>Return the node xml_path.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-summary">get_summary</a></strong> <span style="color:green">const</span></td>
+<td>Return the node summary. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::string const  &amp;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-brief">get_brief</a></strong>() const<br>Return the node brief.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-title">get_title</a></strong> <span style="color:green">const</span></td>
+<td>Return the node title. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::string const  &amp;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-summary">get_summary</a></strong>() const<br>Return the node summary.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-visibility">get_visibility</a></strong> <span style="color:green">const</span></td>
+<td>Return the node visibility. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::string const  &amp;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-title">get_title</a></strong>() const<br>Return the node title.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-virtual">get_virtual</a></strong> <span style="color:green">const</span></td>
+<td>Return the node virtual category. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td><a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-visibility">visibility</a></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-visibility">get_visibility</a></strong>() const<br>Return the node visibility.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-base-classes">get_base_classes</a></strong> <span style="color:green">const</span></td>
+<td>Return the node base classes. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td><a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-virtual-category">virtual_category</a></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-virtual">get_virtual</a></strong>() const<br>Return the node virtual category.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-derived-classes">get_derived_classes</a></strong> <span style="color:green">const</span></td>
+<td>Return the node derived classes. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::vector&lt; <a href="/doxybook/reference/classes/structdoxybook_1_1node_1_1class__reference/">class_reference</a> &gt; const  &amp;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-base-classes">get_base_classes</a></strong>() const<br>Return the node base classes.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-url">get_url</a></strong> <span style="color:green">const</span></td>
+<td>Return the node url. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::vector&lt; <a href="/doxybook/reference/classes/structdoxybook_1_1node_1_1class__reference/">class_reference</a> &gt; const  &amp;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-derived-classes">get_derived_classes</a></strong>() const<br>Return the node derived classes.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-anchor">get_anchor</a></strong> <span style="color:green">const</span></td>
+<td>Return the node anchor. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::string const  &amp;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-url">get_url</a></strong>() const<br>Return the node url.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-section">get_section</a></strong> <span style="color:green">const</span></td>
+<td>Return the node section. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::string const  &amp;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-get-anchor">get_anchor</a></strong>() const<br>Return the node anchor.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-finalize">finalize</a></strong></td>
+<td>Print the node contents to text and markdown. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>void</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-finalize">finalize</a></strong>(<a href="/doxybook/reference/classes/structdoxybook_1_1config/">config</a> const &amp; config, <a href="/doxybook/reference/classes/classdoxybook_1_1text__printer/">text_printer</a> const &amp; plain_printer, <a href="/doxybook/reference/classes/classdoxybook_1_1text__printer/">text_printer</a> const &amp; markdown_printer, <a href="/doxybook/reference/namespaces/namespacedoxybook/#using-node-cache-map">node_cache_map</a> const &amp; cache)<br>Print the node contents to text and markdown.</td>
-</tr>
-<tr>
-<td><a href="/doxybook/reference/classes/classdoxybook_1_1node/#using-load-data-result">load_data_result</a></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-load-data">load_data</a></strong>(<a href="/doxybook/reference/classes/structdoxybook_1_1config/">config</a> const &amp; config, <a href="/doxybook/reference/classes/classdoxybook_1_1text__printer/">text_printer</a> const &amp; plain_printer, <a href="/doxybook/reference/classes/classdoxybook_1_1text__printer/">text_printer</a> const &amp; markdown_printer, <a href="/doxybook/reference/namespaces/namespacedoxybook/#using-node-cache-map">node_cache_map</a> const &amp; cache) const<br>Load the node data and its child nodes.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#function-load-data">load_data</a></strong> <span style="color:green">const</span></td>
+<td>Load the node data and its child nodes. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 </tbody>
 </table>
@@ -961,191 +952,315 @@
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Friends</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>class</td>
 <td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1node/#friend-doxygen">doxygen</a></strong></td>
+<td>Constructor. <br><sup><span style="color:green">(public friend class)</span></sup></td>
 </tr>
 </tbody>
 </table>
-<h2 id="public-types-documentation">Public Types Documentation</h2>
+<h2 id="public-types_1">Public Types</h2>
 <h3 id="using-load_data_result">using load_data_result</h3>
-<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">doxybook</span><span class="o">::</span><span class="n">node</span><span class="o">::</span><span class="n">load_data_result</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="w"> </span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="p">;</span><span class="w"></span>
-</code></pre></div>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup>
+<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">load_data_result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="p">;</span><span class="w"></span>
+</code></pre></div></p>
 <p>The result of loading the node internal data. </p>
-<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h2 id="public-functions_1">Public Functions</h2>
 <h3 id="function-parse">function parse</h3>
-<div class="highlight"><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">parse</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">node_cache_map</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">cache</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">input_dir</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">refid</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_group_or_file</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><span class="filename">(1)</span><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">parse</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">node_cache_map</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">cache</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">input_dir</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">refid</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_group_or_file</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">allow_undocumented_macros</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
-<p>Parse root xml objects (classes, structs, etc) </p>
-<h3 id="function-parse_1">function parse</h3>
-<div class="highlight"><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">parse</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">node_cache_map</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">cache</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">input_dir</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">ptr</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_group_or_file</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<div class="highlight"><span class="filename">(2)</span><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">parse</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">node_cache_map</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">cache</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">input_dir</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_group_or_file</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">allow_undocumented_macros</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
-<p>Parse objects under the specified node. </p>
-<h3 id="function-parse_2">function parse</h3>
-<div class="highlight"><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">parse</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">xml</span><span class="o">::</span><span class="n">element</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">member_def</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">ref_id</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<div class="highlight"><span class="filename">(3)</span><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">parse</span><span class="p">(</span><span class="n">xml</span><span class="o">::</span><span class="n">element</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">member_def</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">ref_id</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
-<p>Parse member xml objects (functions, enums, etc) </p>
+<ol>
+<li>Parse root xml objects (classes, structs, etc) </li>
+<li>Parse objects under the specified node. </li>
+<li>Parse member xml objects (functions, enums, etc) </li>
+</ol>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-node">function node</h3>
-<div class="highlight"><pre><span></span><code><span class="k">explicit</span><span class="w"> </span><span class="n">node</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">refid</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="k">explicit</span><span class="w"> </span><span class="n">node</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">refid</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 <p>Constructor. </p>
-<p><strong>Parameters</strong>: </p>
+<p><strong>Parameters</strong></p>
 <ul>
-<li><strong>refid</strong> Node id </li>
+<li><strong>refid</strong> - Node id </li>
 </ul>
+<p><strong>Description</strong></p>
 <p>The constructor will only store the refid and an empty temporary node.</p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-node_1">function ~node</h3>
-<div class="highlight"><pre><span></span><code><span class="o">~</span><span class="n">node</span><span class="p">()</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="o">~</span><span class="n">node</span><span class="p">();</span><span class="w"></span>
 </code></pre></div>
 <p>Destructor. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-find">function find</h3>
-<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">find</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">refid</span><span class="w"></span>
-<span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">find</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">refid</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Find a node by refid. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-find_child">function find_child</h3>
-<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">find_child</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">refid</span><span class="w"></span>
-<span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">find_child</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">refid</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Find an immediate child node. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-is_structured">function is_structured</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_structured</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"></span>
+<span class="nf">is_structured</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Check if node represents a structured type. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-is_language">function is_language</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_language</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"></span>
+<span class="nf">is_language</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Check if node represents a language feature. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-is_file_or_dir">function is_file_or_dir</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_file_or_dir</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"></span>
+<span class="nf">is_file_or_dir</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Check if node represents a file or directory. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_kind">function get_kind</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">kind</span><span class="w"> </span><span class="n">get_kind</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">kind</span><span class="w"></span>
+<span class="nf">get_kind</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Return the kind of node. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_language">function get_language</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">get_language</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"></span>
+<span class="nf">get_language</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Return the node language. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_type">function get_type</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="n">get_type</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">type</span><span class="w"></span>
+<span class="nf">get_type</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Return the node type. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_refid">function get_refid</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_refid</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">get_refid</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Return the node refid. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_qualified_name">function get_qualified_name</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_qualified_name</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">get_qualified_name</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Return the qualified name. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_name">function get_name</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_name</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">get_name</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Return the node name. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_parent">function get_parent</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">*</span><span class="w"> </span><span class="n">get_parent</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">node</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">*</span><span class="w"></span>
+<span class="n">get_parent</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Return the node parent. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_group">function get_group</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">*</span><span class="w"> </span><span class="n">get_group</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">node</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">*</span><span class="w"></span>
+<span class="n">get_group</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Return the node group. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-is_empty">function is_empty</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_empty</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"></span>
+<span class="nf">is_empty</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Check if the node is empty. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_children">function get_children</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_children</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">get_children</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Return all child nodes. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_xml_path">function get_xml_path</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_xml_path</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">get_xml_path</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Return the node xml_path. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_brief">function get_brief</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_brief</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">get_brief</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Return the node brief. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_summary">function get_summary</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_summary</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">get_summary</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Return the node summary. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_title">function get_title</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_title</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">get_title</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Return the node title. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_visibility">function get_visibility</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">visibility</span><span class="w"> </span><span class="n">get_visibility</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">visibility</span><span class="w"></span>
+<span class="nf">get_visibility</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Return the node visibility. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_virtual">function get_virtual</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">virtual_category</span><span class="w"> </span><span class="n">get_virtual</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">virtual_category</span><span class="w"></span>
+<span class="nf">get_virtual</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Return the node virtual category. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_base_classes">function get_base_classes</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">class_reference</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_base_classes</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">class_reference</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">get_base_classes</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Return the node base classes. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_derived_classes">function get_derived_classes</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">class_reference</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_derived_classes</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">class_reference</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">get_derived_classes</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Return the node derived classes. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_url">function get_url</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_url</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">get_url</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Return the node url. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_anchor">function get_anchor</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_anchor</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">get_anchor</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Return the node anchor. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
+<h3 id="function-get_section">function get_section</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">get_section</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+<p>Return the node section. </p>
+<p><strong>Description</strong></p>
+<p>This is useful for class member functions that need to go into sections </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-finalize">function finalize</h3>
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">finalize</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">plain_printer</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">markdown_printer</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">node_cache_map</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">cache</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"></span>
+<span class="nf">finalize</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">plain_printer</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">markdown_printer</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">node_cache_map</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">cache</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 <p>Print the node contents to text and markdown. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-load_data">function load_data</h3>
-<div class="highlight"><pre><span></span><code><span class="n">load_data_result</span><span class="w"> </span><span class="n">load_data</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">plain_printer</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">markdown_printer</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">node_cache_map</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">cache</span><span class="w"></span>
-<span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">load_data_result</span><span class="w"></span>
+<span class="nf">load_data</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">plain_printer</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">markdown_printer</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">node_cache_map</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">cache</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Load the node data and its child nodes. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h2 id="friends_1">Friends</h2>
 <h3 id="friend-doxygen">friend doxygen</h3>
-<div class="highlight"><pre><span></span><code><span class="k">friend</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">doxygen</span><span class="p">;</span><span class="w"></span>
-</code></pre></div>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup>
+<div class="highlight"><pre><span></span><code><span class="k">friend</span><span class="w"></span>
+<span class="k">class</span><span class="w"> </span><span class="nc">doxygen</span><span class="p">;</span><span class="w"></span>
+</code></pre></div></p>
 <hr />
-<p>Updated on 2022-11-15 at 04:12:28 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
 
 
   

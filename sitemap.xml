@@ -2,302 +2,302 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://alandefreitas.github.io/doxybook/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/acknowledgments/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/config/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/contributing/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/library/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/quickstart/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/references/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/templates/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/usage/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/classdoxybook_1_1doxygen/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/classdoxybook_1_1exception/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/classdoxybook_1_1generator/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/classdoxybook_1_1json__converter/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/classdoxybook_1_1node/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/classdoxybook_1_1renderer/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/classdoxybook_1_1text__markdown__printer/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/classdoxybook_1_1text__plain__printer/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/classdoxybook_1_1text__printer/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/classdoxybook_1_1xml/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/classdoxybook_1_1xml_1_1element/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/classdoxybook_1_1xml__text__parser/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/structdoxybook_1_1config/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/structdoxybook_1_1default__template/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/structdoxybook_1_1generator_1_1summary__section/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/structdoxybook_1_1node_1_1class__reference/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/structdoxybook_1_1node_1_1data/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/structdoxybook_1_1node_1_1param/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/structdoxybook_1_1node_1_1parameter__list__item/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/structdoxybook_1_1node_1_1source__location/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/structdoxybook_1_1text__markdown__printer_1_1list__data/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/structdoxybook_1_1text__markdown__printer_1_1print__data/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/classes/structdoxybook_1_1xml__text__parser_1_1node/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/examples/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/files/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/files/config_8hpp/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/files/default__templates_8hpp/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/files/dir_be054a2fbefc2d6b92396c28cd6dc939/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/files/doxygen_8hpp/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/files/enums_8hpp/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/files/exception_8hpp/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/files/exception__utils_8hpp/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/files/generator_8hpp/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/files/json__converter_8hpp/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/files/node_8hpp/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/files/path_8hpp/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/files/renderer_8hpp/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/files/text__markdown__printer_8hpp/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/files/text__plain__printer_8hpp/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/files/text__printer_8hpp/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/files/utils_8hpp/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/files/xml_8hpp/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/files/xml__text__parser_8hpp/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alandefreitas.github.io/doxybook/reference/modules/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <loc>https://alandefreitas.github.io/doxybook/reference/libraries/</loc>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/namespaces/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/namespaces/namespacedoxybook/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/namespaces/namespacedoxybook_1_1path/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/namespaces/namespacedoxybook_1_1utils/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://alandefreitas.github.io/doxybook/reference/pages/</loc>
-         <lastmod>2022-11-15</lastmod>
+         <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

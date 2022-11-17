@@ -8,18 +8,15 @@ title: src/Assets/Assets.hpp
 
 
 
-
-
-## Source code
-
 ```cpp
-#pragma once
-
-#include "AssetModel.hpp"
-#include "AssetManager.hpp"
+#include <src/Assets/Assets.hpp>
 ```
+
+
+
+
 
 
 -------------------------------
 
-Updated on 2022-11-15 at 04:12:35 +0000
+<sub>Updated on 2022-11-17</sub>

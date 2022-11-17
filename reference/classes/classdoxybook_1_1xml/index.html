@@ -463,11 +463,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#public-types-documentation" class="md-nav__link">
-    Public Types Documentation
+  <a href="#public-types_1" class="md-nav__link">
+    Public Types
   </a>
   
-    <nav class="md-nav" aria-label="Public Types Documentation">
+    <nav class="md-nav" aria-label="Public Types">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -483,11 +483,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#public-functions-documentation" class="md-nav__link">
-    Public Functions Documentation
+  <a href="#public-functions_1" class="md-nav__link">
+    Public Functions
   </a>
   
-    <nav class="md-nav" aria-label="Public Functions Documentation">
+    <nav class="md-nav" aria-label="Public Functions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -547,8 +547,10 @@
 
 
 <h1 id="doxybookxml">doxybook::xml</h1>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml_8hpp/#file-xml.hpp"><code>&lt;doxybook/xml.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">xml</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
 <p>Represents and wraps an xml node. </p>
-<p><code>#include &lt;xml.hpp&gt;</code></p>
 <h2 id="public-classes">Public Classes</h2>
 <table>
 <thead>
@@ -572,14 +574,14 @@
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Types</th>
+<th>Definition</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>using std::function&lt; void(<a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1element/">element</a> &amp;)&gt;</td>
 <td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml/#using-element-callback">element_callback</a></strong></td>
+<td><code>std::function&lt; void([element](/doxybook/reference/classes/classdoxybook_1_1xml_1_1element/) &amp;)&gt;</code><br> <sup><span style="color:green">(using)</span></sup></td>
 </tr>
 </tbody>
 </table>
@@ -587,56 +589,67 @@
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Functions</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml/#function-xml">xml</a></strong>(std::string const &amp; path)<br>Constructor.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml/#function-xml">(constructor)</a></strong></td>
+<td>Constructor. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml/#function-~xml">~xml</a></strong>()<br>Destructor.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml/#function-~xml">(destructor)</a></strong></td>
+<td>Destructor. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1element/">element</a></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml/#function-first-child-element">first_child_element</a></strong>(std::string const &amp; name) const<br>Get first child element with the specified name.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml/#function-first-child-element">first_child_element</a></strong> <span style="color:green">const</span></td>
+<td>Get first child element with the specified name. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::string const  &amp;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml/#function-get-path">get_path</a></strong>() const<br>Get document path.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml/#function-get-path">get_path</a></strong> <span style="color:green">const</span></td>
+<td>Get document path. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 </tbody>
 </table>
-<h2 id="public-types-documentation">Public Types Documentation</h2>
+<h2 id="public-types_1">Public Types</h2>
 <h3 id="using-element_callback">using element_callback</h3>
-<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">doxybook</span><span class="o">::</span><span class="n">xml</span><span class="o">::</span><span class="n">element_callback</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="n">element</span><span class="o">&amp;</span><span class="p">)</span><span class="o">&gt;</span><span class="p">;</span><span class="w"></span>
-</code></pre></div>
-<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml_8hpp/#file-xml.hpp"><code>&lt;doxybook/xml.hpp&gt;</code></a></sup>
+<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">element_callback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">void</span><span class="p">(</span><span class="n">element</span><span class="w"> </span><span class="o">&amp;</span><span class="p">)</span><span class="o">&gt;</span><span class="p">;</span><span class="w"></span>
+</code></pre></div></p>
+<h2 id="public-functions_1">Public Functions</h2>
 <h3 id="function-xml">function xml</h3>
-<div class="highlight"><pre><span></span><code><span class="k">explicit</span><span class="w"> </span><span class="n">xml</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">path</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml_8hpp/#file-xml.hpp"><code>&lt;doxybook/xml.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="k">explicit</span><span class="w"> </span><span class="n">xml</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">path</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 <p>Constructor. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-xml_1">function ~xml</h3>
-<div class="highlight"><pre><span></span><code><span class="o">~</span><span class="n">xml</span><span class="p">()</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml_8hpp/#file-xml.hpp"><code>&lt;doxybook/xml.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="o">~</span><span class="n">xml</span><span class="p">();</span><span class="w"></span>
 </code></pre></div>
 <p>Destructor. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-first_child_element">function first_child_element</h3>
-<div class="highlight"><pre><span></span><code><span class="n">element</span><span class="w"> </span><span class="n">first_child_element</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="w"></span>
-<span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml_8hpp/#file-xml.hpp"><code>&lt;doxybook/xml.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">element</span><span class="w"></span>
+<span class="nf">first_child_element</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Get first child element with the specified name. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_path">function get_path</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_path</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml_8hpp/#file-xml.hpp"><code>&lt;doxybook/xml.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">get_path</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Get document path. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <hr />
-<p>Updated on 2022-11-15 at 04:12:28 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
 
 
   

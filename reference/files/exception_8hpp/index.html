@@ -455,13 +455,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#source-code" class="md-nav__link">
-    Source code
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -486,16 +479,20 @@
 
 
 <h1 id="doxybookexceptionhpp">doxybook/exception.hpp</h1>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;doxybook/exception.hpp&gt;</span><span class="cp"></span>
+</code></pre></div>
 <h2 id="namespaces">Namespaces</h2>
 <table>
 <thead>
 <tr>
 <th>Name</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/">doxybook</a></strong></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -503,53 +500,19 @@
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Classes</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>class</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1exception/">doxybook::exception</a></strong> <br>Doxybook exceptions.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1exception/">exception</a></strong></td>
+<td>Doxybook exceptions. <br> <sup><span style="color:green">(class)</span></sup></td>
 </tr>
 </tbody>
 </table>
-<h2 id="source-code">Source code</h2>
-<div class="highlight"><pre><span></span><code><span class="c1">//</span>
-<span class="c1">// Copyright (c) 2021 Matus Novak (@matusnovak)</span>
-<span class="c1">// Copyright (c) 2022 alandefreitas (alandefreitas@gmail.com)</span>
-<span class="c1">//</span>
-<span class="c1">// Distributed under the Boost Software License, Version 1.0.</span>
-<span class="c1">// https://www.boost.org/LICENSE_1_0.txt</span>
-<span class="c1">//</span>
-
-<span class="cp">#ifndef DOXYBOOK_EXCEPTION_HPP</span>
-<span class="cp">#define DOXYBOOK_EXCEPTION_HPP</span>
-
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span><span class="cp"></span>
-
-<span class="k">namespace</span><span class="w"> </span><span class="nn">doxybook</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-
-<span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">exception</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">public</span><span class="o">:</span><span class="w"></span>
-<span class="w">        </span><span class="n">exception</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">        </span><span class="k">explicit</span><span class="w"> </span><span class="n">exception</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">msg</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">msg_</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">move</span><span class="p">(</span><span class="n">msg</span><span class="p">))</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
-
-<span class="w">        </span><span class="kt">char</span><span class="w"> </span><span class="k">const</span><span class="o">*</span><span class="w"></span>
-<span class="w">        </span><span class="n">what</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">throw</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">msg_</span><span class="p">.</span><span class="n">c_str</span><span class="p">();</span><span class="w"></span>
-<span class="w">        </span><span class="p">}</span><span class="w"></span>
-
-<span class="w">    </span><span class="k">private</span><span class="o">:</span><span class="w"></span>
-<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">msg_</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="p">};</span><span class="w"></span>
-<span class="p">}</span><span class="w"> </span><span class="c1">// namespace doxybook</span>
-
-<span class="cp">#endif</span>
-</code></pre></div>
 <hr />
-<p>Updated on 2022-11-15 at 04:12:28 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
 
 
   

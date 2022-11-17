@@ -7,12 +7,14 @@ title: src/Gui
 
 
 
+
+
 ## Files
 
-| Name           |
-| -------------- |
-| **[src/Gui/Gui.hpp](/files/Gui_8hpp.md#file-gui.hpp)**  |
-| **[src/Gui/GuiWidget.hpp](/files/GuiWidget_8hpp.md#file-guiwidget.hpp)**  |
+| Files           | Description    |
+| -------------- | -------------- |
+| **[src/Gui/Gui.hpp](/files/Gui_8hpp.md#file-gui.hpp)** |  |
+| **[src/Gui/GuiWidget.hpp](/files/GuiWidget_8hpp.md#file-guiwidget.hpp)** |  |
 
 
 
@@ -21,4 +23,4 @@ title: src/Gui
 
 -------------------------------
 
-Updated on 2022-11-15 at 04:12:35 +0000
+<sub>Updated on 2022-11-17</sub>

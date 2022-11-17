@@ -7,36 +7,23 @@ title: src/Utils/Utils.hpp
 
 
 
-## Namespaces
-
-| Name           |
-| -------------- |
-| **[Engine](/namespaces/namespaceEngine.md)** <br>This namespace contains all of the necessary engine components.  |
-| **[Engine::Utils](/namespaces/namespaceEngine_1_1Utils.md)**  |
-
-
-
-
-## Source code
 
 ```cpp
-#pragma once
-
-#include "Path.hpp"
-#include "ArrayView.hpp"
-#include "Config.hpp"
-#include "Log.hpp"
-
-namespace Engine {
-    namespace Utils {
-        inline void name_with_underscores(const std::string& arg) {
-            (void)arg;
-        }
-    }
-}
+#include <src/Utils/Utils.hpp>
 ```
+
+## Namespaces
+
+| Name           | Description    |
+| -------------- | -------------- |
+| **[Engine](/namespaces/namespaceEngine.md)** | This namespace contains all of the necessary engine components.  |
+| **[Engine::Utils](/namespaces/namespaceEngine_1_1Utils.md)** |  |
+
+
+
+
 
 
 -------------------------------
 
-Updated on 2022-11-15 at 04:12:35 +0000
+<sub>Updated on 2022-11-17</sub>

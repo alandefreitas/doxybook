@@ -455,13 +455,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#source-code" class="md-nav__link">
-    Source code
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -486,16 +479,20 @@
 
 
 <h1 id="doxybookjson_converterhpp">doxybook/json_converter.hpp</h1>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;doxybook/json_converter.hpp&gt;</span><span class="cp"></span>
+</code></pre></div>
 <h2 id="namespaces">Namespaces</h2>
 <table>
 <thead>
 <tr>
 <th>Name</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/">doxybook</a></strong></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -503,86 +500,19 @@
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Classes</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>class</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1json__converter/">doxybook::json_converter</a></strong> <br>Convert elements to json so they can be rendered with inja.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1json__converter/">json_converter</a></strong></td>
+<td>Convert elements to json so they can be rendered with inja. <br> <sup><span style="color:green">(class)</span></sup></td>
 </tr>
 </tbody>
 </table>
-<h2 id="source-code">Source code</h2>
-<div class="highlight"><pre><span></span><code><span class="c1">//</span>
-<span class="c1">// Copyright (c) 2021 Matus Novak (@matusnovak)</span>
-<span class="c1">// Copyright (c) 2022 alandefreitas (alandefreitas@gmail.com)</span>
-<span class="c1">//</span>
-<span class="c1">// Distributed under the Boost Software License, Version 1.0.</span>
-<span class="c1">// https://www.boost.org/LICENSE_1_0.txt</span>
-<span class="c1">//</span>
-
-<span class="cp">#ifndef DOXYBOOK_JSON_CONVERTER_HPP</span>
-<span class="cp">#define DOXYBOOK_JSON_CONVERTER_HPP</span>
-
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;doxybook/config.hpp&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;doxybook/node.hpp&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;doxybook/text_printer.hpp&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;nlohmann/json.hpp&gt;</span><span class="cp"></span>
-
-<span class="k">namespace</span><span class="w"> </span><span class="nn">doxybook</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">json_converter</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">public</span><span class="o">:</span><span class="w"></span>
-<span class="w">        </span><span class="k">explicit</span><span class="w"> </span><span class="n">json_converter</span><span class="p">(</span><span class="w"></span>
-<span class="w">            </span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="n">doxygen</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">doxygen</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">plainPrinter</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">markdownPrinter</span><span class="p">);</span><span class="w"></span>
-
-
-<span class="w">        </span><span class="n">nlohmann</span><span class="o">::</span><span class="n">json</span><span class="w"></span>
-<span class="w">        </span><span class="nf">convert</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">vec</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">        </span><span class="n">nlohmann</span><span class="o">::</span><span class="n">json</span><span class="w"></span>
-<span class="w">        </span><span class="nf">convert</span><span class="p">(</span><span class="n">node</span><span class="o">::</span><span class="n">class_reference</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">class_</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">        </span><span class="n">nlohmann</span><span class="o">::</span><span class="n">json</span><span class="w"></span>
-<span class="w">        </span><span class="nf">convert</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">node</span><span class="o">::</span><span class="n">class_reference</span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">classes</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">        </span><span class="n">nlohmann</span><span class="o">::</span><span class="n">json</span><span class="w"></span>
-<span class="w">        </span><span class="nf">convert</span><span class="p">(</span><span class="n">node</span><span class="o">::</span><span class="n">source_location</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">location</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">        </span><span class="n">nlohmann</span><span class="o">::</span><span class="n">json</span><span class="w"></span>
-<span class="w">        </span><span class="nf">convert</span><span class="p">(</span><span class="n">node</span><span class="o">::</span><span class="n">param</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">param</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">        </span><span class="n">nlohmann</span><span class="o">::</span><span class="n">json</span><span class="w"></span>
-<span class="w">        </span><span class="nf">convert</span><span class="p">(</span><span class="n">node</span><span class="o">::</span><span class="n">parameter_list_item</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">item</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">        </span><span class="n">nlohmann</span><span class="o">::</span><span class="n">json</span><span class="w"></span>
-<span class="w">        </span><span class="nf">convert</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">node</span><span class="o">::</span><span class="n">parameter_list_item</span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">item</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">        </span><span class="n">nlohmann</span><span class="o">::</span><span class="n">json</span><span class="w"></span>
-<span class="w">        </span><span class="nf">convert</span><span class="p">(</span><span class="n">node</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">node</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">        </span><span class="n">nlohmann</span><span class="o">::</span><span class="n">json</span><span class="w"></span>
-<span class="w">        </span><span class="nf">convert</span><span class="p">(</span><span class="n">node</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="n">node</span><span class="o">::</span><span class="n">data</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">data</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">        </span><span class="n">nlohmann</span><span class="o">::</span><span class="n">json</span><span class="w"></span>
-<span class="w">        </span><span class="nf">get_as_json</span><span class="p">(</span><span class="n">node</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">node</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">    </span><span class="k">private</span><span class="o">:</span><span class="w"></span>
-<span class="w">        </span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">config_</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="n">doxygen</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">doxygen_</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">plain_printer_</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">markdown_printer_</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="p">};</span><span class="w"></span>
-<span class="p">}</span><span class="w"> </span><span class="c1">// namespace doxybook</span>
-
-<span class="cp">#endif</span>
-</code></pre></div>
 <hr />
-<p>Updated on 2022-11-15 at 04:12:28 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
 
 
   

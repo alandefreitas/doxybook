@@ -435,62 +435,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#defines" class="md-nav__link">
-    Defines
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#macros-documentation" class="md-nav__link">
-    Macros Documentation
-  </a>
-  
-    <nav class="md-nav" aria-label="Macros Documentation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#define-filename" class="md-nav__link">
-    define FILENAME
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-exception" class="md-nav__link">
-    define EXCEPTION
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-warning" class="md-nav__link">
-    define WARNING
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#source-code" class="md-nav__link">
-    Source code
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
             <div data-ea-publisher="alandefreitas-com" data-ea-type="image"></div>
         </div>
@@ -513,83 +457,10 @@
 
 
 <h1 id="doxybookexception_utilshpp">doxybook/exception_utils.hpp</h1>
-<h2 id="defines">Defines</h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td><strong><a href="/doxybook/reference/files/exception__utils_8hpp/#define---filename--"><strong>FILENAME</strong></a></strong></td>
-</tr>
-<tr>
-<td></td>
-<td><strong><a href="/doxybook/reference/files/exception__utils_8hpp/#define-exception">EXCEPTION</a></strong>(MSG, ...)</td>
-</tr>
-<tr>
-<td></td>
-<td><strong><a href="/doxybook/reference/files/exception__utils_8hpp/#define-warning">WARNING</a></strong>(MSG, ...)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="macros-documentation">Macros Documentation</h2>
-<h3 id="define-filename">define <strong>FILENAME</strong></h3>
-<div class="highlight"><pre><span></span><code><span class="cp">#define __FILENAME__ doxybook::path::filename(__FILE__)</span>
-</code></pre></div>
-<h3 id="define-exception">define EXCEPTION</h3>
-<div class="highlight"><pre><span></span><code><span class="cp">#define EXCEPTION(</span>
-<span class="w">    </span><span class="n">MSG</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="p">...</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
-<span class="n">doxybook</span><span class="o">::</span><span class="n">exception</span><span class="p">(</span><span class="w">                                           </span>\
-<span class="w">        </span><span class="n">fmt</span><span class="o">::</span><span class="n">format</span><span class="p">(</span><span class="s">&quot;Exception at {}:{} &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">__FILENAME__</span><span class="p">,</span><span class="w"> </span><span class="n">__LINE__</span><span class="p">)</span><span class="w"> </span>\
-<span class="w">        </span><span class="o">+</span><span class="w"> </span><span class="n">fmt</span><span class="o">::</span><span class="n">format</span><span class="p">(</span><span class="n">MSG</span><span class="p">,</span><span class="w"> </span><span class="err">##</span><span class="n">__VA_ARGS__</span><span class="p">))</span><span class="w"></span>
-</code></pre></div>
-<h3 id="define-warning">define WARNING</h3>
-<div class="highlight"><pre><span></span><code><span class="cp">#define WARNING(</span>
-<span class="w">    </span><span class="n">MSG</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="p">...</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="n">doxybook</span><span class="o">::</span><span class="n">spdlog</span><span class="o">::</span><span class="n">warn</span><span class="p">(</span><span class="w">                                      </span>\
-<span class="w">        </span><span class="n">fmt</span><span class="o">::</span><span class="n">format</span><span class="p">(</span><span class="s">&quot;Warning at {}:{} &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">__FILENAME__</span><span class="p">,</span><span class="w"> </span><span class="n">__LINE__</span><span class="p">)</span><span class="w"> </span>\
-<span class="w">        </span><span class="o">+</span><span class="w"> </span><span class="n">fmt</span><span class="o">::</span><span class="n">format</span><span class="p">(</span><span class="n">MSG</span><span class="p">,</span><span class="w"> </span><span class="err">##</span><span class="n">__VA_ARGS__</span><span class="p">))</span><span class="w"></span>
-</code></pre></div>
-<h2 id="source-code">Source code</h2>
-<div class="highlight"><pre><span></span><code><span class="c1">//</span>
-<span class="c1">// Copyright (c) 2021 Matus Novak (@matusnovak)</span>
-<span class="c1">// Copyright (c) 2022 alandefreitas (alandefreitas@gmail.com)</span>
-<span class="c1">//</span>
-<span class="c1">// Distributed under the Boost Software License, Version 1.0.</span>
-<span class="c1">// https://www.boost.org/LICENSE_1_0.txt</span>
-<span class="c1">//</span>
-
-<span class="cp">#ifndef DOXYBOOK_EXCEPTION_UTILS_HPP</span>
-<span class="cp">#define DOXYBOOK_EXCEPTION_UTILS_HPP</span>
-
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;doxybook/exception.hpp&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;doxybook/path.hpp&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;fmt/format.h&gt;</span><span class="cp"></span>
-
-<span class="cp">#define __FILENAME__ doxybook::path::filename(__FILE__)</span>
-
-<span class="cp">#define EXCEPTION(MSG, ...)                                        \</span>
-<span class="cp">    doxybook::exception(                                           \</span>
-<span class="cp">        fmt::format(&quot;Exception at {}:{} &quot;, __FILENAME__, __LINE__) \</span>
-<span class="cp">        + fmt::format(MSG, ##__VA_ARGS__))</span>
-
-<span class="cp">#define WARNING(MSG, ...)                                        \</span>
-<span class="cp">    doxybook::spdlog::warn(                                      \</span>
-<span class="cp">        fmt::format(&quot;Warning at {}:{} &quot;, __FILENAME__, __LINE__) \</span>
-<span class="cp">        + fmt::format(MSG, ##__VA_ARGS__))</span>
-
-<span class="cp">#endif</span>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;doxybook/exception_utils.hpp&gt;</span><span class="cp"></span>
 </code></pre></div>
 <hr />
-<p>Updated on 2022-11-15 at 04:12:28 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
 
 
   

@@ -5,24 +5,33 @@ title: Engine::Assets::Asset::Event::Loaded
 
 # Engine::Assets::Asset::Event::Loaded
 
+<sup>Defined in header [`<src/Assets/Asset.hpp>`](/files/Asset_8hpp.md#file-asset.hpp)</sup>
 
 
 
+```cpp
+
+struct Loaded;
+```
 
 
-`#include <Asset.hpp>`
 
 ## Public Attributes
 
-|                | Name           |
+| Member Public Attributes| Description    |
 | -------------- | -------------- |
-| bool | **[success](/classes/structEngine_1_1Assets_1_1Asset_1_1Event_1_1Loaded.md#variable-success)**  |
-| int | **[usage](/classes/structEngine_1_1Assets_1_1Asset_1_1Event_1_1Loaded.md#variable-usage)**  |
+| **[success](/classes/structEngine_1_1Assets_1_1Asset_1_1Event_1_1Loaded.md#variable-success)** | `bool`<br> <sup><span style="color:green">(public variable)</span></sup> |
+| **[usage](/classes/structEngine_1_1Assets_1_1Asset_1_1Event_1_1Loaded.md#variable-usage)** | `int`<br> <sup><span style="color:green">(public variable)</span></sup> |
 
-## Public Attributes Documentation
+
+
+
+
+## Public Attributes
 
 ### variable success
 
+<sup>Defined in header [`<src/Assets/Asset.hpp>`](/files/Asset_8hpp.md#file-asset.hpp)</sup>
 ```cpp
 bool success;
 ```
@@ -30,6 +39,7 @@ bool success;
 
 ### variable usage
 
+<sup>Defined in header [`<src/Assets/Asset.hpp>`](/files/Asset_8hpp.md#file-asset.hpp)</sup>
 ```cpp
 int usage;
 ```
@@ -37,4 +47,4 @@ int usage;
 
 -------------------------------
 
-Updated on 2022-11-15 at 04:12:34 +0000
+<sub>Updated on 2022-11-17</sub>

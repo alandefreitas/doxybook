@@ -450,12 +450,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../modules/">
+        <li class="chapter " data-level="1.5" data-path="../libraries/">
             
-                <a href="../modules/">
+                <a href="../libraries/">
             
                     
-                    Modules
+                    Libraries
             
                 </a>
             
@@ -464,7 +464,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../Modules/group__Engine.md">
+        <li class="chapter " data-level="1.5.1" data-path="../Libraries/group__Engine.md">
             
                 <span>
             
@@ -477,7 +477,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../Modules/group__Assets.md">
+        <li class="chapter " data-level="1.5.2" data-path="../Libraries/group__Assets.md">
             
                 <span>
             
@@ -490,7 +490,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../Modules/group__Audio.md">
+        <li class="chapter " data-level="1.5.3" data-path="../Libraries/group__Audio.md">
             
                 <span>
             
@@ -503,7 +503,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="../Modules/group__Graphics.md">
+        <li class="chapter " data-level="1.5.4" data-path="../Libraries/group__Graphics.md">
             
                 <span>
             
@@ -516,7 +516,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.5" data-path="../Modules/group__Gui.md">
+        <li class="chapter " data-level="1.5.5" data-path="../Libraries/group__Gui.md">
             
                 <span>
             
@@ -529,7 +529,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.6" data-path="../Modules/group__Utils.md">
+        <li class="chapter " data-level="1.5.6" data-path="../Libraries/group__Utils.md">
             
                 <span>
             
@@ -1092,51 +1092,110 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="classes">Classes</h1>
-<ul>
-<li><strong>namespace <a href="../namespaces/namespaceEngine.md">Engine</a></strong> <br>This namespace contains all of the necessary engine components. <ul>
-<li><strong>namespace <a href="../namespaces/namespaceEngine_1_1Assets.md">Assets</a></strong> <ul>
-<li><strong>class <a href="classEngine_1_1Assets_1_1Asset.md">Asset</a></strong> <ul>
-<li><strong>union <a href="unionEngine_1_1Assets_1_1Asset_1_1Event.md">Event</a></strong> <ul>
-<li><strong>struct <a href="structEngine_1_1Assets_1_1Asset_1_1Event_1_1Loaded.md">Loaded</a></strong> </li>
-<li><strong>struct <a href="structEngine_1_1Assets_1_1Asset_1_1Event_1_1Unloaded.md">Unloaded</a></strong> </li>
-<li><strong>struct <a href="structEngine_1_1Assets_1_1Asset_1_1Event_1_1Waiting.md">Waiting</a></strong> </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><strong>namespace <a href="../namespaces/namespaceEngine_1_1Audio.md">Audio</a></strong> <ul>
-<li><strong>class <a href="classEngine_1_1Audio_1_1AudioBuffer.md">AudioBuffer</a></strong> <br><em>A simple audio buffer to hold PCM samples</em><ul>
-<li><strong>struct <a href="structEngine_1_1Audio_1_1AudioBuffer_1_1TypedAudioData.md">TypedAudioData</a></strong> <br>Use this to populate the buffer. </li>
-</ul>
-</li>
-<li><strong>class <a href="classEngine_1_1Audio_1_1AudioManager.md">AudioManager</a></strong> <br>An audio manager that <em>accepts</em> multiple <strong><a href="classEngine_1_1Audio_1_1AudioBuffer.md">Audio::AudioBuffer</a></strong> instances. </li>
-</ul>
-</li>
-<li><strong>class <a href="classEngine_1_1Exception.md">Exception</a></strong> </li>
-<li><strong>namespace <a href="../namespaces/namespaceEngine_1_1Graphics.md">Graphics</a></strong> <ul>
-<li><strong>class <a href="classEngine_1_1Graphics_1_1Framebuffer.md">Framebuffer</a></strong> </li>
-<li><strong>class <a href="classEngine_1_1Graphics_1_1Handle.md">Handle</a></strong> </li>
-<li><strong>interface <a href="classEngine_1_1Graphics_1_1Texture.md">Texture</a></strong> <br>This is a base texture class that serves as a base class for other texture types. </li>
-<li><strong>class <a href="classEngine_1_1Graphics_1_1Texture2D.md">Texture2D</a></strong> </li>
-<li><strong>class <a href="classEngine_1_1Graphics_1_1Texture3D.md">Texture3D</a></strong> <br>Some deprecated class. </li>
-</ul>
-</li>
-<li><strong>namespace <a href="../namespaces/namespaceEngine_1_1Gui.md">Gui</a></strong> <ul>
-<li><strong>class <a href="classEngine_1_1Gui_1_1GuiWidget.md">GuiWidget</a></strong> <br>Some generic gui widget class. </li>
-</ul>
-</li>
-<li><strong>namespace <a href="../namespaces/namespaceEngine_1_1Utils.md">Utils</a></strong> <ul>
-<li><strong>class <a href="classEngine_1_1Utils_1_1ArrayView.md">ArrayView</a></strong> <br>Filesystem path utility functions. </li>
-<li><strong>namespace <a href="../namespaces/namespaceEngine_1_1Utils_1_1Path.md">Path</a></strong> <br>Filesystem path utility functions. </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../namespaces/namespaceEngine.md">Engine</a></td>
+<td>This namespace contains all of the necessary engine components. <br><sup><span style="color:green">(namespace)</span></sup></td>
+</tr>
+<tr>
+<td><a href="../namespaces/namespaceEngine_1_1Assets.md">Assets</a></td>
+<td><br><sup><span style="color:green">(namespace)</span></sup></td>
+</tr>
+<tr>
+<td><a href="classEngine_1_1Assets_1_1Asset.md">Asset</a></td>
+<td><br><sup><span style="color:green">(class)</span></sup></td>
+</tr>
+<tr>
+<td><a href="unionEngine_1_1Assets_1_1Asset_1_1Event.md">Event</a></td>
+<td><br><sup><span style="color:green">(union)</span></sup></td>
+</tr>
+<tr>
+<td><a href="structEngine_1_1Assets_1_1Asset_1_1Event_1_1Loaded.md">Loaded</a></td>
+<td><br><sup><span style="color:green">(struct)</span></sup></td>
+</tr>
+<tr>
+<td><a href="structEngine_1_1Assets_1_1Asset_1_1Event_1_1Unloaded.md">Unloaded</a></td>
+<td><br><sup><span style="color:green">(struct)</span></sup></td>
+</tr>
+<tr>
+<td><a href="structEngine_1_1Assets_1_1Asset_1_1Event_1_1Waiting.md">Waiting</a></td>
+<td><br><sup><span style="color:green">(struct)</span></sup></td>
+</tr>
+<tr>
+<td><a href="../namespaces/namespaceEngine_1_1Audio.md">Audio</a></td>
+<td><br><sup><span style="color:green">(namespace)</span></sup></td>
+</tr>
+<tr>
+<td><a href="classEngine_1_1Audio_1_1AudioBuffer.md">AudioBuffer</a></td>
+<td><em>A simple audio buffer to hold PCM samples</em><br><sup><span style="color:green">(class)</span></sup></td>
+</tr>
+<tr>
+<td><a href="structEngine_1_1Audio_1_1AudioBuffer_1_1TypedAudioData.md">TypedAudioData</a></td>
+<td>Use this to populate the buffer. <br><sup><span style="color:green">(struct)</span></sup></td>
+</tr>
+<tr>
+<td><a href="classEngine_1_1Audio_1_1AudioManager.md">AudioManager</a></td>
+<td>An audio manager that <em>accepts</em> multiple <strong><a href="classEngine_1_1Audio_1_1AudioBuffer.md">Audio::AudioBuffer</a></strong> instances. <br><sup><span style="color:green">(class)</span></sup></td>
+</tr>
+<tr>
+<td><a href="classEngine_1_1Exception.md">Exception</a></td>
+<td><br><sup><span style="color:green">(class)</span></sup></td>
+</tr>
+<tr>
+<td><a href="../namespaces/namespaceEngine_1_1Graphics.md">Graphics</a></td>
+<td><br><sup><span style="color:green">(namespace)</span></sup></td>
+</tr>
+<tr>
+<td><a href="classEngine_1_1Graphics_1_1Framebuffer.md">Framebuffer</a></td>
+<td><br><sup><span style="color:green">(class)</span></sup></td>
+</tr>
+<tr>
+<td><a href="classEngine_1_1Graphics_1_1Handle.md">Handle</a></td>
+<td><br><sup><span style="color:green">(class)</span></sup></td>
+</tr>
+<tr>
+<td><a href="classEngine_1_1Graphics_1_1Texture.md">Texture</a></td>
+<td>This is a base texture class that serves as a base class for other texture types. <br><sup><span style="color:green">(interface)</span></sup></td>
+</tr>
+<tr>
+<td><a href="classEngine_1_1Graphics_1_1Texture2D.md">Texture2D</a></td>
+<td><br><sup><span style="color:green">(class)</span></sup></td>
+</tr>
+<tr>
+<td><a href="classEngine_1_1Graphics_1_1Texture3D.md">Texture3D</a></td>
+<td>Some deprecated class. <br><sup><span style="color:green">(class)</span></sup></td>
+</tr>
+<tr>
+<td><a href="../namespaces/namespaceEngine_1_1Gui.md">Gui</a></td>
+<td><br><sup><span style="color:green">(namespace)</span></sup></td>
+</tr>
+<tr>
+<td><a href="classEngine_1_1Gui_1_1GuiWidget.md">GuiWidget</a></td>
+<td>Some generic gui widget class. <br><sup><span style="color:green">(class)</span></sup></td>
+</tr>
+<tr>
+<td><a href="../namespaces/namespaceEngine_1_1Utils.md">Utils</a></td>
+<td><br><sup><span style="color:green">(namespace)</span></sup></td>
+</tr>
+<tr>
+<td><a href="classEngine_1_1Utils_1_1ArrayView.md">ArrayView</a></td>
+<td>Filesystem path utility functions. <br><sup><span style="color:green">(class)</span></sup></td>
+</tr>
+<tr>
+<td><a href="../namespaces/namespaceEngine_1_1Utils_1_1Path.md">Path</a></td>
+<td>Filesystem path utility functions. <br><sup><span style="color:green">(namespace)</span></sup></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<p>Updated on 2022-11-15 at 04:12:35 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
 
                                 
                                 </section>
@@ -1176,7 +1235,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Classes","level":"1.3","depth":1,"next":{"title":"Engine::Exception","level":"1.3.1","depth":2,"path":"Classes/classEngine_1_1Exception.md","ref":"Classes/classEngine_1_1Exception.md","articles":[]},"previous":{"title":"GitHub","level":"1.2","depth":1,"url":"https://github.com/alandefreitas/doxybook","ref":"https://github.com/alandefreitas/doxybook","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Doxybook Example","gitbook":"*"},"file":{"path":"classes/README.md","mtime":"2022-11-15T04:12:35.012Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-15T04:13:03.824Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Classes","level":"1.3","depth":1,"next":{"title":"Engine::Exception","level":"1.3.1","depth":2,"path":"Classes/classEngine_1_1Exception.md","ref":"Classes/classEngine_1_1Exception.md","articles":[]},"previous":{"title":"GitHub","level":"1.2","depth":1,"url":"https://github.com/alandefreitas/doxybook","ref":"https://github.com/alandefreitas/doxybook","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Doxybook Example","gitbook":"*"},"file":{"path":"classes/README.md","mtime":"2022-11-17T09:14:00.590Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-17T09:14:33.662Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

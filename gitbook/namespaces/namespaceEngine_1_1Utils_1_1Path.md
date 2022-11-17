@@ -6,36 +6,93 @@ summary: Filesystem path utility functions.
 
 # Engine::Utils::Path
 
-**Module:** **[An example game engine](/modules/group__Engine.md)** **/** **[Some useful utilities](/modules/group__Utils.md)**
+> Filesystem path utility functions. 
 
-Filesystem path utility functions. 
+
+
+**[An example game engine](/libraries/group__Engine.md)** **/** **[Some useful utilities](/libraries/group__Utils.md)** **/** 
+**[Path](/namespaces/namespaceEngine_1_1Utils_1_1Path.md)**
+
+## Functions
+| Member Functions | Description |
+| -------------- | -------------- |
+| **[getFilename](/namespaces/namespaceEngine_1_1Utils_1_1Path.md#function-getfilename)** |  <sup><span style="color:green">(function)</span></sup> |
+| **[getExtension](/namespaces/namespaceEngine_1_1Utils_1_1Path.md#function-getextension)** |  <sup><span style="color:green">(function)</span></sup> |
+
+
+
 
 ## Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| std::string | **[getFilename](/namespaces/namespaceEngine_1_1Utils_1_1Path.md#function-getfilename)**(const std::string & path) |
-| std::string | **[getExtension](/namespaces/namespaceEngine_1_1Utils_1_1Path.md#function-getextension)**(const std::string & path) |
-
-
-## Functions Documentation
-
 ### function getFilename
 
-```cpp
-std::string getFilename(
-    const std::string & path
-)
+
+<sup>Defined in header [`<src/Utils/Path.hpp>`](/files/Path_8hpp.md#file-path.hpp)</sup>
+
+```cpp 
+std::string
+getFilename(const std::string & path);
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
 
 
 ### function getExtension
 
-```cpp
-std::string getExtension(
-    const std::string & path
-)
+
+<sup>Defined in header [`<src/Utils/Path.hpp>`](/files/Path_8hpp.md#file-path.hpp)</sup>
+
+```cpp 
+std::string
+getExtension(const std::string & path);
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
+
 
 
 
@@ -44,4 +101,4 @@ std::string getExtension(
 
 -------------------------------
 
-Updated on 2022-11-15 at 04:12:35 +0000
+<sub>Updated on 2022-11-17</sub>

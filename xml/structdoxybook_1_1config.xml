@@ -49,6 +49,21 @@
         </inbodydescription>
         <location file="doxybook/config.hpp" line="28" column="14" bodyfile="doxybook/config.hpp" bodystart="28" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1a03e93af827781be6c5e5d2ace7a6c5b1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doxybook::config::undocumented_macros</definition>
+        <argsstring></argsstring>
+        <name>undocumented_macros</name>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+<para>Whether we should allow undocumented macros. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="31" column="14" bodyfile="doxybook/config.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1ac788bd3a1dda96c00c87312fe0e488eb" prot="public" static="no" mutable="no">
         <type>bool</type>
         <definition>bool doxybook::config::index_in_folders</definition>
@@ -63,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="34" column="14" bodyfile="doxybook/config.hpp" bodystart="34" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="37" column="14" bodyfile="doxybook/config.hpp" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a6ecc6d72c8be164e58d38cb2d3d1ee7e" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -78,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="37" column="14" bodyfile="doxybook/config.hpp" bodystart="37" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="40" column="14" bodyfile="doxybook/config.hpp" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a7cf8d630074fae411c2447af9c886455" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -93,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="40" column="21" bodyfile="doxybook/config.hpp" bodystart="40" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="43" column="21" bodyfile="doxybook/config.hpp" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a72414ac533cb2545847562229b17ba80" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -108,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="43" column="21" bodyfile="doxybook/config.hpp" bodystart="43" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="46" column="21" bodyfile="doxybook/config.hpp" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1ac8936b23e332acded5b6e96f108f29ab" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -123,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="46" column="21" bodyfile="doxybook/config.hpp" bodystart="46" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="49" column="21" bodyfile="doxybook/config.hpp" bodystart="49" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a8f173492552faaa67f2f77be1973182e" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -138,7 +153,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="49" column="21" bodyfile="doxybook/config.hpp" bodystart="49" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="52" column="21" bodyfile="doxybook/config.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdoxybook_1_1config_1adce76a994d5cdba0f3752459ea698c56" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool doxybook::config::replaceUnderscoresInAnchors</definition>
+        <argsstring></argsstring>
+        <name>replaceUnderscoresInAnchors</name>
+        <initializer>{ true }</initializer>
+        <briefdescription>
+<para>Replace underscores with hyphens in anchors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/config.hpp" line="55" column="14" bodyfile="doxybook/config.hpp" bodystart="55" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -156,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="57" column="14" bodyfile="doxybook/config.hpp" bodystart="57" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="63" column="14" bodyfile="doxybook/config.hpp" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a427cc91dc53a2c05a5fabbf98c0de5d4" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -171,7 +201,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="60" column="14" bodyfile="doxybook/config.hpp" bodystart="60" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="66" column="14" bodyfile="doxybook/config.hpp" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1abad2ae7aa20d7804e6ddf1fb0a418c61" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -186,7 +216,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="63" column="21" bodyfile="doxybook/config.hpp" bodystart="63" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="69" column="21" bodyfile="doxybook/config.hpp" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1aadc0f83509eb270f26c4ce87a96fba3d" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -201,7 +231,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="66" column="14" bodyfile="doxybook/config.hpp" bodystart="66" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="72" column="14" bodyfile="doxybook/config.hpp" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1afc6d673c832a7cfe45861d05ccc31941" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -216,7 +246,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="69" column="14" bodyfile="doxybook/config.hpp" bodystart="69" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="75" column="14" bodyfile="doxybook/config.hpp" bodystart="75" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -226,7 +256,7 @@
         <definition>std::string doxybook::config::folder_groups_name</definition>
         <argsstring></argsstring>
         <name>folder_groups_name</name>
-        <initializer>{ &quot;modules&quot; }</initializer>
+        <initializer>{ &quot;libraries&quot; }</initializer>
         <briefdescription>
 <para>The modules folder name. </para>
         </briefdescription>
@@ -234,7 +264,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="77" column="21" bodyfile="doxybook/config.hpp" bodystart="77" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="83" column="21" bodyfile="doxybook/config.hpp" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a5c438c3d226f03e1cc55383217887c20" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -249,7 +279,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="80" column="21" bodyfile="doxybook/config.hpp" bodystart="80" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="86" column="21" bodyfile="doxybook/config.hpp" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1ad076b03147d75a4f94ed1b47f34ae270" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -264,7 +294,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="83" column="21" bodyfile="doxybook/config.hpp" bodystart="83" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="89" column="21" bodyfile="doxybook/config.hpp" bodystart="89" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1ac58da62ac7fa93f0873c239d66bcac44" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -279,7 +309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="86" column="21" bodyfile="doxybook/config.hpp" bodystart="86" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="92" column="21" bodyfile="doxybook/config.hpp" bodystart="92" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a2cca5d9665fdc6a8b7286d5f7afe230a" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -294,7 +324,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="89" column="21" bodyfile="doxybook/config.hpp" bodystart="89" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="95" column="21" bodyfile="doxybook/config.hpp" bodystart="95" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a0df998804de42bac3ee561dfa522f1e7" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -309,7 +339,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="92" column="21" bodyfile="doxybook/config.hpp" bodystart="92" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="98" column="21" bodyfile="doxybook/config.hpp" bodystart="98" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -327,7 +357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="100" column="21" bodyfile="doxybook/config.hpp" bodystart="100" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="106" column="21" bodyfile="doxybook/config.hpp" bodystart="106" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a43584497c87909fe7b8c5a4ffe74f215" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -342,7 +372,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="103" column="21" bodyfile="doxybook/config.hpp" bodystart="103" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="109" column="21" bodyfile="doxybook/config.hpp" bodystart="109" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a8268f12eb8e22b682cd89777d862c191" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -357,7 +387,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="106" column="21" bodyfile="doxybook/config.hpp" bodystart="106" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="112" column="21" bodyfile="doxybook/config.hpp" bodystart="112" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a295291081d33414662a5105ffd94bee6" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -372,7 +402,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="109" column="21" bodyfile="doxybook/config.hpp" bodystart="109" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="115" column="21" bodyfile="doxybook/config.hpp" bodystart="115" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a40f4a16e3cac894d16609f882daec392" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -387,7 +417,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="112" column="21" bodyfile="doxybook/config.hpp" bodystart="112" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="118" column="21" bodyfile="doxybook/config.hpp" bodystart="118" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1acb11cb3f9e691362acb8d6118e0de04b" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -402,7 +432,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="115" column="21" bodyfile="doxybook/config.hpp" bodystart="115" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="121" column="21" bodyfile="doxybook/config.hpp" bodystart="121" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -420,7 +450,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="123" column="21" bodyfile="doxybook/config.hpp" bodystart="123" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="129" column="21" bodyfile="doxybook/config.hpp" bodystart="129" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a9be6a2b58df4ff1fe09b14f82c9dcfff" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -435,7 +465,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="126" column="21" bodyfile="doxybook/config.hpp" bodystart="126" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="132" column="21" bodyfile="doxybook/config.hpp" bodystart="132" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a47f131ae3c605506310ac0fee29a828c" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -450,7 +480,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="129" column="21" bodyfile="doxybook/config.hpp" bodystart="129" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="135" column="21" bodyfile="doxybook/config.hpp" bodystart="135" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a1679060ce882ceb3b1f129edb81aa054" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -465,7 +495,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="132" column="21" bodyfile="doxybook/config.hpp" bodystart="132" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="138" column="21" bodyfile="doxybook/config.hpp" bodystart="138" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1ad998bed6d285cfafe0e6bf955d1ff8e6" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -480,7 +510,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="135" column="21" bodyfile="doxybook/config.hpp" bodystart="135" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="141" column="21" bodyfile="doxybook/config.hpp" bodystart="141" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a844c8da572bd8e1cc62cdd0f19003d9d" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -495,7 +525,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="138" column="21" bodyfile="doxybook/config.hpp" bodystart="138" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="144" column="21" bodyfile="doxybook/config.hpp" bodystart="144" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1af3c46b601c5ad49a1dbfa3d9bb21e086" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -510,7 +540,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="141" column="21" bodyfile="doxybook/config.hpp" bodystart="141" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="147" column="21" bodyfile="doxybook/config.hpp" bodystart="147" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a6f112d1e62b53d7af8d3001567faf2dc" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -525,7 +555,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="144" column="21" bodyfile="doxybook/config.hpp" bodystart="144" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="150" column="21" bodyfile="doxybook/config.hpp" bodystart="150" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1ac9a5e7454c7953770e172b57288cb977" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -540,7 +570,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="147" column="21" bodyfile="doxybook/config.hpp" bodystart="147" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="153" column="21" bodyfile="doxybook/config.hpp" bodystart="153" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a2e439469ee8e1ba26f93c8b1498aeb44" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -555,7 +585,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="150" column="21" bodyfile="doxybook/config.hpp" bodystart="150" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="156" column="21" bodyfile="doxybook/config.hpp" bodystart="156" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1aecce57b00d1de6a0f148a8a0b46de992" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -570,7 +600,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="153" column="21" bodyfile="doxybook/config.hpp" bodystart="153" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="159" column="21" bodyfile="doxybook/config.hpp" bodystart="159" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -588,7 +618,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="161" column="21" bodyfile="doxybook/config.hpp" bodystart="161" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="167" column="21" bodyfile="doxybook/config.hpp" bodystart="167" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a8f9c32ab2fc00daba0f9ccbf030dc148" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -603,7 +633,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="164" column="21" bodyfile="doxybook/config.hpp" bodystart="164" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="170" column="21" bodyfile="doxybook/config.hpp" bodystart="170" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1af7ee5cf94d20f0f7fe4622237efe9fc5" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -618,7 +648,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="167" column="21" bodyfile="doxybook/config.hpp" bodystart="167" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="173" column="21" bodyfile="doxybook/config.hpp" bodystart="173" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1abfeb8950aa0b4f5b351c7e77a86da8a3" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -633,7 +663,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="170" column="21" bodyfile="doxybook/config.hpp" bodystart="170" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="176" column="21" bodyfile="doxybook/config.hpp" bodystart="176" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a71d5380a694bfcd8a91030a75e23e5f0" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -648,7 +678,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="173" column="21" bodyfile="doxybook/config.hpp" bodystart="173" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="179" column="21" bodyfile="doxybook/config.hpp" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a69ad0352e6e08acba44a1071f0d2ecf4" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -663,7 +693,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="176" column="21" bodyfile="doxybook/config.hpp" bodystart="176" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="182" column="21" bodyfile="doxybook/config.hpp" bodystart="182" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -681,7 +711,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="184" column="21" bodyfile="doxybook/config.hpp" bodystart="184" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="190" column="21" bodyfile="doxybook/config.hpp" bodystart="190" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a2586b149bb300369dfd6e9e686381244" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -696,14 +726,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="187" column="21" bodyfile="doxybook/config.hpp" bodystart="187" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="193" column="21" bodyfile="doxybook/config.hpp" bodystart="193" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1ad78e0c06335814e7ea7d0d6241882a59" prot="public" static="no" mutable="no">
         <type>std::string</type>
         <definition>std::string doxybook::config::index_groups_title</definition>
         <argsstring></argsstring>
         <name>index_groups_title</name>
-        <initializer>{ &quot;Modules&quot; }</initializer>
+        <initializer>{ &quot;Libraries&quot; }</initializer>
         <briefdescription>
 <para>The title for groups in index pages. </para>
         </briefdescription>
@@ -711,7 +741,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="190" column="21" bodyfile="doxybook/config.hpp" bodystart="190" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="196" column="21" bodyfile="doxybook/config.hpp" bodystart="196" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a93eaf443312bce9269bfc86fc57034a1" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -726,7 +756,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="193" column="21" bodyfile="doxybook/config.hpp" bodystart="193" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="199" column="21" bodyfile="doxybook/config.hpp" bodystart="199" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1adadb628bf81d113e255bc2a4ccc2c8c0" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -741,7 +771,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="196" column="21" bodyfile="doxybook/config.hpp" bodystart="196" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="202" column="21" bodyfile="doxybook/config.hpp" bodystart="202" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1aa1a53e85fbf236c681ad7332b1938dd1" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -756,7 +786,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="199" column="21" bodyfile="doxybook/config.hpp" bodystart="199" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="205" column="21" bodyfile="doxybook/config.hpp" bodystart="205" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -775,7 +805,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="210" column="21" bodyfile="doxybook/config.hpp" bodystart="210" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="216" column="21" bodyfile="doxybook/config.hpp" bodystart="216" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a4220f0769d7ea4709380f021bbdce405" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" kindref="member">folder_category</ref> &gt;</type>
@@ -794,7 +824,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="213" column="21" bodyfile="doxybook/config.hpp" bodystart="213" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="219" column="21" bodyfile="doxybook/config.hpp" bodystart="219" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -812,7 +842,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="225" column="21" bodyfile="doxybook/config.hpp" bodystart="225" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="231" column="21" bodyfile="doxybook/config.hpp" bodystart="231" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1a9dcfbab45de43bc1fbb95245591ee4a2" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -827,7 +857,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="228" column="21" bodyfile="doxybook/config.hpp" bodystart="228" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="234" column="21" bodyfile="doxybook/config.hpp" bodystart="234" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1aca60a1c61c1d7c83d0466204f9faa8e1" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -842,7 +872,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="231" column="21" bodyfile="doxybook/config.hpp" bodystart="231" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="237" column="21" bodyfile="doxybook/config.hpp" bodystart="237" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdoxybook_1_1config_1acf86d69f8bc49d544b3c9219b4bdb7b3" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -857,24 +887,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="234" column="21" bodyfile="doxybook/config.hpp" bodystart="234" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdoxybook_1_1config_1adce76a994d5cdba0f3752459ea698c56" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool doxybook::config::replaceUnderscoresInAnchors</definition>
-        <argsstring></argsstring>
-        <name>replaceUnderscoresInAnchors</name>
-        <initializer>{ true }</initializer>
-        <briefdescription>
-<para>Replace underscores with hyphens in anchors. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="doxybook/config.hpp" line="239" column="14" bodyfile="doxybook/config.hpp" bodystart="239" bodyend="-1"/>
+        <location file="doxybook/config.hpp" line="240" column="21" bodyfile="doxybook/config.hpp" bodystart="240" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -882,7 +895,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="doxybook/config.hpp" line="17" column="17" bodyfile="doxybook/config.hpp" bodystart="17" bodyend="240"/>
+    <location file="doxybook/config.hpp" line="17" column="17" bodyfile="doxybook/config.hpp" bodystart="17" bodyend="243"/>
     <listofallmembers>
       <member refid="structdoxybook_1_1config_1a72414ac533cb2545847562229b17ba80" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>base_url</name></member>
       <member refid="structdoxybook_1_1config_1a427cc91dc53a2c05a5fabbf98c0de5d4" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>copy_images</name></member>
@@ -939,6 +952,7 @@
       <member refid="structdoxybook_1_1config_1a2e439469ee8e1ba26f93c8b1498aeb44" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_kind_page</name></member>
       <member refid="structdoxybook_1_1config_1a9be6a2b58df4ff1fe09b14f82c9dcfff" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_kind_struct</name></member>
       <member refid="structdoxybook_1_1config_1a47f131ae3c605506310ac0fee29a828c" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>template_kind_union</name></member>
+      <member refid="structdoxybook_1_1config_1a03e93af827781be6c5e5d2ace7a6c5b1" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>undocumented_macros</name></member>
       <member refid="structdoxybook_1_1config_1aae53274114d2446c59cbff85a4c1f999" prot="public" virt="non-virtual"><scope>doxybook::config</scope><name>use_folders</name></member>
     </listofallmembers>
   </compounddef>

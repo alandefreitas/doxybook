@@ -7,49 +7,28 @@ title: src/Exception.hpp
 
 
 
+
+```cpp
+#include <src/Exception.hpp>
+```
+
 ## Namespaces
 
-| Name           |
-| -------------- |
-| **[Engine](/namespaces/namespaceEngine.md)** <br>This namespace contains all of the necessary engine components.  |
+| Name           | Description    |
+| -------------- | -------------- |
+| **[Engine](/namespaces/namespaceEngine.md)** | This namespace contains all of the necessary engine components.  |
 
 ## Classes
 
-|                | Name           |
+| Classes        | Description    |
 | -------------- | -------------- |
-| class | **[Engine::Exception](/classes/classEngine_1_1Exception.md)**  |
+| **[Exception](/classes/classEngine_1_1Exception.md)** | Engine::Exception<br> <sup><span style="color:green">(class)</span></sup> |
 
 
 
 
-## Source code
-
-```cpp
-#pragma once
-#include <exception>
-#include <string>
-
-namespace Engine {
-    class Exception: public std::exception {
-    public:
-        Exception() = default;
-
-        explicit Exception(std::string msg)
-            : msg(std::move(msg)) {
-
-        }
-
-        const char* what() const throw() override {
-            return msg.c_str();
-        }
-
-    private:
-        std::string msg;
-    };
-}
-```
 
 
 -------------------------------
 
-Updated on 2022-11-15 at 04:12:35 +0000
+<sub>Updated on 2022-11-17</sub>

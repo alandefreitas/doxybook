@@ -5,15 +5,21 @@
   <meta name="generator" content="Hugo 0.105.0">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Engine::Graphics::Handle # Module: An example game engine / Graphical related classes
-#include &lt;Handle.hpp&gt;
-Inherited by Engine::Graphics::Texture
-Public Functions # Name Handle() =default virtual ~Handle() =default int getHandle() const Protected Attributes # Name int handle Public Functions Documentation # function Handle # Handle() =default function ~Handle # virtual ~Handle() =default function getHandle # inline int getHandle() const Protected Attributes Documentation # variable handle # int handle; Updated on 2022-11-15 at 04:12:34 &#43;0000">
+<meta name="description" content="Engine::Graphics::Handle # An example game engine / Graphical related classes / Handle
+Defined in header &lt;src/Graphics/Handle.hpp&gt;
+class Handle; Inherited by Texture
+Public Functions # Member Functions Description (constructor) = default (function) (destructor) = default (virtual function) getHandle const (function) Protected Attributes # Member Protected Attributes Description handle int (protected variable) Public Functions # function Handle # Defined in header &lt;src/Graphics/Handle.hpp&gt;
+Handle() = default; Exception Safety
+Basic exception guarantee.
+function ~Handle # Defined in header &lt;src/Graphics/Handle.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Engine::Graphics::Handle" />
-<meta property="og:description" content="Engine::Graphics::Handle # Module: An example game engine / Graphical related classes
-#include &lt;Handle.hpp&gt;
-Inherited by Engine::Graphics::Texture
-Public Functions # Name Handle() =default virtual ~Handle() =default int getHandle() const Protected Attributes # Name int handle Public Functions Documentation # function Handle # Handle() =default function ~Handle # virtual ~Handle() =default function getHandle # inline int getHandle() const Protected Attributes Documentation # variable handle # int handle; Updated on 2022-11-15 at 04:12:34 &#43;0000" />
+<meta property="og:description" content="Engine::Graphics::Handle # An example game engine / Graphical related classes / Handle
+Defined in header &lt;src/Graphics/Handle.hpp&gt;
+class Handle; Inherited by Texture
+Public Functions # Member Functions Description (constructor) = default (function) (destructor) = default (virtual function) getHandle const (function) Protected Attributes # Member Protected Attributes Description handle int (protected variable) Public Functions # function Handle # Defined in header &lt;src/Graphics/Handle.hpp&gt;
+Handle() = default; Exception Safety
+Basic exception guarantee.
+function ~Handle # Defined in header &lt;src/Graphics/Handle." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://alandefreitas.github.io/doxybook/hugo-book/classes/classengine_1_1graphics_1_1handle/" /><meta property="article:section" content="classes" />
 
@@ -23,7 +29,7 @@ Public Functions # Name Handle() =default virtual ~Handle() =default int getHand
 <link rel="manifest" href="/doxybook/hugo-book/manifest.json">
 <link rel="icon" href="/doxybook/hugo-book/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/doxybook/hugo-book/book.min.68be0b7a9674f2a612ce0e9b2e9447ff4b7ac96546e06b642bfd3ded0ca490ef.css" integrity="sha256-aL4LepZ08qYSzg6bLpRH/0t6yWVG4GtkK/097QykkO8=">
-<script defer src="/doxybook/hugo-book/en.search.min.3a9de84db6c110c0c08ec1b7f2f43221ffa377ff45602830732ab15e5dbbe713.js" integrity="sha256-Op3oTbbBEMDAjsG38vQyIf&#43;jd/9FYCgwcyqxXl275xM="></script>
+<script defer src="/doxybook/hugo-book/en.search.min.aa37234520f223b4cf4a139b5a55b0fa24e845cc32067a9e0991781bb795328d.js" integrity="sha256-qjcjRSDyI7TPShObWlWw&#43;iToRcwyBnqeCZF4G7eVMo0="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -65,7 +71,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
 <li><a href="/doxybook/hugo-book/classes/">Classes</a></li>
 <li><a href="/doxybook/hugo-book/namespaces/">Namespaces</a></li>
-<li><a href="/doxybook/hugo-book/modules/">Modules</a></li>
+<li><a href="/doxybook/hugo-book/libraries/">Modules</a></li>
 <li><a href="/doxybook/hugo-book/files/">Files</a></li>
 <li><a href="/doxybook/hugo-book/pages/">Pages</a></li>
 <li><a href="/doxybook/hugo-book/examples/">Examples</a></li>
@@ -118,14 +124,14 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#public-functions">Public Functions</a></li>
     <li><a href="#protected-attributes">Protected Attributes</a></li>
-    <li><a href="#public-functions-documentation">Public Functions Documentation</a>
+    <li><a href="#public-functions-1">Public Functions</a>
       <ul>
         <li><a href="#function-handle">function Handle</a></li>
         <li><a href="#function-handle-1">function ~Handle</a></li>
         <li><a href="#function-gethandle">function getHandle</a></li>
       </ul>
     </li>
-    <li><a href="#protected-attributes-documentation">Protected Attributes Documentation</a>
+    <li><a href="#protected-attributes-1">Protected Attributes</a>
       <ul>
         <li><a href="#variable-handle">variable handle</a></li>
       </ul>
@@ -146,9 +152,12 @@ https://github.com/alex-shpak/hugo-book
   Engine::Graphics::Handle
   <a class="anchor" href="#enginegraphicshandle">#</a>
 </h1>
-<p><strong>Module:</strong> <strong><a href="/doxybook/hugo-book/modules/group__engine/">An example game engine</a></strong> <strong>/</strong> <strong><a href="/doxybook/hugo-book/modules/group__graphics/">Graphical related classes</a></strong></p>
-<p><code>#include &lt;Handle.hpp&gt;</code></p>
-<p>Inherited by <a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1texture/">Engine::Graphics::Texture</a></p>
+<p><strong><a href="/doxybook/hugo-book/libraries/group__engine/">An example game engine</a></strong> <strong>/</strong> <strong><a href="/doxybook/hugo-book/libraries/group__graphics/">Graphical related classes</a></strong> <strong>/</strong>
+<strong><a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1handle/">Handle</a></strong></p>
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/handle_8hpp/#file-handle.hpp"><code>&lt;src/Graphics/Handle.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Handle</span>;
+</span></span></code></pre></div><p><strong>Inherited by</strong> <a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1texture/">Texture</a></p>
 <h2 id="public-functions">
   Public Functions
   <a class="anchor" href="#public-functions">#</a>
@@ -156,22 +165,22 @@ https://github.com/alex-shpak/hugo-book
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Functions</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1handle/#function-handle">Handle</a></strong>() =default</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1handle/#function-handle">(constructor)</a></strong>  <!-- raw HTML omitted -->= default<!-- raw HTML omitted --></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted -->(function)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>virtual</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1handle/#function-~handle">~Handle</a></strong>() =default</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1handle/#function-~handle">(destructor)</a></strong>  <!-- raw HTML omitted -->= default<!-- raw HTML omitted --></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted -->(virtual function)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>int</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1handle/#function-gethandle">getHandle</a></strong>() const</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1handle/#function-gethandle">getHandle</a></strong> <!-- raw HTML omitted -->const<!-- raw HTML omitted --></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted -->(function)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 </tbody>
 </table>
@@ -182,47 +191,58 @@ https://github.com/alex-shpak/hugo-book
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Protected Attributes</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>int</td>
 <td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1handle/#variable-handle">handle</a></strong></td>
+<td><code>int</code><!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(protected variable)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 </tbody>
 </table>
-<h2 id="public-functions-documentation">
-  Public Functions Documentation
-  <a class="anchor" href="#public-functions-documentation">#</a>
+<h2 id="public-functions-1">
+  Public Functions
+  <a class="anchor" href="#public-functions-1">#</a>
 </h2>
 <h3 id="function-handle">
   function Handle
   <a class="anchor" href="#function-handle">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>Handle() <span style="color:#f92672">=</span><span style="color:#66d9ef">default</span>
-</span></span></code></pre></div><h3 id="function-handle-1">
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/handle_8hpp/#file-handle.hpp"><code>&lt;src/Graphics/Handle.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>Handle() <span style="color:#f92672">=</span> <span style="color:#66d9ef">default</span>;
+</span></span></code></pre></div><p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
+<h3 id="function-handle-1">
   function ~Handle
   <a class="anchor" href="#function-handle-1">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">virtual</span> <span style="color:#f92672">~</span>Handle() <span style="color:#f92672">=</span><span style="color:#66d9ef">default</span>
-</span></span></code></pre></div><h3 id="function-gethandle">
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/handle_8hpp/#file-handle.hpp"><code>&lt;src/Graphics/Handle.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">virtual</span> <span style="color:#f92672">~</span>Handle() <span style="color:#f92672">=</span> <span style="color:#66d9ef">default</span>;
+</span></span></code></pre></div><p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
+<h3 id="function-gethandle">
   function getHandle
   <a class="anchor" href="#function-gethandle">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">inline</span> <span style="color:#66d9ef">int</span> getHandle() <span style="color:#66d9ef">const</span>
-</span></span></code></pre></div><h2 id="protected-attributes-documentation">
-  Protected Attributes Documentation
-  <a class="anchor" href="#protected-attributes-documentation">#</a>
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/handle_8hpp/#file-handle.hpp"><code>&lt;src/Graphics/Handle.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">int</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">getHandle</span>() <span style="color:#66d9ef">const</span>;
+</span></span></code></pre></div><p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
+<h2 id="protected-attributes-1">
+  Protected Attributes
+  <a class="anchor" href="#protected-attributes-1">#</a>
 </h2>
 <h3 id="variable-handle">
   variable handle
   <a class="anchor" href="#variable-handle">#</a>
 </h3>
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/handle_8hpp/#file-handle.hpp"><code>&lt;src/Graphics/Handle.hpp&gt;</code></a><!-- raw HTML omitted --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> handle;
 </span></span></code></pre></div><hr>
-<p>Updated on 2022-11-15 at 04:12:34 +0000</p>
+<p><!-- raw HTML omitted -->Updated on 2022-11-17<!-- raw HTML omitted --></p>
 </article>
  
       
@@ -261,14 +281,14 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#public-functions">Public Functions</a></li>
     <li><a href="#protected-attributes">Protected Attributes</a></li>
-    <li><a href="#public-functions-documentation">Public Functions Documentation</a>
+    <li><a href="#public-functions-1">Public Functions</a>
       <ul>
         <li><a href="#function-handle">function Handle</a></li>
         <li><a href="#function-handle-1">function ~Handle</a></li>
         <li><a href="#function-gethandle">function getHandle</a></li>
       </ul>
     </li>
-    <li><a href="#protected-attributes-documentation">Protected Attributes Documentation</a>
+    <li><a href="#protected-attributes-1">Protected Attributes</a>
       <ul>
         <li><a href="#variable-handle">variable handle</a></li>
       </ul>

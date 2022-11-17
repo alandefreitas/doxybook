@@ -57,7 +57,7 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../index_groups/">Modules</a>
+                <li class="toctree-l1"><a class="reference internal" href="../../index_groups/">Libraries</a>
                 </li>
               </ul>
               <ul>
@@ -76,7 +76,7 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#public-functions">Public Functions</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#public-functions-documentation">Public Functions Documentation</a>
+    <li class="toctree-l2"><a class="reference internal" href="#public-functions_1">Public Functions</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#function-asset">function Asset</a>
     </li>
@@ -185,19 +185,19 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../files/dir_e0c1ede47f21c4a643a1257f949f98e0/">src/Assets</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Modules</span></p>
+              <p class="caption"><span class="caption-text">Libraries</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Assets/">Generic assets</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Assets/">Generic assets</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Audio/">Audio buffers and devices</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Audio/">Audio buffers and devices</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Engine/">An example game engine</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Engine/">An example game engine</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Graphics/">Graphical related classes</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Graphics/">Graphical related classes</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Gui/">Some gui related stuff and whatever</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Gui/">Some gui related stuff and whatever</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Utils/">Some useful utilities</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Utils/">Some useful utilities</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Namespaces</span></p>
@@ -257,8 +257,12 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="engineassetsasset">Engine::Assets::Asset</h1>
-<p><strong>Module:</strong> <strong><a href="/doxybook/mkdocs-readthedocs/modules/group__Engine/">An example game engine</a></strong> <strong>/</strong> <strong><a href="/doxybook/mkdocs-readthedocs/modules/group__Assets/">Generic assets</a></strong></p>
-<p><code>#include &lt;Asset.hpp&gt;</code></p>
+<p><strong><a href="/doxybook/mkdocs-readthedocs/libraries/group__Engine/">An example game engine</a></strong> <strong>/</strong> <strong><a href="/doxybook/mkdocs-readthedocs/libraries/group__Assets/">Generic assets</a></strong> <strong>/</strong> 
+<strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Assets_1_1Asset/">Asset</a></strong></p>
+<p><sup>Defined in header <a href="/doxybook/mkdocs-readthedocs/files/Asset_8hpp/#file-asset.hpp"><code>&lt;src/Assets/Asset.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">
+class Asset;
+</code></pre>
 <h2 id="public-classes">Public Classes</h2>
 <table>
 <thead>
@@ -278,57 +282,74 @@
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Functions</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Assets_1_1Asset/#function-asset">Asset</a></strong>(const std::string &amp; name)</td>
+<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Assets_1_1Asset/#function-asset">(constructor)</a></strong></td>
+<td><sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>virtual</td>
-<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Assets_1_1Asset/#function-~asset">~Asset</a></strong>() =0</td>
+<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Assets_1_1Asset/#function-~asset">(destructor)</a></strong>  = 0</td>
+<td><sup><span style="color:green">(virtual function)</span></sup></td>
 </tr>
 <tr>
-<td>virtual void</td>
-<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Assets_1_1Asset/#function-load">load</a></strong>()<br>Call this method to load the asset.</td>
+<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Assets_1_1Asset/#function-load">load</a></strong></td>
+<td>Call this method to load the asset. <br> <sup><span style="color:green">(virtual function)</span></sup></td>
 </tr>
 <tr>
-<td>virtual void</td>
-<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Assets_1_1Asset/#function-unload">unload</a></strong>()<br>Call this method to unload the asset.</td>
+<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Assets_1_1Asset/#function-unload">unload</a></strong></td>
+<td>Call this method to unload the asset. <br> <sup><span style="color:green">(virtual function)</span></sup></td>
 </tr>
 <tr>
-<td>const <a href="/doxybook/mkdocs-readthedocs/classes/unionEngine_1_1Assets_1_1Asset_1_1Event/">Event</a> &amp;</td>
-<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Assets_1_1Asset/#function-getevent">getEvent</a></strong>() const<br>Returns the current status of the asset.</td>
+<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Assets_1_1Asset/#function-getevent">getEvent</a></strong> <span style="color:green">const</span></td>
+<td>Returns the current status of the asset. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 </tbody>
 </table>
-<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h2 id="public-functions_1">Public Functions</h2>
 <h3 id="function-asset">function Asset</h3>
-<pre><code class="language-cpp">explicit Asset(
-    const std::string &amp; name
-)
+<p><sup>Defined in header <a href="/doxybook/mkdocs-readthedocs/files/Asset_8hpp/#file-asset.hpp"><code>&lt;src/Assets/Asset.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">explicit Asset(const std::string &amp; name);
 </code></pre>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-asset_1">function ~Asset</h3>
-<pre><code class="language-cpp">virtual ~Asset() =0
+<p><sup>Defined in header <a href="/doxybook/mkdocs-readthedocs/files/Asset_8hpp/#file-asset.hpp"><code>&lt;src/Assets/Asset.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">virtual ~Asset() = 0;
 </code></pre>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-load">function load</h3>
-<pre><code class="language-cpp">virtual void load()
+<p><sup>Defined in header <a href="/doxybook/mkdocs-readthedocs/files/Asset_8hpp/#file-asset.hpp"><code>&lt;src/Assets/Asset.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">virtual void
+load();
 </code></pre>
 <p>Call this method to load the asset. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-unload">function unload</h3>
-<pre><code class="language-cpp">virtual void unload()
+<p><sup>Defined in header <a href="/doxybook/mkdocs-readthedocs/files/Asset_8hpp/#file-asset.hpp"><code>&lt;src/Assets/Asset.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">virtual void
+unload();
 </code></pre>
 <p>Call this method to unload the asset. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-getevent">function getEvent</h3>
-<pre><code class="language-cpp">inline const Event &amp; getEvent() const
+<p><sup>Defined in header <a href="/doxybook/mkdocs-readthedocs/files/Asset_8hpp/#file-asset.hpp"><code>&lt;src/Assets/Asset.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">const Event &amp;
+getEvent() const;
 </code></pre>
 <p>Returns the current status of the asset. </p>
+<p><strong>Description</strong></p>
 <p>Use this to determine the state, for example if the assets is being loaded or unloaded. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <hr />
-<p>Updated on 2022-11-15 at 04:12:30 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
               
             </div>
           </div><footer>

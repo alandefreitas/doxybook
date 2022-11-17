@@ -57,7 +57,7 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../index_groups/">Modules</a>
+                <li class="toctree-l1"><a class="reference internal" href="../../index_groups/">Libraries</a>
                 </li>
               </ul>
               <ul>
@@ -142,8 +142,6 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#classes">Classes</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#source-code">Source code</a>
-    </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../Log_8hpp/">src/Utils/Log.hpp</a>
@@ -173,19 +171,19 @@
                   <li class="toctree-l1"><a class="reference internal" href="../dir_e0c1ede47f21c4a643a1257f949f98e0/">src/Assets</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Modules</span></p>
+              <p class="caption"><span class="caption-text">Libraries</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Assets/">Generic assets</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Assets/">Generic assets</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Audio/">Audio buffers and devices</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Audio/">Audio buffers and devices</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Engine/">An example game engine</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Engine/">An example game engine</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Graphics/">Graphical related classes</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Graphics/">Graphical related classes</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Gui/">Some gui related stuff and whatever</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Gui/">Some gui related stuff and whatever</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Utils/">Some useful utilities</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Utils/">Some useful utilities</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Namespaces</span></p>
@@ -245,19 +243,24 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="srcgraphicshandlehpp">src/Graphics/Handle.hpp</h1>
+<pre><code class="language-cpp">#include &lt;src/Graphics/Handle.hpp&gt;
+</code></pre>
 <h2 id="namespaces">Namespaces</h2>
 <table>
 <thead>
 <tr>
 <th>Name</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="/doxybook/mkdocs-readthedocs/namespaces/namespaceEngine/">Engine</a></strong> <br>This namespace contains all of the necessary engine components.</td>
+<td><strong><a href="/doxybook/mkdocs-readthedocs/namespaces/namespaceEngine/">Engine</a></strong></td>
+<td>This namespace contains all of the necessary engine components.</td>
 </tr>
 <tr>
 <td><strong><a href="/doxybook/mkdocs-readthedocs/namespaces/namespaceEngine_1_1Graphics/">Engine::Graphics</a></strong></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -265,44 +268,19 @@
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Classes</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>class</td>
-<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Graphics_1_1Handle/">Engine::Graphics::Handle</a></strong></td>
+<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Graphics_1_1Handle/">Handle</a></strong></td>
+<td>Engine::Graphics::Handle<br> <sup><span style="color:green">(class)</span></sup></td>
 </tr>
 </tbody>
 </table>
-<h2 id="source-code">Source code</h2>
-<pre><code class="language-cpp">#pragma once
-
-namespace Engine {
-    namespace Graphics {
-        class Handle {
-          public:
-            Handle() = default;
-            virtual ~Handle() = default;
-
-            int getHandle() const {
-                return handle;
-            }
-
-          protected:
-            // OpenGL handle
-            int handle;
-        };
-
-        inline int getHandle(Handle&amp; handle) {
-            return handle.getHandle();
-        }
-    } // namespace Graphics
-} // namespace Engine
-</code></pre>
 <hr />
-<p>Updated on 2022-11-15 at 04:12:30 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
               
             </div>
           </div><footer>

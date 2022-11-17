@@ -5,58 +5,150 @@ title: Engine::Graphics::Handle
 
 # Engine::Graphics::Handle
 
-**Module:** **[An example game engine](/modules/group__Engine.md)** **/** **[Graphical related classes](/modules/group__Graphics.md)**
+**[An example game engine](/libraries/group__Engine.md)** **/** **[Graphical related classes](/libraries/group__Graphics.md)** **/** 
+**[Handle](/classes/classEngine_1_1Graphics_1_1Handle.md)**
+
+<sup>Defined in header [`<src/Graphics/Handle.hpp>`](/files/Handle_8hpp.md#file-handle.hpp)</sup>
 
 
 
+```cpp
+
+class Handle;
+```
 
 
 
-`#include <Handle.hpp>`
-
-Inherited by [Engine::Graphics::Texture](/classes/classEngine_1_1Graphics_1_1Texture.md)
+**Inherited by** [Texture](/classes/classEngine_1_1Graphics_1_1Texture.md)
 
 ## Public Functions
-
-|                | Name           |
+| Member Functions | Description |
 | -------------- | -------------- |
-| | **[Handle](/classes/classEngine_1_1Graphics_1_1Handle.md#function-handle)**() =default |
-| virtual | **[~Handle](/classes/classEngine_1_1Graphics_1_1Handle.md#function-~handle)**() =default |
-| int | **[getHandle](/classes/classEngine_1_1Graphics_1_1Handle.md#function-gethandle)**() const |
+| **[(constructor)](/classes/classEngine_1_1Graphics_1_1Handle.md#function-handle)**  <span style="color:green">= default</span>|  <sup><span style="color:green">(function)</span></sup> |
+| **[(destructor)](/classes/classEngine_1_1Graphics_1_1Handle.md#function-~handle)**  <span style="color:green">= default</span>|  <sup><span style="color:green">(virtual function)</span></sup> |
+| **[getHandle](/classes/classEngine_1_1Graphics_1_1Handle.md#function-gethandle)** <span style="color:green">const</span>|  <sup><span style="color:green">(function)</span></sup> |
+
 
 ## Protected Attributes
 
-|                | Name           |
+| Member Protected Attributes| Description    |
 | -------------- | -------------- |
-| int | **[handle](/classes/classEngine_1_1Graphics_1_1Handle.md#variable-handle)**  |
+| **[handle](/classes/classEngine_1_1Graphics_1_1Handle.md#variable-handle)** | `int`<br> <sup><span style="color:green">(protected variable)</span></sup> |
 
-## Public Functions Documentation
+## Public Functions
 
 ### function Handle
 
-```cpp
-Handle() =default
+
+<sup>Defined in header [`<src/Graphics/Handle.hpp>`](/files/Handle_8hpp.md#file-handle.hpp)</sup>
+
+```cpp 
+Handle() = default;
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
 
 
 ### function ~Handle
 
-```cpp
-virtual ~Handle() =default
+
+<sup>Defined in header [`<src/Graphics/Handle.hpp>`](/files/Handle_8hpp.md#file-handle.hpp)</sup>
+
+```cpp 
+virtual ~Handle() = default;
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
 
 
 ### function getHandle
 
-```cpp
-inline int getHandle() const
+
+<sup>Defined in header [`<src/Graphics/Handle.hpp>`](/files/Handle_8hpp.md#file-handle.hpp)</sup>
+
+```cpp 
+int
+getHandle() const;
 ```
 
 
-## Protected Attributes Documentation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
+
+
+
+
+
+
+## Protected Attributes
 
 ### variable handle
 
+<sup>Defined in header [`<src/Graphics/Handle.hpp>`](/files/Handle_8hpp.md#file-handle.hpp)</sup>
 ```cpp
 int handle;
 ```
@@ -64,4 +156,4 @@ int handle;
 
 -------------------------------
 
-Updated on 2022-11-15 at 04:12:34 +0000
+<sub>Updated on 2022-11-17</sub>

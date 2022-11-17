@@ -525,7 +525,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="244" column="5" declfile="doxybook/config.hpp" declline="244" declcolumn="5"/>
+        <location file="doxybook/config.hpp" line="247" column="5" declfile="doxybook/config.hpp" declline="247" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="namespacedoxybook_1af87771565cc1dc76b11b7a96ac1776ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -547,7 +547,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="248" column="5" declfile="doxybook/config.hpp" declline="248" declcolumn="5"/>
+        <location file="doxybook/config.hpp" line="251" column="5" declfile="doxybook/config.hpp" declline="251" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="namespacedoxybook_1aed292e5ab86d34b3519f0ecd89b412d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -569,7 +569,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/config.hpp" line="252" column="5" declfile="doxybook/config.hpp" declline="252" declcolumn="5"/>
+        <location file="doxybook/config.hpp" line="255" column="5" declfile="doxybook/config.hpp" declline="255" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="namespacedoxybook_1a5ee16b3fde88767e4406291c62b5e5bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>

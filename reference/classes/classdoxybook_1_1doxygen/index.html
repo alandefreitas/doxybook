@@ -449,11 +449,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#public-functions-documentation" class="md-nav__link">
-    Public Functions Documentation
+  <a href="#public-functions_1" class="md-nav__link">
+    Public Functions
   </a>
   
-    <nav class="md-nav" aria-label="Public Functions Documentation">
+    <nav class="md-nav" aria-label="Public Functions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -499,6 +499,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#function-find_if" class="md-nav__link">
+    function find_if
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#function-get_cache" class="md-nav__link">
     function get_cache
   </a>
@@ -534,87 +541,120 @@
 
 
 <h1 id="doxybookdoxygen">doxybook::doxygen</h1>
+<p><sup>Defined in header <a href="/doxybook/reference/files/doxygen_8hpp/#file-doxygen.hpp"><code>&lt;doxybook/doxygen.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">doxygen</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
 <p>All the nodes representing the content of doxygen xml files. </p>
-<p><code>#include &lt;doxygen.hpp&gt;</code></p>
 <h2 id="public-functions">Public Functions</h2>
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Functions</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/#function-doxygen">doxygen</a></strong>(<a href="/doxybook/reference/classes/structdoxybook_1_1config/">config</a> const &amp; c)<br>Constructor.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/#function-doxygen">(constructor)</a></strong></td>
+<td>Constructor. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>virtual</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/#function-~doxygen">~doxygen</a></strong>() =default<br>Destructor.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/#function-~doxygen">(destructor)</a></strong>  <span style="color:green">= default</span></td>
+<td>Destructor. <br> <sup><span style="color:green">(virtual function)</span></sup></td>
 </tr>
 <tr>
-<td>void</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/#function-load">load</a></strong>(std::string const &amp; input_dir)<br>Load an xml directory generated with doxygen.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/#function-load">load</a></strong></td>
+<td>Load an xml directory generated with doxygen. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>void</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/#function-finalize">finalize</a></strong>(<a href="/doxybook/reference/classes/classdoxybook_1_1text__printer/">text_printer</a> const &amp; plain_printer, <a href="/doxybook/reference/classes/classdoxybook_1_1text__printer/">text_printer</a> const &amp; markdown_printer)<br>Finalize by printing the index with the printers.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/#function-finalize">finalize</a></strong></td>
+<td>Finalize by printing the index with the printers. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td><a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> const  &amp;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/#function-get-index">get_index</a></strong>() const<br>Get root node representing the index.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/#function-get-index">get_index</a></strong> <span style="color:green">const</span></td>
+<td>Get root node representing the index. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::shared_ptr&lt; <a href="/doxybook/reference/classes/classdoxybook_1_1node/">node</a> &gt;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/#function-find">find</a></strong>(std::string const &amp; refid) const<br>Find a node with the given ID.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/#function-find">find</a></strong> <span style="color:green">const</span></td>
+<td>Find a node with the given ID. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td><a href="/doxybook/reference/namespaces/namespacedoxybook/#using-node-cache-map">node_cache_map</a> const  &amp;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/#function-get-cache">get_cache</a></strong>() const<br>Get cache of nodes.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/#function-find-if">find_if</a></strong> <span style="color:green">const</span></td>
+<td>Find a node with the given condition. <br> <sup><span style="color:green">(function)</span></sup></td>
+</tr>
+<tr>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/#function-get-cache">get_cache</a></strong> <span style="color:green">const</span></td>
+<td>Get cache of nodes. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 </tbody>
 </table>
-<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h2 id="public-functions_1">Public Functions</h2>
 <h3 id="function-doxygen">function doxygen</h3>
-<div class="highlight"><pre><span></span><code><span class="k">explicit</span><span class="w"> </span><span class="n">doxygen</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">c</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/doxygen_8hpp/#file-doxygen.hpp"><code>&lt;doxybook/doxygen.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="k">explicit</span><span class="w"> </span><span class="n">doxygen</span><span class="p">(</span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">c</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 <p>Constructor. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-doxygen_1">function ~doxygen</h3>
-<div class="highlight"><pre><span></span><code><span class="k">virtual</span><span class="w"> </span><span class="o">~</span><span class="n">doxygen</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="k">default</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/doxygen_8hpp/#file-doxygen.hpp"><code>&lt;doxybook/doxygen.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="k">virtual</span><span class="w"> </span><span class="o">~</span><span class="n">doxygen</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Destructor. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-load">function load</h3>
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">load</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">input_dir</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/doxygen_8hpp/#file-doxygen.hpp"><code>&lt;doxybook/doxygen.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"></span>
+<span class="nf">load</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">input_dir</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 <p>Load an xml directory generated with doxygen. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-finalize">function finalize</h3>
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">finalize</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">plain_printer</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">markdown_printer</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/doxygen_8hpp/#file-doxygen.hpp"><code>&lt;doxybook/doxygen.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"></span>
+<span class="nf">finalize</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">plain_printer</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">markdown_printer</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 <p>Finalize by printing the index with the printers. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_index">function get_index</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_index</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/doxygen_8hpp/#file-doxygen.hpp"><code>&lt;doxybook/doxygen.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">node</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">get_index</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Get root node representing the index. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-find">function find</h3>
-<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">find</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">refid</span><span class="w"></span>
-<span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/doxygen_8hpp/#file-doxygen.hpp"><code>&lt;doxybook/doxygen.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">find</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">refid</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Find a node with the given ID. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
+<h3 id="function-find_if">function find_if</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/doxygen_8hpp/#file-doxygen.hpp"><code>&lt;doxybook/doxygen.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">find_if</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">bool</span><span class="p">(</span><span class="n">node</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="p">)</span><span class="o">&gt;</span><span class="w"> </span><span class="n">f</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+<p>Find a node with the given condition. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_cache">function get_cache</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="n">node_cache_map</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_cache</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/doxygen_8hpp/#file-doxygen.hpp"><code>&lt;doxybook/doxygen.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">node_cache_map</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">get_cache</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Get cache of nodes. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <hr />
-<p>Updated on 2022-11-15 at 04:12:28 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
 
 
   

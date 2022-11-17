@@ -196,7 +196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/doxybook/mkdocs-material/Classes" class="md-nav__link">
+      <a href="/doxybook/mkdocs-material/classes" class="md-nav__link">
         Classes
       </a>
     </li>
@@ -211,7 +211,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/doxybook/mkdocs-material/Namespaces" class="md-nav__link">
+      <a href="/doxybook/mkdocs-material/namespaces" class="md-nav__link">
         Namespaces
       </a>
     </li>
@@ -226,7 +226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/doxybook/mkdocs-material/Modules" class="md-nav__link">
+      <a href="/doxybook/mkdocs-material/libraries" class="md-nav__link">
         Modules
       </a>
     </li>
@@ -241,7 +241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/doxybook/mkdocs-material/Files" class="md-nav__link">
+      <a href="/doxybook/mkdocs-material/files" class="md-nav__link">
         Files
       </a>
     </li>
@@ -256,7 +256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/doxybook/mkdocs-material/Pages" class="md-nav__link">
+      <a href="/doxybook/mkdocs-material/pages" class="md-nav__link">
         Related Pages
       </a>
     </li>
@@ -271,7 +271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/doxybook/mkdocs-material/Examples" class="md-nav__link">
+      <a href="/doxybook/mkdocs-material/examples" class="md-nav__link">
         Examples
       </a>
     </li>
@@ -333,18 +333,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#detailed-description" class="md-nav__link">
-    Detailed Description
+  <a href="#public-types_1" class="md-nav__link">
+    Public Types
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#public-types-documentation" class="md-nav__link">
-    Public Types Documentation
-  </a>
-  
-    <nav class="md-nav" aria-label="Public Types Documentation">
+    <nav class="md-nav" aria-label="Public Types">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -360,11 +353,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#public-functions-documentation" class="md-nav__link">
-    Public Functions Documentation
+  <a href="#public-functions_1" class="md-nav__link">
+    Public Functions
   </a>
   
-    <nav class="md-nav" aria-label="Public Functions Documentation">
+    <nav class="md-nav" aria-label="Public Functions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -415,11 +408,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#protected-attributes-documentation" class="md-nav__link">
-    Protected Attributes Documentation
+  <a href="#protected-attributes_1" class="md-nav__link">
+    Protected Attributes
   </a>
   
-    <nav class="md-nav" aria-label="Protected Attributes Documentation">
+    <nav class="md-nav" aria-label="Protected Attributes">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -457,124 +450,14 @@
 
 
 <h1 id="enginegraphicstexture">Engine::Graphics::Texture</h1>
-<p><strong>Module:</strong> <strong><a href="/doxybook/mkdocs-material/modules/group__Engine/">An example game engine</a></strong> <strong>/</strong> <strong><a href="/doxybook/mkdocs-material/modules/group__Graphics/">Graphical related classes</a></strong></p>
-<p>This is a base texture class that serves as a base class for other texture types.  <a href="#detailed-description">More...</a></p>
-<p><code>#include &lt;Texture.hpp&gt;</code></p>
-<p>Inherits from <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Handle/">Engine::Graphics::Handle</a></p>
-<p>Inherited by <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Framebuffer/">Engine::Graphics::Framebuffer</a>, <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture2D/">Engine::Graphics::Texture2D</a>, <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture3D/">Engine::Graphics::Texture3D</a></p>
-<h2 id="public-types">Public Types</h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>enum class</td>
-<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#enum-type">Type</a></strong> { UNKNOWN = 0, RGBA_8, RGB_8, RGBA_16, RGB_16, RGBA_32, RGB_32}</td>
-</tr>
-</tbody>
-</table>
-<h2 id="public-functions">Public Functions</h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#function-texture">Texture</a></strong>(<a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#enum-type">Type</a> type)</td>
-</tr>
-<tr>
-<td>virtual</td>
-<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#function-~texture">~Texture</a></strong>() =default</td>
-</tr>
-<tr>
-<td>virtual int</td>
-<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#function-getwidth">getWidth</a></strong>() const =0<br>Returns the width of the texture in pixels.</td>
-</tr>
-<tr>
-<td>virtual int</td>
-<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#function-getheight">getHeight</a></strong>() const =0<br>Returns the height of the texture in pixels.</td>
-</tr>
-<tr>
-<td>virtual int</td>
-<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#function-getdepth">getDepth</a></strong>() const =0<br>Returns the depth of the texture in pixels.</td>
-</tr>
-<tr>
-<td>bool</td>
-<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#function-isloaded">isLoaded</a></strong>() const</td>
-</tr>
-</tbody>
-</table>
-<h2 id="protected-attributes">Protected Attributes</h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>bool</td>
-<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#variable-loaded">loaded</a></strong></td>
-</tr>
-<tr>
-<td><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#enum-type">Type</a></td>
-<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#variable-type">type</a></strong></td>
-</tr>
-</tbody>
-</table>
-<h2 id="additional-inherited-members">Additional inherited members</h2>
-<p><strong>Public Functions inherited from <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Handle/">Engine::Graphics::Handle</a></strong></p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Handle/#function-handle">Handle</a></strong>() =default</td>
-</tr>
-<tr>
-<td>virtual</td>
-<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Handle/#function-~handle">~Handle</a></strong>() =default</td>
-</tr>
-<tr>
-<td>int</td>
-<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Handle/#function-gethandle">getHandle</a></strong>() const</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Protected Attributes inherited from <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Handle/">Engine::Graphics::Handle</a></strong></p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>int</td>
-<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Handle/#variable-handle">handle</a></strong></td>
-</tr>
-</tbody>
-</table>
-<h2 id="detailed-description">Detailed Description</h2>
-<pre><code class="language-cpp">class Engine::Graphics::Texture;
+<p><strong><a href="/doxybook/mkdocs-material/libraries/group__Engine/">An example game engine</a></strong> <strong>/</strong> <strong><a href="/doxybook/mkdocs-material/libraries/group__Graphics/">Graphical related classes</a></strong> <strong>/</strong> 
+<strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/">Texture</a></strong></p>
+<p><sup>Defined in header <a href="/doxybook/mkdocs-material/files/Texture_8hpp/#file-texture.hpp"><code>&lt;src/Graphics/Texture.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">
+class Texture;
 </code></pre>
 <p>This is a base texture class that serves as a base class for other texture types. </p>
-<p><strong>Bug</strong>: This has some <strong>weird</strong> bug too! </p>
+<p><strong>Description</strong></p>
 <pre><code class="language-cpp">
 #include &lt;iostream&gt;
 #include &lt;memory&gt;
@@ -594,8 +477,122 @@ int main() {
 }
 </code></pre>
 <p><em>Filename: example-1.cpp</em></p>
-<h2 id="public-types-documentation">Public Types Documentation</h2>
+<p><strong>Bug</strong>: This has some <strong>weird</strong> bug too! </p>
+<p><strong>Inherits from</strong> <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Handle/">Handle</a></p>
+<p><strong>Inherited by</strong> <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Framebuffer/">Framebuffer</a>, <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture2D/">Texture2D</a>, <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture3D/">Texture3D</a></p>
+<h2 id="public-types">Public Types</h2>
+<table>
+<thead>
+<tr>
+<th>Member Types</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#enum-type">Type</a></strong></td>
+<td><code>Type</code><br> <sup><span style="color:green">(enum)</span></sup></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th>Member Functions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#function-texture">(constructor)</a></strong></td>
+<td><sup><span style="color:green">(function)</span></sup></td>
+</tr>
+<tr>
+<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#function-~texture">(destructor)</a></strong>  <span style="color:green">= default</span></td>
+<td><sup><span style="color:green">(virtual function)</span></sup></td>
+</tr>
+<tr>
+<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#function-getwidth">getWidth</a></strong> <span style="color:green">const</span> = 0</td>
+<td>Returns the width of the texture in pixels. <br> <sup><span style="color:green">(virtual function)</span></sup></td>
+</tr>
+<tr>
+<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#function-getheight">getHeight</a></strong> <span style="color:green">const</span> = 0</td>
+<td>Returns the height of the texture in pixels. <br> <sup><span style="color:green">(virtual function)</span></sup></td>
+</tr>
+<tr>
+<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#function-getdepth">getDepth</a></strong> <span style="color:green">const</span> = 0</td>
+<td>Returns the depth of the texture in pixels. <br> <sup><span style="color:green">(virtual function)</span></sup></td>
+</tr>
+<tr>
+<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#function-isloaded">isLoaded</a></strong> <span style="color:green">const</span></td>
+<td><sup><span style="color:green">(function)</span></sup></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-attributes">Protected Attributes</h2>
+<table>
+<thead>
+<tr>
+<th>Member Protected Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#variable-loaded">loaded</a></strong></td>
+<td><code>bool</code><br> <sup><span style="color:green">(protected variable)</span></sup></td>
+</tr>
+<tr>
+<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#variable-type">type</a></strong></td>
+<td><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture/#enum-type">Type</a><br> <sup><span style="color:green">(protected variable)</span></sup></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-inherited-members">Additional inherited members</h2>
+<p><strong>Public Functions</strong><sup><span style="color:green">(inherited from <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Handle/">Engine::Graphics::Handle</a>)</span></sup></p>
+<table>
+<thead>
+<tr>
+<th>Member Functions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Handle/#function-handle">Handle</a></strong>  <span style="color:green">= default</span></td>
+<td><sup><span style="color:green">(function)</span></sup></td>
+</tr>
+<tr>
+<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Handle/#function-~handle">~Handle</a></strong>  <span style="color:green">= default</span></td>
+<td><sup><span style="color:green">(virtual function)</span></sup></td>
+</tr>
+<tr>
+<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Handle/#function-gethandle">getHandle</a></strong> <span style="color:green">const</span></td>
+<td><sup><span style="color:green">(function)</span></sup></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Protected Attributes</strong><sup><span style="color:green">(inherited from <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Handle/">Engine::Graphics::Handle</a>)</span></sup></p>
+<table>
+<thead>
+<tr>
+<th>Member Protected Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Handle/#variable-handle">handle</a></strong></td>
+<td><code>int</code><br> <sup><span style="color:green">(protected variable)</span></sup></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-types_1">Public Types</h2>
 <h3 id="enum-type">enum Type</h3>
+<p><sup>Defined in header <a href="/doxybook/mkdocs-material/files/Texture_8hpp/#file-texture.hpp"><code>&lt;src/Graphics/Texture.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">enum class Type;
+</code></pre>
 <table>
 <thead>
 <tr>
@@ -642,47 +639,69 @@ int main() {
 </tr>
 </tbody>
 </table>
-<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h2 id="public-functions_1">Public Functions</h2>
 <h3 id="function-texture">function Texture</h3>
-<pre><code class="language-cpp">explicit Texture(
-    Type type
-)
+<p><sup>Defined in header <a href="/doxybook/mkdocs-material/files/Texture_8hpp/#file-texture.hpp"><code>&lt;src/Graphics/Texture.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">explicit Texture(Type type);
 </code></pre>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-texture_1">function ~Texture</h3>
-<pre><code class="language-cpp">virtual ~Texture() =default
+<p><sup>Defined in header <a href="/doxybook/mkdocs-material/files/Texture_8hpp/#file-texture.hpp"><code>&lt;src/Graphics/Texture.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">virtual ~Texture() = default;
 </code></pre>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-getwidth">function getWidth</h3>
-<pre><code class="language-cpp">virtual int getWidth() const =0
+<p><sup>Defined in header <a href="/doxybook/mkdocs-material/files/Texture_8hpp/#file-texture.hpp"><code>&lt;src/Graphics/Texture.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">virtual int
+getWidth() const = 0;
 </code></pre>
 <p>Returns the width of the texture in pixels. </p>
-<p><strong>Return</strong>: Width in pixels </p>
-<p><strong>Reimplemented by</strong>: <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Framebuffer/#function-getwidth">Engine::Graphics::Framebuffer::getWidth</a>, <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture3D/#function-getwidth">Engine::Graphics::Texture3D::getWidth</a>, <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture2D/#function-getwidth">Engine::Graphics::Texture2D::getWidth</a></p>
+<p><strong>Return value</strong></p>
+<p>Width in pixels </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-getheight">function getHeight</h3>
-<pre><code class="language-cpp">virtual int getHeight() const =0
+<p><sup>Defined in header <a href="/doxybook/mkdocs-material/files/Texture_8hpp/#file-texture.hpp"><code>&lt;src/Graphics/Texture.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">virtual int
+getHeight() const = 0;
 </code></pre>
 <p>Returns the height of the texture in pixels. </p>
-<p><strong>Return</strong>: Height in pixels </p>
-<p><strong>Reimplemented by</strong>: <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Framebuffer/#function-getheight">Engine::Graphics::Framebuffer::getHeight</a>, <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture3D/#function-getheight">Engine::Graphics::Texture3D::getHeight</a>, <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture2D/#function-getheight">Engine::Graphics::Texture2D::getHeight</a></p>
+<p><strong>Return value</strong></p>
+<p>Height in pixels </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-getdepth">function getDepth</h3>
-<pre><code class="language-cpp">virtual int getDepth() const =0
+<p><sup>Defined in header <a href="/doxybook/mkdocs-material/files/Texture_8hpp/#file-texture.hpp"><code>&lt;src/Graphics/Texture.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">virtual int
+getDepth() const = 0;
 </code></pre>
 <p>Returns the depth of the texture in pixels. </p>
-<p><strong>Return</strong>: Depth in pixels </p>
-<p><strong>Note</strong>: If this texture is 2D the depth is always 1 pixels </p>
-<p><strong>Reimplemented by</strong>: <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Framebuffer/#function-getdepth">Engine::Graphics::Framebuffer::getDepth</a>, <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture3D/#function-getdepth">Engine::Graphics::Texture3D::getDepth</a>, <a href="/doxybook/mkdocs-material/classes/classEngine_1_1Graphics_1_1Texture2D/#function-getdepth">Engine::Graphics::Texture2D::getDepth</a></p>
+<p><strong>Return value</strong></p>
+<p>Depth in pixels </p>
+<p><strong>Notes</strong></p>
+<p>If this texture is 2D the depth is always 1 pixels </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-isloaded">function isLoaded</h3>
-<pre><code class="language-cpp">inline bool isLoaded() const
+<p><sup>Defined in header <a href="/doxybook/mkdocs-material/files/Texture_8hpp/#file-texture.hpp"><code>&lt;src/Graphics/Texture.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">bool
+isLoaded() const;
 </code></pre>
-<p>Does some more things</p>
-<h2 id="protected-attributes-documentation">Protected Attributes Documentation</h2>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
+<h2 id="protected-attributes_1">Protected Attributes</h2>
 <h3 id="variable-loaded">variable loaded</h3>
+<p><sup>Defined in header <a href="/doxybook/mkdocs-material/files/Texture_8hpp/#file-texture.hpp"><code>&lt;src/Graphics/Texture.hpp&gt;</code></a></sup></p>
 <pre><code class="language-cpp">bool loaded {false};
 </code></pre>
 <h3 id="variable-type">variable type</h3>
+<p><sup>Defined in header <a href="/doxybook/mkdocs-material/files/Texture_8hpp/#file-texture.hpp"><code>&lt;src/Graphics/Texture.hpp&gt;</code></a></sup></p>
 <pre><code class="language-cpp">Type type;
 </code></pre>
 <hr />
-<p>Updated on 2022-11-15 at 04:12:31 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
 
 
 

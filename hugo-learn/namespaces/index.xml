@@ -22,7 +22,7 @@
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/namespaces/namespaceengine_1_1assets/</guid>
       <description>Engine::Assets Namespace Reference
-Classes Name class Engine::Assets::Asset Updated on 2022-11-15 at 04:12:33 +0000</description>
+Classes Classes Description Asset Engine::Assets::Asset (class) Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -32,7 +32,8 @@ Classes Name class Engine::Assets::Asset Updated on 2022-11-15 at 04:12:33 +0000
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/namespaces/namespaceengine_1_1audio/</guid>
       <description>Engine::Audio Namespace Reference
-Classes Name class Engine::Audio::AudioBuffer A simple audio buffer to hold PCM samples class Engine::Audio::AudioManager An audio manager that accepts multiple Audio::AudioBuffer instances. Types Name typedef int(*)(AudioBuffer &amp;amp;buffer, size_t offset) Callback Some callback function pointer type definition. using int(*)(AudioBuffer &amp;amp;buffer, size_t offset, void *user) Callback2 Some callback function pointer type definition. Functions Name void doSomething(AudioBuffer &amp;amp; buffer)Do something with the buffer. Types Documentation typedef Callback typedef int(* Engine::Audio::Callback) (AudioBuffer &amp;amp;buffer, size_t offset); Some callback function pointer type definition.</description>
+Classes Classes Description AudioBuffer A simple audio buffer to hold PCM samples (class) AudioManager An audio manager that accepts multiple Audio::AudioBuffer instances. (class) Types Member Types Definition Callback Some callback function pointer type definition. (typedef) Callback2 Some callback function pointer type definition. (using) Functions Member Functions Description doSomething Do something with the buffer. (function) Types typedef Callback Defined in header &amp;lt;src/Audio/AudioBuffer.hpp&amp;gt;
+typedef int(* Engine::Audio::Callback) (AudioBuffer &amp;amp;buffer, size_t offset); Some callback function pointer type definition.</description>
     </item>
     
     <item>
@@ -42,8 +43,11 @@ Classes Name class Engine::Audio::AudioBuffer A simple audio buffer to hold PCM 
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/namespaces/namespaceengine_1_1graphics/</guid>
       <description>Engine::Graphics Namespace Reference
-Classes Name class Engine::Graphics::Framebuffer class Engine::Graphics::Handle interface Engine::Graphics::Texture This is a base texture class that serves as a base class for other texture types. class Engine::Graphics::Texture2D class Engine::Graphics::Texture3D Some deprecated class. Functions Name int getHandle(Handle &amp;amp; handle)Some namespace inline function. Functions Documentation function getHandle inline int getHandle( Handle &amp;amp; handle ) Some namespace inline function.
-Updated on 2022-11-15 at 04:12:33 +0000</description>
+Classes Classes Description Framebuffer Engine::Graphics::Framebuffer (class) Handle Engine::Graphics::Handle (class) Texture This is a base texture class that serves as a base class for other texture types. (interface) Texture2D Engine::Graphics::Texture2D (class) Texture3D Some deprecated class. (class) Functions Member Functions Description getHandle Some namespace inline function. (function) Functions function getHandle Defined in header &amp;lt;src/Graphics/Handle.hpp&amp;gt;
+int getHandle(Handle &amp;amp; handle); Some namespace inline function.
+Exception Safety
+Basic exception guarantee.
+Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -53,7 +57,7 @@ Updated on 2022-11-15 at 04:12:33 +0000</description>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/namespaces/namespaceengine_1_1gui/</guid>
       <description>Engine::Gui Namespace Reference
-Classes Name class Engine::Gui::GuiWidget Some generic gui widget class. Updated on 2022-11-15 at 04:12:33 +0000</description>
+Classes Classes Description GuiWidget Some generic gui widget class. (class) Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -63,7 +67,10 @@ Classes Name class Engine::Gui::GuiWidget Some generic gui widget class. Updated
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/namespaces/namespaceengine_1_1utils/</guid>
       <description>Engine::Utils Namespace Reference
-Namespaces Name Engine::Utils::Path Filesystem path utility functions. Classes Name class Engine::Utils::ArrayView Filesystem path utility functions. Functions Name void name_with_underscores(const std::string &amp;amp; arg) Functions Documentation function name_with_underscores inline void name_with_underscores( const std::string &amp;amp; arg ) Updated on 2022-11-15 at 04:12:33 +0000</description>
+Namespaces Name Description Engine::Utils::Path Filesystem path utility functions. Classes Classes Description ArrayView Filesystem path utility functions. (class) Functions Member Functions Description name_with_underscores (function) Functions function name_with_underscores Defined in header &amp;lt;src/Utils/Utils.hpp&amp;gt;
+void name_with_underscores(const std::string &amp;amp; arg); Exception Safety
+Basic exception guarantee.
+Updated on 2022-11-17</description>
     </item>
     
     <item>

@@ -5,9 +5,9 @@
   <meta name="generator" content="Hugo 0.105.0">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="src/Assets/Asset.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Engine::Assets Classes # Name class Engine::Assets::Asset union Engine::Assets::Asset::Event struct Engine::Assets::Asset::Event::Loaded struct Engine::Assets::Asset::Event::Unloaded struct Engine::Assets::Asset::Event::Waiting Source code # #pragma once #include &lt;queue&gt; #include &lt;string&gt; namespace Engine { namespace Assets { class Asset { public: union Event { struct Loaded { bool success; int usage; } loaded; struct Unloaded { bool success; } unloaded; struct Waiting { Asset* other; } waiting; }; explicit Asset(const std::string&amp; name); virtual ~Asset() = 0; virtual void load(); virtual void unload(); const Event&amp; getEvent() const { return event; } private: Event event; }; } } Updated on 2022-11-15 at 04:12:34 &#43;0000">
+<meta name="description" content="src/Assets/Asset.hpp # #include &lt;src/Assets/Asset.hpp&gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Assets Classes # Classes Description Asset Engine::Assets::Asset (class) Event Engine::Assets::Asset::Event (union) Loaded Engine::Assets::Asset::Event::Loaded (struct) Unloaded Engine::Assets::Asset::Event::Unloaded (struct) Waiting Engine::Assets::Asset::Event::Waiting (struct) Updated on 2022-11-17">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="src/Assets/Asset.hpp" />
-<meta property="og:description" content="src/Assets/Asset.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Engine::Assets Classes # Name class Engine::Assets::Asset union Engine::Assets::Asset::Event struct Engine::Assets::Asset::Event::Loaded struct Engine::Assets::Asset::Event::Unloaded struct Engine::Assets::Asset::Event::Waiting Source code # #pragma once #include &lt;queue&gt; #include &lt;string&gt; namespace Engine { namespace Assets { class Asset { public: union Event { struct Loaded { bool success; int usage; } loaded; struct Unloaded { bool success; } unloaded; struct Waiting { Asset* other; } waiting; }; explicit Asset(const std::string&amp; name); virtual ~Asset() = 0; virtual void load(); virtual void unload(); const Event&amp; getEvent() const { return event; } private: Event event; }; } } Updated on 2022-11-15 at 04:12:34 &#43;0000" />
+<meta property="og:description" content="src/Assets/Asset.hpp # #include &lt;src/Assets/Asset.hpp&gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Assets Classes # Classes Description Asset Engine::Assets::Asset (class) Event Engine::Assets::Asset::Event (union) Loaded Engine::Assets::Asset::Event::Loaded (struct) Unloaded Engine::Assets::Asset::Event::Unloaded (struct) Waiting Engine::Assets::Asset::Event::Waiting (struct) Updated on 2022-11-17" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://alandefreitas.github.io/doxybook/hugo-book/files/asset_8hpp/" /><meta property="article:section" content="files" />
 
@@ -17,7 +17,7 @@
 <link rel="manifest" href="/doxybook/hugo-book/manifest.json">
 <link rel="icon" href="/doxybook/hugo-book/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/doxybook/hugo-book/book.min.68be0b7a9674f2a612ce0e9b2e9447ff4b7ac96546e06b642bfd3ded0ca490ef.css" integrity="sha256-aL4LepZ08qYSzg6bLpRH/0t6yWVG4GtkK/097QykkO8=">
-<script defer src="/doxybook/hugo-book/en.search.min.3a9de84db6c110c0c08ec1b7f2f43221ffa377ff45602830732ab15e5dbbe713.js" integrity="sha256-Op3oTbbBEMDAjsG38vQyIf&#43;jd/9FYCgwcyqxXl275xM="></script>
+<script defer src="/doxybook/hugo-book/en.search.min.aa37234520f223b4cf4a139b5a55b0fa24e845cc32067a9e0991781bb795328d.js" integrity="sha256-qjcjRSDyI7TPShObWlWw&#43;iToRcwyBnqeCZF4G7eVMo0="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -59,7 +59,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
 <li><a href="/doxybook/hugo-book/classes/">Classes</a></li>
 <li><a href="/doxybook/hugo-book/namespaces/">Namespaces</a></li>
-<li><a href="/doxybook/hugo-book/modules/">Modules</a></li>
+<li><a href="/doxybook/hugo-book/libraries/">Modules</a></li>
 <li><a href="/doxybook/hugo-book/files/">Files</a></li>
 <li><a href="/doxybook/hugo-book/pages/">Pages</a></li>
 <li><a href="/doxybook/hugo-book/examples/">Examples</a></li>
@@ -112,7 +112,6 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#namespaces">Namespaces</a></li>
     <li><a href="#classes">Classes</a></li>
-    <li><a href="#source-code">Source code</a></li>
   </ul>
 </nav>
 
@@ -129,7 +128,8 @@ https://github.com/alex-shpak/hugo-book
   src/Assets/Asset.hpp
   <a class="anchor" href="#srcassetsassethpp">#</a>
 </h1>
-<h2 id="namespaces">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;src/Assets/Asset.hpp&gt;</span><span style="color:#75715e">
+</span></span></span></code></pre></div><h2 id="namespaces">
   Namespaces
   <a class="anchor" href="#namespaces">#</a>
 </h2>
@@ -137,14 +137,17 @@ https://github.com/alex-shpak/hugo-book
 <thead>
 <tr>
 <th>Name</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="/doxybook/hugo-book/namespaces/namespaceengine/">Engine</a></strong> <!-- raw HTML omitted -->This namespace contains all of the necessary engine components.</td>
+<td><strong><a href="/doxybook/hugo-book/namespaces/namespaceengine/">Engine</a></strong></td>
+<td>This namespace contains all of the necessary engine components.</td>
 </tr>
 <tr>
 <td><strong><a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1assets/">Engine::Assets</a></strong></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -155,73 +158,35 @@ https://github.com/alex-shpak/hugo-book
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Classes</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>class</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1assets_1_1asset/">Engine::Assets::Asset</a></strong></td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1assets_1_1asset/">Asset</a></strong></td>
+<td>Engine::Assets::Asset<!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(class)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>union</td>
-<td><strong><a href="/doxybook/hugo-book/classes/unionengine_1_1assets_1_1asset_1_1event/">Engine::Assets::Asset::Event</a></strong></td>
+<td><strong><a href="/doxybook/hugo-book/classes/unionengine_1_1assets_1_1asset_1_1event/">Event</a></strong></td>
+<td>Engine::Assets::Asset::Event<!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(union)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>struct</td>
-<td><strong><a href="/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1loaded/">Engine::Assets::Asset::Event::Loaded</a></strong></td>
+<td><strong><a href="/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1loaded/">Loaded</a></strong></td>
+<td>Engine::Assets::Asset::Event::Loaded<!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(struct)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>struct</td>
-<td><strong><a href="/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1unloaded/">Engine::Assets::Asset::Event::Unloaded</a></strong></td>
+<td><strong><a href="/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1unloaded/">Unloaded</a></strong></td>
+<td>Engine::Assets::Asset::Event::Unloaded<!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(struct)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>struct</td>
-<td><strong><a href="/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1waiting/">Engine::Assets::Asset::Event::Waiting</a></strong></td>
+<td><strong><a href="/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1waiting/">Waiting</a></strong></td>
+<td>Engine::Assets::Asset::Event::Waiting<!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(struct)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 </tbody>
 </table>
-<h2 id="source-code">
-  Source code
-  <a class="anchor" href="#source-code">#</a>
-</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#pragma once
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;queue&gt;</span><span style="color:#75715e">
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> Engine {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">namespace</span> Assets {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Asset</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">union</span> <span style="color:#a6e22e">Event</span> {
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Loaded</span> {
-</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">bool</span> success;
-</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">int</span> usage;
-</span></span><span style="display:flex;"><span>                } loaded;
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Unloaded</span> {
-</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">bool</span> success;
-</span></span><span style="display:flex;"><span>                } unloaded;
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Waiting</span> {
-</span></span><span style="display:flex;"><span>                    Asset<span style="color:#f92672">*</span> other;
-</span></span><span style="display:flex;"><span>                } waiting;
-</span></span><span style="display:flex;"><span>            };
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">explicit</span> <span style="color:#a6e22e">Asset</span>(<span style="color:#66d9ef">const</span> std<span style="color:#f92672">::</span>string<span style="color:#f92672">&amp;</span> name);
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">virtual</span> <span style="color:#f92672">~</span>Asset() <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">load</span>();
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">unload</span>();
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">const</span> Event<span style="color:#f92672">&amp;</span> getEvent() <span style="color:#66d9ef">const</span> {
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> event;
-</span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>            Event event;
-</span></span><span style="display:flex;"><span>        };
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><hr>
-<p>Updated on 2022-11-15 at 04:12:34 +0000</p>
+<hr>
+<p><!-- raw HTML omitted -->Updated on 2022-11-17<!-- raw HTML omitted --></p>
 </article>
  
       
@@ -260,7 +225,6 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#namespaces">Namespaces</a></li>
     <li><a href="#classes">Classes</a></li>
-    <li><a href="#source-code">Source code</a></li>
   </ul>
 </nav>
 

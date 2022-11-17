@@ -57,7 +57,7 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../index_groups/">Modules</a>
+                <li class="toctree-l1"><a class="reference internal" href="../../index_groups/">Libraries</a>
                 </li>
               </ul>
               <ul>
@@ -165,19 +165,19 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../files/dir_e0c1ede47f21c4a643a1257f949f98e0/">src/Assets</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Modules</span></p>
+              <p class="caption"><span class="caption-text">Libraries</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Assets/">Generic assets</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Assets/">Generic assets</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Audio/">Audio buffers and devices</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Audio/">Audio buffers and devices</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Engine/">An example game engine</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Engine/">An example game engine</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Graphics/">Graphical related classes</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Graphics/">Graphical related classes</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Gui/">Some gui related stuff and whatever</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Gui/">Some gui related stuff and whatever</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Utils/">Some useful utilities</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Utils/">Some useful utilities</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Namespaces</span></p>
@@ -198,7 +198,7 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#functions">Functions</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#functions-documentation">Functions Documentation</a>
+    <li class="toctree-l2"><a class="reference internal" href="#functions_1">Functions</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#function-getfilename">function getFilename</a>
     </li>
@@ -249,40 +249,47 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="engineutilspath">Engine::Utils::Path</h1>
-<p><strong>Module:</strong> <strong><a href="/doxybook/mkdocs-readthedocs/modules/group__Engine/">An example game engine</a></strong> <strong>/</strong> <strong><a href="/doxybook/mkdocs-readthedocs/modules/group__Utils/">Some useful utilities</a></strong></p>
+<blockquote>
 <p>Filesystem path utility functions. </p>
+</blockquote>
+<p><strong><a href="/doxybook/mkdocs-readthedocs/libraries/group__Engine/">An example game engine</a></strong> <strong>/</strong> <strong><a href="/doxybook/mkdocs-readthedocs/libraries/group__Utils/">Some useful utilities</a></strong> <strong>/</strong> 
+<strong><a href="/doxybook/mkdocs-readthedocs/namespaces/namespaceEngine_1_1Utils_1_1Path/">Path</a></strong></p>
 <h2 id="functions">Functions</h2>
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Functions</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/mkdocs-readthedocs/namespaces/namespaceEngine_1_1Utils_1_1Path/#function-getfilename">getFilename</a></strong>(const std::string &amp; path)</td>
+<td><strong><a href="/doxybook/mkdocs-readthedocs/namespaces/namespaceEngine_1_1Utils_1_1Path/#function-getfilename">getFilename</a></strong></td>
+<td><sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/mkdocs-readthedocs/namespaces/namespaceEngine_1_1Utils_1_1Path/#function-getextension">getExtension</a></strong>(const std::string &amp; path)</td>
+<td><strong><a href="/doxybook/mkdocs-readthedocs/namespaces/namespaceEngine_1_1Utils_1_1Path/#function-getextension">getExtension</a></strong></td>
+<td><sup><span style="color:green">(function)</span></sup></td>
 </tr>
 </tbody>
 </table>
-<h2 id="functions-documentation">Functions Documentation</h2>
+<h2 id="functions_1">Functions</h2>
 <h3 id="function-getfilename">function getFilename</h3>
-<pre><code class="language-cpp">std::string getFilename(
-    const std::string &amp; path
-)
+<p><sup>Defined in header <a href="/doxybook/mkdocs-readthedocs/files/Path_8hpp/#file-path.hpp"><code>&lt;src/Utils/Path.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">std::string
+getFilename(const std::string &amp; path);
 </code></pre>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-getextension">function getExtension</h3>
-<pre><code class="language-cpp">std::string getExtension(
-    const std::string &amp; path
-)
+<p><sup>Defined in header <a href="/doxybook/mkdocs-readthedocs/files/Path_8hpp/#file-path.hpp"><code>&lt;src/Utils/Path.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">std::string
+getExtension(const std::string &amp; path);
 </code></pre>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <hr />
-<p>Updated on 2022-11-15 at 04:12:30 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
               
             </div>
           </div><footer>

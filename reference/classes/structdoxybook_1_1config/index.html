@@ -449,11 +449,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#public-attributes-documentation" class="md-nav__link">
-    Public Attributes Documentation
+  <a href="#public-attributes_1" class="md-nav__link">
+    Public Attributes
   </a>
   
-    <nav class="md-nav" aria-label="Public Attributes Documentation">
+    <nav class="md-nav" aria-label="Public Attributes">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -473,6 +473,13 @@
           <li class="md-nav__item">
   <a href="#variable-use_folders" class="md-nav__link">
     variable use_folders
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-undocumented_macros" class="md-nav__link">
+    variable undocumented_macros
   </a>
   
 </li>
@@ -515,6 +522,13 @@
           <li class="md-nav__item">
   <a href="#variable-link_suffix" class="md-nav__link">
     variable link_suffix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-replaceunderscoresinanchors" class="md-nav__link">
+    variable replaceUnderscoresInAnchors
   </a>
   
 </li>
@@ -841,13 +855,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#variable-replaceunderscoresinanchors" class="md-nav__link">
-    variable replaceUnderscoresInAnchors
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -877,476 +884,545 @@
 
 
 <h1 id="doxybookconfig">doxybook::config</h1>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="k">struct</span><span class="w"> </span><span class="nc">config</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
 <p>Configuration for the <a href="">doxygen</a> and <a href="">generator</a> classes. </p>
-<p><code>#include &lt;config.hpp&gt;</code></p>
 <h2 id="public-attributes">Public Attributes</h2>
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Public Attributes</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-output-dir">output_dir</a></strong> <br>Where to store the output files?</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-output-dir">output_dir</a></strong></td>
+<td>Where to store the output files? <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>bool</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-debug-template-json">debug_template_json</a></strong> <br>Generate extra JSON for each rendered template.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-debug-template-json">debug_template_json</a></strong></td>
+<td>Generate extra JSON for each rendered template. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>bool</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-use-folders">use_folders</a></strong> <br>Put all files into categorized folders.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-use-folders">use_folders</a></strong></td>
+<td>Put all files into categorized folders. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>bool</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-in-folders">index_in_folders</a></strong> <br>Put index files into the respective subdirectories.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-undocumented-macros">undocumented_macros</a></strong></td>
+<td>Whether we should allow undocumented macros. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>bool</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-main-page-in-root">main_page_in_root</a></strong> <br>Main page should be located in the root directory.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-in-folders">index_in_folders</a></strong></td>
+<td>Put index files into the respective subdirectories. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-main-page-name">main_page_name</a></strong> <br>Name of the mainpage / indexpage.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-main-page-in-root">main_page_in_root</a></strong></td>
+<td>Main page should be located in the root directory. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-base-url">base_url</a></strong> <br>The base URL to prepend all links with.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-main-page-name">main_page_name</a></strong></td>
+<td>Name of the mainpage / indexpage. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-file-extension">file_extension</a></strong> <br>The extension for markdown files.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-base-url">base_url</a></strong></td>
+<td>The base URL to prepend all links with. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-link-suffix">link_suffix</a></strong> <br>The suffix to end links with.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-file-extension">file_extension</a></strong></td>
+<td>The extension for markdown files. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>bool</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-sort">sort</a></strong> <br>Sort symbols alphabetically.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-link-suffix">link_suffix</a></strong></td>
+<td>The suffix to end links with. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>bool</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-copy-images">copy_images</a></strong> <br>Copy images from the Doxygen xml dir.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-replaceunderscoresinanchors">replaceUnderscoresInAnchors</a></strong></td>
+<td>Replace underscores with hyphens in anchors. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-images-folder">images_folder</a></strong> <br>Where to copy images.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-sort">sort</a></strong></td>
+<td>Sort symbols alphabetically. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>bool</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-link-lowercase">link_lowercase</a></strong> <br>Convert all refids and folder names to lowercase.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-copy-images">copy_images</a></strong></td>
+<td>Copy images from the Doxygen xml dir. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>bool</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-link-and-inline-code-as-html">link_and_inline_code_as_html</a></strong> <br>Output links/code as <a>/<code> tags instead of Markdown.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-images-folder">images_folder</a></strong></td>
+<td>Where to copy images. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-folder-groups-name">folder_groups_name</a></strong> <br>The modules folder name.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-link-lowercase">link_lowercase</a></strong></td>
+<td>Convert all refids and folder names to lowercase. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-folder-classes-name">folder_classes_name</a></strong> <br>The classes folder name.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-link-and-inline-code-as-html">link_and_inline_code_as_html</a></strong></td>
+<td>Output links/code as <a>/<code> tags instead of Markdown. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-folder-files-name">folder_files_name</a></strong> <br>The files folder name.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-folder-groups-name">folder_groups_name</a></strong></td>
+<td>The modules folder name. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-folder-related-pages-name">folder_related_pages_name</a></strong> <br>The pages folder name.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-folder-classes-name">folder_classes_name</a></strong></td>
+<td>The classes folder name. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-folder-namespaces-name">folder_namespaces_name</a></strong> <br>The namespaces folder name.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-folder-files-name">folder_files_name</a></strong></td>
+<td>The files folder name. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-folder-examples-name">folder_examples_name</a></strong> <br>The examples folder name.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-folder-related-pages-name">folder_related_pages_name</a></strong></td>
+<td>The pages folder name. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-groups-name">index_groups_name</a></strong> <br>The groups index file name.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-folder-namespaces-name">folder_namespaces_name</a></strong></td>
+<td>The namespaces folder name. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-classes-name">index_classes_name</a></strong> <br>The classes index file name.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-folder-examples-name">folder_examples_name</a></strong></td>
+<td>The examples folder name. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-files-name">index_files_name</a></strong> <br>The files index file name.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-groups-name">index_groups_name</a></strong></td>
+<td>The groups index file name. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-related-pages-name">index_related_pages_name</a></strong> <br>The relatedPages index file name.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-classes-name">index_classes_name</a></strong></td>
+<td>The classes index file name. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-namespaces-name">index_namespaces_name</a></strong> <br>The namespaces index file name.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-files-name">index_files_name</a></strong></td>
+<td>The files index file name. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-examples-name">index_examples_name</a></strong> <br>The examples index file name.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-related-pages-name">index_related_pages_name</a></strong></td>
+<td>The relatedPages index file name. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-class">template_kind_class</a></strong> <br>The template file we should use for classes.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-namespaces-name">index_namespaces_name</a></strong></td>
+<td>The namespaces index file name. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-struct">template_kind_struct</a></strong> <br>The template file we should use for structs.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-examples-name">index_examples_name</a></strong></td>
+<td>The examples index file name. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-union">template_kind_union</a></strong> <br>The template file we should use for unions.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-class">template_kind_class</a></strong></td>
+<td>The template file we should use for classes. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-interface">template_kind_interface</a></strong> <br>The template file we should use for interfaces.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-struct">template_kind_struct</a></strong></td>
+<td>The template file we should use for structs. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-java-enum">template_kind_java_enum</a></strong> <br>The template file we should use for java enums.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-union">template_kind_union</a></strong></td>
+<td>The template file we should use for unions. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-namespace">template_kind_namespace</a></strong> <br>The template file we should use for namespaces.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-interface">template_kind_interface</a></strong></td>
+<td>The template file we should use for interfaces. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-group">template_kind_group</a></strong> <br>The template file we should use for groups.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-java-enum">template_kind_java_enum</a></strong></td>
+<td>The template file we should use for java enums. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-file">template_kind_file</a></strong> <br>The template file we should use for files.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-namespace">template_kind_namespace</a></strong></td>
+<td>The template file we should use for namespaces. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-dir">template_kind_dir</a></strong> <br>The template file we should use for dirs.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-group">template_kind_group</a></strong></td>
+<td>The template file we should use for groups. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-page">template_kind_page</a></strong> <br>The template file we should use for pages.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-file">template_kind_file</a></strong></td>
+<td>The template file we should use for files. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-example">template_kind_example</a></strong> <br>The template file we should use for examples.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-dir">template_kind_dir</a></strong></td>
+<td>The template file we should use for dirs. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-index-classes">template_index_classes</a></strong> <br>The template file we should we for the class index.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-page">template_kind_page</a></strong></td>
+<td>The template file we should use for pages. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-index-namespaces">template_index_namespaces</a></strong> <br>The template file we should we for the namespace index.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-kind-example">template_kind_example</a></strong></td>
+<td>The template file we should use for examples. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-index-groups">template_index_groups</a></strong> <br>The template file we should we for the group index.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-index-classes">template_index_classes</a></strong></td>
+<td>The template file we should we for the class index. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-index-files">template_index_files</a></strong> <br>The template file we should we for the file index.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-index-namespaces">template_index_namespaces</a></strong></td>
+<td>The template file we should we for the namespace index. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-index-related-pages">template_index_related_pages</a></strong> <br>The template file we should we for the related page index.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-index-groups">template_index_groups</a></strong></td>
+<td>The template file we should we for the group index. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-index-examples">template_index_examples</a></strong> <br>The template file we should we for the example index.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-index-files">template_index_files</a></strong></td>
+<td>The template file we should we for the file index. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-classes-title">index_classes_title</a></strong> <br>The title for classes in index pages.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-index-related-pages">template_index_related_pages</a></strong></td>
+<td>The template file we should we for the related page index. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-namespaces-title">index_namespaces_title</a></strong> <br>The title for namespaces in index pages.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-template-index-examples">template_index_examples</a></strong></td>
+<td>The template file we should we for the example index. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-groups-title">index_groups_title</a></strong> <br>The title for groups in index pages.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-classes-title">index_classes_title</a></strong></td>
+<td>The title for classes in index pages. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-files-title">index_files_title</a></strong> <br>The title for files in index pages.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-namespaces-title">index_namespaces_title</a></strong></td>
+<td>The title for namespaces in index pages. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-related-pages-title">index_related_pages_title</a></strong> <br>The title for relatedPages in index pages.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-groups-title">index_groups_title</a></strong></td>
+<td>The title for groups in index pages. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-examples-title">index_examples_title</a></strong> <br>The title for examples in index pages.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-files-title">index_files_title</a></strong></td>
+<td>The title for files in index pages. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::vector&lt; std::string &gt;</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-files-filter">files_filter</a></strong> <br>The source files allowed in the output?</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-related-pages-title">index_related_pages_title</a></strong></td>
+<td>The title for relatedPages in index pages. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::vector&lt; <a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-folder-category">folder_category</a> &gt;</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-folders-to-generate">folders_to_generate</a></strong> <br>Folders we should generate.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-index-examples-title">index_examples_title</a></strong></td>
+<td>The title for examples in index pages. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-formulainlinestart">formulaInlineStart</a></strong> <br>Token for latex formulas inline start.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-files-filter">files_filter</a></strong></td>
+<td>The source files allowed in the output? <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-formulainlineend">formulaInlineEnd</a></strong> <br>Token for latex formulas inline end.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-folders-to-generate">folders_to_generate</a></strong></td>
+<td>Folders we should generate. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-formulablockstart">formulaBlockStart</a></strong> <br>Token for latex formulas block start.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-formulainlinestart">formulaInlineStart</a></strong></td>
+<td>Token for latex formulas inline start. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-formulablockend">formulaBlockEnd</a></strong> <br>Token for latex formulas block end.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-formulainlineend">formulaInlineEnd</a></strong></td>
+<td>Token for latex formulas inline end. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
-<td>bool</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-replaceunderscoresinanchors">replaceUnderscoresInAnchors</a></strong> <br>Replace underscores with hyphens in anchors.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-formulablockstart">formulaBlockStart</a></strong></td>
+<td>Token for latex formulas block start. <br> <sup><span style="color:green">(public variable)</span></sup></td>
+</tr>
+<tr>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1config/#variable-formulablockend">formulaBlockEnd</a></strong></td>
+<td>Token for latex formulas block end. <br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 </tbody>
 </table>
-<h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
+<h2 id="public-attributes_1">Public Attributes</h2>
 <h3 id="variable-output_dir">variable output_dir</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">output_dir</span><span class="p">;</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>Where to store the output files? </p>
 <h3 id="variable-debug_template_json">variable debug_template_json</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">debug_template_json</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nb">false</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>Generate extra JSON for each rendered template. </p>
 <h3 id="variable-use_folders">variable use_folders</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">use_folders</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>Put all files into categorized folders. </p>
+<h3 id="variable-undocumented_macros">variable undocumented_macros</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">undocumented_macros</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nb">false</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
+</code></pre></div></p>
+<p>Whether we should allow undocumented macros. </p>
 <h3 id="variable-index_in_folders">variable index_in_folders</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">index_in_folders</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nb">false</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>Put index files into the respective subdirectories. </p>
+<p><strong>Description</strong></p>
 <p>(Hugo/Learn) needs that </p>
 <h3 id="variable-main_page_in_root">variable main_page_in_root</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">main_page_in_root</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nb">false</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>Main page should be located in the root directory. </p>
 <h3 id="variable-main_page_name">variable main_page_name</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">main_page_name</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;indexpage&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>Name of the mainpage / indexpage. </p>
 <h3 id="variable-base_url">variable base_url</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">base_url</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The base URL to prepend all links with. </p>
 <h3 id="variable-file_extension">variable file_extension</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">file_extension</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;md&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The extension for markdown files. </p>
 <h3 id="variable-link_suffix">variable link_suffix</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">link_suffix</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;.md&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The suffix to end links with. </p>
+<h3 id="variable-replaceunderscoresinanchors">variable replaceUnderscoresInAnchors</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">replaceUnderscoresInAnchors</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
+</code></pre></div></p>
+<p>Replace underscores with hyphens in anchors. </p>
 <h3 id="variable-sort">variable sort</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">sort</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nb">false</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>Sort symbols alphabetically. </p>
 <h3 id="variable-copy_images">variable copy_images</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">copy_images</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>Copy images from the Doxygen xml dir. </p>
 <h3 id="variable-images_folder">variable images_folder</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">images_folder</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;images&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>Where to copy images. </p>
 <h3 id="variable-link_lowercase">variable link_lowercase</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">link_lowercase</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nb">false</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>Convert all refids and folder names to lowercase. </p>
 <h3 id="variable-link_and_inline_code_as_html">variable link_and_inline_code_as_html</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">link_and_inline_code_as_html</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nb">false</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>Output links/code as <a>/<code> tags instead of Markdown. </p>
 <h3 id="variable-folder_groups_name">variable folder_groups_name</h3>
-<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">folder_groups_name</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;modules&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">folder_groups_name</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;libraries&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
+</code></pre></div></p>
 <p>The modules folder name. </p>
 <h3 id="variable-folder_classes_name">variable folder_classes_name</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">folder_classes_name</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;classes&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The classes folder name. </p>
 <h3 id="variable-folder_files_name">variable folder_files_name</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">folder_files_name</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;files&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The files folder name. </p>
 <h3 id="variable-folder_related_pages_name">variable folder_related_pages_name</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">folder_related_pages_name</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;pages&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The pages folder name. </p>
 <h3 id="variable-folder_namespaces_name">variable folder_namespaces_name</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">folder_namespaces_name</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;namespaces&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The namespaces folder name. </p>
 <h3 id="variable-folder_examples_name">variable folder_examples_name</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">folder_examples_name</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;examples&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The examples folder name. </p>
 <h3 id="variable-index_groups_name">variable index_groups_name</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">index_groups_name</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;index_groups&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The groups index file name. </p>
 <h3 id="variable-index_classes_name">variable index_classes_name</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">index_classes_name</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;index_classes&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The classes index file name. </p>
 <h3 id="variable-index_files_name">variable index_files_name</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">index_files_name</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;index_files&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The files index file name. </p>
 <h3 id="variable-index_related_pages_name">variable index_related_pages_name</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">index_related_pages_name</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;index_pages&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The relatedPages index file name. </p>
 <h3 id="variable-index_namespaces_name">variable index_namespaces_name</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">index_namespaces_name</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;index_namespaces&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The namespaces index file name. </p>
 <h3 id="variable-index_examples_name">variable index_examples_name</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">index_examples_name</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;index_examples&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The examples index file name. </p>
 <h3 id="variable-template_kind_class">variable template_kind_class</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">template_kind_class</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;kind_class&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The template file we should use for classes. </p>
 <h3 id="variable-template_kind_struct">variable template_kind_struct</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">template_kind_struct</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;kind_class&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The template file we should use for structs. </p>
 <h3 id="variable-template_kind_union">variable template_kind_union</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">template_kind_union</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;kind_class&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The template file we should use for unions. </p>
 <h3 id="variable-template_kind_interface">variable template_kind_interface</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">template_kind_interface</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;kind_class&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The template file we should use for interfaces. </p>
 <h3 id="variable-template_kind_java_enum">variable template_kind_java_enum</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">template_kind_java_enum</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;kind_class&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The template file we should use for java enums. </p>
 <h3 id="variable-template_kind_namespace">variable template_kind_namespace</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">template_kind_namespace</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;kind_nonclass&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The template file we should use for namespaces. </p>
 <h3 id="variable-template_kind_group">variable template_kind_group</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">template_kind_group</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;kind_nonclass&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The template file we should use for groups. </p>
 <h3 id="variable-template_kind_file">variable template_kind_file</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">template_kind_file</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;kind_file&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The template file we should use for files. </p>
 <h3 id="variable-template_kind_dir">variable template_kind_dir</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">template_kind_dir</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;kind_file&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The template file we should use for dirs. </p>
 <h3 id="variable-template_kind_page">variable template_kind_page</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">template_kind_page</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;kind_page&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The template file we should use for pages. </p>
 <h3 id="variable-template_kind_example">variable template_kind_example</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">template_kind_example</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;kind_page&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The template file we should use for examples. </p>
 <h3 id="variable-template_index_classes">variable template_index_classes</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">template_index_classes</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;index_classes&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The template file we should we for the class index. </p>
 <h3 id="variable-template_index_namespaces">variable template_index_namespaces</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">template_index_namespaces</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;index_namespaces&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The template file we should we for the namespace index. </p>
 <h3 id="variable-template_index_groups">variable template_index_groups</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">template_index_groups</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;index_groups&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The template file we should we for the group index. </p>
 <h3 id="variable-template_index_files">variable template_index_files</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">template_index_files</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;index_files&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The template file we should we for the file index. </p>
 <h3 id="variable-template_index_related_pages">variable template_index_related_pages</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">template_index_related_pages</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;index_pages&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The template file we should we for the related page index. </p>
 <h3 id="variable-template_index_examples">variable template_index_examples</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">template_index_examples</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;index_examples&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The template file we should we for the example index. </p>
 <h3 id="variable-index_classes_title">variable index_classes_title</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">index_classes_title</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;Classes&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The title for classes in index pages. </p>
 <h3 id="variable-index_namespaces_title">variable index_namespaces_title</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">index_namespaces_title</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;Namespaces&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The title for namespaces in index pages. </p>
 <h3 id="variable-index_groups_title">variable index_groups_title</h3>
-<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">index_groups_title</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;Modules&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">index_groups_title</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;Libraries&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
+</code></pre></div></p>
 <p>The title for groups in index pages. </p>
 <h3 id="variable-index_files_title">variable index_files_title</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">index_files_title</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;Files&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The title for files in index pages. </p>
 <h3 id="variable-index_related_pages_title">variable index_related_pages_title</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">index_related_pages_title</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;Pages&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The title for relatedPages in index pages. </p>
 <h3 id="variable-index_examples_title">variable index_examples_title</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">index_examples_title</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;Examples&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The title for examples in index pages. </p>
 <h3 id="variable-files_filter">variable files_filter</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">files_filter</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>The source files allowed in the output? </p>
+<p><strong>Description</strong></p>
 <p>An empty list means all files are allowed </p>
 <h3 id="variable-folders_to_generate">variable folders_to_generate</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">folder_category</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">folders_to_generate</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">            </span><span class="n">folder_category</span><span class="o">::</span><span class="n">MODULES</span><span class="p">,</span><span class="w">    </span><span class="n">folder_category</span><span class="o">::</span><span class="n">CLASSES</span><span class="p">,</span><span class="w"></span>
 <span class="w">            </span><span class="n">folder_category</span><span class="o">::</span><span class="n">FILES</span><span class="p">,</span><span class="w">      </span><span class="n">folder_category</span><span class="o">::</span><span class="n">PAGES</span><span class="p">,</span><span class="w"></span>
 <span class="w">            </span><span class="n">folder_category</span><span class="o">::</span><span class="n">NAMESPACES</span><span class="p">,</span><span class="w"> </span><span class="n">folder_category</span><span class="o">::</span><span class="n">EXAMPLES</span><span class="p">,</span><span class="w"></span>
 <span class="w">        </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>Folders we should generate. </p>
 <h3 id="variable-formulainlinestart">variable formulaInlineStart</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">formulaInlineStart</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\\</span><span class="s">(&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>Token for latex formulas inline start. </p>
 <h3 id="variable-formulainlineend">variable formulaInlineEnd</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">formulaInlineEnd</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\\</span><span class="s">)&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>Token for latex formulas inline end. </p>
 <h3 id="variable-formulablockstart">variable formulaBlockStart</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">formulaBlockStart</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\\</span><span class="s">[&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>Token for latex formulas block start. </p>
 <h3 id="variable-formulablockend">variable formulaBlockEnd</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/config_8hpp/#file-config.hpp"><code>&lt;doxybook/config.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">formulaBlockEnd</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\\</span><span class="s">]&quot;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></p>
 <p>Token for latex formulas block end. </p>
-<h3 id="variable-replaceunderscoresinanchors">variable replaceUnderscoresInAnchors</h3>
-<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">replaceUnderscoresInAnchors</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-</code></pre></div>
-<p>Replace underscores with hyphens in anchors. </p>
 <hr />
-<p>Updated on 2022-11-15 at 04:12:28 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
 
 
   

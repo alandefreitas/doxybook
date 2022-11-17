@@ -691,9 +691,9 @@ summary. Note that the indentation of <code>{{ doxygen }}</code> matters and wil
 </code></pre></div>
 <p>And when running:</p>
 <div class="highlight"><pre><span></span><code>doxybook <span class="se">\</span>
-    --input ... <span class="se">\</span>
-    --output ... <span class="se">\</span>
-    --config ... <span class="se">\</span>
+    --input path/to/input/xml <span class="se">\</span>
+    --output path/to/output/reference <span class="se">\</span>
+    --config path/to/config.json <span class="se">\</span>
     --summary-input path/to/SUMMARY.md.tmpl <span class="se">\</span>
     --summary-output path/to/SUMMARY.md
 </code></pre></div>
@@ -712,12 +712,12 @@ this:</p>
 <span class="k">*</span> [<span class="nt">GitHub</span>](<span class="na">https://github.com/matusnovak/doxybook</span>)
 </code></pre></div>
 <p>There is a sample config and summary template file located in the <code>example/gitbook</code> folder in this repository.</p>
+</div>
 <h3 id="generating-json-only">Generating JSON only</h3>
 <p>You can generate JSON only files (no Markdown) by adding <code>--json</code> to the command line (with no value). Such as the
 following:</p>
-<div class="highlight"><pre><span></span><code>doxybook --input ... --output ... --json
+<div class="highlight"><pre><span></span><code>doxybook --input path/to/input/xml --output path/to/output/reference --json
 </code></pre></div>
-</div>
 
 
   
