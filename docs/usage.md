@@ -65,9 +65,9 @@ Note, `--config-data` can be used on top of `--config` to overwrite config prope
     
     ```bash
     doxybook \
-        --input ... \
-        --output ... \
-        --config ... \
+        --input path/to/input/xml \
+        --output path/to/output/reference \
+        --config path/to/config.json \
         --summary-input path/to/SUMMARY.md.tmpl \
         --summary-output path/to/SUMMARY.md
     ```
@@ -91,11 +91,11 @@ Note, `--config-data` can be used on top of `--config` to overwrite config prope
     
     There is a sample config and summary template file located in the `example/gitbook` folder in this repository.
     
-    ### Generating JSON only
-    
-    You can generate JSON only files (no Markdown) by adding `--json` to the command line (with no value). Such as the
-    following:
-    
-    ```bash
-    doxybook --input ... --output ... --json
-    ```
+### Generating JSON only
+
+You can generate JSON only files (no Markdown) by adding `--json` to the command line (with no value). Such as the
+following:
+
+```bash
+doxybook --input path/to/input/xml --output path/to/output/reference --json
+```
