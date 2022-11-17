@@ -336,11 +336,7 @@ doxybook::node::finalize(
     if (config.sort) {
         children_.sort([](std::shared_ptr<doxybook::node> const& a,
                           std::shared_ptr<doxybook::node> const& b) {
-#ifdef _MSC_VER
             return a->get_name() < b->get_name();
-#else
-            return a->get_name() > b->get_name();
-#endif
         });
     }
 
