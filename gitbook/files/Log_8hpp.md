@@ -7,38 +7,16 @@ title: src/Utils/Log.hpp
 
 
 
-## Defines
-
-|                | Name           |
-| -------------- | -------------- |
-|  | **[LOG_DEBUG](/modules/group__Utils.md#define-log-debug)**(MSG, ...)  |
-
-
-
-
-## Macros Documentation
-
-### define LOG_DEBUG
 
 ```cpp
-#define LOG_DEBUG(
-    MSG,
-    ...
-)
-printf(MSG, ##__VA_ARGS__)
+#include <src/Utils/Log.hpp>
 ```
 
 
-## Source code
 
-```cpp
-#pragma once
-#include <stdio.h>
 
-#define LOG_DEBUG(MSG, ...) printf(MSG, ##__VA_ARGS__)
-```
 
 
 -------------------------------
 
-Updated on 2022-11-15 at 04:08:15 +0000
+<sub>Updated on 2022-11-17</sub>

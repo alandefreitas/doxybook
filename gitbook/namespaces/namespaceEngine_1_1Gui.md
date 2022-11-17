@@ -9,9 +9,11 @@ title: Engine::Gui
 
 ## Classes
 
-|                | Name           |
+| Classes        | Description    |
 | -------------- | -------------- |
-| class | **[Engine::Gui::GuiWidget](/classes/classEngine_1_1Gui_1_1GuiWidget.md)** <br>Some generic gui widget class.  |
+| **[GuiWidget](/classes/classEngine_1_1Gui_1_1GuiWidget.md)** | Some generic gui widget class. <br> <sup><span style="color:green">(class)</span></sup> |
+
+
 
 
 
@@ -20,4 +22,4 @@ title: Engine::Gui
 
 -------------------------------
 
-Updated on 2022-11-15 at 04:08:15 +0000
+<sub>Updated on 2022-11-17</sub>

@@ -455,13 +455,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#source-code" class="md-nav__link">
-    Source code
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -486,16 +479,20 @@
 
 
 <h1 id="doxybookdoxygenhpp">doxybook/doxygen.hpp</h1>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;doxybook/doxygen.hpp&gt;</span><span class="cp"></span>
+</code></pre></div>
 <h2 id="namespaces">Namespaces</h2>
 <table>
 <thead>
 <tr>
 <th>Name</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/">doxybook</a></strong></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -503,98 +500,19 @@
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Classes</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>class</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/">doxybook::doxygen</a></strong> <br>All the nodes representing the content of doxygen xml files.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/">doxygen</a></strong></td>
+<td>All the nodes representing the content of doxygen xml files. <br> <sup><span style="color:green">(class)</span></sup></td>
 </tr>
 </tbody>
 </table>
-<h2 id="source-code">Source code</h2>
-<div class="highlight"><pre><span></span><code><span class="c1">//</span>
-<span class="c1">// Copyright (c) 2021 Matus Novak (@matusnovak)</span>
-<span class="c1">// Copyright (c) 2022 alandefreitas (alandefreitas@gmail.com)</span>
-<span class="c1">//</span>
-<span class="c1">// Distributed under the Boost Software License, Version 1.0.</span>
-<span class="c1">// https://www.boost.org/LICENSE_1_0.txt</span>
-<span class="c1">//</span>
-
-<span class="cp">#ifndef DOXYBOOK_DOXYGEN_HPP</span>
-<span class="cp">#define DOXYBOOK_DOXYGEN_HPP</span>
-
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;doxybook/node.hpp&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unordered_map&gt;</span><span class="cp"></span>
-
-<span class="k">namespace</span><span class="w"> </span><span class="nn">doxybook</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">text_printer</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">doxygen</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">public</span><span class="o">:</span><span class="w"></span>
-<span class="w">        </span><span class="k">explicit</span><span class="w"> </span><span class="n">doxygen</span><span class="p">(</span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">c</span><span class="p">);</span><span class="w"></span>
-
-<span class="w">        </span><span class="k">virtual</span><span class="w"> </span><span class="o">~</span><span class="n">doxygen</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">        </span><span class="kt">void</span><span class="w"></span>
-<span class="w">        </span><span class="nf">load</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">input_dir</span><span class="p">);</span><span class="w"></span>
-
-<span class="w">        </span><span class="kt">void</span><span class="w"></span>
-<span class="w">        </span><span class="nf">finalize</span><span class="p">(</span><span class="w"></span>
-<span class="w">            </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">plain_printer</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">markdown_printer</span><span class="p">);</span><span class="w"></span>
-
-<span class="w">        </span><span class="n">node</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"></span>
-<span class="w">        </span><span class="n">get_index</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="n">index_</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="p">}</span><span class="w"></span>
-
-<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">node</span><span class="o">&gt;</span><span class="w"></span>
-<span class="w">        </span><span class="n">find</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">refid</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">        </span><span class="n">node_cache_map</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"></span>
-<span class="w">        </span><span class="n">get_cache</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">cache_</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="p">}</span><span class="w"></span>
-
-<span class="w">    </span><span class="k">private</span><span class="o">:</span><span class="w"></span>
-<span class="w">        </span><span class="c1">// A map with the refids of each kind</span>
-<span class="w">        </span><span class="k">using</span><span class="w"> </span><span class="n">kind_refid_map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">unordered_multimap</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">        </span><span class="n">kind_refid_map</span><span class="w"></span>
-<span class="w">        </span><span class="nf">get_index_kinds</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">input_dir</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">        </span><span class="kt">void</span><span class="w"></span>
-<span class="w">        </span><span class="nf">get_index_cache</span><span class="p">(</span><span class="w"></span>
-<span class="w">            </span><span class="n">node_cache_map</span><span class="o">&amp;</span><span class="w"> </span><span class="n">cache</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">node</span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">node</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">        </span><span class="c1">// Finalize given a certain node, which might have child nodes</span>
-<span class="w">        </span><span class="kt">void</span><span class="w"></span>
-<span class="w">        </span><span class="nf">finalize_recursively</span><span class="p">(</span><span class="w"></span>
-<span class="w">            </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">plain_printer</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="n">text_printer</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">markdown_printer</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">node</span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">node</span><span class="p">);</span><span class="w"></span>
-
-<span class="w">        </span><span class="kt">void</span><span class="w"></span>
-<span class="w">        </span><span class="nf">update_group_pointers</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">node</span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">node</span><span class="p">);</span><span class="w"></span>
-
-<span class="w">        </span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">config_</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">        </span><span class="c1">// The root object that holds everything (index.xml)</span>
-<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">node</span><span class="o">&gt;</span><span class="w"> </span><span class="n">index_</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">        </span><span class="n">node_cache_map</span><span class="w"> </span><span class="n">cache_</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="p">};</span><span class="w"></span>
-<span class="p">}</span><span class="w"> </span><span class="c1">// namespace doxybook</span>
-
-<span class="cp">#endif</span>
-</code></pre></div>
 <hr />
-<p>Updated on 2022-11-15 at 04:08:09 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
 
 
   

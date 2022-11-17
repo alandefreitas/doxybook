@@ -5,9 +5,9 @@
   <meta name="generator" content="Hugo 0.105.0">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="src/Graphics/Handle.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Name class Engine::Graphics::Handle Source code # #pragma once namespace Engine { namespace Graphics { class Handle { public: Handle() = default; virtual ~Handle() = default; int getHandle() const { return handle; } protected: // OpenGL handle int handle; }; inline int getHandle(Handle&amp; handle) { return handle.getHandle(); } } // namespace Graphics } // namespace Engine Updated on 2022-11-15 at 04:08:15 &#43;0000">
+<meta name="description" content="src/Graphics/Handle.hpp # #include &lt;src/Graphics/Handle.hpp&gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Classes Description Handle Engine::Graphics::Handle (class) Updated on 2022-11-17">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="src/Graphics/Handle.hpp" />
-<meta property="og:description" content="src/Graphics/Handle.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Name class Engine::Graphics::Handle Source code # #pragma once namespace Engine { namespace Graphics { class Handle { public: Handle() = default; virtual ~Handle() = default; int getHandle() const { return handle; } protected: // OpenGL handle int handle; }; inline int getHandle(Handle&amp; handle) { return handle.getHandle(); } } // namespace Graphics } // namespace Engine Updated on 2022-11-15 at 04:08:15 &#43;0000" />
+<meta property="og:description" content="src/Graphics/Handle.hpp # #include &lt;src/Graphics/Handle.hpp&gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Classes Description Handle Engine::Graphics::Handle (class) Updated on 2022-11-17" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://alandefreitas.github.io/doxybook/hugo-book/files/handle_8hpp/" /><meta property="article:section" content="files" />
 
@@ -17,7 +17,7 @@
 <link rel="manifest" href="/doxybook/hugo-book/manifest.json">
 <link rel="icon" href="/doxybook/hugo-book/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/doxybook/hugo-book/book.min.68be0b7a9674f2a612ce0e9b2e9447ff4b7ac96546e06b642bfd3ded0ca490ef.css" integrity="sha256-aL4LepZ08qYSzg6bLpRH/0t6yWVG4GtkK/097QykkO8=">
-<script defer src="/doxybook/hugo-book/en.search.min.e1f6c71d75c27c03e485731d8e92c532bbf5e3149e702ee00620b4e1569158e5.js" integrity="sha256-4fbHHXXCfAPkhXMdjpLFMrv14xSecC7gBiC04VaRWOU="></script>
+<script defer src="/doxybook/hugo-book/en.search.min.aa37234520f223b4cf4a139b5a55b0fa24e845cc32067a9e0991781bb795328d.js" integrity="sha256-qjcjRSDyI7TPShObWlWw&#43;iToRcwyBnqeCZF4G7eVMo0="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -59,7 +59,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
 <li><a href="/doxybook/hugo-book/classes/">Classes</a></li>
 <li><a href="/doxybook/hugo-book/namespaces/">Namespaces</a></li>
-<li><a href="/doxybook/hugo-book/modules/">Modules</a></li>
+<li><a href="/doxybook/hugo-book/libraries/">Modules</a></li>
 <li><a href="/doxybook/hugo-book/files/">Files</a></li>
 <li><a href="/doxybook/hugo-book/pages/">Pages</a></li>
 <li><a href="/doxybook/hugo-book/examples/">Examples</a></li>
@@ -112,7 +112,6 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#namespaces">Namespaces</a></li>
     <li><a href="#classes">Classes</a></li>
-    <li><a href="#source-code">Source code</a></li>
   </ul>
 </nav>
 
@@ -129,7 +128,8 @@ https://github.com/alex-shpak/hugo-book
   src/Graphics/Handle.hpp
   <a class="anchor" href="#srcgraphicshandlehpp">#</a>
 </h1>
-<h2 id="namespaces">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;src/Graphics/Handle.hpp&gt;</span><span style="color:#75715e">
+</span></span></span></code></pre></div><h2 id="namespaces">
   Namespaces
   <a class="anchor" href="#namespaces">#</a>
 </h2>
@@ -137,14 +137,17 @@ https://github.com/alex-shpak/hugo-book
 <thead>
 <tr>
 <th>Name</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="/doxybook/hugo-book/namespaces/namespaceengine/">Engine</a></strong> <!-- raw HTML omitted -->This namespace contains all of the necessary engine components.</td>
+<td><strong><a href="/doxybook/hugo-book/namespaces/namespaceengine/">Engine</a></strong></td>
+<td>This namespace contains all of the necessary engine components.</td>
 </tr>
 <tr>
 <td><strong><a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1graphics/">Engine::Graphics</a></strong></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -155,46 +158,19 @@ https://github.com/alex-shpak/hugo-book
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Classes</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>class</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1handle/">Engine::Graphics::Handle</a></strong></td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1handle/">Handle</a></strong></td>
+<td>Engine::Graphics::Handle<!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(class)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 </tbody>
 </table>
-<h2 id="source-code">
-  Source code
-  <a class="anchor" href="#source-code">#</a>
-</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#pragma once
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> Engine {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">namespace</span> Graphics {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Handle</span> {
-</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>            Handle() <span style="color:#f92672">=</span> <span style="color:#66d9ef">default</span>;
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">virtual</span> <span style="color:#f92672">~</span>Handle() <span style="color:#f92672">=</span> <span style="color:#66d9ef">default</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getHandle</span>() <span style="color:#66d9ef">const</span> {
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> handle;
-</span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">protected</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// OpenGL handle
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">int</span> handle;
-</span></span><span style="display:flex;"><span>        };
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">inline</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getHandle</span>(Handle<span style="color:#f92672">&amp;</span> handle) {
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> handle.getHandle();
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    } <span style="color:#75715e">// namespace Graphics
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>} <span style="color:#75715e">// namespace Engine
-</span></span></span></code></pre></div><hr>
-<p>Updated on 2022-11-15 at 04:08:15 +0000</p>
+<hr>
+<p><!-- raw HTML omitted -->Updated on 2022-11-17<!-- raw HTML omitted --></p>
 </article>
  
       
@@ -233,7 +209,6 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#namespaces">Namespaces</a></li>
     <li><a href="#classes">Classes</a></li>
-    <li><a href="#source-code">Source code</a></li>
   </ul>
 </nav>
 

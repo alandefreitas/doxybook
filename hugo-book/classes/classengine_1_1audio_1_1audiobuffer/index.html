@@ -17,7 +17,7 @@
 <link rel="manifest" href="/doxybook/hugo-book/manifest.json">
 <link rel="icon" href="/doxybook/hugo-book/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/doxybook/hugo-book/book.min.68be0b7a9674f2a612ce0e9b2e9447ff4b7ac96546e06b642bfd3ded0ca490ef.css" integrity="sha256-aL4LepZ08qYSzg6bLpRH/0t6yWVG4GtkK/097QykkO8=">
-<script defer src="/doxybook/hugo-book/en.search.min.e1f6c71d75c27c03e485731d8e92c532bbf5e3149e702ee00620b4e1569158e5.js" integrity="sha256-4fbHHXXCfAPkhXMdjpLFMrv14xSecC7gBiC04VaRWOU="></script>
+<script defer src="/doxybook/hugo-book/en.search.min.aa37234520f223b4cf4a139b5a55b0fa24e845cc32067a9e0991781bb795328d.js" integrity="sha256-qjcjRSDyI7TPShObWlWw&#43;iToRcwyBnqeCZF4G7eVMo0="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -59,7 +59,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
 <li><a href="/doxybook/hugo-book/classes/">Classes</a></li>
 <li><a href="/doxybook/hugo-book/namespaces/">Namespaces</a></li>
-<li><a href="/doxybook/hugo-book/modules/">Modules</a></li>
+<li><a href="/doxybook/hugo-book/libraries/">Modules</a></li>
 <li><a href="/doxybook/hugo-book/files/">Files</a></li>
 <li><a href="/doxybook/hugo-book/pages/">Pages</a></li>
 <li><a href="/doxybook/hugo-book/examples/">Examples</a></li>
@@ -116,15 +116,14 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#protected-functions">Protected Functions</a></li>
     <li><a href="#protected-attributes">Protected Attributes</a></li>
     <li><a href="#friends">Friends</a></li>
-    <li><a href="#detailed-description">Detailed Description</a></li>
-    <li><a href="#public-types-documentation">Public Types Documentation</a>
+    <li><a href="#public-types-1">Public Types</a>
       <ul>
         <li><a href="#enum-type">enum Type</a></li>
         <li><a href="#using-audiodata">using AudioData</a></li>
         <li><a href="#typedef-audiodata8u">typedef AudioData8U</a></li>
       </ul>
     </li>
-    <li><a href="#public-functions-documentation">Public Functions Documentation</a>
+    <li><a href="#public-functions-1">Public Functions</a>
       <ul>
         <li><a href="#function-audiobuffer">function AudioBuffer</a></li>
         <li><a href="#function-audiobuffer-1">function ~AudioBuffer</a></li>
@@ -133,17 +132,16 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#function-loop">function loop</a></li>
         <li><a href="#function-setdata">function setData</a></li>
         <li><a href="#function-setdatamultiple">function setDataMultiple</a></li>
-        <li><a href="#function-setdata-1">function setData</a></li>
         <li><a href="#function-setcallback">function setCallback</a></li>
         <li><a href="#function-setcallback2">function setCallback2</a></li>
       </ul>
     </li>
-    <li><a href="#protected-functions-documentation">Protected Functions Documentation</a>
+    <li><a href="#protected-functions-1">Protected Functions</a>
       <ul>
         <li><a href="#function-getdata">function getData</a></li>
       </ul>
     </li>
-    <li><a href="#protected-attributes-documentation">Protected Attributes Documentation</a>
+    <li><a href="#protected-attributes-1">Protected Attributes</a>
       <ul>
         <li><a href="#variable-playing">variable playing</a></li>
       </ul>
@@ -170,9 +168,38 @@ https://github.com/alex-shpak/hugo-book
   Engine::Audio::AudioBuffer
   <a class="anchor" href="#engineaudioaudiobuffer">#</a>
 </h1>
-<p><strong>Module:</strong> <strong><a href="/doxybook/hugo-book/modules/group__engine/">An example game engine</a></strong> <strong>/</strong> <strong><a href="/doxybook/hugo-book/modules/group__audio/">Audio buffers and devices</a></strong></p>
-<p><em>A simple audio buffer to hold PCM samples</em> <a href="#detailed-description">More&hellip;</a></p>
-<p><code>#include &lt;AudioBuffer.hpp&gt;</code></p>
+<p><strong><a href="/doxybook/hugo-book/libraries/group__engine/">An example game engine</a></strong> <strong>/</strong> <strong><a href="/doxybook/hugo-book/libraries/group__audio/">Audio buffers and devices</a></strong> <strong>/</strong>
+<strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">AudioBuffer</a></strong></p>
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AudioBuffer</span>;
+</span></span></code></pre></div><p><em>A simple audio buffer to hold PCM samples</em></p>
+<p><strong>Description</strong></p>
+<p>Lorem ipsum donor</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// Some random code
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> Engine;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Audio<span style="color:#f92672">::</span>AudioBuffer buffer(<span style="color:#e6db74">&#34;path/to/file.wav&#34;</span>);
+</span></span><span style="display:flex;"><span>buffer.play(audioManager);
+</span></span></code></pre></div><p>More detailed description!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// Another code sample
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> Engine;
+</span></span><span style="display:flex;"><span>Audio<span style="color:#f92672">::</span>AudioBuffer buffer(<span style="color:#e6db74">&#34;path/to/file.wav&#34;</span>);
+</span></span><span style="display:flex;"><span>std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> buffer.play(...) <span style="color:#f92672">&lt;&lt;</span> std<span style="color:#f92672">::</span>endl;
+</span></span></code></pre></div><p><strong>Author</strong>: Matus Novak</p>
+<p><strong>Date</strong>: 2017-2019</p>
+<p><strong>Note</strong>:</p>
+<ul>
+<li>Some random note</li>
+<li>Some second random note</li>
+</ul>
+<p><strong>Bug</strong>: Some random bug</p>
+<p>Some other random bug</p>
+<p><strong>Test</strong>: Some random test description</p>
+<p><strong>Todo</strong>: Some random todo</p>
+<p><strong>Warning</strong>: Some random warning</p>
+<p><strong>Precondition</strong>: First initialize the system.</p>
 <h2 id="public-classes">
   Public Classes
   <a class="anchor" href="#public-classes">#</a>
@@ -198,22 +225,22 @@ https://github.com/alex-shpak/hugo-book
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Types</th>
+<th>Definition</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>enum class</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#enum-type">Type</a></strong> { UNKNOWN = 0, INT_8 = 1 &laquo; 1, INT_16 = 1 &laquo; 2, INT_24 = 1 &laquo; 3, INT_32 = 1 &laquo; 4, FLOAT_32 = 1 &laquo; 5}<!-- raw HTML omitted -->Different type of audio formats.</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#enum-type">Type</a></strong></td>
+<td>Different type of audio formats. <!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(enum)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>template &lt;typename T &gt; <!-- raw HTML omitted -->using <a href="/doxybook/hugo-book/classes/classengine_1_1utils_1_1arrayview/">Utils::ArrayView</a>&lt; T &gt;</td>
 <td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#using-audiodata">AudioData</a></strong></td>
+<td><code>[Utils::ArrayView](/doxybook/hugo-book/classes/classengine_1_1utils_1_1arrayview/)&lt; T &gt;</code><!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(using)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>typedef <a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#using-audiodata">AudioData</a>&lt; uint8_t &gt;</td>
 <td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#typedef-audiodata8u">AudioData8U</a></strong></td>
+<td><code>[AudioData](/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#using-audiodata)&lt; uint8_t &gt;</code><!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(typedef)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 </tbody>
 </table>
@@ -224,50 +251,46 @@ https://github.com/alex-shpak/hugo-book
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Functions</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-audiobuffer">AudioBuffer</a></strong>(const std::string &amp; filename)<!-- raw HTML omitted -->Constructor for <a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">Audio::AudioBuffer</a>.</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-audiobuffer">(constructor)</a></strong></td>
+<td>Constructor for <a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">Audio::AudioBuffer</a>. <!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(function)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>virtual</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-~audiobuffer">~AudioBuffer</a></strong>() =default<!-- raw HTML omitted --><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">Audio::AudioBuffer</a> destructor.</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-~audiobuffer">(destructor)</a></strong>  <!-- raw HTML omitted -->= default<!-- raw HTML omitted --></td>
+<td><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">Audio::AudioBuffer</a> destructor. <!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(virtual function)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>void</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-play">play</a></strong>(<a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiomanager/">AudioManager</a> &amp; manager) const<!-- raw HTML omitted -->Play this buffer.</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-play">play</a></strong> <!-- raw HTML omitted -->const<!-- raw HTML omitted --></td>
+<td>Play this buffer. <!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(function)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>void</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-stop">stop</a></strong>(<a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiomanager/">AudioManager</a> &amp; manager) const<!-- raw HTML omitted -->Stop this buffer playing.</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-stop">stop</a></strong> <!-- raw HTML omitted -->const<!-- raw HTML omitted --></td>
+<td>Stop this buffer playing. <!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(function)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>void</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-loop">loop</a></strong>(<a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiomanager/">AudioManager</a> &amp; manager) const<!-- raw HTML omitted -->Loop this buffer forever.</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-loop">loop</a></strong> <!-- raw HTML omitted -->const<!-- raw HTML omitted --></td>
+<td>Loop this buffer forever. <!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(function)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>void</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-setdata">setData</a></strong>(const <a href="/doxybook/hugo-book/classes/structengine_1_1audio_1_1audiobuffer_1_1typedaudiodata/">TypedAudioData</a> &amp; data)</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-setdata">setData</a></strong></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted -->(function)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>template &lt;size_t Size&gt; <!-- raw HTML omitted -->void</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-setdatamultiple">setDataMultiple</a></strong>(const <a href="/doxybook/hugo-book/classes/structengine_1_1audio_1_1audiobuffer_1_1typedaudiodata/">TypedAudioData</a> data[Size])</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-setdatamultiple">setDataMultiple</a></strong></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted -->(function template)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>void</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-setdata">setData</a></strong>(const <a href="/doxybook/hugo-book/classes/structengine_1_1audio_1_1audiobuffer_1_1typedaudiodata/">TypedAudioData</a> data[], size_t size)<!-- raw HTML omitted -->Some deprecated function.</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-setcallback">setCallback</a></strong></td>
+<td>Set the callback function. <!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(function)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>void</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-setcallback">setCallback</a></strong>(<a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1audio/#typedef-callback">Callback</a> callback)<!-- raw HTML omitted -->Set the callback function.</td>
-</tr>
-<tr>
-<td>void</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-setcallback2">setCallback2</a></strong>(<a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1audio/#using-callback2">Callback2</a> callback, void * user)<!-- raw HTML omitted -->Set the callback function.</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-setcallback2">setCallback2</a></strong></td>
+<td>Set the callback function. <!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(function)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 </tbody>
 </table>
@@ -278,14 +301,14 @@ https://github.com/alex-shpak/hugo-book
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Protected Functions</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>float *</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-getdata">getData</a></strong>()</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-getdata">getData</a></strong></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted -->(function)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 </tbody>
 </table>
@@ -296,14 +319,14 @@ https://github.com/alex-shpak/hugo-book
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Protected Attributes</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>bool</td>
 <td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#variable-playing">playing</a></strong></td>
+<td><code>bool</code><!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(protected variable)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 </tbody>
 </table>
@@ -314,61 +337,32 @@ https://github.com/alex-shpak/hugo-book
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Friends</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>class</td>
 <td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#friend-audiomanager">AudioManager</a></strong></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(public friend class)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>void</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#friend-audiodosomething">Audio::doSomething</a></strong>(<a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">AudioBuffer</a> &amp; buffer)</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#friend-audiodosomething">Audio::doSomething</a></strong></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(public friend void)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 </tbody>
 </table>
-<h2 id="detailed-description">
-  Detailed Description
-  <a class="anchor" href="#detailed-description">#</a>
-</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Engine</span><span style="color:#f92672">::</span>Audio<span style="color:#f92672">::</span>AudioBuffer;
-</span></span></code></pre></div><p><em>A simple audio buffer to hold PCM samples</em></p>
-<p><strong>Author</strong>: Matus Novak</p>
-<p><strong>Date</strong>: 2017-2019</p>
-<p><strong>Note</strong>:</p>
-<ul>
-<li>Some random note</li>
-<li>Some second random note</li>
-</ul>
-<p><strong>Bug</strong>: Some random bug</p>
-<p>Some other random bug</p>
-<p><strong>Test</strong>: Some random test description</p>
-<p><strong>Todo</strong>: Some random todo</p>
-<p><strong>Warning</strong>: Some random warning</p>
-<p><strong>Precondition</strong>: First initialize the system.</p>
-<p>Lorem ipsum donor</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// Some random code
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> Engine;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Audio<span style="color:#f92672">::</span>AudioBuffer buffer(<span style="color:#e6db74">&#34;path/to/file.wav&#34;</span>);
-</span></span><span style="display:flex;"><span>buffer.play(audioManager);
-</span></span></code></pre></div><p>More detailed description!</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// Another code sample
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> Engine;
-</span></span><span style="display:flex;"><span>Audio<span style="color:#f92672">::</span>AudioBuffer buffer(<span style="color:#e6db74">&#34;path/to/file.wav&#34;</span>);
-</span></span><span style="display:flex;"><span>std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> buffer.play(...) <span style="color:#f92672">&lt;&lt;</span> std<span style="color:#f92672">::</span>endl;
-</span></span></code></pre></div><h2 id="public-types-documentation">
-  Public Types Documentation
-  <a class="anchor" href="#public-types-documentation">#</a>
+<h2 id="public-types-1">
+  Public Types
+  <a class="anchor" href="#public-types-1">#</a>
 </h2>
 <h3 id="enum-type">
   enum Type
   <a class="anchor" href="#enum-type">#</a>
 </h3>
-<table>
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">enum</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Type</span>;
+</span></span></code></pre></div><table>
 <thead>
 <tr>
 <th>Enumerator</th>
@@ -414,152 +408,162 @@ https://github.com/alex-shpak/hugo-book
   using AudioData
   <a class="anchor" href="#using-audiodata">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">template</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">typename</span> T <span style="color:#f92672">&gt;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> Engine<span style="color:#f92672">::</span>Audio<span style="color:#f92672">::</span>AudioBuffer<span style="color:#f92672">::</span>AudioData <span style="color:#f92672">=</span>  Utils<span style="color:#f92672">::</span>ArrayView<span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;</span>;
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">template</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">typename</span> T<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> AudioData <span style="color:#f92672">=</span> Utils<span style="color:#f92672">::</span>ArrayView<span style="color:#f92672">&lt;</span> T <span style="color:#f92672">&gt;</span>;
 </span></span></code></pre></div><h3 id="typedef-audiodata8u">
   typedef AudioData8U
   <a class="anchor" href="#typedef-audiodata8u">#</a>
 </h3>
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> AudioData<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">uint8_t</span><span style="color:#f92672">&gt;</span> Engine<span style="color:#f92672">::</span>Audio<span style="color:#f92672">::</span>AudioBuffer<span style="color:#f92672">::</span>AudioData8U;
-</span></span></code></pre></div><h2 id="public-functions-documentation">
-  Public Functions Documentation
-  <a class="anchor" href="#public-functions-documentation">#</a>
+</span></span></code></pre></div><h2 id="public-functions-1">
+  Public Functions
+  <a class="anchor" href="#public-functions-1">#</a>
 </h2>
 <h3 id="function-audiobuffer">
   function AudioBuffer
   <a class="anchor" href="#function-audiobuffer">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">explicit</span> AudioBuffer(
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> std<span style="color:#f92672">::</span>string <span style="color:#f92672">&amp;</span> filename
-</span></span><span style="display:flex;"><span>)
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">explicit</span> <span style="color:#a6e22e">AudioBuffer</span>(<span style="color:#66d9ef">const</span> std<span style="color:#f92672">::</span>string <span style="color:#f92672">&amp;</span> filename);
 </span></span></code></pre></div><p>Constructor for <a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">Audio::AudioBuffer</a>.</p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-audiobuffer-1">
   function ~AudioBuffer
   <a class="anchor" href="#function-audiobuffer-1">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">virtual</span> <span style="color:#f92672">~</span>AudioBuffer() <span style="color:#f92672">=</span><span style="color:#66d9ef">default</span>
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">virtual</span> <span style="color:#f92672">~</span>AudioBuffer() <span style="color:#f92672">=</span> <span style="color:#66d9ef">default</span>;
 </span></span></code></pre></div><p><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">Audio::AudioBuffer</a> destructor.</p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-play">
   function play
   <a class="anchor" href="#function-play">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> play(
-</span></span><span style="display:flex;"><span>    AudioManager <span style="color:#f92672">&amp;</span> manager
-</span></span><span style="display:flex;"><span>) <span style="color:#66d9ef">const</span>
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">play</span>(AudioManager <span style="color:#f92672">&amp;</span> manager) <span style="color:#66d9ef">const</span>;
 </span></span></code></pre></div><p>Play this buffer.</p>
-<p><strong>Parameters</strong>:</p>
+<p><strong>Parameters</strong></p>
 <ul>
-<li><strong>manager</strong> Which manager to play the sound with</li>
+<li><strong>manager</strong> - Which manager to play the sound with</li>
 </ul>
-<p><strong>Exceptions</strong>:</p>
-<ul>
-<li><strong><a href="/doxybook/hugo-book/classes/classengine_1_1exception/">Exception</a></strong> If this buffer is already playing</li>
-</ul>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-stop">
   function stop
   <a class="anchor" href="#function-stop">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> stop(
-</span></span><span style="display:flex;"><span>    AudioManager <span style="color:#f92672">&amp;</span> manager
-</span></span><span style="display:flex;"><span>) <span style="color:#66d9ef">const</span>
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">stop</span>(AudioManager <span style="color:#f92672">&amp;</span> manager) <span style="color:#66d9ef">const</span>;
 </span></span></code></pre></div><p>Stop this buffer playing.</p>
-<p><strong>Parameters</strong>:</p>
+<p><strong>Parameters</strong></p>
 <ul>
-<li><strong>manager</strong> Which manager to stop the sound with</li>
+<li><strong>manager</strong> - Which manager to stop the sound with</li>
 </ul>
-<p><strong>Exceptions</strong>:</p>
-<ul>
-<li><strong><a href="/doxybook/hugo-book/classes/classengine_1_1exception/">Exception</a></strong> If this buffer is already stopped</li>
-</ul>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-loop">
   function loop
   <a class="anchor" href="#function-loop">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> loop(
-</span></span><span style="display:flex;"><span>    AudioManager <span style="color:#f92672">&amp;</span> manager
-</span></span><span style="display:flex;"><span>) <span style="color:#66d9ef">const</span>
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">loop</span>(AudioManager <span style="color:#f92672">&amp;</span> manager) <span style="color:#66d9ef">const</span>;
 </span></span></code></pre></div><p>Loop this buffer forever.</p>
-<p><strong>Parameters</strong>:</p>
+<p><strong>Parameters</strong></p>
 <ul>
-<li><strong>manager</strong> Which manager to loop the sound with</li>
+<li><strong>manager</strong> - Which manager to loop the sound with</li>
 </ul>
-<p><strong>Exceptions</strong>:</p>
-<ul>
-<li><strong><a href="/doxybook/hugo-book/classes/classengine_1_1exception/">Exception</a></strong> If this buffer is already looping</li>
-</ul>
-<p><strong>Note</strong>: This will loop forever until you call stop</p>
+<p><strong>Notes</strong></p>
+<p>This will loop forever until you call stop</p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-setdata">
   function setData
   <a class="anchor" href="#function-setdata">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> setData(
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> TypedAudioData <span style="color:#f92672">&amp;</span> data
-</span></span><span style="display:flex;"><span>)
-</span></span></code></pre></div><h3 id="function-setdatamultiple">
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">setData</span>(<span style="color:#66d9ef">const</span> TypedAudioData <span style="color:#f92672">&amp;</span> data);
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">setData</span>(<span style="color:#66d9ef">const</span> TypedAudioData data[], size_t size);
+</span></span></code></pre></div><p>Some deprecated function.</p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
+<h3 id="function-setdatamultiple">
   function setDataMultiple
   <a class="anchor" href="#function-setdatamultiple">#</a>
 </h3>
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">template</span> <span style="color:#f92672">&lt;</span>size_t Size<span style="color:#f92672">&gt;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">inline</span> <span style="color:#66d9ef">void</span> setDataMultiple(
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> TypedAudioData data[Size]
-</span></span><span style="display:flex;"><span>)
-</span></span></code></pre></div><h3 id="function-setdata-1">
-  function setData
-  <a class="anchor" href="#function-setdata-1">#</a>
-</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> setData(
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> TypedAudioData data[],
-</span></span><span style="display:flex;"><span>    size_t size
-</span></span><span style="display:flex;"><span>)
-</span></span></code></pre></div><p>Some deprecated function.</p>
-<p><strong>Deprecated</strong>:</p>
-<p>Use the <a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-setdatamultiple">AudioBuffer::setDataMultiple</a> instead</p>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span>
+</span></span><span style="display:flex;"><span>setDataMultiple(<span style="color:#66d9ef">const</span> TypedAudioData data[Size]);
+</span></span></code></pre></div><p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-setcallback">
   function setCallback
   <a class="anchor" href="#function-setcallback">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> setCallback(
-</span></span><span style="display:flex;"><span>    Callback callback
-</span></span><span style="display:flex;"><span>)
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">setCallback</span>(Callback callback);
 </span></span></code></pre></div><p>Set the callback function.</p>
-<p><strong>Parameters</strong>:</p>
+<p><strong>Parameters</strong></p>
 <ul>
-<li><strong>callback</strong> The callback function pointer</li>
+<li><strong>callback</strong> - The callback function pointer</li>
 </ul>
-<p><strong>Deprecated</strong>:</p>
-<p>Use the <a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/#function-setcallback2">AudioBuffer::setCallback2</a> instead</p>
-<p><strong>See</strong>: <a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1audio/#typedef-callback">Audio::Callback</a></p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
+<p><strong>See Also</strong></p>
+<ul>
+<li><a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1audio/#typedef-callback">Audio::Callback</a></li>
+</ul>
 <h3 id="function-setcallback2">
   function setCallback2
   <a class="anchor" href="#function-setcallback2">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> setCallback2(
-</span></span><span style="display:flex;"><span>    Callback2 callback,
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span> user
-</span></span><span style="display:flex;"><span>)
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">setCallback2</span>(Callback2 callback, <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span> user);
 </span></span></code></pre></div><p>Set the callback function.</p>
-<p><strong>Parameters</strong>:</p>
+<p><strong>Parameters</strong></p>
 <ul>
-<li><strong>callback</strong> The callback function pointer</li>
+<li><strong>callback</strong> - The callback function pointer</li>
 </ul>
-<p><strong>See</strong>: <a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1audio/#typedef-callback">Audio::Callback</a></p>
-<h2 id="protected-functions-documentation">
-  Protected Functions Documentation
-  <a class="anchor" href="#protected-functions-documentation">#</a>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
+<p><strong>See Also</strong></p>
+<ul>
+<li><a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1audio/#typedef-callback">Audio::Callback</a></li>
+</ul>
+<h2 id="protected-functions-1">
+  Protected Functions
+  <a class="anchor" href="#protected-functions-1">#</a>
 </h2>
 <h3 id="function-getdata">
   function getData
   <a class="anchor" href="#function-getdata">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">float</span> <span style="color:#f92672">*</span> getData()
-</span></span></code></pre></div><h2 id="protected-attributes-documentation">
-  Protected Attributes Documentation
-  <a class="anchor" href="#protected-attributes-documentation">#</a>
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">float</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">getData</span>();
+</span></span></code></pre></div><p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
+<h2 id="protected-attributes-1">
+  Protected Attributes
+  <a class="anchor" href="#protected-attributes-1">#</a>
 </h2>
 <h3 id="variable-playing">
   variable playing
   <a class="anchor" href="#variable-playing">#</a>
 </h3>
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">bool</span> playing {false};
 </span></span></code></pre></div><h2 id="friends-1">
   Friends
@@ -569,16 +573,18 @@ https://github.com/alex-shpak/hugo-book
   friend AudioManager
   <a class="anchor" href="#friend-audiomanager">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">friend</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AudioManager</span>;
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">friend</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AudioManager</span>;
 </span></span></code></pre></div><h3 id="friend-audiodosomething">
   friend Audio::doSomething
   <a class="anchor" href="#friend-audiodosomething">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">friend</span> <span style="color:#66d9ef">void</span> Audio<span style="color:#f92672">::</span>doSomething(
-</span></span><span style="display:flex;"><span>    AudioBuffer <span style="color:#f92672">&amp;</span> buffer
-</span></span><span style="display:flex;"><span>);
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">friend</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> Audio<span style="color:#f92672">::</span>doSomething(AudioBuffer <span style="color:#f92672">&amp;</span> buffer);
 </span></span></code></pre></div><hr>
-<p>Updated on 2022-11-15 at 04:08:15 +0000</p>
+<p><!-- raw HTML omitted -->Updated on 2022-11-17<!-- raw HTML omitted --></p>
 </article>
  
       
@@ -621,15 +627,14 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#protected-functions">Protected Functions</a></li>
     <li><a href="#protected-attributes">Protected Attributes</a></li>
     <li><a href="#friends">Friends</a></li>
-    <li><a href="#detailed-description">Detailed Description</a></li>
-    <li><a href="#public-types-documentation">Public Types Documentation</a>
+    <li><a href="#public-types-1">Public Types</a>
       <ul>
         <li><a href="#enum-type">enum Type</a></li>
         <li><a href="#using-audiodata">using AudioData</a></li>
         <li><a href="#typedef-audiodata8u">typedef AudioData8U</a></li>
       </ul>
     </li>
-    <li><a href="#public-functions-documentation">Public Functions Documentation</a>
+    <li><a href="#public-functions-1">Public Functions</a>
       <ul>
         <li><a href="#function-audiobuffer">function AudioBuffer</a></li>
         <li><a href="#function-audiobuffer-1">function ~AudioBuffer</a></li>
@@ -638,17 +643,16 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#function-loop">function loop</a></li>
         <li><a href="#function-setdata">function setData</a></li>
         <li><a href="#function-setdatamultiple">function setDataMultiple</a></li>
-        <li><a href="#function-setdata-1">function setData</a></li>
         <li><a href="#function-setcallback">function setCallback</a></li>
         <li><a href="#function-setcallback2">function setCallback2</a></li>
       </ul>
     </li>
-    <li><a href="#protected-functions-documentation">Protected Functions Documentation</a>
+    <li><a href="#protected-functions-1">Protected Functions</a>
       <ul>
         <li><a href="#function-getdata">function getData</a></li>
       </ul>
     </li>
-    <li><a href="#protected-attributes-documentation">Protected Attributes Documentation</a>
+    <li><a href="#protected-attributes-1">Protected Attributes</a>
       <ul>
         <li><a href="#variable-playing">variable playing</a></li>
       </ul>

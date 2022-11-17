@@ -5,9 +5,11 @@
   <meta name="generator" content="Hugo 0.105.0">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Engine::Audio # Classes # Name class Engine::Audio::AudioBuffer A simple audio buffer to hold PCM samples class Engine::Audio::AudioManager An audio manager that accepts multiple Audio::AudioBuffer instances. Types # Name typedef int(*)(AudioBuffer &amp;buffer, size_t offset) Callback Some callback function pointer type definition. using int(*)(AudioBuffer &amp;buffer, size_t offset, void *user) Callback2 Some callback function pointer type definition. Functions # Name void doSomething(AudioBuffer &amp; buffer)Do something with the buffer. Types Documentation # typedef Callback # typedef int(* Engine::Audio::Callback) (AudioBuffer &amp;buffer, size_t offset); Some callback function pointer type definition.">
+<meta name="description" content="Engine::Audio # Classes # Classes Description AudioBuffer A simple audio buffer to hold PCM samples (class) AudioManager An audio manager that accepts multiple Audio::AudioBuffer instances. (class) Types # Member Types Definition Callback Some callback function pointer type definition. (typedef) Callback2 Some callback function pointer type definition. (using) Functions # Member Functions Description doSomething Do something with the buffer. (function) Types # typedef Callback # Defined in header &lt;src/Audio/AudioBuffer.hpp&gt;
+typedef int(* Engine::Audio::Callback) (AudioBuffer &amp;buffer, size_t offset); Some callback function pointer type definition.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Engine::Audio" />
-<meta property="og:description" content="Engine::Audio # Classes # Name class Engine::Audio::AudioBuffer A simple audio buffer to hold PCM samples class Engine::Audio::AudioManager An audio manager that accepts multiple Audio::AudioBuffer instances. Types # Name typedef int(*)(AudioBuffer &amp;buffer, size_t offset) Callback Some callback function pointer type definition. using int(*)(AudioBuffer &amp;buffer, size_t offset, void *user) Callback2 Some callback function pointer type definition. Functions # Name void doSomething(AudioBuffer &amp; buffer)Do something with the buffer. Types Documentation # typedef Callback # typedef int(* Engine::Audio::Callback) (AudioBuffer &amp;buffer, size_t offset); Some callback function pointer type definition." />
+<meta property="og:description" content="Engine::Audio # Classes # Classes Description AudioBuffer A simple audio buffer to hold PCM samples (class) AudioManager An audio manager that accepts multiple Audio::AudioBuffer instances. (class) Types # Member Types Definition Callback Some callback function pointer type definition. (typedef) Callback2 Some callback function pointer type definition. (using) Functions # Member Functions Description doSomething Do something with the buffer. (function) Types # typedef Callback # Defined in header &lt;src/Audio/AudioBuffer.hpp&gt;
+typedef int(* Engine::Audio::Callback) (AudioBuffer &amp;buffer, size_t offset); Some callback function pointer type definition." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://alandefreitas.github.io/doxybook/hugo-book/namespaces/namespaceengine_1_1audio/" /><meta property="article:section" content="namespaces" />
 
@@ -17,7 +19,7 @@
 <link rel="manifest" href="/doxybook/hugo-book/manifest.json">
 <link rel="icon" href="/doxybook/hugo-book/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/doxybook/hugo-book/book.min.68be0b7a9674f2a612ce0e9b2e9447ff4b7ac96546e06b642bfd3ded0ca490ef.css" integrity="sha256-aL4LepZ08qYSzg6bLpRH/0t6yWVG4GtkK/097QykkO8=">
-<script defer src="/doxybook/hugo-book/en.search.min.e1f6c71d75c27c03e485731d8e92c532bbf5e3149e702ee00620b4e1569158e5.js" integrity="sha256-4fbHHXXCfAPkhXMdjpLFMrv14xSecC7gBiC04VaRWOU="></script>
+<script defer src="/doxybook/hugo-book/en.search.min.aa37234520f223b4cf4a139b5a55b0fa24e845cc32067a9e0991781bb795328d.js" integrity="sha256-qjcjRSDyI7TPShObWlWw&#43;iToRcwyBnqeCZF4G7eVMo0="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -59,7 +61,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
 <li><a href="/doxybook/hugo-book/classes/">Classes</a></li>
 <li><a href="/doxybook/hugo-book/namespaces/">Namespaces</a></li>
-<li><a href="/doxybook/hugo-book/modules/">Modules</a></li>
+<li><a href="/doxybook/hugo-book/libraries/">Modules</a></li>
 <li><a href="/doxybook/hugo-book/files/">Files</a></li>
 <li><a href="/doxybook/hugo-book/pages/">Pages</a></li>
 <li><a href="/doxybook/hugo-book/examples/">Examples</a></li>
@@ -113,13 +115,13 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#classes">Classes</a></li>
     <li><a href="#types">Types</a></li>
     <li><a href="#functions">Functions</a></li>
-    <li><a href="#types-documentation">Types Documentation</a>
+    <li><a href="#types-1">Types</a>
       <ul>
         <li><a href="#typedef-callback">typedef Callback</a></li>
         <li><a href="#using-callback2">using Callback2</a></li>
       </ul>
     </li>
-    <li><a href="#functions-documentation">Functions Documentation</a>
+    <li><a href="#functions-1">Functions</a>
       <ul>
         <li><a href="#function-dosomething">function doSomething</a></li>
       </ul>
@@ -147,18 +149,18 @@ https://github.com/alex-shpak/hugo-book
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Classes</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>class</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">Engine::Audio::AudioBuffer</a></strong> <!-- raw HTML omitted --><em>A simple audio buffer to hold PCM samples</em></td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">AudioBuffer</a></strong></td>
+<td><em>A simple audio buffer to hold PCM samples</em><!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(class)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>class</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiomanager/">Engine::Audio::AudioManager</a></strong> <!-- raw HTML omitted -->An audio manager that <em>accepts</em> multiple <strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">Audio::AudioBuffer</a></strong> instances.</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiomanager/">AudioManager</a></strong></td>
+<td>An audio manager that <em>accepts</em> multiple <strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">Audio::AudioBuffer</a></strong> instances. <!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(class)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 </tbody>
 </table>
@@ -169,18 +171,18 @@ https://github.com/alex-shpak/hugo-book
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Types</th>
+<th>Definition</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>typedef int(*)(AudioBuffer &amp;buffer, size_t offset)</td>
-<td><strong><a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1audio/#typedef-callback">Callback</a></strong> <!-- raw HTML omitted -->Some callback function pointer type definition.</td>
+<td><strong><a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1audio/#typedef-callback">Callback</a></strong></td>
+<td>Some callback function pointer type definition. <!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(typedef)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>using int(*)(<a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">AudioBuffer</a> &amp;buffer, size_t offset, void *user)</td>
-<td><strong><a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1audio/#using-callback2">Callback2</a></strong> <!-- raw HTML omitted -->Some callback function pointer type definition.</td>
+<td><strong><a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1audio/#using-callback2">Callback2</a></strong></td>
+<td>Some callback function pointer type definition. <!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(using)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 </tbody>
 </table>
@@ -191,25 +193,26 @@ https://github.com/alex-shpak/hugo-book
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Functions</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>void</td>
-<td><strong><a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1audio/#function-dosomething">doSomething</a></strong>(<a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">AudioBuffer</a> &amp; buffer)<!-- raw HTML omitted -->Do something with the buffer.</td>
+<td><strong><a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1audio/#function-dosomething">doSomething</a></strong></td>
+<td>Do something with the buffer. <!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(function)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 </tbody>
 </table>
-<h2 id="types-documentation">
-  Types Documentation
-  <a class="anchor" href="#types-documentation">#</a>
+<h2 id="types-1">
+  Types
+  <a class="anchor" href="#types-1">#</a>
 </h2>
 <h3 id="typedef-callback">
   typedef Callback
   <a class="anchor" href="#typedef-callback">#</a>
 </h3>
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#a6e22e">int</span>(<span style="color:#f92672">*</span> Engine<span style="color:#f92672">::</span>Audio<span style="color:#f92672">::</span>Callback) (AudioBuffer <span style="color:#f92672">&amp;</span>buffer, size_t offset);
 </span></span></code></pre></div><p>Some callback function pointer type definition.</p>
 <p><strong>Parameters</strong>:</p>
@@ -223,7 +226,9 @@ https://github.com/alex-shpak/hugo-book
   using Callback2
   <a class="anchor" href="#using-callback2">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> Engine<span style="color:#f92672">::</span>Audio<span style="color:#f92672">::</span>Callback2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">int</span> (<span style="color:#f92672">*</span>)(AudioBuffer<span style="color:#f92672">&amp;</span> buffer, size_t offset, <span style="color:#66d9ef">void</span><span style="color:#f92672">*</span> user);
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> Callback2 <span style="color:#f92672">=</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span>(<span style="color:#f92672">*</span>)(AudioBuffer <span style="color:#f92672">&amp;</span>buffer, size_t offset, <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>user);
 </span></span></code></pre></div><p>Some callback function pointer type definition.</p>
 <p><strong>Parameters</strong>:</p>
 <ul>
@@ -231,20 +236,22 @@ https://github.com/alex-shpak/hugo-book
 <li><strong>offset</strong> The offset of the buffer currently playing</li>
 <li><strong>user</strong> User specific data</li>
 </ul>
-<h2 id="functions-documentation">
-  Functions Documentation
-  <a class="anchor" href="#functions-documentation">#</a>
+<h2 id="functions-1">
+  Functions
+  <a class="anchor" href="#functions-1">#</a>
 </h2>
 <h3 id="function-dosomething">
   function doSomething
   <a class="anchor" href="#function-dosomething">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> doSomething(
-</span></span><span style="display:flex;"><span>    AudioBuffer <span style="color:#f92672">&amp;</span> buffer
-</span></span><span style="display:flex;"><span>)
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/audiobuffer_8hpp/#file-audiobuffer.hpp"><code>&lt;src/Audio/AudioBuffer.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">doSomething</span>(AudioBuffer <span style="color:#f92672">&amp;</span> buffer);
 </span></span></code></pre></div><p>Do something with the buffer.</p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <hr>
-<p>Updated on 2022-11-15 at 04:08:15 +0000</p>
+<p><!-- raw HTML omitted -->Updated on 2022-11-17<!-- raw HTML omitted --></p>
 </article>
  
       
@@ -284,13 +291,13 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#classes">Classes</a></li>
     <li><a href="#types">Types</a></li>
     <li><a href="#functions">Functions</a></li>
-    <li><a href="#types-documentation">Types Documentation</a>
+    <li><a href="#types-1">Types</a>
       <ul>
         <li><a href="#typedef-callback">typedef Callback</a></li>
         <li><a href="#using-callback2">using Callback2</a></li>
       </ul>
     </li>
-    <li><a href="#functions-documentation">Functions Documentation</a>
+    <li><a href="#functions-1">Functions</a>
       <ul>
         <li><a href="#function-dosomething">function doSomething</a></li>
       </ul>

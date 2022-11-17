@@ -9,9 +9,11 @@ title: Engine::Assets
 
 ## Classes
 
-|                | Name           |
+| Classes        | Description    |
 | -------------- | -------------- |
-| class | **[Engine::Assets::Asset](/classes/classEngine_1_1Assets_1_1Asset.md)**  |
+| **[Asset](/classes/classEngine_1_1Assets_1_1Asset.md)** | Engine::Assets::Asset<br> <sup><span style="color:green">(class)</span></sup> |
+
+
 
 
 
@@ -20,4 +22,4 @@ title: Engine::Assets
 
 -------------------------------
 
-Updated on 2022-11-15 at 04:08:15 +0000
+<sub>Updated on 2022-11-17</sub>

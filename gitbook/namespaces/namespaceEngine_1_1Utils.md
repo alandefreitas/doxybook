@@ -9,32 +9,60 @@ title: Engine::Utils
 
 ## Namespaces
 
-| Name           |
-| -------------- |
-| **[Engine::Utils::Path](/namespaces/namespaceEngine_1_1Utils_1_1Path.md)** <br>Filesystem path utility functions.  |
+| Name           | Description    |
+| -------------- | -------------- |
+| **[Engine::Utils::Path](/namespaces/namespaceEngine_1_1Utils_1_1Path.md)** | Filesystem path utility functions.  |
 
 ## Classes
 
-|                | Name           |
+| Classes        | Description    |
 | -------------- | -------------- |
-| class | **[Engine::Utils::ArrayView](/classes/classEngine_1_1Utils_1_1ArrayView.md)** <br>Filesystem path utility functions.  |
+| **[ArrayView](/classes/classEngine_1_1Utils_1_1ArrayView.md)** | Filesystem path utility functions. <br> <sup><span style="color:green">(class)</span></sup> |
+
+## Functions
+| Member Functions | Description |
+| -------------- | -------------- |
+| **[name_with_underscores](/libraries/group__Utils.md#function-name-with-underscores)** |  <sup><span style="color:green">(function)</span></sup> |
+
+
+
 
 ## Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| void | **[name_with_underscores](/modules/group__Utils.md#function-name-with-underscores)**(const std::string & arg) |
-
-
-## Functions Documentation
-
 ### function name_with_underscores
 
-```cpp
-inline void name_with_underscores(
-    const std::string & arg
-)
+
+<sup>Defined in header [`<src/Utils/Utils.hpp>`](/files/Utils_8hpp.md#file-utils.hpp)</sup>
+
+```cpp 
+void
+name_with_underscores(const std::string & arg);
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
+
 
 
 
@@ -43,4 +71,4 @@ inline void name_with_underscores(
 
 -------------------------------
 
-Updated on 2022-11-15 at 04:08:15 +0000
+<sub>Updated on 2022-11-17</sub>

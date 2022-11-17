@@ -449,11 +449,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#public-functions-documentation" class="md-nav__link">
-    Public Functions Documentation
+  <a href="#public-functions_1" class="md-nav__link">
+    Public Functions
   </a>
   
-    <nav class="md-nav" aria-label="Public Functions Documentation">
+    <nav class="md-nav" aria-label="Public Functions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -472,13 +472,6 @@
         
           <li class="md-nav__item">
   <a href="#function-render" class="md-nav__link">
-    function render
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#function-render_1" class="md-nav__link">
     function render
   </a>
   
@@ -513,71 +506,76 @@
 
 
 <h1 id="doxybookrenderer">doxybook::renderer</h1>
+<p><sup>Defined in header <a href="/doxybook/reference/files/renderer_8hpp/#file-renderer.hpp"><code>&lt;doxybook/renderer.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">renderer</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
 <p>Render inja templates with the specified configuration. </p>
-<p><code>#include &lt;renderer.hpp&gt;</code></p>
 <h2 id="public-functions">Public Functions</h2>
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Functions</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1renderer/#function-renderer">renderer</a></strong>(<a href="/doxybook/reference/classes/structdoxybook_1_1config/">config</a> const &amp; config, <a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/">doxygen</a> const &amp; doxygen, <a href="/doxybook/reference/classes/classdoxybook_1_1json__converter/">json_converter</a> const &amp; json_converter, std::optional&lt; std::string &gt; const &amp; templates_path =std::nullopt)<br>Constructor.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1renderer/#function-renderer">(constructor)</a></strong></td>
+<td>Constructor. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1renderer/#function-~renderer">~renderer</a></strong>()</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1renderer/#function-~renderer">(destructor)</a></strong></td>
+<td><sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>void</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1renderer/#function-render">render</a></strong>(std::string const &amp; name, std::string const &amp; path, nlohmann::json const &amp; data) const<br>Destructor.</td>
-</tr>
-<tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1renderer/#function-render">render</a></strong>(std::string const &amp; name, nlohmann::json const &amp; data) const<br>Render template.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1renderer/#function-render">render</a></strong> <span style="color:green">const</span></td>
+<td>Destructor. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 </tbody>
 </table>
-<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h2 id="public-functions_1">Public Functions</h2>
 <h3 id="function-renderer">function renderer</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/renderer_8hpp/#file-renderer.hpp"><code>&lt;doxybook/renderer.hpp&gt;</code></a></sup></p>
 <div class="highlight"><pre><span></span><code><span class="k">explicit</span><span class="w"> </span><span class="n">renderer</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">doxygen</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">doxygen</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">json_converter</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">json_converter</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">templates_path</span><span class="w"> </span><span class="o">=</span><span class="n">std</span><span class="o">::</span><span class="n">nullopt</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">doxygen</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">doxygen</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">json_converter</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">json_converter</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">templates_path</span><span class="w"> </span><span class="o">=</span><span class="n">std</span><span class="o">::</span><span class="n">nullopt</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 <p>Constructor. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-renderer_1">function ~renderer</h3>
-<div class="highlight"><pre><span></span><code><span class="o">~</span><span class="n">renderer</span><span class="p">()</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/renderer_8hpp/#file-renderer.hpp"><code>&lt;doxybook/renderer.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="o">~</span><span class="n">renderer</span><span class="p">();</span><span class="w"></span>
 </code></pre></div>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-render">function render</h3>
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">render</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">path</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">nlohmann</span><span class="o">::</span><span class="n">json</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">data</span><span class="w"></span>
-<span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/renderer_8hpp/#file-renderer.hpp"><code>&lt;doxybook/renderer.hpp&gt;</code></a></sup></p>
+<div class="highlight"><span class="filename">(1)</span><pre><span></span><code><span class="kt">void</span><span class="w"></span>
+<span class="nf">render</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">path</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">nlohmann</span><span class="o">::</span><span class="n">json</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">data</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
-<p>Destructor. </p>
-<h3 id="function-render_1">function render</h3>
-<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">render</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">nlohmann</span><span class="o">::</span><span class="n">json</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">data</span><span class="w"></span>
-<span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<div class="highlight"><span class="filename">(2)</span><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"></span>
+<span class="nf">render</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">nlohmann</span><span class="o">::</span><span class="n">json</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">data</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
-<p>Render template. </p>
-<p><strong>Parameters</strong>: </p>
+<ol>
+<li>Destructor. </li>
+<li>Render template. </li>
+</ol>
+<p><strong>Parameters</strong></p>
 <ul>
-<li><strong>name</strong> template name </li>
-<li><strong>data</strong> data as json </li>
+<li><strong>data</strong> - data as json </li>
+<li><strong>name</strong> - template name </li>
 </ul>
-<p><strong>Return</strong>: </p>
+<p><strong>Return value</strong></p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <hr />
-<p>Updated on 2022-11-15 at 04:08:09 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
 
 
   

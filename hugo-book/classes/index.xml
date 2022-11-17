@@ -12,9 +12,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/classengine_1_1assets_1_1asset/</guid>
-      <description>Engine::Assets::Asset # Module: An example game engine / Generic assets
-#include &amp;lt;Asset.hpp&amp;gt;
-Public Classes # Name union Event Public Functions # Name Asset(const std::string &amp;amp; name) virtual ~Asset() =0 virtual void load()Call this method to load the asset. virtual void unload()Call this method to unload the asset. const Event &amp;amp; getEvent() constReturns the current status of the asset. Public Functions Documentation # function Asset # explicit Asset( const std::string &amp;amp; name ) function ~Asset # virtual ~Asset() =0 function load # virtual void load() Call this method to load the asset.</description>
+      <description>Engine::Assets::Asset # An example game engine / Generic assets / Asset
+Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+class Asset; Public Classes # Name union Event Public Functions # Member Functions Description (constructor) (function) (destructor) = 0 (virtual function) load Call this method to load the asset. (virtual function) unload Call this method to unload the asset. (virtual function) getEvent const Returns the current status of the asset. (function) Public Functions # function Asset # Defined in header &amp;lt;src/Assets/Asset.</description>
     </item>
     
     <item>
@@ -23,9 +23,10 @@ Public Classes # Name union Event Public Functions # Name Asset(const std::strin
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/unionengine_1_1assets_1_1asset_1_1event/</guid>
-      <description>Engine::Assets::Asset::Event # Module: An example game engine / Generic assets
-#include &amp;lt;Asset.hpp&amp;gt;
-Public Classes # Name struct Loaded struct Unloaded struct Waiting Public Attributes # Name struct Engine::Assets::Asset::Event::Loaded loaded struct Engine::Assets::Asset::Event::Unloaded unloaded struct Engine::Assets::Asset::Event::Waiting waiting Public Attributes Documentation # variable loaded # struct Engine::Assets::Asset::Event::Loaded loaded; variable unloaded # struct Engine::Assets::Asset::Event::Unloaded unloaded; variable waiting # struct Engine::Assets::Asset::Event::Waiting waiting; Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>Engine::Assets::Asset::Event # An example game engine / Generic assets / Event
+Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+union Event; Public Classes # Name struct Loaded struct Unloaded struct Waiting Public Attributes # Member Public Attributes Description loaded struct Engine::Assets::Asset::Event::Loaded (public variable) unloaded struct Engine::Assets::Asset::Event::Unloaded (public variable) waiting struct Engine::Assets::Asset::Event::Waiting (public variable) Public Attributes # variable loaded # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+struct Engine::Assets::Asset::Event::Loaded loaded; variable unloaded # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;</description>
     </item>
     
     <item>
@@ -34,8 +35,10 @@ Public Classes # Name struct Loaded struct Unloaded struct Waiting Public Attrib
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1loaded/</guid>
-      <description>Engine::Assets::Asset::Event::Loaded # #include &amp;lt;Asset.hpp&amp;gt;
-Public Attributes # Name bool success int usage Public Attributes Documentation # variable success # bool success; variable usage # int usage; Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>Engine::Assets::Asset::Event::Loaded # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+struct Loaded; Public Attributes # Member Public Attributes Description success bool (public variable) usage int (public variable) Public Attributes # variable success # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+bool success; variable usage # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+int usage; Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -44,8 +47,9 @@ Public Attributes # Name bool success int usage Public Attributes Documentation 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1unloaded/</guid>
-      <description>Engine::Assets::Asset::Event::Unloaded # #include &amp;lt;Asset.hpp&amp;gt;
-Public Attributes # Name bool success Public Attributes Documentation # variable success # bool success; Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>Engine::Assets::Asset::Event::Unloaded # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+struct Unloaded; Public Attributes # Member Public Attributes Description success bool (public variable) Public Attributes # variable success # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+bool success; Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -54,10 +58,11 @@ Public Attributes # Name bool success Public Attributes Documentation # variable
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1waiting/</guid>
-      <description>Engine::Assets::Asset::Event::Waiting # #include &amp;lt;Asset.hpp&amp;gt;
-Public Attributes # Name Asset * other The pointer to the other asset this asset is waiting for. Public Attributes Documentation # variable other # Asset * other; The pointer to the other asset this asset is waiting for.
+      <description>Engine::Assets::Asset::Event::Waiting # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+struct Waiting; Public Attributes # Member Public Attributes Description other The pointer to the other asset this asset is waiting for. (public variable) Public Attributes # variable other # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+Asset * other; The pointer to the other asset this asset is waiting for.
 Note: May be null
-Updated on 2022-11-15 at 04:08:15 +0000</description>
+Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -93,10 +98,16 @@ Updated on 2022-11-15 at 04:08:15 +0000</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/classengine_1_1exception/</guid>
-      <description>Engine::Exception # Module: An example game engine
-#include &amp;lt;Exception.hpp&amp;gt;
-Inherits from exception
-Public Functions # Name Exception() =default Exception(std::string msg) const char * what() const override Public Functions Documentation # function Exception # Exception() =default function Exception # inline explicit Exception( std::string msg ) function what # inline const char * what() const override Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>Engine::Exception # An example game engine / Exception
+Defined in header &amp;lt;src/Exception.hpp&amp;gt;
+class Exception; Inherits from exception
+Public Functions # Member Functions Description (constructor) (function) what const override (function) Public Functions # function Exception # Defined in header &amp;lt;src/Exception.hpp&amp;gt;
+Exception() = default; explicit Exception(std::string msg); Exception Safety
+Basic exception guarantee.
+function what # Defined in header &amp;lt;src/Exception.hpp&amp;gt;
+const char * what() const override; Exception Safety
+Basic exception guarantee.
+Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -105,10 +116,10 @@ Public Functions # Name Exception() =default Exception(std::string msg) const ch
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/classengine_1_1graphics_1_1framebuffer/</guid>
-      <description>Engine::Graphics::Framebuffer # Module: An example game engine / Graphical related classes
-#include &amp;lt;Framebuffer.hpp&amp;gt;
-Inherits from Engine::Graphics::Texture, Engine::Graphics::Handle
-Public Functions # Name Framebuffer(int width, int height) virtual ~Framebuffer() virtual int getWidth() const overrideReturns the width of the texture in pixels. virtual int getHeight() const overrideReturns the height of the texture in pixels. virtual int getDepth() const overrideReturns the depth of the texture in pixels. Additional inherited members # Public Types inherited from Engine::Graphics::Texture</description>
+      <description>Engine::Graphics::Framebuffer # An example game engine / Graphical related classes / Framebuffer
+Defined in header &amp;lt;src/Graphics/Framebuffer.hpp&amp;gt;
+class Framebuffer; Inherits from Texture, Handle
+Public Functions # Member Functions Description (constructor) (function) (destructor) (virtual function) getWidth const override Returns the width of the texture in pixels. (virtual function) getHeight const override Returns the height of the texture in pixels. (virtual function) getDepth const override Returns the depth of the texture in pixels.</description>
     </item>
     
     <item>
@@ -117,10 +128,13 @@ Public Functions # Name Framebuffer(int width, int height) virtual ~Framebuffer(
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/classengine_1_1graphics_1_1handle/</guid>
-      <description>Engine::Graphics::Handle # Module: An example game engine / Graphical related classes
-#include &amp;lt;Handle.hpp&amp;gt;
-Inherited by Engine::Graphics::Texture
-Public Functions # Name Handle() =default virtual ~Handle() =default int getHandle() const Protected Attributes # Name int handle Public Functions Documentation # function Handle # Handle() =default function ~Handle # virtual ~Handle() =default function getHandle # inline int getHandle() const Protected Attributes Documentation # variable handle # int handle; Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>Engine::Graphics::Handle # An example game engine / Graphical related classes / Handle
+Defined in header &amp;lt;src/Graphics/Handle.hpp&amp;gt;
+class Handle; Inherited by Texture
+Public Functions # Member Functions Description (constructor) = default (function) (destructor) = default (virtual function) getHandle const (function) Protected Attributes # Member Protected Attributes Description handle int (protected variable) Public Functions # function Handle # Defined in header &amp;lt;src/Graphics/Handle.hpp&amp;gt;
+Handle() = default; Exception Safety
+Basic exception guarantee.
+function ~Handle # Defined in header &amp;lt;src/Graphics/Handle.</description>
     </item>
     
     <item>
@@ -138,10 +152,10 @@ Public Functions # Name Handle() =default virtual ~Handle() =default int getHand
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/classengine_1_1graphics_1_1texture2d/</guid>
-      <description>Engine::Graphics::Texture2D # Module: An example game engine / Graphical related classes
-#include &amp;lt;Texture2D.hpp&amp;gt;
-Inherits from Engine::Graphics::Texture, Engine::Graphics::Handle
-Public Functions # Name Texture2D(int width, int height, uint8_t * data, Texture::Type type =Texture::Type::RGBA8) virtual ~Texture2D() virtual int getWidth() const overrideReturns the width of the texture in pixels. virtual int getHeight() const overrideReturns the height of the texture in pixels. virtual int getDepth() const overrideReturns the depth of the texture in pixels. Additional inherited members # Public Types inherited from Engine::Graphics::Texture</description>
+      <description>Engine::Graphics::Texture2D # An example game engine / Graphical related classes / Texture2D
+Defined in header &amp;lt;src/Graphics/Texture2D.hpp&amp;gt;
+class Texture2D; Inherits from Texture, Handle
+Public Functions # Member Functions Description (constructor) (function) (destructor) (virtual function) getWidth const override Returns the width of the texture in pixels. (virtual function) getHeight const override Returns the height of the texture in pixels. (virtual function) getDepth const override Returns the depth of the texture in pixels.</description>
     </item>
     
     <item>

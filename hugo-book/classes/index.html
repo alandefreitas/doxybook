@@ -5,7 +5,7 @@
   <meta name="generator" content="Hugo 0.105.0">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Classes # namespace Engine This namespace contains all of the necessary engine components. namespace Assets class Asset union Event struct Loaded struct Unloaded struct Waiting namespace Audio class AudioBuffer A simple audio buffer to hold PCM samples struct TypedAudioData Use this to populate the buffer. class AudioManager An audio manager that accepts multiple Audio::AudioBuffer instances. class Exception namespace Graphics class Framebuffer class Handle interface Texture This is a base texture class that serves as a base class for other texture types.">
+<meta name="description" content="Classes # Class Engine This namespace contains all of the necessary engine components. (namespace) Assets (namespace) Asset (class) Event (union) Loaded (struct) Unloaded (struct) Waiting (struct) Audio (namespace) AudioBuffer A simple audio buffer to hold PCM samples(class) TypedAudioData Use this to populate the buffer. (struct) AudioManager An audio manager that accepts multiple Audio::AudioBuffer instances. (class) Exception (class) Graphics (namespace) Framebuffer (class) Handle (class) Texture This is a base texture class that serves as a base class for other texture types.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Classes" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -15,7 +15,7 @@
 <link rel="manifest" href="/doxybook/hugo-book/manifest.json">
 <link rel="icon" href="/doxybook/hugo-book/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/doxybook/hugo-book/book.min.68be0b7a9674f2a612ce0e9b2e9447ff4b7ac96546e06b642bfd3ded0ca490ef.css" integrity="sha256-aL4LepZ08qYSzg6bLpRH/0t6yWVG4GtkK/097QykkO8=">
-<script defer src="/doxybook/hugo-book/en.search.min.e1f6c71d75c27c03e485731d8e92c532bbf5e3149e702ee00620b4e1569158e5.js" integrity="sha256-4fbHHXXCfAPkhXMdjpLFMrv14xSecC7gBiC04VaRWOU="></script>
+<script defer src="/doxybook/hugo-book/en.search.min.aa37234520f223b4cf4a139b5a55b0fa24e845cc32067a9e0991781bb795328d.js" integrity="sha256-qjcjRSDyI7TPShObWlWw&#43;iToRcwyBnqeCZF4G7eVMo0="></script>
 <link rel="alternate" type="application/rss+xml" href="https://alandefreitas.github.io/doxybook/hugo-book/classes/index.xml" title="Doxybook Example" />
 <!--
 Made with Book Theme
@@ -58,7 +58,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
 <li><a href="/doxybook/hugo-book/classes/"class=active>Classes</a></li>
 <li><a href="/doxybook/hugo-book/namespaces/">Namespaces</a></li>
-<li><a href="/doxybook/hugo-book/modules/">Modules</a></li>
+<li><a href="/doxybook/hugo-book/libraries/">Modules</a></li>
 <li><a href="/doxybook/hugo-book/files/">Files</a></li>
 <li><a href="/doxybook/hugo-book/pages/">Pages</a></li>
 <li><a href="/doxybook/hugo-book/examples/">Examples</a></li>
@@ -122,60 +122,110 @@ https://github.com/alex-shpak/hugo-book
   Classes
   <a class="anchor" href="#classes">#</a>
 </h1>
-<ul>
-<li><strong>namespace <a href="/doxybook/hugo-book/namespaces/namespaceengine/">Engine</a></strong> <!-- raw HTML omitted -->This namespace contains all of the necessary engine components.
-<ul>
-<li><strong>namespace <a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1assets/">Assets</a></strong>
-<ul>
-<li><strong>class <a href="/doxybook/hugo-book/classes/classengine_1_1assets_1_1asset/">Asset</a></strong>
-<ul>
-<li><strong>union <a href="/doxybook/hugo-book/classes/unionengine_1_1assets_1_1asset_1_1event/">Event</a></strong>
-<ul>
-<li><strong>struct <a href="/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1loaded/">Loaded</a></strong></li>
-<li><strong>struct <a href="/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1unloaded/">Unloaded</a></strong></li>
-<li><strong>struct <a href="/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1waiting/">Waiting</a></strong></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><strong>namespace <a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1audio/">Audio</a></strong>
-<ul>
-<li><strong>class <a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">AudioBuffer</a></strong> <!-- raw HTML omitted --><em>A simple audio buffer to hold PCM samples</em>
-<ul>
-<li><strong>struct <a href="/doxybook/hugo-book/classes/structengine_1_1audio_1_1audiobuffer_1_1typedaudiodata/">TypedAudioData</a></strong> <!-- raw HTML omitted -->Use this to populate the buffer.</li>
-</ul>
-</li>
-<li><strong>class <a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiomanager/">AudioManager</a></strong> <!-- raw HTML omitted -->An audio manager that <em>accepts</em> multiple <strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">Audio::AudioBuffer</a></strong> instances.</li>
-</ul>
-</li>
-<li><strong>class <a href="/doxybook/hugo-book/classes/classengine_1_1exception/">Exception</a></strong></li>
-<li><strong>namespace <a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1graphics/">Graphics</a></strong>
-<ul>
-<li><strong>class <a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1framebuffer/">Framebuffer</a></strong></li>
-<li><strong>class <a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1handle/">Handle</a></strong></li>
-<li><strong>interface <a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1texture/">Texture</a></strong> <!-- raw HTML omitted -->This is a base texture class that serves as a base class for other texture types.</li>
-<li><strong>class <a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1texture2d/">Texture2D</a></strong></li>
-<li><strong>class <a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1texture3d/">Texture3D</a></strong> <!-- raw HTML omitted -->Some deprecated class.</li>
-</ul>
-</li>
-<li><strong>namespace <a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1gui/">Gui</a></strong>
-<ul>
-<li><strong>class <a href="/doxybook/hugo-book/classes/classengine_1_1gui_1_1guiwidget/">GuiWidget</a></strong> <!-- raw HTML omitted -->Some generic gui widget class.</li>
-</ul>
-</li>
-<li><strong>namespace <a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1utils/">Utils</a></strong>
-<ul>
-<li><strong>class <a href="/doxybook/hugo-book/classes/classengine_1_1utils_1_1arrayview/">ArrayView</a></strong> <!-- raw HTML omitted -->Filesystem path utility functions.</li>
-<li><strong>namespace <a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1utils_1_1path/">Path</a></strong> <!-- raw HTML omitted -->Filesystem path utility functions.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/doxybook/hugo-book/namespaces/namespaceengine/">Engine</a></td>
+<td>This namespace contains all of the necessary engine components. <!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(namespace)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1assets/">Assets</a></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(namespace)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/classes/classengine_1_1assets_1_1asset/">Asset</a></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(class)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/classes/unionengine_1_1assets_1_1asset_1_1event/">Event</a></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(union)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1loaded/">Loaded</a></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(struct)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1unloaded/">Unloaded</a></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(struct)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1waiting/">Waiting</a></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(struct)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1audio/">Audio</a></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(namespace)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">AudioBuffer</a></td>
+<td><em>A simple audio buffer to hold PCM samples</em><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(class)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/classes/structengine_1_1audio_1_1audiobuffer_1_1typedaudiodata/">TypedAudioData</a></td>
+<td>Use this to populate the buffer. <!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(struct)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiomanager/">AudioManager</a></td>
+<td>An audio manager that <em>accepts</em> multiple <strong><a href="/doxybook/hugo-book/classes/classengine_1_1audio_1_1audiobuffer/">Audio::AudioBuffer</a></strong> instances. <!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(class)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/classes/classengine_1_1exception/">Exception</a></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(class)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1graphics/">Graphics</a></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(namespace)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1framebuffer/">Framebuffer</a></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(class)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1handle/">Handle</a></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(class)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1texture/">Texture</a></td>
+<td>This is a base texture class that serves as a base class for other texture types. <!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(interface)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1texture2d/">Texture2D</a></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(class)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/classes/classengine_1_1graphics_1_1texture3d/">Texture3D</a></td>
+<td>Some deprecated class. <!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(class)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1gui/">Gui</a></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(namespace)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/classes/classengine_1_1gui_1_1guiwidget/">GuiWidget</a></td>
+<td>Some generic gui widget class. <!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(class)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1utils/">Utils</a></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(namespace)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/classes/classengine_1_1utils_1_1arrayview/">ArrayView</a></td>
+<td>Filesystem path utility functions. <!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(class)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td><a href="/doxybook/hugo-book/namespaces/namespaceengine_1_1utils_1_1path/">Path</a></td>
+<td>Filesystem path utility functions. <!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(namespace)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<p>Updated on 2022-11-15 at 04:08:15 +0000</p>
+<p><!-- raw HTML omitted -->Updated on 2022-11-17<!-- raw HTML omitted --></p>
 </article>
  
       

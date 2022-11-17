@@ -7,54 +7,69 @@ title: src/Engine.hpp
 
 
 
+
+```cpp
+#include <src/Engine.hpp>
+```
+
 ## Namespaces
 
-| Name           |
-| -------------- |
-| **[Engine](/namespaces/namespaceEngine.md)** <br>This namespace contains all of the necessary engine components.  |
+| Name           | Description    |
+| -------------- | -------------- |
+| **[Engine](/namespaces/namespaceEngine.md)** | This namespace contains all of the necessary engine components.  |
+
+## Functions
+| Member Functions | Description |
+| -------------- | -------------- |
+| **[someGlobalFunc](/files/Engine_8hpp.md#function-someglobalfunc)** | Some global extern function. <br> <sup><span style="color:green">(function)</span></sup> |
+
+
+
 
 ## Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| std::string | **[someGlobalFunc](/files/Engine_8hpp.md#function-someglobalfunc)**()<br>Some global extern function.  |
-
-
-## Functions Documentation
-
 ### function someGlobalFunc
 
-```cpp
-std::string someGlobalFunc()
+
+<sup>Defined in header [`<src/Engine.hpp>`](/files/Engine_8hpp.md#file-engine.hpp)</sup>
+
+```cpp 
+std::string
+someGlobalFunc();
 ```
+
+
+
+
 
 Some global extern function. 
 
 
 
-## Source code
 
-```cpp
 
-#include "Assets/Assets.hpp"
-#include "Audio/Audio.hpp"
-#include "Exception.hpp"
-#include "Graphics/Graphics.hpp"
-#include "Gui/Gui.hpp"
-#include "Utils/Utils.hpp"
 
-extern std::string someGlobalFunc();
 
-namespace Engine {
-    extern std::string getVersion();
-} // namespace Engine
 
-//-----------------------------------------------------------
 
-//-----------------------------------------------------------
-```
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
+
+
+
 
 
 -------------------------------
 
-Updated on 2022-11-15 at 04:08:15 +0000
+<sub>Updated on 2022-11-17</sub>

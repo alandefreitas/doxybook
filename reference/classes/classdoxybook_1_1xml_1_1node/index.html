@@ -449,11 +449,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#public-functions-documentation" class="md-nav__link">
-    Public Functions Documentation
+  <a href="#public-functions_1" class="md-nav__link">
+    Public Functions
   </a>
   
-    <nav class="md-nav" aria-label="Public Functions Documentation">
+    <nav class="md-nav" aria-label="Public Functions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -465,13 +465,6 @@
         
           <li class="md-nav__item">
   <a href="#function-node_1" class="md-nav__link">
-    function node
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#function-node_2" class="md-nav__link">
     function ~node
   </a>
   
@@ -555,104 +548,134 @@
 
 
 <h1 id="doxybookxmlnode">doxybook::xml::node</h1>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml_8hpp/#file-xml.hpp"><code>&lt;doxybook/xml.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">node</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
 <p>An xml node. </p>
-<p><code>#include &lt;xml.hpp&gt;</code></p>
 <h2 id="public-functions">Public Functions</h2>
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Functions</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/#function-node">node</a></strong>() =default<br>Constructor.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/#function-node">(constructor)</a></strong></td>
+<td>Constructor. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/#function-node">node</a></strong>(tinyxml2::XMLNode * ptr)<br>Construct from a tinyxml node.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/#function-~node">(destructor)</a></strong>  <span style="color:green">= default</span></td>
+<td>Destructor. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/#function-~node">~node</a></strong>() =default<br>Destructor.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/#function-next-sibling">next_sibling</a></strong> <span style="color:green">const</span></td>
+<td>Get next node. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/">node</a></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/#function-next-sibling">next_sibling</a></strong>() const<br>Get next node.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/#function-first-child">first_child</a></strong> <span style="color:green">const</span></td>
+<td>Get first child node. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/">node</a></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/#function-first-child">first_child</a></strong>() const<br>Get first child node.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/#function-has-text">has_text</a></strong> <span style="color:green">const</span></td>
+<td>Check if node has text. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>bool</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/#function-has-text">has_text</a></strong>() const<br>Check if node has text.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/#function-get-text">get_text</a></strong> <span style="color:green">const</span></td>
+<td>Get node text. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>std::string</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/#function-get-text">get_text</a></strong>() const<br>Get node text.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/#function-is-element">is_element</a></strong> <span style="color:green">const</span></td>
+<td>Check if this is an element node. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>bool</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/#function-is-element">is_element</a></strong>() const<br>Check if this is an element node.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/#function-as-element">as_element</a></strong> <span style="color:green">const</span></td>
+<td>Get node as an element. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1element/">element</a></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/#function-as-element">as_element</a></strong>() const<br>Get node as an element.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/#function-operator-bool">operator bool</a></strong>() const<br>Check if node is valid.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1node/#function-operator-bool">operator bool</a></strong> <span style="color:green">const</span></td>
+<td>Check if node is valid. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 </tbody>
 </table>
-<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h2 id="public-functions_1">Public Functions</h2>
 <h3 id="function-node">function node</h3>
-<div class="highlight"><pre><span></span><code><span class="n">node</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="k">default</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml_8hpp/#file-xml.hpp"><code>&lt;doxybook/xml.hpp&gt;</code></a></sup></p>
+<div class="highlight"><span class="filename">(1)</span><pre><span></span><code><span class="n">node</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
-<p>Constructor. </p>
-<h3 id="function-node_1">function node</h3>
-<div class="highlight"><pre><span></span><code><span class="k">explicit</span><span class="w"> </span><span class="n">node</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">tinyxml2</span><span class="o">::</span><span class="n">XMLNode</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">ptr</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<div class="highlight"><span class="filename">(2)</span><pre><span></span><code><span class="k">explicit</span><span class="w"> </span><span class="n">node</span><span class="p">(</span><span class="n">tinyxml2</span><span class="o">::</span><span class="n">XMLNode</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">ptr</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
-<p>Construct from a tinyxml node. </p>
-<h3 id="function-node_2">function ~node</h3>
-<div class="highlight"><pre><span></span><code><span class="o">~</span><span class="n">node</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="k">default</span><span class="w"></span>
+<ol>
+<li>Constructor. </li>
+<li>Construct from a tinyxml node. </li>
+</ol>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
+<h3 id="function-node_1">function ~node</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml_8hpp/#file-xml.hpp"><code>&lt;doxybook/xml.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="o">~</span><span class="n">node</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Destructor. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-next_sibling">function next_sibling</h3>
-<div class="highlight"><pre><span></span><code><span class="n">node</span><span class="w"> </span><span class="n">next_sibling</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml_8hpp/#file-xml.hpp"><code>&lt;doxybook/xml.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">node</span><span class="w"></span>
+<span class="nf">next_sibling</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Get next node. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-first_child">function first_child</h3>
-<div class="highlight"><pre><span></span><code><span class="n">node</span><span class="w"> </span><span class="n">first_child</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml_8hpp/#file-xml.hpp"><code>&lt;doxybook/xml.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">node</span><span class="w"></span>
+<span class="nf">first_child</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Get first child node. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-has_text">function has_text</h3>
-<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">has_text</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml_8hpp/#file-xml.hpp"><code>&lt;doxybook/xml.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"></span>
+<span class="nf">has_text</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Check if node has text. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-get_text">function get_text</h3>
-<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">get_text</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml_8hpp/#file-xml.hpp"><code>&lt;doxybook/xml.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"></span>
+<span class="nf">get_text</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Get node text. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-is_element">function is_element</h3>
-<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">is_element</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml_8hpp/#file-xml.hpp"><code>&lt;doxybook/xml.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"></span>
+<span class="nf">is_element</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Check if this is an element node. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-as_element">function as_element</h3>
-<div class="highlight"><pre><span></span><code><span class="n">element</span><span class="w"> </span><span class="n">as_element</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml_8hpp/#file-xml.hpp"><code>&lt;doxybook/xml.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="n">element</span><span class="w"></span>
+<span class="nf">as_element</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Get node as an element. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-operator-bool">function operator bool</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="kt">bool</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml_8hpp/#file-xml.hpp"><code>&lt;doxybook/xml.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="k">operator</span><span class="w"> </span><span class="kt">bool</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Check if node is valid. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <hr />
-<p>Updated on 2022-11-15 at 04:08:09 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
 
 
   

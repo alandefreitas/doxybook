@@ -6,70 +6,46 @@ summary: A simple audio buffer to hold PCM samples
 
 # Engine::Audio::AudioBuffer
 
-**Module:** **[An example game engine](/modules/group__Engine.md)** **/** **[Audio buffers and devices](/modules/group__Audio.md)**
+**[An example game engine](/libraries/group__Engine.md)** **/** **[Audio buffers and devices](/libraries/group__Audio.md)** **/** 
+**[AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md)**
+
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
 
 
-
-_A simple audio buffer to hold PCM samples_ [More...](#detailed-description)
-
-
-`#include <AudioBuffer.hpp>`
-
-## Public Classes
-
-|                | Name           |
-| -------------- | -------------- |
-| struct | **[TypedAudioData](/classes/structEngine_1_1Audio_1_1AudioBuffer_1_1TypedAudioData.md)** <br>Use this to populate the buffer.  |
-
-## Public Types
-
-|                | Name           |
-| -------------- | -------------- |
-| enum class| **[Type](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#enum-type)** { UNKNOWN = 0, INT_8 = 1 << 1, INT_16 = 1 << 2, INT_24 = 1 << 3, INT_32 = 1 << 4, FLOAT_32 = 1 << 5}<br>Different type of audio formats.  |
-| template <typename T \> <br>using [Utils::ArrayView](/classes/classEngine_1_1Utils_1_1ArrayView.md)< T > | **[AudioData](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#using-audiodata)**  |
-| typedef [AudioData](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#using-audiodata)< uint8_t > | **[AudioData8U](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#typedef-audiodata8u)**  |
-
-## Public Functions
-
-|                | Name           |
-| -------------- | -------------- |
-| | **[AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-audiobuffer)**(const std::string & filename)<br>Constructor for [Audio::AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md).  |
-| virtual | **[~AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-~audiobuffer)**() =default<br>[Audio::AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md) destructor.  |
-| void | **[play](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-play)**([AudioManager](/classes/classEngine_1_1Audio_1_1AudioManager.md) & manager) const<br>Play this buffer.  |
-| void | **[stop](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-stop)**([AudioManager](/classes/classEngine_1_1Audio_1_1AudioManager.md) & manager) const<br>Stop this buffer playing.  |
-| void | **[loop](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-loop)**([AudioManager](/classes/classEngine_1_1Audio_1_1AudioManager.md) & manager) const<br>Loop this buffer forever.  |
-| void | **[setData](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-setdata)**(const [TypedAudioData](/classes/structEngine_1_1Audio_1_1AudioBuffer_1_1TypedAudioData.md) & data) |
-| template <size_t Size\> <br>void | **[setDataMultiple](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-setdatamultiple)**(const [TypedAudioData](/classes/structEngine_1_1Audio_1_1AudioBuffer_1_1TypedAudioData.md) data[Size]) |
-| void | **[setData](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-setdata)**(const [TypedAudioData](/classes/structEngine_1_1Audio_1_1AudioBuffer_1_1TypedAudioData.md) data[], size_t size)<br>Some deprecated function.  |
-| void | **[setCallback](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-setcallback)**([Callback](/namespaces/namespaceEngine_1_1Audio.md#typedef-callback) callback)<br>Set the callback function.  |
-| void | **[setCallback2](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-setcallback2)**([Callback2](/namespaces/namespaceEngine_1_1Audio.md#using-callback2) callback, void * user)<br>Set the callback function.  |
-
-## Protected Functions
-
-|                | Name           |
-| -------------- | -------------- |
-| float * | **[getData](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-getdata)**() |
-
-## Protected Attributes
-
-|                | Name           |
-| -------------- | -------------- |
-| bool | **[playing](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#variable-playing)**  |
-
-## Friends
-
-|                | Name           |
-| -------------- | -------------- |
-| class | **[AudioManager](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#friend-audiomanager)**  |
-| void | **[Audio::doSomething](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#friend-audiodosomething)**([AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md) & buffer)  |
-
-## Detailed Description
 
 ```cpp
-class Engine::Audio::AudioBuffer;
+
+class AudioBuffer;
 ```
 
 _A simple audio buffer to hold PCM samples_
+
+
+**Description**
+
+
+
+
+Lorem ipsum donor 
+
+```cpp
+// Some random code
+using namespace Engine;
+
+Audio::AudioBuffer buffer("path/to/file.wav");
+buffer.play(audioManager);
+```
+
+ More detailed description! 
+
+```cpp
+// Another code sample
+#include <iostream>
+using namespace Engine;
+Audio::AudioBuffer buffer("path/to/file.wav");
+std::cout << buffer.play(...) << std::endl;
+```
+
 
 **Author**: Matus Novak 
 
@@ -94,30 +70,61 @@ Some other random bug
 **Precondition**: First initialize the system. 
 
 
+## Public Classes
 
-Lorem ipsum donor 
+|                | Name           |
+| -------------- | -------------- |
+| struct | **[TypedAudioData](/classes/structEngine_1_1Audio_1_1AudioBuffer_1_1TypedAudioData.md)** <br>Use this to populate the buffer.  |
 
-```cpp
-// Some random code
-using namespace Engine;
+## Public Types
 
-Audio::AudioBuffer buffer("path/to/file.wav");
-buffer.play(audioManager);
-```
+| Member Types | Definition           |
+| -------------- | -------------- |
+| **[Type](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#enum-type)**| Different type of audio formats. <br> <sup><span style="color:green">(enum)</span></sup>|
+| **[AudioData](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#using-audiodata)**| `[Utils::ArrayView](/classes/classEngine_1_1Utils_1_1ArrayView.md)< T >`<br> <sup><span style="color:green">(using)</span></sup>|
+| **[AudioData8U](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#typedef-audiodata8u)**| `[AudioData](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#using-audiodata)< uint8_t >`<br> <sup><span style="color:green">(typedef)</span></sup>|
 
- More detailed description! 
+## Public Functions
+| Member Functions | Description |
+| -------------- | -------------- |
+| **[(constructor)](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-audiobuffer)** | Constructor for [Audio::AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md). <br> <sup><span style="color:green">(function)</span></sup> |
+| **[(destructor)](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-~audiobuffer)**  <span style="color:green">= default</span>| [Audio::AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md) destructor. <br> <sup><span style="color:green">(virtual function)</span></sup> |
+| **[play](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-play)** <span style="color:green">const</span>| Play this buffer. <br> <sup><span style="color:green">(function)</span></sup> |
+| **[stop](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-stop)** <span style="color:green">const</span>| Stop this buffer playing. <br> <sup><span style="color:green">(function)</span></sup> |
+| **[loop](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-loop)** <span style="color:green">const</span>| Loop this buffer forever. <br> <sup><span style="color:green">(function)</span></sup> |
+| **[setData](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-setdata)** |  <sup><span style="color:green">(function)</span></sup> |
+| **[setDataMultiple](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-setdatamultiple)** |  <sup><span style="color:green">(function template)</span></sup> |
+| **[setCallback](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-setcallback)** | Set the callback function. <br> <sup><span style="color:green">(function)</span></sup> |
+| **[setCallback2](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-setcallback2)** | Set the callback function. <br> <sup><span style="color:green">(function)</span></sup> |
 
-```cpp
-// Another code sample
-#include <iostream>
-using namespace Engine;
-Audio::AudioBuffer buffer("path/to/file.wav");
-std::cout << buffer.play(...) << std::endl;
-```
 
-## Public Types Documentation
+## Protected Functions
+| Member Protected Functions | Description |
+| -------------- | -------------- |
+| **[getData](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-getdata)** |  <sup><span style="color:green">(function)</span></sup> |
+
+
+## Protected Attributes
+
+| Member Protected Attributes| Description    |
+| -------------- | -------------- |
+| **[playing](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#variable-playing)** | `bool`<br> <sup><span style="color:green">(protected variable)</span></sup> |
+
+## Friends
+
+| Friends | Description     |
+| --------------   | -------------- |
+| **[AudioManager](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#friend-audiomanager)**| <br><sup><span style="color:green">(public friend class)</span></sup>  |
+| **[Audio::doSomething](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#friend-audiodosomething)**| <br><sup><span style="color:green">(public friend void)</span></sup>  |
+
+## Public Types
 
 ### enum Type
+
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
+```cpp
+enum class Type;
+```
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -134,187 +141,454 @@ Different type of audio formats.
 
 ### using AudioData
 
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
 ```cpp
-template <typename T >
-using Engine::Audio::AudioBuffer::AudioData =  Utils::ArrayView<T>;
+
+template <typename T>
+using AudioData = Utils::ArrayView< T >;
 ```
 
 
 ### typedef AudioData8U
 
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
 ```cpp
 typedef AudioData<uint8_t> Engine::Audio::AudioBuffer::AudioData8U;
 ```
 
 
-## Public Functions Documentation
+## Public Functions
 
 ### function AudioBuffer
 
-```cpp
-explicit AudioBuffer(
-    const std::string & filename
-)
+
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
+
+```cpp 
+explicit AudioBuffer(const std::string & filename);
 ```
+
+
+
+
 
 Constructor for [Audio::AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md). 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
+
+
 ### function ~AudioBuffer
 
-```cpp
-virtual ~AudioBuffer() =default
+
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
+
+```cpp 
+virtual ~AudioBuffer() = default;
 ```
+
+
+
+
 
 [Audio::AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md) destructor. 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
+
+
 ### function play
 
-```cpp
-void play(
-    AudioManager & manager
-) const
+
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
+
+```cpp 
+void
+play(AudioManager & manager) const;
 ```
+
+
+
+
 
 Play this buffer. 
 
-**Parameters**: 
-
-  * **manager** Which manager to play the sound with 
 
 
-**Exceptions**: 
 
-  * **[Exception](/classes/classEngine_1_1Exception.md)** If this buffer is already playing 
+
+**Parameters**
+
+- **manager** - Which manager to play the sound with 
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
 
 
 ### function stop
 
-```cpp
-void stop(
-    AudioManager & manager
-) const
+
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
+
+```cpp 
+void
+stop(AudioManager & manager) const;
 ```
+
+
+
+
 
 Stop this buffer playing. 
 
-**Parameters**: 
-
-  * **manager** Which manager to stop the sound with 
 
 
-**Exceptions**: 
 
-  * **[Exception](/classes/classEngine_1_1Exception.md)** If this buffer is already stopped 
+
+**Parameters**
+
+- **manager** - Which manager to stop the sound with 
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
 
 
 ### function loop
 
-```cpp
-void loop(
-    AudioManager & manager
-) const
+
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
+
+```cpp 
+void
+loop(AudioManager & manager) const;
 ```
+
+
+
+
 
 Loop this buffer forever. 
 
-**Parameters**: 
-
-  * **manager** Which manager to loop the sound with 
 
 
-**Exceptions**: 
-
-  * **[Exception](/classes/classEngine_1_1Exception.md)** If this buffer is already looping 
 
 
-**Note**: This will loop forever until you call stop 
+**Parameters**
+
+- **manager** - Which manager to loop the sound with 
+
+
+
+
+**Notes**
+
+This will loop forever until you call stop 
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
+
 
 ### function setData
 
-```cpp
-void setData(
-    const TypedAudioData & data
-)
+
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
+
+```cpp  title="(1)" 
+void
+setData(const TypedAudioData & data);
 ```
+
+```cpp  title="(2)" 
+void
+setData(const TypedAudioData data[], size_t size);
+```
+
+
+
+
+
+Some deprecated function. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
 
 
 ### function setDataMultiple
 
-```cpp
+
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
+
+```cpp 
 template <size_t Size>
-inline void setDataMultiple(
-    const TypedAudioData data[Size]
-)
+void
+setDataMultiple(const TypedAudioData data[Size]);
 ```
 
 
-### function setData
 
-```cpp
-void setData(
-    const TypedAudioData data[],
-    size_t size
-)
-```
 
-Some deprecated function. 
 
-**Deprecated**: 
 
-Use the [AudioBuffer::setDataMultiple](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-setdatamultiple) instead 
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
+
 
 ### function setCallback
 
-```cpp
-void setCallback(
-    Callback callback
-)
+
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
+
+```cpp 
+void
+setCallback(Callback callback);
 ```
+
+
+
+
 
 Set the callback function. 
 
-**Parameters**: 
-
-  * **callback** The callback function pointer 
 
 
-**Deprecated**: 
 
-Use the [AudioBuffer::setCallback2](/classes/classEngine_1_1Audio_1_1AudioBuffer.md#function-setcallback2) instead 
 
-**See**: [Audio::Callback](/namespaces/namespaceEngine_1_1Audio.md#typedef-callback)
+**Parameters**
+
+- **callback** - The callback function pointer 
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
+**See Also**
+
+- [Audio::Callback](/namespaces/namespaceEngine_1_1Audio.md#typedef-callback)
+
+
+
 
 ### function setCallback2
 
-```cpp
-void setCallback2(
-    Callback2 callback,
-    void * user
-)
+
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
+
+```cpp 
+void
+setCallback2(Callback2 callback, void * user);
 ```
+
+
+
+
 
 Set the callback function. 
 
-**Parameters**: 
-
-  * **callback** The callback function pointer 
 
 
-**See**: [Audio::Callback](/namespaces/namespaceEngine_1_1Audio.md#typedef-callback)
 
-## Protected Functions Documentation
+
+**Parameters**
+
+- **callback** - The callback function pointer 
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
+**See Also**
+
+- [Audio::Callback](/namespaces/namespaceEngine_1_1Audio.md#typedef-callback)
+
+
+
+
+
+
+## Protected Functions
 
 ### function getData
 
-```cpp
-float * getData()
+
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
+
+```cpp 
+float *
+getData();
 ```
 
 
-## Protected Attributes Documentation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
+
+
+
+
+## Protected Attributes
 
 ### variable playing
 
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
 ```cpp
 bool playing {false};
 ```
@@ -324,20 +598,22 @@ bool playing {false};
 
 ### friend AudioManager
 
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
 ```cpp
-friend class AudioManager;
+friend
+class AudioManager;
 ```
 
 
 ### friend Audio::doSomething
 
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
 ```cpp
-friend void Audio::doSomething(
-    AudioBuffer & buffer
-);
+friend
+void Audio::doSomething(AudioBuffer & buffer);
 ```
 
 
 -------------------------------
 
-Updated on 2022-11-15 at 04:08:15 +0000
+<sub>Updated on 2022-11-17</sub>

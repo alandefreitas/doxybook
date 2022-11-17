@@ -57,7 +57,7 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../index_groups/">Modules</a>
+                <li class="toctree-l1"><a class="reference internal" href="../../index_groups/">Libraries</a>
                 </li>
               </ul>
               <ul>
@@ -94,9 +94,7 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#public-functions">Public Functions</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#detailed-description">Detailed Description</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#public-functions-documentation">Public Functions Documentation</a>
+    <li class="toctree-l2"><a class="reference internal" href="#public-functions_1">Public Functions</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#function-arrayview">function ArrayView</a>
     </li>
@@ -183,19 +181,19 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../files/dir_e0c1ede47f21c4a643a1257f949f98e0/">src/Assets</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Modules</span></p>
+              <p class="caption"><span class="caption-text">Libraries</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Assets/">Generic assets</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Assets/">Generic assets</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Audio/">Audio buffers and devices</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Audio/">Audio buffers and devices</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Engine/">An example game engine</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Engine/">An example game engine</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Graphics/">Graphical related classes</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Graphics/">Graphical related classes</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Gui/">Some gui related stuff and whatever</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Gui/">Some gui related stuff and whatever</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../modules/group__Utils/">Some useful utilities</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../libraries/group__Utils/">Some useful utilities</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Namespaces</span></p>
@@ -255,63 +253,74 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="engineutilsarrayview">Engine::Utils::ArrayView</h1>
-<p><strong>Module:</strong> <strong><a href="/doxybook/mkdocs-readthedocs/modules/group__Engine/">An example game engine</a></strong> <strong>/</strong> <strong><a href="/doxybook/mkdocs-readthedocs/modules/group__Utils/">Some useful utilities</a></strong></p>
-<p>Filesystem path utility functions.  <a href="#detailed-description">More...</a></p>
-<p><code>#include &lt;ArrayView.hpp&gt;</code></p>
+<p><strong><a href="/doxybook/mkdocs-readthedocs/libraries/group__Engine/">An example game engine</a></strong> <strong>/</strong> <strong><a href="/doxybook/mkdocs-readthedocs/libraries/group__Utils/">Some useful utilities</a></strong> <strong>/</strong> 
+<strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Utils_1_1ArrayView/">ArrayView</a></strong></p>
+<p><sup>Defined in header <a href="/doxybook/mkdocs-readthedocs/files/ArrayView_8hpp/#file-arrayview.hpp"><code>&lt;src/Utils/ArrayView.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">
+template &lt;typename T = uint8_t&gt; 
+class ArrayView;
+</code></pre>
+<p>Filesystem path utility functions. </p>
+<p><strong>Template Parameters</strong></p>
+<ul>
+<li><strong>T</strong> - The type of the data, for example uint8_t </li>
+</ul>
 <h2 id="public-functions">Public Functions</h2>
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Functions</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Utils_1_1ArrayView/#function-arrayview">ArrayView</a></strong>(const T * src, size_t len)</td>
+<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Utils_1_1ArrayView/#function-arrayview">(constructor)</a></strong></td>
+<td><sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>virtual</td>
-<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Utils_1_1ArrayView/#function-~arrayview">~ArrayView</a></strong>() =default</td>
+<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Utils_1_1ArrayView/#function-~arrayview">(destructor)</a></strong>  <span style="color:green">= default</span></td>
+<td><sup><span style="color:green">(virtual function)</span></sup></td>
 </tr>
 <tr>
-<td>virtual const T *</td>
-<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Utils_1_1ArrayView/#function-data">data</a></strong>() const</td>
+<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Utils_1_1ArrayView/#function-data">data</a></strong> <span style="color:green">const</span></td>
+<td><sup><span style="color:green">(virtual function)</span></sup></td>
 </tr>
 <tr>
-<td>virtual size_t</td>
-<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Utils_1_1ArrayView/#function-size">size</a></strong>() const</td>
+<td><strong><a href="/doxybook/mkdocs-readthedocs/classes/classEngine_1_1Utils_1_1ArrayView/#function-size">size</a></strong> <span style="color:green">const</span></td>
+<td><sup><span style="color:green">(virtual function)</span></sup></td>
 </tr>
 </tbody>
 </table>
-<h2 id="detailed-description">Detailed Description</h2>
-<pre><code class="language-cpp">template &lt;typename T  =uint8_t&gt;
-class Engine::Utils::ArrayView;
-</code></pre>
-<p>Filesystem path utility functions. </p>
-<p><strong>Template Parameters</strong>: </p>
-<ul>
-<li><strong>T</strong> The type of the data, for example uint8_t </li>
-</ul>
-<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h2 id="public-functions_1">Public Functions</h2>
 <h3 id="function-arrayview">function ArrayView</h3>
-<pre><code class="language-cpp">ArrayView(
-    const T * src,
-    size_t len
-)
+<p><sup>Defined in header <a href="/doxybook/mkdocs-readthedocs/files/ArrayView_8hpp/#file-arrayview.hpp"><code>&lt;src/Utils/ArrayView.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">ArrayView(const T * src, size_t len);
 </code></pre>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-arrayview_1">function ~ArrayView</h3>
-<pre><code class="language-cpp">virtual ~ArrayView() =default
+<p><sup>Defined in header <a href="/doxybook/mkdocs-readthedocs/files/ArrayView_8hpp/#file-arrayview.hpp"><code>&lt;src/Utils/ArrayView.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">virtual ~ArrayView() = default;
 </code></pre>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-data">function data</h3>
-<pre><code class="language-cpp">virtual const T * data() const
+<p><sup>Defined in header <a href="/doxybook/mkdocs-readthedocs/files/ArrayView_8hpp/#file-arrayview.hpp"><code>&lt;src/Utils/ArrayView.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">virtual const T *
+data() const;
 </code></pre>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-size">function size</h3>
-<pre><code class="language-cpp">virtual size_t size() const
+<p><sup>Defined in header <a href="/doxybook/mkdocs-readthedocs/files/ArrayView_8hpp/#file-arrayview.hpp"><code>&lt;src/Utils/ArrayView.hpp&gt;</code></a></sup></p>
+<pre><code class="language-cpp">virtual size_t
+size() const;
 </code></pre>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <hr />
-<p>Updated on 2022-11-15 at 04:08:11 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
               
             </div>
           </div><footer>

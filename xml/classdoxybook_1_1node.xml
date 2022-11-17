@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="316" column="9" bodyfile="doxybook/node.hpp" bodystart="317" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="328" column="9" bodyfile="doxybook/node.hpp" bodystart="329" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="327" column="9" bodyfile="doxybook/node.hpp" bodystart="327" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="339" column="9" bodyfile="doxybook/node.hpp" bodystart="339" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="342" column="25" bodyfile="doxybook/node.hpp" bodystart="342" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="354" column="25" bodyfile="doxybook/node.hpp" bodystart="354" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1a682b26689387e1db1a406c929ab1abdd" prot="private" static="no" mutable="no">
         <type><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref></type>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="343" column="14" bodyfile="doxybook/node.hpp" bodystart="343" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="355" column="14" bodyfile="doxybook/node.hpp" bodystart="355" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1a6d50e65cf13b7f0b0c57624c79365f11" prot="private" static="no" mutable="no">
         <type><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" kindref="member">type</ref></type>
@@ -79,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="344" column="14" bodyfile="doxybook/node.hpp" bodystart="344" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="356" column="14" bodyfile="doxybook/node.hpp" bodystart="356" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1aecd07ef1a61c4876e63db0d66be5c30c" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="345" column="21" bodyfile="doxybook/node.hpp" bodystart="345" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="357" column="21" bodyfile="doxybook/node.hpp" bodystart="357" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1ac262523fe3512708a00c6bc848ff84d8" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="346" column="21" bodyfile="doxybook/node.hpp" bodystart="346" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="358" column="21" bodyfile="doxybook/node.hpp" bodystart="358" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1a7073d6bef590aabf9e78a17c23652a3c" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -118,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="347" column="21" bodyfile="doxybook/node.hpp" bodystart="347" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="359" column="21" bodyfile="doxybook/node.hpp" bodystart="359" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1a9e239d4327b79eb6f85f8641c68459b3" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="348" column="21" bodyfile="doxybook/node.hpp" bodystart="348" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="360" column="21" bodyfile="doxybook/node.hpp" bodystart="360" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1aca602d352a03a1af82907ec3b5ec695c" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -144,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="349" column="21" bodyfile="doxybook/node.hpp" bodystart="349" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="361" column="21" bodyfile="doxybook/node.hpp" bodystart="361" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1a7bd923afd8a6cdf78e5d77f2ff75bf6e" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -157,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="350" column="21" bodyfile="doxybook/node.hpp" bodystart="350" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="362" column="21" bodyfile="doxybook/node.hpp" bodystart="362" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1a24f98700ff750744241153bf57dc425d" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -170,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="351" column="21" bodyfile="doxybook/node.hpp" bodystart="351" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="363" column="21" bodyfile="doxybook/node.hpp" bodystart="363" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1afeaa9f95a14e7ec6c31803e31a2a7d90" prot="private" static="no" mutable="no">
         <type><ref refid="classdoxybook_1_1node" kindref="compound">node</ref> *</type>
@@ -184,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="352" column="14" bodyfile="doxybook/node.hpp" bodystart="352" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="364" column="14" bodyfile="doxybook/node.hpp" bodystart="364" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1a9b19ebe06e772f7adc2e64eaea7c0cce" prot="private" static="no" mutable="no">
         <type><ref refid="classdoxybook_1_1node" kindref="compound">node</ref> *</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="353" column="14" bodyfile="doxybook/node.hpp" bodystart="353" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="365" column="14" bodyfile="doxybook/node.hpp" bodystart="365" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1a08a351d90f3184a1eaec2a125da393ee" prot="private" static="no" mutable="no">
         <type>std::list&lt; std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt; &gt;</type>
@@ -211,7 +211,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="354" column="19" bodyfile="doxybook/node.hpp" bodystart="354" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="366" column="19" bodyfile="doxybook/node.hpp" bodystart="366" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1a213f8bee23cb8401efcce285a0817c36" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -225,7 +225,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="355" column="14" bodyfile="doxybook/node.hpp" bodystart="355" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="367" column="14" bodyfile="doxybook/node.hpp" bodystart="367" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1ae07d965804b07dfe66f6604e22b61893" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -238,7 +238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="356" column="21" bodyfile="doxybook/node.hpp" bodystart="356" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="368" column="21" bodyfile="doxybook/node.hpp" bodystart="368" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1ac4b02c4a83a841deb99b932af2b660e8" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structdoxybook_1_1node_1_1class__reference" kindref="compound">class_reference</ref> &gt;</type>
@@ -251,7 +251,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="357" column="21" bodyfile="doxybook/node.hpp" bodystart="357" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="369" column="21" bodyfile="doxybook/node.hpp" bodystart="369" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1a0172b1357646ac13eae321b44934ed1b" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structdoxybook_1_1node_1_1class__reference" kindref="compound">class_reference</ref> &gt;</type>
@@ -264,7 +264,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="358" column="21" bodyfile="doxybook/node.hpp" bodystart="358" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="370" column="21" bodyfile="doxybook/node.hpp" bodystart="370" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1a0ab82bae51bfe70f0dcd96834381310d" prot="private" static="no" mutable="no">
         <type><ref refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578f" kindref="member">visibility</ref></type>
@@ -278,7 +278,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="359" column="20" bodyfile="doxybook/node.hpp" bodystart="359" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="371" column="20" bodyfile="doxybook/node.hpp" bodystart="371" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1a6317524175c379ad0cbcdcb9b062ecfc" prot="private" static="no" mutable="no">
         <type><ref refid="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139" kindref="member">virtual_category</ref></type>
@@ -292,7 +292,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="360" column="26" bodyfile="doxybook/node.hpp" bodystart="360" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="372" column="26" bodyfile="doxybook/node.hpp" bodystart="372" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1af992bd1d7eaf4b1aeba47634a542476c" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -305,7 +305,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="361" column="21" bodyfile="doxybook/node.hpp" bodystart="361" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="373" column="21" bodyfile="doxybook/node.hpp" bodystart="373" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1node_1a27e2d3c5a8c11b8cef2148ce081f4a9c" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -318,14 +318,27 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="362" column="21" bodyfile="doxybook/node.hpp" bodystart="362" bodyend="-1"/>
+        <location file="doxybook/node.hpp" line="374" column="21" bodyfile="doxybook/node.hpp" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdoxybook_1_1node_1a5b83e2e4c49e22868aa0521db62373e7" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string doxybook::node::section_</definition>
+        <argsstring></argsstring>
+        <name>section_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="375" column="21" bodyfile="doxybook/node.hpp" bodystart="375" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="classdoxybook_1_1node_1a75f05d85b08a92c96f38572ba69ebaf8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdoxybook_1_1node_1a2068145ca7ffd0039a18fcfc7b03247e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt;</type>
         <definition>static std::shared_ptr&lt;node&gt; doxybook::node::parse</definition>
-        <argsstring>(node_cache_map &amp;cache, std::string const &amp;input_dir, std::string const &amp;refid, bool is_group_or_file)</argsstring>
+        <argsstring>(node_cache_map &amp;cache, std::string const &amp;input_dir, std::string const &amp;refid, bool is_group_or_file, bool const allow_undocumented_macros)</argsstring>
         <name>parse</name>
         <param>
           <type><ref refid="namespacedoxybook_1a8315d0312907cc040ecd163fc5dd229d" kindref="member">node_cache_map</ref> &amp;</type>
@@ -343,6 +356,10 @@
           <type>bool</type>
           <declname>is_group_or_file</declname>
         </param>
+        <param>
+          <type>bool const</type>
+          <declname>allow_undocumented_macros</declname>
+        </param>
         <briefdescription>
 <para>Parse root xml objects (classes, structs, etc) </para>
         </briefdescription>
@@ -352,10 +369,10 @@
         </inbodydescription>
         <location file="doxybook/node.hpp" line="131" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classdoxybook_1_1node_1af9fba168329dc6f1928149d4d1a78bdd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdoxybook_1_1node_1ac9689abf689b857946de4b6a83811db2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt;</type>
         <definition>static std::shared_ptr&lt;node&gt; doxybook::node::parse</definition>
-        <argsstring>(node_cache_map &amp;cache, std::string const &amp;input_dir, std::shared_ptr&lt; node &gt; const &amp;ptr, bool is_group_or_file)</argsstring>
+        <argsstring>(node_cache_map &amp;cache, std::string const &amp;input_dir, std::shared_ptr&lt; node &gt; const &amp;ptr, bool is_group_or_file, bool const allow_undocumented_macros)</argsstring>
         <name>parse</name>
         <param>
           <type><ref refid="namespacedoxybook_1a8315d0312907cc040ecd163fc5dd229d" kindref="member">node_cache_map</ref> &amp;</type>
@@ -373,6 +390,10 @@
           <type>bool</type>
           <declname>is_group_or_file</declname>
         </param>
+        <param>
+          <type>bool const</type>
+          <declname>allow_undocumented_macros</declname>
+        </param>
         <briefdescription>
 <para>Parse objects under the specified node. </para>
         </briefdescription>
@@ -380,7 +401,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="139" column="9"/>
+        <location file="doxybook/node.hpp" line="140" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a913c842bfc8bdd7a3887f17e0da9ac88" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt;</type>
@@ -402,7 +423,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="147" column="9"/>
+        <location file="doxybook/node.hpp" line="149" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -433,7 +454,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="156" column="18"/>
+        <location file="doxybook/node.hpp" line="158" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a90b51b6a7ac0e11f53536ec461d5297b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -447,7 +468,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="159" column="9"/>
+        <location file="doxybook/node.hpp" line="161" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a90c6621889f2e540e2aad49536cb65f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt;</type>
@@ -465,7 +486,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="163" column="9"/>
+        <location file="doxybook/node.hpp" line="165" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a656fc1346a1f0768f6755ed52bc9ea57" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt;</type>
@@ -483,7 +504,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="167" column="9"/>
+        <location file="doxybook/node.hpp" line="169" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1aaa8e3dbae207f6132cffe35c1cb846b3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -497,7 +518,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="171" column="9" bodyfile="doxybook/node.hpp" bodystart="171" bodyend="173"/>
+        <location file="doxybook/node.hpp" line="173" column="9" bodyfile="doxybook/node.hpp" bodystart="173" bodyend="175"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1af67155022debda781ced7cfb8cd2e075" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -511,7 +532,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="177" column="9" bodyfile="doxybook/node.hpp" bodystart="177" bodyend="179"/>
+        <location file="doxybook/node.hpp" line="179" column="9" bodyfile="doxybook/node.hpp" bodystart="179" bodyend="181"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1aa9b0913813956e56e988b2be4f8013d8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -525,7 +546,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="183" column="9" bodyfile="doxybook/node.hpp" bodystart="183" bodyend="185"/>
+        <location file="doxybook/node.hpp" line="185" column="9" bodyfile="doxybook/node.hpp" bodystart="185" bodyend="187"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a08f0d62fef359bd0a99a615b52669d39" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95" kindref="member">kind</ref></type>
@@ -539,7 +560,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="189" column="9" bodyfile="doxybook/node.hpp" bodystart="189" bodyend="191"/>
+        <location file="doxybook/node.hpp" line="191" column="9" bodyfile="doxybook/node.hpp" bodystart="191" bodyend="193"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1aa78ea008168a368effca5265a081cf36" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string</type>
@@ -553,7 +574,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="195" column="9" bodyfile="doxybook/node.hpp" bodystart="195" bodyend="197"/>
+        <location file="doxybook/node.hpp" line="197" column="9" bodyfile="doxybook/node.hpp" bodystart="197" bodyend="199"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a775ee58864792063f6e474c475d4a75f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" kindref="member">type</ref></type>
@@ -567,7 +588,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="201" column="9" bodyfile="doxybook/node.hpp" bodystart="201" bodyend="203"/>
+        <location file="doxybook/node.hpp" line="203" column="9" bodyfile="doxybook/node.hpp" bodystart="203" bodyend="205"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a9e0921a87dd285b86908b7ac464153e2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string const  &amp;</type>
@@ -581,7 +602,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="207" column="9" bodyfile="doxybook/node.hpp" bodystart="207" bodyend="209"/>
+        <location file="doxybook/node.hpp" line="209" column="9" bodyfile="doxybook/node.hpp" bodystart="209" bodyend="211"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a931db546788b9ac85cc62bf5f9094357" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string const  &amp;</type>
@@ -595,7 +616,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="213" column="9" bodyfile="doxybook/node.hpp" bodystart="213" bodyend="215"/>
+        <location file="doxybook/node.hpp" line="215" column="9" bodyfile="doxybook/node.hpp" bodystart="215" bodyend="217"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a57f8ca72f8b41a691870abeaecb0cbf8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string const  &amp;</type>
@@ -609,7 +630,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="219" column="9" bodyfile="doxybook/node.hpp" bodystart="219" bodyend="221"/>
+        <location file="doxybook/node.hpp" line="221" column="9" bodyfile="doxybook/node.hpp" bodystart="221" bodyend="223"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a088071062429e592eb567081b39ac683" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classdoxybook_1_1node" kindref="compound">node</ref> const  *</type>
@@ -623,7 +644,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="225" column="9" bodyfile="doxybook/node.hpp" bodystart="225" bodyend="227"/>
+        <location file="doxybook/node.hpp" line="227" column="9" bodyfile="doxybook/node.hpp" bodystart="227" bodyend="229"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a1feda918b148706586841517ba3178e6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classdoxybook_1_1node" kindref="compound">node</ref> const  *</type>
@@ -637,7 +658,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="231" column="9" bodyfile="doxybook/node.hpp" bodystart="231" bodyend="233"/>
+        <location file="doxybook/node.hpp" line="233" column="9" bodyfile="doxybook/node.hpp" bodystart="233" bodyend="235"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1afe77c0864f3e1cc3088b889acb9fdb5b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -651,7 +672,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="237" column="9" bodyfile="doxybook/node.hpp" bodystart="237" bodyend="239"/>
+        <location file="doxybook/node.hpp" line="239" column="9" bodyfile="doxybook/node.hpp" bodystart="239" bodyend="241"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a5d5dc44506f26f31e615d39d92bb7a33" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::list&lt; std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt; &gt; const  &amp;</type>
@@ -665,7 +686,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="243" column="9" bodyfile="doxybook/node.hpp" bodystart="243" bodyend="245"/>
+        <location file="doxybook/node.hpp" line="245" column="9" bodyfile="doxybook/node.hpp" bodystart="245" bodyend="247"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a9646d7b4234ba40c406e47c4c2f4d690" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string const  &amp;</type>
@@ -679,7 +700,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="249" column="9" bodyfile="doxybook/node.hpp" bodystart="249" bodyend="251"/>
+        <location file="doxybook/node.hpp" line="251" column="9" bodyfile="doxybook/node.hpp" bodystart="251" bodyend="253"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1ae671937e05600a27be55660466599742" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string const  &amp;</type>
@@ -693,7 +714,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="255" column="9" bodyfile="doxybook/node.hpp" bodystart="255" bodyend="257"/>
+        <location file="doxybook/node.hpp" line="257" column="9" bodyfile="doxybook/node.hpp" bodystart="257" bodyend="259"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a6c6b4f1ed2c6cf7d30a1950ba99214ba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string const  &amp;</type>
@@ -707,7 +728,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="261" column="9" bodyfile="doxybook/node.hpp" bodystart="261" bodyend="263"/>
+        <location file="doxybook/node.hpp" line="263" column="9" bodyfile="doxybook/node.hpp" bodystart="263" bodyend="265"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a9fedc3586def67edef09d55ccc7e74f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string const  &amp;</type>
@@ -721,7 +742,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="267" column="9" bodyfile="doxybook/node.hpp" bodystart="267" bodyend="269"/>
+        <location file="doxybook/node.hpp" line="269" column="9" bodyfile="doxybook/node.hpp" bodystart="269" bodyend="271"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1adce85eb479128d4f1dfaa799ca638016" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="namespacedoxybook_1a2a693352be699d6073cce75dda77578f" kindref="member">visibility</ref></type>
@@ -735,7 +756,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="273" column="9" bodyfile="doxybook/node.hpp" bodystart="273" bodyend="275"/>
+        <location file="doxybook/node.hpp" line="275" column="9" bodyfile="doxybook/node.hpp" bodystart="275" bodyend="277"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a1b150363333710d68f76b7fa71586ad9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139" kindref="member">virtual_category</ref></type>
@@ -749,7 +770,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="279" column="9" bodyfile="doxybook/node.hpp" bodystart="279" bodyend="281"/>
+        <location file="doxybook/node.hpp" line="281" column="9" bodyfile="doxybook/node.hpp" bodystart="281" bodyend="283"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a777d359ef06e492be9261e747e024f9e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::vector&lt; <ref refid="structdoxybook_1_1node_1_1class__reference" kindref="compound">class_reference</ref> &gt; const  &amp;</type>
@@ -763,7 +784,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="285" column="9" bodyfile="doxybook/node.hpp" bodystart="285" bodyend="287"/>
+        <location file="doxybook/node.hpp" line="287" column="9" bodyfile="doxybook/node.hpp" bodystart="287" bodyend="289"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a930526b0ad42599635ac26d5a6c44f11" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::vector&lt; <ref refid="structdoxybook_1_1node_1_1class__reference" kindref="compound">class_reference</ref> &gt; const  &amp;</type>
@@ -777,7 +798,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="291" column="9" bodyfile="doxybook/node.hpp" bodystart="291" bodyend="293"/>
+        <location file="doxybook/node.hpp" line="293" column="9" bodyfile="doxybook/node.hpp" bodystart="293" bodyend="295"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a69e923fba5e1428c3491293c106c0e62" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string const  &amp;</type>
@@ -791,7 +812,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="297" column="9" bodyfile="doxybook/node.hpp" bodystart="297" bodyend="299"/>
+        <location file="doxybook/node.hpp" line="299" column="9" bodyfile="doxybook/node.hpp" bodystart="299" bodyend="301"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1adf5141af63b0abfa3f82a63dd31671a7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string const  &amp;</type>
@@ -805,7 +826,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="303" column="9" bodyfile="doxybook/node.hpp" bodystart="303" bodyend="305"/>
+        <location file="doxybook/node.hpp" line="305" column="9" bodyfile="doxybook/node.hpp" bodystart="305" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1node_1af7837ff6161d222dd9502ed4d0338c83" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string const  &amp;</type>
+        <definition>std::string const&amp; doxybook::node::get_section</definition>
+        <argsstring>() const</argsstring>
+        <name>get_section</name>
+        <briefdescription>
+<para>Return the node section. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is useful for class member functions that need to go into sections </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/node.hpp" line="315" column="9" bodyfile="doxybook/node.hpp" bodystart="315" bodyend="317"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1af20b1242c11c2bdd290de97d93cb3e7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -835,7 +871,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="309" column="9"/>
+        <location file="doxybook/node.hpp" line="321" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a425d18c21d8485a33b26462558ffb6f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdoxybook_1_1node_1acd72d6a13e59d868da31de7693f7eca6" kindref="member">load_data_result</ref></type>
@@ -865,7 +901,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="321" column="9"/>
+        <location file="doxybook/node.hpp" line="333" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -900,7 +936,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="332" column="9"/>
+        <location file="doxybook/node.hpp" line="344" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a62f741a4883dfe27c8dd7d2b8a969146" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="structdoxybook_1_1node_1_1class__reference" kindref="compound">class_reference</ref> &gt;</type>
@@ -917,7 +953,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="340" column="9"/>
+        <location file="doxybook/node.hpp" line="352" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1aec6415aab7e24f64a764ce680ca10b9c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -934,7 +970,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="365" column="9"/>
+        <location file="doxybook/node.hpp" line="378" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1ad254fb9685b2c623579b96c2c7674ef6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -951,7 +987,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="368" column="9"/>
+        <location file="doxybook/node.hpp" line="381" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1a1a6f71f5f7aea63916e3d68433ee46f5" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt;</type>
@@ -968,7 +1004,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="371" column="9"/>
+        <location file="doxybook/node.hpp" line="384" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-func">
@@ -991,7 +1027,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="374" column="9"/>
+        <location file="doxybook/node.hpp" line="387" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1node_1ad0c82ac9db961b7c3e03765ed1e50fb6" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdoxybook_1_1xml_1_1element" kindref="compound">xml::element</ref></type>
@@ -1012,7 +1048,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/node.hpp" line="377" column="9"/>
+        <location file="doxybook/node.hpp" line="390" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1020,7 +1056,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="doxybook/node.hpp" line="30" column="15" bodyfile="doxybook/node.hpp" bodystart="30" bodyend="378"/>
+    <location file="doxybook/node.hpp" line="30" column="15" bodyfile="doxybook/node.hpp" bodystart="30" bodyend="391"/>
     <listofallmembers>
       <member refid="classdoxybook_1_1node_1a27e2d3c5a8c11b8cef2148ce081f4a9c" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>anchor_</name></member>
       <member refid="classdoxybook_1_1node_1a71a693a3b0bbcd636b024a577bba694e" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>assert_child</name></member>
@@ -1048,6 +1084,7 @@
       <member refid="classdoxybook_1_1node_1a088071062429e592eb567081b39ac683" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_parent</name></member>
       <member refid="classdoxybook_1_1node_1a931db546788b9ac85cc62bf5f9094357" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_qualified_name</name></member>
       <member refid="classdoxybook_1_1node_1a9e0921a87dd285b86908b7ac464153e2" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_refid</name></member>
+      <member refid="classdoxybook_1_1node_1af7837ff6161d222dd9502ed4d0338c83" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_section</name></member>
       <member refid="classdoxybook_1_1node_1a6c6b4f1ed2c6cf7d30a1950ba99214ba" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_summary</name></member>
       <member refid="classdoxybook_1_1node_1a9fedc3586def67edef09d55ccc7e74f9" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_title</name></member>
       <member refid="classdoxybook_1_1node_1a775ee58864792063f6e474c475d4a75f" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>get_type</name></member>
@@ -1068,13 +1105,14 @@
       <member refid="classdoxybook_1_1node_1a7073d6bef590aabf9e78a17c23652a3c" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>name_</name></member>
       <member refid="classdoxybook_1_1node_1a4847f4c99064b057eddbcf62abc3dd5d" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>node</name></member>
       <member refid="classdoxybook_1_1node_1afeaa9f95a14e7ec6c31803e31a2a7d90" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>parent_</name></member>
-      <member refid="classdoxybook_1_1node_1a75f05d85b08a92c96f38572ba69ebaf8" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>parse</name></member>
-      <member refid="classdoxybook_1_1node_1af9fba168329dc6f1928149d4d1a78bdd" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>parse</name></member>
+      <member refid="classdoxybook_1_1node_1a2068145ca7ffd0039a18fcfc7b03247e" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>parse</name></member>
+      <member refid="classdoxybook_1_1node_1ac9689abf689b857946de4b6a83811db2" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>parse</name></member>
       <member refid="classdoxybook_1_1node_1a913c842bfc8bdd7a3887f17e0da9ac88" prot="public" virt="non-virtual"><scope>doxybook::node</scope><name>parse</name></member>
       <member refid="classdoxybook_1_1node_1aec6415aab7e24f64a764ce680ca10b9c" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>parse_base_info</name></member>
       <member refid="classdoxybook_1_1node_1ad254fb9685b2c623579b96c2c7674ef6" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>parse_inheritance_info</name></member>
       <member refid="classdoxybook_1_1node_1a9e239d4327b79eb6f85f8641c68459b3" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>qualified_name_</name></member>
       <member refid="classdoxybook_1_1node_1ac262523fe3512708a00c6bc848ff84d8" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>refid_</name></member>
+      <member refid="classdoxybook_1_1node_1a5b83e2e4c49e22868aa0521db62373e7" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>section_</name></member>
       <member refid="classdoxybook_1_1node_1a7bd923afd8a6cdf78e5d77f2ff75bf6e" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>summary_</name></member>
       <member refid="classdoxybook_1_1node_1ab59aca3baea5dc9350408309c8a47bf0" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>temp_</name></member>
       <member refid="classdoxybook_1_1node_1a24f98700ff750744241153bf57dc425d" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>title_</name></member>

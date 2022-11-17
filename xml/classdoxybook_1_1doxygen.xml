@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/doxygen.hpp" line="56" column="9" bodyfile="doxybook/doxygen.hpp" bodystart="56" bodyend="-1"/>
+        <location file="doxybook/doxygen.hpp" line="60" column="9" bodyfile="doxybook/doxygen.hpp" bodystart="60" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/doxygen.hpp" line="76" column="22" bodyfile="doxybook/doxygen.hpp" bodystart="76" bodyend="-1"/>
+        <location file="doxybook/doxygen.hpp" line="80" column="22" bodyfile="doxybook/doxygen.hpp" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1doxygen_1a1840efe5a6f8dfb490884b959072552b" prot="private" static="no" mutable="no">
         <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt;</type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/doxygen.hpp" line="79" column="25" bodyfile="doxybook/doxygen.hpp" bodystart="79" bodyend="-1"/>
+        <location file="doxybook/doxygen.hpp" line="83" column="25" bodyfile="doxybook/doxygen.hpp" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdoxybook_1_1doxygen_1a58b029e7ef98956f5490d3b179cc026c" prot="private" static="no" mutable="no">
         <type><ref refid="namespacedoxybook_1a8315d0312907cc040ecd163fc5dd229d" kindref="member">node_cache_map</ref></type>
@@ -56,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/doxygen.hpp" line="81" column="24" bodyfile="doxybook/doxygen.hpp" bodystart="81" bodyend="-1"/>
+        <location file="doxybook/doxygen.hpp" line="85" column="24" bodyfile="doxybook/doxygen.hpp" bodystart="85" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -164,6 +164,24 @@
         </inbodydescription>
         <location file="doxybook/doxygen.hpp" line="46" column="9"/>
       </memberdef>
+      <memberdef kind="function" id="classdoxybook_1_1doxygen_1af8b399a9c65a7245b57d787741d7ef14" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classdoxybook_1_1node" kindref="compound">node</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;node&gt; doxybook::doxygen::find_if</definition>
+        <argsstring>(std::function&lt; bool(node const &amp;)&gt; f) const</argsstring>
+        <name>find_if</name>
+        <param>
+          <type>std::function&lt; bool(<ref refid="classdoxybook_1_1node" kindref="compound">node</ref> const &amp;)&gt;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Find a node with the given condition. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="doxybook/doxygen.hpp" line="50" column="9"/>
+      </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1doxygen_1a0124b17cc4d01f05c7cd86c9479076c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="namespacedoxybook_1a8315d0312907cc040ecd163fc5dd229d" kindref="member">node_cache_map</ref> const  &amp;</type>
         <definition>node_cache_map const&amp; doxybook::doxygen::get_cache</definition>
@@ -176,7 +194,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/doxygen.hpp" line="50" column="9" bodyfile="doxybook/doxygen.hpp" bodystart="50" bodyend="52"/>
+        <location file="doxybook/doxygen.hpp" line="54" column="9" bodyfile="doxybook/doxygen.hpp" bodystart="54" bodyend="56"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -195,7 +213,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/doxygen.hpp" line="59" column="9"/>
+        <location file="doxybook/doxygen.hpp" line="63" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1doxygen_1accb68861b7cd16c3cafc10bfb3d5b2a5" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -216,7 +234,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/doxygen.hpp" line="62" column="9"/>
+        <location file="doxybook/doxygen.hpp" line="66" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1doxygen_1a3c14fa6a07bc1abad30cdf13b17da3c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -241,7 +259,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/doxygen.hpp" line="68" column="9"/>
+        <location file="doxybook/doxygen.hpp" line="72" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classdoxybook_1_1doxygen_1ac50837710d27fd0ce5b7603115235125" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -258,7 +276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/doxygen.hpp" line="74" column="9"/>
+        <location file="doxybook/doxygen.hpp" line="78" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -266,7 +284,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="doxybook/doxygen.hpp" line="20" column="18" bodyfile="doxybook/doxygen.hpp" bodystart="20" bodyend="82"/>
+    <location file="doxybook/doxygen.hpp" line="20" column="18" bodyfile="doxybook/doxygen.hpp" bodystart="20" bodyend="86"/>
     <listofallmembers>
       <member refid="classdoxybook_1_1doxygen_1a58b029e7ef98956f5490d3b179cc026c" prot="private" virt="non-virtual"><scope>doxybook::doxygen</scope><name>cache_</name></member>
       <member refid="classdoxybook_1_1doxygen_1a56a586a5498170fe6d035f4f8bcca434" prot="private" virt="non-virtual"><scope>doxybook::doxygen</scope><name>config_</name></member>
@@ -274,6 +292,7 @@
       <member refid="classdoxybook_1_1doxygen_1ad508bdf779e108ba8b8eaffbe22f86ba" prot="public" virt="non-virtual"><scope>doxybook::doxygen</scope><name>finalize</name></member>
       <member refid="classdoxybook_1_1doxygen_1a3c14fa6a07bc1abad30cdf13b17da3c8" prot="private" virt="non-virtual"><scope>doxybook::doxygen</scope><name>finalize_recursively</name></member>
       <member refid="classdoxybook_1_1doxygen_1aa04077d25a6ef01e4a98adbcf5055688" prot="public" virt="non-virtual"><scope>doxybook::doxygen</scope><name>find</name></member>
+      <member refid="classdoxybook_1_1doxygen_1af8b399a9c65a7245b57d787741d7ef14" prot="public" virt="non-virtual"><scope>doxybook::doxygen</scope><name>find_if</name></member>
       <member refid="classdoxybook_1_1doxygen_1a0124b17cc4d01f05c7cd86c9479076c7" prot="public" virt="non-virtual"><scope>doxybook::doxygen</scope><name>get_cache</name></member>
       <member refid="classdoxybook_1_1doxygen_1a762cb10b1bb5476b2c840586e9242c1d" prot="public" virt="non-virtual"><scope>doxybook::doxygen</scope><name>get_index</name></member>
       <member refid="classdoxybook_1_1doxygen_1accb68861b7cd16c3cafc10bfb3d5b2a5" prot="private" virt="non-virtual"><scope>doxybook::doxygen</scope><name>get_index_cache</name></member>

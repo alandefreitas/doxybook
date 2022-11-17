@@ -449,29 +449,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#detailed-description" class="md-nav__link">
-    Detailed Description
+  <a href="#public-functions_1" class="md-nav__link">
+    Public Functions
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#public-functions-documentation" class="md-nav__link">
-    Public Functions Documentation
-  </a>
-  
-    <nav class="md-nav" aria-label="Public Functions Documentation">
+    <nav class="md-nav" aria-label="Public Functions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#function-exception" class="md-nav__link">
-    function exception
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#function-exception_1" class="md-nav__link">
     function exception
   </a>
   
@@ -513,54 +499,52 @@
 
 
 <h1 id="doxybookexception">doxybook::exception</h1>
-<p>Doxybook exceptions.  <a href="#detailed-description">More...</a></p>
-<p><code>#include &lt;exception.hpp&gt;</code></p>
-<p>Inherits from exception</p>
+<p><sup>Defined in header <a href="/doxybook/reference/files/exception_8hpp/#file-exception.hpp"><code>&lt;doxybook/exception.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">exception</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+<p>Doxybook exceptions. </p>
+<p><strong>Description</strong></p>
+<p>This is a very basic class used to represent doxybook exceptions </p>
+<p><strong>Inherits from</strong> <code>exception</code></p>
 <h2 id="public-functions">Public Functions</h2>
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Functions</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1exception/#function-exception">exception</a></strong>() =default<br>Constructor.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1exception/#function-exception">(constructor)</a></strong></td>
+<td>Constructor. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1exception/#function-exception">exception</a></strong>(std::string msg)<br>Constructor.</td>
-</tr>
-<tr>
-<td>char const  *</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1exception/#function-what">what</a></strong>() const override<br>The error message.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1exception/#function-what">what</a></strong> <span style="color:green">const</span> <span style="color:green">override</span></td>
+<td>The error message. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 </tbody>
 </table>
-<h2 id="detailed-description">Detailed Description</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">doxybook</span><span class="o">::</span><span class="n">exception</span><span class="p">;</span><span class="w"></span>
-</code></pre></div>
-<p>Doxybook exceptions. </p>
-<p>This is a very basic class used to represent doxybook exceptions </p>
-<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h2 id="public-functions_1">Public Functions</h2>
 <h3 id="function-exception">function exception</h3>
-<div class="highlight"><pre><span></span><code><span class="n">exception</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="k">default</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/exception_8hpp/#file-exception.hpp"><code>&lt;doxybook/exception.hpp&gt;</code></a></sup></p>
+<div class="highlight"><span class="filename">(1)</span><pre><span></span><code><span class="n">exception</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+<div class="highlight"><span class="filename">(2)</span><pre><span></span><code><span class="k">explicit</span><span class="w"> </span><span class="n">exception</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">msg</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 <p>Constructor. </p>
-<h3 id="function-exception_1">function exception</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="k">explicit</span><span class="w"> </span><span class="n">exception</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">msg</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
-</code></pre></div>
-<p>Constructor. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-what">function what</h3>
-<div class="highlight"><pre><span></span><code><span class="kr">inline</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">*</span><span class="w"> </span><span class="n">what</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">override</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/exception_8hpp/#file-exception.hpp"><code>&lt;doxybook/exception.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="kt">char</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="o">*</span><span class="w"></span>
+<span class="n">what</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">override</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>The error message. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <hr />
-<p>Updated on 2022-11-15 at 04:08:09 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
 
 
   

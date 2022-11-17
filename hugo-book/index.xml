@@ -22,24 +22,24 @@
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/pages/advanced/</guid>
       <description>Advanced Usage # This page is for advanced users. Make sure you have first read the introduction.
-Updated on 2022-11-15 at 04:08:15 +0000</description>
+Updated on 2022-11-17</description>
     </item>
     
     <item>
       <title>An example game engine</title>
-      <link>https://alandefreitas.github.io/doxybook/hugo-book/modules/group__engine/</link>
+      <link>https://alandefreitas.github.io/doxybook/hugo-book/libraries/group__engine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://alandefreitas.github.io/doxybook/hugo-book/modules/group__engine/</guid>
+      <guid>https://alandefreitas.github.io/doxybook/hugo-book/libraries/group__engine/</guid>
       <description>This is a brief description to the engine group.</description>
     </item>
     
     <item>
       <title>Audio buffers and devices</title>
-      <link>https://alandefreitas.github.io/doxybook/hugo-book/modules/group__audio/</link>
+      <link>https://alandefreitas.github.io/doxybook/hugo-book/libraries/group__audio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://alandefreitas.github.io/doxybook/hugo-book/modules/group__audio/</guid>
+      <guid>https://alandefreitas.github.io/doxybook/hugo-book/libraries/group__audio/</guid>
       <description>This is a brief description to the audio group.</description>
     </item>
     
@@ -51,7 +51,7 @@ Updated on 2022-11-15 at 04:08:15 +0000</description>
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/pages/bug/</guid>
       <description>Bug List # Class Engine::Audio::AudioBuffer
 Some random bug Some other random bug Class Engine::Graphics::Texture
-This has some weird bug too! Updated on 2022-11-15 at 04:08:15 +0000</description>
+This has some weird bug too! Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@ This has some weird bug too! Updated on 2022-11-15 at 04:08:15 +0000</descriptio
 Use the AudioBuffer::setCallback2 instead Member Engine::Audio::AudioBuffer::setData (const TypedAudioData data[], size_t size)
 Use the AudioBuffer::setDataMultiple instead Member Engine::Audio::Callback )(AudioBuffer &amp;amp;buffer, size_t offset)
 Use the Audio::Callback2 instead Class Engine::Graphics::Texture3D
-Don&amp;rsquo;t use this texture type Updated on 2022-11-15 at 04:08:15 +0000</description>
+Don&amp;rsquo;t use this texture type Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -82,7 +82,7 @@ Don&amp;rsquo;t use this texture type Updated on 2022-11-15 at 04:08:15 +0000</d
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/namespaces/namespaceengine_1_1assets/</guid>
-      <description>Engine::Assets # Classes # Name class Engine::Assets::Asset Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>Engine::Assets # Classes # Classes Description Asset Engine::Assets::Asset (class) Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -91,9 +91,9 @@ Don&amp;rsquo;t use this texture type Updated on 2022-11-15 at 04:08:15 +0000</d
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/classengine_1_1assets_1_1asset/</guid>
-      <description>Engine::Assets::Asset # Module: An example game engine / Generic assets
-#include &amp;lt;Asset.hpp&amp;gt;
-Public Classes # Name union Event Public Functions # Name Asset(const std::string &amp;amp; name) virtual ~Asset() =0 virtual void load()Call this method to load the asset. virtual void unload()Call this method to unload the asset. const Event &amp;amp; getEvent() constReturns the current status of the asset. Public Functions Documentation # function Asset # explicit Asset( const std::string &amp;amp; name ) function ~Asset # virtual ~Asset() =0 function load # virtual void load() Call this method to load the asset.</description>
+      <description>Engine::Assets::Asset # An example game engine / Generic assets / Asset
+Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+class Asset; Public Classes # Name union Event Public Functions # Member Functions Description (constructor) (function) (destructor) = 0 (virtual function) load Call this method to load the asset. (virtual function) unload Call this method to unload the asset. (virtual function) getEvent const Returns the current status of the asset. (function) Public Functions # function Asset # Defined in header &amp;lt;src/Assets/Asset.</description>
     </item>
     
     <item>
@@ -102,9 +102,10 @@ Public Classes # Name union Event Public Functions # Name Asset(const std::strin
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/unionengine_1_1assets_1_1asset_1_1event/</guid>
-      <description>Engine::Assets::Asset::Event # Module: An example game engine / Generic assets
-#include &amp;lt;Asset.hpp&amp;gt;
-Public Classes # Name struct Loaded struct Unloaded struct Waiting Public Attributes # Name struct Engine::Assets::Asset::Event::Loaded loaded struct Engine::Assets::Asset::Event::Unloaded unloaded struct Engine::Assets::Asset::Event::Waiting waiting Public Attributes Documentation # variable loaded # struct Engine::Assets::Asset::Event::Loaded loaded; variable unloaded # struct Engine::Assets::Asset::Event::Unloaded unloaded; variable waiting # struct Engine::Assets::Asset::Event::Waiting waiting; Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>Engine::Assets::Asset::Event # An example game engine / Generic assets / Event
+Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+union Event; Public Classes # Name struct Loaded struct Unloaded struct Waiting Public Attributes # Member Public Attributes Description loaded struct Engine::Assets::Asset::Event::Loaded (public variable) unloaded struct Engine::Assets::Asset::Event::Unloaded (public variable) waiting struct Engine::Assets::Asset::Event::Waiting (public variable) Public Attributes # variable loaded # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+struct Engine::Assets::Asset::Event::Loaded loaded; variable unloaded # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;</description>
     </item>
     
     <item>
@@ -113,8 +114,10 @@ Public Classes # Name struct Loaded struct Unloaded struct Waiting Public Attrib
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1loaded/</guid>
-      <description>Engine::Assets::Asset::Event::Loaded # #include &amp;lt;Asset.hpp&amp;gt;
-Public Attributes # Name bool success int usage Public Attributes Documentation # variable success # bool success; variable usage # int usage; Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>Engine::Assets::Asset::Event::Loaded # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+struct Loaded; Public Attributes # Member Public Attributes Description success bool (public variable) usage int (public variable) Public Attributes # variable success # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+bool success; variable usage # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+int usage; Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -123,8 +126,9 @@ Public Attributes # Name bool success int usage Public Attributes Documentation 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1unloaded/</guid>
-      <description>Engine::Assets::Asset::Event::Unloaded # #include &amp;lt;Asset.hpp&amp;gt;
-Public Attributes # Name bool success Public Attributes Documentation # variable success # bool success; Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>Engine::Assets::Asset::Event::Unloaded # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+struct Unloaded; Public Attributes # Member Public Attributes Description success bool (public variable) Public Attributes # variable success # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+bool success; Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -133,10 +137,11 @@ Public Attributes # Name bool success Public Attributes Documentation # variable
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1waiting/</guid>
-      <description>Engine::Assets::Asset::Event::Waiting # #include &amp;lt;Asset.hpp&amp;gt;
-Public Attributes # Name Asset * other The pointer to the other asset this asset is waiting for. Public Attributes Documentation # variable other # Asset * other; The pointer to the other asset this asset is waiting for.
+      <description>Engine::Assets::Asset::Event::Waiting # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+struct Waiting; Public Attributes # Member Public Attributes Description other The pointer to the other asset this asset is waiting for. (public variable) Public Attributes # variable other # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
+Asset * other; The pointer to the other asset this asset is waiting for.
 Note: May be null
-Updated on 2022-11-15 at 04:08:15 +0000</description>
+Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -145,7 +150,8 @@ Updated on 2022-11-15 at 04:08:15 +0000</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/namespaces/namespaceengine_1_1audio/</guid>
-      <description>Engine::Audio # Classes # Name class Engine::Audio::AudioBuffer A simple audio buffer to hold PCM samples class Engine::Audio::AudioManager An audio manager that accepts multiple Audio::AudioBuffer instances. Types # Name typedef int(*)(AudioBuffer &amp;amp;buffer, size_t offset) Callback Some callback function pointer type definition. using int(*)(AudioBuffer &amp;amp;buffer, size_t offset, void *user) Callback2 Some callback function pointer type definition. Functions # Name void doSomething(AudioBuffer &amp;amp; buffer)Do something with the buffer. Types Documentation # typedef Callback # typedef int(* Engine::Audio::Callback) (AudioBuffer &amp;amp;buffer, size_t offset); Some callback function pointer type definition.</description>
+      <description>Engine::Audio # Classes # Classes Description AudioBuffer A simple audio buffer to hold PCM samples (class) AudioManager An audio manager that accepts multiple Audio::AudioBuffer instances. (class) Types # Member Types Definition Callback Some callback function pointer type definition. (typedef) Callback2 Some callback function pointer type definition. (using) Functions # Member Functions Description doSomething Do something with the buffer. (function) Types # typedef Callback # Defined in header &amp;lt;src/Audio/AudioBuffer.hpp&amp;gt;
+typedef int(* Engine::Audio::Callback) (AudioBuffer &amp;amp;buffer, size_t offset); Some callback function pointer type definition.</description>
     </item>
     
     <item>
@@ -181,10 +187,16 @@ Updated on 2022-11-15 at 04:08:15 +0000</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/classengine_1_1exception/</guid>
-      <description>Engine::Exception # Module: An example game engine
-#include &amp;lt;Exception.hpp&amp;gt;
-Inherits from exception
-Public Functions # Name Exception() =default Exception(std::string msg) const char * what() const override Public Functions Documentation # function Exception # Exception() =default function Exception # inline explicit Exception( std::string msg ) function what # inline const char * what() const override Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>Engine::Exception # An example game engine / Exception
+Defined in header &amp;lt;src/Exception.hpp&amp;gt;
+class Exception; Inherits from exception
+Public Functions # Member Functions Description (constructor) (function) what const override (function) Public Functions # function Exception # Defined in header &amp;lt;src/Exception.hpp&amp;gt;
+Exception() = default; explicit Exception(std::string msg); Exception Safety
+Basic exception guarantee.
+function what # Defined in header &amp;lt;src/Exception.hpp&amp;gt;
+const char * what() const override; Exception Safety
+Basic exception guarantee.
+Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -193,8 +205,10 @@ Public Functions # Name Exception() =default Exception(std::string msg) const ch
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/namespaces/namespaceengine_1_1graphics/</guid>
-      <description>Engine::Graphics # Classes # Name class Engine::Graphics::Framebuffer class Engine::Graphics::Handle interface Engine::Graphics::Texture This is a base texture class that serves as a base class for other texture types. class Engine::Graphics::Texture2D class Engine::Graphics::Texture3D Some deprecated class. Functions # Name int getHandle(Handle &amp;amp; handle)Some namespace inline function. Functions Documentation # function getHandle # inline int getHandle( Handle &amp;amp; handle ) Some namespace inline function.
-Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>Engine::Graphics # Classes # Classes Description Framebuffer Engine::Graphics::Framebuffer (class) Handle Engine::Graphics::Handle (class) Texture This is a base texture class that serves as a base class for other texture types. (interface) Texture2D Engine::Graphics::Texture2D (class) Texture3D Some deprecated class. (class) Functions # Member Functions Description getHandle Some namespace inline function. (function) Functions # function getHandle # Defined in header &amp;lt;src/Graphics/Handle.hpp&amp;gt;
+int getHandle(Handle &amp;amp; handle); Some namespace inline function.
+Exception Safety
+Basic exception guarantee.</description>
     </item>
     
     <item>
@@ -203,10 +217,10 @@ Updated on 2022-11-15 at 04:08:15 +0000</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/classengine_1_1graphics_1_1framebuffer/</guid>
-      <description>Engine::Graphics::Framebuffer # Module: An example game engine / Graphical related classes
-#include &amp;lt;Framebuffer.hpp&amp;gt;
-Inherits from Engine::Graphics::Texture, Engine::Graphics::Handle
-Public Functions # Name Framebuffer(int width, int height) virtual ~Framebuffer() virtual int getWidth() const overrideReturns the width of the texture in pixels. virtual int getHeight() const overrideReturns the height of the texture in pixels. virtual int getDepth() const overrideReturns the depth of the texture in pixels. Additional inherited members # Public Types inherited from Engine::Graphics::Texture</description>
+      <description>Engine::Graphics::Framebuffer # An example game engine / Graphical related classes / Framebuffer
+Defined in header &amp;lt;src/Graphics/Framebuffer.hpp&amp;gt;
+class Framebuffer; Inherits from Texture, Handle
+Public Functions # Member Functions Description (constructor) (function) (destructor) (virtual function) getWidth const override Returns the width of the texture in pixels. (virtual function) getHeight const override Returns the height of the texture in pixels. (virtual function) getDepth const override Returns the depth of the texture in pixels.</description>
     </item>
     
     <item>
@@ -215,10 +229,13 @@ Public Functions # Name Framebuffer(int width, int height) virtual ~Framebuffer(
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/classengine_1_1graphics_1_1handle/</guid>
-      <description>Engine::Graphics::Handle # Module: An example game engine / Graphical related classes
-#include &amp;lt;Handle.hpp&amp;gt;
-Inherited by Engine::Graphics::Texture
-Public Functions # Name Handle() =default virtual ~Handle() =default int getHandle() const Protected Attributes # Name int handle Public Functions Documentation # function Handle # Handle() =default function ~Handle # virtual ~Handle() =default function getHandle # inline int getHandle() const Protected Attributes Documentation # variable handle # int handle; Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>Engine::Graphics::Handle # An example game engine / Graphical related classes / Handle
+Defined in header &amp;lt;src/Graphics/Handle.hpp&amp;gt;
+class Handle; Inherited by Texture
+Public Functions # Member Functions Description (constructor) = default (function) (destructor) = default (virtual function) getHandle const (function) Protected Attributes # Member Protected Attributes Description handle int (protected variable) Public Functions # function Handle # Defined in header &amp;lt;src/Graphics/Handle.hpp&amp;gt;
+Handle() = default; Exception Safety
+Basic exception guarantee.
+function ~Handle # Defined in header &amp;lt;src/Graphics/Handle.</description>
     </item>
     
     <item>
@@ -236,10 +253,10 @@ Public Functions # Name Handle() =default virtual ~Handle() =default int getHand
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/classengine_1_1graphics_1_1texture2d/</guid>
-      <description>Engine::Graphics::Texture2D # Module: An example game engine / Graphical related classes
-#include &amp;lt;Texture2D.hpp&amp;gt;
-Inherits from Engine::Graphics::Texture, Engine::Graphics::Handle
-Public Functions # Name Texture2D(int width, int height, uint8_t * data, Texture::Type type =Texture::Type::RGBA8) virtual ~Texture2D() virtual int getWidth() const overrideReturns the width of the texture in pixels. virtual int getHeight() const overrideReturns the height of the texture in pixels. virtual int getDepth() const overrideReturns the depth of the texture in pixels. Additional inherited members # Public Types inherited from Engine::Graphics::Texture</description>
+      <description>Engine::Graphics::Texture2D # An example game engine / Graphical related classes / Texture2D
+Defined in header &amp;lt;src/Graphics/Texture2D.hpp&amp;gt;
+class Texture2D; Inherits from Texture, Handle
+Public Functions # Member Functions Description (constructor) (function) (destructor) (virtual function) getWidth const override Returns the width of the texture in pixels. (virtual function) getHeight const override Returns the height of the texture in pixels. (virtual function) getDepth const override Returns the depth of the texture in pixels.</description>
     </item>
     
     <item>
@@ -257,7 +274,7 @@ Public Functions # Name Texture2D(int width, int height, uint8_t * data, Texture
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/namespaces/namespaceengine_1_1gui/</guid>
-      <description>Engine::Gui # Classes # Name class Engine::Gui::GuiWidget Some generic gui widget class. Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>Engine::Gui # Classes # Classes Description GuiWidget Some generic gui widget class. (class) Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -275,7 +292,10 @@ Public Functions # Name Texture2D(int width, int height, uint8_t * data, Texture
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/namespaces/namespaceengine_1_1utils/</guid>
-      <description>Engine::Utils # Namespaces # Name Engine::Utils::Path Filesystem path utility functions. Classes # Name class Engine::Utils::ArrayView Filesystem path utility functions. Functions # Name void name_with_underscores(const std::string &amp;amp; arg) Functions Documentation # function name_with_underscores # inline void name_with_underscores( const std::string &amp;amp; arg ) Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>Engine::Utils # Namespaces # Name Description Engine::Utils::Path Filesystem path utility functions. Classes # Classes Description ArrayView Filesystem path utility functions. (class) Functions # Member Functions Description name_with_underscores (function) Functions # function name_with_underscores # Defined in header &amp;lt;src/Utils/Utils.hpp&amp;gt;
+void name_with_underscores(const std::string &amp;amp; arg); Exception Safety
+Basic exception guarantee.
+Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -307,19 +327,19 @@ Public Functions # Name Texture2D(int width, int height, uint8_t * data, Texture
     
     <item>
       <title>Generic assets</title>
-      <link>https://alandefreitas.github.io/doxybook/hugo-book/modules/group__assets/</link>
+      <link>https://alandefreitas.github.io/doxybook/hugo-book/libraries/group__assets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://alandefreitas.github.io/doxybook/hugo-book/modules/group__assets/</guid>
+      <guid>https://alandefreitas.github.io/doxybook/hugo-book/libraries/group__assets/</guid>
       <description>This is a brief description to the assets group.</description>
     </item>
     
     <item>
       <title>Graphical related classes</title>
-      <link>https://alandefreitas.github.io/doxybook/hugo-book/modules/group__graphics/</link>
+      <link>https://alandefreitas.github.io/doxybook/hugo-book/libraries/group__graphics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://alandefreitas.github.io/doxybook/hugo-book/modules/group__graphics/</guid>
+      <guid>https://alandefreitas.github.io/doxybook/hugo-book/libraries/group__graphics/</guid>
       <description>This is a brief description to the graphics group.</description>
     </item>
     
@@ -330,24 +350,24 @@ Public Functions # Name Texture2D(int width, int height, uint8_t * data, Texture
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/pages/intro/</guid>
       <description>Introduction # This page introduces the user to the topic. Now you can proceed to the advanced section.
-Updated on 2022-11-15 at 04:08:15 +0000</description>
+Updated on 2022-11-17</description>
     </item>
     
     <item>
       <title>Some gui related stuff and whatever</title>
-      <link>https://alandefreitas.github.io/doxybook/hugo-book/modules/group__gui/</link>
+      <link>https://alandefreitas.github.io/doxybook/hugo-book/libraries/group__gui/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://alandefreitas.github.io/doxybook/hugo-book/modules/group__gui/</guid>
+      <guid>https://alandefreitas.github.io/doxybook/hugo-book/libraries/group__gui/</guid>
       <description>This is a brief description to the gui group.</description>
     </item>
     
     <item>
       <title>Some useful utilities</title>
-      <link>https://alandefreitas.github.io/doxybook/hugo-book/modules/group__utils/</link>
+      <link>https://alandefreitas.github.io/doxybook/hugo-book/libraries/group__utils/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://alandefreitas.github.io/doxybook/hugo-book/modules/group__utils/</guid>
+      <guid>https://alandefreitas.github.io/doxybook/hugo-book/libraries/group__utils/</guid>
       <description>This is a brief description to the utils group.</description>
     </item>
     
@@ -357,7 +377,7 @@ Updated on 2022-11-15 at 04:08:15 +0000</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/dir_68267d1309a1af8e8297ef4c3efbcdba/</guid>
-      <description>src # Directories # Name src/Assets src/Audio src/Graphics src/Gui src/Utils Files # Name src/Engine.hpp src/Exception.hpp Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src # Directories # Directories Description src/Assets src/Audio src/Graphics src/Gui src/Utils Files # Files Description src/Engine.hpp src/Exception.hpp Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -366,7 +386,7 @@ Updated on 2022-11-15 at 04:08:15 +0000</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/dir_e0c1ede47f21c4a643a1257f949f98e0/</guid>
-      <description>src/Assets # Files # Name src/Assets/Asset.hpp src/Assets/Assets.hpp Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Assets # Files # Files Description src/Assets/Asset.hpp src/Assets/Assets.hpp Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -375,7 +395,7 @@ Updated on 2022-11-15 at 04:08:15 +0000</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/asset_8hpp/</guid>
-      <description>src/Assets/Asset.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Engine::Assets Classes # Name class Engine::Assets::Asset union Engine::Assets::Asset::Event struct Engine::Assets::Asset::Event::Loaded struct Engine::Assets::Asset::Event::Unloaded struct Engine::Assets::Asset::Event::Waiting Source code # #pragma once #include &amp;lt;queue&amp;gt; #include &amp;lt;string&amp;gt; namespace Engine { namespace Assets { class Asset { public: union Event { struct Loaded { bool success; int usage; } loaded; struct Unloaded { bool success; } unloaded; struct Waiting { Asset* other; } waiting; }; explicit Asset(const std::string&amp;amp; name); virtual ~Asset() = 0; virtual void load(); virtual void unload(); const Event&amp;amp; getEvent() const { return event; } private: Event event; }; } } Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Assets/Asset.hpp # #include &amp;lt;src/Assets/Asset.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Assets Classes # Classes Description Asset Engine::Assets::Asset (class) Event Engine::Assets::Asset::Event (union) Loaded Engine::Assets::Asset::Event::Loaded (struct) Unloaded Engine::Assets::Asset::Event::Unloaded (struct) Waiting Engine::Assets::Asset::Event::Waiting (struct) Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -384,7 +404,7 @@ Updated on 2022-11-15 at 04:08:15 +0000</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/assets_8hpp/</guid>
-      <description>src/Assets/Assets.hpp # Source code # #pragma once #include &amp;#34;AssetModel.hpp&amp;#34; #include &amp;#34;AssetManager.hpp&amp;#34; Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Assets/Assets.hpp # #include &amp;lt;src/Assets/Assets.hpp&amp;gt; Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -393,7 +413,7 @@ Updated on 2022-11-15 at 04:08:15 +0000</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/dir_c64386e93f356b78d4612c7b7741707c/</guid>
-      <description>src/Audio # Files # Name src/Audio/Audio.hpp src/Audio/AudioBuffer.hpp src/Audio/AudioManager.hpp Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Audio # Files # Files Description src/Audio/Audio.hpp src/Audio/AudioBuffer.hpp src/Audio/AudioManager.hpp Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -402,7 +422,7 @@ Updated on 2022-11-15 at 04:08:15 +0000</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/audio_8hpp/</guid>
-      <description>src/Audio/Audio.hpp # Source code # #pragma once #include &amp;#34;AudioBuffer.hpp&amp;#34; #include &amp;#34;AudioManager.hpp&amp;#34; Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Audio/Audio.hpp # #include &amp;lt;src/Audio/Audio.hpp&amp;gt; Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -411,7 +431,7 @@ Updated on 2022-11-15 at 04:08:15 +0000</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/audiobuffer_8hpp/</guid>
-      <description>src/Audio/AudioBuffer.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Engine::Audio Classes # Name class Engine::Audio::AudioBuffer A simple audio buffer to hold PCM samples struct Engine::Audio::AudioBuffer::TypedAudioData Use this to populate the buffer. Source code # #pragma once #include &amp;#34;../Utils/ArrayView.hpp&amp;#34; namespace Engine { namespace Audio { class AudioManager; class AudioBuffer; typedef int (*Callback)(AudioBuffer&amp;amp; buffer, size_t offset); using Callback2 = int (*)(AudioBuffer&amp;amp; buffer, size_t offset, void* user); extern void doSomething(AudioBuffer&amp;amp; buffer); class AudioBuffer { public: enum class Type { UNKNOWN = 0, INT_8 = 1 &amp;lt;&amp;lt; 1, INT_16 = 1 &amp;lt;&amp;lt; 2, INT_24 = 1 &amp;lt;&amp;lt; 3, INT_32 = 1 &amp;lt;&amp;lt; 4, FLOAT_32 = 1 &amp;lt;&amp;lt; 5 }; template &amp;lt;typename T&amp;gt; using AudioData = Utils::ArrayView&amp;lt;T&amp;gt;; typedef AudioData&amp;lt;uint8_t&amp;gt; AudioData8U; struct TypedAudioData { AudioData8U buffer; Type type; }; explicit AudioBuffer(const std::string&amp;amp; filename); virtual ~AudioBuffer() = default; void play(AudioManager&amp;amp; manager) const; void stop(AudioManager&amp;amp; manager) const; void loop(AudioManager&amp;amp; manager) const; void setData(const TypedAudioData&amp;amp; data); template &amp;lt;size_t Size&amp;gt; void setDataMultiple(const TypedAudioData data[Size]) { } void setData(const TypedAudioData data[], size_t size); friend class AudioManager; friend void Audio::doSomething(AudioBuffer&amp;amp; buffer); void setCallback(Callback callback); void setCallback2(Callback2 callback, void* user); protected: float* getData(); bool playing{false}; }; } // namespace Audio } // namespace Engine Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Audio/AudioBuffer.hpp # #include &amp;lt;src/Audio/AudioBuffer.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Audio Classes # Classes Description AudioBuffer A simple audio buffer to hold PCM samples (class) TypedAudioData Use this to populate the buffer. (struct) Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -420,7 +440,7 @@ Updated on 2022-11-15 at 04:08:15 +0000</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/audiomanager_8hpp/</guid>
-      <description>src/Audio/AudioManager.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Engine::Audio Classes # Name class Engine::Audio::AudioManager An audio manager that accepts multiple Audio::AudioBuffer instances. Source code # #pragma once #include &amp;#34;AudioBuffer.hpp&amp;#34; namespace Engine { namespace Audio { class AudioManager final { public: AudioManager(int numOfChannels = 128); ~AudioManager(); void enque(const AudioBuffer&amp;amp; buffer); }; } // namespace Audio } // namespace Engine Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Audio/AudioManager.hpp # #include &amp;lt;src/Audio/AudioManager.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Audio Classes # Classes Description AudioManager An audio manager that accepts multiple Audio::AudioBuffer instances. (class) Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -429,8 +449,11 @@ Updated on 2022-11-15 at 04:08:15 +0000</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/engine_8hpp/</guid>
-      <description>src/Engine.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Functions # Name std::string someGlobalFunc()Some global extern function. Functions Documentation # function someGlobalFunc # std::string someGlobalFunc() Some global extern function.
-Source code # #include &amp;#34;Assets/Assets.hpp&amp;#34; #include &amp;#34;Audio/Audio.hpp&amp;#34; #include &amp;#34;Exception.hpp&amp;#34; #include &amp;#34;Graphics/Graphics.hpp&amp;#34; #include &amp;#34;Gui/Gui.hpp&amp;#34; #include &amp;#34;Utils/Utils.hpp&amp;#34; extern std::string someGlobalFunc(); namespace Engine { extern std::string getVersion(); } // namespace Engine //----------------------------------------------------------- //----------------------------------------------------------- Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Engine.hpp # #include &amp;lt;src/Engine.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Functions # Member Functions Description someGlobalFunc Some global extern function. (function) Functions # function someGlobalFunc # Defined in header &amp;lt;src/Engine.hpp&amp;gt;
+std::string someGlobalFunc(); Some global extern function.
+Exception Safety
+Basic exception guarantee.
+Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -439,7 +462,7 @@ Source code # #include &amp;#34;Assets/Assets.hpp&amp;#34; #include &amp;#34;Aud
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/exception_8hpp/</guid>
-      <description>src/Exception.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Classes # Name class Engine::Exception Source code # #pragma once #include &amp;lt;exception&amp;gt; #include &amp;lt;string&amp;gt; namespace Engine { class Exception: public std::exception { public: Exception() = default; explicit Exception(std::string msg) : msg(std::move(msg)) { } const char* what() const throw() override { return msg.c_str(); } private: std::string msg; }; } Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Exception.hpp # #include &amp;lt;src/Exception.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Classes # Classes Description Exception Engine::Exception (class) Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -448,7 +471,7 @@ Source code # #include &amp;#34;Assets/Assets.hpp&amp;#34; #include &amp;#34;Aud
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/dir_3419e189e460663ec2c964233bf8dcd6/</guid>
-      <description>src/Graphics # Files # Name src/Graphics/Framebuffer.hpp src/Graphics/Graphics.hpp src/Graphics/Handle.hpp src/Graphics/Renderer.hpp src/Graphics/Texture.hpp src/Graphics/Texture2D.hpp src/Graphics/Texture3D.hpp Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Graphics # Files # Files Description src/Graphics/Framebuffer.hpp src/Graphics/Graphics.hpp src/Graphics/Handle.hpp src/Graphics/Renderer.hpp src/Graphics/Texture.hpp src/Graphics/Texture2D.hpp src/Graphics/Texture3D.hpp Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -457,7 +480,7 @@ Source code # #include &amp;#34;Assets/Assets.hpp&amp;#34; #include &amp;#34;Aud
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/framebuffer_8hpp/</guid>
-      <description>src/Graphics/Framebuffer.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Name class Engine::Graphics::Framebuffer Source code # #pragma once #include &amp;#34;Texture.hpp&amp;#34; namespace Engine { namespace Graphics { class Framebuffer : public Texture { public: Framebuffer(int width, int height); virtual ~Framebuffer(); int getWidth() const override; int getHeight() const override; int getDepth() const override; }; } // namespace Graphics } // namespace Engine Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Graphics/Framebuffer.hpp # #include &amp;lt;src/Graphics/Framebuffer.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Classes Description Framebuffer Engine::Graphics::Framebuffer (class) Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -466,7 +489,7 @@ Source code # #include &amp;#34;Assets/Assets.hpp&amp;#34; #include &amp;#34;Aud
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/graphics_8hpp/</guid>
-      <description>src/Graphics/Graphics.hpp # Source code # #pragma once #include &amp;#34;Framebuffer.hpp&amp;#34; #include &amp;#34;Handle.hpp&amp;#34; #include &amp;#34;Renderer.hpp&amp;#34; #include &amp;#34;Texture.hpp&amp;#34; #include &amp;#34;Texture2D.hpp&amp;#34; #include &amp;#34;Texture3D.hpp&amp;#34; Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Graphics/Graphics.hpp # #include &amp;lt;src/Graphics/Graphics.hpp&amp;gt; Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -475,7 +498,7 @@ Source code # #include &amp;#34;Assets/Assets.hpp&amp;#34; #include &amp;#34;Aud
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/handle_8hpp/</guid>
-      <description>src/Graphics/Handle.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Name class Engine::Graphics::Handle Source code # #pragma once namespace Engine { namespace Graphics { class Handle { public: Handle() = default; virtual ~Handle() = default; int getHandle() const { return handle; } protected: // OpenGL handle int handle; }; inline int getHandle(Handle&amp;amp; handle) { return handle.getHandle(); } } // namespace Graphics } // namespace Engine Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Graphics/Handle.hpp # #include &amp;lt;src/Graphics/Handle.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Classes Description Handle Engine::Graphics::Handle (class) Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -484,7 +507,7 @@ Source code # #include &amp;#34;Assets/Assets.hpp&amp;#34; #include &amp;#34;Aud
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/renderer_8hpp/</guid>
-      <description>src/Graphics/Renderer.hpp # Source code # #pragma once Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Graphics/Renderer.hpp # #include &amp;lt;src/Graphics/Renderer.hpp&amp;gt; Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -493,7 +516,7 @@ Source code # #include &amp;#34;Assets/Assets.hpp&amp;#34; #include &amp;#34;Aud
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/texture_8hpp/</guid>
-      <description>src/Graphics/Texture.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Name interface Engine::Graphics::Texture This is a base texture class that serves as a base class for other texture types. Source code # #pragma once #include &amp;#34;Handle.hpp&amp;#34; namespace Engine { namespace Graphics { class Texture : protected Handle { public: enum class Type { UNKNOWN = 0, RGBA_8, RGB_8, RGBA_16, RGB_16, RGBA_32, RGB_32 }; explicit Texture(Type type); virtual ~Texture() = default; virtual int getWidth() const = 0; virtual int getHeight() const = 0; virtual int getDepth() const = 0; inline bool isLoaded() const { return loaded; } protected: bool loaded{false}; Type type; }; } // namespace Graphics } // namespace Engine Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Graphics/Texture.hpp # #include &amp;lt;src/Graphics/Texture.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Classes Description Texture This is a base texture class that serves as a base class for other texture types. (interface) Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -502,7 +525,7 @@ Source code # #include &amp;#34;Assets/Assets.hpp&amp;#34; #include &amp;#34;Aud
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/texture2d_8hpp/</guid>
-      <description>src/Graphics/Texture2D.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Name class Engine::Graphics::Texture2D Source code # #pragma once #include &amp;#34;Texture.hpp&amp;#34; namespace Engine { namespace Graphics { class Texture2D : public Texture { public: Texture2D(int width, int height, uint8_t* data, Texture::Type type = Texture::Type::RGBA8); virtual ~Texture2D(); int getWidth() const override; int getHeight() const override; int getDepth() const override; }; } // namespace Graphics } // namespace Engine Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Graphics/Texture2D.hpp # #include &amp;lt;src/Graphics/Texture2D.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Classes Description Texture2D Engine::Graphics::Texture2D (class) Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -511,7 +534,7 @@ Source code # #include &amp;#34;Assets/Assets.hpp&amp;#34; #include &amp;#34;Aud
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/texture3d_8hpp/</guid>
-      <description>src/Graphics/Texture3D.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Name class Engine::Graphics::Texture3D Some deprecated class. Source code # #pragma once #pragma once #include &amp;#34;Texture.hpp&amp;#34; namespace Engine { namespace Graphics { class Texture3D : public Texture { public: Texture3D(int width, int height, int depth, uint8_t* data, Texture::Type type = Texture::Type::RGBA8); virtual ~Texture3D(); int getWidth() const override; int getHeight() const override; int getDepth() const override; }; } // namespace Graphics } // namespace Engine Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Graphics/Texture3D.hpp # #include &amp;lt;src/Graphics/Texture3D.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Classes Description Texture3D Some deprecated class. (class) Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -520,7 +543,7 @@ Source code # #include &amp;#34;Assets/Assets.hpp&amp;#34; #include &amp;#34;Aud
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/dir_b5ac5e964c12a6b13a9d28feb9f3d3ed/</guid>
-      <description>src/Gui # Files # Name src/Gui/Gui.hpp src/Gui/GuiWidget.hpp Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Gui # Files # Files Description src/Gui/Gui.hpp src/Gui/GuiWidget.hpp Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -529,7 +552,7 @@ Source code # #include &amp;#34;Assets/Assets.hpp&amp;#34; #include &amp;#34;Aud
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/gui_8hpp/</guid>
-      <description>src/Gui/Gui.hpp # Source code # #pragma once Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Gui/Gui.hpp # #include &amp;lt;src/Gui/Gui.hpp&amp;gt; Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -538,7 +561,7 @@ Source code # #include &amp;#34;Assets/Assets.hpp&amp;#34; #include &amp;#34;Aud
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/guiwidget_8hpp/</guid>
-      <description>src/Gui/GuiWidget.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Engine::Gui Classes # Name class Engine::Gui::GuiWidget Some generic gui widget class. Source code # #pragma once class QObject; // Forward definition namespace Engine { namespace Gui { class GuiWidget { public: explicit GuiWidget(QObject* parent); virtual ~GuiWidget() = default; signals: void mySignal(QObject* object, int a, bool b); public slots: void mySlot(QObject* object, int a, bool b); private: QObject* parent; }; } // namespace Gui } // namespace Engine Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Gui/GuiWidget.hpp # #include &amp;lt;src/Gui/GuiWidget.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Gui Classes # Classes Description GuiWidget Some generic gui widget class. (class) Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -547,7 +570,7 @@ Source code # #include &amp;#34;Assets/Assets.hpp&amp;#34; #include &amp;#34;Aud
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/dir_a7363e98f9e0bdd87618633653859815/</guid>
-      <description>src/Utils # Files # Name src/Utils/ArrayView.hpp src/Utils/Config.hpp src/Utils/Log.hpp src/Utils/Path.hpp src/Utils/Utils.hpp Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Utils # Files # Files Description src/Utils/ArrayView.hpp src/Utils/Config.hpp src/Utils/Log.hpp src/Utils/Path.hpp src/Utils/Utils.hpp Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -556,7 +579,7 @@ Source code # #include &amp;#34;Assets/Assets.hpp&amp;#34; #include &amp;#34;Aud
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/arrayview_8hpp/</guid>
-      <description>src/Utils/ArrayView.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Engine::Utils Classes # Name class Engine::Utils::ArrayView Filesystem path utility functions. Source code # #pragma once namespace Engine { namespace Utils { template&amp;lt;typename T = uint8_t&amp;gt; class ArrayView { public: ArrayView(const T* src, size_t len); virtual ~ArrayView() = default; virtual const T* data() const; virtual size_t size() const; }; } } Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Utils/ArrayView.hpp # #include &amp;lt;src/Utils/ArrayView.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Utils Classes # Classes Description ArrayView Filesystem path utility functions. (class) Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -565,8 +588,7 @@ Source code # #include &amp;#34;Assets/Assets.hpp&amp;#34; #include &amp;#34;Aud
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/config_8hpp/</guid>
-      <description>src/Utils/Config.hpp # Defines # Name ENGINE_VERSION Autogenerated version string by CMake. ENGINE_ARCH Macros Documentation # define ENGINE_VERSION # #define ENGINE_VERSION &amp;#34;v1.0.1&amp;#34; Autogenerated version string by CMake.
-define ENGINE_ARCH # #define ENGINE_ARCH &amp;#34;amd64&amp;#34; Source code # #pragma once #define ENGINE_VERSION &amp;#34;v1.0.1&amp;#34; #define ENGINE_ARCH &amp;#34;amd64&amp;#34; Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Utils/Config.hpp # #include &amp;lt;src/Utils/Config.hpp&amp;gt; Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -575,7 +597,7 @@ define ENGINE_ARCH # #define ENGINE_ARCH &amp;#34;amd64&amp;#34; Source code # #
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/log_8hpp/</guid>
-      <description>src/Utils/Log.hpp # Defines # Name LOG_DEBUG(MSG, &amp;hellip;) Macros Documentation # define LOG_DEBUG # #define LOG_DEBUG( MSG, ... ) printf(MSG, ##__VA_ARGS__) Source code # #pragma once #include &amp;lt;stdio.h&amp;gt; #define LOG_DEBUG(MSG, ...) printf(MSG, ##__VA_ARGS__) Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Utils/Log.hpp # #include &amp;lt;src/Utils/Log.hpp&amp;gt; Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -584,7 +606,7 @@ define ENGINE_ARCH # #define ENGINE_ARCH &amp;#34;amd64&amp;#34; Source code # #
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/path_8hpp/</guid>
-      <description>src/Utils/Path.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Engine::Utils Engine::Utils::Path Filesystem path utility functions. Source code # #pragma once #include &amp;lt;string&amp;gt; namespace Engine { namespace Utils { namespace Path { std::string getFilename(const std::string&amp;amp; path); std::string getExtension(const std::string&amp;amp; path); } } } Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Utils/Path.hpp # #include &amp;lt;src/Utils/Path.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Utils Engine::Utils::Path Filesystem path utility functions. Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -593,7 +615,7 @@ define ENGINE_ARCH # #define ENGINE_ARCH &amp;#34;amd64&amp;#34; Source code # #
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/utils_8hpp/</guid>
-      <description>src/Utils/Utils.hpp # Namespaces # Name Engine This namespace contains all of the necessary engine components. Engine::Utils Source code # #pragma once #include &amp;#34;Path.hpp&amp;#34; #include &amp;#34;ArrayView.hpp&amp;#34; #include &amp;#34;Config.hpp&amp;#34; #include &amp;#34;Log.hpp&amp;#34; namespace Engine { namespace Utils { inline void name_with_underscores(const std::string&amp;amp; arg) { (void)arg; } } } Updated on 2022-11-15 at 04:08:15 +0000</description>
+      <description>src/Utils/Utils.hpp # #include &amp;lt;src/Utils/Utils.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Utils Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -603,7 +625,7 @@ define ENGINE_ARCH # #define ENGINE_ARCH &amp;#34;amd64&amp;#34; Source code # #
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/pages/test/</guid>
       <description>Test List # Class Engine::Audio::AudioBuffer
-Some random test description Updated on 2022-11-15 at 04:08:15 +0000</description>
+Some random test description Updated on 2022-11-17</description>
     </item>
     
     <item>
@@ -613,7 +635,7 @@ Some random test description Updated on 2022-11-15 at 04:08:15 +0000</descriptio
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/pages/todo/</guid>
       <description>Todo List # Class Engine::Audio::AudioBuffer
-Some random todo Updated on 2022-11-15 at 04:08:15 +0000</description>
+Some random todo Updated on 2022-11-17</description>
     </item>
     
   </channel>

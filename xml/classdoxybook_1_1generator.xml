@@ -119,7 +119,7 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername><ref refid="classdoxybook_1_1json__converter" kindref="compound">json_converter</ref></parametername>
+<parametername>json_converter</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>Converter from json to markdown </para>

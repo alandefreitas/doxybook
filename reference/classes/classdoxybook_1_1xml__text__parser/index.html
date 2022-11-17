@@ -463,11 +463,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#public-types-documentation" class="md-nav__link">
-    Public Types Documentation
+  <a href="#public-types_1" class="md-nav__link">
+    Public Types
   </a>
   
-    <nav class="md-nav" aria-label="Public Types Documentation">
+    <nav class="md-nav" aria-label="Public Types">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -483,11 +483,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#public-functions-documentation" class="md-nav__link">
-    Public Functions Documentation
+  <a href="#public-functions_1" class="md-nav__link">
+    Public Functions
   </a>
   
-    <nav class="md-nav" aria-label="Public Functions Documentation">
+    <nav class="md-nav" aria-label="Public Functions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -540,8 +540,10 @@
 
 
 <h1 id="doxybookxml_text_parser">doxybook::xml_text_parser</h1>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml__text__parser_8hpp/#file-xml-text-parser.hpp"><code>&lt;doxybook/xml_text_parser.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">xml_text_parser</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
 <p>Parser for a doxygen xml file as an <a href="/doxybook/reference/classes/classdoxybook_1_1xml/">xml</a> document. </p>
-<p><code>#include &lt;xml_text_parser.hpp&gt;</code></p>
 <h2 id="public-classes">Public Classes</h2>
 <table>
 <thead>
@@ -561,14 +563,14 @@
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Types</th>
+<th>Definition</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>using std::vector&lt; std::unique_ptr&lt; tag &gt; &gt;</td>
 <td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml__text__parser/#using-children-type">children_type</a></strong></td>
+<td><code>std::vector&lt; std::unique_ptr&lt; tag &gt; &gt;</code><br> <sup><span style="color:green">(using)</span></sup></td>
 </tr>
 </tbody>
 </table>
@@ -576,50 +578,57 @@
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Functions</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="/doxybook/reference/classes/structdoxybook_1_1xml__text__parser_1_1node/">node</a></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml__text__parser/#function-parse-paras">parse_paras</a></strong>(<a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1element/">xml::element</a> const &amp; element)<br>Parse elements.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml__text__parser/#function-parse-paras">parse_paras</a></strong></td>
+<td>Parse elements. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td><a href="/doxybook/reference/classes/structdoxybook_1_1xml__text__parser_1_1node/">node</a></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml__text__parser/#function-parse-para">parse_para</a></strong>(<a href="/doxybook/reference/classes/classdoxybook_1_1xml_1_1element/">xml::element</a> const &amp; element)<br>Parse element.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml__text__parser/#function-parse-para">parse_para</a></strong></td>
+<td>Parse element. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>enum <a href="/doxybook/reference/classes/structdoxybook_1_1xml__text__parser_1_1node/#enum-type">node::type</a></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml__text__parser/#function-str-to-type">str_to_type</a></strong>(std::string const &amp; str)<br>Convert string to node type.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml__text__parser/#function-str-to-type">str_to_type</a></strong></td>
+<td>Convert string to node type. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 </tbody>
 </table>
-<h2 id="public-types-documentation">Public Types Documentation</h2>
+<h2 id="public-types_1">Public Types</h2>
 <h3 id="using-children_type">using children_type</h3>
-<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">doxybook</span><span class="o">::</span><span class="n">xml_text_parser</span><span class="o">::</span><span class="n">children_type</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">tag</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="p">;</span><span class="w"></span>
-</code></pre></div>
-<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml__text__parser_8hpp/#file-xml-text-parser.hpp"><code>&lt;doxybook/xml_text_parser.hpp&gt;</code></a></sup>
+<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">children_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">tag</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="p">;</span><span class="w"></span>
+</code></pre></div></p>
+<h2 id="public-functions_1">Public Functions</h2>
 <h3 id="function-parse_paras">function parse_paras</h3>
-<div class="highlight"><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="n">parse_paras</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">xml</span><span class="o">::</span><span class="n">element</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">element</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml__text__parser_8hpp/#file-xml-text-parser.hpp"><code>&lt;doxybook/xml_text_parser.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="n">node</span><span class="w"></span>
+<span class="nf">parse_paras</span><span class="p">(</span><span class="n">xml</span><span class="o">::</span><span class="n">element</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">element</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 <p>Parse elements. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-parse_para">function parse_para</h3>
-<div class="highlight"><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="n">parse_para</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">xml</span><span class="o">::</span><span class="n">element</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">element</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml__text__parser_8hpp/#file-xml-text-parser.hpp"><code>&lt;doxybook/xml_text_parser.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="n">node</span><span class="w"></span>
+<span class="nf">parse_para</span><span class="p">(</span><span class="n">xml</span><span class="o">::</span><span class="n">element</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">element</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 <p>Parse element. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-str_to_type">function str_to_type</h3>
-<div class="highlight"><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="k">enum</span><span class="w"> </span><span class="nc">node</span><span class="o">::</span><span class="n">type</span><span class="w"> </span><span class="n">str_to_type</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">str</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/xml__text__parser_8hpp/#file-xml-text-parser.hpp"><code>&lt;doxybook/xml_text_parser.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="k">enum</span><span class="w"> </span><span class="nc">node</span><span class="o">::</span><span class="n">type</span><span class="w"></span>
+<span class="nf">str_to_type</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">str</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 <p>Convert string to node type. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <hr />
-<p>Updated on 2022-11-15 at 04:08:09 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
 
 
   

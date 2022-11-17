@@ -463,18 +463,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#detailed-description" class="md-nav__link">
-    Detailed Description
+  <a href="#public-types_1" class="md-nav__link">
+    Public Types
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#public-types-documentation" class="md-nav__link">
-    Public Types Documentation
-  </a>
-  
-    <nav class="md-nav" aria-label="Public Types Documentation">
+    <nav class="md-nav" aria-label="Public Types">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -490,11 +483,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#public-functions-documentation" class="md-nav__link">
-    Public Functions Documentation
+  <a href="#public-functions_1" class="md-nav__link">
+    Public Functions
   </a>
   
-    <nav class="md-nav" aria-label="Public Functions Documentation">
+    <nav class="md-nav" aria-label="Public Functions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -568,8 +561,12 @@
 
 
 <h1 id="doxybookgenerator">doxybook::generator</h1>
-<p>A class that stores a <a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/">doxygen</a> object and generates the markdown documentation.  <a href="#detailed-description">More...</a></p>
-<p><code>#include &lt;generator.hpp&gt;</code></p>
+<p><sup>Defined in header <a href="/doxybook/reference/files/generator_8hpp/#file-generator.hpp"><code>&lt;doxybook/generator.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">generator</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+<p>A class that stores a <a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/">doxygen</a> object and generates the markdown documentation. </p>
+<p><strong>Description</strong></p>
+<p>This is main class in this whole library. The cli executable basically controls this generator. </p>
 <h2 id="public-classes">Public Classes</h2>
 <table>
 <thead>
@@ -589,14 +586,14 @@
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Types</th>
+<th>Definition</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>using std::unordered_set&lt; <a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-kind">kind</a> &gt;</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1generator/#using-filter-set">filter_set</a></strong> <br>A set of kinds we should use in an operation.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1generator/#using-filter-set">filter_set</a></strong></td>
+<td>A set of kinds we should use in an operation. <br> <sup><span style="color:green">(using)</span></sup></td>
 </tr>
 </tbody>
 </table>
@@ -604,101 +601,112 @@
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Functions</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1generator/#function-generator">generator</a></strong>(<a href="/doxybook/reference/classes/structdoxybook_1_1config/">config</a> const &amp; config, <a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/">doxygen</a> const &amp; doxygen, <a href="/doxybook/reference/classes/classdoxybook_1_1json__converter/">json_converter</a> const &amp; json_converter, std::optional&lt; std::string &gt; const &amp; templates_path)<br>Constructor.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1generator/#function-generator">(constructor)</a></strong></td>
+<td>Constructor. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>void</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1generator/#function-print">print</a></strong>(<a href="/doxybook/reference/classes/classdoxybook_1_1generator/#using-filter-set">filter_set</a> const &amp; filter, <a href="/doxybook/reference/classes/classdoxybook_1_1generator/#using-filter-set">filter_set</a> const &amp; skip)<br>Generate the documentation for the specified doxygen kinds.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1generator/#function-print">print</a></strong></td>
+<td>Generate the documentation for the specified doxygen kinds. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>void</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1generator/#function-json">json</a></strong>(<a href="/doxybook/reference/classes/classdoxybook_1_1generator/#using-filter-set">filter_set</a> const &amp; filter, <a href="/doxybook/reference/classes/classdoxybook_1_1generator/#using-filter-set">filter_set</a> const &amp; skip)<br>Generate json for the specified doxygen kinds.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1generator/#function-json">json</a></strong></td>
+<td>Generate json for the specified doxygen kinds. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>void</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1generator/#function-manifest">manifest</a></strong>()<br>Generate a manifest file.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1generator/#function-manifest">manifest</a></strong></td>
+<td>Generate a manifest file. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>void</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1generator/#function-print-index">print_index</a></strong>(<a href="/doxybook/reference/namespaces/namespacedoxybook/#enum-folder-category">folder_category</a> type, <a href="/doxybook/reference/classes/classdoxybook_1_1generator/#using-filter-set">filter_set</a> const &amp; filter, <a href="/doxybook/reference/classes/classdoxybook_1_1generator/#using-filter-set">filter_set</a> const &amp; skip)<br>Generate the indexes for the specified doxygen kinds.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1generator/#function-print-index">print_index</a></strong></td>
+<td>Generate the indexes for the specified doxygen kinds. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 <tr>
-<td>void</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1generator/#function-summary">summary</a></strong>(std::string const &amp; input_file, std::string const &amp; output_file, std::vector&lt; <a href="/doxybook/reference/classes/structdoxybook_1_1generator_1_1summary__section/">summary_section</a> &gt; const &amp; sections)<br>Generate the summary for the specified doxygen sections.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1generator/#function-summary">summary</a></strong></td>
+<td>Generate the summary for the specified doxygen sections. <br> <sup><span style="color:green">(function)</span></sup></td>
 </tr>
 </tbody>
 </table>
-<h2 id="detailed-description">Detailed Description</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">doxybook</span><span class="o">::</span><span class="n">generator</span><span class="p">;</span><span class="w"></span>
-</code></pre></div>
-<p>A class that stores a <a href="/doxybook/reference/classes/classdoxybook_1_1doxygen/">doxygen</a> object and generates the markdown documentation. </p>
-<p>This is main class in this whole library. The cli executable basically controls this generator. </p>
-<h2 id="public-types-documentation">Public Types Documentation</h2>
+<h2 id="public-types_1">Public Types</h2>
 <h3 id="using-filter_set">using filter_set</h3>
-<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">doxybook</span><span class="o">::</span><span class="n">generator</span><span class="o">::</span><span class="n">filter_set</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">unordered_set</span><span class="o">&lt;</span><span class="n">kind</span><span class="o">&gt;</span><span class="p">;</span><span class="w"></span>
-</code></pre></div>
+<p><sup>Defined in header <a href="/doxybook/reference/files/generator_8hpp/#file-generator.hpp"><code>&lt;doxybook/generator.hpp&gt;</code></a></sup>
+<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">filter_set</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">unordered_set</span><span class="o">&lt;</span><span class="w"> </span><span class="n">kind</span><span class="w"> </span><span class="o">&gt;</span><span class="p">;</span><span class="w"></span>
+</code></pre></div></p>
 <p>A set of kinds we should use in an operation. </p>
-<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h2 id="public-functions_1">Public Functions</h2>
 <h3 id="function-generator">function generator</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/generator_8hpp/#file-generator.hpp"><code>&lt;doxybook/generator.hpp&gt;</code></a></sup></p>
 <div class="highlight"><pre><span></span><code><span class="k">explicit</span><span class="w"> </span><span class="n">generator</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">doxygen</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">doxygen</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">json_converter</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">json_converter</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">templates_path</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">config</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">doxygen</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">doxygen</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">json_converter</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">json_converter</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">templates_path</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 <p>Constructor. </p>
-<p><strong>Parameters</strong>: </p>
+<p><strong>Parameters</strong></p>
 <ul>
-<li><strong>config</strong> Configuration options </li>
-<li><strong>doxygen</strong> Doxygen files </li>
-<li><strong><a href="/doxybook/reference/classes/classdoxybook_1_1json__converter/">json_converter</a></strong> Converter from json to markdown </li>
-<li><strong>templates_path</strong> An optional path with templates </li>
+<li><strong>config</strong> - Configuration options </li>
+<li><strong>doxygen</strong> - Doxygen files </li>
+<li><strong>json_converter</strong> - Converter from json to markdown </li>
+<li><strong>templates_path</strong> - An optional path with templates </li>
 </ul>
+<p><strong>Description</strong></p>
 <p>The constructor requires the configuration and doxygen object which should be previously constructed.</p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-print">function print</h3>
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">print</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">filter_set</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">filter</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">filter_set</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">skip</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/generator_8hpp/#file-generator.hpp"><code>&lt;doxybook/generator.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"></span>
+<span class="nf">print</span><span class="p">(</span><span class="n">filter_set</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">filter</span><span class="p">,</span><span class="w"> </span><span class="n">filter_set</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">skip</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 <p>Generate the documentation for the specified doxygen kinds. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-json">function json</h3>
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">json</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">filter_set</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">filter</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">filter_set</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">skip</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/generator_8hpp/#file-generator.hpp"><code>&lt;doxybook/generator.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"></span>
+<span class="nf">json</span><span class="p">(</span><span class="n">filter_set</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">filter</span><span class="p">,</span><span class="w"> </span><span class="n">filter_set</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">skip</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 <p>Generate json for the specified doxygen kinds. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-manifest">function manifest</h3>
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">manifest</span><span class="p">()</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/generator_8hpp/#file-generator.hpp"><code>&lt;doxybook/generator.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"></span>
+<span class="nf">manifest</span><span class="p">();</span><span class="w"></span>
 </code></pre></div>
 <p>Generate a manifest file. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-print_index">function print_index</h3>
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">print_index</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">folder_category</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">filter_set</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">filter</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">filter_set</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">skip</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/generator_8hpp/#file-generator.hpp"><code>&lt;doxybook/generator.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"></span>
+<span class="nf">print_index</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">folder_category</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">filter_set</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">filter</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">filter_set</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">skip</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 <p>Generate the indexes for the specified doxygen kinds. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-summary">function summary</h3>
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">summary</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">input_file</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">output_file</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">summary_section</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">sections</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<p><sup>Defined in header <a href="/doxybook/reference/files/generator_8hpp/#file-generator.hpp"><code>&lt;doxybook/generator.hpp&gt;</code></a></sup></p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"></span>
+<span class="nf">summary</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">input_file</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">output_file</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">summary_section</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">sections</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 <p>Generate the summary for the specified doxygen sections. </p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <hr />
-<p>Updated on 2022-11-15 at 04:08:09 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
 
 
   

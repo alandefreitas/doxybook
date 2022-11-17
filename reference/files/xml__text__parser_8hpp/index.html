@@ -455,13 +455,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#source-code" class="md-nav__link">
-    Source code
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -486,16 +479,20 @@
 
 
 <h1 id="doxybookxml_text_parserhpp">doxybook/xml_text_parser.hpp</h1>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;doxybook/xml_text_parser.hpp&gt;</span><span class="cp"></span>
+</code></pre></div>
 <h2 id="namespaces">Namespaces</h2>
 <table>
 <thead>
 <tr>
 <th>Name</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong><a href="/doxybook/reference/namespaces/namespacedoxybook/">doxybook</a></strong></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -503,128 +500,23 @@
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Classes</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>class</td>
-<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml__text__parser/">doxybook::xml_text_parser</a></strong> <br>Parser for a doxygen xml file as an <a href="/doxybook/reference/classes/classdoxybook_1_1xml/">xml</a> document.</td>
+<td><strong><a href="/doxybook/reference/classes/classdoxybook_1_1xml__text__parser/">xml_text_parser</a></strong></td>
+<td>Parser for a doxygen xml file as an <a href="/doxybook/reference/classes/classdoxybook_1_1xml/">xml</a> document. <br> <sup><span style="color:green">(class)</span></sup></td>
 </tr>
 <tr>
-<td>struct</td>
-<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1xml__text__parser_1_1node/">doxybook::xml_text_parser::node</a></strong> <br>A parsed xml node.</td>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1xml__text__parser_1_1node/">node</a></strong></td>
+<td>A parsed xml node. <br> <sup><span style="color:green">(struct)</span></sup></td>
 </tr>
 </tbody>
 </table>
-<h2 id="source-code">Source code</h2>
-<div class="highlight"><pre><span></span><code><span class="c1">//</span>
-<span class="c1">// Copyright (c) 2021 Matus Novak (@matusnovak)</span>
-<span class="c1">// Copyright (c) 2022 alandefreitas (alandefreitas@gmail.com)</span>
-<span class="c1">//</span>
-<span class="c1">// Distributed under the Boost Software License, Version 1.0.</span>
-<span class="c1">// https://www.boost.org/LICENSE_1_0.txt</span>
-<span class="c1">//</span>
-
-<span class="cp">#ifndef DOXYBOOK_XML_TEXT_PARSER_HPP</span>
-<span class="cp">#define DOXYBOOK_XML_TEXT_PARSER_HPP</span>
-
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;doxybook/xml.hpp&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
-
-<span class="k">namespace</span><span class="w"> </span><span class="nn">doxybook</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">xml_text_parser</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">public</span><span class="o">:</span><span class="w"></span>
-<span class="w">        </span><span class="k">class</span><span class="w"> </span><span class="nc">tag</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="k">using</span><span class="w"> </span><span class="n">children_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">tag</span><span class="o">&gt;&gt;</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">        </span><span class="k">struct</span><span class="w"> </span><span class="nc">node</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">            </span><span class="k">enum</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">type</span><span class="w"></span>
-<span class="w">            </span><span class="p">{</span><span class="w"></span>
-<span class="w">                </span><span class="n">UNKNOWN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">TEXT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">PARA</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">PARAS</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">BOLD</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">EMPHASIS</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">STRIKE</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">HRULER</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">IMAGE</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">ULINK</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">REF</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">COMPUTEROUTPUT</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">LISTITEM</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">SIMPLESEC</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">ITEMIZEDLIST</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">VARIABLELIST</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">ORDEREDLIST</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">PARAMETERLIST</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">PARAMETERNAME</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">PARAMETERITEM</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">PARAMETERDESCRIPTION</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">PARAMETERNAMELIST</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">XREFSECT</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">XREFTITLE</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">XREFDESCRIPTION</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">PROGRAMLISTING</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">CODELINE</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">TERM</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">VARLISTENTRY</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">ANCHOR</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">SP</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">HIGHTLIGHT</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">SECT1</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">SECT2</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">SECT3</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">SECT4</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">SECT5</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">SECT6</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">TITLE</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">SUPERSCRIPT</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">NONBREAKSPACE</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">TABLE</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">TABLE_ROW</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">TABLE_CELL</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">VERBATIM</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">SQUO</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">NDASH</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">MDASH</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">LINEBREAK</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">ONLYFOR</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">FORMULA</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="n">BLOCKQUOTE</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="p">};</span><span class="w"></span>
-
-<span class="w">            </span><span class="n">type</span><span class="w"> </span><span class="n">type</span><span class="p">{</span><span class="w"> </span><span class="n">type</span><span class="o">::</span><span class="n">UNKNOWN</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-
-<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">node</span><span class="o">&gt;</span><span class="w"> </span><span class="n">children</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">data</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">extra</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="p">};</span><span class="w"></span>
-
-<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">node</span><span class="w"></span>
-<span class="w">        </span><span class="nf">parse_paras</span><span class="p">(</span><span class="n">xml</span><span class="o">::</span><span class="n">element</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">element</span><span class="p">);</span><span class="w"></span>
-
-<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">node</span><span class="w"></span>
-<span class="w">        </span><span class="nf">parse_para</span><span class="p">(</span><span class="n">xml</span><span class="o">::</span><span class="n">element</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">element</span><span class="p">);</span><span class="w"></span>
-
-<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="k">enum</span><span class="w"> </span><span class="nc">node</span><span class="o">::</span><span class="n">type</span><span class="w"></span>
-<span class="w">        </span><span class="nf">str_to_type</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">str</span><span class="p">);</span><span class="w"></span>
-
-<span class="w">    </span><span class="k">private</span><span class="o">:</span><span class="w"></span>
-<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
-<span class="w">        </span><span class="n">traverse</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">node</span><span class="o">*&gt;</span><span class="w"> </span><span class="n">tree</span><span class="p">,</span><span class="w"> </span><span class="n">xml</span><span class="o">::</span><span class="n">node</span><span class="w"> </span><span class="k">const</span><span class="o">&amp;</span><span class="w"> </span><span class="n">element</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="p">};</span><span class="w"></span>
-<span class="p">}</span><span class="w"> </span><span class="c1">// namespace doxybook</span>
-
-<span class="cp">#endif</span>
-</code></pre></div>
 <hr />
-<p>Updated on 2022-11-15 at 04:08:09 +0000</p>
+<p><sub>Updated on 2022-11-17</sub></p>
 
 
   

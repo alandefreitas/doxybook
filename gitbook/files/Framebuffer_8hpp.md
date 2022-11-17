@@ -7,45 +7,29 @@ title: src/Graphics/Framebuffer.hpp
 
 
 
+
+```cpp
+#include <src/Graphics/Framebuffer.hpp>
+```
+
 ## Namespaces
 
-| Name           |
-| -------------- |
-| **[Engine](/namespaces/namespaceEngine.md)** <br>This namespace contains all of the necessary engine components.  |
-| **[Engine::Graphics](/namespaces/namespaceEngine_1_1Graphics.md)**  |
+| Name           | Description    |
+| -------------- | -------------- |
+| **[Engine](/namespaces/namespaceEngine.md)** | This namespace contains all of the necessary engine components.  |
+| **[Engine::Graphics](/namespaces/namespaceEngine_1_1Graphics.md)** |  |
 
 ## Classes
 
-|                | Name           |
+| Classes        | Description    |
 | -------------- | -------------- |
-| class | **[Engine::Graphics::Framebuffer](/classes/classEngine_1_1Graphics_1_1Framebuffer.md)**  |
+| **[Framebuffer](/classes/classEngine_1_1Graphics_1_1Framebuffer.md)** | Engine::Graphics::Framebuffer<br> <sup><span style="color:green">(class)</span></sup> |
 
 
 
 
-## Source code
-
-```cpp
-#pragma once
-
-#include "Texture.hpp"
-
-namespace Engine {
-    namespace Graphics {
-        class Framebuffer : public Texture {
-          public:
-            Framebuffer(int width, int height);
-            virtual ~Framebuffer();
-
-            int getWidth() const override;
-            int getHeight() const override;
-            int getDepth() const override;
-        };
-    } // namespace Graphics
-} // namespace Engine
-```
 
 
 -------------------------------
 
-Updated on 2022-11-15 at 04:08:15 +0000
+<sub>Updated on 2022-11-17</sub>

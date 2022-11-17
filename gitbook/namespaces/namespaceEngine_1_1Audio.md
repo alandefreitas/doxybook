@@ -9,28 +9,29 @@ title: Engine::Audio
 
 ## Classes
 
-|                | Name           |
+| Classes        | Description    |
 | -------------- | -------------- |
-| class | **[Engine::Audio::AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md)** <br>_A simple audio buffer to hold PCM samples_ |
-| class | **[Engine::Audio::AudioManager](/classes/classEngine_1_1Audio_1_1AudioManager.md)** <br>An audio manager that _accepts_ multiple **[Audio::AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md)** instances.  |
+| **[AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md)** | _A simple audio buffer to hold PCM samples_<br> <sup><span style="color:green">(class)</span></sup> |
+| **[AudioManager](/classes/classEngine_1_1Audio_1_1AudioManager.md)** | An audio manager that _accepts_ multiple **[Audio::AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md)** instances. <br> <sup><span style="color:green">(class)</span></sup> |
 
 ## Types
 
-|                | Name           |
+| Member Types | Definition           |
 | -------------- | -------------- |
-| typedef int(*)(AudioBuffer &buffer, size_t offset) | **[Callback](/namespaces/namespaceEngine_1_1Audio.md#typedef-callback)** <br>Some callback function pointer type definition.  |
-| using int(*)([AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md) &buffer, size_t offset, void *user) | **[Callback2](/namespaces/namespaceEngine_1_1Audio.md#using-callback2)** <br>Some callback function pointer type definition.  |
+| **[Callback](/namespaces/namespaceEngine_1_1Audio.md#typedef-callback)**| Some callback function pointer type definition. <br> <sup><span style="color:green">(typedef)</span></sup>|
+| **[Callback2](/namespaces/namespaceEngine_1_1Audio.md#using-callback2)**| Some callback function pointer type definition. <br> <sup><span style="color:green">(using)</span></sup>|
 
 ## Functions
-
-|                | Name           |
+| Member Functions | Description |
 | -------------- | -------------- |
-| void | **[doSomething](/namespaces/namespaceEngine_1_1Audio.md#function-dosomething)**([AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md) & buffer)<br>Do something with the buffer.  |
+| **[doSomething](/namespaces/namespaceEngine_1_1Audio.md#function-dosomething)** | Do something with the buffer. <br> <sup><span style="color:green">(function)</span></sup> |
 
-## Types Documentation
+
+## Types
 
 ### typedef Callback
 
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
 ```cpp
 typedef int(* Engine::Audio::Callback) (AudioBuffer &buffer, size_t offset);
 ```
@@ -43,14 +44,16 @@ Some callback function pointer type definition.
   * **offset** The offset of the buffer currently playing 
 
 
-**Deprecated**: 
+**Deprecated**:
 
 Use the [Audio::Callback2](/namespaces/namespaceEngine_1_1Audio.md#using-callback2) instead 
 
 ### using Callback2
 
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
 ```cpp
-using Engine::Audio::Callback2 = typedef int (*)(AudioBuffer& buffer, size_t offset, void* user);
+using Callback2 = 
+    int(*)(AudioBuffer &buffer, size_t offset, void *user);
 ```
 
 Some callback function pointer type definition. 
@@ -63,15 +66,22 @@ Some callback function pointer type definition.
 
 
 
-## Functions Documentation
+
+## Functions
 
 ### function doSomething
 
-```cpp
-void doSomething(
-    AudioBuffer & buffer
-)
+
+<sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
+
+```cpp 
+void
+doSomething(AudioBuffer & buffer);
 ```
+
+
+
+
 
 Do something with the buffer. 
 
@@ -79,6 +89,30 @@ Do something with the buffer.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
+
+
+
+
+
+
+
 -------------------------------
 
-Updated on 2022-11-15 at 04:08:15 +0000
+<sub>Updated on 2022-11-17</sub>

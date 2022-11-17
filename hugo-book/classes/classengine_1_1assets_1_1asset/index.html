@@ -5,13 +5,13 @@
   <meta name="generator" content="Hugo 0.105.0">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Engine::Assets::Asset # Module: An example game engine / Generic assets
-#include &lt;Asset.hpp&gt;
-Public Classes # Name union Event Public Functions # Name Asset(const std::string &amp; name) virtual ~Asset() =0 virtual void load()Call this method to load the asset. virtual void unload()Call this method to unload the asset. const Event &amp; getEvent() constReturns the current status of the asset. Public Functions Documentation # function Asset # explicit Asset( const std::string &amp; name ) function ~Asset # virtual ~Asset() =0 function load # virtual void load() Call this method to load the asset.">
+<meta name="description" content="Engine::Assets::Asset # An example game engine / Generic assets / Asset
+Defined in header &lt;src/Assets/Asset.hpp&gt;
+class Asset; Public Classes # Name union Event Public Functions # Member Functions Description (constructor) (function) (destructor) = 0 (virtual function) load Call this method to load the asset. (virtual function) unload Call this method to unload the asset. (virtual function) getEvent const Returns the current status of the asset. (function) Public Functions # function Asset # Defined in header &lt;src/Assets/Asset.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Engine::Assets::Asset" />
-<meta property="og:description" content="Engine::Assets::Asset # Module: An example game engine / Generic assets
-#include &lt;Asset.hpp&gt;
-Public Classes # Name union Event Public Functions # Name Asset(const std::string &amp; name) virtual ~Asset() =0 virtual void load()Call this method to load the asset. virtual void unload()Call this method to unload the asset. const Event &amp; getEvent() constReturns the current status of the asset. Public Functions Documentation # function Asset # explicit Asset( const std::string &amp; name ) function ~Asset # virtual ~Asset() =0 function load # virtual void load() Call this method to load the asset." />
+<meta property="og:description" content="Engine::Assets::Asset # An example game engine / Generic assets / Asset
+Defined in header &lt;src/Assets/Asset.hpp&gt;
+class Asset; Public Classes # Name union Event Public Functions # Member Functions Description (constructor) (function) (destructor) = 0 (virtual function) load Call this method to load the asset. (virtual function) unload Call this method to unload the asset. (virtual function) getEvent const Returns the current status of the asset. (function) Public Functions # function Asset # Defined in header &lt;src/Assets/Asset." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://alandefreitas.github.io/doxybook/hugo-book/classes/classengine_1_1assets_1_1asset/" /><meta property="article:section" content="classes" />
 
@@ -21,7 +21,7 @@ Public Classes # Name union Event Public Functions # Name Asset(const std::strin
 <link rel="manifest" href="/doxybook/hugo-book/manifest.json">
 <link rel="icon" href="/doxybook/hugo-book/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/doxybook/hugo-book/book.min.68be0b7a9674f2a612ce0e9b2e9447ff4b7ac96546e06b642bfd3ded0ca490ef.css" integrity="sha256-aL4LepZ08qYSzg6bLpRH/0t6yWVG4GtkK/097QykkO8=">
-<script defer src="/doxybook/hugo-book/en.search.min.e1f6c71d75c27c03e485731d8e92c532bbf5e3149e702ee00620b4e1569158e5.js" integrity="sha256-4fbHHXXCfAPkhXMdjpLFMrv14xSecC7gBiC04VaRWOU="></script>
+<script defer src="/doxybook/hugo-book/en.search.min.aa37234520f223b4cf4a139b5a55b0fa24e845cc32067a9e0991781bb795328d.js" integrity="sha256-qjcjRSDyI7TPShObWlWw&#43;iToRcwyBnqeCZF4G7eVMo0="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -63,7 +63,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
 <li><a href="/doxybook/hugo-book/classes/">Classes</a></li>
 <li><a href="/doxybook/hugo-book/namespaces/">Namespaces</a></li>
-<li><a href="/doxybook/hugo-book/modules/">Modules</a></li>
+<li><a href="/doxybook/hugo-book/libraries/">Modules</a></li>
 <li><a href="/doxybook/hugo-book/files/">Files</a></li>
 <li><a href="/doxybook/hugo-book/pages/">Pages</a></li>
 <li><a href="/doxybook/hugo-book/examples/">Examples</a></li>
@@ -116,7 +116,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#public-classes">Public Classes</a></li>
     <li><a href="#public-functions">Public Functions</a></li>
-    <li><a href="#public-functions-documentation">Public Functions Documentation</a>
+    <li><a href="#public-functions-1">Public Functions</a>
       <ul>
         <li><a href="#function-asset">function Asset</a></li>
         <li><a href="#function-asset-1">function ~Asset</a></li>
@@ -141,9 +141,12 @@ https://github.com/alex-shpak/hugo-book
   Engine::Assets::Asset
   <a class="anchor" href="#engineassetsasset">#</a>
 </h1>
-<p><strong>Module:</strong> <strong><a href="/doxybook/hugo-book/modules/group__engine/">An example game engine</a></strong> <strong>/</strong> <strong><a href="/doxybook/hugo-book/modules/group__assets/">Generic assets</a></strong></p>
-<p><code>#include &lt;Asset.hpp&gt;</code></p>
-<h2 id="public-classes">
+<p><strong><a href="/doxybook/hugo-book/libraries/group__engine/">An example game engine</a></strong> <strong>/</strong> <strong><a href="/doxybook/hugo-book/libraries/group__assets/">Generic assets</a></strong> <strong>/</strong>
+<strong><a href="/doxybook/hugo-book/classes/classengine_1_1assets_1_1asset/">Asset</a></strong></p>
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/asset_8hpp/#file-asset.hpp"><code>&lt;src/Assets/Asset.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Asset</span>;
+</span></span></code></pre></div><h2 id="public-classes">
   Public Classes
   <a class="anchor" href="#public-classes">#</a>
 </h2>
@@ -168,70 +171,87 @@ https://github.com/alex-shpak/hugo-book
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Name</th>
+<th>Member Functions</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1assets_1_1asset/#function-asset">Asset</a></strong>(const std::string &amp; name)</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1assets_1_1asset/#function-asset">(constructor)</a></strong></td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted -->(function)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>virtual</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1assets_1_1asset/#function-~asset">~Asset</a></strong>() =0</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1assets_1_1asset/#function-~asset">(destructor)</a></strong>  = 0</td>
+<td><!-- raw HTML omitted --><!-- raw HTML omitted -->(virtual function)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>virtual void</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1assets_1_1asset/#function-load">load</a></strong>()<!-- raw HTML omitted -->Call this method to load the asset.</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1assets_1_1asset/#function-load">load</a></strong></td>
+<td>Call this method to load the asset. <!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(virtual function)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>virtual void</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1assets_1_1asset/#function-unload">unload</a></strong>()<!-- raw HTML omitted -->Call this method to unload the asset.</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1assets_1_1asset/#function-unload">unload</a></strong></td>
+<td>Call this method to unload the asset. <!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(virtual function)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 <tr>
-<td>const <a href="/doxybook/hugo-book/classes/unionengine_1_1assets_1_1asset_1_1event/">Event</a> &amp;</td>
-<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1assets_1_1asset/#function-getevent">getEvent</a></strong>() const<!-- raw HTML omitted -->Returns the current status of the asset.</td>
+<td><strong><a href="/doxybook/hugo-book/classes/classengine_1_1assets_1_1asset/#function-getevent">getEvent</a></strong> <!-- raw HTML omitted -->const<!-- raw HTML omitted --></td>
+<td>Returns the current status of the asset. <!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->(function)<!-- raw HTML omitted --><!-- raw HTML omitted --></td>
 </tr>
 </tbody>
 </table>
-<h2 id="public-functions-documentation">
-  Public Functions Documentation
-  <a class="anchor" href="#public-functions-documentation">#</a>
+<h2 id="public-functions-1">
+  Public Functions
+  <a class="anchor" href="#public-functions-1">#</a>
 </h2>
 <h3 id="function-asset">
   function Asset
   <a class="anchor" href="#function-asset">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">explicit</span> Asset(
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> std<span style="color:#f92672">::</span>string <span style="color:#f92672">&amp;</span> name
-</span></span><span style="display:flex;"><span>)
-</span></span></code></pre></div><h3 id="function-asset-1">
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/asset_8hpp/#file-asset.hpp"><code>&lt;src/Assets/Asset.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">explicit</span> <span style="color:#a6e22e">Asset</span>(<span style="color:#66d9ef">const</span> std<span style="color:#f92672">::</span>string <span style="color:#f92672">&amp;</span> name);
+</span></span></code></pre></div><p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
+<h3 id="function-asset-1">
   function ~Asset
   <a class="anchor" href="#function-asset-1">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">virtual</span> <span style="color:#f92672">~</span>Asset() <span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-</span></span></code></pre></div><h3 id="function-load">
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/asset_8hpp/#file-asset.hpp"><code>&lt;src/Assets/Asset.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">virtual</span> <span style="color:#f92672">~</span>Asset() <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span></code></pre></div><p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
+<h3 id="function-load">
   function load
   <a class="anchor" href="#function-load">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> load()
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/asset_8hpp/#file-asset.hpp"><code>&lt;src/Assets/Asset.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">load</span>();
 </span></span></code></pre></div><p>Call this method to load the asset.</p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-unload">
   function unload
   <a class="anchor" href="#function-unload">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> unload()
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/asset_8hpp/#file-asset.hpp"><code>&lt;src/Assets/Asset.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">unload</span>();
 </span></span></code></pre></div><p>Call this method to unload the asset.</p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <h3 id="function-getevent">
   function getEvent
   <a class="anchor" href="#function-getevent">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">inline</span> <span style="color:#66d9ef">const</span> Event <span style="color:#f92672">&amp;</span> getEvent() <span style="color:#66d9ef">const</span>
+<p><!-- raw HTML omitted -->Defined in header <a href="/doxybook/hugo-book/files/asset_8hpp/#file-asset.hpp"><code>&lt;src/Assets/Asset.hpp&gt;</code></a><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> Event <span style="color:#f92672">&amp;</span>
+</span></span><span style="display:flex;"><span>getEvent() <span style="color:#66d9ef">const</span>;
 </span></span></code></pre></div><p>Returns the current status of the asset.</p>
+<p><strong>Description</strong></p>
 <p>Use this to determine the state, for example if the assets is being loaded or unloaded.</p>
+<p><strong>Exception Safety</strong></p>
+<p>Basic exception guarantee.</p>
 <hr>
-<p>Updated on 2022-11-15 at 04:08:15 +0000</p>
+<p><!-- raw HTML omitted -->Updated on 2022-11-17<!-- raw HTML omitted --></p>
 </article>
  
       
@@ -270,7 +290,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#public-classes">Public Classes</a></li>
     <li><a href="#public-functions">Public Functions</a></li>
-    <li><a href="#public-functions-documentation">Public Functions Documentation</a>
+    <li><a href="#public-functions-1">Public Functions</a>
       <ul>
         <li><a href="#function-asset">function Asset</a></li>
         <li><a href="#function-asset-1">function ~Asset</a></li>

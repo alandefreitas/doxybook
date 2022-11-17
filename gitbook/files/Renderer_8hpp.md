@@ -8,15 +8,15 @@ title: src/Graphics/Renderer.hpp
 
 
 
-
-
-## Source code
-
 ```cpp
-#pragma once
+#include <src/Graphics/Renderer.hpp>
 ```
+
+
+
+
 
 
 -------------------------------
 
-Updated on 2022-11-15 at 04:08:15 +0000
+<sub>Updated on 2022-11-17</sub>

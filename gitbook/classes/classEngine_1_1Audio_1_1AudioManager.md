@@ -6,32 +6,23 @@ summary: An audio manager that accepts multiple Audio::AudioBuffer instances.
 
 # Engine::Audio::AudioManager
 
-**Module:** **[An example game engine](/modules/group__Engine.md)** **/** **[Audio buffers and devices](/modules/group__Audio.md)**
+**[An example game engine](/libraries/group__Engine.md)** **/** **[Audio buffers and devices](/libraries/group__Audio.md)** **/** 
+**[AudioManager](/classes/classEngine_1_1Audio_1_1AudioManager.md)**
+
+<sup>Defined in header [`<src/Audio/AudioManager.hpp>`](/files/AudioManager_8hpp.md#file-audiomanager.hpp)</sup>
 
 
-
-An audio manager that _accepts_ multiple **[Audio::AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md)** instances.  [More...](#detailed-description)
-
-
-`#include <AudioManager.hpp>`
-
-## Public Functions
-
-|                | Name           |
-| -------------- | -------------- |
-| | **[AudioManager](/classes/classEngine_1_1Audio_1_1AudioManager.md#function-audiomanager)**(int numOfChannels =128) |
-| | **[~AudioManager](/classes/classEngine_1_1Audio_1_1AudioManager.md#function-~audiomanager)**() |
-| void | **[enque](/classes/classEngine_1_1Audio_1_1AudioManager.md#function-enque)**(const [AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md) & buffer) |
-
-## Detailed Description
 
 ```cpp
-class Engine::Audio::AudioManager;
+
+class AudioManager;
 ```
 
 An audio manager that _accepts_ multiple **[Audio::AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md)** instances. 
 
-**See**: [Audio::AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md)
+
+**Description**
+
 
 Lorem Ipsum Donor. Some [Random link with **bold** and _italics_](http://github.com) And the following is a `typewritter` font. And here is some list items:
 
@@ -44,33 +35,127 @@ Followed by some more text and another list:
 * First item
 * Second item
 
-## Public Functions Documentation
+
+**See Also**: [Audio::AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md)
+
+
+## Public Functions
+| Member Functions | Description |
+| -------------- | -------------- |
+| **[(constructor)](/classes/classEngine_1_1Audio_1_1AudioManager.md#function-audiomanager)** |  <sup><span style="color:green">(function)</span></sup> |
+| **[(destructor)](/classes/classEngine_1_1Audio_1_1AudioManager.md#function-~audiomanager)** |  <sup><span style="color:green">(function)</span></sup> |
+| **[enque](/classes/classEngine_1_1Audio_1_1AudioManager.md#function-enque)** |  <sup><span style="color:green">(function)</span></sup> |
+
+
+## Public Functions
 
 ### function AudioManager
 
-```cpp
-AudioManager(
-    int numOfChannels =128
-)
+
+<sup>Defined in header [`<src/Audio/AudioManager.hpp>`](/files/AudioManager_8hpp.md#file-audiomanager.hpp)</sup>
+
+```cpp 
+AudioManager(int numOfChannels =128);
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
 
 
 ### function ~AudioManager
 
-```cpp
-~AudioManager()
+
+<sup>Defined in header [`<src/Audio/AudioManager.hpp>`](/files/AudioManager_8hpp.md#file-audiomanager.hpp)</sup>
+
+```cpp 
+~AudioManager();
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
 
 
 ### function enque
 
-```cpp
-void enque(
-    const AudioBuffer & buffer
-)
+
+<sup>Defined in header [`<src/Audio/AudioManager.hpp>`](/files/AudioManager_8hpp.md#file-audiomanager.hpp)</sup>
+
+```cpp 
+void
+enque(const AudioBuffer & buffer);
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Exception Safety**
+
+Basic exception guarantee.
+
+
+
+
+
+
 
 
 -------------------------------
 
-Updated on 2022-11-15 at 04:08:15 +0000
+<sub>Updated on 2022-11-17</sub>

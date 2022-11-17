@@ -7,43 +7,29 @@ title: src/Audio/AudioManager.hpp
 
 
 
+
+```cpp
+#include <src/Audio/AudioManager.hpp>
+```
+
 ## Namespaces
 
-| Name           |
-| -------------- |
-| **[Engine](/namespaces/namespaceEngine.md)** <br>This namespace contains all of the necessary engine components.  |
-| **[Engine::Audio](/namespaces/namespaceEngine_1_1Audio.md)**  |
+| Name           | Description    |
+| -------------- | -------------- |
+| **[Engine](/namespaces/namespaceEngine.md)** | This namespace contains all of the necessary engine components.  |
+| **[Engine::Audio](/namespaces/namespaceEngine_1_1Audio.md)** |  |
 
 ## Classes
 
-|                | Name           |
+| Classes        | Description    |
 | -------------- | -------------- |
-| class | **[Engine::Audio::AudioManager](/classes/classEngine_1_1Audio_1_1AudioManager.md)** <br>An audio manager that _accepts_ multiple **[Audio::AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md)** instances.  |
+| **[AudioManager](/classes/classEngine_1_1Audio_1_1AudioManager.md)** | An audio manager that _accepts_ multiple **[Audio::AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md)** instances. <br> <sup><span style="color:green">(class)</span></sup> |
 
 
 
 
-## Source code
-
-```cpp
-#pragma once
-
-#include "AudioBuffer.hpp"
-
-namespace Engine {
-    namespace Audio {
-        class AudioManager final {
-          public:
-            AudioManager(int numOfChannels = 128);
-            ~AudioManager();
-
-            void enque(const AudioBuffer& buffer);
-        };
-    } // namespace Audio
-} // namespace Engine
-```
 
 
 -------------------------------
 
-Updated on 2022-11-15 at 04:08:15 +0000
+<sub>Updated on 2022-11-17</sub>
