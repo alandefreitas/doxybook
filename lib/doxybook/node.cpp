@@ -482,7 +482,8 @@ doxybook::node::load_data(
             std::shared_ptr<doxybook::node> childPtr;
             try {
                 childPtr = this->find_child(childRefid);
-            } catch (...) {
+            }
+            catch (...) {
                 memberdef = memberdef.next_sibling_element("memberdef");
                 continue;
             }
@@ -676,14 +677,15 @@ doxybook::node::load_data(
                     }
 
                     for (auto const& parameteritem: it->children) {
-                        if (parameteritem.children.size() == 2
-                            && parameteritem.children[0].type
-                                   == xml_text_parser::node::type::
-                                       PARAMETERNAMELIST
-                            && parameteritem.children[1].type
-                                   == xml_text_parser::node::type::
-                                       PARAMETERDESCRIPTION)
-                        {
+                        bool const is_valid_parameter_item
+                            = parameteritem.children.size() == 2
+                              && parameteritem.children[0].type
+                                     == xml_text_parser::node::type::
+                                         PARAMETERNAMELIST
+                              && parameteritem.children[1].type
+                                     == xml_text_parser::node::type::
+                                         PARAMETERDESCRIPTION;
+                        if (is_valid_parameter_item) {
                             parameter_list_item item;
                             item.name = markdownPrinter.print(
                                 parameteritem.children[0]);

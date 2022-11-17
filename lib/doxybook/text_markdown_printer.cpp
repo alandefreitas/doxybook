@@ -359,6 +359,31 @@ doxybook::text_markdown_printer::print(
         }
         break;
     }
+    case xml_text_parser::node::type::PARAMETERNAMELIST:
+    {
+        if (node->children.empty()) {
+            break;
+        }
+        auto valid_parameter_name =
+            [](doxybook::xml_text_parser::node const& n) -> bool {
+            return n.type == xml_text_parser::node::type::PARAMETERNAME
+                   && !n.children.empty()
+                   && n.children.front().type
+                          == xml_text_parser::node::type::TEXT;
+        };
+        if (!valid_parameter_name(node->children.front())) {
+            break;
+        }
+        data.ss << node->children.front().children.front().data;
+        for (size_t i = 1; i < node->children.size(); i++) {
+            if (!valid_parameter_name(node->children[i])) {
+                break;
+            }
+            data.ss << ", ";
+            data.ss << node->children[i].children.front().data;
+        }
+        break;
+    }
     default:
     {
         for (size_t i = 0; i < node->children.size(); i++) {
