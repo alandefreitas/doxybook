@@ -74,7 +74,7 @@ namespace doxybook {
         /// @{
 
         /// The modules folder name
-        std::string folder_groups_name{ "modules" };
+        std::string folder_groups_name{ "libraries" };
 
         /// The classes folder name
         std::string folder_classes_name{ "classes" };
@@ -187,7 +187,7 @@ namespace doxybook {
         std::string index_namespaces_title{ "Namespaces" };
 
         /// The title for groups in index pages
-        std::string index_groups_title{ "Modules" };
+        std::string index_groups_title{ "Libraries" };
 
         /// The title for files in index pages
         std::string index_files_title{ "Files" };
