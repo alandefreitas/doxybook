@@ -5,9 +5,9 @@ markdown_extensions:
   - admonition
 nav:
   - Home: /doxybook/mkdocs-material/
-  - Classes: /doxybook/mkdocs-material/Classes
-  - Namespaces: /doxybook/mkdocs-material/Namespaces
-  - Modules: /doxybook/mkdocs-material/Modules
-  - Files: /doxybook/mkdocs-material/Files
-  - Related Pages: /doxybook/mkdocs-material/Pages
-  - Examples: /doxybook/mkdocs-material/Examples
+  - Classes: /doxybook/mkdocs-material/classes
+  - Namespaces: /doxybook/mkdocs-material/namespaces
+  - Modules: /doxybook/mkdocs-material/libraries
+  - Files: /doxybook/mkdocs-material/files
+  - Related Pages: /doxybook/mkdocs-material/pages
+  - Examples: /doxybook/mkdocs-material/examples

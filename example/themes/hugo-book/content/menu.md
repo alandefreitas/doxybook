@@ -3,9 +3,9 @@ headless: true
 bookMenuLevels: 1
 ---
 
- - [Classes]({{< relref "/Classes" >}})
- - [Namespaces]({{< relref "/Namespaces" >}})
- - [Modules]({{< relref "/Modules" >}})
- - [Files]({{< relref "/Files" >}})
- - [Pages]({{< relref "/Pages" >}})
- - [Examples]({{< relref "/Examples" >}})
+ - [Classes]({{< relref "/classes" >}})
+ - [Namespaces]({{< relref "/namespaces" >}})
+ - [Modules]({{< relref "/libraries" >}})
+ - [Files]({{< relref "/files" >}})
+ - [Pages]({{< relref "/pages" >}})
+ - [Examples]({{< relref "/examples" >}})

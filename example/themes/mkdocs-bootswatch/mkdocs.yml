@@ -5,9 +5,9 @@ markdown_extensions:
   - admonition
 nav:
   - Home: /doxybook/mkdocs-bootswatch/
-  - Classes: /doxybook/mkdocs-bootswatch/Classes
-  - Namespaces: /doxybook/mkdocs-bootswatch/Namespaces
-  - Modules: /doxybook/mkdocs-bootswatch/Modules
-  - Files: /doxybook/mkdocs-bootswatch/Files
-  - Related Pages: /doxybook/mkdocs-bootswatch/Pages
-  - Examples: /doxybook/mkdocs-bootswatch/Examples
+  - Classes: /doxybook/mkdocs-bootswatch/classes
+  - Namespaces: /doxybook/mkdocs-bootswatch/namespaces
+  - Modules: /doxybook/mkdocs-bootswatch/modules
+  - Files: /doxybook/mkdocs-bootswatch/files
+  - Related Pages: /doxybook/mkdocs-bootswatch/pages
+  - Examples: /doxybook/mkdocs-bootswatch/examples
