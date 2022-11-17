@@ -200,15 +200,15 @@ main(int argc, char* argv[]) {
             doxygen d(c);
             std::string s = args["input"].as<std::string>();
             text_markdown_printer markdown_printer(c, s, d);
-            text_plain_printer plainPrinter(c, d);
-            json_converter conv(c, d, plainPrinter, markdown_printer);
+            text_plain_printer plain_printer(c, d);
+            json_converter conv(c, d, plain_printer, markdown_printer);
 
-            std::optional<std::string> templatesPath;
+            std::optional<std::string> templates_path;
             if (args.count("templates")) {
-                templatesPath = args["templates"].as<std::string>();
+                templates_path = args["templates"].as<std::string>();
             }
 
-            generator g(c, d, conv, templatesPath);
+            generator g(c, d, conv, templates_path);
 
             auto const should_generate = [&](const folder_category category) {
                 return std::find(
@@ -226,9 +226,10 @@ main(int argc, char* argv[]) {
                 };
                 for (auto const& g: ALL_GROUPS) {
                     if (should_generate(g)) {
-                        utils::create_directory(path::join(
+                        auto dir = path::join(
                             c.output_dir,
-                            type_folder_category_to_folder_name(c, g)));
+                            type_folder_category_to_folder_name(c, g));
+                        utils::create_directory(dir);
                     }
                 }
                 if (!c.images_folder.empty()) {
@@ -240,7 +241,7 @@ main(int argc, char* argv[]) {
             spdlog::info("Loading...");
             d.load(args["input"].as<std::string>());
             spdlog::info("Finalizing...");
-            d.finalize(plainPrinter, markdown_printer);
+            d.finalize(plain_printer, markdown_printer);
             spdlog::info("Rendering...");
 
             if (args.count("json")) {
@@ -292,22 +293,22 @@ main(int argc, char* argv[]) {
                         sections);
                 }
 
-                generator::filter_set languageFilder;
+                generator::filter_set language_filter;
                 if (should_generate(folder_category::CLASSES)) {
-                    languageFilder.insert(kind::CLASS);
-                    languageFilder.insert(kind::STRUCT);
-                    languageFilder.insert(kind::UNION);
-                    languageFilder.insert(kind::INTERFACE);
-                    languageFilder.insert(kind::JAVAENUM);
+                    language_filter.insert(kind::CLASS);
+                    language_filter.insert(kind::STRUCT);
+                    language_filter.insert(kind::UNION);
+                    language_filter.insert(kind::INTERFACE);
+                    language_filter.insert(kind::JAVAENUM);
                 }
                 if (should_generate(folder_category::NAMESPACES)) {
-                    languageFilder.insert(kind::NAMESPACE);
+                    language_filter.insert(kind::NAMESPACE);
                 }
                 if (should_generate(folder_category::MODULES)) {
-                    languageFilder.insert(kind::MODULE);
+                    language_filter.insert(kind::MODULE);
                 }
-                if (!languageFilder.empty()) {
-                    g.print(languageFilder, {});
+                if (!language_filter.empty()) {
+                    g.print(language_filter, {});
                 }
 
                 if (should_generate(folder_category::FILES)) {
