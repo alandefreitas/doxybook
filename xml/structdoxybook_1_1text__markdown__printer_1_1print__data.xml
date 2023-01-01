@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structdoxybook_1_1text__markdown__printer_1_1print__data" kind="struct" language="C++" prot="private">
     <compoundname>doxybook::text_markdown_printer::print_data</compoundname>
       <sectiondef kind="public-attrib">
@@ -118,7 +118,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="doxybook/text_markdown_printer.hpp" line="37" column="25" bodyfile="doxybook/text_markdown_printer.hpp" bodystart="37" bodyend="46"/>
+    <location file="doxybook/text_markdown_printer.hpp" line="37" column="9" bodyfile="doxybook/text_markdown_printer.hpp" bodystart="37" bodyend="46"/>
     <listofallmembers>
       <member refid="structdoxybook_1_1text__markdown__printer_1_1print__data_1a79e0a66b88982753605372a5227b2342" prot="public" virt="non-virtual"><scope>doxybook::text_markdown_printer::print_data</scope><name>eol</name></member>
       <member refid="structdoxybook_1_1text__markdown__printer_1_1print__data_1aa6ae68be0a488ee4538a02629245e871" prot="public" virt="non-virtual"><scope>doxybook::text_markdown_printer::print_data</scope><name>in_computer_output</name></member>

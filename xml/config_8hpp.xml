@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="config_8hpp" kind="file" language="C++">
     <compoundname>config.hpp</compoundname>
     <includes refid="enums_8hpp" local="no">doxybook/enums.hpp</includes>
     <includes local="no">string</includes>
     <includedby refid="json__converter_8hpp" local="no">doxybook/json_converter.hpp</includedby>
-    <includedby refid="text__printer_8hpp" local="no">doxybook/text_printer.hpp</includedby>
     <includedby refid="renderer_8hpp" local="no">doxybook/renderer.hpp</includedby>
+    <includedby refid="text__printer_8hpp" local="no">doxybook/text_printer.hpp</includedby>
     <incdepgraph>
       <node id="4">
         <label>string</label>
@@ -69,9 +69,9 @@
         <link refid="config_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
         <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -111,7 +111,7 @@
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31" refid="structdoxybook_1_1config_1a03e93af827781be6c5e5d2ace7a6c5b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structdoxybook_1_1config_1a03e93af827781be6c5e5d2ace7a6c5b1" kindref="member">undocumented_macros</ref>{<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>};</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="37" refid="structdoxybook_1_1config_1ac788bd3a1dda96c00c87312fe0e488eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structdoxybook_1_1config_1ac788bd3a1dda96c00c87312fe0e488eb" kindref="member">index_in_folders</ref>{<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>};</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
 <codeline lineno="40" refid="structdoxybook_1_1config_1a6ecc6d72c8be164e58d38cb2d3d1ee7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structdoxybook_1_1config_1a6ecc6d72c8be164e58d38cb2d3d1ee7e" kindref="member">main_page_in_root</ref>{<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>};</highlight></codeline>
@@ -220,7 +220,7 @@
 <codeline lineno="206"><highlight class="normal"></highlight></codeline>
 <codeline lineno="208"></codeline>
 <codeline lineno="211"></codeline>
-<codeline lineno="213"></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
 <codeline lineno="216" refid="structdoxybook_1_1config_1a71f45a4bfbb19f690e0f400322b6623d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="structdoxybook_1_1config_1a71f45a4bfbb19f690e0f400322b6623d" kindref="member">files_filter</ref>{};</highlight></codeline>
 <codeline lineno="217"><highlight class="normal"></highlight></codeline>
 <codeline lineno="219" refid="structdoxybook_1_1config_1a4220f0769d7ea4709380f021bbdce405" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;folder_category&gt;<sp/><ref refid="structdoxybook_1_1config_1a4220f0769d7ea4709380f021bbdce405" kindref="member">folders_to_generate</ref>{</highlight></codeline>
@@ -242,13 +242,13 @@
 <codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="244"><highlight class="normal"></highlight></codeline>
 <codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a764c63df83c5de3338a6a9158fef1aa5" kindref="member">load_config</ref>(config&amp;<sp/>config,<sp/>std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>path);</highlight></codeline>
+<codeline lineno="247" refid="namespacedoxybook_1a764c63df83c5de3338a6a9158fef1aa5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a764c63df83c5de3338a6a9158fef1aa5" kindref="member">load_config</ref>(<ref refid="structdoxybook_1_1config" kindref="compound">config</ref>&amp;<sp/><ref refid="structdoxybook_1_1config" kindref="compound">config</ref>,<sp/>std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>path);</highlight></codeline>
 <codeline lineno="248"><highlight class="normal"></highlight></codeline>
 <codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1af87771565cc1dc76b11b7a96ac1776ac" kindref="member">load_config_data</ref>(config&amp;<sp/>config,<sp/>std::string_view<sp/>src);</highlight></codeline>
+<codeline lineno="251" refid="namespacedoxybook_1af87771565cc1dc76b11b7a96ac1776ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1af87771565cc1dc76b11b7a96ac1776ac" kindref="member">load_config_data</ref>(<ref refid="structdoxybook_1_1config" kindref="compound">config</ref>&amp;<sp/><ref refid="structdoxybook_1_1config" kindref="compound">config</ref>,<sp/>std::string_view<sp/>src);</highlight></codeline>
 <codeline lineno="252"><highlight class="normal"></highlight></codeline>
 <codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1aed292e5ab86d34b3519f0ecd89b412d4" kindref="member">save_config</ref>(config&amp;<sp/>config,<sp/>std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>path);</highlight></codeline>
+<codeline lineno="255" refid="namespacedoxybook_1aed292e5ab86d34b3519f0ecd89b412d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1aed292e5ab86d34b3519f0ecd89b412d4" kindref="member">save_config</ref>(<ref refid="structdoxybook_1_1config" kindref="compound">config</ref>&amp;<sp/><ref refid="structdoxybook_1_1config" kindref="compound">config</ref>,<sp/>std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>path);</highlight></codeline>
 <codeline lineno="256"><highlight class="normal"></highlight></codeline>
 <codeline lineno="257"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>doxybook</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="258"><highlight class="normal"></highlight></codeline>

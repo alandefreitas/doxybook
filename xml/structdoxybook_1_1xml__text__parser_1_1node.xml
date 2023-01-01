@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structdoxybook_1_1xml__text__parser_1_1node" kind="struct" language="C++" prot="public">
     <compoundname>doxybook::xml_text_parser::node</compoundname>
     <includes refid="xml__text__parser_8hpp" local="no">xml_text_parser.hpp</includes>
@@ -380,7 +380,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/xml_text_parser.hpp" line="27" column="1" bodyfile="doxybook/xml_text_parser.hpp" bodystart="26" bodyend="80"/>
+        <location file="doxybook/xml_text_parser.hpp" line="26" column="13" bodyfile="doxybook/xml_text_parser.hpp" bodystart="27" bodyend="80"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -447,7 +447,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="doxybook/xml_text_parser.hpp" line="24" column="19" bodyfile="doxybook/xml_text_parser.hpp" bodystart="24" bodyend="93"/>
+    <location file="doxybook/xml_text_parser.hpp" line="24" column="9" bodyfile="doxybook/xml_text_parser.hpp" bodystart="24" bodyend="93"/>
     <listofallmembers>
       <member refid="structdoxybook_1_1xml__text__parser_1_1node_1a082ae1ba503ba8c7993490177d4a61ab" prot="public" virt="non-virtual"><scope>doxybook::xml_text_parser::node</scope><name>children</name></member>
       <member refid="structdoxybook_1_1xml__text__parser_1_1node_1a36824e0b71d22634a540d832409a7a97" prot="public" virt="non-virtual"><scope>doxybook::xml_text_parser::node</scope><name>data</name></member>

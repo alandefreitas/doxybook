@@ -21,4 +21,4 @@ Class [Engine::Graphics::Texture](/classes/classEngine_1_1Graphics_1_1Texture.md
 
 -------------------------------
 
-<sub>Updated on 2022-11-17</sub>
+<sub>Updated on 2023-01-01</sub>

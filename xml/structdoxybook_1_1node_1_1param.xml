@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structdoxybook_1_1node_1_1param" kind="struct" language="C++" prot="public">
     <compoundname>doxybook::node::param</compoundname>
     <includes refid="node_8hpp" local="no">node.hpp</includes>
@@ -76,7 +76,7 @@
     <detaileddescription>
 <para>This is used for parameters and template parameters. </para>
     </detaileddescription>
-    <location file="doxybook/node.hpp" line="58" column="20" bodyfile="doxybook/node.hpp" bodystart="58" bodyend="64"/>
+    <location file="doxybook/node.hpp" line="58" column="9" bodyfile="doxybook/node.hpp" bodystart="58" bodyend="64"/>
     <listofallmembers>
       <member refid="structdoxybook_1_1node_1_1param_1a7e7ae78e58aefa18131e85a4dba7b32b" prot="public" virt="non-virtual"><scope>doxybook::node::param</scope><name>def_val</name></member>
       <member refid="structdoxybook_1_1node_1_1param_1a34ad1becdb33a951d99f6ee59ba45c54" prot="public" virt="non-virtual"><scope>doxybook::node::param</scope><name>def_val_plain</name></member>

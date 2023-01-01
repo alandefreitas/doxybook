@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classdoxybook_1_1node" kind="class" language="C++" prot="public">
     <compoundname>doxybook::node</compoundname>
     <includes refid="node_8hpp" local="no">node.hpp</includes>
@@ -26,10 +26,13 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdoxybook_1_1node_1a24fa53bd717650551f9fc9f224f29cf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend class</type>
+        <type>class</type>
         <definition>friend class doxygen</definition>
         <argsstring></argsstring>
         <name>doxygen</name>
+        <param>
+          <type><ref refid="classdoxybook_1_1doxygen" kindref="compound">doxygen</ref></type>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1056,7 +1059,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="doxybook/node.hpp" line="30" column="15" bodyfile="doxybook/node.hpp" bodystart="30" bodyend="391"/>
+    <location file="doxybook/node.hpp" line="30" column="5" bodyfile="doxybook/node.hpp" bodystart="30" bodyend="391"/>
     <listofallmembers>
       <member refid="classdoxybook_1_1node_1a27e2d3c5a8c11b8cef2148ce081f4a9c" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>anchor_</name></member>
       <member refid="classdoxybook_1_1node_1a71a693a3b0bbcd636b024a577bba694e" prot="private" virt="non-virtual"><scope>doxybook::node</scope><name>assert_child</name></member>

@@ -19,7 +19,8 @@ class Handle;
 
 
 
-**Inherited by** [Texture](/classes/classEngine_1_1Graphics_1_1Texture.md)
+**Inherited by**: `Handle` is a base class for
+[Texture](/classes/classEngine_1_1Graphics_1_1Texture.md)
 
 ## Public Functions
 | Member Functions | Description |
@@ -156,4 +157,4 @@ int handle;
 
 -------------------------------
 
-<sub>Updated on 2022-11-17</sub>
+<sub>Updated on 2023-01-01</sub>

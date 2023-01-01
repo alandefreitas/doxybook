@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structdoxybook_1_1node_1_1source__location" kind="struct" language="C++" prot="public">
     <compoundname>doxybook::node::source_location</compoundname>
     <includes refid="node_8hpp" local="no">node.hpp</includes>
@@ -92,7 +92,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="doxybook/node.hpp" line="45" column="30" bodyfile="doxybook/node.hpp" bodystart="45" bodyend="52"/>
+    <location file="doxybook/node.hpp" line="45" column="9" bodyfile="doxybook/node.hpp" bodystart="45" bodyend="52"/>
     <listofallmembers>
       <member refid="structdoxybook_1_1node_1_1source__location_1a5fccdd07ec27880b487ae4645d9fcd5c" prot="public" virt="non-virtual"><scope>doxybook::node::source_location</scope><name>body_end</name></member>
       <member refid="structdoxybook_1_1node_1_1source__location_1acfd3714907b7e4071711be0464aecf64" prot="public" virt="non-virtual"><scope>doxybook::node::source_location</scope><name>body_file</name></member>

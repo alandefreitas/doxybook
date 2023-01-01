@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classdoxybook_1_1text__markdown__printer" kind="class" language="C++" prot="public">
     <compoundname>doxybook::text_markdown_printer</compoundname>
     <basecompoundref refid="classdoxybook_1_1text__printer" prot="public" virt="non-virtual">doxybook::text_printer</basecompoundref>
@@ -203,7 +203,7 @@
         <link refid="classdoxybook_1_1doxygen"/>
       </node>
     </collaborationgraph>
-    <location file="doxybook/text_markdown_printer.hpp" line="16" column="52" bodyfile="doxybook/text_markdown_printer.hpp" bodystart="16" bodyend="62"/>
+    <location file="doxybook/text_markdown_printer.hpp" line="16" column="5" bodyfile="doxybook/text_markdown_printer.hpp" bodystart="16" bodyend="62"/>
     <listofallmembers>
       <member refid="classdoxybook_1_1text__printer_1af7875a18583999d0d20cb6cbc4c66313" prot="protected" virt="non-virtual"><scope>doxybook::text_markdown_printer</scope><name>config_</name></member>
       <member refid="classdoxybook_1_1text__printer_1ae26f071be5cd090b47f1d0db58b79a1d" prot="protected" virt="non-virtual"><scope>doxybook::text_markdown_printer</scope><name>doxygen_</name></member>

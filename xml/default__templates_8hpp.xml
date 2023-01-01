@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="default__templates_8hpp" kind="file" language="C++">
     <compoundname>default_templates.hpp</compoundname>
     <includes local="no">string</includes>
@@ -55,12 +55,12 @@
 <codeline lineno="23" refid="structdoxybook_1_1default__template_1a6704c49199ebe88427ebff7630891357" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="structdoxybook_1_1default__template_1a6704c49199ebe88427ebff7630891357" kindref="member">dependencies</ref>;</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>default_template&gt;<sp/><ref refid="namespacedoxybook_1af372b28228a654b6cb350a4d3da1bb18" kindref="member">default_templates</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a5ee16b3fde88767e4406291c62b5e5bc" kindref="member">save_default_templates</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>path);</highlight></codeline>
+<codeline lineno="38" refid="namespacedoxybook_1a5ee16b3fde88767e4406291c62b5e5bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedoxybook_1a5ee16b3fde88767e4406291c62b5e5bc" kindref="member">save_default_templates</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>path);</highlight></codeline>
 <codeline lineno="39"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>doxybook</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>

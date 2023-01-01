@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="namespacedoxybook" kind="namespace" language="C++">
     <compoundname>doxybook</compoundname>
     <innerclass refid="structdoxybook_1_1config" prot="public">doxybook::config</innerclass>
@@ -203,7 +203,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/enums.hpp" line="20" column="1" bodyfile="doxybook/enums.hpp" bodystart="19" bodyend="46"/>
+        <location file="doxybook/enums.hpp" line="19" column="5" bodyfile="doxybook/enums.hpp" bodystart="20" bodyend="46"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedoxybook_1a2a693352be699d6073cce75dda77578f" prot="public" static="no" strong="yes">
         <type></type>
@@ -243,7 +243,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/enums.hpp" line="50" column="1" bodyfile="doxybook/enums.hpp" bodystart="49" bodyend="55"/>
+        <location file="doxybook/enums.hpp" line="49" column="5" bodyfile="doxybook/enums.hpp" bodystart="50" bodyend="55"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedoxybook_1aaa09186a4b6d55deb9a2c8309e023139" prot="public" static="no" strong="yes">
         <type></type>
@@ -276,7 +276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/enums.hpp" line="59" column="1" bodyfile="doxybook/enums.hpp" bodystart="58" bodyend="63"/>
+        <location file="doxybook/enums.hpp" line="58" column="5" bodyfile="doxybook/enums.hpp" bodystart="59" bodyend="63"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedoxybook_1a170a32bad288799127c6e3cd068e8c07" prot="public" static="no" strong="yes">
         <type></type>
@@ -414,7 +414,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/enums.hpp" line="67" column="1" bodyfile="doxybook/enums.hpp" bodystart="66" bodyend="86"/>
+        <location file="doxybook/enums.hpp" line="66" column="5" bodyfile="doxybook/enums.hpp" bodystart="67" bodyend="86"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedoxybook_1afd7e4beed53db0ff8c3e1835f132acc4" prot="public" static="no" strong="yes">
         <type></type>
@@ -468,7 +468,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="doxybook/enums.hpp" line="90" column="1" bodyfile="doxybook/enums.hpp" bodystart="89" bodyend="97"/>
+        <location file="doxybook/enums.hpp" line="89" column="5" bodyfile="doxybook/enums.hpp" bodystart="90" bodyend="97"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -1070,6 +1070,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="doxybook/config.hpp" line="15" column="18"/>
+    <location file="doxybook/config.hpp" line="15" column="1"/>
   </compounddef>
 </doxygen>

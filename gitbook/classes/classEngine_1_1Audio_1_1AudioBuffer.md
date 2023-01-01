@@ -601,7 +601,7 @@ bool playing {false};
 <sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
 ```cpp
 friend
-class AudioManager;
+class AudioManager(AudioManager);
 ```
 
 
@@ -616,4 +616,4 @@ void Audio::doSomething(AudioBuffer & buffer);
 
 -------------------------------
 
-<sub>Updated on 2022-11-17</sub>
+<sub>Updated on 2023-01-01</sub>
