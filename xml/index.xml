@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
   <compound refid="structdoxybook_1_1node_1_1class__reference" kind="struct"><name>doxybook::node::class_reference</name>
     <member refid="structdoxybook_1_1node_1_1class__reference_1a22e9ed4a4d0a3fc815d6e8cdb0c4c2b9" kind="variable"><name>name</name></member>
     <member refid="structdoxybook_1_1node_1_1class__reference_1a45a82899a1164d6c9f7bf66f518d4969" kind="variable"><name>refid</name></member>
@@ -274,6 +274,19 @@
     <member refid="classdoxybook_1_1node_1a71a693a3b0bbcd636b024a577bba694e" kind="function"><name>assert_child</name></member>
     <member refid="classdoxybook_1_1node_1ad0c82ac9db961b7c3e03765ed1e50fb6" kind="function"><name>assert_child</name></member>
   </compound>
+  <compound refid="classdoxybook_1_1xml_1_1node" kind="class"><name>doxybook::xml::node</name>
+    <member refid="classdoxybook_1_1xml_1_1node_1ab6bc59ae652afd586b446da8024187cb" kind="variable"><name>ptr</name></member>
+    <member refid="classdoxybook_1_1xml_1_1node_1a18e21dd310f11cab74e9151e1771bc6e" kind="function"><name>node</name></member>
+    <member refid="classdoxybook_1_1xml_1_1node_1a47f58c82704973da72c92f8be8122dc9" kind="function"><name>node</name></member>
+    <member refid="classdoxybook_1_1xml_1_1node_1a9673ba368f7833e029a59e06c5b6a8ab" kind="function"><name>~node</name></member>
+    <member refid="classdoxybook_1_1xml_1_1node_1a3f277f12fdc9be474936055842d780c8" kind="function"><name>next_sibling</name></member>
+    <member refid="classdoxybook_1_1xml_1_1node_1ab9503479499d28bb910721618a2caa1a" kind="function"><name>first_child</name></member>
+    <member refid="classdoxybook_1_1xml_1_1node_1a36649d86622d230b4b8d5c5188596fb5" kind="function"><name>has_text</name></member>
+    <member refid="classdoxybook_1_1xml_1_1node_1a542b65999714cdb598f5eca477d26ad9" kind="function"><name>get_text</name></member>
+    <member refid="classdoxybook_1_1xml_1_1node_1a220062c8c1650fbd4f498612d9286342" kind="function"><name>is_element</name></member>
+    <member refid="classdoxybook_1_1xml_1_1node_1aa1b849756c5726246f7a01e8e1261e0e" kind="function"><name>as_element</name></member>
+    <member refid="classdoxybook_1_1xml_1_1node_1a4105006db8b62e8c9989f5792ba23b44" kind="function"><name>operator bool</name></member>
+  </compound>
   <compound refid="structdoxybook_1_1xml__text__parser_1_1node" kind="struct"><name>doxybook::xml_text_parser::node</name>
     <member refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7e" kind="enum"><name>type</name></member>
     <member refid="structdoxybook_1_1xml__text__parser_1_1node_1af623ade9f9e8473f195a341c4d3daa7ea696b031073e74bf2cb98e5ef201d4aa3" kind="enumvalue"><name>UNKNOWN</name></member>
@@ -332,19 +345,6 @@
     <member refid="structdoxybook_1_1xml__text__parser_1_1node_1a082ae1ba503ba8c7993490177d4a61ab" kind="variable"><name>children</name></member>
     <member refid="structdoxybook_1_1xml__text__parser_1_1node_1a36824e0b71d22634a540d832409a7a97" kind="variable"><name>data</name></member>
     <member refid="structdoxybook_1_1xml__text__parser_1_1node_1aea845f33033bde266606ec9f6052b9e4" kind="variable"><name>extra</name></member>
-  </compound>
-  <compound refid="classdoxybook_1_1xml_1_1node" kind="class"><name>doxybook::xml::node</name>
-    <member refid="classdoxybook_1_1xml_1_1node_1ab6bc59ae652afd586b446da8024187cb" kind="variable"><name>ptr</name></member>
-    <member refid="classdoxybook_1_1xml_1_1node_1a18e21dd310f11cab74e9151e1771bc6e" kind="function"><name>node</name></member>
-    <member refid="classdoxybook_1_1xml_1_1node_1a47f58c82704973da72c92f8be8122dc9" kind="function"><name>node</name></member>
-    <member refid="classdoxybook_1_1xml_1_1node_1a9673ba368f7833e029a59e06c5b6a8ab" kind="function"><name>~node</name></member>
-    <member refid="classdoxybook_1_1xml_1_1node_1a3f277f12fdc9be474936055842d780c8" kind="function"><name>next_sibling</name></member>
-    <member refid="classdoxybook_1_1xml_1_1node_1ab9503479499d28bb910721618a2caa1a" kind="function"><name>first_child</name></member>
-    <member refid="classdoxybook_1_1xml_1_1node_1a36649d86622d230b4b8d5c5188596fb5" kind="function"><name>has_text</name></member>
-    <member refid="classdoxybook_1_1xml_1_1node_1a542b65999714cdb598f5eca477d26ad9" kind="function"><name>get_text</name></member>
-    <member refid="classdoxybook_1_1xml_1_1node_1a220062c8c1650fbd4f498612d9286342" kind="function"><name>is_element</name></member>
-    <member refid="classdoxybook_1_1xml_1_1node_1aa1b849756c5726246f7a01e8e1261e0e" kind="function"><name>as_element</name></member>
-    <member refid="classdoxybook_1_1xml_1_1node_1a4105006db8b62e8c9989f5792ba23b44" kind="function"><name>operator bool</name></member>
   </compound>
   <compound refid="structdoxybook_1_1node_1_1param" kind="struct"><name>doxybook::node::param</name>
     <member refid="structdoxybook_1_1node_1_1param_1aeebeb5ffe3cc630ffc53ff8358b78d99" kind="variable"><name>type</name></member>

@@ -39,7 +39,7 @@ struct Engine::Assets::Asset::Event::Unloaded unloaded; variable waiting Defined
       <description>Engine::Assets::Asset::Event::Loaded Struct Reference Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
 struct Loaded; Public Attributes Member Public Attributes Description success bool (public variable) usage int (public variable) Public Attributes variable success Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
 bool success; variable usage Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
-int usage; Updated on 2022-11-17</description>
+int usage; Updated on 2023-01-01</description>
     </item>
     
     <item>
@@ -50,7 +50,7 @@ int usage; Updated on 2022-11-17</description>
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/classes/structengine_1_1assets_1_1asset_1_1event_1_1unloaded/</guid>
       <description>Engine::Assets::Asset::Event::Unloaded Struct Reference Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
 struct Unloaded; Public Attributes Member Public Attributes Description success bool (public variable) Public Attributes variable success Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
-bool success; Updated on 2022-11-17</description>
+bool success; Updated on 2023-01-01</description>
     </item>
     
     <item>
@@ -63,7 +63,7 @@ bool success; Updated on 2022-11-17</description>
 struct Waiting; Public Attributes Member Public Attributes Description other The pointer to the other asset this asset is waiting for. (public variable) Public Attributes variable other Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
 Asset * other; The pointer to the other asset this asset is waiting for.
 Note: May be null
-Updated on 2022-11-17</description>
+Updated on 2023-01-01</description>
     </item>
     
     <item>
@@ -101,14 +101,14 @@ Updated on 2022-11-17</description>
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/classes/classengine_1_1exception/</guid>
       <description>Engine::Exception Class Reference An example game engine / Exception
 Defined in header &amp;lt;src/Exception.hpp&amp;gt;
-class Exception; Inherits from exception
+class Exception; Inherits from std::exception
 Public Functions Member Functions Description (constructor) (function) what const override (function) Public Functions function Exception Defined in header &amp;lt;src/Exception.hpp&amp;gt;
 Exception() = default; explicit Exception(std::string msg); Exception Safety
 Basic exception guarantee.
 function what Defined in header &amp;lt;src/Exception.hpp&amp;gt;
 const char * what() const override; Exception Safety
 Basic exception guarantee.
-Updated on 2022-11-17</description>
+Updated on 2023-01-01</description>
     </item>
     
     <item>
@@ -131,11 +131,10 @@ Public Functions Member Functions Description (constructor) (function) (destruct
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/classes/classengine_1_1graphics_1_1handle/</guid>
       <description>Engine::Graphics::Handle Class Reference An example game engine / Graphical related classes / Handle
 Defined in header &amp;lt;src/Graphics/Handle.hpp&amp;gt;
-class Handle; Inherited by Texture
+class Handle; Inherited by: Handle is a base class for Texture
 Public Functions Member Functions Description (constructor) = default (function) (destructor) = default (virtual function) getHandle const (function) Protected Attributes Member Protected Attributes Description handle int (protected variable) Public Functions function Handle Defined in header &amp;lt;src/Graphics/Handle.hpp&amp;gt;
 Handle() = default; Exception Safety
-Basic exception guarantee.
-function ~Handle Defined in header &amp;lt;src/Graphics/Handle.</description>
+Basic exception guarantee.</description>
     </item>
     
     <item>

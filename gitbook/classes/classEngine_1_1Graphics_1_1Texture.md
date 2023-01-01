@@ -52,7 +52,8 @@ _Filename: example-1.cpp_
 
 **Inherits from** [Handle](/classes/classEngine_1_1Graphics_1_1Handle.md)
 
-**Inherited by** [Framebuffer](/classes/classEngine_1_1Graphics_1_1Framebuffer.md), [Texture2D](/classes/classEngine_1_1Graphics_1_1Texture2D.md), [Texture3D](/classes/classEngine_1_1Graphics_1_1Texture3D.md)
+**Inherited by**: `Texture` is a base class for
+[Framebuffer](/classes/classEngine_1_1Graphics_1_1Framebuffer.md), [Texture2D](/classes/classEngine_1_1Graphics_1_1Texture2D.md),  and [Texture3D](/classes/classEngine_1_1Graphics_1_1Texture3D.md)
 
 ## Public Types
 
@@ -377,4 +378,4 @@ Type type;
 
 -------------------------------
 
-<sub>Updated on 2022-11-17</sub>
+<sub>Updated on 2023-01-01</sub>

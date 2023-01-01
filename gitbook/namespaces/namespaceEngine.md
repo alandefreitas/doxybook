@@ -10,9 +10,6 @@ summary: This namespace contains all of the necessary engine components.
 
 
 
-**[An example game engine](/libraries/group__Engine.md)** **/** 
-**[Engine](/namespaces/namespaceEngine.md)**
-
 ## Namespaces
 
 | Name           | Description    |
@@ -85,4 +82,4 @@ Basic exception guarantee.
 
 -------------------------------
 
-<sub>Updated on 2022-11-17</sub>
+<sub>Updated on 2023-01-01</sub>

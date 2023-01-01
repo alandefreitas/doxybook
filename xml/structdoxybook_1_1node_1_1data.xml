@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structdoxybook_1_1node_1_1data" kind="struct" language="C++" prot="public">
     <compoundname>doxybook::node::data</compoundname>
     <includes refid="node_8hpp" local="no">node.hpp</includes>
@@ -677,7 +677,7 @@
         <link refid="structdoxybook_1_1node_1_1source__location"/>
       </node>
     </collaborationgraph>
-    <location file="doxybook/node.hpp" line="77" column="19" bodyfile="doxybook/node.hpp" bodystart="77" bodyend="127"/>
+    <location file="doxybook/node.hpp" line="77" column="9" bodyfile="doxybook/node.hpp" bodystart="77" bodyend="127"/>
     <listofallmembers>
       <member refid="structdoxybook_1_1node_1_1data_1a80ad6c02c3d45c3bd286c08aa2d8e871" prot="public" virt="non-virtual"><scope>doxybook::node::data</scope><name>args_string</name></member>
       <member refid="structdoxybook_1_1node_1_1data_1aeb8db8485240e81ecf5b505ebd183063" prot="public" virt="non-virtual"><scope>doxybook::node::data</scope><name>attention</name></member>

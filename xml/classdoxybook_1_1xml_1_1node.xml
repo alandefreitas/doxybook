@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classdoxybook_1_1xml_1_1node" kind="class" language="C++" prot="public">
     <compoundname>doxybook::xml::node</compoundname>
     <includes refid="xml_8hpp" local="no">xml.hpp</includes>
@@ -170,7 +170,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="doxybook/xml.hpp" line="31" column="19" bodyfile="doxybook/xml.hpp" bodystart="31" bodyend="73"/>
+    <location file="doxybook/xml.hpp" line="31" column="9" bodyfile="doxybook/xml.hpp" bodystart="31" bodyend="73"/>
     <listofallmembers>
       <member refid="classdoxybook_1_1xml_1_1node_1aa1b849756c5726246f7a01e8e1261e0e" prot="public" virt="non-virtual"><scope>doxybook::xml::node</scope><name>as_element</name></member>
       <member refid="classdoxybook_1_1xml_1_1node_1ab9503479499d28bb910721618a2caa1a" prot="public" virt="non-virtual"><scope>doxybook::xml::node</scope><name>first_child</name></member>

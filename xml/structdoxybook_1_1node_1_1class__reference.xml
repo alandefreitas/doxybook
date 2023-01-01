@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structdoxybook_1_1node_1_1class__reference" kind="struct" language="C++" prot="public">
     <compoundname>doxybook::node::class_reference</compoundname>
     <includes refid="node_8hpp" local="no">node.hpp</includes>
@@ -90,7 +90,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="doxybook/node.hpp" line="36" column="30" bodyfile="doxybook/node.hpp" bodystart="36" bodyend="42"/>
+    <location file="doxybook/node.hpp" line="36" column="9" bodyfile="doxybook/node.hpp" bodystart="36" bodyend="42"/>
     <listofallmembers>
       <member refid="structdoxybook_1_1node_1_1class__reference_1a22e9ed4a4d0a3fc815d6e8cdb0c4c2b9" prot="public" virt="non-virtual"><scope>doxybook::node::class_reference</scope><name>name</name></member>
       <member refid="structdoxybook_1_1node_1_1class__reference_1a896dc87f2c08796d563a65c8bcf4021f" prot="public" virt="non-virtual"><scope>doxybook::node::class_reference</scope><name>prot</name></member>

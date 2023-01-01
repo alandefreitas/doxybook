@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classdoxybook_1_1text__printer" kind="class" language="C++" prot="public" abstract="yes">
     <compoundname>doxybook::text_printer</compoundname>
     <derivedcompoundref refid="classdoxybook_1_1text__markdown__printer" prot="public" virt="non-virtual">doxybook::text_markdown_printer</derivedcompoundref>
@@ -75,8 +75,8 @@
         <definition>virtual std::string doxybook::text_printer::print</definition>
         <argsstring>(xml_text_parser::node const &amp;node, std::string const &amp;language=&quot;cpp&quot;) const =0</argsstring>
         <name>print</name>
-        <reimplementedby refid="classdoxybook_1_1text__plain__printer_1a4c9f8ad57e450a409c7fc21246f6b6b4">print</reimplementedby>
         <reimplementedby refid="classdoxybook_1_1text__markdown__printer_1a3283ab3b405c93ccd794ae4c6dd7538f">print</reimplementedby>
+        <reimplementedby refid="classdoxybook_1_1text__plain__printer_1a4c9f8ad57e450a409c7fc21246f6b6b4">print</reimplementedby>
         <param>
           <type><ref refid="structdoxybook_1_1xml__text__parser_1_1node" kindref="compound">xml_text_parser::node</ref> const &amp;</type>
           <declname>node</declname>
@@ -139,7 +139,7 @@
         <link refid="classdoxybook_1_1doxygen"/>
       </node>
     </collaborationgraph>
-    <location file="doxybook/text_printer.hpp" line="21" column="23" bodyfile="doxybook/text_printer.hpp" bodystart="21" bodyend="41"/>
+    <location file="doxybook/text_printer.hpp" line="21" column="5" bodyfile="doxybook/text_printer.hpp" bodystart="21" bodyend="41"/>
     <listofallmembers>
       <member refid="classdoxybook_1_1text__printer_1af7875a18583999d0d20cb6cbc4c66313" prot="protected" virt="non-virtual"><scope>doxybook::text_printer</scope><name>config_</name></member>
       <member refid="classdoxybook_1_1text__printer_1ae26f071be5cd090b47f1d0db58b79a1d" prot="protected" virt="non-virtual"><scope>doxybook::text_printer</scope><name>doxygen_</name></member>

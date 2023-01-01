@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classdoxybook_1_1exception" kind="class" language="C++" prot="public">
     <compoundname>doxybook::exception</compoundname>
-    <basecompoundref prot="public" virt="non-virtual">exception</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">std::exception</basecompoundref>
     <includes refid="exception_8hpp" local="no">exception.hpp</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classdoxybook_1_1exception_1a4b571d99cdb2ed3c6e1acb3bae5c7a6d" prot="private" static="no" mutable="no">
@@ -96,7 +96,7 @@
         <label>std::exception</label>
       </node>
     </collaborationgraph>
-    <location file="doxybook/exception.hpp" line="19" column="42" bodyfile="doxybook/exception.hpp" bodystart="19" bodyend="35"/>
+    <location file="doxybook/exception.hpp" line="19" column="5" bodyfile="doxybook/exception.hpp" bodystart="19" bodyend="35"/>
     <listofallmembers>
       <member refid="classdoxybook_1_1exception_1ac2182d669ee05215f976ec3132b772cc" prot="public" virt="non-virtual"><scope>doxybook::exception</scope><name>exception</name></member>
       <member refid="classdoxybook_1_1exception_1a25536bef602853e6b5ac08deb4d34f95" prot="public" virt="non-virtual"><scope>doxybook::exception</scope><name>exception</name></member>

@@ -16,12 +16,6 @@ Some detailed description here
 **[An example game engine](/libraries/group__Engine.md)** **/** 
 **[Some useful utilities](/libraries/group__Utils.md)**
 
-## Namespaces
-
-| Name           | Description    |
-| -------------- | -------------- |
-| **[Engine::Utils::Path](/namespaces/namespaceEngine_1_1Utils_1_1Path.md)** | Filesystem path utility functions.  |
-
 ## Classes
 
 | Classes        | Description    |
@@ -80,4 +74,4 @@ Basic exception guarantee.
 
 -------------------------------
 
-<sub>Updated on 2022-11-17</sub>
+<sub>Updated on 2023-01-01</sub>

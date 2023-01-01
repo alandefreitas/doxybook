@@ -20,8 +20,8 @@ Some detailed description here
 
 | Classes        | Description    |
 | -------------- | -------------- |
-| **[Event](/classes/unionEngine_1_1Assets_1_1Asset_1_1Event.md)** | Engine::Assets::Asset::Event<br> <sup><span style="color:green">(union)</span></sup> |
 | **[Asset](/classes/classEngine_1_1Assets_1_1Asset.md)** | Engine::Assets::Asset<br> <sup><span style="color:green">(class)</span></sup> |
+| **[Event](/classes/unionEngine_1_1Assets_1_1Asset_1_1Event.md)** | Engine::Assets::Asset::Event<br> <sup><span style="color:green">(union)</span></sup> |
 
 
 
@@ -32,4 +32,4 @@ Some detailed description here
 
 -------------------------------
 
-<sub>Updated on 2022-11-17</sub>
+<sub>Updated on 2023-01-01</sub>

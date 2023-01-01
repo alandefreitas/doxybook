@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="exception__utils_8hpp" kind="file" language="C++">
     <compoundname>exception_utils.hpp</compoundname>
     <includes refid="exception_8hpp" local="no">doxybook/exception.hpp</includes>
@@ -112,13 +112,13 @@
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18" refid="exception__utils_8hpp_1a7f9f6a7824a0a5a5ec8c7163c5008b94" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXCEPTION(MSG,<sp/>...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
 <codeline lineno="19"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>doxybook::exception(<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="20"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fmt::format(&quot;Exception<sp/>at<sp/>{}:{}<sp/>&quot;,<sp/>__FILENAME__,<sp/>__LINE__)<sp/>\</highlight></codeline>
-<codeline lineno="21"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>fmt::format(MSG,<sp/>##__VA_ARGS__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fmt::format(&quot;Exception<sp/>at<sp/>{}:{}<sp/>&quot;</highlight><highlight class="normal">,<sp/>__FILENAME__,<sp/>__LINE__)<sp/>\</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>fmt::format(MSG,<sp/>##__VA_ARGS__))</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23" refid="exception__utils_8hpp_1aaa9dd978caa1d82591e361b7e03d56ef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WARNING(MSG,<sp/>...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
 <codeline lineno="24"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>doxybook::spdlog::warn(<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="25"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fmt::format(&quot;Warning<sp/>at<sp/>{}:{}<sp/>&quot;,<sp/>__FILENAME__,<sp/>__LINE__)<sp/>\</highlight></codeline>
-<codeline lineno="26"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>fmt::format(MSG,<sp/>##__VA_ARGS__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fmt::format(&quot;Warning<sp/>at<sp/>{}:{}<sp/>&quot;</highlight><highlight class="normal">,<sp/>__FILENAME__,<sp/>__LINE__)<sp/>\</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>fmt::format(MSG,<sp/>##__VA_ARGS__))</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>

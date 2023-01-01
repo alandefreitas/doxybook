@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classdoxybook_1_1xml__text__parser" kind="class" language="C++" prot="public">
     <compoundname>doxybook::xml_text_parser</compoundname>
     <includes refid="xml__text__parser_8hpp" local="no">xml_text_parser.hpp</includes>
@@ -103,7 +103,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="doxybook/xml_text_parser.hpp" line="18" column="26" bodyfile="doxybook/xml_text_parser.hpp" bodystart="18" bodyend="110"/>
+    <location file="doxybook/xml_text_parser.hpp" line="18" column="5" bodyfile="doxybook/xml_text_parser.hpp" bodystart="18" bodyend="110"/>
     <listofallmembers>
       <member refid="classdoxybook_1_1xml__text__parser_1a1fc8e1e93c4c96d1f89843d86732543d" prot="public" virt="non-virtual"><scope>doxybook::xml_text_parser</scope><name>children_type</name></member>
       <member refid="classdoxybook_1_1xml__text__parser_1a1a8907bbf1633b5ab87e3f27025fcd9a" prot="public" virt="non-virtual"><scope>doxybook::xml_text_parser</scope><name>parse_para</name></member>

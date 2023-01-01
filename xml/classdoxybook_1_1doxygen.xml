@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classdoxybook_1_1doxygen" kind="class" language="C++" prot="public">
     <compoundname>doxybook::doxygen</compoundname>
     <includes refid="doxygen_8hpp" local="no">doxygen.hpp</includes>
@@ -284,7 +284,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="doxybook/doxygen.hpp" line="20" column="18" bodyfile="doxybook/doxygen.hpp" bodystart="20" bodyend="86"/>
+    <location file="doxybook/doxygen.hpp" line="20" column="5" bodyfile="doxybook/doxygen.hpp" bodystart="20" bodyend="86"/>
     <listofallmembers>
       <member refid="classdoxybook_1_1doxygen_1a58b029e7ef98956f5490d3b179cc026c" prot="private" virt="non-virtual"><scope>doxybook::doxygen</scope><name>cache_</name></member>
       <member refid="classdoxybook_1_1doxygen_1a56a586a5498170fe6d035f4f8bcca434" prot="private" virt="non-virtual"><scope>doxybook::doxygen</scope><name>config_</name></member>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="text__markdown__printer_8hpp" kind="file" language="C++">
     <compoundname>text_markdown_printer.hpp</compoundname>
     <includes refid="text__printer_8hpp" local="no">doxybook/text_printer.hpp</includes>
@@ -137,7 +137,7 @@
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>input_dir_(std::move(input_dir))<sp/>{}</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdoxybook_1_1text__markdown__printer_1a3283ab3b405c93ccd794ae4c6dd7538f" kindref="member">print</ref>(<ref refid="structdoxybook_1_1xml__text__parser_1_1node" kindref="compound">xml_text_parser::node</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/><ref refid="classdoxybook_1_1node" kindref="compound">node</ref>,<sp/>std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>language)</highlight></codeline>
+<codeline lineno="28" refid="classdoxybook_1_1text__markdown__printer_1a3283ab3b405c93ccd794ae4c6dd7538f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdoxybook_1_1text__markdown__printer_1a3283ab3b405c93ccd794ae4c6dd7538f" kindref="member">print</ref>(<ref refid="structdoxybook_1_1xml__text__parser_1_1node" kindref="compound">xml_text_parser::node</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/><ref refid="classdoxybook_1_1node" kindref="compound">node</ref>,<sp/>std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>language)</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>

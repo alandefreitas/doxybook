@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classdoxybook_1_1json__converter" kind="class" language="C++" prot="public">
     <compoundname>doxybook::json_converter</compoundname>
     <includes refid="json__converter_8hpp" local="no">json_converter.hpp</includes>
@@ -278,7 +278,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="doxybook/json_converter.hpp" line="19" column="25" bodyfile="doxybook/json_converter.hpp" bodystart="19" bodyend="74"/>
+    <location file="doxybook/json_converter.hpp" line="19" column="5" bodyfile="doxybook/json_converter.hpp" bodystart="19" bodyend="74"/>
     <listofallmembers>
       <member refid="classdoxybook_1_1json__converter_1a318a61cbd3c979c7ed5a0cff0bbf55e5" prot="private" virt="non-virtual"><scope>doxybook::json_converter</scope><name>config_</name></member>
       <member refid="classdoxybook_1_1json__converter_1a6d68aa6b4ecf7ab907feb5902a6bf627" prot="public" virt="non-virtual"><scope>doxybook::json_converter</scope><name>convert</name></member>

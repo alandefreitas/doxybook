@@ -23,12 +23,6 @@ Some detailed description here
 | **[Some gui related stuff and whatever](/libraries/group__Gui.md)** | This is a brief description to the gui group.  |
 | **[Some useful utilities](/libraries/group__Utils.md)** | This is a brief description to the utils group.  |
 
-## Namespaces
-
-| Name           | Description    |
-| -------------- | -------------- |
-| **[Engine](/namespaces/namespaceEngine.md)** | This namespace contains all of the necessary engine components.  |
-
 ## Classes
 
 | Classes        | Description    |
@@ -91,4 +85,4 @@ Basic exception guarantee.
 
 -------------------------------
 
-<sub>Updated on 2022-11-17</sub>
+<sub>Updated on 2023-01-01</sub>
