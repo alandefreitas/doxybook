@@ -84,8 +84,8 @@
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/bluesantamoon">
-            <img src="https://avatars.githubusercontent.com/u/33014953?v=4" width="100;" alt="bluesantamoon"/>
+        <a href="https://github.com/blue-santa">
+            <img src="https://avatars.githubusercontent.com/u/33014953?v=4" width="100;" alt="blue-santa"/>
             <br />
             <sub><b>Blue Santa</b></sub>
         </a>
