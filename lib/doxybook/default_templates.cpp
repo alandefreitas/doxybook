@@ -1362,7 +1362,10 @@ template <{% for param in templateParams %}{% if length(allTemp) > 60 %}
 
 {% endif -%}
 
-{%- if exists("derivedClasses") %}**Inherited by** {% for child in derivedClasses %}{% if existsIn(child, "url") %}[{{stripNamespace(child.name)}}]({{child.url}}){% else %}{{child.name}}{% endif %}{% if not loop.is_last %}, {% endif %}{% endfor %}
+{%- if exists("derivedClasses") -%}
+**Inherited by**: `{{ stripNamespace(title) }}` is a base class for
+{%- for child in derivedClasses -%}{% if not loop.is_first and length(derivedClasses) > 2 %}, {% endif %}{%- if loop.is_last and length(derivedClasses) > 1 %} and {% endif -%}
+{% if existsIn(child, "url") %}[{{stripNamespace(child.name)}}]({{child.url}}){% else %}{{child.name}}{% endif %}{% endfor %}
 
 {% endif -%}
 
