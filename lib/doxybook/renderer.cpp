@@ -163,6 +163,7 @@ doxybook::renderer::renderer(
         });
 
     env_->add_callback("split", 2, [](inja::Arguments& args) -> nlohmann::json {
+        // split("a,b,c", ",") -> ["a", "b", "c"]
         const auto arg0 = args.at(0)->get<std::string>();
         const auto arg1 = args.at(1)->get<std::string>();
         nlohmann::json ret = nlohmann::json::array();
@@ -177,6 +178,7 @@ doxybook::renderer::renderer(
         2,
         [](inja::Arguments& args) -> nlohmann::json {
             // split all elements of array
+            // splitAll(["a,b", "c"], ",") -> ["a", "b", "c"]
             const auto str_range = *args.at(0);
             const auto delim = args.at(1)->get<std::string>();
             nlohmann::json ret = nlohmann::json::array();

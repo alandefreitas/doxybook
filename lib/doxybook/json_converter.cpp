@@ -212,6 +212,9 @@ doxybook::json_converter::convert(node const& node, node::data const& data)
     if (!data.includes.empty()) {
         json["includes"] = data.includes;
     }
+    if (!data.requiresclause.empty()) {
+        json["requiresclause"] = data.requiresclause;
+    }
     if (!data.type.empty()) {
         json["type"] = data.type;
     }
@@ -311,6 +314,7 @@ doxybook::json_converter::convert(node const& node, node::data const& data)
         for (auto const& param: data.template_params) {
             json["templateParams"].push_back(convert(param));
         }
+        json["templateParamsString"] = data.template_params_string;
     }
     if (data.reimplements) {
         json["reimplements"] = convert(*data.reimplements);
@@ -358,11 +362,14 @@ doxybook::json_converter::convert(node const& node, node::data const& data)
 
 nlohmann::json
 doxybook::json_converter::get_as_json(node const& node) const {
-    auto [data, childrenDataMap] = node.load_data(
+    doxybook::node::load_data_result r = node.load_data(
         config_,
         plain_printer_,
         markdown_printer_,
         doxygen_.get_cache());
+    node::data& data = std::get<0>(r);
+    std::unordered_map<std::string, node::data>& childrenDataMap = std::get<1>(
+        r);
 
     nlohmann::json json = convert(node);
     nlohmann::json dataJson = convert(node, data);

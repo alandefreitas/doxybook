@@ -480,17 +480,20 @@ createTableForAttributeLike(
     ss << "| {% if existsIn(child, \"brief\") %}";
     ss << "{{child.brief}}";
     ss << "{% else if existsIn(child, \"type\") %}";
-    ss << "{% if child.typePlain == \"__see_below__\" or startsWith(child.typePlain, \"detail::\") %}";
+    ss << "{% if child.typePlain == \"__see_below__\" or "
+          "startsWith(child.typePlain, \"detail::\") %}";
     ss << "`/* see below */`";
     ss << "{% else %}";
-    ss << "{% if child.type != child.typePlain %}{{child.type}}{% else %}`{{ child.typePlain }}`{% endif %}";
+    ss << "{% if child.type != child.typePlain %}{{child.type}}{% else %}`{{ "
+          "child.typePlain }}`{% endif %}";
     ss << "{% endif %}";
     ss << "{% else %}";
     ss << "{{child.name}}";
     ss << "{% endif %}";
     ss << "<br> ";
     // properties
-    ss << "<sup><span style=\"color:green\">(" << visibility << " {{ getOr(child, \"kind\", \"\") }}"
+    ss << "<sup><span style=\"color:green\">(" << visibility
+       << " {{ getOr(child, \"kind\", \"\") }}"
           "{% if existsIn(child, \"templateParams\") %} "
           "template{% endif %}"
           ")</span></sup> |\n";
@@ -907,6 +910,11 @@ template <{% for param in templateParams %}{{param.typePlain}} {{param.name}}{% 
 {% endfor %}
 {% endif -%}
 
+{% if kind in ["concept"] -%}
+```{% if exists(language) %}{{language}}{% else %}cpp{% endif %}
+{% if exists("initializer") %}{{ trim(initializer) }}{% endif %};
+```{% endif -%}
+
 {% if kind in ["variable", "property", "enum constant"] -%}
 ```{% if exists(language) %}{{language}}{% else %}cpp{% endif %}
 {% if static %}static {% endif -%}
@@ -920,8 +928,8 @@ template <{% for param in templateParams %}{{param.typePlain}} {{param.name}}{% 
 
 {% if kind == "using" -%}
 ```{% if exists(language) %}{{language}}{% else %}cpp{% endif %}
-{% if exists("templateParams") -%}{% set allTemp = implode(templateParams, "typePlain", ", ") + implode(templateParams, "defvalPlain", "= ") %}
-template <{% for param in templateParams %}{% if length(allTemp) > 60 %}
+{% if exists("templateParams") -%}
+template <{% for param in templateParams %}{% if length(templateParamsString) > 60 %}
     {% endif %}{{param.typePlain}}{% if existsNonEmptyIn(param, "name") %} {{param.name}}{% endif %}{% if existsIn(param, "defvalPlain") %} = {{param.defvalPlain}}{% endif -%}
 {% if not loop.is_last %}, {% endif %}{% endfor %}>
 {% endif -%}
@@ -979,19 +987,27 @@ static const std::string TEMPLATE_MEMBER_OVERLOADS_DETAILS =
 {% for overload in overloads %}
 ```{% if existsNonEmptyIn(overload, "language") %}{{overload.language}}{% else %}cpp{% endif %} {% if length(overloads) > 1 %} title="({{ loop.index1 }})" {% endif %}
 {% if existsIn(overload, "templateParams") -%}
-template <{% for param in overload.templateParams %}{{param.typePlain}}{% if not isEmpty(param.name) %} {{param.name}}{% endif %}{% if existsIn(param, "defvalPlain") %} ={{param.defvalPlain}}{% endif -%}
+template <{% for param in overload.templateParams %}{% if length(overload.templateParamsString) > 60 %}
+    {% endif %}{{param.typePlain}}{% if not isEmpty(param.name) %} {{param.name}}{% endif %}{% if existsIn(param, "defvalPlain") %} ={{param.defvalPlain}}{% endif -%}
 {% if not loop.is_last %}, {% endif %}{% endfor %}>
 {% endif -%}
 
+{% if existsIn(overload, "requiresclause") -%}
+requires {% if overload.requiresclause in ["__implementation_defined__", "__see_below__"] or startsWith(overload.requiresclause, "detail::") or startsWith(overload.requiresclause, "(") -%}
+/* see requirements below */
+{% else -%}
+{{ trimAll(overload.requiresclause) }}
+{% endif %}{% endif -%}
 {% if overload.language == "java" %}{{visibility}} {% endif -%}
 {% if overload.static %}static {% endif -%}
 {% if overload.explicit %}explicit {% endif -%}
 {% if overload.virtual %}virtual {% endif -%}
 
 {%- if existsIn(overload, "typePlain") -%}
-{%- if overload.typePlain in ["__implementation_defined__", "__see_below__", "__see_below__", "auto", "decltype(auto)"] or startsWith(overload.typePlain, "detail::") -%}
+{%- if overload.typePlain in ["__implementation_defined__", "__see_below__", "auto", "decltype(auto)"] or startsWith(overload.typePlain, "detail::") -%}
 /* see return type below */{% else if overload.typePlain in ["decltype(auto) constexpr", "constexpr __see_below__"] or startsWith(overload.typePlain, "constexpr detail::") -%}
-constexpr /* see return type below */{% else -%}
+constexpr
+/* see return type below */{% else -%}
 {{- overload.typePlain -}}
 {%- endif %}
 {% endif %}{{overload.name}}{% if length(overload.params) > 0 -%}
@@ -1348,8 +1364,8 @@ static const std::string TEMPLATE_KIND_CLASS =
 {% include "breadcrumbs" %}
 
 ```cpp
-{% if exists("templateParams") -%}{% set allTemp = implode(templateParams, "typePlain", ", ") + implode(templateParams, "defvalPlain", "= ") %}
-template <{% for param in templateParams %}{% if length(allTemp) > 60 %}
+{% if exists("templateParams") -%}
+template <{% for param in templateParams %}{% if length(templateParamsString) > 60 %}
     {% endif %}{{param.typePlain}}{% if existsNonEmptyIn(param, "name") %} {{param.name}}{% endif %}{% if existsIn(param, "defvalPlain") %} = {{param.defvalPlain}}{% endif -%}
 {% if not loop.is_last %}, {% endif -%}
 {% endfor %}> {% endif %}

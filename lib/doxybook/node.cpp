@@ -326,6 +326,70 @@ doxybook::node::parse_inheritance_info(xml::element const& element) {
     });
 }
 
+std::string
+doxybook::node::anchorMaker(const struct config& config, node const& node) {
+    if (!node.is_structured() && node.kind_ != kind::MODULE) {
+        return "#" + utils::to_lower(to_str(node.kind_)) + "-"
+               + utils::safe_anchor_id(
+                   node.name_,
+                   config.replaceUnderscoresInAnchors);
+    } else {
+        return std::string("");
+    }
+};
+
+std::string
+doxybook::node::urlFolderMaker(const struct config& config, node const& node) {
+    if (config.use_folders) {
+        return config.base_url + type_to_folder_name(config, node.type_) + "/";
+    } else {
+        return config.base_url;
+    }
+};
+
+std::string
+doxybook::node::urlMaker(const struct config& config, node const& node) {
+    switch (node.kind_) {
+    case kind::STRUCT:
+    case kind::CLASS:
+    case kind::NAMESPACE:
+    case kind::MODULE:
+    case kind::DIR:
+    case kind::FILE:
+    case kind::PAGE:
+    case kind::INTERFACE:
+    case kind::EXAMPLE:
+    case kind::UNION:
+    case kind::JAVAENUM:
+    {
+        if (node.refid_ == config.main_page_name) {
+            if (config.main_page_in_root) {
+                return config.base_url;
+            } else {
+                return urlFolderMaker(config, node);
+            }
+        }
+        return urlFolderMaker(config, node) + utils::strip_anchor(node.refid_)
+               + config.link_suffix + anchorMaker(config, node);
+    }
+    case kind::ENUMVALUE:
+    {
+        auto const n = node.parent_->parent_;
+        return urlFolderMaker(config, *n) + utils::strip_anchor(n->refid_)
+               + config.link_suffix + anchorMaker(config, node);
+    }
+    default:
+    {
+        auto* n = node.parent_;
+        if (node.group_) {
+            n = node.group_;
+        }
+        return urlFolderMaker(config, *n) + utils::strip_anchor(n->refid_)
+               + config.link_suffix + anchorMaker(config, node);
+    }
+    }
+};
+
 void
 doxybook::node::finalize(
     config const& config,
@@ -339,72 +403,6 @@ doxybook::node::finalize(
             return a->get_name() < b->get_name();
         });
     }
-
-    static auto const anchorMaker =
-        [](const struct config& config, node const& node) {
-        if (!node.is_structured() && node.kind_ != kind::MODULE) {
-            return "#" + utils::to_lower(to_str(node.kind_)) + "-"
-                   + utils::safe_anchor_id(
-                       node.name_,
-                       config.replaceUnderscoresInAnchors);
-        } else {
-            return std::string("");
-        }
-    };
-
-    static auto const urlFolderMaker =
-        [](const struct config& config, node const& node) {
-        if (config.use_folders) {
-            return config.base_url + type_to_folder_name(config, node.type_)
-                   + "/";
-        } else {
-            return config.base_url;
-        }
-    };
-
-    static auto const urlMaker =
-        [](const struct config& config, node const& node) {
-        switch (node.kind_) {
-        case kind::STRUCT:
-        case kind::CLASS:
-        case kind::NAMESPACE:
-        case kind::MODULE:
-        case kind::DIR:
-        case kind::FILE:
-        case kind::PAGE:
-        case kind::INTERFACE:
-        case kind::EXAMPLE:
-        case kind::UNION:
-        case kind::JAVAENUM:
-        {
-            if (node.refid_ == config.main_page_name) {
-                if (config.main_page_in_root) {
-                    return config.base_url;
-                } else {
-                    return urlFolderMaker(config, node);
-                }
-            }
-            return urlFolderMaker(config, node)
-                   + utils::strip_anchor(node.refid_) + config.link_suffix
-                   + anchorMaker(config, node);
-        }
-        case kind::ENUMVALUE:
-        {
-            const auto n = node.parent_->parent_;
-            return urlFolderMaker(config, *n) + utils::strip_anchor(n->refid_)
-                   + config.link_suffix + anchorMaker(config, node);
-        }
-        default:
-        {
-            auto* n = node.parent_;
-            if (node.group_) {
-                n = node.group_;
-            }
-            return urlFolderMaker(config, *n) + utils::strip_anchor(n->refid_)
-                   + config.link_suffix + anchorMaker(config, node);
-        }
-        }
-    };
 
     // Fix group linking
     if (!group_ && refid_.find("group__") == 0) {
@@ -422,9 +420,13 @@ doxybook::node::finalize(
         temp_.reset();
 
         anchor_ = anchorMaker(config, *this);
-        url_ = urlMaker(config, *this);
-        if (config.link_lowercase) {
-            url_ = utils::to_lower(url_);
+        // can't create url for concept yet because it's a compound element with
+        // no valid parent
+        if (kind_ != kind::CONCEPT) {
+            url_ = urlMaker(config, *this);
+            if (config.link_lowercase) {
+                url_ = utils::to_lower(url_);
+            }
         }
 
         auto const findOrNull = [&](std::string const& ref_id) -> node const* {
@@ -501,7 +503,8 @@ doxybook::node::load_data(
                       .first;
 
             if (childPtr->kind_ == kind::TYPEDEF
-                || childPtr->kind_ == kind::VARIABLE)
+                || childPtr->kind_ == kind::VARIABLE
+                || childPtr->kind_ == kind::CONCEPT)
             {
                 it->second.type += it->second.args_string;
                 it->second.type_plain += it->second.args_string;
@@ -531,8 +534,48 @@ doxybook::node::load_data(
         sectiondef = sectiondef.next_sibling_element("sectiondef");
     }
 
+    // load children data for concepts
+    for (auto& c: children_) {
+        if (c->kind_ != kind::CONCEPT) {
+            continue;
+        }
+        auto const childRefid = c->refid_;
+        class xml concept_xml(c->xml_path_);
+        auto concept_root = assert_child(concept_xml, "doxygen");
+        auto concept_compounddef = assert_child(concept_root, "compounddef");
+        auto const it
+            = childrenData
+                  .insert(std::make_pair(
+                      childRefid,
+                      load_data(
+                          config,
+                          plainPrinter,
+                          markdownPrinter,
+                          cache,
+                          concept_compounddef)))
+                  .first;
+
+        it->second.type += it->second.args_string;
+        it->second.type_plain += it->second.args_string;
+    }
+
     return { data, childrenData };
 }
+
+std::string_view
+trim(std::string_view str) {
+    auto p1 = str.find_first_not_of(" \n\r\t");
+    if (p1 == std::string::npos) {
+        p1 = 0;
+    }
+    auto p2 = str.find_last_not_of(" \n\r\t");
+    if (p2 == std::string::npos) {
+        p2 = str.size();
+    } else {
+        ++p2;
+    }
+    return str.substr(p1, p2 - p1);
+};
 
 doxybook::node::data
 doxybook::node::load_data(
@@ -543,6 +586,7 @@ doxybook::node::load_data(
     xml::element const& element) const {
     data data;
 
+    bool is_concept = element.get_attr("kind", "") == "concept";
     data.is_abstract = element.get_attr("abstract", "no") == "yes";
     data.is_static = element.get_attr("static", "no") == "yes";
     data.is_strong = element.get_attr("strong", "no") == "yes";
@@ -571,10 +615,47 @@ doxybook::node::load_data(
     if (definition && definition.has_text()) {
         data.definition = definition.get_text();
     }
+    auto requiresclause = element.first_child_element("requiresclause");
+    if (requiresclause && requiresclause.has_text()) {
+        data.requiresclause = trim(requiresclause.get_text());
+    }
     auto initializer = element.first_child_element("initializer");
     if (initializer) {
         data.initializer = plainPrinter.print(
             xml_text_parser::parse_para(initializer));
+        if (is_concept && !data.initializer.empty()) {
+            // find the namespace we should remove from the concept initializer
+            std::string ns;
+            if (kind_ == kind::NAMESPACE) {
+                ns = name_;
+            } else {
+                std::string id = element.get_attr("id", "");
+                if (!id.empty()) {
+                    auto it = cache.find(id);
+                    if (it != cache.end()
+                        && it->second->parent_->kind_ == kind::NAMESPACE)
+                    {
+                        ns = it->second->parent_->name_;
+                    }
+                }
+            }
+            std::string r = "concept " + ns + "::";
+            auto pos = data.initializer.find(r);
+            if (pos != std::string::npos) {
+                data.initializer.erase(pos + 8, ns.size() + 2);
+            }
+            // remove consecutive spaces since we're here
+            std::size_t k = 1;
+            for (std::size_t i = 1; i < data.initializer.size(); ++i) {
+                if (data.initializer[i] == ' '
+                    && data.initializer[i - 1] == ' ')
+                {
+                    continue;
+                }
+                data.initializer[k++] = data.initializer[i];
+            }
+            data.initializer.resize(k);
+        }
     }
 
     auto const argsstring = element.first_child_element("argsstring");
@@ -749,6 +830,16 @@ doxybook::node::load_data(
                 templateParam.def_val_plain = plainPrinter.print(
                     xml_text_parser::parse_para(defval));
             }
+            if (!data.template_params.empty()) {
+                data.template_params_string += ", ";
+            }
+            data.template_params_string += templateParam.type_plain;
+            data.template_params_string += ' ';
+            data.template_params_string += templateParam.name;
+            if (!templateParam.def_val_plain.empty()) {
+                data.template_params_string += " = ";
+                data.template_params_string += templateParam.def_val_plain;
+            }
             data.template_params.push_back(std::move(templateParam));
             param = param.next_sibling_element("param");
         }
@@ -765,9 +856,36 @@ doxybook::node::load_data(
             data.type_plain = data.type_plain.substr(7);
         }
 
-        if (this->kind_ == kind::TYPEDEF || this->kind_ == kind::VARIABLE) {
+        if (this->kind_ == kind::TYPEDEF || this->kind_ == kind::VARIABLE
+            || this->kind_ == kind::CONCEPT)
+        {
             data.type += data.args_string;
             data.type_plain += data.args_string;
+        }
+    }
+
+    // workaround for a bug in doxygen, which includes
+    // part of the requiresclause in the type
+    // requires '<>::value' 'void'
+    // becomes:
+    // requires '<>' and type '::value void'
+    if (!data.requiresclause.empty() && !data.type.empty()
+        && !data.type_plain.empty())
+    {
+        std::string_view typesv(data.type);
+        std::string_view type_plainsv(data.type_plain);
+        if (typesv.substr(0, 2) == "::" && type_plainsv.substr(0, 2) == "::") {
+            auto pend1 = typesv.find(' ');
+            auto pend2 = type_plainsv.find(' ');
+            if (pend1 != std::string_view::npos
+                && pend2 != std::string_view::npos)
+            {
+                // move prefix to requiresclause
+                std::string_view prefix = typesv.substr(0, pend1);
+                data.requiresclause += prefix;
+                data.type = trim(typesv.substr(pend1));
+                data.type_plain = trim(type_plainsv.substr(pend2));
+            }
         }
     }
 

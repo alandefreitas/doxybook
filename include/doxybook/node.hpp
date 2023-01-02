@@ -79,6 +79,7 @@ namespace doxybook {
             std::string definition;
             std::string args_string;
             std::string initializer;
+            std::string requiresclause;
             std::vector<class_reference> derived_classes;
             bool is_abstract{ false };
             bool is_static{ false };
@@ -97,6 +98,7 @@ namespace doxybook {
             std::string type_plain;
             std::string deprecated;
             std::vector<param> params;
+            std::string template_params_string;
             std::vector<param> template_params;
             std::vector<std::string> see;
             std::vector<std::string> returns;
@@ -388,6 +390,15 @@ namespace doxybook {
 
         static xml::element
         assert_child(xml const& xml, std::string const& name);
+
+        static std::string
+        anchorMaker(const struct config& config, node const& node);
+
+        static std::string
+        urlFolderMaker(const struct config& config, node const& node);
+
+        static std::string
+        urlMaker(const struct config& config, node const& node);
     };
 } // namespace doxybook
 

@@ -25,6 +25,7 @@ static const std::vector<kind_str_pair> KIND_STRS = {
     {    "interface", doxybook::kind::INTERFACE},
     {     "function",  doxybook::kind::FUNCTION},
     {     "variable",  doxybook::kind::VARIABLE},
+    {      "concept",   doxybook::kind::CONCEPT},
     {      "typedef",   doxybook::kind::TYPEDEF},
     {        "using",     doxybook::kind::USING},
     {         "enum",      doxybook::kind::ENUM},
@@ -224,6 +225,10 @@ doxybook::kind_to_type(const doxybook::kind kind) {
     {
         return type::ATTRIBUTES;
     }
+    case kind::CONCEPT:
+    {
+        return type::ATTRIBUTES;
+    }
     case kind::FUNCTION:
     {
         return type::FUNCTIONS;
@@ -325,6 +330,7 @@ doxybook::is_kind_language(const kind kind) {
     case doxybook::kind::USING:
     case doxybook::kind::FRIEND:
     case doxybook::kind::VARIABLE:
+    case doxybook::kind::CONCEPT:
     case doxybook::kind::SIGNAL:
     case doxybook::kind::SLOT:
     case doxybook::kind::PROPERTY:
@@ -391,9 +397,7 @@ doxybook::type_folder_category_to_folder_name(
     }
     default:
     {
-        throw EXCEPTION(
-            "folder_category {} not recognised!",
-            int(type));
+        throw EXCEPTION("folder_category {} not recognised!", int(type));
     }
     }
 }

@@ -26,6 +26,7 @@ namespace doxybook {
         INTERFACE,
         FUNCTION,
         VARIABLE,
+        CONCEPT,
         TYPEDEF,
         USING,
         FRIEND,
