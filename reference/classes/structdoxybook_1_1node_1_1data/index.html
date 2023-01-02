@@ -12,8 +12,10 @@
       
         <link rel="canonical" href="https://alandefreitas.github.io/doxybook/reference/classes/structdoxybook_1_1node_1_1data/">
       
+      
+      
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0">
     
     
       
@@ -21,11 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.975780f9.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.f79797b0.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.2505c338.min.css">
-        
       
       
 
@@ -485,6 +486,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#variable-requiresclause" class="md-nav__link">
+    variable requiresclause
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#variable-derived_classes" class="md-nav__link">
     variable derived_classes
   </a>
@@ -606,6 +614,13 @@
           <li class="md-nav__item">
   <a href="#variable-params" class="md-nav__link">
     variable params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-template_params_string" class="md-nav__link">
+    variable template_params_string
   </a>
   
 </li>
@@ -821,10 +836,9 @@
 
                   
 
-  <a href="https://github.com/alandefreitas/doxybook/edit/develop/docs/reference/classes/structdoxybook_1_1node_1_1data.md" title="Edit this page" class="md-content__button md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+  
+  
+
 
 
 <h1 id="doxybooknodedata">doxybook::node::data</h1>
@@ -855,6 +869,10 @@
 </tr>
 <tr>
 <td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1node_1_1data/#variable-initializer">initializer</a></strong></td>
+<td><code>std::string</code><br> <sup><span style="color:green">(public variable)</span></sup></td>
+</tr>
+<tr>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1node_1_1data/#variable-requiresclause">requiresclause</a></strong></td>
 <td><code>std::string</code><br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
@@ -928,6 +946,10 @@
 <tr>
 <td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1node_1_1data/#variable-params">params</a></strong></td>
 <td>std::vector&lt; <a href="/doxybook/reference/classes/structdoxybook_1_1node_1_1param/">param</a> &gt;<br> <sup><span style="color:green">(public variable)</span></sup></td>
+</tr>
+<tr>
+<td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1node_1_1data/#variable-template-params-string">template_params_string</a></strong></td>
+<td><code>std::string</code><br> <sup><span style="color:green">(public variable)</span></sup></td>
 </tr>
 <tr>
 <td><strong><a href="/doxybook/reference/classes/structdoxybook_1_1node_1_1data/#variable-template-params">template_params</a></strong></td>
@@ -1056,6 +1078,10 @@
 <p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">initializer</span><span class="p">;</span>
 </code></pre></div></p>
+<h3 id="variable-requiresclause">variable requiresclause</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">requiresclause</span><span class="p">;</span>
+</code></pre></div></p>
 <h3 id="variable-derived_classes">variable derived_classes</h3>
 <p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">class_reference</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">derived_classes</span><span class="p">;</span>
@@ -1127,6 +1153,10 @@
 <h3 id="variable-params">variable params</h3>
 <p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">param</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">params</span><span class="p">;</span>
+</code></pre></div></p>
+<h3 id="variable-template_params_string">variable template_params_string</h3>
+<p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">template_params_string</span><span class="p">;</span>
 </code></pre></div></p>
 <h3 id="variable-template_params">variable template_params</h3>
 <p><sup>Defined in header <a href="/doxybook/reference/files/node_8hpp/#file-node.hpp"><code>&lt;doxybook/node.hpp&gt;</code></a></sup>
@@ -1237,7 +1267,7 @@
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">program_listing</span><span class="p">;</span>
 </code></pre></div></p>
 <hr />
-<p><sub>Updated on 2023-01-01</sub></p>
+<p><sub>Updated on 2023-01-02</sub></p>
 
 
   
@@ -1324,10 +1354,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.5cf534bf.min.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
@@ -1337,7 +1367,6 @@
       
         <script src="../../../javascripts/extra.js"></script>
       
-    
     
   </body>
 </html>

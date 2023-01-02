@@ -143,7 +143,6 @@ Different type of audio formats.
 
 <sup>Defined in header [`<src/Audio/AudioBuffer.hpp>`](/files/AudioBuffer_8hpp.md#file-audiobuffer.hpp)</sup>
 ```cpp
-
 template <typename T>
 using AudioData = Utils::ArrayView< T >;
 ```
@@ -616,4 +615,4 @@ void Audio::doSomething(AudioBuffer & buffer);
 
 -------------------------------
 
-<sub>Updated on 2023-01-01</sub>
+<sub>Updated on 2023-01-02</sub>
