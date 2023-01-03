@@ -21,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/namespaces/namespaceengine_1_1assets/</guid>
-      <description>Engine::Assets # Classes # Classes Description Asset Engine::Assets::Asset (class) Updated on 2023-01-01</description>
+      <description>Engine::Assets # Classes # Classes Description Asset Engine::Assets::Asset (class) Updated on 2023-01-03</description>
     </item>
     
     <item>
@@ -52,7 +52,7 @@ Basic exception guarantee.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/namespaces/namespaceengine_1_1gui/</guid>
-      <description>Engine::Gui # Classes # Classes Description GuiWidget Some generic gui widget class. (class) Updated on 2023-01-01</description>
+      <description>Engine::Gui # Classes # Classes Description GuiWidget Some generic gui widget class. (class) Updated on 2023-01-03</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@ Basic exception guarantee.</description>
       <description>Engine::Utils # Namespaces # Name Description Engine::Utils::Path Filesystem path utility functions. Classes # Classes Description ArrayView Filesystem path utility functions. (class) Functions # Member Functions Description name_with_underscores (function) Functions # function name_with_underscores # Defined in header &amp;lt;src/Utils/Utils.hpp&amp;gt;
 void name_with_underscores(const std::string &amp;amp; arg); Exception Safety
 Basic exception guarantee.
-Updated on 2023-01-01</description>
+Updated on 2023-01-03</description>
     </item>
     
     <item>
@@ -82,7 +82,7 @@ Updated on 2023-01-01</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/namespaces/namespacestd/</guid>
-      <description>std # Updated on 2023-01-01</description>
+      <description>std # Updated on 2023-01-03</description>
     </item>
     
   </channel>

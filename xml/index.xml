@@ -71,6 +71,7 @@
     <member refid="structdoxybook_1_1node_1_1data_1af678e473c9a89da79e063011e209e8b9" kind="variable"><name>definition</name></member>
     <member refid="structdoxybook_1_1node_1_1data_1a80ad6c02c3d45c3bd286c08aa2d8e871" kind="variable"><name>args_string</name></member>
     <member refid="structdoxybook_1_1node_1_1data_1ad08b07469b26d9665142dd79a783c8c2" kind="variable"><name>initializer</name></member>
+    <member refid="structdoxybook_1_1node_1_1data_1a61ce4e03b6b382c2034dbf63779c67d9" kind="variable"><name>requiresclause</name></member>
     <member refid="structdoxybook_1_1node_1_1data_1ac550a0cc3a910cc708e543ea19d3b643" kind="variable"><name>derived_classes</name></member>
     <member refid="structdoxybook_1_1node_1_1data_1aab69122f9b075d518838467744cbbfaa" kind="variable"><name>is_abstract</name></member>
     <member refid="structdoxybook_1_1node_1_1data_1abfc48e8895940efd077bfb8d0709a01b" kind="variable"><name>is_static</name></member>
@@ -89,6 +90,7 @@
     <member refid="structdoxybook_1_1node_1_1data_1acf9bf9e093add304a324b8f0509d5675" kind="variable"><name>type_plain</name></member>
     <member refid="structdoxybook_1_1node_1_1data_1a3ff014499555de318052c4d41c240a98" kind="variable"><name>deprecated</name></member>
     <member refid="structdoxybook_1_1node_1_1data_1a02170879cf97c96855402da0e6a5d7f8" kind="variable"><name>params</name></member>
+    <member refid="structdoxybook_1_1node_1_1data_1a5b9d3a4d3d8e620b5f073177f4143afb" kind="variable"><name>template_params_string</name></member>
     <member refid="structdoxybook_1_1node_1_1data_1af43d0917abf43b7f076afdf5d42702ea" kind="variable"><name>template_params</name></member>
     <member refid="structdoxybook_1_1node_1_1data_1aa970ae05900a7ab333f4f617314b5770" kind="variable"><name>see</name></member>
     <member refid="structdoxybook_1_1node_1_1data_1a6de1afee815800899a9ffb256c8cec15" kind="variable"><name>returns</name></member>
@@ -273,6 +275,9 @@
     <member refid="classdoxybook_1_1node_1a1a6f71f5f7aea63916e3d68433ee46f5" kind="function"><name>find_recursively</name></member>
     <member refid="classdoxybook_1_1node_1a71a693a3b0bbcd636b024a577bba694e" kind="function"><name>assert_child</name></member>
     <member refid="classdoxybook_1_1node_1ad0c82ac9db961b7c3e03765ed1e50fb6" kind="function"><name>assert_child</name></member>
+    <member refid="classdoxybook_1_1node_1a4990c3ad1e2200b613510d12aaf45e60" kind="function"><name>anchorMaker</name></member>
+    <member refid="classdoxybook_1_1node_1a78566d05ab708c2176066c93585998ee" kind="function"><name>urlFolderMaker</name></member>
+    <member refid="classdoxybook_1_1node_1add9740482062104cce1211d2227c3dc0" kind="function"><name>urlMaker</name></member>
   </compound>
   <compound refid="classdoxybook_1_1xml_1_1node" kind="class"><name>doxybook::xml::node</name>
     <member refid="classdoxybook_1_1xml_1_1node_1ab6bc59ae652afd586b446da8024187cb" kind="variable"><name>ptr</name></member>
@@ -440,6 +445,7 @@
     <member refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a596acbde60b98295256f8e4073a8e341" kind="enumvalue"><name>INTERFACE</name></member>
     <member refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a6a72a6a776662a244f82d31e9274a07b" kind="enumvalue"><name>FUNCTION</name></member>
     <member refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95ae61ad9b2553a293b4a3f4d3b4fa5ab31" kind="enumvalue"><name>VARIABLE</name></member>
+    <member refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a7b01b9814e77b3f808c6ddb9ffa1b666" kind="enumvalue"><name>CONCEPT</name></member>
     <member refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a95fbf728908187e4bb160a31525824d5" kind="enumvalue"><name>TYPEDEF</name></member>
     <member refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a912f09aa71e8a2b72e8fbb762bb2b0ad" kind="enumvalue"><name>USING</name></member>
     <member refid="namespacedoxybook_1a4cb2e823b471c914cf27cac27e7dbb95a471e11502a3cc3a519644984935691e8" kind="enumvalue"><name>FRIEND</name></member>
