@@ -644,10 +644,17 @@ doxybook::node::load_data(
             if (pos != std::string::npos) {
                 data.initializer.erase(pos + 8, ns.size() + 2);
             }
-            // remove consecutive spaces since we're here
+            // remove consecutive spaces up to the second line since we're here
+            // doxygen tends to include erroneous whitespace in the first two
+            // lines declaring the concept. After the third line, we usually
+            // have user-defined indentation
             std::size_t k = 1;
+            std::size_t line_breaks = 0;
             for (std::size_t i = 1; i < data.initializer.size(); ++i) {
-                if (data.initializer[i] == ' '
+                if (data.initializer[i] == '\n') {
+                    line_breaks++;
+                }
+                if (line_breaks < 2 && data.initializer[i] == ' '
                     && data.initializer[i - 1] == ' ')
                 {
                     continue;
