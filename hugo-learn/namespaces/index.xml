@@ -22,7 +22,7 @@
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/namespaces/namespaceengine_1_1assets/</guid>
       <description>Engine::Assets Namespace Reference
-Classes Classes Description Asset Engine::Assets::Asset (class) Updated on 2023-01-03</description>
+Classes Classes Description Asset Engine::Assets::Asset (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -47,7 +47,7 @@ Classes Classes Description Framebuffer Engine::Graphics::Framebuffer (class) Ha
 int getHandle(Handle &amp;amp; handle); Some namespace inline function.
 Exception Safety
 Basic exception guarantee.
-Updated on 2023-01-03</description>
+Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -57,7 +57,7 @@ Updated on 2023-01-03</description>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/namespaces/namespaceengine_1_1gui/</guid>
       <description>Engine::Gui Namespace Reference
-Classes Classes Description GuiWidget Some generic gui widget class. (class) Updated on 2023-01-03</description>
+Classes Classes Description GuiWidget Some generic gui widget class. (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -70,7 +70,7 @@ Classes Classes Description GuiWidget Some generic gui widget class. (class) Upd
 Namespaces Name Description Engine::Utils::Path Filesystem path utility functions. Classes Classes Description ArrayView Filesystem path utility functions. (class) Functions Member Functions Description name_with_underscores (function) Functions function name_with_underscores Defined in header &amp;lt;src/Utils/Utils.hpp&amp;gt;
 void name_with_underscores(const std::string &amp;amp; arg); Exception Safety
 Basic exception guarantee.
-Updated on 2023-01-03</description>
+Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -89,7 +89,7 @@ Updated on 2023-01-03</description>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/namespaces/namespacestd/</guid>
       <description>std Namespace Reference
-Updated on 2023-01-03</description>
+Updated on 2023-01-04</description>
     </item>
     
   </channel>

@@ -38,7 +38,7 @@ struct Engine::Assets::Asset::Event::Loaded loaded; variable unloaded # Defined 
       <description>Engine::Assets::Asset::Event::Loaded # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
 struct Loaded; Public Attributes # Member Public Attributes Description success bool (public variable) usage int (public variable) Public Attributes # variable success # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
 bool success; variable usage # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
-int usage; Updated on 2023-01-03</description>
+int usage; Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@ int usage; Updated on 2023-01-03</description>
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1unloaded/</guid>
       <description>Engine::Assets::Asset::Event::Unloaded # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
 struct Unloaded; Public Attributes # Member Public Attributes Description success bool (public variable) Public Attributes # variable success # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
-bool success; Updated on 2023-01-03</description>
+bool success; Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -62,7 +62,7 @@ bool success; Updated on 2023-01-03</description>
 struct Waiting; Public Attributes # Member Public Attributes Description other The pointer to the other asset this asset is waiting for. (public variable) Public Attributes # variable other # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
 Asset * other; The pointer to the other asset this asset is waiting for.
 Note: May be null
-Updated on 2023-01-03</description>
+Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -107,7 +107,7 @@ Basic exception guarantee.
 function what # Defined in header &amp;lt;src/Exception.hpp&amp;gt;
 const char * what() const override; Exception Safety
 Basic exception guarantee.
-Updated on 2023-01-03</description>
+Updated on 2023-01-04</description>
     </item>
     
     <item>

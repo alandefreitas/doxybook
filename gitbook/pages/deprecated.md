@@ -28,4 +28,4 @@ Class [Engine::Graphics::Texture3D](/classes/classEngine_1_1Graphics_1_1Texture3
 
 -------------------------------
 
-<sub>Updated on 2023-01-03</sub>
+<sub>Updated on 2023-01-04</sub>
