@@ -22,7 +22,7 @@
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/pages/advanced/</guid>
       <description>Advanced Usage # This page is for advanced users. Make sure you have first read the introduction.
-Updated on 2023-01-02</description>
+Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -51,7 +51,7 @@ Updated on 2023-01-02</description>
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/pages/bug/</guid>
       <description>Bug List # Class Engine::Audio::AudioBuffer
 Some random bug Some other random bug Class Engine::Graphics::Texture
-This has some weird bug too! Updated on 2023-01-02</description>
+This has some weird bug too! Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@ This has some weird bug too! Updated on 2023-01-02</description>
 Use the AudioBuffer::setCallback2 instead Member Engine::Audio::AudioBuffer::setData (const TypedAudioData data[], size_t size)
 Use the AudioBuffer::setDataMultiple instead Member Engine::Audio::Callback )(AudioBuffer &amp;amp;buffer, size_t offset)
 Use the Audio::Callback2 instead Class Engine::Graphics::Texture3D
-Don&amp;rsquo;t use this texture type Updated on 2023-01-02</description>
+Don&amp;rsquo;t use this texture type Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -82,7 +82,7 @@ Don&amp;rsquo;t use this texture type Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/namespaces/namespaceengine_1_1assets/</guid>
-      <description>Engine::Assets # Classes # Classes Description Asset Engine::Assets::Asset (class) Updated on 2023-01-02</description>
+      <description>Engine::Assets # Classes # Classes Description Asset Engine::Assets::Asset (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -117,7 +117,7 @@ struct Engine::Assets::Asset::Event::Loaded loaded; variable unloaded # Defined 
       <description>Engine::Assets::Asset::Event::Loaded # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
 struct Loaded; Public Attributes # Member Public Attributes Description success bool (public variable) usage int (public variable) Public Attributes # variable success # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
 bool success; variable usage # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
-int usage; Updated on 2023-01-02</description>
+int usage; Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -128,7 +128,7 @@ int usage; Updated on 2023-01-02</description>
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/classes/structengine_1_1assets_1_1asset_1_1event_1_1unloaded/</guid>
       <description>Engine::Assets::Asset::Event::Unloaded # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
 struct Unloaded; Public Attributes # Member Public Attributes Description success bool (public variable) Public Attributes # variable success # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
-bool success; Updated on 2023-01-02</description>
+bool success; Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -141,7 +141,7 @@ bool success; Updated on 2023-01-02</description>
 struct Waiting; Public Attributes # Member Public Attributes Description other The pointer to the other asset this asset is waiting for. (public variable) Public Attributes # variable other # Defined in header &amp;lt;src/Assets/Asset.hpp&amp;gt;
 Asset * other; The pointer to the other asset this asset is waiting for.
 Note: May be null
-Updated on 2023-01-02</description>
+Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -196,7 +196,7 @@ Basic exception guarantee.
 function what # Defined in header &amp;lt;src/Exception.hpp&amp;gt;
 const char * what() const override; Exception Safety
 Basic exception guarantee.
-Updated on 2023-01-02</description>
+Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -272,7 +272,7 @@ Public Functions # Member Functions Description (constructor) (function) (destru
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/namespaces/namespaceengine_1_1gui/</guid>
-      <description>Engine::Gui # Classes # Classes Description GuiWidget Some generic gui widget class. (class) Updated on 2023-01-02</description>
+      <description>Engine::Gui # Classes # Classes Description GuiWidget Some generic gui widget class. (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -293,7 +293,7 @@ Public Functions # Member Functions Description (constructor) (function) (destru
       <description>Engine::Utils # Namespaces # Name Description Engine::Utils::Path Filesystem path utility functions. Classes # Classes Description ArrayView Filesystem path utility functions. (class) Functions # Member Functions Description name_with_underscores (function) Functions # function name_with_underscores # Defined in header &amp;lt;src/Utils/Utils.hpp&amp;gt;
 void name_with_underscores(const std::string &amp;amp; arg); Exception Safety
 Basic exception guarantee.
-Updated on 2023-01-02</description>
+Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -348,7 +348,7 @@ Updated on 2023-01-02</description>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/pages/intro/</guid>
       <description>Introduction # This page introduces the user to the topic. Now you can proceed to the advanced section.
-Updated on 2023-01-02</description>
+Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -375,7 +375,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/dir_68267d1309a1af8e8297ef4c3efbcdba/</guid>
-      <description>src # Directories # Directories Description src/Assets src/Audio src/Graphics src/Gui src/Utils Files # Files Description src/Engine.hpp src/Exception.hpp Updated on 2023-01-02</description>
+      <description>src # Directories # Directories Description src/Assets src/Audio src/Graphics src/Gui src/Utils Files # Files Description src/Engine.hpp src/Exception.hpp Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -384,7 +384,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/dir_e0c1ede47f21c4a643a1257f949f98e0/</guid>
-      <description>src/Assets # Files # Files Description src/Assets/Asset.hpp src/Assets/Assets.hpp Updated on 2023-01-02</description>
+      <description>src/Assets # Files # Files Description src/Assets/Asset.hpp src/Assets/Assets.hpp Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -393,7 +393,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/asset_8hpp/</guid>
-      <description>src/Assets/Asset.hpp # #include &amp;lt;src/Assets/Asset.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Assets Classes # Classes Description Asset Engine::Assets::Asset (class) Event Engine::Assets::Asset::Event (union) Loaded Engine::Assets::Asset::Event::Loaded (struct) Unloaded Engine::Assets::Asset::Event::Unloaded (struct) Waiting Engine::Assets::Asset::Event::Waiting (struct) Updated on 2023-01-02</description>
+      <description>src/Assets/Asset.hpp # #include &amp;lt;src/Assets/Asset.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Assets Classes # Classes Description Asset Engine::Assets::Asset (class) Event Engine::Assets::Asset::Event (union) Loaded Engine::Assets::Asset::Event::Loaded (struct) Unloaded Engine::Assets::Asset::Event::Unloaded (struct) Waiting Engine::Assets::Asset::Event::Waiting (struct) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -402,7 +402,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/assets_8hpp/</guid>
-      <description>src/Assets/Assets.hpp # #include &amp;lt;src/Assets/Assets.hpp&amp;gt; Updated on 2023-01-02</description>
+      <description>src/Assets/Assets.hpp # #include &amp;lt;src/Assets/Assets.hpp&amp;gt; Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -411,7 +411,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/dir_c64386e93f356b78d4612c7b7741707c/</guid>
-      <description>src/Audio # Files # Files Description src/Audio/Audio.hpp src/Audio/AudioBuffer.hpp src/Audio/AudioManager.hpp Updated on 2023-01-02</description>
+      <description>src/Audio # Files # Files Description src/Audio/Audio.hpp src/Audio/AudioBuffer.hpp src/Audio/AudioManager.hpp Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -420,7 +420,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/audio_8hpp/</guid>
-      <description>src/Audio/Audio.hpp # #include &amp;lt;src/Audio/Audio.hpp&amp;gt; Updated on 2023-01-02</description>
+      <description>src/Audio/Audio.hpp # #include &amp;lt;src/Audio/Audio.hpp&amp;gt; Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -429,7 +429,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/audiobuffer_8hpp/</guid>
-      <description>src/Audio/AudioBuffer.hpp # #include &amp;lt;src/Audio/AudioBuffer.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Audio Classes # Classes Description AudioBuffer A simple audio buffer to hold PCM samples (class) TypedAudioData Use this to populate the buffer. (struct) Updated on 2023-01-02</description>
+      <description>src/Audio/AudioBuffer.hpp # #include &amp;lt;src/Audio/AudioBuffer.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Audio Classes # Classes Description AudioBuffer A simple audio buffer to hold PCM samples (class) TypedAudioData Use this to populate the buffer. (struct) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -438,7 +438,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/audiomanager_8hpp/</guid>
-      <description>src/Audio/AudioManager.hpp # #include &amp;lt;src/Audio/AudioManager.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Audio Classes # Classes Description AudioManager An audio manager that accepts multiple Audio::AudioBuffer instances. (class) Updated on 2023-01-02</description>
+      <description>src/Audio/AudioManager.hpp # #include &amp;lt;src/Audio/AudioManager.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Audio Classes # Classes Description AudioManager An audio manager that accepts multiple Audio::AudioBuffer instances. (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -451,7 +451,7 @@ Updated on 2023-01-02</description>
 std::string someGlobalFunc(); Some global extern function.
 Exception Safety
 Basic exception guarantee.
-Updated on 2023-01-02</description>
+Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -460,7 +460,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/exception_8hpp/</guid>
-      <description>src/Exception.hpp # #include &amp;lt;src/Exception.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Classes # Classes Description Exception Engine::Exception (class) Updated on 2023-01-02</description>
+      <description>src/Exception.hpp # #include &amp;lt;src/Exception.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Classes # Classes Description Exception Engine::Exception (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -469,7 +469,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/dir_3419e189e460663ec2c964233bf8dcd6/</guid>
-      <description>src/Graphics # Files # Files Description src/Graphics/Framebuffer.hpp src/Graphics/Graphics.hpp src/Graphics/Handle.hpp src/Graphics/Renderer.hpp src/Graphics/Texture.hpp src/Graphics/Texture2D.hpp src/Graphics/Texture3D.hpp Updated on 2023-01-02</description>
+      <description>src/Graphics # Files # Files Description src/Graphics/Framebuffer.hpp src/Graphics/Graphics.hpp src/Graphics/Handle.hpp src/Graphics/Renderer.hpp src/Graphics/Texture.hpp src/Graphics/Texture2D.hpp src/Graphics/Texture3D.hpp Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -478,7 +478,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/framebuffer_8hpp/</guid>
-      <description>src/Graphics/Framebuffer.hpp # #include &amp;lt;src/Graphics/Framebuffer.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Classes Description Framebuffer Engine::Graphics::Framebuffer (class) Updated on 2023-01-02</description>
+      <description>src/Graphics/Framebuffer.hpp # #include &amp;lt;src/Graphics/Framebuffer.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Classes Description Framebuffer Engine::Graphics::Framebuffer (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -487,7 +487,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/graphics_8hpp/</guid>
-      <description>src/Graphics/Graphics.hpp # #include &amp;lt;src/Graphics/Graphics.hpp&amp;gt; Updated on 2023-01-02</description>
+      <description>src/Graphics/Graphics.hpp # #include &amp;lt;src/Graphics/Graphics.hpp&amp;gt; Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -496,7 +496,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/handle_8hpp/</guid>
-      <description>src/Graphics/Handle.hpp # #include &amp;lt;src/Graphics/Handle.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Classes Description Handle Engine::Graphics::Handle (class) Updated on 2023-01-02</description>
+      <description>src/Graphics/Handle.hpp # #include &amp;lt;src/Graphics/Handle.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Classes Description Handle Engine::Graphics::Handle (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -505,7 +505,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/renderer_8hpp/</guid>
-      <description>src/Graphics/Renderer.hpp # #include &amp;lt;src/Graphics/Renderer.hpp&amp;gt; Updated on 2023-01-02</description>
+      <description>src/Graphics/Renderer.hpp # #include &amp;lt;src/Graphics/Renderer.hpp&amp;gt; Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -514,7 +514,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/texture_8hpp/</guid>
-      <description>src/Graphics/Texture.hpp # #include &amp;lt;src/Graphics/Texture.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Classes Description Texture This is a base texture class that serves as a base class for other texture types. (interface) Updated on 2023-01-02</description>
+      <description>src/Graphics/Texture.hpp # #include &amp;lt;src/Graphics/Texture.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Classes Description Texture This is a base texture class that serves as a base class for other texture types. (interface) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -523,7 +523,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/texture2d_8hpp/</guid>
-      <description>src/Graphics/Texture2D.hpp # #include &amp;lt;src/Graphics/Texture2D.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Classes Description Texture2D Engine::Graphics::Texture2D (class) Updated on 2023-01-02</description>
+      <description>src/Graphics/Texture2D.hpp # #include &amp;lt;src/Graphics/Texture2D.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Classes Description Texture2D Engine::Graphics::Texture2D (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -532,7 +532,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/texture3d_8hpp/</guid>
-      <description>src/Graphics/Texture3D.hpp # #include &amp;lt;src/Graphics/Texture3D.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Classes Description Texture3D Some deprecated class. (class) Updated on 2023-01-02</description>
+      <description>src/Graphics/Texture3D.hpp # #include &amp;lt;src/Graphics/Texture3D.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes # Classes Description Texture3D Some deprecated class. (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -541,7 +541,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/dir_b5ac5e964c12a6b13a9d28feb9f3d3ed/</guid>
-      <description>src/Gui # Files # Files Description src/Gui/Gui.hpp src/Gui/GuiWidget.hpp Updated on 2023-01-02</description>
+      <description>src/Gui # Files # Files Description src/Gui/Gui.hpp src/Gui/GuiWidget.hpp Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -550,7 +550,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/gui_8hpp/</guid>
-      <description>src/Gui/Gui.hpp # #include &amp;lt;src/Gui/Gui.hpp&amp;gt; Updated on 2023-01-02</description>
+      <description>src/Gui/Gui.hpp # #include &amp;lt;src/Gui/Gui.hpp&amp;gt; Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -559,7 +559,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/guiwidget_8hpp/</guid>
-      <description>src/Gui/GuiWidget.hpp # #include &amp;lt;src/Gui/GuiWidget.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Gui Classes # Classes Description GuiWidget Some generic gui widget class. (class) Updated on 2023-01-02</description>
+      <description>src/Gui/GuiWidget.hpp # #include &amp;lt;src/Gui/GuiWidget.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Gui Classes # Classes Description GuiWidget Some generic gui widget class. (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -568,7 +568,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/dir_a7363e98f9e0bdd87618633653859815/</guid>
-      <description>src/Utils # Files # Files Description src/Utils/ArrayView.hpp src/Utils/Config.hpp src/Utils/Log.hpp src/Utils/Path.hpp src/Utils/Utils.hpp Updated on 2023-01-02</description>
+      <description>src/Utils # Files # Files Description src/Utils/ArrayView.hpp src/Utils/Config.hpp src/Utils/Log.hpp src/Utils/Path.hpp src/Utils/Utils.hpp Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -577,7 +577,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/arrayview_8hpp/</guid>
-      <description>src/Utils/ArrayView.hpp # #include &amp;lt;src/Utils/ArrayView.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Utils Classes # Classes Description ArrayView Filesystem path utility functions. (class) Updated on 2023-01-02</description>
+      <description>src/Utils/ArrayView.hpp # #include &amp;lt;src/Utils/ArrayView.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Utils Classes # Classes Description ArrayView Filesystem path utility functions. (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -586,7 +586,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/config_8hpp/</guid>
-      <description>src/Utils/Config.hpp # #include &amp;lt;src/Utils/Config.hpp&amp;gt; Updated on 2023-01-02</description>
+      <description>src/Utils/Config.hpp # #include &amp;lt;src/Utils/Config.hpp&amp;gt; Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -595,7 +595,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/log_8hpp/</guid>
-      <description>src/Utils/Log.hpp # #include &amp;lt;src/Utils/Log.hpp&amp;gt; Updated on 2023-01-02</description>
+      <description>src/Utils/Log.hpp # #include &amp;lt;src/Utils/Log.hpp&amp;gt; Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -604,7 +604,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/path_8hpp/</guid>
-      <description>src/Utils/Path.hpp # #include &amp;lt;src/Utils/Path.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Utils Engine::Utils::Path Filesystem path utility functions. Updated on 2023-01-02</description>
+      <description>src/Utils/Path.hpp # #include &amp;lt;src/Utils/Path.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Utils Engine::Utils::Path Filesystem path utility functions. Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -613,7 +613,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/files/utils_8hpp/</guid>
-      <description>src/Utils/Utils.hpp # #include &amp;lt;src/Utils/Utils.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Utils Updated on 2023-01-02</description>
+      <description>src/Utils/Utils.hpp # #include &amp;lt;src/Utils/Utils.hpp&amp;gt; Namespaces # Name Description Engine This namespace contains all of the necessary engine components. Engine::Utils Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -622,7 +622,7 @@ Updated on 2023-01-02</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/namespaces/namespacestd/</guid>
-      <description>std # Updated on 2023-01-02</description>
+      <description>std # Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -632,7 +632,7 @@ Updated on 2023-01-02</description>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/pages/test/</guid>
       <description>Test List # Class Engine::Audio::AudioBuffer
-Some random test description Updated on 2023-01-02</description>
+Some random test description Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -642,7 +642,7 @@ Some random test description Updated on 2023-01-02</description>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-book/pages/todo/</guid>
       <description>Todo List # Class Engine::Audio::AudioBuffer
-Some random todo Updated on 2023-01-02</description>
+Some random todo Updated on 2023-01-04</description>
     </item>
     
   </channel>

@@ -13,7 +13,7 @@
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/dir_68267d1309a1af8e8297ef4c3efbcdba/</guid>
       <description>src Dir Reference
-Directories Directories Description src/Assets src/Audio src/Graphics src/Gui src/Utils Files Files Description src/Engine.hpp src/Exception.hpp Updated on 2023-01-02</description>
+Directories Directories Description src/Assets src/Audio src/Graphics src/Gui src/Utils Files Files Description src/Engine.hpp src/Exception.hpp Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -23,7 +23,7 @@ Directories Directories Description src/Assets src/Audio src/Graphics src/Gui sr
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/dir_e0c1ede47f21c4a643a1257f949f98e0/</guid>
       <description>src/Assets Dir Reference
-Files Files Description src/Assets/Asset.hpp src/Assets/Assets.hpp Updated on 2023-01-02</description>
+Files Files Description src/Assets/Asset.hpp src/Assets/Assets.hpp Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -33,7 +33,7 @@ Files Files Description src/Assets/Asset.hpp src/Assets/Assets.hpp Updated on 20
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/asset_8hpp/</guid>
       <description>src/Assets/Asset.hpp File Reference
-#include &amp;lt;src/Assets/Asset.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Assets Classes Classes Description Asset Engine::Assets::Asset (class) Event Engine::Assets::Asset::Event (union) Loaded Engine::Assets::Asset::Event::Loaded (struct) Unloaded Engine::Assets::Asset::Event::Unloaded (struct) Waiting Engine::Assets::Asset::Event::Waiting (struct) Updated on 2023-01-02</description>
+#include &amp;lt;src/Assets/Asset.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Assets Classes Classes Description Asset Engine::Assets::Asset (class) Event Engine::Assets::Asset::Event (union) Loaded Engine::Assets::Asset::Event::Loaded (struct) Unloaded Engine::Assets::Asset::Event::Unloaded (struct) Waiting Engine::Assets::Asset::Event::Waiting (struct) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -43,7 +43,7 @@ Files Files Description src/Assets/Asset.hpp src/Assets/Assets.hpp Updated on 20
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/assets_8hpp/</guid>
       <description>src/Assets/Assets.hpp File Reference
-#include &amp;lt;src/Assets/Assets.hpp&amp;gt; Updated on 2023-01-02</description>
+#include &amp;lt;src/Assets/Assets.hpp&amp;gt; Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@ Files Files Description src/Assets/Asset.hpp src/Assets/Assets.hpp Updated on 20
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/dir_c64386e93f356b78d4612c7b7741707c/</guid>
       <description>src/Audio Dir Reference
-Files Files Description src/Audio/Audio.hpp src/Audio/AudioBuffer.hpp src/Audio/AudioManager.hpp Updated on 2023-01-02</description>
+Files Files Description src/Audio/Audio.hpp src/Audio/AudioBuffer.hpp src/Audio/AudioManager.hpp Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -63,7 +63,7 @@ Files Files Description src/Audio/Audio.hpp src/Audio/AudioBuffer.hpp src/Audio/
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/audio_8hpp/</guid>
       <description>src/Audio/Audio.hpp File Reference
-#include &amp;lt;src/Audio/Audio.hpp&amp;gt; Updated on 2023-01-02</description>
+#include &amp;lt;src/Audio/Audio.hpp&amp;gt; Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -73,7 +73,7 @@ Files Files Description src/Audio/Audio.hpp src/Audio/AudioBuffer.hpp src/Audio/
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/audiobuffer_8hpp/</guid>
       <description>src/Audio/AudioBuffer.hpp File Reference
-#include &amp;lt;src/Audio/AudioBuffer.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Audio Classes Classes Description AudioBuffer A simple audio buffer to hold PCM samples (class) TypedAudioData Use this to populate the buffer. (struct) Updated on 2023-01-02</description>
+#include &amp;lt;src/Audio/AudioBuffer.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Audio Classes Classes Description AudioBuffer A simple audio buffer to hold PCM samples (class) TypedAudioData Use this to populate the buffer. (struct) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -83,7 +83,7 @@ Files Files Description src/Audio/Audio.hpp src/Audio/AudioBuffer.hpp src/Audio/
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/audiomanager_8hpp/</guid>
       <description>src/Audio/AudioManager.hpp File Reference
-#include &amp;lt;src/Audio/AudioManager.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Audio Classes Classes Description AudioManager An audio manager that accepts multiple Audio::AudioBuffer instances. (class) Updated on 2023-01-02</description>
+#include &amp;lt;src/Audio/AudioManager.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Audio Classes Classes Description AudioManager An audio manager that accepts multiple Audio::AudioBuffer instances. (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -97,7 +97,7 @@ Files Files Description src/Audio/Audio.hpp src/Audio/AudioBuffer.hpp src/Audio/
 std::string someGlobalFunc(); Some global extern function.
 Exception Safety
 Basic exception guarantee.
-Updated on 2023-01-02</description>
+Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -107,7 +107,7 @@ Updated on 2023-01-02</description>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/exception_8hpp/</guid>
       <description>src/Exception.hpp File Reference
-#include &amp;lt;src/Exception.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Classes Classes Description Exception Engine::Exception (class) Updated on 2023-01-02</description>
+#include &amp;lt;src/Exception.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Classes Classes Description Exception Engine::Exception (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -117,7 +117,7 @@ Updated on 2023-01-02</description>
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/dir_3419e189e460663ec2c964233bf8dcd6/</guid>
       <description>src/Graphics Dir Reference
-Files Files Description src/Graphics/Framebuffer.hpp src/Graphics/Graphics.hpp src/Graphics/Handle.hpp src/Graphics/Renderer.hpp src/Graphics/Texture.hpp src/Graphics/Texture2D.hpp src/Graphics/Texture3D.hpp Updated on 2023-01-02</description>
+Files Files Description src/Graphics/Framebuffer.hpp src/Graphics/Graphics.hpp src/Graphics/Handle.hpp src/Graphics/Renderer.hpp src/Graphics/Texture.hpp src/Graphics/Texture2D.hpp src/Graphics/Texture3D.hpp Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -127,7 +127,7 @@ Files Files Description src/Graphics/Framebuffer.hpp src/Graphics/Graphics.hpp s
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/framebuffer_8hpp/</guid>
       <description>src/Graphics/Framebuffer.hpp File Reference
-#include &amp;lt;src/Graphics/Framebuffer.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes Classes Description Framebuffer Engine::Graphics::Framebuffer (class) Updated on 2023-01-02</description>
+#include &amp;lt;src/Graphics/Framebuffer.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes Classes Description Framebuffer Engine::Graphics::Framebuffer (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -137,7 +137,7 @@ Files Files Description src/Graphics/Framebuffer.hpp src/Graphics/Graphics.hpp s
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/graphics_8hpp/</guid>
       <description>src/Graphics/Graphics.hpp File Reference
-#include &amp;lt;src/Graphics/Graphics.hpp&amp;gt; Updated on 2023-01-02</description>
+#include &amp;lt;src/Graphics/Graphics.hpp&amp;gt; Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -147,7 +147,7 @@ Files Files Description src/Graphics/Framebuffer.hpp src/Graphics/Graphics.hpp s
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/handle_8hpp/</guid>
       <description>src/Graphics/Handle.hpp File Reference
-#include &amp;lt;src/Graphics/Handle.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes Classes Description Handle Engine::Graphics::Handle (class) Updated on 2023-01-02</description>
+#include &amp;lt;src/Graphics/Handle.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes Classes Description Handle Engine::Graphics::Handle (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -157,7 +157,7 @@ Files Files Description src/Graphics/Framebuffer.hpp src/Graphics/Graphics.hpp s
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/renderer_8hpp/</guid>
       <description>src/Graphics/Renderer.hpp File Reference
-#include &amp;lt;src/Graphics/Renderer.hpp&amp;gt; Updated on 2023-01-02</description>
+#include &amp;lt;src/Graphics/Renderer.hpp&amp;gt; Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -167,7 +167,7 @@ Files Files Description src/Graphics/Framebuffer.hpp src/Graphics/Graphics.hpp s
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/texture_8hpp/</guid>
       <description>src/Graphics/Texture.hpp File Reference
-#include &amp;lt;src/Graphics/Texture.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes Classes Description Texture This is a base texture class that serves as a base class for other texture types. (interface) Updated on 2023-01-02</description>
+#include &amp;lt;src/Graphics/Texture.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes Classes Description Texture This is a base texture class that serves as a base class for other texture types. (interface) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -177,7 +177,7 @@ Files Files Description src/Graphics/Framebuffer.hpp src/Graphics/Graphics.hpp s
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/texture2d_8hpp/</guid>
       <description>src/Graphics/Texture2D.hpp File Reference
-#include &amp;lt;src/Graphics/Texture2D.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes Classes Description Texture2D Engine::Graphics::Texture2D (class) Updated on 2023-01-02</description>
+#include &amp;lt;src/Graphics/Texture2D.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes Classes Description Texture2D Engine::Graphics::Texture2D (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -187,7 +187,7 @@ Files Files Description src/Graphics/Framebuffer.hpp src/Graphics/Graphics.hpp s
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/texture3d_8hpp/</guid>
       <description>src/Graphics/Texture3D.hpp File Reference
-#include &amp;lt;src/Graphics/Texture3D.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes Classes Description Texture3D Some deprecated class. (class) Updated on 2023-01-02</description>
+#include &amp;lt;src/Graphics/Texture3D.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Graphics Classes Classes Description Texture3D Some deprecated class. (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -197,7 +197,7 @@ Files Files Description src/Graphics/Framebuffer.hpp src/Graphics/Graphics.hpp s
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/dir_b5ac5e964c12a6b13a9d28feb9f3d3ed/</guid>
       <description>src/Gui Dir Reference
-Files Files Description src/Gui/Gui.hpp src/Gui/GuiWidget.hpp Updated on 2023-01-02</description>
+Files Files Description src/Gui/Gui.hpp src/Gui/GuiWidget.hpp Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -207,7 +207,7 @@ Files Files Description src/Gui/Gui.hpp src/Gui/GuiWidget.hpp Updated on 2023-01
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/gui_8hpp/</guid>
       <description>src/Gui/Gui.hpp File Reference
-#include &amp;lt;src/Gui/Gui.hpp&amp;gt; Updated on 2023-01-02</description>
+#include &amp;lt;src/Gui/Gui.hpp&amp;gt; Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -217,7 +217,7 @@ Files Files Description src/Gui/Gui.hpp src/Gui/GuiWidget.hpp Updated on 2023-01
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/guiwidget_8hpp/</guid>
       <description>src/Gui/GuiWidget.hpp File Reference
-#include &amp;lt;src/Gui/GuiWidget.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Gui Classes Classes Description GuiWidget Some generic gui widget class. (class) Updated on 2023-01-02</description>
+#include &amp;lt;src/Gui/GuiWidget.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Gui Classes Classes Description GuiWidget Some generic gui widget class. (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -227,7 +227,7 @@ Files Files Description src/Gui/Gui.hpp src/Gui/GuiWidget.hpp Updated on 2023-01
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/dir_a7363e98f9e0bdd87618633653859815/</guid>
       <description>src/Utils Dir Reference
-Files Files Description src/Utils/ArrayView.hpp src/Utils/Config.hpp src/Utils/Log.hpp src/Utils/Path.hpp src/Utils/Utils.hpp Updated on 2023-01-02</description>
+Files Files Description src/Utils/ArrayView.hpp src/Utils/Config.hpp src/Utils/Log.hpp src/Utils/Path.hpp src/Utils/Utils.hpp Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -237,7 +237,7 @@ Files Files Description src/Utils/ArrayView.hpp src/Utils/Config.hpp src/Utils/L
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/arrayview_8hpp/</guid>
       <description>src/Utils/ArrayView.hpp File Reference
-#include &amp;lt;src/Utils/ArrayView.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Utils Classes Classes Description ArrayView Filesystem path utility functions. (class) Updated on 2023-01-02</description>
+#include &amp;lt;src/Utils/ArrayView.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Utils Classes Classes Description ArrayView Filesystem path utility functions. (class) Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -247,7 +247,7 @@ Files Files Description src/Utils/ArrayView.hpp src/Utils/Config.hpp src/Utils/L
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/config_8hpp/</guid>
       <description>src/Utils/Config.hpp File Reference
-#include &amp;lt;src/Utils/Config.hpp&amp;gt; Updated on 2023-01-02</description>
+#include &amp;lt;src/Utils/Config.hpp&amp;gt; Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -257,7 +257,7 @@ Files Files Description src/Utils/ArrayView.hpp src/Utils/Config.hpp src/Utils/L
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/log_8hpp/</guid>
       <description>src/Utils/Log.hpp File Reference
-#include &amp;lt;src/Utils/Log.hpp&amp;gt; Updated on 2023-01-02</description>
+#include &amp;lt;src/Utils/Log.hpp&amp;gt; Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -267,7 +267,7 @@ Files Files Description src/Utils/ArrayView.hpp src/Utils/Config.hpp src/Utils/L
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/path_8hpp/</guid>
       <description>src/Utils/Path.hpp File Reference
-#include &amp;lt;src/Utils/Path.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Utils Engine::Utils::Path Filesystem path utility functions. Updated on 2023-01-02</description>
+#include &amp;lt;src/Utils/Path.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Utils Engine::Utils::Path Filesystem path utility functions. Updated on 2023-01-04</description>
     </item>
     
     <item>
@@ -277,7 +277,7 @@ Files Files Description src/Utils/ArrayView.hpp src/Utils/Config.hpp src/Utils/L
       
       <guid>https://alandefreitas.github.io/doxybook/hugo-learn/files/utils_8hpp/</guid>
       <description>src/Utils/Utils.hpp File Reference
-#include &amp;lt;src/Utils/Utils.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Utils Updated on 2023-01-02</description>
+#include &amp;lt;src/Utils/Utils.hpp&amp;gt; Namespaces Name Description Engine This namespace contains all of the necessary engine components. Engine::Utils Updated on 2023-01-04</description>
     </item>
     
   </channel>
