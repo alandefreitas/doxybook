@@ -103,6 +103,7 @@ Framebuffer(int width, int height);
 
 
 
+
 **Exception Safety**
 
 Basic exception guarantee.
@@ -118,6 +119,7 @@ Basic exception guarantee.
 ```cpp 
 virtual ~Framebuffer();
 ```
+
 
 
 
@@ -179,6 +181,7 @@ Width in pixels
 
 
 
+
 **Exception Safety**
 
 Basic exception guarantee.
@@ -210,6 +213,7 @@ Returns the height of the texture in pixels.
 **Return value**
 
 Height in pixels 
+
 
 
 
@@ -266,6 +270,7 @@ If this texture is 2D the depth is always 1 pixels
 
 
 
+
 **Exception Safety**
 
 Basic exception guarantee.
@@ -279,4 +284,4 @@ Basic exception guarantee.
 
 -------------------------------
 
-<sub>Updated on 2023-01-04</sub>
+<sub>Updated on 2023-04-03</sub>

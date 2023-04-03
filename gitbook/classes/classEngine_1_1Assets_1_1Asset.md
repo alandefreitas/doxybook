@@ -64,6 +64,7 @@ explicit Asset(const std::string & name);
 
 
 
+
 **Exception Safety**
 
 Basic exception guarantee.
@@ -79,6 +80,7 @@ Basic exception guarantee.
 ```cpp 
 virtual ~Asset() = 0;
 ```
+
 
 
 
@@ -137,6 +139,7 @@ Call this method to load the asset.
 
 
 
+
 **Exception Safety**
 
 Basic exception guarantee.
@@ -159,6 +162,7 @@ unload();
 
 
 Call this method to unload the asset. 
+
 
 
 
@@ -218,6 +222,7 @@ Use this to determine the state, for example if the assets is being loaded or un
 
 
 
+
 **Exception Safety**
 
 Basic exception guarantee.
@@ -231,4 +236,4 @@ Basic exception guarantee.
 
 -------------------------------
 
-<sub>Updated on 2023-01-04</sub>
+<sub>Updated on 2023-04-03</sub>
