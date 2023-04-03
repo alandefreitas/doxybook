@@ -213,18 +213,53 @@ doxybook::renderer::renderer(
         "parsArrayToObj",
         1,
         [](inja::Arguments& args) -> nlohmann::json {
-            const auto text_array_out = *args.at(0);
+            // Array (1) of arrays (2) where each entry is a list of strings
+            // Each entry in (1) is the list of @par in an overload
+            // Each entry in (2) is a string with the @par title "\n\n" and
+            // the par block.
+            // This callback returns an object where each element is an object
+            // where keys are the par title and values are the text
+            const auto all_overload_parblocks = *args.at(0);
             const auto delim = "\n\n";
             nlohmann::json res = nlohmann::json::array();
-            for (auto const& text_array_in: text_array_out) {
+            for (auto const& overload_par_blocks: all_overload_parblocks) {
                 res.push_back(nlohmann::json::object());
-                for (auto const& jtext: text_array_in) {
+                for (auto const& jtext: overload_par_blocks) {
                     std::string text = jtext.get<std::string>();
-                    std::size_t p = text.find(delim);
-                    if (p != std::string::npos) {
-                        res.back()[text.substr(0, p)] = text.substr(p);
+                    std::size_t title_end = text.find(delim);
+                    if (title_end != std::string::npos) {
+                        res.back()[text.substr(0, title_end)] = text.substr(
+                            title_end);
                     } else {
                         res.back()[""] = text;
+                    }
+                }
+            }
+            return res;
+        });
+
+    env_->add_callback(
+        "parsArrayKeys",
+        1,
+        [](inja::Arguments& args) -> nlohmann::json {
+            // Array (1) of arrays (2) where each entry is a list of strings
+            // Each entry in (1) is the list of @par in an overload
+            // Each entry in (2) is a string with the @par title "\n\n" and
+            // the par block.
+            // This callback returns an array where each element is the
+            // title of a @par. The titles are kept in order, unlike in
+            // a dictionary.
+            const auto all_overload_parblocks = *args.at(0);
+            const auto delim = "\n\n";
+            nlohmann::json res = nlohmann::json::array();
+            for (auto const& overload_par_blocks: all_overload_parblocks) {
+                for (auto const& jtext: overload_par_blocks) {
+                    std::string text = jtext.get<std::string>();
+                    std::size_t title_end = text.find(delim);
+                    if (title_end != std::string::npos) {
+                        res.push_back(text.substr(0, title_end));
+                    } else {
+                        res.push_back("");
                     }
                 }
             }
@@ -459,10 +494,12 @@ doxybook::renderer::renderer(
         nlohmann::json const& m = *args.at(0);
         nlohmann::json r = nlohmann::json::array({});
         if (m.is_object()) {
+            // get keys from objects
             for (auto& el: m.items()) {
                 r.push_back(el.key());
             }
         } else if (m.is_array()) {
+            // get keys from an array of objects
             for (auto& v: m) {
                 for (auto& el: v.items()) {
                     r.push_back(el.key());
@@ -763,6 +800,48 @@ doxybook::renderer::renderer(
         res.erase(last, res.end());
         return res;
     });
+
+    env_->add_callback(
+        "uniqueBriefs",
+        1,
+        [](inja::Arguments& args) -> nlohmann::json {
+            nlohmann::json const& range = *args.at(0);
+            nlohmann::json res = range;
+            std::sort(res.begin(), res.end());
+            auto last = std::unique(res.begin(), res.end());
+            res.erase(last, res.end());
+            last = std::
+                remove_if(res.begin(), res.end(), [](nlohmann::json const& x) {
+                    constexpr std::string_view doxy_overload_prefix
+                        = "This is an overloaded member function, provided for "
+                          "convenience";
+                    auto sv = x.get<std::string_view>();
+                    return sv.substr(0, doxy_overload_prefix.size())
+                           == doxy_overload_prefix;
+                });
+            res.erase(last, res.end());
+            return res;
+        });
+
+    env_->add_callback(
+        "orderedUnique",
+        1,
+        [](inja::Arguments& args) -> nlohmann::json {
+            // Get unique elements but don't get them out of order
+            nlohmann::json const& range = *args.at(0);
+            nlohmann::json res = range;
+            std::sort(res.begin(), res.end());
+            auto last = std::unique(res.begin(), res.end());
+            res.erase(last, res.end());
+            std::sort(
+                res.begin(),
+                res.end(),
+                [&range](nlohmann::json const& a, nlohmann::json const& b) {
+            return std::find(range.begin(), range.end(), a)
+                   < std::find(range.begin(), range.end(), b);
+                });
+            return res;
+        });
 
     env_->add_callback(
         "uniqueBy",

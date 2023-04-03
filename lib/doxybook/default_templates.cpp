@@ -1025,7 +1025,7 @@ constexpr
 ```
 {% endfor %}
 
-{% set unique_briefs=unique(pluck(overloads, "brief")) %}
+{% set unique_briefs=uniqueBriefs(pluck(overloads, "brief")) %}
 {% if not isEmpty(unique_briefs) %}
 {% if length(unique_briefs) == 1 %}
 {{ first(unique_briefs) }}
@@ -1141,8 +1141,10 @@ constexpr
 {% endif -%}
 {% endif -%}
 
-{% set par=parsArrayToObj(pluck(overloads, "par")) %}
-{% set parKeys=unique(keys(par)) %}
+
+{% set pluckedPars=pluck(overloads, "par") %}
+{% set par=parsArrayToObj(pluckedPars) %}
+{% set parKeys=orderedUnique(parsArrayKeys(pluckedPars)) %}
 
 {% for parKey in parKeys %}
 **{{ parKey }}**
