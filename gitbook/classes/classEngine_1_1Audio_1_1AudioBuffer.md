@@ -189,6 +189,7 @@ Constructor for [Audio::AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffe
 
 
 
+
 **Exception Safety**
 
 Basic exception guarantee.
@@ -210,6 +211,7 @@ virtual ~AudioBuffer() = default;
 
 
 [Audio::AudioBuffer](/classes/classEngine_1_1Audio_1_1AudioBuffer.md) destructor. 
+
 
 
 
@@ -270,6 +272,7 @@ Play this buffer.
 
 
 
+
 **Exception Safety**
 
 Basic exception guarantee.
@@ -300,6 +303,7 @@ Stop this buffer playing.
 **Parameters**
 
 - **manager** - Which manager to stop the sound with 
+
 
 
 
@@ -359,6 +363,7 @@ This will loop forever until you call stop
 
 
 
+
 **Exception Safety**
 
 Basic exception guarantee.
@@ -403,6 +408,7 @@ Some deprecated function.
 
 
 
+
 **Exception Safety**
 
 Basic exception guarantee.
@@ -420,6 +426,7 @@ template <size_t Size>
 void
 setDataMultiple(const TypedAudioData data[Size]);
 ```
+
 
 
 
@@ -482,6 +489,7 @@ Set the callback function.
 
 
 
+
 **Exception Safety**
 
 Basic exception guarantee.
@@ -530,6 +538,7 @@ Set the callback function.
 
 
 
+
 **Exception Safety**
 
 Basic exception guarantee.
@@ -555,6 +564,7 @@ Basic exception guarantee.
 float *
 getData();
 ```
+
 
 
 
@@ -615,4 +625,4 @@ void Audio::doSomething(AudioBuffer & buffer);
 
 -------------------------------
 
-<sub>Updated on 2023-01-04</sub>
+<sub>Updated on 2023-04-03</sub>

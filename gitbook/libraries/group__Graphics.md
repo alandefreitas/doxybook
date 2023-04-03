@@ -68,6 +68,7 @@ Some namespace inline function.
 
 
 
+
 **Exception Safety**
 
 Basic exception guarantee.
@@ -82,4 +83,4 @@ Basic exception guarantee.
 
 -------------------------------
 
-<sub>Updated on 2023-01-04</sub>
+<sub>Updated on 2023-04-03</sub>

@@ -64,6 +64,7 @@ ArrayView(const T * src, size_t len);
 
 
 
+
 **Exception Safety**
 
 Basic exception guarantee.
@@ -79,6 +80,7 @@ Basic exception guarantee.
 ```cpp 
 virtual ~ArrayView() = default;
 ```
+
 
 
 
@@ -133,6 +135,7 @@ data() const;
 
 
 
+
 **Exception Safety**
 
 Basic exception guarantee.
@@ -168,6 +171,7 @@ size() const;
 
 
 
+
 **Exception Safety**
 
 Basic exception guarantee.
@@ -181,4 +185,4 @@ Basic exception guarantee.
 
 -------------------------------
 
-<sub>Updated on 2023-01-04</sub>
+<sub>Updated on 2023-04-03</sub>
